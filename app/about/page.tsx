@@ -19,6 +19,7 @@ export default function page() {
         '/logo-partners (10).png',
         '/logo-partners (11).png',
         '/logo-partners (12).png',
+        
     ]
     return (
         <div className='about-page'>
