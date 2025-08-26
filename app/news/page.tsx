@@ -2,10 +2,12 @@
 import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import Head from 'next/head';
 import { useSearchParams } from "next/navigation";
+
 export default function Page() {
   const searchParams = useSearchParams();
-  const [selectedNews, setSelectedNews] = useState<number | null>(null); // เก็บ index ของข่าวที่เลือก
+  const [selectedNews, setSelectedNews] = useState<number | null>(null);
 
   const page = searchParams.get("page");
   const currentPage = page ? parseInt(page, 10) : 1;
@@ -14,51 +16,38 @@ export default function Page() {
   const news = [
     'JIEI เปิดไลน์การผลิตใหม่ IT ไลน์',
     '=-=',
-     'JIEI เปิดไลน์การผลิตใหม่ IT ไลน์',
+    'JIEI เปิดไลน์การผลิตใหม่ IT ไลน์',
     '=-=',
-     'JIEI เปิดไลน์การผลิตใหม่ IT ไลน์',
+    'JIEI เปิดไลน์การผลิตใหม่ IT ไลน์',
     '=-=',
-     'JIEI เปิดไลน์การผลิตใหม่ IT ไลน์',
+    'JIEI เปิดไลน์การผลิตใหม่ IT ไลน์',
     '=-=',
-     'JIEI เปิดไลน์การผลิตใหม่ IT ไลน์',
+    'JIEI เปิดไลน์การผลิตใหม่ IT ไลน์',
     '=-=',
-     'JIEI เปิดไลน์การผลิตใหม่ IT ไลน์',
+    'JIEI เปิดไลน์การผลิตใหม่ IT ไลน์',
     '=-=',
-     'JIEI เปิดไลน์การผลิตใหม่ IT ไลน์',
+    'JIEI เปิดไลน์การผลิตใหม่ IT ไลน์',
     '=-=',
   ];
-  const img = [
-    '/JIEI(Thailnad).co.,ltd.jpg',
-    '/JIEI(Thailnad).co.,ltd.jpg',
-    '/JIEI(Thailnad).co.,ltd.jpg',
-    '/JIEI(Thailnad).co.,ltd.jpg',
-    '/JIEI(Thailnad).co.,ltd.jpg',
-    '/JIEI(Thailnad).co.,ltd.jpg',
-    '/JIEI(Thailnad).co.,ltd.jpg',
-    '/JIEI(Thailnad).co.,ltd.jpg',
-    '/JIEI(Thailnad).co.,ltd.jpg',
-    '/JIEI(Thailnad).co.,ltd.jpg',
-    '/JIEI(Thailnad).co.,ltd.jpg',
-    '/JIEI(Thailnad).co.,ltd.jpg',
-    '/JIEI(Thailnad).co.,ltd.jpg',
-    '/JIEI(Thailnad).co.,ltd.jpg',
-  ];
+
+  const img = Array(14).fill('/JIEI(Thailnad).co.,ltd.jpg');
+
   const content = [
     '1orem ipsum dolor sit, amet consectetur adipisicing elit. Totam quibusdam est sapiente quas veritatis at incidunt harum ipsam dignissimos doloribus? Asperiores molestias quasi, excepturi blanditiis cum corrupti reiciendis alias repellendus. 001',
     'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam quibusdam est sapiente quas veritatis at incidunt harum ipsam dignissimos doloribus? Asperiores molestias quasi, excepturi blanditiis cum corrupti reiciendis alias repellendus. 002',
-     'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam quibusdam est sapiente quas veritatis at incidunt harum ipsam dignissimos doloribus? Asperiores molestias quasi, excepturi blanditiis cum corrupti reiciendis alias repellendus. 001',
+    'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam quibusdam est sapiente quas veritatis at incidunt harum ipsam dignissimos doloribus? Asperiores molestias quasi, excepturi blanditiis cum corrupti reiciendis alias repellendus. 001',
     'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam quibusdam est sapiente quas veritatis at incidunt harum ipsam dignissimos doloribus? Asperiores molestias quasi, excepturi blanditiis cum corrupti reiciendis alias repellendus. 002',
-     'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam quibusdam est sapiente quas veritatis at incidunt harum ipsam dignissimos doloribus? Asperiores molestias quasi, excepturi blanditiis cum corrupti reiciendis alias repellendus. 001',
+    'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam quibusdam est sapiente quas veritatis at incidunt harum ipsam dignissimos doloribus? Asperiores molestias quasi, excepturi blanditiis cum corrupti reiciendis alias repellendus. 001',
     'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam quibusdam est sapiente quas veritatis at incidunt harum ipsam dignissimos doloribus? Asperiores molestias quasi, excepturi blanditiis cum corrupti reiciendis alias repellendus. 002',
-     'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam quibusdam est sapiente quas veritatis at incidunt harum ipsam dignissimos doloribus? Asperiores molestias quasi, excepturi blanditiis cum corrupti reiciendis alias repellendus. 001',
+    'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam quibusdam est sapiente quas veritatis at incidunt harum ipsam dignissimos doloribus? Asperiores molestias quasi, excepturi blanditiis cum corrupti reiciendis alias repellendus. 001',
     'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam quibusdam est sapiente quas veritatis at incidunt harum ipsam dignissimos doloribus? Asperiores molestias quasi, excepturi blanditiis cum corrupti reiciendis alias repellendus. 002',
-     'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam quibusdam est sapiente quas veritatis at incidunt harum ipsam dignissimos doloribus? Asperiores molestias quasi, excepturi blanditiis cum corrupti reiciendis alias repellendus. 001',
+    'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam quibusdam est sapiente quas veritatis at incidunt harum ipsam dignissimos doloribus? Asperiores molestias quasi, excepturi blanditiis cum corrupti reiciendis alias repellendus. 001',
     'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam quibusdam est sapiente quas veritatis at incidunt harum ipsam dignissimos doloribus? Asperiores molestias quasi, excepturi blanditiis cum corrupti reiciendis alias repellendus. 002',
-     'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam quibusdam est sapiente quas veritatis at incidunt harum ipsam dignissimos doloribus? Asperiores molestias quasi, excepturi blanditiis cum corrupti reiciendis alias repellendus. 001',
+    'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam quibusdam est sapiente quas veritatis at incidunt harum ipsam dignissimos doloribus? Asperiores molestias quasi, excepturi blanditiis cum corrupti reiciendis alias repellendus. 001',
     'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam quibusdam est sapiente quas veritatis at incidunt harum ipsam dignissimos doloribus? Asperiores molestias quasi, excepturi blanditiis cum corrupti reiciendis alias repellendus. 002',
-     'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam quibusdam est sapiente quas veritatis at incidunt harum ipsam dignissimos doloribus? Asperiores molestias quasi, excepturi blanditiis cum corrupti reiciendis alias repellendus. 001',
+    'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam quibusdam est sapiente quas veritatis at incidunt harum ipsam dignissimos doloribus? Asperiores molestias quasi, excepturi blanditiis cum corrupti reiciendis alias repellendus. 001',
     '0000005 ipsum dolor sit, amet consectetur adipisicing elit. Totam quibusdam est sapiente quas veritatis at incidunt harum ipsam dignissimos doloribus? Asperiores molestias quasi, excepturi blanditiis cum corrupti reiciendis alias repellendus. 002',
-  ]
+  ];
 
   const start = (currentPage - 1) * perPage;
   const end = start + perPage;
@@ -68,8 +57,64 @@ export default function Page() {
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'smooth' })
   }, [searchParams])
+
+  const pageTitle = selectedNews === null 
+    ? "News & Blog | JIEI Thailand" 
+    : `${news[selectedNews]} | JIEI Thailand`;
+  const pageDescription = selectedNews === null 
+    ? "อ่านข่าวสารล่าสุดและบล็อกเกี่ยวกับการผลิตยางรถยนต์และกิจกรรมต่างๆ ของ JIEI Thailand." 
+    : content[selectedNews].slice(0, 160);
+
   return (
     <div>
+      <Head>
+        <title>{pageTitle}</title>
+        <meta name="description" content={pageDescription} />
+        <link rel="canonical" href="https://www.jiei-thai.co.th/news" />
+
+        {/* Open Graph */}
+        <meta property="og:title" content={pageTitle} />
+        <meta property="og:description" content={pageDescription} />
+        <meta property="og:type" content="article" />
+        <meta property="og:image" content={img[selectedNews ?? 0]} />
+        <meta property="og:url" content="https://www.jiei-thai.co.th/news" />
+
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={pageTitle} />
+        <meta name="twitter:description" content={pageDescription} />
+        <meta name="twitter:image" content={img[selectedNews ?? 0]} />
+
+        {/* JSON-LD Structured Data */}
+        {selectedNews !== null && (
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "NewsArticle",
+                "headline": news[selectedNews],
+                "image": [img[selectedNews]],
+                "datePublished": new Date().toISOString(),
+                "author": {
+                  "@type": "Organization",
+                  "name": "JIEI Thailand"
+                },
+                "publisher": {
+                  "@type": "Organization",
+                  "name": "JIEI Thailand",
+                  "logo": {
+                    "@type": "ImageObject",
+                    "url": img[0]
+                  }
+                },
+                "description": content[selectedNews]
+              })
+            }}
+          />
+        )}
+      </Head>
+
       {selectedNews === null ? (
         <>
           <h1 className='title-news'>News | Blog</h1>
@@ -83,7 +128,7 @@ export default function Page() {
                     src={img[start + index]}
                     height={1000}
                     width={1000}
-                    alt=""
+                    alt={`News image: ${item}`}
                     className="image-news"
                     priority
                   />
@@ -97,14 +142,11 @@ export default function Page() {
                     <p>{content[start + index]}</p>
                   </div>
                   <button className="read-more"
-                    
                     onClick={() => {
                       setSelectedNews(start + index)
                       window.scrollTo({ top: 0, behavior: 'smooth' })
                     }} >
-                      
                     อ่านเพิ่มเติม
-
                   </button>
                 </div>
               </div>
@@ -132,27 +174,22 @@ export default function Page() {
             src={img[selectedNews]}
             height={1000}
             width={1000}
-            alt=""
+            alt={`News image: ${news[selectedNews]}`}
             className="image-news-page"
           />
           <h2 className='news-blog'>ข่าวที่เลือก {news[selectedNews]}</h2>
           <p className='content-box-page'>{content[selectedNews]}</p>
 
-
           <div className="btn-back-newsPage">
             <button onClick={() => {
               setSelectedNews(null)
               window.scrollTo({ top: 0, behavior: 'smooth' })
-            }
-
-            } className="back-btn">
+            }} className="back-btn">
               กลับไปหน้ารวม
             </button>
           </div>
-
         </div>
-      )
-      }
+      )}
     </div >
   );
 }

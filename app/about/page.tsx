@@ -22,6 +22,27 @@ export default function page() {
         '/logo-partners (12).png',
 
     ]
+     const metadata = {
+        title: 'About Us | JIEI (Thailand) Co., Ltd. - Automotive Rubber Parts Manufacturer',
+        description: 'JIEI (Thailand) Co., Ltd. ผู้ผลิตชิ้นส่วนยางรถยนต์คุณภาพสูง มาตรฐาน ISO9001, ISO14001 และ IATF16949 ตั้งอยู่จังหวัดชลบุรี ประเทศไทย',
+        keywords: ['JIEI Thailand', 'ชิ้นส่วนยางรถยนต์', 'Automotive Rubber Parts', 'Manufacturer', 'ISO9001', 'ISO14001', 'IATF16949'],
+        openGraph: {
+            title: 'About Us | JIEI (Thailand) Co., Ltd.',
+            description: 'ผู้ผลิตชิ้นส่วนยางรถยนต์คุณภาพสูง มาตรฐานสากล ตั้งอยู่จังหวัดชลบุรี ประเทศไทย',
+            url: 'https://yourdomain.com/about',
+            siteName: 'JIEI Thailand',
+            images: [
+                {
+                    url: '/JIEI(Thailnad).co.,ltd.jpg',
+                    width: 1200,
+                    height: 630,
+                    alt: 'JIEI Thailand Factory',
+                },
+            ],
+            locale: 'th_TH',
+            type: 'website',
+        },
+    }
     return (
         <div className='about-page'>
             <section className="company-profile">
@@ -94,27 +115,27 @@ export default function page() {
                     </ScrollReveal>
 
                     <ScrollReveal>
-                    <div className="manager-image-box">
-                        <div className="image-manager">
-                            <Image src={'/top-manager.png'} alt='บริษัท เจไออีไอ (ประเทศไทย) จำกัด
+                        <div className="manager-image-box">
+                            <div className="image-manager">
+                                <Image src={'/top-manager.png'} alt='บริษัท เจไออีไอ (ประเทศไทย) จำกัด
                         เป็นผู้ผลิต ชิ้นส่วนยางรถยนต์คุณภาพสูง
                         สำหรับอุตสาหกรรมยานยนต์ในประเทศไทยและต่างประเทศ
                         โรงงานตั้งอยู่ที่จังหวัดชลบุรี พร้อมมาตรฐานสากล' width={1000} height={1000} className='manager-Image' />
-                        </div>
-                        <div className="image-manager">
-                            <Image src={'/top-manager.png'} alt='บริษัท เจไออีไอ (ประเทศไทย) จำกัด
+                            </div>
+                            <div className="image-manager">
+                                <Image src={'/top-manager.png'} alt='บริษัท เจไออีไอ (ประเทศไทย) จำกัด
                         เป็นผู้ผลิต ชิ้นส่วนยางรถยนต์คุณภาพสูง
                         สำหรับอุตสาหกรรมยานยนต์ในประเทศไทยและต่างประเทศ
                         โรงงานตั้งอยู่ที่จังหวัดชลบุรี พร้อมมาตรฐานสากล' width={1000} height={1000} className='manager-Image' />
-                        </div>
+                            </div>
 
-                        <div className="image-manager">
-                            <Image src={'/top-manager.png'} alt='บริษัท เจไออีไอ (ประเทศไทย) จำกัด
+                            <div className="image-manager">
+                                <Image src={'/top-manager.png'} alt='บริษัท เจไออีไอ (ประเทศไทย) จำกัด
                         เป็นผู้ผลิต ชิ้นส่วนยางรถยนต์คุณภาพสูง
                         สำหรับอุตสาหกรรมยานยนต์ในประเทศไทยและต่างประเทศ
                         โรงงานตั้งอยู่ที่จังหวัดชลบุรี พร้อมมาตรฐานสากล' width={1000} height={1000} className='manager-Image' />
+                            </div>
                         </div>
-                    </div>
                     </ScrollReveal>
 
                 </div>

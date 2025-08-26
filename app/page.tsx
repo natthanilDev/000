@@ -129,50 +129,7 @@ export default function Home() {
           </div>
         </div>
 
-        {/* <div className="description-box">
-          <ScrollReveal>
-            <div className="why-choose-us">
-              <h2 className="topic-art">ทำไมต้องเลือกเรา?</h2>
-              <div className="description-why">
-                <p className="description-why1">ไม่ใช่แค่ผู้ผลิต แต่คือพาร์ทเนอร์ที่คุณไว้วางใจได้</p>
-                <p className="description-why2">  ที่ JIEI Thailand เรามีความเชี่ยวชาญมากกว่าทศวรรษ
-                  ด้วยระบบมาตรฐาน ISO9001, ISO14001, IATF16949
-                  เราผลิตชิ้นส่วนยางที่ผ่านการตรวจสอบทุกขั้นตอน
-                  ตอบโจทย์ความแม่นยำ ความทนทาน และความเป็นมิตรต่อสิ่งแวดล้อม
-                  เพราะเรารู้ว่าธุรกิจของคุณต้องการมากกว่าคุณภาพ แต่ต้องการ ความมั่นใจในทุกชิ้นงาน
-                </p>
-              </div>
-            </div>
-          </ScrollReveal>
-
-          <ScrollReveal>
-           
-            <div className="iso-and-iatf">
-              <Link href="" className="Link-iso-and-iatf">
-                <div className="iso9001">
-                  <h3 className="isoText">ISO9001</h3>
-                </div>
-              </Link>
-              <div className="step">
-                <i className="ls bi bi-chevron-right"></i>
-              </div>
-              <Link href="" className="Link-iso-and-iatf">
-                <div className="iso14001">
-                  <h3 className="isoText">ISO14001</h3>
-                </div>
-              </Link>
-              <div className="step">
-                <i className="ls bi bi-chevron-right"></i>
-              </div>
-              <Link href="" className="Link-iso-and-iatf">
-                <div className="iatf16949">
-                  <h3 className="iatfText">IATF16949</h3>
-                </div>
-              </Link>
-            </div>
-          </ScrollReveal>
-
-       
+        <div className="description-box">
           <div className="why-choose-us1">
             <ScrollReveal>
               <h2 className="topic-art1">
@@ -226,7 +183,7 @@ export default function Home() {
             </ScrollReveal>
 
           </div>
-        </div> */}
+        </div>
 
           {/* <div className="image-display">
             // animation image

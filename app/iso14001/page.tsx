@@ -1,53 +1,86 @@
- 'use client';
+'use client';
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import Head from "next/head";
 
 export default function ImageGallery() {
   const [selectedImg, setSelectedImg] = useState<string | null>(null);
 
   const images = [
-    "/iso14001.png",
-    
+    {
+      src: "/iso14001.png",
+      alt: "ISO 14001 Certification - Environmental Management Standard",
+    },
   ];
 
   return (
-    <div className="p-6">
-      <div><h1 className="ISO9001">ISO14001</h1></div>
-      <div className="line" />
-      {/* Gallery */}
-      <div className="image-iso-box flex justify-center align-center">
-        {images.map((src, index) => (
-          <img
-            key={index}
-            src={src}
-            alt={`Gallery ${index}`}
-            className="rounded-lg shadow-md cursor-pointer hover:scale-105 transition-transform duration-300"
-            onClick={() => setSelectedImg(src)}
-          />
-        ))}
-      </div>
+    <>
+      <Head>
+        <title>ISO 14001 Certification | Environmental Management Standards</title>
+        <meta
+          name="description"
+          content="JIEI Thailand is ISO 14001 certified, ensuring international standards in environmental management for sustainable automotive manufacturing."
+        />
+        <meta
+          name="keywords"
+          content="ISO 14001, environmental management, sustainability, JIEI Thailand, automotive manufacturing"
+        />
+        <meta property="og:title" content="ISO 14001 Certification - JIEI Thailand" />
+        <meta
+          property="og:description"
+          content="ISO 14001 Certification demonstrates our commitment to environmental responsibility and sustainable production."
+        />
+        <meta property="og:image" content="/iso14001.png" />
+        <meta property="og:type" content="website" />
+      </Head>
 
-      {/* Modal */}
-      <AnimatePresence>
-        {selectedImg && (
-          <motion.div
-            className="show-image bg-opacity-70"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            onClick={() => setSelectedImg(null)}
-          >
-            <motion.img
-              src={selectedImg}
-              alt="Preview"
-              className="image-iso9001 "
-              initial={{ scale: 0.8, opacity: 0 }}
-              animate={{ scale: 1, opacity: 1 }}
-              exit={{ scale: 0.8, opacity: 0 }}
+      <section className="p-6">
+        <header>
+          <h1 className="ISO9001 text-center text-3xl font-bold">
+            ISO 14001 Certification
+          </h1>
+          <p className="text-center text-xl mt-2">
+            มาตรฐานระบบการจัดการสิ่งแวดล้อมระดับสากล
+          </p>
+        </header>
+
+        <div className="line my-4 mx-auto w-20 border-b-2 border-gray-300" />
+
+        {/* Gallery */}
+        <div className="image-iso-box flex justify-center items-center gap-4 mt-6">
+          {images.map((image, index) => (
+            <img
+              key={index}
+              src={image.src}
+              alt={image.alt}
+              className="rounded-lg shadow-md cursor-pointer hover:scale-105 transition-transform duration-300 w-80"
+              onClick={() => setSelectedImg(image.src)}
             />
-          </motion.div>
-        )}
-      </AnimatePresence>
-    </div>
+          ))}
+        </div>
+
+        {/* Modal */}
+        <AnimatePresence>
+          {selectedImg && (
+            <motion.div
+              className="show-image fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center z-50"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              onClick={() => setSelectedImg(null)}
+            >
+              <motion.img
+                src={selectedImg}
+                alt="ISO 14001 Certificate - JIEI Thailand"
+                className="image-iso9001 max-w-3xl rounded-lg shadow-lg"
+                initial={{ scale: 0.8, opacity: 0 }}
+                animate={{ scale: 1, opacity: 1 }}
+                exit={{ scale: 0.8, opacity: 0 }}
+              />
+            </motion.div>
+          )}
+        </AnimatePresence>
+      </section>
+    </>
   );
 }

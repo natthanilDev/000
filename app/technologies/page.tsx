@@ -2,7 +2,8 @@ import React from 'react'
 import Head from 'next/head'
 import Image from 'next/image'
 import ScrollReveal from '../components/ScrollReveal/ScrollReveal'
-export default function page() {
+
+export default function Page() {
     const topic = [
         'CAD / CATIA',
         'Stress Analysis',
@@ -49,72 +50,71 @@ export default function page() {
         "",
     ]
 
-    // -------------------------------------------------------
+    const Analysis = ['/catiav5.png','/catiav5.png','/catiav5.png','/catiav5.png']
+    const contentAnalysis = ["CAD Drawing","Structural Analysis","Material Simulation","Product Testing"]
 
+    const materials = ['/catiav5.png','/catiav5.png','/catiav5.png','/catiav5.png']
+    const contentMaterials = ["Test Roll","Money Viscosity meter","Tensile strength testing machine","Compressive load analysis and contact stress analysis"]
 
-    const Analysis = [
-        '/catiav5.png',
-        '/catiav5.png',
-        '/catiav5.png',
-        '/catiav5.png',
-    ]
-    const contentAnalysis = [
-        "CAD Drawing",
-        "Structural Analysis",
-        "Material Simulation",
-        "Product Testing",
-    ]
+    const evaluatio = ['/catiav5.png','/catiav5.png','/catiav5.png','/catiav5.png']
+    const contentEvaluatio = ["Load Testing Machine","Surface Pressure Distribution","Surface Pressure Distribution Measurement","Simple Sound Insulation Performance Measurement"]
 
-
-    // -------------------------------------------------------
-
-    const materials = [
-        '/catiav5.png',
-        '/catiav5.png',
-        '/catiav5.png',
-        '/catiav5.png',
-    ]
-    const contentMaterials = [
-        "Test Roll",
-        "Money Viscosity meter",
-        "Tensile strength testing machine",
-        "Compressive load analysis and contact stress analysis"
-
-    ]
-    // ----------------------------------------------------------
-
-    const evaluatio = [
-        '/catiav5.png',
-        '/catiav5.png',
-        '/catiav5.png',
-        '/catiav5.png',
-    ]
-
-    const contentEvaluatio = [
-        "Load Testing Machine",
-        "Surface Pressure Distribution",
-        "Surface Pressure Distribution Measurement",
-        "Simple Sound Insulation Performance Measurement"
-    ]
-
-
+    // SEO Metadata
+    const pageTitle = "Introduction of Development Technology | JIEI Thailand";
+    const pageDescription = "Learn about JIEI Thailand's development technology for automotive rubber parts, including CAD / CATIA design, 3D modeling, engineering analysis, materials development, and functional evaluation.";
 
     return (
         <>
             <Head>
-                <title>Introduction of Development Technology | JIEI Thailand</title>
-                <meta
-                    name="description"
-                    content="Learn about JIEI Thailand's development technology for automotive rubber parts, including CAD / CATIA design, 3D modeling, and engineering analysis."
-                />
+                <title>{pageTitle}</title>
+                <meta name="description" content={pageDescription} />
                 <link rel="canonical" href="https://www.jiei-thai.co.th/development-technology" />
+                <meta name="keywords" content="JIEI Thailand, Development Technology, CAD, CATIA, Automotive Rubber Parts, Materials Development, Functional Evaluation" />
+                <meta name="robots" content="index, follow" />
+
+                {/* Open Graph */}
+                <meta property="og:title" content={pageTitle} />
+                <meta property="og:description" content={pageDescription} />
+                <meta property="og:type" content="website" />
+                <meta property="og:image" content="/catiav5.png" />
+                <meta property="og:url" content="https://www.jiei-thai.co.th/development-technology" />
+                <meta property="og:locale" content="th_TH" />
+
+                {/* Twitter Card */}
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content={pageTitle} />
+                <meta name="twitter:description" content={pageDescription} />
+                <meta name="twitter:image" content="/catiav5.png" />
+
+                {/* JSON-LD Structured Data */}
+                <script
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{
+                        __html: JSON.stringify({
+                            "@context": "https://schema.org",
+                            "@type": "TechArticle",
+                            "headline": pageTitle,
+                            "author": {
+                                "@type": "Organization",
+                                "name": "JIEI Thailand"
+                            },
+                            "publisher": {
+                                "@type": "Organization",
+                                "name": "JIEI Thailand",
+                                "logo": {
+                                    "@type": "ImageObject",
+                                    "url": "/catiav5.png"
+                                }
+                            },
+                            "description": pageDescription,
+                            "mainEntityOfPage": "https://www.jiei-thai.co.th/development-technology"
+                        })
+                    }}
+                />
             </Head>
 
             <div>
                 <div className="tec-box">
-
-
-                    {/* Main Heading */}
                     <div className="introduction-tech-box">
                         <ScrollReveal>
                             <h1 className="introduction-tech">
@@ -132,7 +132,6 @@ export default function page() {
                                 <h2 itemProp="headline" className='topic-technology'>Design & Analysis</h2>
                                 <meta itemProp="author" content="JIEI Thailand" />
                             </div>
-
                             <div className="design-analysis-content-box">
                                 {topic.map((item, index) => (
                                     <div className="design-analysis-content" key={index}>
@@ -146,17 +145,14 @@ export default function page() {
                                         </div>
                                     </div>
                                 ))}
-
                             </div>
                         </ScrollReveal>
 
                         <ScrollReveal>
-
                             <div className="design-analysis-topic">
                                 <h2 itemProp="headline" className='topic-technology'>Materials Development</h2>
                                 <meta itemProp="author" content="JIEI Thailand" />
                             </div>
-
                             <div className="design-analysis-content-box">
                                 {topic1.map((item, index) => (
                                     <div className="design-analysis-content" key={index}>
@@ -170,15 +166,14 @@ export default function page() {
                                         </div>
                                     </div>
                                 ))}
-
                             </div>
                         </ScrollReveal>
+
                         <ScrollReveal>
                             <div className="design-analysis-topic">
                                 <h2 itemProp="headline" className='topic-technology'>Functional Evaluation</h2>
                                 <meta itemProp="author" content="JIEI Thailand" />
                             </div>
-
                             <div className="design-analysis-content-box">
                                 {topic2.map((item, index) => (
                                     <div className="design-analysis-content" key={index}>
@@ -192,12 +187,12 @@ export default function page() {
                                         </div>
                                     </div>
                                 ))}
-
                             </div>
                         </ScrollReveal>
                     </div>
                 </div>
 
+                {/* Sections with Images */}
                 <div className="Design-analysis-box">
                     <ScrollReveal>
                         <div className="Design-analysis-text-box">
@@ -205,28 +200,21 @@ export default function page() {
                         </div>
                         <div className="line" />
                     </ScrollReveal>
-
                     <ScrollReveal>
                         <div className="deformation-jiei">
-
                             {Analysis.map((item, index) => (
                                 <div className="img-text-design" key={index}>
                                     <div className="img-design">
-                                        <Image src={item} alt='' priority width={1000} height={1000}></Image>
+                                        <Image src={item} alt={contentAnalysis[index]} priority width={1000} height={1000} />
                                     </div>
                                     <div className="text-img-box">
                                         <h3 className='text-img'>{contentAnalysis[index]}</h3>
                                     </div>
                                 </div>
                             ))}
-
-
-
                         </div>
                     </ScrollReveal>
-                </div >
-
-
+                </div>
 
                 <ScrollReveal>
                     <div className="Design-analysis-box">
@@ -234,13 +222,11 @@ export default function page() {
                             <h1 className='Design-analysis-text'>Materials Development</h1>
                         </div>
                         <div className="line" />
-
                         <div className="deformation-jiei">
-
                             {materials.map((item, index) => (
                                 <div className="img-text-design" key={index}>
                                     <div className="img-design">
-                                        <Image src={item} alt='' priority width={1000} height={1000}></Image>
+                                        <Image src={item} alt={contentMaterials[index]} priority width={1000} height={1000} />
                                     </div>
                                     <div className="text-img-box">
                                         <h3 className='text-img'>{contentMaterials[index]}</h3>
@@ -251,20 +237,17 @@ export default function page() {
                     </div>
                 </ScrollReveal>
 
-
                 <ScrollReveal>
                     <div className="Design-analysis-box">
                         <div className="Design-analysis-text-box">
-                            <h1 className='Design-analysis-text'>Functional Evaluatio</h1>
+                            <h1 className='Design-analysis-text'>Functional Evaluation</h1>
                         </div>
                         <div className="line" />
-
                         <div className="deformation-jiei">
-
                             {evaluatio.map((item, index) => (
                                 <div className="img-text-design" key={index}>
                                     <div className="img-design">
-                                        <Image src={item} alt='' priority width={1000} height={1000}></Image>
+                                        <Image src={item} alt={contentEvaluatio[index]} priority width={1000} height={1000} />
                                     </div>
                                     <div className="text-img-box">
                                         <h3 className='text-img'>{contentEvaluatio[index]}</h3>
@@ -273,10 +256,8 @@ export default function page() {
                             ))}
                         </div>
                     </div>
-
                 </ScrollReveal>
-
-            </div >
+            </div>
         </>
     )
 }
