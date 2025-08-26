@@ -41,16 +41,16 @@ export default function Footer() {
           <div className="contentFooter-box">
             <ul>
               <li className='li-footer'>
-                <Link href={'/products/engine-mounts'} className="link-footer">Engine Mounts</Link>
+                <Link href={'/products/engine-mount'} className="link-footer">Engine Mounts</Link>
               </li>
               <li className='li-footer'>
-                <Link href={'/products/suspension-bushings'} className="link-footer">Suspension Bushings</Link>
+                <Link href={'/products/suspension-bush'} className="link-footer">Suspension Bushings</Link>
               </li>
               <li className='li-footer'>
-                <Link href={'/products/seals-gaskets'} className="link-footer">Seals &amp; Gaskets</Link>
+                <Link href={'/products/seals'} className="link-footer">Seals &amp; Gaskets</Link>
               </li>
               <li className='li-footer'>
-                <Link href={'/products/custom-rubber-parts'} className="link-footer">Custom Rubber Parts</Link>
+                <Link href={'/products/custom-parts'} className="link-footer">Custom Rubber Parts</Link>
               </li>
             </ul>
           </div>
@@ -65,7 +65,7 @@ export default function Footer() {
             <div className="contentFooter-box">
               <ul>
                 <li className='li-footer'>
-                  <Link href={'/company-profile'} className="link-footer">Company Profile</Link>
+                  <Link href={'/about'} className="link-footer">Company Profile</Link>
                 </li>
               </ul>
             </div>
@@ -96,7 +96,7 @@ export default function Footer() {
                 <Link href={'/news'} className="link-footer">News</Link>
               </li>
               <li className='li-footer'>
-                <Link href={'/blog'} className="link-footer">Blog</Link>
+                <Link href={'/news'} className="link-footer">Blog</Link>
               </li>
             </ul>
           </div>
