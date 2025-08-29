@@ -56,13 +56,13 @@ export default function Nav() {
       setScrolled(window.scrollY > 50);
 
     };
-    console.log(localStorage.getItem('lang') as 'th' | 'en' | 'jp' | null)
+    localStorage.getItem('lang') as 'th' | 'en' | 'jp' | null
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
 
-
+  
 
 
 
@@ -86,7 +86,7 @@ export default function Nav() {
               </label>
               <input type="checkbox" className="icon-menu-show" id="icon-menu-show" />
               <ul id="main-navigation" className="ul-navigation">
-                <li className={` li-menu ${Path === '/' ? 'path' : ''}`}>
+                <li className={` li-menu ${Path === '/'  || Path === "/iso9001" || Path === "/iso14001" || Path === "/iatf16949" ? 'path' : ''}`} >
                   <Link href="/" className="nav-link" title="JIEI Thailand Homepage - Automotive Rubber Parts Manufacturer">
                     {langu === 'jp' ? "ホーム" : "Home"}
                   </Link>
@@ -109,7 +109,7 @@ export default function Nav() {
 
                     <div className="product-jiei-thai">
                       <ul className="ul-product">
-                        <li className={`li-product ${Path === '/products/engine-mount' ? 'path' : ''}`} >
+                        <li className={`li-product ${Path === '/products/engine-mount' ? 'path' : ''}`} onClick={()=>window.location.reload()}>
                           <Link
                             href="/products/engine-mount"
                             className="Link-product-class"

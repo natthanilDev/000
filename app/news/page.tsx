@@ -18,16 +18,7 @@ export default function Page() {
     '=-=',
     'JIEI เปิดไลน์การผลิตใหม่ IT ไลน์',
     '=-=',
-    'JIEI เปิดไลน์การผลิตใหม่ IT ไลน์',
-    '=-=',
-    'JIEI เปิดไลน์การผลิตใหม่ IT ไลน์',
-    '=-=',
-    'JIEI เปิดไลน์การผลิตใหม่ IT ไลน์',
-    '=-=',
-    'JIEI เปิดไลน์การผลิตใหม่ IT ไลน์',
-    '=-=',
-    'JIEI เปิดไลน์การผลิตใหม่ IT ไลน์',
-    '=-=',
+    
   ];
 
   const img = Array(14).fill('/JIEI(Thailnad).co.,ltd.jpg');
@@ -37,17 +28,17 @@ export default function Page() {
     'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam quibusdam est sapiente quas veritatis at incidunt harum ipsam dignissimos doloribus? Asperiores molestias quasi, excepturi blanditiis cum corrupti reiciendis alias repellendus. 002',
     'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam quibusdam est sapiente quas veritatis at incidunt harum ipsam dignissimos doloribus? Asperiores molestias quasi, excepturi blanditiis cum corrupti reiciendis alias repellendus. 001',
     'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam quibusdam est sapiente quas veritatis at incidunt harum ipsam dignissimos doloribus? Asperiores molestias quasi, excepturi blanditiis cum corrupti reiciendis alias repellendus. 002',
-    'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam quibusdam est sapiente quas veritatis at incidunt harum ipsam dignissimos doloribus? Asperiores molestias quasi, excepturi blanditiis cum corrupti reiciendis alias repellendus. 001',
-    'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam quibusdam est sapiente quas veritatis at incidunt harum ipsam dignissimos doloribus? Asperiores molestias quasi, excepturi blanditiis cum corrupti reiciendis alias repellendus. 002',
-    'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam quibusdam est sapiente quas veritatis at incidunt harum ipsam dignissimos doloribus? Asperiores molestias quasi, excepturi blanditiis cum corrupti reiciendis alias repellendus. 001',
-    'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam quibusdam est sapiente quas veritatis at incidunt harum ipsam dignissimos doloribus? Asperiores molestias quasi, excepturi blanditiis cum corrupti reiciendis alias repellendus. 002',
-    'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam quibusdam est sapiente quas veritatis at incidunt harum ipsam dignissimos doloribus? Asperiores molestias quasi, excepturi blanditiis cum corrupti reiciendis alias repellendus. 001',
-    'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam quibusdam est sapiente quas veritatis at incidunt harum ipsam dignissimos doloribus? Asperiores molestias quasi, excepturi blanditiis cum corrupti reiciendis alias repellendus. 002',
-    'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam quibusdam est sapiente quas veritatis at incidunt harum ipsam dignissimos doloribus? Asperiores molestias quasi, excepturi blanditiis cum corrupti reiciendis alias repellendus. 001',
-    'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam quibusdam est sapiente quas veritatis at incidunt harum ipsam dignissimos doloribus? Asperiores molestias quasi, excepturi blanditiis cum corrupti reiciendis alias repellendus. 002',
-    'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam quibusdam est sapiente quas veritatis at incidunt harum ipsam dignissimos doloribus? Asperiores molestias quasi, excepturi blanditiis cum corrupti reiciendis alias repellendus. 001',
-    '0000005 ipsum dolor sit, amet consectetur adipisicing elit. Totam quibusdam est sapiente quas veritatis at incidunt harum ipsam dignissimos doloribus? Asperiores molestias quasi, excepturi blanditiis cum corrupti reiciendis alias repellendus. 002',
   ];
+
+  const [lang, setLang] = useState<'th' | 'en' | 'jp'>('th');
+
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const storedLang = localStorage.getItem('lang') as 'th' | 'en' | 'jp' | null;
+      if (storedLang) setLang(storedLang);
+    }
+  }, []);
 
   const start = (currentPage - 1) * perPage;
   const end = start + perPage;
@@ -58,11 +49,11 @@ export default function Page() {
     window.scrollTo({ top: 0, behavior: 'smooth' })
   }, [searchParams])
 
-  const pageTitle = selectedNews === null 
-    ? "News & Blog | JIEI Thailand" 
+  const pageTitle = selectedNews === null
+    ? "News & Blog | JIEI Thailand"
     : `${news[selectedNews]} | JIEI Thailand`;
-  const pageDescription = selectedNews === null 
-    ? "อ่านข่าวสารล่าสุดและบล็อกเกี่ยวกับการผลิตยางรถยนต์และกิจกรรมต่างๆ ของ JIEI Thailand." 
+  const pageDescription = selectedNews === null
+    ? "อ่านข่าวสารล่าสุดและบล็อกเกี่ยวกับการผลิตยางรถยนต์และกิจกรรมต่างๆ ของ JIEI Thailand."
     : content[selectedNews].slice(0, 160);
 
   return (
@@ -117,7 +108,7 @@ export default function Page() {
 
       {selectedNews === null ? (
         <>
-          <h1 className='title-news'>News | Blog</h1>
+          <h1 className='title-news'>{lang === "th" ? "ข่าวสาร | บล็อก" : lang === "en" ? "News | Blog" :"ニュース | ブログ"}  </h1>
           <div className="line"></div>
 
           <div className="container-card">
@@ -146,7 +137,8 @@ export default function Page() {
                       setSelectedNews(start + index)
                       window.scrollTo({ top: 0, behavior: 'smooth' })
                     }} >
-                    อ่านเพิ่มเติม
+                      {lang === 'th' ? "อ่านเพิ่มเติม" : lang === "en" ? "Read More" : "続きを読む"}
+                      
                   </button>
                 </div>
               </div>
@@ -177,7 +169,7 @@ export default function Page() {
             alt={`News image: ${news[selectedNews]}`}
             className="image-news-page"
           />
-          <h2 className='news-blog'>ข่าวที่เลือก {news[selectedNews]}</h2>
+          <h2 className='news-blog'>{lang === "th" ? "ข่าวที่เลือก" : lang === "en" ? "Selected News" : "選択したニュース"}   {news[selectedNews]}</h2>
           <p className='content-box-page'>{content[selectedNews]}</p>
 
           <div className="btn-back-newsPage">

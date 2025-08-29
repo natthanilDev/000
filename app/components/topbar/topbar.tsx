@@ -12,8 +12,8 @@ export default function topbar() {
                         <Image
                             src="/jiei-thailand-logo.png"
                             alt="JIEI Thailand Logo - Leading Automotive Rubber Parts Manufacturer in Thailand"
-                            width={120}
-                            height={10}
+                            width={1000}
+                            height={1000}
                             priority
                             className='image-logo'
                         />
