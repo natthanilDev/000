@@ -42,11 +42,12 @@ export default function Nav() {
 
       // router.push(`/jp${path === '/' ? '' : path.replace(/^\/(en|jp)/, '')}`);
     }
-
+   
 
     setLangu(selected)
 
   }
+ 
   useEffect(() => {
     if (typeof window !== 'undefined') {
       const storedLang = localStorage.getItem('lang') as 'th' | 'en' | 'jp' | null;
@@ -56,11 +57,11 @@ export default function Nav() {
       setScrolled(window.scrollY > 50);
 
     };
+    
     localStorage.getItem('lang') as 'th' | 'en' | 'jp' | null
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-
 
   
 
@@ -109,7 +110,7 @@ export default function Nav() {
 
                     <div className="product-jiei-thai">
                       <ul className="ul-product">
-                        <li className={`li-product ${Path === '/products/engine-mount' ? 'path' : ''}`} onClick={()=>window.location.reload()}>
+                        <li className={`li-product ${Path === '/products/engine-mount' ? 'path' : ''}`} >
                           <Link
                             href="/products/engine-mount"
                             className="Link-product-class"

@@ -76,7 +76,7 @@ a:hover {
   padding: 0 5px;
 }
 
-/* ซ่อน label สำหรับ screen reader เท่านั้น */
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -89,16 +89,15 @@ a:hover {
   border: 0;
 }
 
-/* กล่อง select ครอบด้วย wrapper เพื่อทำลูกศร custom */
+
 .lang-select {
   position: relative;
   display: inline-block;
 }
 
-/* สไตล์ของ select */
+
 .lang-select select {
   appearance: none;
-  /* ซ่อนลูกศร default (Chrome/Safari/Edge) */
   -moz-appearance: none;
   /* Firefox */
   -webkit-appearance: none;
@@ -117,7 +116,6 @@ a:hover {
   transition: box-shadow .2s, border-color .2s, background-color .2s;
 }
 
-/* โฮเวอร์/โฟกัส */
 .lang-select select:hover {
   border-color: #9ca3af;
   /* gray-400 */
@@ -130,7 +128,6 @@ a:hover {
   box-shadow: 0 0 0 4px rgba(99, 102, 241, .15);
 }
 
-/* ลูกศรท้าย select (custom arrow) */
 .lang-select::after {
   content: "";
   position: absolute;
@@ -146,7 +143,7 @@ a:hover {
   /* gray-500 */
 }
 
-/* โหมดมืด (ถ้าใช้) */
+
 @media (prefers-color-scheme: dark) {
   .lang-select select {
     background: #111827;
@@ -168,19 +165,17 @@ a:hover {
   }
 }
 
-/* ขนาดเล็ก (เช่นใน navbar) */
 .lang-select--sm select {
   padding: 8px 36px 8px 10px;
   font-size: 13px;
   border-radius: 8px;
 }
 
-/* ถ้าอยากให้มีขอบโค้งมาก/เงา */
 .lang-select.select-elevated select {
   box-shadow: 0 4px 18px rgba(0, 0, 0, .06);
 }
 
-/* รองรับ Firefox ที่บางทียังแสดงลูกศรอยู่ */
+
 .lang-select select::-ms-expand {
   display: none;
 }
@@ -303,12 +298,7 @@ a:hover {
 
 }
 
-/* .hover-for-show-product:hover .product-jiei-thai {
-  top: 55px;
-  opacity: 0.9;
-  max-width: 100%;
 
-} */
 .dropdown-menu:checked~.product-jiei-thai {
   top: 75px;
   opacity: 1;
@@ -463,66 +453,6 @@ a:hover {
 /* --------------------------------------------------------------HOMEPAGE */
 
 
-/* .intro-page {
-  background-color: url("../public/JIEI-New-Factory-scaled.jpg");
-  height: 100vh;
-
-  margin-bottom: 100px;
-  border: 2px solid #000;
-
-} */
-
-
-/* .intro-HomePage {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  overflow: hidden;
-  gap: 30px;
-  height: auto;
-
-} */
-
-/* .display-productList {
-  display: flex;
-} */
-
-/* .show-Product {
-  position: relative;
-  overflow: hidden;
-  height: 50px;
-}
-
-.product-name-HomePage {
-  display: block;
-  height: auto;
-  font-weight: 500;
-  padding-left: 10px;
-  letter-spacing: 1px;
-  overflow: hidden;
-  animation: s 5s infinite ease-in-out;
-  font-size: 40px;
-}
-
-@keyframes s {
-  0% {
-    transform: translateY(30%);
-  }
-
-  33% {
-    transform: translateY(-95%);
-  }
-
-  66% {
-    transform: translateY(-215%);
-  }
-
-  100% {
-    transform: translateY(-330%);
-  }
-
-} */
-
-
 :root {
   --background: #F7F9FB;
   --font-color: #1C2530;
@@ -547,6 +477,32 @@ a:hover {
   flex-direction: column;
   gap: 60px;
   padding: 50px 100px;
+
+}
+
+.background-video-box {
+  background-image: url('/background-video.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 100px;
+  width: 100%;
+
+}
+
+.video-intro-product {
+  width: 70%;
+  margin: 0 auto;
+  border-radius: 10px;
+  border: 7px solid #eeeeee;
+
+}
+
+.video-text {
+  color: #ffff;
+  padding-bottom: 30px;
+  font-weight: bold;
+  text-align: center;
 
 }
 
@@ -592,15 +548,14 @@ a:hover {
   font-size: var(--title-font);
   text-decoration: none;
   color: var(--background);
-  box-shadow: 0 0 2px #1C2530;
   padding: 20px 30px;
   border-radius: 6px;
-  background-color: #0B0F14;
+  background-color: #00197b;
   transition: ease all .5s;
 }
 
 .btn_link:hover {
-  background-color: #1C2530;
+  background-color: #0011cb;
 }
 
 .btn-link {
@@ -699,12 +654,23 @@ a:hover {
 
 }
 
+@media screen and (max-width : 1440px) {
+  .partner-text {
+    font-size: 30px;
+  }
+}
+
 @media screen and (max-width : 1024px) {
   .why-choose-we {
     grid-template-columns: 1fr;
     margin-bottom: 100px;
 
   }
+
+  .video-intro-product {
+    width: 100%;
+  }
+
 
   .why-choose-image {
     display: none;
@@ -767,10 +733,17 @@ a:hover {
   .btn_link {
     width: 500px;
     background: none;
-    padding: 10px 0;
-
+    padding: 10px 20px;
+    background-color: #00197b;
+    width: 90%;
 
   }
+
+  .background-video-box {
+    width: 100%;
+
+  }
+
 
   .btn-link {
     width: 200px;
@@ -780,6 +753,10 @@ a:hover {
 
   .btn-link:hover {
     background-color: #1C2530;
+  }
+
+  .partner-text {
+    font-size: 20px;
   }
 }
 
@@ -864,6 +841,46 @@ a:hover {
 
 }
 
+.partner-homepage {
+  padding: 50px 0 20px 0;
+}
+
+.partner-text {
+  text-align: center;
+  font-weight: bold;
+}
+
+.image-logo-partner-homepage {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 50px 0;
+
+}
+
+.image-partner-homepage {
+  width: 90%;
+  margin: 0 auto;
+  /* filter: grayscale(100%); */
+
+  transition: all ease 0.1s;
+  animation: display_logo_company 1s infinite alternate;
+
+  &:hover {
+    transform: scale(1.1);
+    filter: grayscale(0%);
+  }
+}
+
+@keyframes display_logo_company {
+  0% {
+    transform: scale(1.05);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
 @media screen and (max-width : 1871px) {
 
   .our-Product-categories,
@@ -906,6 +923,9 @@ a:hover {
     font-weight: bold;
   }
 
+
+
+
   @keyframes s {
     0% {
       transform: translateY(23%);
@@ -938,14 +958,18 @@ a:hover {
     padding: 5px 0 0 10px;
 
   }
-
-
 }
 
 @media screen and (max-width : 1024px) {
 
   .intro-HomePage {
     grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width : 768px) {
+  .image-logo-partner-homepage {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
@@ -964,6 +988,10 @@ a:hover {
   .our-Product-categories,
   .category-link {
     font-size: 25px;
+  }
+
+  .image-logo-partner-homepage {
+    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -1037,7 +1065,7 @@ a:hover {
 }
 
 .description-box {
-  margin-top: 50px;
+  margin-top: -5px;
   /* background-image: url("/background.png"); */
 
 }
@@ -1415,13 +1443,16 @@ a:hover {
   0% {
     background-image: url('/jiei-office.jpg');
   }
-  30%{
+
+  30% {
     background-image: url('/JIEI(Thailnad).co.,ltd.jpg');
   }
-  60%{
+
+  60% {
     background-image: url('/JIEI-New-Factory-scaled.jpg');
   }
-  100%{
+
+  100% {
     background-image: url('/lobby.jpg');
   }
 
@@ -1628,7 +1659,7 @@ h4 {
     display: flex;
     margin: 0 auto;
     position: relative;
-    animation: sped1 10s 0s infinite linear normal both;
+    animation: sped1 10s 0s infinite linear normal alternate;
 
 
   }
@@ -1637,7 +1668,7 @@ h4 {
     display: flex;
     margin: 0 auto;
     position: relative;
-    animation: sped 10s 0s infinite linear normal both;
+    animation: sped 10s 0s infinite linear normal alternate;
   }
 
   @keyframes sped {

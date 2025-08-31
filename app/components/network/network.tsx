@@ -1,5 +1,5 @@
 'use client'
-import { useEffect , useState } from "react"
+import { useEffect, useState } from "react"
 import Link from "next/link"
 import ScrollReveal from "../ScrollReveal/ScrollReveal"
 import Head from "next/head"
@@ -129,14 +129,14 @@ export default function network() {
 
 
     const [lang, setLang] = useState<'th' | 'en' | 'jp'>('th');
-        
-        
-          useEffect(() => {
-            if (typeof window !== 'undefined') {
-              const storedLang = localStorage.getItem('lang') as 'th' | 'en' | 'jp' | null;
-              if (storedLang) setLang(storedLang);
-            }
-          }, []);
+
+
+    useEffect(() => {
+        if (typeof window !== 'undefined') {
+            const storedLang = localStorage.getItem('lang') as 'th' | 'en' | 'jp' | null;
+            if (storedLang) setLang(storedLang);
+        }
+    }, []);
     return (
         <>
             <Head>
@@ -260,6 +260,10 @@ export default function network() {
                         </ScrollReveal>
                     </div>
                 </div>
+
+
+
+
             </div>
         </>
     )
