@@ -7,7 +7,7 @@ export default function Nav() {
   const [scrolled, setScrolled] = useState(false);
   const Path = usePathname()
   const [langu, setLangu] = useState('')
-  const [menu ,setMenu] = useState(false)
+  const [menu, setMenu] = useState(false)
 
 
   const [lang, setLang] = useState<'th' | 'en' | 'jp'>(() => {
@@ -22,32 +22,28 @@ export default function Nav() {
     setLang(selected)
 
     localStorage.setItem('lang', selected);
-    // เปลี่ยนเส้นทางตามภาษา (ตัวอย่าง)
     if (selected === 'th') {
       setLangu('th')
       window.location.reload()
-      // router.push(path.replace(/^\/(en|jp)/, '') || '/');
     }
 
     if (selected === 'en') {
       setLangu('en')
       window.location.reload()
 
-      // router.push(`/en${path === '/' ? '' : path.replace(/^\/(en|jp)/, '')}`);
     }
 
     if (selected === 'jp') {
       setLangu('jp')
       window.location.reload()
 
-      // router.push(`/jp${path === '/' ? '' : path.replace(/^\/(en|jp)/, '')}`);
     }
-   
+
 
     setLangu(selected)
 
   }
- 
+
   useEffect(() => {
     if (typeof window !== 'undefined') {
       const storedLang = localStorage.getItem('lang') as 'th' | 'en' | 'jp' | null;
@@ -57,17 +53,18 @@ export default function Nav() {
       setScrolled(window.scrollY > 50);
 
     };
-    
+
     localStorage.getItem('lang') as 'th' | 'en' | 'jp' | null
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  
+
 
 
 
   return (
+
     <header
       className={`header ${scrolled ? "scrolled" : ""}`}
       role="banner"
@@ -76,9 +73,9 @@ export default function Nav() {
 
       <nav className="navbar" role="navigation" aria-label="Main Navigation">
         <div className="container-box">
-          <div className="nav-link-box">
+          <div className="nav-link-box" >
             <div className="icon-menu">
-              <label onClick={()=> setMenu(!menu)} htmlFor="icon-menu-show"
+              <label onClick={() => setMenu(!menu)} htmlFor="icon-menu-show"
                 aria-label="Toggle navigation menu"
                 aria-expanded="false"
                 aria-controls="main-navigation"
@@ -86,8 +83,8 @@ export default function Nav() {
                 <i className={menu === true ? "bi bi-x" : "bi bi-list"}></i>
               </label>
               <input type="checkbox" className="icon-menu-show" id="icon-menu-show" />
-              <ul id="main-navigation" className="ul-navigation">
-                <li className={` li-menu ${Path === '/'  || Path === "/iso9001" || Path === "/iso14001" || Path === "/iatf16949" ? 'path' : ''}`} >
+              <ul id="main-navigation" className={`ul-navigation`}>
+                <li className={`li-menu ${Path === '/' || Path === "/iso9001" || Path === "/iso14001" || Path === "/iatf16949" ? 'path' : ''}`} >
                   <Link href="/" className="nav-link" title="JIEI Thailand Homepage - Automotive Rubber Parts Manufacturer">
                     {langu === 'jp' ? "ホーム" : "Home"}
                   </Link>
@@ -155,19 +152,16 @@ export default function Nav() {
                 </li>
 
                 {/* ✅ Other Pages */}
-                <li className={` li-menu ${Path === '/about' ? 'path' : ''}`}>
+                <li className={`li-menu ${Path === '/about' ? 'path' : ''}`}>
                   <Link
                     href="/about"
                     className="nav-link"
-                    title="About JIEI Thailand - Rubber Parts Manufacturer"
-                  >
+                    title="About JIEI Thailand - Rubber Parts Manufacturer">
                     {langu === 'jp' ? "会社概要" : "About Us"}
-
-
                   </Link>
                 </li>
 
-                <li className={` li-menu ${Path === '/activities' ? 'path' : ''}`}>
+                <li className={`li-menu ${Path === '/activities' ? 'path' : ''}`}>
                   <Link
                     href="/activities"
                     className="nav-link"
@@ -179,7 +173,7 @@ export default function Nav() {
 
                   </Link>
 
-                  
+
                 </li>
                 <li className={`li-menu ${Path === '/technologies' ? 'path' : ''}`}>
                   <Link href="/technologies" className="nav-link" title="JIEI Thailand Homepage - Automotive Rubber Parts Manufacturer">
@@ -196,7 +190,7 @@ export default function Nav() {
                   </Link>
                 </li>
 
-                <li className={` li-menu ${Path === '/news' ? 'path' : ''}`}>
+                <li className={`li-menu ${Path === '/news' ? 'path' : ''}`}>
                   <Link
                     href="/news"
                     className="nav-link"
@@ -233,6 +227,7 @@ export default function Nav() {
           </div>
         </div>
       </nav>
+
 
       {/* ✅ Structured Data for SEO */}
       <script
@@ -292,5 +287,6 @@ export default function Nav() {
         }}
       />
     </header>
+
   )
 }

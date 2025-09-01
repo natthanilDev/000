@@ -191,9 +191,7 @@ a:hover {
   width: 100%;
   transition: all ease 0.3s;
   z-index: 9999;
-  background: transparent;
-  -webkit-backdrop-filter: blur(5px);
-  backdrop-filter: blur(5px);
+  background: #ffffff;
 }
 
 .scrolled {
@@ -228,7 +226,6 @@ a:hover {
   padding: 0 20px;
   align-items: center;
 
-
 }
 
 .nav-link {
@@ -242,7 +239,10 @@ a:hover {
   align-items: center;
   width: 100%;
   padding-top: 20px;
+
 }
+
+
 
 .li-menu {
   font-size: 14px;
@@ -297,7 +297,6 @@ a:hover {
   max-width: 100%;
 
 }
-
 
 .dropdown-menu:checked~.product-jiei-thai {
   top: 75px;
@@ -480,30 +479,34 @@ a:hover {
 
 }
 
+
 .background-video-box {
-  background-image: url('/background-video.png');
-  background-position: center;
-  background-size: cover;
+  background-image: url('/bcvdo.png');
   background-repeat: no-repeat;
-  padding: 100px;
-  width: 100%;
+  background-size: cover;
+  background-position: center;
 
 }
 
-.video-intro-product {
-  width: 70%;
+.box-bc {
+  width: 80%;
   margin: 0 auto;
-  border-radius: 10px;
-  border: 7px solid #eeeeee;
+  padding-bottom: 100px;
 
 }
 
 .video-text {
   color: #ffff;
-  padding-bottom: 30px;
+  padding: 100px;
   font-weight: bold;
   text-align: center;
+  font-size: 50px;
+}
 
+
+.video-car {
+  border-radius: 10px;
+  border: 10px solid #fff;
 }
 
 .border-display {
@@ -544,18 +547,18 @@ a:hover {
 }
 
 .btn_link {
-
   font-size: var(--title-font);
   text-decoration: none;
   color: var(--background);
   padding: 20px 30px;
   border-radius: 6px;
-  background-color: #00197b;
+  background: linear-gradient(45deg, #002bd7, #00135d);
   transition: ease all .5s;
 }
 
 .btn_link:hover {
-  background-color: #0011cb;
+    background: linear-gradient(360deg, #002bd7, #00135d);
+
 }
 
 .btn-link {
@@ -594,8 +597,6 @@ a:hover {
 .why-choose-we {
   display: grid;
   grid-template-columns: 1fr 1fr;
-
-
 }
 
 .whyText-box {
@@ -607,8 +608,8 @@ a:hover {
 .why-text {
   font-size: 50px;
   font-weight: bold;
-  padding-top: 100px;
-
+  border-bottom: 5px solid #00135d;
+  padding: 100px 0 20px 0;
 }
 
 .why-choose-content {
@@ -638,12 +639,11 @@ a:hover {
 }
 
 .image-iso {
-  width: 60%;
+  width: 70%;
   height: auto;
   margin: 0 auto;
-  padding-bottom: 200px;
-  border-radius: 0 0 30% 30%;
-
+  padding-bottom: 0;
+  /* border-radius: 0 0 30% 30%; */
 }
 
 .isoiatf {
@@ -667,9 +667,7 @@ a:hover {
 
   }
 
-  .video-intro-product {
-    width: 100%;
-  }
+  /* mama */
 
 
   .why-choose-image {
@@ -719,6 +717,20 @@ a:hover {
     gap: 100px;
 
   }
+
+  .box-bc {
+    width: 90%;
+  }
+
+  .video-text {
+    font-size: 40px;
+    padding: 100px 0;
+  }
+
+  .video-car {
+    border: 6px solid #fff;
+
+  }
 }
 
 @media screen and (max-width:426px) {
@@ -727,7 +739,11 @@ a:hover {
     gap: 50px;
     flex-direction: column;
     align-items: start;
+  }
 
+  .video-text {
+    font-size: 20px;
+    padding: 100px 0 20px 0;
   }
 
   .btn_link {
@@ -736,11 +752,6 @@ a:hover {
     padding: 10px 20px;
     background-color: #00197b;
     width: 90%;
-
-  }
-
-  .background-video-box {
-    width: 100%;
 
   }
 

@@ -48,8 +48,6 @@ export default function Home() {
 
                 {/* Hreflang สำหรับหลายภาษา */}
                 <link rel="alternate" href="https://www.jiei-thai.co.th/" hrefLang="th" />
-                <link rel="alternate" href="https://www.jiei-thai.co.th/en" hrefLang="en" />
-                <link rel="alternate" href="https://www.jiei-thai.co.th/jp" hrefLang="ja" />
                 <link rel="alternate" href="https://www.jiei-thai.co.th/" hrefLang="x-default" />
 
                 {/* Open Graph */}
@@ -68,6 +66,8 @@ export default function Home() {
 
                 {/* Preload Video for Performance */}
                 <link rel="preload" as="video" href="/intro.mp4" type="video/mp4" />
+                <link rel="preload" as="video" href="/background-video.mp4" type="video/mp4" />
+
             </Head>
 
             <div className="background">
@@ -78,18 +78,11 @@ export default function Home() {
                         muted
                         loop
                         playsInline
-                    >
+                        poster='/JIEI-New-Factory-scaled.jpg'>
                         <source src="/intro.mp4" type="video/mp4" />
                         เบราว์เซอร์ไม่รองรับวิดีโอ
                     </video>
-                    <noscript>
-                        <Image
-                            src="/JIEI-New-Factory-scaled.jpg"
-                            alt="JIEI Thailand Factory"
-                            fill
-                            priority
-                        />
-                    </noscript>
+
                     <ScrollReveal>
                         <div className="container-Display">
                             <div className="border-display">
@@ -117,14 +110,14 @@ export default function Home() {
                                             ? "เกี่ยวกับเรา"
                                             : lang === "en"
                                                 ? "About Us"
-                                                : "会社概要 (かいしゃ がいよう)"}
+                                                : "会社概要"}
                                     </Link>
                                     <Link href="/" className="btn_link">
                                         {lang === 'th'
                                             ? "สินค้า"
                                             : lang === "en"
                                                 ? "Product"
-                                                : "製品 (せいひん)"}
+                                                : "製品"}
                                     </Link>
                                 </div>
                             </div>
@@ -140,6 +133,8 @@ export default function Home() {
                             <div className="whyText-box">
                                 <h1 className='why-text'>{lang === 'en' ? 'Why Choose Us?' : lang === 'th' ? "ทำไมต้องเลือกเรา?" : "なぜ私たちを選ぶのか？"}  </h1>
                             </div>
+                            
+
                             <div className="why-choose-content">
                                 <p className='p-text-why'>{lang === "th" ? "ไม่ใช่แค่ผู้ผลิต แต่คือพาร์ทเนอร์ที่คุณไว้วางใจได้" : lang === "en" ? "Not just a manufacturer, but a partner you can trust." : "単なるメーカーではなく、信頼できるパートナーです。"}</p>
                                 <p>{lang === 'th' ? "ที่ JIEI Thailand เรามีความเชี่ยวชาญมากกว่าทศวรรษ  ด้วยระบบมาตรฐาน ISO9001, ISO14001, IATF16949 เราผลิตชิ้นส่วนยางที่ผ่านการตรวจสอบทุกขั้นตอน ตอบโจทย์ความแม่นยำ ความทนทาน และความเป็นมิตรต่อสิ่งแวดล้อม เพราะเรารู้ว่าธุรกิจของคุณต้องการมากกว่าคุณภาพ แต่ต้องการ ความมั่นใจในทุกชิ้นงาน" : lang === "en" ? "At JIEI Thailand, we have over a decade of expertise, certified with ISO 9001, ISO 14001, and IATF 16949. We manufacture rubber parts inspected at every stage, ensuring precision, durability, and environmental friendliness. Because we know your business needs more than just quality—it needs confidence in every product." : "JIEI Thailandでは、ISO9001、ISO14001、IATF16949の認証を取得し、10年以上の専門知識を有しています。当社は、すべての工程で検査を行ったゴム部品を製造し、精度、耐久性、環境への配慮を確保しています。 お客様のビジネスに必要なのは単なる品質だけでなく、すべての製品に対する信頼です。"}</p>
@@ -153,36 +148,33 @@ export default function Home() {
                     </ScrollReveal>
 
                     <div className="why-choose-image">
-                        <Image src={'/iso-iatf.png'} className='image-iso' alt='โรงงานผลิตชิ้นส่วนยางรถยนต์มาตรฐานสากล ISO & IATF16949 ที่ชลบุรี ประเทศไทย"' width={1000} height={1000} priority />
+
+                        <Image src={'/iso_iatf.png'} className='image-iso' alt='โรงงานผลิตชิ้นส่วนยางรถยนต์มาตรฐานสากล ISO & IATF16949 ที่ชลบุรี ประเทศไทย"' width={1000} height={1000} priority />
                     </div>
                 </div>
 
                 <div className="background-video-box">
-                    <ScrollReveal>
-                        <h1 className='video-text'>
-                            {lang === "th" ? "มั่นใจทุกการขับขี่" : lang === "en" ? "Confidence in Every Drive" : "すべてのドライブで自信を"}
-                        </h1>
-                    </ScrollReveal>
-                    <video
-                        className="video-intro-product"
-                        autoPlay
-                        muted
-                        loop
-                        playsInline
-                    >
-                        <source src="/background-video.mp4" type="video/mp4" />
-                        เบราว์เซอร์ไม่รองรับวิดีโอ
-                    </video>
-                    <noscript>
-                        <Image
-                            src="/JIEI-New-Factory-scaled.jpg"
-                            alt="JIEI Thailand Factory"
-                            fill
-                            priority
-                        />
-                    </noscript>
-                </div>
+                    <div className="box-bc">
 
+
+                        <ScrollReveal>
+                            <h1 className='video-text'>
+                                {lang === "th" ? "มั่นใจทุกการขับขี่" : lang === "en" ? "Confidence in Every Drive" : "すべてのドライブで自信を"}
+                            </h1>
+                        </ScrollReveal>
+                        <video
+                            className="video-car"
+                            autoPlay
+                            muted
+                            loop
+                            playsInline
+                            poster='/JIEI-New-Factory-scaled.jpg'
+                        >
+                            <source src="/background-video.mp4" type="video/mp4" />
+                            เบราว์เซอร์ไม่รองรับวิดีโอ
+                        </video>
+                    </div>
+                </div>
                 <div className="description-box">
                     <div className="why-choose-us1">
                         <ScrollReveal>
