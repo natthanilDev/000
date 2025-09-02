@@ -253,12 +253,14 @@ a:hover {
   cursor: pointer;
   transition: all ease 0.5s;
 
+
 }
 
 .path {
   font-weight: bold;
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 144);
   text-decoration: overline;
+  text-decoration-color: #ffff;
 
 }
 
