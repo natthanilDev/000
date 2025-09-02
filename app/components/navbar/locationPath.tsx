@@ -3,12 +3,15 @@ import React from 'react'
 import { useEffect, useState } from 'react';
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
+import Image from 'next/image';
+
 export default function Nav() {
+
+
   const [scrolled, setScrolled] = useState(false);
   const Path = usePathname()
   const [langu, setLangu] = useState('')
   const [menu, setMenu] = useState(false)
-
 
   const [lang, setLang] = useState<'th' | 'en' | 'jp'>(() => {
     if (typeof window !== 'undefined') {
@@ -25,23 +28,14 @@ export default function Nav() {
     if (selected === 'th') {
       setLangu('th')
       window.location.reload()
-    }
-
-    if (selected === 'en') {
+    } else if (selected === 'en') {
       setLangu('en')
       window.location.reload()
-
-    }
-
-    if (selected === 'jp') {
+    } else {
       setLangu('jp')
       window.location.reload()
-
     }
-
-
     setLangu(selected)
-
   }
 
   useEffect(() => {
@@ -60,16 +54,12 @@ export default function Nav() {
   }, []);
 
 
-
-
-
   return (
 
     <header
       className={`header ${scrolled ? "scrolled" : ""}`}
       role="banner"
       aria-label="JIEI Thailand Main Header" >
-      {/* Main Navigation */}
 
       <nav className="navbar" role="navigation" aria-label="Main Navigation">
         <div className="container-box">
@@ -83,14 +73,13 @@ export default function Nav() {
                 <i className={menu === true ? "bi bi-x" : "bi bi-list"}></i>
               </label>
               <input type="checkbox" className="icon-menu-show" id="icon-menu-show" />
-              <ul id="main-navigation" className={`ul-navigation`}>
+              <ul id="main-navigation" className="ul-navigation">
                 <li className={`li-menu ${Path === '/' || Path === "/iso9001" || Path === "/iso14001" || Path === "/iatf16949" ? 'path' : ''}`} >
                   <Link href="/" className="nav-link" title="JIEI Thailand Homepage - Automotive Rubber Parts Manufacturer">
                     {langu === 'jp' ? "ホーム" : "Home"}
                   </Link>
                 </li>
 
-                {/* ✅ Dropdown Products */}
                 <li className={`li-menu ${Path === '/products/engine-mount' || Path === '/products/engine-mount' || Path === '/products/suspension-bush' || Path === '/products/seals' || Path === '/products/custom-parts' ? 'path' : ''}`}>
                   <div className="hover-for-show-product">
                     <input
@@ -98,7 +87,7 @@ export default function Nav() {
                       className="dropdown-menu"
                       id="dropdown-menu"
                     />
-                    <span className={`nav-link`}>
+                    <span className="nav-link">
                       <label htmlFor="dropdown-menu">
                         {langu === 'jp' ? "自動車用ゴム部品" : "Automotive Rubber Parts "}
                       </label>
@@ -107,18 +96,15 @@ export default function Nav() {
 
                     <div className="product-jiei-thai">
                       <ul className="ul-product">
-                        <li className={`li-product ${Path === '/products/engine-mount' ? 'path' : ''}`} >
+                        <li className={`li-product1 ${Path === '/products/engine-mount' ? 'path' : ''}`} >
                           <Link
                             href="/products/engine-mount"
                             className="Link-product-class"
-                            title="Engine Mounts - Automotive Rubber Parts JIEI Thailand"
-                          >
-                            {langu === 'jp' ? "エンジンマウント" : "Engine Mounts"}
-
-
+                            title="Engine Mounts - Automotive Rubber Parts JIEI Thailand">
+                              {langu === 'jp' ? "エンジンマウント" : "Engine Mounts"}
                           </Link>
                         </li>
-                        <li className={`li-product ${Path === '/products/suspension-bush' ? 'path' : ''}`} >
+                        <li className={`li-product2 ${Path === '/products/suspension-bush' ? 'path' : ''}`} >
                           <Link
                             href="/products/suspension-bush"
                             className="Link-product-class"
@@ -127,18 +113,15 @@ export default function Nav() {
                             {langu === 'jp' ? "サスペンションブッシュ" : "Suspension Bushings"}
                           </Link>
                         </li>
-                        <li className={`li-product ${Path === '/products/seals' ? 'path' : ''}`} >
+                        <li className={`li-product3 ${Path === '/products/seals' ? 'path' : ''}`} >
                           <Link
                             href="/products/seals"
                             className="Link-product-class"
-                            title="Seals & Gaskets - Automotive Rubber Sealing Solutions"
-                          >
+                            title="Seals & Gaskets - Automotive Rubber Sealing Solutions">
                             {langu === 'jp' ? "シール＆ガスケット" : " Seals & Gaskets"}
-
-
                           </Link>
                         </li>
-                        <li className={`li-product ${Path === '/products/custom-parts' ? 'path' : ''}`} >
+                        <li className={`li-product4 ${Path === '/products/custom-parts' ? 'path' : ''}`} >
                           <Link
                             href="/products/custom-parts"
                             className="Link-product-class"
@@ -150,8 +133,6 @@ export default function Nav() {
                     </div>
                   </div>
                 </li>
-
-                {/* ✅ Other Pages */}
                 <li className={`li-menu ${Path === '/about' ? 'path' : ''}`}>
                   <Link
                     href="/about"
@@ -160,33 +141,23 @@ export default function Nav() {
                     {langu === 'jp' ? "会社概要" : "About Us"}
                   </Link>
                 </li>
-
                 <li className={`li-menu ${Path === '/activities' ? 'path' : ''}`}>
                   <Link
                     href="/activities"
                     className="nav-link"
                     title="JIEI Thailand Activities - กิจกรรม โรงงานผู้ผลิตชิ้นส่วนยางรถยนต์"
-                    aria-label="JIEI Thailand Activities - กิจกรรม และข่าวสารจากโรงงานผู้ผลิตชิ้นส่วนยางรถยนต์"
-                  >
+                    aria-label="JIEI Thailand Activities - กิจกรรม และข่าวสารจากโรงงานผู้ผลิตชิ้นส่วนยางรถยนต์">
                     {langu === 'jp' ? "活動内容" : "Activities"}
-
-
                   </Link>
-
-
                 </li>
                 <li className={`li-menu ${Path === '/technologies' ? 'path' : ''}`}>
                   <Link href="/technologies" className="nav-link" title="JIEI Thailand Homepage - Automotive Rubber Parts Manufacturer">
-
                     {langu === 'jp' ? "テクノロジー" : "Technologies"}
-
                   </Link>
                 </li>
                 <li className={`li-menu ${Path === '/network' ? 'path' : ''}`}>
                   <Link href="/network" className="nav-link" title="JIEI Thailand Homepage - Automotive Rubber Parts Manufacturer">
-
                     {langu === 'jp' ? "ネットワーク" : "Network"}
-
                   </Link>
                 </li>
 
@@ -194,23 +165,16 @@ export default function Nav() {
                   <Link
                     href="/news"
                     className="nav-link"
-                    title="News & Blog - JIEI Thailand Updates"
-                  >
+                    title="News & Blog - JIEI Thailand Updates">
                     {langu === 'jp' ? "ニュース＆ブログ" : "News & Blog"}
-
-
-
                   </Link>
                 </li>
                 <li className={` li-menu ${Path === '/contact' ? 'path' : ''}`}>
                   <Link
                     href="/contact"
                     className="nav-link"
-                    title="Contact JIEI Thailand - OEM Rubber Parts Manufacturer"
-                  >
-
+                    title="Contact JIEI Thailand - OEM Rubber Parts Manufacturer">
                     {langu === 'jp' ? "お問い合わせ" : "Contact Us"}
-
                   </Link>
                 </li>
 
@@ -245,7 +209,7 @@ export default function Nav() {
                 telephone: "+66-33-136581-4",
                 contactType: "customer service",
                 areaServed: "TH",
-                availableLanguage: ["Thai", "English"],
+                availableLanguage: ["Thai", "English", "Japan"],
               },
             ],
             sameAs: [

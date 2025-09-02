@@ -110,6 +110,9 @@ export default function Page() {
         <>
           <h1 className='title-news'>{lang === "th" ? "ข่าวสาร | บล็อก" : lang === "en" ? "News | Blog" :"ニュース | ブログ"}  </h1>
           <div className="line"></div>
+          <div className="news-text-description-box">
+            <p className='activities-text-description'>เราอัปเดตข้อมูลเกี่ยวกับนวัตกรรม เทคโนโลยีของบริษัทอย่างต่อเนื่อง เพื่อให้คุณไม่พลาดความเคลื่อนไหวสำคัญในอุตสาหกรรมและการพัฒนาของเรา</p>
+          </div>
 
           <div className="container-card">
             {paginatedData.map((item, index) => (

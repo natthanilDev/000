@@ -113,6 +113,9 @@ export default function Page() {
         <div>
           <h1 className='activities-text'>{lang === "th" ? "กิจกรรม" : lang === "en" ? "Activities" : "活動"}  </h1>
           <div className="line"></div>
+          <div className="activities-text-description-box">
+            <p className='activities-text-description'>JIEI ทุ่มเทเพื่อสร้างสภาพแวดล้อมการทำงานระดับมืออาชีพ และสนับสนุนความร่วมมือรวมถึงนวัตกรรมผ่านกิจกรรมที่สร้างแรงบันดาลใจ</p>
+          </div>
           <div className="container-card">
             {paginatedData.map((item, index) => (
               <div className="box-card" key={index}>
