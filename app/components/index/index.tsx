@@ -7,7 +7,6 @@ import ScrollReveal from '../ScrollReveal/ScrollReveal';
 import Iso_btn from '../iso_btn/iso_btn';
 
 export default function Home() {
-    // ภาษาเริ่มต้นเป็น 'th' เพื่อให้ SEO Bot เห็นเนื้อหาได้ทันที
     const [lang, setLang] = useState<'th' | 'en' | 'jp'>('th');
 
     useEffect(() => {
@@ -89,7 +88,7 @@ export default function Home() {
                                 <div className="company_name_box">
                                     <h1 className="company_name">
                                         {lang === 'th'
-                                            ? "JIEI Thailand - Automotive Rubber Parts Manufacturer in Chonburi"
+                                            ? "เจไออีไอ ประเทศไทย – ผู้ผลิตชิ้นส่วนยางสำหรับยานยนต์ จังหวัดชลบุรี"
                                             : lang === 'en'
                                                 ? 'JIEI Thailand - Automotive Rubber Parts Manufacturer in Chonburi'
                                                 : 'JIEIタイランド – チョンブリーの自動車用ゴム部品メーカー'}

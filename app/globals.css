@@ -1,16 +1,16 @@
 @import "tailwindcss";
 
-::selection {
+/* ::selection {
   color: black;
   background-color: #efefef;
 
-}
+} */
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Prompt","Noto Sans JP", sans-serif;
+  font-family: "Prompt", "Noto Sans JP", sans-serif;
   font-weight: 300;
   font-style: normal;
   font-optical-sizing: auto;
@@ -313,6 +313,8 @@ a:hover {
   justify-content: space-around;
   width: 100%;
   margin-left: -15px;
+  overflow: hidden;
+
 }
 
 .li-product1 {
@@ -323,6 +325,16 @@ a:hover {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  transition: all ease .25s;
+  overflow: hidden;
+  filter: grayscale(50%);
+
+}
+
+.li-product1:hover {
+  filter: grayscale(0%);
+
+
 }
 
 .li-product2 {
@@ -333,8 +345,14 @@ a:hover {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  filter: grayscale(50%);
+  transition: all ease .25s;
+
 }
 
+.li-product2:hover {
+  filter: grayscale(0%);
+}
 
 .li-product3 {
   width: 100%;
@@ -344,7 +362,14 @@ a:hover {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  filter: grayscale(50%);
+  transition: all ease .25s;
 
+
+}
+
+.li-product3:hover {
+  filter: grayscale(0%);
 }
 
 .li-product4 {
@@ -355,6 +380,14 @@ a:hover {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  filter: grayscale(50%);
+  transition: all ease .25s;
+
+
+}
+
+.li-product4:hover {
+  filter: grayscale(0%);
 }
 
 .Link-product-class {
@@ -576,7 +609,7 @@ a:hover {
 .company_name {
   color: var(--background);
   font-size: var(--title-topic);
-
+  text-shadow: 0 0 50px #ffffff00;
   font-weight: bold;
 }
 
