@@ -6,16 +6,16 @@ import Image from 'next/image'
 import ScrollReveal from '../ScrollReveal/ScrollReveal';
 export default function about() {
 
-      const [lang, setLang] = useState<'th' | 'en' | 'jp'>('th');
-    
-    
-      useEffect(() => {
+    const [lang, setLang] = useState<'th' | 'en' | 'jp'>('th');
+
+
+    useEffect(() => {
         if (typeof window !== 'undefined') {
-          const storedLang = localStorage.getItem('lang') as 'th' | 'en' | 'jp' | null;
-          if (storedLang) setLang(storedLang);
+            const storedLang = localStorage.getItem('lang') as 'th' | 'en' | 'jp' | null;
+            if (storedLang) setLang(storedLang);
         }
-      }, []);
-    
+    }, []);
+
 
     const logo_partners = [
         '/logo-partners (1).png',
@@ -61,19 +61,18 @@ export default function about() {
             <section className="company-profile">
                 <div className="why-chose-jiei">
                     <ScrollReveal>
-                        <h1 className='AboutUS'> {lang === "th" ? "เกี่ยวกับเรา | โปรไฟล์บริษัท" :lang === "en" ? "ABOUT US | Company Profile" : "私たちについて | 会社案内"} </h1>
+                        <h1 className='AboutUS'> {lang === "th" ? "เกี่ยวกับเรา | โปรไฟล์บริษัท" : lang === "en" ? "ABOUT US | Company Profile" : "私たちについて | 会社案内"} </h1>
                         <div className="line"></div>
                     </ScrollReveal>
 
                     <ScrollReveal>
-                        <h1 className='text-jiei-about-apage'>{lang === "th" ? "บริษัท เจอีไอ (ประเทศไทย) จำกัด – ผู้ผลิตชิ้นส่วนยางรถยนต์" : lang === "en" ? "JIEI (Thailand) Co., Ltd. - Automotive Rubber Parts Manufacturer" : "JIEI（Thailand）株式会社 – 自動車用ゴム部品メーカー"}
-                            </h1>
+                        <h1 className='text-jiei-about-apage'>{lang === "th" ? "บริษัท เจไออีไอ (ประเทศไทย) จำกัด – ผู้ผลิตชิ้นส่วนยางรถยนต์" : lang === "en" ? "JIEI (Thailand) Co., Ltd. - Automotive Rubber Parts Manufacturer" : "JIEI（Thailand）株式会社 – 自動車用ゴム部品メーカー"}
+                        </h1>
                     </ScrollReveal>
 
                     <ScrollReveal>
                         <p className='text-center'>
                             {lang === "th" ? "บริษัท เจไออีไอ (ประเทศไทย) จำกัด เป็นผู้ผลิต ชิ้นส่วนยางรถยนต์คุณภาพสูง สำหรับอุตสาหกรรมยานยนต์ในประเทศไทยและต่างประเทศ โรงงานตั้งอยู่ที่จังหวัดชลบุรี พร้อมมาตรฐานสากล ISO 9001, ISO 14001 และ IATF 16949 ที่รับรองคุณภาพการผลิตทุกขั้นตอน" : lang === "en" ? "JIEI (Thailand) Co., Ltd. is a manufacturer of high-quality automotive rubber parts for the automotive industry in Thailand and overseas. Our factory is located in Chonburi Province and operates under international standards ISO 9001, ISO 14001, and IATF 16949, ensuring quality at every stage of production." : "JIEI（Thailand）株式会社は、タイ国内および海外の自動車産業向けに高品質な自動車用ゴム部品を製造するメーカーです。工場はチョンブリー県に位置し、ISO 9001、ISO 14001、IATF 16949といった国際規格に基づき、生産のあらゆる工程で品質を保証しています。"}
-                            
                         </p>
 
                     </ScrollReveal>
@@ -97,12 +96,66 @@ export default function about() {
                     </div>
 
                     <div className="about-grid-image">
-                       
+
                     </div>
                 </div>
 
 
             </section >
+            <h1 className='about-company-name'>{lang === "th" ? "บริษัท เจไออีไอ (ประเทศไทย) จำกัด" : lang === 'en' ? "JIEI (Thailand) Co., Ltd." : "ジェイアイ (タイランド)株式会社"} </h1>
+            <div className="table-company-profile">
+                <div className="tr-about">
+                    <div className='content-inthe-table'>
+                        <div className="content-in-aboutBox">
+                             {lang === "th" ? "ชื่อบริษัท" : lang === "en" ? "Company Name" : "会社名"}
+                        </div>
+                        <div className="content-in-aboutBox">
+                            
+                            {lang === "th" ? "บริษัท เจไออีไอ (ประเทศไทย) จำกัด" : lang === "en" ? "JIEI (Thailand) Co., Ltd." : "ジェイアイイーアイ（タイランド）株式会社"}
+                        </div>
+                    </div>
+                    <div className='content-inthe-table1'>
+                        <div className="content-in-aboutBox">
+                            
+                            {lang === "th" ? "ที่อยู่" : lang === "en" ? "Address" : "住所"}
+                        </div>
+                        <div className="content-in-aboutBox">
+                           
+                            {lang === "th" ? " นิคมอุตสาหกรรมปิ่นทอง 4 หน่วย G18 180/3 หมู่ 6 ต.บึง อ.ศรีราชา ชลบุรี 20230 ประเทศไทย โทร. 033136581-4" : lang === "en" ? "Pinthong Industrial Estate 4, Unit G18 180/3 Moo 6, Bueng Sub-district,Si Racha District, Chonburi 20230, Thailand Tel: +66 (0)33-136581-4" : "ピントン工業団地4、G18号ユニット 180/3 ムー6、ブン地区 シラチャー郡、チョンブリー県 20230 タイ王国 電話: +66 (0)33-136581-4"}
+                        </div>
+                    </div>
+                    <div className='content-inthe-table'>
+                        <div className="content-in-aboutBox">
+                            {lang === "th" ? "ก่อตั้งเมื่อ" : lang === "en" ? "Established on" : "設立日"}
+                        </div>
+                        <div className="content-in-aboutBox">
+                            {lang === "th" ? "11/11/2554" : lang === "en" ? "11/11/2011" : "2011年11月11日"}
+                        </div>
+                    </div>
+                    <div className='content-inthe-table1'>
+                        <div className="content-in-aboutBox">
+                            {lang === "th" ? "ทุนจดทะเบียน" : lang === "en" ? "Registered Capital" : "登録資本金"}
+                        </div>
+                        <div className="content-in-aboutBox">
+                           
+                            {lang === "th" ? "150,000,000 บาท" : lang === "en" ? "150,000,000 Baht" : "1億5,000万バーツ"}
+                        </div>
+
+                    </div>
+                    <div className='content-inthe-table'>
+                        <div className="content-in-aboutBox">
+                            
+                            {lang === 'th' ? "จำนวนพนักงาน" : lang === "en" ? "Number of Employees" : "従業員数"}
+                        </div>
+                        <div className="content-in-aboutBox">
+                            {lang === "th" ? "276 คน" : lang === "en" ? "276" : "276人"}
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
 
 
             <div className="manager">
@@ -125,6 +178,8 @@ export default function about() {
                             </div>
                         </div>
                     </ScrollReveal>
+
+
 
                     <ScrollReveal>
                         <div className="manager-image-box">
@@ -201,7 +256,7 @@ export default function about() {
 
 
 
-            <h4 className='thy text-center'>{lang === "th" ? "ขอขอบพระคุณทุกท่านสำหรับการสนับสนุน และเราหวังว่าจะได้รับความไว้วางใจจากท่านอย่างต่อเนื่องต่อไป" : lang === "en" ? "We sincerely thank everyone for their support and look forward to continuing to earn your trust." :"皆様のご支援に心より感謝申し上げます。今後とも変わらぬご信頼を賜りますようお願い申し上げます。"}</h4>
+            <h4 className='thy text-center'>{lang === "th" ? "ขอขอบพระคุณทุกท่านสำหรับการสนับสนุน และเราหวังว่าจะได้รับความไว้วางใจจากท่านอย่างต่อเนื่องต่อไป" : lang === "en" ? "We sincerely thank everyone for their support and look forward to continuing to earn your trust." : "皆様のご支援に心より感謝申し上げます。今後とも変わらぬご信頼を賜りますようお願い申し上げます。"}</h4>
 
 
         </div >

@@ -10,9 +10,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Prompt", sans-serif;
+  font-family: "Prompt","Noto Sans JP", sans-serif;
   font-weight: 300;
   font-style: normal;
+  font-optical-sizing: auto;
 
 }
 
@@ -252,7 +253,6 @@ a:hover {
   align-items: center;
   cursor: pointer;
   transition: all ease 0.5s;
-
 
 }
 
@@ -1542,7 +1542,42 @@ h4 {
 }
 
 .name-top-manager {
-  padding: 20px 0;
+  padding: 10px 0;
+
+}
+
+
+.about-company-name {
+  text-align: center;
+  font-weight: bold;
+  padding-top: 100px;
+}
+
+.table-company-profile {
+
+  width: 80%;
+  margin: 50px auto 200px auto;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.content-inthe-table {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+
+  padding: 15px 20px;
+  background-color: #eeeeee;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.content-inthe-table1 {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+  padding: 15px 20px;
+  font-size: 18px;
+  font-weight: bold;
+
 }
 
 .position {

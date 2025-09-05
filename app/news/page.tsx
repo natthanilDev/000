@@ -111,7 +111,7 @@ export default function Page() {
           <h1 className='title-news'>{lang === "th" ? "ข่าวสาร | บล็อก" : lang === "en" ? "News | Blog" :"ニュース | ブログ"}  </h1>
           <div className="line"></div>
           <div className="news-text-description-box">
-            <p className='activities-text-description'>เราอัปเดตข้อมูลเกี่ยวกับนวัตกรรม เทคโนโลยีของบริษัทอย่างต่อเนื่อง เพื่อให้คุณไม่พลาดความเคลื่อนไหวสำคัญในอุตสาหกรรมและการพัฒนาของเรา</p>
+            <p className='activities-text-description'>{lang === "th" ? "เราอัปเดตข้อมูลเกี่ยวกับนวัตกรรม เทคโนโลยีของบริษัทอย่างต่อเนื่อง เพื่อให้คุณไม่พลาดความเคลื่อนไหวสำคัญในอุตสาหกรรมและการพัฒนาของเรา" : lang === "en"? "We continuously update information about the company’s innovations and technologies to ensure you never miss important industry trends and our developments." : "当社は、業界の重要な動向や当社の最新の取り組みを見逃さないよう、革新や技術に関する情報を継続的に更新しています。"} </p>
           </div>
 
           <div className="container-card">

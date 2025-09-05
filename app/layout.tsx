@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Prompt} from "next/font/google";
+import { Prompt , Noto_Sans_JP} from "next/font/google";
 import "./globals.css";
 import Topbar from "./components/topbar/topbar";
 import Navbar from "./components/navbar/navbar";
@@ -11,6 +11,12 @@ const prompt = Prompt({
   variable: "--font-prompt",
   subsets: ['latin'],
   weight: "400"
+})
+
+const noto_sans_JP = Noto_Sans_JP({
+  variable : "--font-Noto_Sans_JP",
+  subsets : ['latin'],
+  weight : '400'
 })
 
 export const metadata: Metadata = {
@@ -28,7 +34,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" data-scroll-behavior="smooth">
-      <body className={`${prompt.variable} antialiased`}>
+      <body className={`${prompt.variable , noto_sans_JP.variable} antialiased`}>
         <Topbar />
         <Navbar />
         {children}
