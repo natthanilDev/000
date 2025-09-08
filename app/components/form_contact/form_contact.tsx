@@ -47,8 +47,6 @@ export default function ContactForm() {
             }
         }
 
-
-
         if (!form.name || !form.email || !form.message) {
             Swal.fire({
                 icon: 'warning',
@@ -62,8 +60,6 @@ export default function ContactForm() {
             return;
         }
 
-
-        if (lang === "th") {
             Swal.fire({
                 title:
                  lang === "th" ? 'คุณแน่ใจหรือไม่?': lang === "en" ? "Are you sure?" : "本当によろしいですか？",
@@ -121,7 +117,7 @@ export default function ContactForm() {
                 }
             });
 
-        }
+        
     }
 
 

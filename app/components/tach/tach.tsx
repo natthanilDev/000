@@ -235,7 +235,7 @@ export default function Tach() {
                 />
             </Head>
 
-            <div>
+            <div className='bg'>
                 <div className="tec-box">
                     <div className="introduction-tech-box">
                         <ScrollReveal>

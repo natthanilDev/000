@@ -145,26 +145,6 @@ a:hover {
 }
 
 
-@media (prefers-color-scheme: dark) {
-  .lang-select select {
-    background: #111827;
-    /* gray-900 */
-    color: #e5e7eb;
-    /* gray-200 */
-    border-color: #374151;
-    /* gray-700 */
-  }
-
-  .lang-select select:hover {
-    border-color: #4b5563;
-    /* gray-600 */
-  }
-
-  .lang-select::after {
-    border-top-color: #9ca3af;
-    /* gray-400 */
-  }
-}
 
 .lang-select--sm select {
   padding: 8px 36px 8px 10px;
@@ -370,6 +350,7 @@ a:hover {
 
 .li-product3:hover {
   filter: grayscale(0%);
+
 }
 
 .li-product4 {
@@ -382,8 +363,6 @@ a:hover {
   background-position: center;
   filter: grayscale(50%);
   transition: all ease .25s;
-
-
 }
 
 .li-product4:hover {
@@ -417,6 +396,10 @@ a:hover {
 .icon-menu-show {
   display: none;
 }
+
+
+
+
 
 @media screen and (max-width : 1080px) {
 
@@ -552,6 +535,18 @@ a:hover {
 
 }
 
+.background {
+  background-image: url('/bcvdo.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: -999;
+}
+
+.video_intro {
+  z-index: 0;
+
+}
 
 .background-video-box {
   background-image: url('/bcvdo.png');
@@ -682,6 +677,7 @@ a:hover {
   font-size: 50px;
   font-weight: bold;
   border-bottom: 5px solid #00135d;
+  color: #eeee;
   padding: 100px 0 20px 0;
 }
 
@@ -693,6 +689,11 @@ a:hover {
 .p-text-why {
   font-size: 22px;
   font-weight: 600;
+  color: #eeee;
+}
+
+.t-w-y {
+  color: #eeee;
 }
 
 .iso-why-choose {
@@ -703,6 +704,8 @@ a:hover {
 .iso-text {
   padding: 50px 0;
   font-weight: bold;
+  color: #eeee;
+
 }
 
 .iso {
@@ -725,6 +728,10 @@ a:hover {
   font-weight: bold;
   color: #fff;
 
+}
+
+.partner-text {
+  color: #eee;
 }
 
 @media screen and (max-width : 1440px) {
@@ -886,14 +893,17 @@ a:hover {
 
 
 .why-choose-us1 {
-  background-image: url('/backgroud-car.png');
+  /* background-image: url('/backgroud-car.png'); */
   text-align: center;
-  padding: 50px 20px;
+  /* padding:5%; */
   color: #fff;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-clip: inherit;
+
+  margin: 100px auto;
+
 }
 
 
@@ -927,11 +937,15 @@ a:hover {
 
 .partner-homepage {
   padding: 50px 0 20px 0;
+  /* background-color: #080808; */
+  background-color: #ffff;
+
 }
 
 .partner-text {
   text-align: center;
   font-weight: bold;
+  color: var(--font-color);
 }
 
 .image-logo-partner-homepage {
@@ -1150,7 +1164,7 @@ a:hover {
 
 .description-box {
   margin-top: -5px;
-  /* background-image: url("/background.png"); */
+
 
 }
 
@@ -1452,6 +1466,8 @@ a:hover {
 
 
 .about-page {
+  background-image: url('/background-about2.png');
+
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1461,21 +1477,26 @@ a:hover {
 
 .AboutUS {
   font-weight: bold;
-  /* backdrop-filter: blur(5px); */
   width: 50%;
   margin: 0 auto;
-  /* padding: 50px 0 30px 0; */
+  color: #fff;
   padding: 50px 0 50px 0;
   text-align: center;
   font-size: 50px;
+}
+.text-center{
+  color: #fff;
+}
+.company-profile-text{
+  color: #ffff;
 
 }
-
 .text-jiei-about-apage {
   text-align: center;
   font-weight: 600;
   padding: 20px 0;
   margin-top: 30px;
+  color: #fff;
 
 }
 
@@ -1563,6 +1584,7 @@ h4 {
   padding-bottom: 50px;
   font-weight: bold;
   margin: 100px 0 0 0;
+  color: #080808;
 }
 
 .image-manager {
@@ -1584,6 +1606,8 @@ h4 {
   text-align: center;
   font-weight: bold;
   padding-top: 100px;
+  color: #fff;
+
 }
 
 .table-company-profile {
@@ -1610,17 +1634,21 @@ h4 {
   padding: 15px 20px;
   font-size: 18px;
   font-weight: bold;
+  color: #fff;
+  background-color: #6b6b6b;
 
 }
 
 .position {
   font-size: 22px;
   font-weight: bold;
+  color: #fff;
 }
 
 .managerText {
   text-align: center;
-  /* width: 200px; */
+  color: #fff;
+  font-weight: bold;
   margin: 20px auto;
 
 }
@@ -1697,6 +1725,10 @@ h4 {
 
 
 
+.partners-box{
+    background-color: #fff;
+}
+
 .partners-text {
   margin: 50px 0;
 }
@@ -1710,6 +1742,8 @@ h4 {
 .logo-partners-box {
   overflow: hidden;
   margin-top: 50px;
+
+
 }
 
 
@@ -1721,9 +1755,10 @@ h4 {
 }
 
 .line {
-  border-bottom: 5px solid rgb(0, 20, 134);
+  border-bottom: 5px solid rgb(0, 36, 239);
   width: 300px;
   margin: 0 auto;
+  
 
 
 }
@@ -1813,6 +1848,7 @@ h4 {
 
 /* ---------------------------------------------------ACTIVITIES-PAGE */
 .activities-page {
+  background-image: url("/bcvdo.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1824,6 +1860,8 @@ h4 {
   text-align: center;
   padding: 50px 0 10px 0;
   font-weight: bold;
+  color: #ffff;
+  
 }
 
 .image-activities {
@@ -1839,6 +1877,7 @@ h4 {
   text-align: center;
   font-size: 22px;
   padding: 20px 0;
+  color: #fff;
 
 }
 
@@ -1966,7 +2005,6 @@ h4 {
   .activities-list {
     grid-template-columns: 1fr;
   }
-
 }
 
 .spinner {
@@ -1975,7 +2013,6 @@ h4 {
   height: 48px;
   border-radius: 50%;
   border-left-color: #3b82f6;
-  /* สีน้ำเงิน Tailwind */
   animation: spin 1s linear infinite;
   margin: 0 auto;
 }
@@ -1994,10 +2031,18 @@ h4 {
 
 
 /* -------------------------------------------------NEWS&BLOG */
+.news-bg{
+  background-image: url("/bcvdo.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .title-news {
   padding: 50px 0 20px 0;
   text-align: center;
   font-weight: bold;
+  color: #fff;
 }
 
 .container-card {
@@ -2007,12 +2052,19 @@ h4 {
   margin: 50px auto;
   width: 90%;
 
+
 }
 
 .box-card {
   border-radius: 10px;
   box-shadow: 0 0 2px var(--font-color);
   overflow: hidden;
+  -webkit-backdrop-filter: blur(50px);
+  backdrop-filter: blur(50px);
+  background-color: #ffffff;
+
+  box-shadow: 0 0 2px #ffff;
+
 }
 
 .content-card-box {
@@ -2020,10 +2072,16 @@ h4 {
 
 }
 
+.page {
+  padding: 50px 50px;
+
+}
+
 .countPage {
   display: flex;
   gap: 5px;
-  margin: 20px;
+  /* margin: 20px; */
+
 }
 
 .content-card {
@@ -2058,7 +2116,7 @@ h4 {
 
 .detail-news {
   width: 80%;
-  margin: 50px auto;
+  margin: 0 auto;
   position: relative;
 }
 
@@ -2066,19 +2124,24 @@ h4 {
   width: 50%;
   text-align: center;
   margin: 50px auto;
+  box-shadow: 0 0 5px #fff;
+  border-radius: 6px;
 
 }
 
 .title-news-page {
-  padding: 50px 20px;
+  padding: 50px 0 30px 0;
+
   text-align: center;
   font-weight: bold;
-
+  color: #fff;
 }
 
 .news-blog {
   font-weight: bold;
   padding-bottom: 20px;
+  color: #fff;
+
 
 }
 
@@ -2088,7 +2151,7 @@ h4 {
   right: 20px;
   display: flex;
   justify-content: end;
-
+  padding-bottom:50px ;
 }
 
 .read-more {
@@ -2130,7 +2193,11 @@ h4 {
 
 .content-box-page {
   margin-bottom: 100px;
-
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  padding: 50px 20px;
+  font-style: 18px;
+  color: #fff;
 }
 
 
@@ -2307,7 +2374,12 @@ h4 {
 
 /* ---------------------------------------------------------------------NETWORKPAGE */
 
-
+.network-all{
+  background-image: url("/background-about.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 .network-text {
   padding: 50px 100px 20px 100px;
@@ -2536,6 +2608,14 @@ h4 {
 
 
 /* -------------------------------------------------------------TECHNOLOGIES */
+.bg{
+  background-image: url('/background-about.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--font-color);
+}
+
 
 .tec-box {
   width: 85%;

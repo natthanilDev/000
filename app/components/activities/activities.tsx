@@ -26,8 +26,16 @@ export default function Page() {
     '=-=',
     'JIEI ',
     '=-=',
+    'JIEI ',
+    '=-=',
+    'JIEI ',
+    '=-=',
   ];
   const img = [
+    '/JIEI(Thailnad).co.,ltd.jpg',
+    '/JIEI(Thailnad).co.,ltd.jpg',
+    '/JIEI(Thailnad).co.,ltd.jpg',
+    '/JIEI(Thailnad).co.,ltd.jpg',
     '/JIEI(Thailnad).co.,ltd.jpg',
     '/JIEI(Thailnad).co.,ltd.jpg',
     '/JIEI(Thailnad).co.,ltd.jpg',
@@ -38,7 +46,10 @@ export default function Page() {
     'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam quibusdam est sapiente quas veritatis at incidunt harum ipsam dignissimos doloribus? Asperiores molestias quasi, excepturi blanditiis cum corrupti reiciendis alias repellendus. 002',
     'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam quibusdam est sapiente quas veritatis at incidunt harum ipsam dignissimos doloribus? Asperiores molestias quasi, excepturi blanditiis cum corrupti reiciendis alias repellendus. 001',
     'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam quibusdam est sapiente quas veritatis at incidunt harum ipsam dignissimos doloribus? Asperiores molestias quasi, excepturi blanditiis cum corrupti reiciendis alias repellendus. 002',
-
+    '1orem ipsum dolor sit, amet consectetur adipisicing elit. Totam quibusdam est sapiente quas veritatis at incidunt harum ipsam dignissimos doloribus? Asperiores molestias quasi, excepturi blanditiis cum corrupti reiciendis alias repellendus. 001',
+    'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam quibusdam est sapiente quas veritatis at incidunt harum ipsam dignissimos doloribus? Asperiores molestias quasi, excepturi blanditiis cum corrupti reiciendis alias repellendus. 002',
+    'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam quibusdam est sapiente quas veritatis at incidunt harum ipsam dignissimos doloribus? Asperiores molestias quasi, excepturi blanditiis cum corrupti reiciendis alias repellendus. 001',
+    'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam quibusdam est sapiente quas veritatis at incidunt harum ipsam dignissimos doloribus? Asperiores molestias quasi, excepturi blanditiis cum corrupti reiciendis alias repellendus. 002',
   ];
 
   const start = (currentPage - 1) * perPage;
@@ -116,7 +127,7 @@ export default function Page() {
           <div className="activities-text-description-box">
             <p className='activities-text-description'>
               {lang === "th" ? "JIEI ทุ่มเทเพื่อสร้างสภาพแวดล้อมการทำงานระดับมืออาชีพ และสนับสนุนความร่วมมือรวมถึงนวัตกรรมผ่านกิจกรรมที่สร้างแรงบันดาลใจ" : lang === "en" ? "JIEI is dedicated to creating a professional work environment and promoting collaboration and innovation through inspiring activities." : "JIEIは、プロフェッショナルな職場環境の構築に尽力し、刺激的な活動を通じて協力とイノベーションを推進しています。"}
-              </p>
+            </p>
           </div>
           <div className="container-card">
             {paginatedData.map((item, index) => (
@@ -149,18 +160,21 @@ export default function Page() {
               </div>
             ))}
           </div>
-          <nav className="countPage" aria-label="Pagination">
-            {Array.from({ length: totalPages }, (_, i) => i + 1).map((pageNum) => (
-              <Link
-                key={pageNum}
-                href={`/activities?page=${pageNum}`}
-                className={`numPage ${pageNum === currentPage ? "focusPage" : ""}`}
-                title={`ไปหน้าที่ ${pageNum}`}
-              >
-                {pageNum}
-              </Link>
-            ))}
-          </nav>
+          <div className="page">
+            <nav className="countPage" aria-label="Pagination">
+              {Array.from({ length: totalPages }, (_, i) => i + 1).map((pageNum) => (
+                <Link
+                  key={pageNum}
+                  href={`/activities?page=${pageNum}`}
+                  className={`numPage ${pageNum === currentPage ? "focusPage" : ""}`}
+                  title={`ไปหน้าที่ ${pageNum}`}
+                >
+                  {pageNum}
+                </Link>
+              ))}
+            </nav>
+          </div>
+
         </div>
       ) : (
         <div className="detail-news">

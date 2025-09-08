@@ -3,11 +3,8 @@ import React from 'react'
 import { useEffect, useState } from 'react';
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
-import Image from 'next/image';
-
+import { useRouter } from 'next/navigation';
 export default function Nav() {
-
-
   const [scrolled, setScrolled] = useState(false);
   const Path = usePathname()
   const [langu, setLangu] = useState('')
@@ -19,6 +16,8 @@ export default function Nav() {
     }
     return 'th';
   });
+
+
 
   const onChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     const selected = e.target.value as 'th' | 'en' | 'jp'
@@ -75,7 +74,7 @@ export default function Nav() {
               <input type="checkbox" className="icon-menu-show" id="icon-menu-show" />
               <ul id="main-navigation" className="ul-navigation">
                 <li className={`li-menu ${Path === '/' || Path === "/iso9001" || Path === "/iso14001" || Path === "/iatf16949" ? 'path' : ''}`} >
-                  <Link href="/" className="nav-link" title="JIEI Thailand Homepage - Automotive Rubber Parts Manufacturer">
+                  <Link  href="/" className="nav-link" title="JIEI Thailand Homepage - Automotive Rubber Parts Manufacturer">
                     {langu === 'jp' ? "ホーム" : "Home"}
                   </Link>
                 </li>
@@ -101,7 +100,7 @@ export default function Nav() {
                             href="/products/engine-mount"
                             className="Link-product-class"
                             title="Engine Mounts - Automotive Rubber Parts JIEI Thailand">
-                              {langu === 'jp' ? "エンジンマウント" : "Engine Mounts"}
+                            {langu === 'jp' ? "エンジンマウント" : "Engine Mounts"}
                           </Link>
                         </li>
                         <li className={`li-product2 ${Path === '/products/suspension-bush' ? 'path' : ''}`} >

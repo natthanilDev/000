@@ -18,7 +18,7 @@ export default function Page() {
     '=-=',
     'JIEI เปิดไลน์การผลิตใหม่ IT ไลน์',
     '=-=',
-    
+
   ];
 
   const img = Array(14).fill('/JIEI(Thailnad).co.,ltd.jpg');
@@ -57,7 +57,7 @@ export default function Page() {
     : content[selectedNews].slice(0, 160);
 
   return (
-    <div>
+    <div className='news-bg'>
       <Head>
         <title>{pageTitle}</title>
         <meta name="description" content={pageDescription} />
@@ -108,10 +108,10 @@ export default function Page() {
 
       {selectedNews === null ? (
         <>
-          <h1 className='title-news'>{lang === "th" ? "ข่าวสาร | บล็อก" : lang === "en" ? "News | Blog" :"ニュース | ブログ"}  </h1>
+          <h1 className='title-news'>{lang === "th" ? "ข่าวสาร | บล็อก" : lang === "en" ? "News | Blog" : "ニュース | ブログ"}  </h1>
           <div className="line"></div>
           <div className="news-text-description-box">
-            <p className='activities-text-description'>{lang === "th" ? "เราอัปเดตข้อมูลเกี่ยวกับนวัตกรรม เทคโนโลยีของบริษัทอย่างต่อเนื่อง เพื่อให้คุณไม่พลาดความเคลื่อนไหวสำคัญในอุตสาหกรรมและการพัฒนาของเรา" : lang === "en"? "We continuously update information about the company’s innovations and technologies to ensure you never miss important industry trends and our developments." : "当社は、業界の重要な動向や当社の最新の取り組みを見逃さないよう、革新や技術に関する情報を継続的に更新しています。"} </p>
+            <p className='activities-text-description'>{lang === "th" ? "เราอัปเดตข้อมูลเกี่ยวกับนวัตกรรม เทคโนโลยีของบริษัทอย่างต่อเนื่อง เพื่อให้คุณไม่พลาดความเคลื่อนไหวสำคัญในอุตสาหกรรมและการพัฒนาของเรา" : lang === "en" ? "We continuously update information about the company’s innovations and technologies to ensure you never miss important industry trends and our developments." : "当社は、業界の重要な動向や当社の最新の取り組みを見逃さないよう、革新や技術に関する情報を継続的に更新しています。"} </p>
           </div>
 
           <div className="container-card">
@@ -140,26 +140,26 @@ export default function Page() {
                       setSelectedNews(start + index)
                       window.scrollTo({ top: 0, behavior: 'smooth' })
                     }} >
-                      {lang === 'th' ? "อ่านเพิ่มเติม" : lang === "en" ? "Read More" : "続きを読む"}
-                      
+                    {lang === 'th' ? "อ่านเพิ่มเติม" : lang === "en" ? "Read More" : "続きを読む"}
+
                   </button>
                 </div>
               </div>
             ))}
           </div>
-
-          <nav className="countPage" aria-label="Pagination">
-            {Array.from({ length: totalPages }, (_, i) => i + 1).map((pageNum) => (
-              <Link
-                key={pageNum}
-                href={`/news?page=${pageNum}`}
-                className={`numPage ${pageNum === currentPage ? "focusPage" : ""}`}
-                title={`ไปหน้าที่ ${pageNum}`}
-              >
-                {pageNum}
-              </Link>
-            ))}
-          </nav>
+          <div className="page">
+            <nav className="countPage" aria-label="Pagination">
+              {Array.from({ length: totalPages }, (_, i) => i + 1).map((pageNum) => (
+                <Link
+                  key={pageNum}
+                  href={`/news?page=${pageNum}`}
+                  className={`numPage ${pageNum === currentPage ? "focusPage" : ""}`}
+                  title={`ไปหน้าที่ ${pageNum}`}>
+                  {pageNum}
+                </Link>
+              ))}
+            </nav>
+          </div>
         </>
       ) : (
         <div className="detail-news">
