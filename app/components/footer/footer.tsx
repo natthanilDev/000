@@ -12,15 +12,18 @@ export default function Footer() {
         {/* Company Info */}
         <div className="footer-box" itemProp="address" itemScope itemType="https://schema.org/PostalAddress">
           <div className="topic-box">
-            <Image 
-              src={'/jiei-thailand-logo.png'} 
-              alt="JIEI Thailand Logo - Automotive Rubber Parts Manufacturer in Chonburi" 
-              width={100} 
-              height={100} 
-              priority 
-              className='logo-footer' 
-              itemProp="logo"
-            />
+            <Link href="/" aria-label="กลับไปหน้าแรก JIEI Thailand" title="JIEI Thailand - Automotive Rubber Parts Manufacturer">
+              <Image
+                src="/jiei-thailand-logo.png"
+                alt="JIEI Thailand Logo - Automotive Rubber Parts Manufacturer in Chonburi"
+                width={1000}
+                height={1000}
+                priority
+                itemProp="logo"
+                className='logo-footer'
+              />
+            </Link>
+
           </div>
           <div className="contentFooter-box">
             <h6 className='jiei-footer' itemProp="name">JIEI (Thailand) Co., Ltd.</h6>

@@ -677,7 +677,7 @@ a:hover {
   font-size: 50px;
   font-weight: bold;
   border-bottom: 5px solid #00135d;
-  color: #eeee;
+  color: #ffffff;
   padding: 100px 0 20px 0;
 }
 
@@ -693,7 +693,7 @@ a:hover {
 }
 
 .t-w-y {
-  color: #eeee;
+  color: #ffffff;
 }
 
 .iso-why-choose {
@@ -890,20 +890,14 @@ a:hover {
   padding: 0 20px;
 }
 
-
-
 .why-choose-us1 {
-  /* background-image: url('/backgroud-car.png'); */
   text-align: center;
-  /* padding:5%; */
   color: #fff;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-clip: inherit;
-
   margin: 100px auto;
-
 }
 
 
@@ -1390,7 +1384,11 @@ a:hover {
   padding: 30px;
   border-top: 1px solid #959595;
 }
-
+.logo-footer{
+  width: 107px;
+  height: auto;
+  
+}
 .jiei-footer {
   padding: 20px 0;
 
@@ -1484,13 +1482,16 @@ a:hover {
   text-align: center;
   font-size: 50px;
 }
-.text-center{
+
+.text-center {
   color: #fff;
 }
-.company-profile-text{
+
+.company-profile-text {
   color: #ffff;
 
 }
+
 .text-jiei-about-apage {
   text-align: center;
   font-weight: 600;
@@ -1725,8 +1726,8 @@ h4 {
 
 
 
-.partners-box{
-    background-color: #fff;
+.partners-box {
+  background-color: #fff;
 }
 
 .partners-text {
@@ -1758,7 +1759,7 @@ h4 {
   border-bottom: 5px solid rgb(0, 36, 239);
   width: 300px;
   margin: 0 auto;
-  
+
 
 
 }
@@ -1861,7 +1862,7 @@ h4 {
   padding: 50px 0 10px 0;
   font-weight: bold;
   color: #ffff;
-  
+
 }
 
 .image-activities {
@@ -2031,7 +2032,7 @@ h4 {
 
 
 /* -------------------------------------------------NEWS&BLOG */
-.news-bg{
+.news-bg {
   background-image: url("/bcvdo.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -2151,7 +2152,7 @@ h4 {
   right: 20px;
   display: flex;
   justify-content: end;
-  padding-bottom:50px ;
+  padding-bottom: 50px;
 }
 
 .read-more {
@@ -2374,7 +2375,7 @@ h4 {
 
 /* ---------------------------------------------------------------------NETWORKPAGE */
 
-.network-all{
+.network-all {
   background-image: url("/background-about.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -2608,7 +2609,7 @@ h4 {
 
 
 /* -------------------------------------------------------------TECHNOLOGIES */
-.bg{
+.bg {
   background-image: url('/background-about.png');
   background-position: center;
   background-repeat: no-repeat;
