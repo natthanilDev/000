@@ -47,8 +47,16 @@ export async function POST(req: NextRequest) {
     });
 
     return NextResponse.json({ success: true, message: 'Email sent successfully!' });
-  } catch (error: any) {
+  } 
+  catch (error: unknown) {
+  if (error instanceof Error) {
     console.error('Error sending email:', error.message);
     return NextResponse.json({ success: false, message: error.message });
   }
+  return NextResponse.json({ success: false, message: 'Unknown error occurred' });
+}
+  // catch (error: unknown) {
+  //   console.error('Error sending email:', error.message);
+  //   return NextResponse.json({ success: false, message: error.message });
+  // }
 }

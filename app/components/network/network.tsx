@@ -4,7 +4,7 @@ import Link from "next/link"
 import ScrollReveal from "../ScrollReveal/ScrollReveal"
 import Head from "next/head"
 
-export default function network() {
+export default function Network() {
 
     const logo = [
         '/Jiei Thailand - ผู้ผลิตชิ้นส่วนยางรถยนต์คุณภาพสูงในชลบุรี.png',

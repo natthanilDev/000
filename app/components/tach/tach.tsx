@@ -284,7 +284,7 @@ export default function Tach() {
                                         </div>
                                         <div className="design-analysis-content-content">
                                             <p itemProp="articleBody" className='content-technology'>
-                                                {lang === "th" ? contentTH1[index] : lang === "en" ? contentEN1[index] : contentJP[index]}
+                                                {lang === "th" ? contentTH1[index] : lang === "en" ? contentEN1[index] : contentJP1[index]}
                                             </p>
                                         </div>
                                     </div>
@@ -301,7 +301,7 @@ export default function Tach() {
                                 {topicTH2.map((item, index) => (
                                     <div className="design-analysis-content" key={index}>
                                         <div className="design-analysis-content-topic">
-                                            <h3 itemProp="about" className='topic-2'>{lang === "th" ? item : lang === "en" ? topicEN2[index] : topicJP[index]}</h3>
+                                            <h3 itemProp="about" className='topic-2'>{lang === "th" ? item : lang === "en" ? topicEN2[index] : topicJP2[index]}</h3>
                                         </div>
                                         <div className="design-analysis-content-content">
                                             <p itemProp="articleBody" className='content-technology'>

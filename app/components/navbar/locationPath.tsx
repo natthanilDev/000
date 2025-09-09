@@ -3,7 +3,6 @@ import React from 'react'
 import { useEffect, useState } from 'react';
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
-import { useRouter } from 'next/navigation';
 export default function Nav() {
   const [scrolled, setScrolled] = useState(false);
   const Path = usePathname()
@@ -22,7 +21,7 @@ export default function Nav() {
   const onChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     const selected = e.target.value as 'th' | 'en' | 'jp'
     setLang(selected)
-
+    console.log(lang)
     localStorage.setItem('lang', selected);
     if (selected === 'th') {
       setLangu('th')

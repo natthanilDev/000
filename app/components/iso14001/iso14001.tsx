@@ -3,8 +3,8 @@ import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Head from "next/head";
 import Iso_btn from "../iso_btn/iso_btn";
-
-export default function iso14001() {
+import Image from "next/image";
+export default function Iso14001() {
   const [selectedImg, setSelectedImg] = useState<string | null>(null);
   const [lang, setLang] = useState<'th' | 'en' | 'jp'>('th');
 
@@ -48,7 +48,7 @@ export default function iso14001() {
           <h1 className="ISO9001 text-center text-3xl font-bold">
             {lang === "th" ? "การรับรองมาตรฐาน ISO 14001" : lang === "en" ? "ISO 14001 Certification " : "ISO 14001認証"}
           </h1>
-          <p className="text-center text-xl mt-2">
+          <p className="text-iso text-center text-xl mt-2">
             {lang === 'en' ? " International standard for environmental management systems" : lang === "jp" ? "環境マネジメントシステムの国際規格" : "มาตรฐานระบบการจัดการสิ่งแวดล้อมระดับสากล"}
           </p>
         </header>
@@ -58,7 +58,10 @@ export default function iso14001() {
         {/* Gallery */}
         <div className="image-iso-box flex justify-center items-center gap-4 mt-6">
           {images.map((image, index) => (
-            <img
+            <Image
+              width={1000}
+              height={1000}
+              priority
               key={index}
               src={image.src}
               alt={image.alt}
@@ -95,8 +98,8 @@ export default function iso14001() {
           <h2 className="iso-name">ISO 14001</h2>
           <p className="description-iso">{lang === "th" ? "ISO 14001 คือมาตรฐานสากลสำหรับ ระบบการจัดการสิ่งแวดล้อม (Environmental Management System: EMS) ที่กำหนดโดยองค์การมาตรฐานสากล (ISO) เพื่อให้องค์กรสามารถควบคุมและลดผลกระทบต่อสิ่งแวดล้อมจากการดำเนินงานของตน" : lang === "en" ? "ISO 14001 is an international standard for Environmental Management Systems (EMS) established by the International Organization for Standardization (ISO). It enables organizations to control and reduce the environmental impact of their operations." : " ISO 14001は、国際標準化機構（ISO）が定めた環境マネジメントシステム（EMS）の国際規格です。組織が事業活動による環境への影響を管理し、低減することを可能にします。"} </p>
         </div>
-        
-       
+
+
 
         <Iso_btn />
       </section>

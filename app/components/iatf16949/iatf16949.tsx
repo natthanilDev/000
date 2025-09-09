@@ -3,8 +3,9 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Head from "next/head";
 import Iso_btn from "../iso_btn/iso_btn";
+import Image from "next/image";
 import { useEffect } from "react";
-export default function iatf16949() {
+export default function Iatf16949() {
   const [selectedImg, setSelectedImg] = useState<string | null>(null);
 
   const images = [
@@ -54,7 +55,7 @@ export default function iatf16949() {
           <h1 className="ISO9001 text-center text-3xl font-bold">
             {lang === 'th' ? "การรับรองมาตรฐาน IATF 16949" : lang === "en" ? "IATF 16949 Certification" : "IATF 16949認証"}
           </h1>
-          <p className="text-center text-xl mt-2">
+          <p className="text-iso text-center text-xl mt-2">
             {lang === "th" ? " มาตรฐานระบบบริหารคุณภาพสำหรับอุตสาหกรรมยานยนต์" : lang === "en" ? " Quality management system standard for the automotive industry" : " 自動車産業向けの品質マネジメントシステム規格"}
 
 
@@ -67,7 +68,9 @@ export default function iatf16949() {
         {/* Gallery */}
         <div className="image-iso-box flex justify-center items-center gap-4 mt-6">
           {images.map((image, index) => (
-            <img
+            <Image
+              width={1000}
+              height={1000}
               key={index}
               src={image.src}
               alt={image.alt}
@@ -103,8 +106,8 @@ export default function iatf16949() {
           <p className="description-iso"> {lang === "th" ? "IATF 16949 คือมาตรฐานระบบการจัดการคุณภาพเฉพาะสำหรับอุตสาหกรรมยานยนต์ กำหนดโดย International Automotive Task Force (IATF) ร่วมกับ ISO โดยอ้างอิงจาก ISO 9001 และเพิ่มข้อกำหนดเฉพาะสำหรับการผลิตชิ้นส่วนยานยนต์และบริการที่เกี่ยวข้อง" : lang === "en" ? "IATF 16949 is a quality management system standard specifically for the automotive industry, established by the International Automotive Task Force (IATF) in collaboration with ISO. It is based on ISO 9001 and includes additional requirements for the production of automotive parts and related services." : "IATF 16949は、自動車産業向けに特化した品質マネジメントシステム規格であり、国際自動車タスクフォース（IATF）がISOと共同で策定しました。この規格はISO 9001を基盤とし、自動車部品の製造および関連サービスに関する追加要件を含んでいます。"}
           </p>
         </div>
-        
-        
+
+
         <Iso_btn />
       </section>
     </>

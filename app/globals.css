@@ -2565,8 +2565,11 @@ h4 {
   font-weight: bold;
   padding: 50px 0 25px 0;
   text-align: center;
+  color: #080808;
 }
-
+.text-iso{
+  color: #080808;
+}
 .iso_button {
   width: 80%;
   margin: 50px auto;

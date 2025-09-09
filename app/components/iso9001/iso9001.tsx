@@ -4,8 +4,8 @@ import { motion, AnimatePresence } from "framer-motion";
 import Head from "next/head";
 import { useEffect } from "react";
 import Iso_btn from "../iso_btn/iso_btn";
-
-export default function iso9001() {
+import Image from "next/image";
+export default function Iso9001() {
   const [selectedImg, setSelectedImg] = useState<string | null>(null);
   const [lang, setLang] = useState<'th' | 'en' | 'jp'>('th');
 
@@ -49,7 +49,7 @@ export default function iso9001() {
           <h1 className="ISO9001 text-center text-3xl font-bold">
           {lang === "th" ? "การรับรองมาตรฐาน ISO 9001" : lang === "en" ? "ISO 9001 Certification" : "ISO 9001認証"}
           </h1>
-          <p className="text-center text-xl mt-2">
+          <p className="text-iso text-center text-xl mt-2">
             {lang === "th" ? "มาตรฐานด้านคุณภาพระดับสากลสำหรับอุตสาหกรรมยานยนต์" : lang === "en" ? "International quality standard for the automotive industry" : "自動車産業向けの国際的な品質規格"}
                   
           </p>
@@ -60,10 +60,12 @@ export default function iso9001() {
         {/* Gallery */}
         <div className="image-iso-box flex justify-center items-center gap-4 mt-6">
           {images.map((image, index) => (
-            <img
+            <Image
               key={index}
               src={image.src}
               alt={image.alt}
+              width={1000}
+              height={1000}
               className="rounded-lg shadow-md cursor-pointer hover:scale-105 transition-transform duration-300 w-80"
               onClick={() => setSelectedImg(image.src)}
             />
