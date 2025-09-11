@@ -38,7 +38,7 @@ const validateLength = (field: string, value: unknown, max: number) => {
   }
 };
 
-// --- Basic Rate Limiting (per IP) ---
+// --- Basic Rate Limiting (per IP - memory only) ---
 const rateLimit = new Map<string, { count: number; last: number }>();
 const RATE_LIMIT_MAX = 5; // 5 requests
 const RATE_LIMIT_WINDOW = 60 * 1000; // 1 นาที
@@ -85,13 +85,14 @@ export async function POST(req: NextRequest) {
     validateLength("Address", address, limits.address);
     validateLength("Message", message, limits.message);
 
-    // validate email (ใช้ validator.js)
+    // validate + normalize email
     if (!validator.isEmail(email)) {
       return NextResponse.json(
         { success: false, message: "Invalid email address" },
         { status: 400 }
       );
     }
+    email = validator.normalizeEmail(email) || email;
 
     // sanitize inputs
     name = sanitize(name);
@@ -106,7 +107,8 @@ export async function POST(req: NextRequest) {
       !process.env.SMTP_HOST ||
       !process.env.SMTP_PORT ||
       !process.env.EMAIL_USER ||
-      !process.env.EMAIL_PASS
+      !process.env.EMAIL_PASS ||
+      !process.env.REPLY_MAIL
     ) {
       console.error("SMTP configuration missing in .env");
       return NextResponse.json(
@@ -114,7 +116,6 @@ export async function POST(req: NextRequest) {
         { status: 500 }
       );
     }
-
 
     const transporter = nodemailer.createTransport({
       host: process.env.SMTP_HOST,
@@ -128,35 +129,53 @@ export async function POST(req: NextRequest) {
 
     // --- ส่งเมล ---
     await transporter.sendMail({
-      from: `"Website Contact" ${process.env.Reply_Mail}`,
+      from: `"Website Contact" <${process.env.REPLY_MAIL}>`,
       replyTo: sanitize(email),
       to: process.env.EMAIL_USER,
-      subject,
+      subject: sanitize(subject),
+      text: `
+New Contact Form Submission
+
+Name: ${sanitize(name)}
+Phone: ${sanitize(phone)}
+Address: ${sanitize(address)}
+
+Message:
+${sanitize(message)}
+`,
       html: `
-        <h2>New Contact Form Submission</h2>
-        <p><strong>Name:</strong> ${name}</p>
-        <p><strong>Phone:</strong> ${phone}</p>
-        <p><strong>Address:</strong> ${address}</p>
-        <p><strong>Message:</strong></p>
-        <p>${message.replace(/\n/g, "<br/>")}</p>
-        <hr/>
-      `,
+<div style="font-family: Arial, sans-serif; color: #333; line-height: 1.6;">
+  <h2 style="color: #0066cc; border-bottom: 2px solid #eee; padding: 20px 0;">
+    New Contact Form Submission
+  </h2>
+
+  <p><strong style="color:#555; font-size:18px; padding-left: 50px; padding-bottom:30px ;">Name:</strong> ${escapeHTML(name)}</p>
+
+  <p><strong style="color:#555; font-size:18px; padding-left: 50px; padding-bottom:30px ;">Phone:</strong> ${escapeHTML(phone)}</p>
+ 
+  <p><strong style="color:#555; font-size:18px; padding-left: 50px; padding-bottom:30px ;">Address:</strong> ${escapeHTML(address)}</p>
+ 
+  
+  <div style="background:#f9f9f9; padding:12px; border-radius:8px; border:1px solid #ddd;">
+   <p style="margin-top:16px;"><strong>Message:</strong></p>  ${escapeHTML(message).replace(/\n/g, "<br/>")}
+  </div>
+
+  <hr style="margin:20px 0; border:none; border-top:1px solid #eee;" />
+  <p style="font-size:12px; color:#999;">This message was sent from your website contact form.</p>
+</div>
+`,
     });
+
 
     return NextResponse.json(
       { success: true, message: "Email sent successfully!" },
       { status: 200 }
     );
   } catch (error: unknown) {
-    if (error instanceof Error) {
-      console.error("Contact form error:", error);
-      return NextResponse.json(
-        { success: false, message: error.message },
-        { status: 400 }
-      );
-    }
+    console.error("Contact form error:", error);
+    // ไม่ส่ง error message จริงกลับ client
     return NextResponse.json(
-      { success: false, message: "Unknown error occurred" },
+      { success: false, message: "Something went wrong. Please try again later." },
       { status: 500 }
     );
   }
