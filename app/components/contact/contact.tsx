@@ -1,7 +1,8 @@
 'use client'
-import {useState , useEffect} from 'react'
+import { useState, useEffect } from 'react'
 import Head from 'next/head'
 import Form_contact from "../form_contact/form_contact"
+import Link from 'next/link';
 
 export default function Contact() {
   const [lang, setLang] = useState<'th' | 'en' | 'jp'>('th');
@@ -19,7 +20,13 @@ export default function Contact() {
     "icon-contact bi bi-envelope-at-fill",
     "icon-contact bi bi-geo-alt-fill"
   ]
-  const titleTH =[
+  const link = [
+    "tel:033-136581-4",
+    "https://jieithai.co.th",
+    "mailto:info@jiei-thai.co.th",
+    "https://maps.app.goo.gl/rymNPgK529UiEo2g6"
+  ]
+  const titleTH = [
     'โทรศัพท์',
     'เว็บไซต์',
     'อีเมล',
@@ -111,15 +118,17 @@ export default function Contact() {
 
             <div className="container-icon">
               {icon.map((item, index) => (
-                <div key={index} className="contact-box-icon">
-                  <div className="icon">
-                    <i className={item}></i>
+                <Link className='a' href={link[index]} key={index}>
+                  <div  className="contact-box-icon">
+                    <div className="icon">
+                      <i className={item}></i>
+                    </div>
+                    <div className="title-box-icon">
+                      <p className="text-icon">{lang === 'th' ? titleTH[index] : lang === "en" ? titleEN[index] : titleJP[index]}</p>
+                      <p className='link-icon'>{contact[index]}</p>
+                    </div>
                   </div>
-                  <div className="title-box-icon">
-                    <p className="text-icon">{lang === 'th' ? titleTH[index]: lang === "en" ? titleEN[index] : titleJP[index]}</p>
-                    <p>{contact[index]}</p>
-                  </div>
-                </div>
+                </Link>
               ))}
             </div>
           </div>

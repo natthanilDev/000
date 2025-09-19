@@ -3,6 +3,7 @@ import React from 'react'
 import { useEffect, useState } from 'react';
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
+import { useRef } from 'react';
 export default function Nav() {
   const [scrolled, setScrolled] = useState(false);
   const Path = usePathname()
@@ -16,6 +17,23 @@ export default function Nav() {
     return 'th';
   });
 
+  const menuCheckboxRef = useRef<HTMLInputElement>(null);
+
+  const menuCheck = useRef<HTMLInputElement>(null);
+
+
+
+const closeMenu = () => {
+  setMenu(false)
+  if (menuCheckboxRef.current) {
+    menuCheckboxRef.current.checked = false
+  }
+  if (menuCheck.current) {
+    menuCheck.current.checked = false
+  }
+};
+
+  
 
 
   const onChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
@@ -63,17 +81,27 @@ export default function Nav() {
         <div className="container-box">
           <div className="nav-link-box" >
             <div className="icon-menu">
-              <label onClick={() => setMenu(!menu)} htmlFor="icon-menu-show"
+
+              <label onClick={() => {
+                setMenu(!menu)
+              }
+
+              } htmlFor="icon-menu-show"
                 aria-label="Toggle navigation menu"
                 aria-expanded="false"
                 aria-controls="main-navigation"
                 className="icon-menu-label">
                 <i className={menu === true ? "bi bi-x" : "bi bi-list"}></i>
               </label>
-              <input type="checkbox" className="icon-menu-show" id="icon-menu-show" />
+              <input
+                ref={menuCheckboxRef}
+                type="checkbox"
+                className="icon-menu-show"
+                id="icon-menu-show"
+              />
               <ul id="main-navigation" className="ul-navigation">
-                <li className={`li-menu ${Path === '/' || Path === "/iso9001" || Path === "/iso14001" || Path === "/iatf16949" ? 'path' : ''}`} >
-                  <Link  href="/" className="nav-link" title="JIEI Thailand Homepage - Automotive Rubber Parts Manufacturer">
+                <li onClick={closeMenu} className={`li-menu ${Path === '/' || Path === "/iso9001" || Path === "/iso14001" || Path === "/iatf16949" ? 'path' : ''}`} >
+                  <Link href="/" className="nav-link" title="JIEI Thailand Homepage - Automotive Rubber Parts Manufacturer">
                     {langu === 'jp' ? "ホーム" : "Home"}
                   </Link>
                 </li>
@@ -84,6 +112,7 @@ export default function Nav() {
                       type="checkbox"
                       className="dropdown-menu"
                       id="dropdown-menu"
+                      ref={menuCheck}
                     />
                     <span className="nav-link">
                       <label htmlFor="dropdown-menu">
@@ -96,7 +125,7 @@ export default function Nav() {
                       <ul className="ul-product">
                         <li className={`li-product1 ${Path === '/products/engine-mount' ? 'path' : ''}`} >
                           <Link
-                            href="/products/engine-mount"
+                            onClick={closeMenu} href="/products/engine-mount"
                             className="Link-product-class"
                             title="Engine Mounts - Automotive Rubber Parts JIEI Thailand">
                             {langu === 'jp' ? "エンジンマウント" : "Engine Mounts"}
@@ -104,7 +133,7 @@ export default function Nav() {
                         </li>
                         <li className={`li-product2 ${Path === '/products/suspension-bush' ? 'path' : ''}`} >
                           <Link
-                            href="/products/suspension-bush"
+                            onClick={closeMenu} href="/products/suspension-bush"
                             className="Link-product-class"
                             title="Suspension Bushings - OEM Rubber Parts JIEI Thailand"
                           >
@@ -113,7 +142,7 @@ export default function Nav() {
                         </li>
                         <li className={`li-product3 ${Path === '/products/seals' ? 'path' : ''}`} >
                           <Link
-                            href="/products/seals"
+                            onClick={closeMenu} href="/products/seals"
                             className="Link-product-class"
                             title="Seals & Gaskets - Automotive Rubber Sealing Solutions">
                             {langu === 'jp' ? "シール＆ガスケット" : " Seals & Gaskets"}
@@ -121,7 +150,7 @@ export default function Nav() {
                         </li>
                         <li className={`li-product4 ${Path === '/products/custom-parts' ? 'path' : ''}`} >
                           <Link
-                            href="/products/custom-parts"
+                            onClick={closeMenu} href="/products/custom-parts"
                             className="Link-product-class"
                             title="Custom Rubber Parts Manufacturing Thailand">
                             {langu === 'jp' ? "カスタムゴム部品" : "Custom Rubber Parts"}
@@ -133,7 +162,7 @@ export default function Nav() {
                 </li>
                 <li className={`li-menu ${Path === '/about' ? 'path' : ''}`}>
                   <Link
-                    href="/about"
+                    onClick={closeMenu} href="/about"
                     className="nav-link"
                     title="About JIEI Thailand - Rubber Parts Manufacturer">
                     {langu === 'jp' ? "会社概要" : "About Us"}
@@ -141,7 +170,7 @@ export default function Nav() {
                 </li>
                 <li className={`li-menu ${Path === '/activities' ? 'path' : ''}`}>
                   <Link
-                    href="/activities"
+                    onClick={closeMenu} href="/activities"
                     className="nav-link"
                     title="JIEI Thailand Activities - กิจกรรม โรงงานผู้ผลิตชิ้นส่วนยางรถยนต์"
                     aria-label="JIEI Thailand Activities - กิจกรรม และข่าวสารจากโรงงานผู้ผลิตชิ้นส่วนยางรถยนต์">
@@ -149,19 +178,19 @@ export default function Nav() {
                   </Link>
                 </li>
                 <li className={`li-menu ${Path === '/technologies' ? 'path' : ''}`}>
-                  <Link href="/technologies" className="nav-link" title="JIEI Thailand Homepage - Automotive Rubber Parts Manufacturer">
+                  <Link onClick={closeMenu} href="/technologies" className="nav-link" title="JIEI Thailand Homepage - Automotive Rubber Parts Manufacturer">
                     {langu === 'jp' ? "テクノロジー" : "Technologies"}
                   </Link>
                 </li>
                 <li className={`li-menu ${Path === '/network' ? 'path' : ''}`}>
-                  <Link href="/network" className="nav-link" title="JIEI Thailand Homepage - Automotive Rubber Parts Manufacturer">
+                  <Link onClick={closeMenu} href="/network" className="nav-link" title="JIEI Thailand Homepage - Automotive Rubber Parts Manufacturer">
                     {langu === 'jp' ? "ネットワーク" : "Network"}
                   </Link>
                 </li>
 
                 <li className={`li-menu ${Path === '/news' ? 'path' : ''}`}>
                   <Link
-                    href="/news"
+                    onClick={closeMenu} href="/news"
                     className="nav-link"
                     title="News & Blog - JIEI Thailand Updates">
                     {langu === 'jp' ? "ニュース＆ブログ" : "News & Blog"}
@@ -169,7 +198,7 @@ export default function Nav() {
                 </li>
                 <li className={` li-menu ${Path === '/contact' ? 'path' : ''}`}>
                   <Link
-                    href="/contact"
+                    onClick={closeMenu} href="/contact"
                     className="nav-link"
                     title="Contact JIEI Thailand - OEM Rubber Parts Manufacturer">
                     {langu === 'jp' ? "お問い合わせ" : "Contact Us"}

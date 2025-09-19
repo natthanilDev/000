@@ -69,7 +69,7 @@ export default function Home() {
 
             </Head>
 
-            <div className="background">
+            <div className="background" >
                 <section className="relative h-screen w-full overflow-hidden">
                     <video
                         className="video_intro absolute top-1/2 left-1/2 min-w-full min-h-full w-auto h-auto -translate-x-1/2 -translate-y-1/2 object-cover z-[-1]"
