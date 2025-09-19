@@ -278,6 +278,9 @@ a:hover {
 
 }
 
+
+
+
 .dropdown-menu:checked~.product-jiei-thai {
   top: 75px;
   opacity: 1;
@@ -294,6 +297,10 @@ a:hover {
   overflow: scroll;
 
 
+}
+
+.ul-product::-webkit-scrollbar {
+  display: none;
 }
 
 .li-product1 {
@@ -426,7 +433,7 @@ a:hover {
   }
 
   .ul-navigation {
-    top: -500%;
+    top: -1000%;
     right: 0;
     position: absolute;
     transition: all ease 0.25s;
@@ -438,7 +445,6 @@ a:hover {
     background-color: #ffffffde;
     padding: 10px 0;
     border-bottom: .5px solid #cbcbcb;
-
   }
 
   .icon-menu-show:checked~.ul-navigation {
@@ -1463,12 +1469,13 @@ a:hover {
 
 
 .about-page {
-  background-image: url('/background-about2.png');
+  /* background-image: url('/background-about2.png');
 
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
-  color: var(--font-color);
+  background-size: cover; */
+
+  /* color: var(--font); */
 
 }
 
@@ -1476,18 +1483,20 @@ a:hover {
   font-weight: bold;
   width: 50%;
   margin: 0 auto;
-  color: #fff;
+  color: var(--font-color);
   padding: 50px 0 50px 0;
   text-align: center;
   font-size: 50px;
 }
 
 .text-center {
-  color: #fff;
+  color: var(--font-color);
+
 }
 
 .company-profile-text {
-  color: #ffff;
+  color: var(--font-color);
+
 
 }
 
@@ -1496,7 +1505,8 @@ a:hover {
   font-weight: 600;
   padding: 20px 0;
   margin-top: 30px;
-  color: #fff;
+  color: var(--font-color);
+
 
 }
 
@@ -1513,6 +1523,7 @@ a:hover {
   padding: 30px 0 0 0;
   font-weight: bold;
   color: var(--font-color);
+
 
 }
 
@@ -1606,7 +1617,8 @@ h4 {
   text-align: center;
   font-weight: bold;
   padding-top: 100px;
-  color: #fff;
+  color: var(--font-color);
+
 
 }
 
@@ -1634,22 +1646,24 @@ h4 {
   padding: 15px 20px;
   font-size: 18px;
   font-weight: bold;
-  color: #fff;
-  background-color: #6b6b6b;
+  color: var(--font-color);
+  background-color: #ffffff;
 
 }
 
 .position {
   font-size: 22px;
   font-weight: bold;
-  color: #fff;
+  color: var(--font-color);
+
 }
 
 .managerText {
   text-align: center;
-  color: #fff;
+  color: var(--font-color);
   font-weight: bold;
   margin: 20px auto;
+
 
 }
 
@@ -1848,10 +1862,10 @@ h4 {
 
 /* ---------------------------------------------------ACTIVITIES-PAGE */
 .activities-page {
-  background-image: url("/bcvdo.png");
+  /* background-image: url("/bcvdo.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
   padding: 0px 50px;
 
 }
@@ -1860,7 +1874,7 @@ h4 {
   text-align: center;
   padding: 50px 0 10px 0;
   font-weight: bold;
-  color: #ffff;
+  color: var(--font-color);
 
 }
 
@@ -1877,7 +1891,8 @@ h4 {
   text-align: center;
   font-size: 22px;
   padding: 20px 30px;
-  color: #fff;
+      color: var(--font-color);
+
 
 }
 
@@ -2030,18 +2045,19 @@ h4 {
 
 
 /* -------------------------------------------------NEWS&BLOG */
-.news-bg {
+/* .news-bg {
   background-image: url("/bcvdo.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-}
+} */
 
 .title-news {
   padding: 50px 0 20px 0;
   text-align: center;
   font-weight: bold;
-  color: #fff;
+     color: var(--font-color);
+
 }
 
 .container-card {
@@ -2062,7 +2078,7 @@ h4 {
   backdrop-filter: blur(50px);
   background-color: #ffffff;
 
-  box-shadow: 0 0 2px #ffff;
+  box-shadow: 0 0 2px var(--font-color);
 
 }
 
@@ -2134,13 +2150,13 @@ h4 {
 
   text-align: center;
   font-weight: bold;
-  color: #fff;
+  color: var(--font-color);
 }
 
 .news-blog {
   font-weight: bold;
   padding-bottom: 20px;
-  color: #fff;
+ color: var(--font-color);
 
 
 }
@@ -2197,7 +2213,7 @@ h4 {
   backdrop-filter: blur(20px);
   padding: 50px 20px;
   font-style: 18px;
-  color: #fff;
+ color: var(--font-color);
 }
 
 
@@ -2418,12 +2434,13 @@ h4 {
 
 /* ---------------------------------------------------------------------NETWORKPAGE */
 
-.network-all {
+/* .network-all {
   background-image: url("/background-about.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
+  
+} */
 
 .network-text {
   padding: 50px 100px 20px 100px;
@@ -2922,6 +2939,14 @@ h4 {
     grid-template-columns: 1fr 1fr;
   }
 
+  .product-card-box:hover {
+
+    .preview-product {
+      opacity: 0;
+
+
+    }
+  }
 }
 
 @media screen and (max-width : 320px) {
@@ -2946,22 +2971,25 @@ h4 {
   justify-content: center;
   padding: 10px 30px;
   margin: 0 auto;
-
+  gap: 10px;
 }
 
 .product-description-table {
   margin: auto 0;
 
 }
-
+.product-description-table-title{
+  font-weight: bold;
+}
 .pop-product2 {
-
   display: grid;
   grid-template-columns: 0.5fr 1fr;
   align-items: center;
   justify-content: center;
   padding: 10px 30px;
   margin: 0 auto;
+
+
 }
 
 .product-description-box-2 {
@@ -2983,9 +3011,42 @@ h4 {
   .product-description-card {
     grid-template-columns: 1fr;
   }
-  .image-product-page{
+
+  .image-product-page {
     width: 60%;
     margin-bottom: 10px;
 
   }
+  .product-card-box:hover {
+  box-shadow:0 0 2px #959595;
+  cursor: pointer;
+  .image-product {
+    transform: scale(1);
+
+  }
+
+}
+}
+
+@media screen and (max-width:426px) {
+
+  .image-product-page {
+    width: 100%;
+    margin-bottom: 0px;
+
+  }
+
+  .pop-product1 {
+    grid-template-columns: 1fr;
+
+  }
+
+  .pop-product2 {
+    grid-template-columns: 1fr;
+  }
+.product-description-table-title{
+  font-weight: bold;
+  font-size: 22px;
+  padding-top: 20px;
+}
 }

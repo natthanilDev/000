@@ -266,7 +266,7 @@ export default function Home() {
                 </div>
 
                 <div className="partner-homepage">
-                    <h1 className="partner-text">{lang === "th" ? "องค์กรชั้นนำที่ไว้วางใจ JIEI Thailand ผู้ผลิตชิ้นส่วนยางรถยนต์" : lang === "en" ? "Leading Companies Trust JIEI Thailand – Automotive Rubber Parts Manufacturer" : "大手企業から信頼されるJIEI Thailand – 自動車用ゴム部品メーカー"}</h1>
+                    <h1 className="partner-text">{lang === "th" ? "องค์กรชั้นนำที่ไว้วางใจ JIEI Thailand เป็นผู้ผลิตชิ้นส่วนยางรถยนต์" : lang === "en" ? "Leading Companies Trust JIEI Thailand – Automotive Rubber Parts Manufacturer" : "大手企業から信頼されるJIEI Thailand – 自動車用ゴム部品メーカー"}</h1>
 
                     <div className="image-logo-partner-homepage">
                         {partner.map((image, index) => (

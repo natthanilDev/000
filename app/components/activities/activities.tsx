@@ -4,6 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Head from 'next/head';
 import { useSearchParams } from "next/navigation";
+import ScrollReveal from '../ScrollReveal/ScrollReveal';
 
 export default function Page() {
   const searchParams = useSearchParams();
@@ -122,44 +123,49 @@ export default function Page() {
 
       {selectedNews === null ? (
         <div>
-          <h1 className='activities-text'>{lang === "th" ? "กิจกรรม" : lang === "en" ? "Activities" : "活動"}  </h1>
-          <div className="line"></div>
-          <div className="activities-text-description-box">
-            <p className='activities-text-description'>
-              {lang === "th" ? "JIEI ทุ่มเทเพื่อสร้างสภาพแวดล้อมการทำงานระดับมืออาชีพ และสนับสนุนความร่วมมือรวมถึงนวัตกรรมผ่านกิจกรรมที่สร้างแรงบันดาลใจ" : lang === "en" ? "JIEI is dedicated to creating a professional work environment and promoting collaboration and innovation through inspiring activities." : "JIEIは、プロフェッショナルな職場環境の構築に尽力し、刺激的な活動を通じて協力とイノベーションを推進しています。"}
-            </p>
-          </div>
-          <div className="container-card">
-            {paginatedData.map((item, index) => (
-              <div className="box-card" key={index}>
-                <div className="image-card">
-                  <Image
-                    src={img[start + index]}
-                    height={1000}
-                    width={1000}
-                    alt={item}
-                    className="image-activities"
-                    priority
-                  />
-                </div>
-                <div className="content-card-box">
-                  <div className="title-card">
-                    <h2>{lang === "th" ? item : lang === "en" ? item : ""}</h2>
+          <ScrollReveal>
+            <h1 className='activities-text'>{lang === "th" ? "กิจกรรม" : lang === "en" ? "Activities" : "活動"}  </h1>
+            <div className="line"></div>
+            <div className="activities-text-description-box">
+              <p className='activities-text-description'>
+                {lang === "th" ? "JIEI ทุ่มเทเพื่อสร้างสภาพแวดล้อมการทำงานระดับมืออาชีพ และสนับสนุนความร่วมมือรวมถึงนวัตกรรมผ่านกิจกรรมที่สร้างแรงบันดาลใจ" : lang === "en" ? "JIEI is dedicated to creating a professional work environment and promoting collaboration and innovation through inspiring activities." : "JIEIは、プロフェッショナルな職場環境の構築に尽力し、刺激的な活動を通じて協力とイノベーションを推進しています。"}
+              </p>
+            </div>
+          </ScrollReveal>
+
+          <ScrollReveal>
+            <div className="container-card">
+              {paginatedData.map((item, index) => (
+                <div className="box-card" key={index}>
+                  <div className="image-card">
+                    <Image
+                      src={img[start + index]}
+                      height={1000}
+                      width={1000}
+                      alt={item}
+                      className="image-activities"
+                      priority
+                    />
                   </div>
-                  <div className="description-activities">
-                    <p className='content-card'>{lang === "th" ? content[start + index] : lang === "en" ? content[start + index] : content[start + index]}</p>
+                  <div className="content-card-box">
+                    <div className="title-card">
+                      <h2>{lang === "th" ? item : lang === "en" ? item : ""}</h2>
+                    </div>
+                    <div className="description-activities">
+                      <p className='content-card'>{lang === "th" ? content[start + index] : lang === "en" ? content[start + index] : content[start + index]}</p>
+                    </div>
+                    <button className="read-more"
+                      onClick={() => {
+                        setSelectedNews(start + index)
+                        window.scrollTo({ top: 0, behavior: 'smooth' })
+                      }} >
+                      {lang === "th" ? "อ่านเพิ่มเติม" : lang === "en" ? "Read more" : "続きを読む"}
+                    </button>
                   </div>
-                  <button className="read-more"
-                    onClick={() => {
-                      setSelectedNews(start + index)
-                      window.scrollTo({ top: 0, behavior: 'smooth' })
-                    }} >
-                    {lang === "th" ? "อ่านเพิ่มเติม" : lang === "en" ? "Read more" : "続きを読む"}
-                  </button>
                 </div>
-              </div>
-            ))}
-          </div>
+              ))}
+            </div>
+          </ScrollReveal>
           <div className="page">
             <nav className="countPage" aria-label="Pagination">
               {Array.from({ length: totalPages }, (_, i) => i + 1).map((pageNum) => (
@@ -187,16 +193,18 @@ export default function Page() {
             alt={activities[selectedNews]}
             className="image-news-page"
           />
-          <h2 className='news-blog'>{lang === "th" ? `กิจกรรมที่คุณเลือก ${activities[selectedNews]}` : lang === "en" ? `Selected Activities ${activities[selectedNews]}` : `選択した活動 ${activities[selectedNews]}`}  </h2>
-          <p className='content-box-page'>{lang === "th" ? content[selectedNews] : lang === content[selectedNews] ? content[selectedNews] : content[selectedNews]}</p>
-          <div className="btn-back-newsPage">
-            <button onClick={() => {
-              setSelectedNews(null)
-              window.scrollTo({ top: 0, behavior: 'smooth' })
-            }} className="back-btn">
-              {lang === "th" ? "กลับไปหน้ารวม" : lang === "en" ? "Back to Overview" : "一覧に戻る"}
-            </button>
-          </div>
+          <ScrollReveal>
+            <h2 className='news-blog'>{lang === "th" ? `กิจกรรมที่คุณเลือก ${activities[selectedNews]}` : lang === "en" ? `Selected Activities ${activities[selectedNews]}` : `選択した活動 ${activities[selectedNews]}`}  </h2>
+            <p className='content-box-page'>{lang === "th" ? content[selectedNews] : lang === content[selectedNews] ? content[selectedNews] : content[selectedNews]}</p>
+            <div className="btn-back-newsPage">
+              <button onClick={() => {
+                setSelectedNews(null)
+                window.scrollTo({ top: 0, behavior: 'smooth' })
+              }} className="back-btn">
+                {lang === "th" ? "กลับไปหน้ารวม" : lang === "en" ? "Back to Overview" : "一覧に戻る"}
+              </button>
+            </div>
+          </ScrollReveal>
         </div>
       )}
     </div>

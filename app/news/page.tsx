@@ -4,6 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Head from 'next/head';
 import { useSearchParams } from "next/navigation";
+import ScrollReveal from '../components/ScrollReveal/ScrollReveal';
 
 export default function Page() {
   const searchParams = useSearchParams();
@@ -108,43 +109,47 @@ export default function Page() {
 
       {selectedNews === null ? (
         <>
-          <h1 className='title-news'>{lang === "th" ? "ข่าวสาร | บล็อก" : lang === "en" ? "News | Blog" : "ニュース | ブログ"}  </h1>
-          <div className="line"></div>
-          <div className="news-text-description-box">
-            <p className='activities-text-description'>{lang === "th" ? "เราอัปเดตข้อมูลเกี่ยวกับนวัตกรรม เทคโนโลยีของบริษัทอย่างต่อเนื่อง เพื่อให้คุณไม่พลาดความเคลื่อนไหวสำคัญในอุตสาหกรรมและการพัฒนาของเรา" : lang === "en" ? "We continuously update information about the company’s innovations and technologies to ensure you never miss important industry trends and our developments." : "当社は、業界の重要な動向や当社の最新の取り組みを見逃さないよう、革新や技術に関する情報を継続的に更新しています。"} </p>
-          </div>
-
+          <ScrollReveal>
+            <h1 className='title-news'>{lang === "th" ? "ข่าวสาร | บล็อก" : lang === "en" ? "News | Blog" : "ニュース | ブログ"}  </h1>
+            <div className="line"></div>
+            <div className="news-text-description-box">
+              <p className='activities-text-description'>{lang === "th" ? "เราอัปเดตข้อมูลเกี่ยวกับนวัตกรรม เทคโนโลยีของบริษัทอย่างต่อเนื่อง เพื่อให้คุณไม่พลาดความเคลื่อนไหวสำคัญในอุตสาหกรรมและการพัฒนาของเรา" : lang === "en" ? "We continuously update information about the company’s innovations and technologies to ensure you never miss important industry trends and our developments." : "当社は、業界の重要な動向や当社の最新の取り組みを見逃さないよう、革新や技術に関する情報を継続的に更新しています。"} </p>
+            </div>
+          </ScrollReveal>
           <div className="container-card">
             {paginatedData.map((item, index) => (
-              <div className="box-card" key={index}>
-                <div className="image-card">
-                  <Image
-                    src={img[start + index]}
-                    height={1000}
-                    width={1000}
-                    alt={`News image: ${item}`}
-                    className="image-news"
-                    priority
-                  />
-                </div>
-
-                <div className="content-card-box">
-                  <div className="title-card">
-                    <h2>{item}</h2>
+              <ScrollReveal key={index}>
+                <div className="box-card" >
+                  <div className="image-card">
+                    <Image
+                      src={img[start + index]}
+                      height={1000}
+                      width={1000}
+                      alt={`News image: ${item}`}
+                      className="image-news"
+                      priority
+                    />
                   </div>
-                  <div className="content-card">
-                    <p>{content[start + index]}</p>
-                  </div>
-                  <button className="read-more"
-                    onClick={() => {
-                      setSelectedNews(start + index)
-                      window.scrollTo({ top: 0, behavior: 'smooth' })
-                    }} >
-                    {lang === 'th' ? "อ่านเพิ่มเติม" : lang === "en" ? "Read More" : "続きを読む"}
 
-                  </button>
+                  <div className="content-card-box">
+                    <div className="title-card">
+                      <h2>{item}</h2>
+                    </div>
+                    <div className="content-card">
+                      <p>{content[start + index]}</p>
+                    </div>
+                    <button className="read-more"
+                      onClick={() => {
+                        setSelectedNews(start + index)
+                        window.scrollTo({ top: 0, behavior: 'smooth' })
+                      }} >
+                      {lang === 'th' ? "อ่านเพิ่มเติม" : lang === "en" ? "Read More" : "続きを読む"}
+
+                    </button>
+                  </div>
+
                 </div>
-              </div>
+              </ScrollReveal>
             ))}
           </div>
           <div className="page">
@@ -163,28 +168,31 @@ export default function Page() {
         </>
       ) : (
         <div className="detail-news">
-          <h2 className='title-news-page'>{news[selectedNews]}</h2>
-          <div className="line"></div>
-          <Image
-            src={img[selectedNews]}
-            height={1000}
-            width={1000}
-            alt={`News image: ${news[selectedNews]}`}
-            className="image-news-page"
-          />
-          <h2 className='news-blog'>{lang === "th" ? "ข่าวที่เลือก" : lang === "en" ? "Selected News" : "選択したニュース"}   {news[selectedNews]}</h2>
-          <p className='content-box-page'>{content[selectedNews]}</p>
+          <ScrollReveal>
+            <h2 className='title-news-page'>{news[selectedNews]}</h2>
+            <div className="line"></div>
+            <Image
+              src={img[selectedNews]}
+              height={1000}
+              width={1000}
+              alt={`News image: ${news[selectedNews]}`}
+              className="image-news-page"
+            />
+            <h2 className='news-blog'>{lang === "th" ? "ข่าวที่เลือก" : lang === "en" ? "Selected News" : "選択したニュース"}   {news[selectedNews]}</h2>
+            <p className='content-box-page'>{content[selectedNews]}</p>
 
-          <div className="btn-back-newsPage">
-            <button onClick={() => {
-              setSelectedNews(null)
-              window.scrollTo({ top: 0, behavior: 'smooth' })
-            }} className="back-btn">
-              กลับไปหน้ารวม
-            </button>
-          </div>
+            <div className="btn-back-newsPage">
+              <button onClick={() => {
+                setSelectedNews(null)
+                window.scrollTo({ top: 0, behavior: 'smooth' })
+              }} className="back-btn">
+                กลับไปหน้ารวม
+              </button>
+            </div>
+          </ScrollReveal>
         </div>
       )}
+
     </div >
   );
 }

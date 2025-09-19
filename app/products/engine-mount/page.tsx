@@ -199,7 +199,7 @@ export default function Page() {
               <div className="description-product-table">
                 <div className="pop-product1">
                   <div className="table-spec1">
-                    <p className='product-description-table'>product</p>
+                    <p className='product-description-table-title'>product</p>
                   </div>
                   <div className="table-spec1">
                     <p className='product-description-table'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, quo hic omnis, tempora quia, nobis accusantium quos ducimus autem ut soluta. Quas, doloribus. Cumque harum porro ipsa expedita fugit dolore?</p>
@@ -208,16 +208,13 @@ export default function Page() {
 
                 <div className="pop-product2">
                   <div className="table-spec2">
-                    <p className='product-description-table'>product</p>
+                    <p className='product-description-table-title'>product</p>
                   </div>
                   <div className="table-spec2">
                     <p className='product-description-table'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut recusandae dolorum officia fuga et, iure reiciendis rerum sit maiores alias repellat optio voluptates laboriosam, modi, ipsa odit consequuntur quis molestias?</p>
                   </div>
                 </div>
-
               </div>
-
-
             </div>
           </div>
 
