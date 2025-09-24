@@ -37,11 +37,23 @@ export default function Home() {
         "/support (3).png",
         "/support (4).png",
     ]
-    const content_support = [
+    const content_supportEN = [
         "Our company, JIEI (Thailand) is focused on the ASEAN region and offers a variety of rubber products for construction materials, automobiles, and other industrial uses."
         , "Our high-precision technology utilizes proprietary techniques and boasts real results in supporting the creation of beautiful and comfortable vehicles."
         , "Committed to responding to the demands of our customers, we are always incorporating the latest state-of-the-art technology.",
         "We fully support a schedule that extends from richly-experienced design planning and material development to mass production through industrial methods development."
+    ]
+    const content_supportTH = [
+        "บริษัทของเรา JIEI (ประเทศไทย) มุ่งเน้นตลาดในภูมิภาคอาเซียน และนำเสนอผลิตภัณฑ์ยางหลากหลายประเภทสำหรับวัสดุก่อสร้าง ยานยนต์ และการใช้งานในอุตสาหกรรมอื่น ๆ",
+        "เทคโนโลยีความแม่นยำสูงของเราใช้เทคนิคเฉพาะตัว และมีผลงานจริงในการสนับสนุนการสร้างยานยนต์ที่สวยงามและสะดวกสบาย",
+        "เรามุ่งมั่นที่จะตอบสนองความต้องการของลูกค้าอยู่เสมอ โดยการนำเทคโนโลยีล้ำสมัยล่าสุดเข้ามาใช้อย่างต่อเนื่อง",
+        "เราสนับสนุนกระบวนการอย่างเต็มรูปแบบ ตั้งแต่การวางแผนการออกแบบอย่างมีประสบการณ์ การพัฒนาวัสดุ ไปจนถึงการผลิตจำนวนมากผ่านการพัฒนากระบวนการทางอุตสาหกรรม",
+    ]
+    const content_supportJP = [
+        "当社、JIEI（タイ）はASEAN地域に注力しており、建設資材、自動車、その他の工業用途向けのさまざまなゴム製品を提供しています。",
+        "当社の高精度技術は独自の手法を活用しており、美しく快適な車両の創造を支援する実績があります。",
+        "お客様のニーズに応えることを使命とし、常に最新の最先端技術を取り入れています。",
+        "豊富な経験に基づく設計計画や素材開発から、産業的手法による量産まで、一貫したサポートを提供しています。"
     ]
 
     return (
@@ -61,6 +73,10 @@ export default function Home() {
                 {/* Hreflang สำหรับหลายภาษา */}
                 <link rel="alternate" href="https://www.jiei-thai.co.th/" hrefLang="th" />
                 <link rel="alternate" href="https://www.jiei-thai.co.th/" hrefLang="x-default" />
+                <link rel="alternate" href="https://www.jiei-thai.co.th/" hrefLang="th" />
+                <link rel="alternate" href="https://www.jiei-thai.co.th/" hrefLang="x-default" />
+     
+               
 
                 {/* Open Graph */}
                 <meta property="og:type" content="website" />
@@ -101,7 +117,7 @@ export default function Home() {
                                 <div className="company_name_box">
                                     <h1 className="company_name">
                                         {lang === 'th'
-                                            ? "เจไออีไอ ประเทศไทย – ผู้ผลิตชิ้นส่วนยางสำหรับยานยนต์ จังหวัดชลบุรี"
+                                            ? "JIEI Thailand – ผู้ผลิตชิ้นส่วนยางสำหรับยานยนต์ จังหวัดชลบุรี"
                                             : lang === 'en'
                                                 ? 'JIEI Thailand - Automotive Rubber Parts Manufacturer in Chonburi'
                                                 : 'JIEIタイランド – チョンブリーの自動車用ゴム部品メーカー'}
@@ -160,8 +176,7 @@ export default function Home() {
 
                     <div className="why-choose-image">
                         <ScrollReveal>
-                        <Image src={'/Home-car.png'} className='image-iso' alt='โรงงานผลิตชิ้นส่วนยางรถยนต์มาตรฐานสากล ISO & IATF16949 ที่ชลบุรี ประเทศไทย"' width={1000} height={1000} priority />
-
+                            <Image src={'/Home-car.png'} className='image-iso' alt='โรงงานผลิตชิ้นส่วนยางรถยนต์มาตรฐานสากล ISO & IATF16949 ที่ชลบุรี ประเทศไทย"' width={1000} height={1000} priority />
                         </ScrollReveal>
                     </div>
 
@@ -179,7 +194,7 @@ export default function Home() {
                                         </div>
                                         <div className="card-support-content">
                                             <p className="content-support">
-                                                {content_support[index]}
+                                                {lang === "th" ? content_supportTH[index] : lang === "en" ? content_supportEN[index] : content_supportJP[index]}
                                             </p>
                                         </div>
                                     </div>
@@ -319,39 +334,13 @@ export default function Home() {
 
             </div >
 
-            < script
-                type="application/ld+json"
-                dangerouslySetInnerHTML={{
-                    __html: JSON.stringify({
-                        "@context": "https://schema.org",
-                        "@type": "Organization",
-                        name: "JIEI Thailand Co., Ltd.",
-                        url: "https://www.jiei-thai.co.th",
-                        logo: "https://www.jiei-thai.co.th/jiei-thailand-logo.png",
-                        sameAs: [
-                            "https://www.facebook.com/jieithailand",
-                            "https://www.linkedin.com/company/jiei-thailand"
-                        ],
-                        contactPoint: [
-                            {
-                                "@type": "ContactPoint",
-                                telephone: "+66-33-136581-4",
-                                contactType: "customer service",
-                                areaServed: "TH",
-                                availableLanguage: ["Thai", "English"]
-                            }
-                        ]
-                    })
-                }
-                }
-            />
 
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{
                     __html: JSON.stringify({
                         "@context": "https://schema.org",
-                        "@type": "Organization",
+                        "@type": "FAQPage",
                         name: "JIEI Thailand Co., Ltd.",
                         url: "https://www.jiei-thai.co.th",
                         logo: "https://www.jiei-thai.co.th/jiei-thailand-logo.png",
@@ -365,18 +354,10 @@ export default function Home() {
                                 telephone: "+66-33-136581-4",
                                 contactType: "customer service",
                                 areaServed: "TH",
-                                availableLanguage: ["Thai", "English"]
+                                availableLanguage: ["Thai", "English", "Japan"]
                             }
-                        ]
-                    })
-                }}
-            />
-            <script
-                type="application/ld+json"
-                dangerouslySetInnerHTML={{
-                    __html: JSON.stringify({
-                        "@context": "https://schema.org",
-                        "@type": "FAQPage",
+                        ],
+
                         mainEntity: [
                             {
                                 "@type": "Question",

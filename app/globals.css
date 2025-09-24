@@ -611,8 +611,8 @@ a:hover {
   text-shadow: 0 0 2px #ffffff00;
   font-weight: bold;
   font-size: 50px;
-  background-color: #0000004e;
-  
+  background-color: #00000083;
+
 
 }
 
@@ -633,7 +633,7 @@ a:hover {
 }
 
 .btn_link1:hover {
-    background: linear-gradient(65deg, rgb(47, 85, 128), rgb(59, 0, 186));
+  background: linear-gradient(65deg, rgb(47, 85, 128), rgb(59, 0, 186));
 }
 
 
@@ -697,11 +697,12 @@ a:hover {
 }
 
 .why-text {
-  font-size: 50px;
+  font-size: 60px;
   font-weight: bold;
   border-bottom: 5px solid #00135d;
   color: var(--font-color);
   padding: 100px 0 20px 0;
+
 }
 
 .why-choose-content {
@@ -710,13 +711,16 @@ a:hover {
 }
 
 .p-text-why {
-  font-size: 22px;
+  font-size: 30px;
   font-weight: 600;
   color: var(--font-color);
+
 }
 
 .t-w-y {
   color: var(--font-color);
+  font-size: 18px;
+
 }
 
 .iso-why-choose {
@@ -881,10 +885,15 @@ a:hover {
     font-size: 20px;
   }
 }
-.support{
+
+.support {
   width: 100%;
+  margin: 50px 0;
+
+
 }
-.support-box{
+
+.support-box {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 50px;
@@ -892,19 +901,42 @@ a:hover {
   margin: 0 auto 50px auto;
 
 }
-.card-support-box{
+
+.card-support-box {
   background-color: #eeeeee79;
   box-shadow: 0 0 2px #959595;
   padding: 20px 30px;
   border-radius: 6px;
+  transition: all ease 0.25s;
+
 }
 
-.icon-support{
-  width: 80%;
-  margin: 0 auto 20px auto;
+.card-support-box:hover {
+  /* animation: moved 1s infinite alternate; */
+  box-shadow: 0 0 5px #959595;
+
+
 }
-.content-support{
-  font-size: 14px;
+
+/* @keyframes moved {
+  0%{
+    transform: rotate(4deg);
+  }
+  100%{
+    transform: rotate(-4deg);
+  }
+} */
+
+.icon-support {
+  width: 80%;
+  margin: 0px auto 20px auto;
+
+}
+
+.content-support {
+  font-size: 16px;
+  text-align: center;
+
 }
 
 
@@ -1115,8 +1147,9 @@ a:hover {
   .intro-HomePage {
     grid-template-columns: 1fr;
   }
-  .support-box{
-    grid-template-columns: 1fr 1fr  1fr;
+
+  .support-box {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
@@ -1124,8 +1157,9 @@ a:hover {
   .image-logo-partner-homepage {
     grid-template-columns: 1fr 1fr 1fr;
   }
-   .support-box{
-    grid-template-columns: 1fr 1fr  ;
+
+  .support-box {
+    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -1135,7 +1169,8 @@ a:hover {
     font-size: 30px;
 
   }
-   .support-box{
+
+  .support-box {
     grid-template-columns: 1fr;
   }
 
@@ -1785,7 +1820,7 @@ h4 {
 }
 
 .table-company-profile {
-
+  box-shadow: 0 0 2px #959595;
   width: 80%;
   margin: 50px auto 200px auto;
   border-radius: 6px;
@@ -1859,6 +1894,12 @@ h4 {
 
 }
 
+.title-about-text {
+  font-weight: bold;
+}
+
+
+
 @media screen and (max-width:1024px) {
   .why-chose-jiei {
     width: 90%;
@@ -1896,6 +1937,21 @@ h4 {
 
   .text-jiei-about-apage {
     font-size: 20px;
+  }
+
+  .content-inthe-table {
+    grid-template-columns: 1fr;
+
+  }
+
+  .title-about-text {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+
+  .content-inthe-table1 {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -2454,15 +2510,24 @@ h4 {
   transition: all ease 0.35s;
   color: #fff;
   box-shadow: 0 0 2px #959595;
-
   transition: all ease 0.25s;
   position: relative;
 }
 
 .contact-box-icon:hover {
   box-shadow: 0 0 2px #959595;
-  transform: rotate(3deg);
+  animation: moves 0.5s infinite alternate;
+}
 
+@keyframes moves {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+       transform: scale(1.05);
+
+  }
 }
 
 .text-icon {

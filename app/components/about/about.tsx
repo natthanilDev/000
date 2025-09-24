@@ -37,7 +37,6 @@ export default function About() {
 
     return (
         <div className='about-page'>
-
             <div className="background-company-profile">
                 <div className='j'>
                 </div>
@@ -114,7 +113,7 @@ export default function About() {
                 <div className="tr-about">
                     <div className='content-inthe-table'>
                         <div className="content-in-aboutBox">
-                            {lang === "th" ? "ชื่อบริษัท" : lang === "en" ? "Company Name" : "会社名"}
+                             <p className="title-about-text"> {lang === "th" ? "ชื่อบริษัท" : lang === "en" ? "Company Name" : "会社名"}</p>
                         </div>
                         <div className="content-in-aboutBox">
 
@@ -124,7 +123,7 @@ export default function About() {
                     <div className='content-inthe-table1'>
                         <div className="content-in-aboutBox">
 
-                            {lang === "th" ? "ที่อยู่" : lang === "en" ? "Address" : "住所"}
+                           <p className="title-about-text">   {lang === "th" ? "ที่อยู่" : lang === "en" ? "Address" : "住所"}</p>
                         </div>
                         <div className="content-in-aboutBox">
 
@@ -133,7 +132,7 @@ export default function About() {
                     </div>
                     <div className='content-inthe-table'>
                         <div className="content-in-aboutBox">
-                            {lang === "th" ? "ก่อตั้งเมื่อ" : lang === "en" ? "Established on" : "設立日"}
+                             <p className="title-about-text"> {lang === "th" ? "ก่อตั้งเมื่อ" : lang === "en" ? "Established on" : "設立日"} </p>
                         </div>
                         <div className="content-in-aboutBox">
                             {lang === "th" ? "11/11/2554" : lang === "en" ? "11/11/2011" : "2011年11月11日"}
@@ -141,7 +140,7 @@ export default function About() {
                     </div>
                     <div className='content-inthe-table1'>
                         <div className="content-in-aboutBox">
-                            {lang === "th" ? "ทุนจดทะเบียน" : lang === "en" ? "Registered Capital" : "登録資本金"}
+                            <p className="title-about-text">{lang === "th" ? "ทุนจดทะเบียน" : lang === "en" ? "Registered Capital" : "登録資本金"}</p>
                         </div>
                         <div className="content-in-aboutBox">
 
@@ -151,8 +150,7 @@ export default function About() {
                     </div>
                     <div className='content-inthe-table'>
                         <div className="content-in-aboutBox">
-
-                            {lang === 'th' ? "จำนวนพนักงาน" : lang === "en" ? "Number of Employees" : "従業員数"}
+                           <p className="title-about-text">  {lang === 'th' ? "จำนวนพนักงาน" : lang === "en" ? "Number of Employees" : "従業員数"}</p> 
                         </div>
                         <div className="content-in-aboutBox">
                             {lang === "th" ? "276 คน" : lang === "en" ? "276" : "276人"}
