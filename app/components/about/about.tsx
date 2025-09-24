@@ -37,6 +37,34 @@ export default function About() {
 
     return (
         <div className='about-page'>
+
+            <div className="background-company-profile">
+                <div className='j'>
+                </div>
+                <div className="company-profile-text-ji">
+                    <ScrollReveal>
+                        <h1 className='company-text-ji'>Company</h1>
+                        <h1 className='company-text-ji1'>Profile</h1>
+                        <h3 className='company-text-ji2'>Jiei (Thailand).Co.,Ltd</h3>
+                    </ScrollReveal>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             <section className="company-profile">
                 <div className="why-chose-jiei">
                     <ScrollReveal>
@@ -86,20 +114,20 @@ export default function About() {
                 <div className="tr-about">
                     <div className='content-inthe-table'>
                         <div className="content-in-aboutBox">
-                             {lang === "th" ? "ชื่อบริษัท" : lang === "en" ? "Company Name" : "会社名"}
+                            {lang === "th" ? "ชื่อบริษัท" : lang === "en" ? "Company Name" : "会社名"}
                         </div>
                         <div className="content-in-aboutBox">
-                            
+
                             {lang === "th" ? "บริษัท เจไออีไอ (ประเทศไทย) จำกัด" : lang === "en" ? "JIEI (Thailand) Co., Ltd." : "ジェイアイイーアイ（タイランド）株式会社"}
                         </div>
                     </div>
                     <div className='content-inthe-table1'>
                         <div className="content-in-aboutBox">
-                            
+
                             {lang === "th" ? "ที่อยู่" : lang === "en" ? "Address" : "住所"}
                         </div>
                         <div className="content-in-aboutBox">
-                           
+
                             {lang === "th" ? " นิคมอุตสาหกรรมปิ่นทอง 4 หน่วย G18 180/3 หมู่ 6 ต.บึง อ.ศรีราชา ชลบุรี 20230 ประเทศไทย โทร. 033136581-4" : lang === "en" ? "Pinthong Industrial Estate 4, Unit G18 180/3 Moo 6, Bueng Sub-district,Si Racha District, Chonburi 20230, Thailand Tel: +66 (0)33-136581-4" : "ピントン工業団地4、G18号ユニット 180/3 ムー6、ブン地区 シラチャー郡、チョンブリー県 20230 タイ王国 電話: +66 (0)33-136581-4"}
                         </div>
                     </div>
@@ -116,14 +144,14 @@ export default function About() {
                             {lang === "th" ? "ทุนจดทะเบียน" : lang === "en" ? "Registered Capital" : "登録資本金"}
                         </div>
                         <div className="content-in-aboutBox">
-                           
+
                             {lang === "th" ? "150,000,000 บาท" : lang === "en" ? "150,000,000 Baht" : "1億5,000万バーツ"}
                         </div>
 
                     </div>
                     <div className='content-inthe-table'>
                         <div className="content-in-aboutBox">
-                            
+
                             {lang === 'th' ? "จำนวนพนักงาน" : lang === "en" ? "Number of Employees" : "従業員数"}
                         </div>
                         <div className="content-in-aboutBox">
@@ -231,7 +259,7 @@ export default function About() {
                         )}
 
                     </div>
-            <h4 className='thy text-center'>{lang === "th" ? "ขอขอบพระคุณทุกท่านสำหรับการสนับสนุน และเราหวังว่าจะได้รับความไว้วางใจจากท่านอย่างต่อเนื่องต่อไป" : lang === "en" ? "We sincerely thank everyone for their support and look forward to continuing to earn your trust." : "皆様のご支援に心より感謝申し上げます。今後とも変わらぬご信頼を賜りますようお願い申し上げます。"}</h4>
+                    <h4 className='thy text-center'>{lang === "th" ? "ขอขอบพระคุณทุกท่านสำหรับการสนับสนุน และเราหวังว่าจะได้รับความไว้วางใจจากท่านอย่างต่อเนื่องต่อไป" : lang === "en" ? "We sincerely thank everyone for their support and look forward to continuing to earn your trust." : "皆様のご支援に心より感謝申し上げます。今後とも変わらぬご信頼を賜りますようお願い申し上げます。"}</h4>
 
                 </div>
             </div>
