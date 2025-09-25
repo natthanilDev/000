@@ -4,18 +4,13 @@ import React from 'react'
 import Image from 'next/image'
 import ScrollReveal from '../ScrollReveal/ScrollReveal';
 export default function About() {
-
     const [lang, setLang] = useState<'th' | 'en' | 'jp'>('th');
-
-
     useEffect(() => {
         if (typeof window !== 'undefined') {
             const storedLang = localStorage.getItem('lang') as 'th' | 'en' | 'jp' | null;
             if (storedLang) setLang(storedLang);
         }
     }, []);
-
-
     const logo_partners = [
         '/logo-partners (1).png',
         '/logo-partners (2).png',
@@ -23,7 +18,6 @@ export default function About() {
         '/logo-partners (4).png',
         '/logo-partners (5).png',
         '/logo-partners (6).png',
-
     ]
     const logo_partners1 = [
         '/logo-partners (7).png',
@@ -32,9 +26,7 @@ export default function About() {
         '/logo-partners (10).png',
         '/logo-partners (11).png',
         '/logo-partners (12).png',
-
     ]
-
     return (
         <div className='about-page'>
             <div className="background-company-profile">
@@ -48,45 +40,23 @@ export default function About() {
                     </ScrollReveal>
                 </div>
             </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
             <section className="company-profile">
                 <div className="why-chose-jiei">
                     <ScrollReveal>
                         <h1 className='AboutUS'> {lang === "th" ? "เกี่ยวกับเรา | โปรไฟล์บริษัท" : lang === "en" ? "ABOUT US | Company Profile" : "私たちについて | 会社案内"} </h1>
                         <div className="line"></div>
                     </ScrollReveal>
-
                     <ScrollReveal>
                         <h1 className='text-jiei-about-apage'>{lang === "th" ? "บริษัท เจไออีไอ (ประเทศไทย) จำกัด – ผู้ผลิตชิ้นส่วนยางรถยนต์" : lang === "en" ? "JIEI (Thailand) Co., Ltd. - Automotive Rubber Parts Manufacturer" : "JIEI（Thailand）株式会社 – 自動車用ゴム部品メーカー"}
                         </h1>
                     </ScrollReveal>
-
                     <ScrollReveal>
                         <p className='text-center'>
                             {lang === "th" ? "บริษัท เจไออีไอ (ประเทศไทย) จำกัด เป็นผู้ผลิต ชิ้นส่วนยางรถยนต์คุณภาพสูง สำหรับอุตสาหกรรมยานยนต์ในประเทศไทยและต่างประเทศ โรงงานตั้งอยู่ที่จังหวัดชลบุรี พร้อมมาตรฐานสากล ISO 9001, ISO 14001 และ IATF 16949 ที่รับรองคุณภาพการผลิตทุกขั้นตอน" : lang === "en" ? "JIEI (Thailand) Co., Ltd. is a manufacturer of high-quality automotive rubber parts for the automotive industry in Thailand and overseas. Our factory is located in Chonburi Province and operates under international standards ISO 9001, ISO 14001, and IATF 16949, ensuring quality at every stage of production." : "JIEI（Thailand）株式会社は、タイ国内および海外の自動車産業向けに高品質な自動車用ゴム部品を製造するメーカーです。工場はチョンブリー県に位置し、ISO 9001、ISO 14001、IATF 16949といった国際規格に基づき、生産のあらゆる工程で品質を保証しています。"}
                         </p>
-
                     </ScrollReveal>
-
                 </div>
-
                 <div className="aboutUs-page">
-
                     <div className="about-grid">
                         <ScrollReveal>
                             <h2 className='text-center'>{lang === "th" ? "เกี่ยวกับเรา" : lang === "en" ? "About Us" : "私たちについて"}    </h2>
@@ -100,13 +70,9 @@ export default function About() {
                             <p className='company-profile-text'>{lang === "th" ? "ในอนาคต บริษัทเจไออีไอ (ไทยแลนด์) จำกัด จะยังคงมุ่งมั่นพัฒนานวัตกรรมอย่างไม่หยุดยั้ง เพื่อสร้างสรรค์ผลิตภัณฑ์ที่มี คุณภาพ ความแม่นยำ และมาตรฐานสากล พร้อมก้าวสู่การเป็น ผู้ผลิตชิ้นส่วนยางรถยนต์ระดับโลก (Global Automotive Rubber Parts Manufacturer) ที่สร้างคุณค่าและประโยชน์ให้กับสังคมโลก" : lang === "en" ? "In the future, JIEI (Thailand) Co., Ltd. will continue to pursue relentless innovation to create products of exceptional quality, precision, and international standards. Our goal is to become a global automotive rubber parts manufacturer that delivers value and benefits to the global community." : "将来に向けて、JIEI（Thailand）株式会社は、優れた品質、精度、そして国際規格を備えた製品を生み出すため、絶え間ない革新を追求し続けます。私たちは、世界に価値と利益をもたらすグローバルな自動車用ゴム部品メーカーを目指しています。"}</p>
                         </ScrollReveal>
                     </div>
-
                     <div className="about-grid-image">
-
                     </div>
                 </div>
-
-
             </section >
             <h1 className='about-company-name'>{lang === "th" ? "บริษัท เจไออีไอ (ประเทศไทย) จำกัด" : lang === 'en' ? "JIEI (Thailand) Co., Ltd." : "ジェイアイ (タイランド)株式会社"} </h1>
             <div className="table-company-profile">
@@ -146,7 +112,6 @@ export default function About() {
 
                             {lang === "th" ? "150,000,000 บาท" : lang === "en" ? "150,000,000 Baht" : "1億5,000万バーツ"}
                         </div>
-
                     </div>
                     <div className='content-inthe-table'>
                         <div className="content-in-aboutBox">
@@ -156,19 +121,13 @@ export default function About() {
                             {lang === "th" ? "276 คน" : lang === "en" ? "276" : "276人"}
                         </div>
                     </div>
-
-
                 </div>
-
             </div>
-
-
             <div className="manager">
                 <ScrollReveal>
                     <h1 className='managerText'>{lang === "th" ? "คณะผู้บริหาร" : lang === "en" ? "Management" : "経営陣"}</h1>
                     <div className="border-manager"></div>
                 </ScrollReveal>
-
                 <div className="manger-box">
                     <ScrollReveal>
                         <div className="image-manager">
@@ -183,9 +142,6 @@ export default function About() {
                             </div>
                         </div>
                     </ScrollReveal>
-
-
-
                     <ScrollReveal>
                         <div className="manager-image-box">
                             <div className="image-manager">
@@ -197,7 +153,6 @@ export default function About() {
                                 </div>
                                 <div className="name-top-manager">
                                     <h2 className='position'>{lang === "th" ? "กรรมการ" : lang === "en" ? "Director" : "取締役"} <p>{lang === "th" ? "" : lang === "en" ? "" : ""}Kenji Kamei</p> </h2>
-
                                 </div>
                             </div>
                             <div className="image-manager">
@@ -211,16 +166,8 @@ export default function About() {
                                     <h2 className='position'>{lang === "th" ? "กรรมการผู้จัดการ" : lang === "en" ? "Management Director" : "マネジメントディレクター"} <p>{lang === "th" ? "" : lang === "en" ? "" : ""}Yoshikatsu Inada</p> </h2>
                                 </div>
                             </div>
-
-                            {/* <div className="image-manager">
-                                <Image src={'/top-manager.png'} alt='บริษัท เจไออีไอ (ประเทศไทย) จำกัด
-                        เป็นผู้ผลิต ชิ้นส่วนยางรถยนต์คุณภาพสูง
-                        สำหรับอุตสาหกรรมยานยนต์ในประเทศไทยและต่างประเทศ
-                        โรงงานตั้งอยู่ที่จังหวัดชลบุรี พร้อมมาตรฐานสากล' width={1000} height={1000} className='manager-Image' />
-                            </div> */}
                         </div>
                     </ScrollReveal>
-
                 </div>
             </div >
 
@@ -230,7 +177,6 @@ export default function About() {
                     <h1 className='thePartner'>{lang === "th" ? "คู่ค้าหลัก" : lang === "en" ? "The main trading partners" : "主要取引先"}</h1>
                     <div className="border-manager"></div>
                 </div>
-
                 <div className="logo-partners-box">
                     <div className="logo-partners">
                         {logo_partners.map((item, idx) => (
@@ -240,12 +186,8 @@ export default function About() {
                         โรงงานตั้งอยู่ที่จังหวัดชลบุรี พร้อมมาตรฐานสากล' width={2000} height={2000} className='partners-Image' />
                         )
                         )}
-
                     </div>
                 </div>
-
-
-
                 <div className="logo-partners-box">
                     <div className="logo-partners1">
                         {logo_partners1.map((item, idx) => (
@@ -255,17 +197,10 @@ export default function About() {
                         โรงงานตั้งอยู่ที่จังหวัดชลบุรี พร้อมมาตรฐานสากล' width={2000} height={2000} className='partners-Image' />
                         )
                         )}
-
                     </div>
                     <h4 className='thy text-center'>{lang === "th" ? "ขอขอบพระคุณทุกท่านสำหรับการสนับสนุน และเราหวังว่าจะได้รับความไว้วางใจจากท่านอย่างต่อเนื่องต่อไป" : lang === "en" ? "We sincerely thank everyone for their support and look forward to continuing to earn your trust." : "皆様のご支援に心より感謝申し上げます。今後とも変わらぬご信頼を賜りますようお願い申し上げます。"}</h4>
-
                 </div>
             </div>
-
-
-
-
-
         </div >
     )
 }

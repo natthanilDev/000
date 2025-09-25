@@ -73,11 +73,6 @@ export default function Home() {
                 {/* Hreflang สำหรับหลายภาษา */}
                 <link rel="alternate" href="https://www.jiei-thai.co.th/" hrefLang="th" />
                 <link rel="alternate" href="https://www.jiei-thai.co.th/" hrefLang="x-default" />
-                <link rel="alternate" href="https://www.jiei-thai.co.th/" hrefLang="th" />
-                <link rel="alternate" href="https://www.jiei-thai.co.th/" hrefLang="x-default" />
-     
-               
-
                 {/* Open Graph */}
                 <meta property="og:type" content="website" />
                 <meta property="og:title" content="JIEI Thailand - Automotive Rubber Parts Manufacturer" />
@@ -91,7 +86,16 @@ export default function Home() {
                 <meta name="twitter:title" content="JIEI Thailand - Automotive Rubber Parts" />
                 <meta name="twitter:description" content="ผู้ผลิตชิ้นส่วนยางรถยนต์คุณภาพสูงในประเทศไทย" />
                 <meta name="twitter:image" content="https://www.jiei-thai.co.th/factory-jiei-thailand.jpg" />
-
+                <meta
+                    name="description"
+                    content={
+                        lang === "th"
+                            ? "JIEI Thailand - ผู้ผลิตชิ้นส่วนยางรถยนต์ เช่น Engine Mounts, Suspension Bushings, Seals & Gaskets และ Custom Rubber Parts ในชลบุรี ประเทศไทย"
+                            : lang === "en"
+                                ? "JIEI Thailand - Manufacturer of automotive rubber parts such as engine mounts, suspension bushings, seals & gaskets, and custom rubber components in Chonburi, Thailand."
+                                : "JIEIタイランド - エンジンマウント、サスペンションブッシュ、シール＆ガスケット、カスタムゴム部品などを製造するタイ・チョンブリーの自動車用ゴム部品メーカー。"
+                    }
+                />
                 {/* Preload Video for Performance */}
                 <link rel="preload" as="video" href="/intro.mp4" type="video/mp4" />
                 <link rel="preload" as="video" href="/background-video.mp4" type="video/mp4" />
@@ -159,7 +163,7 @@ export default function Home() {
                     <ScrollReveal>
                         <div className="why-choose-box">
                             <div className="whyText-box">
-                                <h1 className='why-text'>{lang === 'en' ? 'Why Choose Us?' : lang === 'th' ? "ทำไมต้องเลือกเรา?" : "なぜ私たちを選ぶのか？"}  </h1>
+                                <h2 className='why-text'>{lang === 'en' ? 'Why Choose Us?' : lang === 'th' ? "ทำไมต้องเลือกเรา?" : "なぜ私たちを選ぶのか？"}  </h2>
                             </div>
 
                             <div className="why-choose-content">
@@ -167,7 +171,7 @@ export default function Home() {
                                 <p className='t-w-y'>{lang === 'th' ? "ที่ JIEI Thailand เรามีความเชี่ยวชาญมากกว่าทศวรรษ  ด้วยระบบมาตรฐาน ISO9001, ISO14001, IATF16949 เราผลิตชิ้นส่วนยางที่ผ่านการตรวจสอบทุกขั้นตอน ตอบโจทย์ความแม่นยำ ความทนทาน และความเป็นมิตรต่อสิ่งแวดล้อม เพราะเรารู้ว่าธุรกิจของคุณต้องการมากกว่าคุณภาพ แต่ต้องการ ความมั่นใจในทุกชิ้นงาน" : lang === "en" ? "At JIEI Thailand, we have over a decade of expertise, certified with ISO 9001, ISO 14001, and IATF 16949. We manufacture rubber parts inspected at every stage, ensuring precision, durability, and environmental friendliness. Because we know your business needs more than just quality—it needs confidence in every product." : "JIEI Thailandでは、ISO9001、ISO14001、IATF16949の認証を取得し、10年以上の専門知識を有しています。当社は、すべての工程で検査を行ったゴム部品を製造し、精度、耐久性、環境への配慮を確保しています。 お客様のビジネスに必要なのは単なる品質だけでなく、すべての製品に対する信頼です。"}</p>
                             </div>
                             <div className="iso-why-choose">
-                                <h1 className='iso-text'>ISO</h1>
+                                <h2 className='iso-text'>ISO</h2>
                                 <Iso_btn />
 
                             </div>
@@ -176,7 +180,7 @@ export default function Home() {
 
                     <div className="why-choose-image">
                         <ScrollReveal>
-                            <Image src={'/Home-car.png'} className='image-iso' alt='โรงงานผลิตชิ้นส่วนยางรถยนต์มาตรฐานสากล ISO & IATF16949 ที่ชลบุรี ประเทศไทย"' width={1000} height={1000} priority />
+                            <Image src={'/Home-car.png'} className='image-iso' alt='โรงงานผลิตชิ้นส่วนยางรถยนต์มาตรฐานสากล ISO & IATF16949 ที่ชลบุรี ประเทศไทย"' width={1000} height={1000} loading="lazy" />
                         </ScrollReveal>
                     </div>
 
@@ -190,7 +194,7 @@ export default function Home() {
                                 <div key={index} className="card-support-box">
                                     <div className="card-support">
                                         <div className="card-support-image">
-                                            <Image src={item} alt='โรงงานผลิตชิ้นส่วนยางรถยนต์มาตรฐานสากล' className='icon-support' width={1000} height={1000} priority />
+                                            <Image src={item} alt='โรงงานผลิตชิ้นส่วนยางรถยนต์มาตรฐานสากล' className='icon-support' width={1000} height={1000} loading="lazy" />
                                         </div>
                                         <div className="card-support-content">
                                             <p className="content-support">
@@ -206,7 +210,31 @@ export default function Home() {
                 </div>
 
 
+                <div className="About-Company-box">
+                    <div className="image-home-page-about">
+                        <Image src={'/Jiei(thailand).Co.,Ltd.jpg'} className="image-about-home-page" alt="โรงงานผลิตชิ้นส่วนยางรถยนต์มาตรฐานสากล ISO & IATF16949 ที่ชลบุรี ประเทศไทย" width={1000} height={1000} priority></Image>
+                    </div>
+                    <div className="about-box-home-page">
 
+                        <div className="content-box">
+                            <ScrollReveal>
+                                <div className="about-box">
+                                    <h2 className="about"> {lang === "th" ? "เกี่ยวกับเรา" : lang === "en" ? "About Us" : "私たちについて"}</h2>
+                                </div>
+                                <p className="content-about">
+                                    {lang === "th" ? "JIEI Thailand Co., Ltd. เป็นผู้ผลิตชิ้นส่วนยางรถยนต์และยางอุตสาหกรรมคุณภาพสูง ตั้งอยู่ที่จังหวัดชลบุรี ประเทศไทย เรามีความเชี่ยวชาญด้านการออกแบบและการผลิต ยางขอบประตูรถยนต์ (Automotive Rubber Seals) และชิ้นส่วนยางที่ใช้ในอุตสาหกรรมยานยนต์มากกว่า 20 ปี" : lang === "en" ? "JIEI Thailand Co., Ltd. is a manufacturer of high-quality automotive and industrial rubber parts, located in Chonburi Province, Thailand. We have over 20 years of expertise in designing and producing automotive rubber seals and rubber components used in the automotive industry." : "JIEI Thailand株式会社は、タイ・チョンブリー県に拠点を置く高品質な自動車用および産業用ゴム部品のメーカーです。私たちは、自動車用ゴムシールや自動車産業で使用されるゴム部品の設計・製造において、20年以上の専門知識を持っています。"}
+                                </p>
+                                <p className="content-about">
+                                    {lang === "th" ? "บริษัทมุ่งมั่นพัฒนาเทคโนโลยีการผลิตที่ทันสมัย ควบคู่กับมาตรฐานสากล เช่น ISO/TS16949 เพื่อตอบสนองความต้องการของผู้ผลิตรถยนต์ (OEM) และลูกค้าทั่วโลก ปัจจุบันเราได้ส่งออกสินค้าไปยัง สหรัฐอเมริกา ญี่ปุ่น และประเทศในยุโรป" : lang === "en" ? "The company is committed to developing advanced manufacturing technologies alongside international standards such as ISO/TS16949 to meet the requirements of automotive manufacturers (OEMs) and customers worldwide. Currently, we export our products to the United States, Japan, and European countries." : "当社は、ISO/TS16949などの国際規格と並行して、先進的な製造技術の開発に取り組み、自動車メーカー（OEM）および世界中の顧客のニーズに応えています。現在、当社の製品はアメリカ、日本、ヨーロッパ諸国に輸出されています。"}
+                                </p>
+                                <p className="content-about">
+                                    {lang === "th" ? " จุดยืนของ JIEI คือการเป็น “พันธมิตรที่ไว้ใจได้ของอุตสาหกรรมยานยนต์” โดยให้ความสำคัญกับคุณภาพ ความทนทาน และการส่งมอบตรงเวลา" : lang === "en" ? "JIEI’s stance is to be a “trusted partner of the automotive industry,” focusing on quality, durability, and on-time delivery." : "JIEIの立場は、「自動車産業の信頼できるパートナー」であることであり、品質、耐久性、そして納期厳守を重視しています。"}
+                                </p>
+                            </ScrollReveal>
+
+                        </div>
+                    </div>
+                </div>
 
 
                 <div className="background-video-box">
@@ -214,22 +242,14 @@ export default function Home() {
 
 
                         <ScrollReveal>
-                            <h1 className='video-text'>
+                            <h2 className='video-text'>
                                 {lang === "th" ? "มั่นใจทุกการขับขี่" : lang === "en" ? "Confidence in Every Drive" : "すべてのドライブで自信を"}
-                            </h1>
+                            </h2>
                         </ScrollReveal>
-                        <video
-                            className="video-car"
-                            autoPlay
-                            muted
-                            loop
-                            playsInline
-                            poster='/JIEI-New-Factory-scaled.jpg'
-                        >
+                        <video className="video-car" autoPlay muted loop playsInline poster='/JIEI-New-Factory-scaled.jpg'>
                             <source src="/background-video.mp4" type="video/mp4" />
                             เบราว์เซอร์ไม่รองรับวิดีโอ
                         </video>
-
 
                         <div className="description-box">
                             <div className="why-choose-us1">
@@ -294,40 +314,14 @@ export default function Home() {
 
 
 
-                <div className="About-Company-box">
-                    <div className="image-home-page-about">
-                        <Image src={'/Jiei(thailand).Co.,Ltd.jpg'} className="image-about-home-page" alt="โรงงานผลิตชิ้นส่วนยางรถยนต์มาตรฐานสากล ISO & IATF16949 ที่ชลบุรี ประเทศไทย" width={1000} height={1000} priority></Image>
-                    </div>
-                    <div className="about-box-home-page">
 
-                        <div className="content-box">
-                            <ScrollReveal>
-                                <div className="about-box">
-                                    <h1 className="about"> {lang === "th" ? "เกี่ยวกับเรา" : lang === "en" ? "About Us" : "私たちについて"}</h1>
-                                </div>
-                                <p className="content-about">
-                                    {lang === "th" ? "JIEI Thailand Co., Ltd. เป็นผู้ผลิตชิ้นส่วนยางรถยนต์และยางอุตสาหกรรมคุณภาพสูง ตั้งอยู่ที่จังหวัดชลบุรี ประเทศไทย เรามีความเชี่ยวชาญด้านการออกแบบและการผลิต ยางขอบประตูรถยนต์ (Automotive Rubber Seals) และชิ้นส่วนยางที่ใช้ในอุตสาหกรรมยานยนต์มากกว่า 20 ปี" : lang === "en" ? "JIEI Thailand Co., Ltd. is a manufacturer of high-quality automotive and industrial rubber parts, located in Chonburi Province, Thailand. We have over 20 years of expertise in designing and producing automotive rubber seals and rubber components used in the automotive industry." : "JIEI Thailand株式会社は、タイ・チョンブリー県に拠点を置く高品質な自動車用および産業用ゴム部品のメーカーです。私たちは、自動車用ゴムシールや自動車産業で使用されるゴム部品の設計・製造において、20年以上の専門知識を持っています。"}
-                                </p>
-                                <p className="content-about">
-                                    {lang === "th" ? "บริษัทมุ่งมั่นพัฒนาเทคโนโลยีการผลิตที่ทันสมัย ควบคู่กับมาตรฐานสากล เช่น ISO/TS16949 เพื่อตอบสนองความต้องการของผู้ผลิตรถยนต์ (OEM) และลูกค้าทั่วโลก ปัจจุบันเราได้ส่งออกสินค้าไปยัง สหรัฐอเมริกา ญี่ปุ่น และประเทศในยุโรป" : lang === "en" ? "The company is committed to developing advanced manufacturing technologies alongside international standards such as ISO/TS16949 to meet the requirements of automotive manufacturers (OEMs) and customers worldwide. Currently, we export our products to the United States, Japan, and European countries." : "当社は、ISO/TS16949などの国際規格と並行して、先進的な製造技術の開発に取り組み、自動車メーカー（OEM）および世界中の顧客のニーズに応えています。現在、当社の製品はアメリカ、日本、ヨーロッパ諸国に輸出されています。"}
-                                </p>
-                                <p className="content-about">
-                                    {lang === "th" ? " จุดยืนของ JIEI คือการเป็น “พันธมิตรที่ไว้ใจได้ของอุตสาหกรรมยานยนต์” โดยให้ความสำคัญกับคุณภาพ ความทนทาน และการส่งมอบตรงเวลา" : lang === "en" ? "JIEI’s stance is to be a “trusted partner of the automotive industry,” focusing on quality, durability, and on-time delivery." : "JIEIの立場は、「自動車産業の信頼できるパートナー」であることであり、品質、耐久性、そして納期厳守を重視しています。"}
-                                </p>
-                            </ScrollReveal>
-
-                        </div>
-                    </div>
-
-
-                </div>
 
                 <div className="partner-homepage">
-                    <h1 className="partner-text">{lang === "th" ? "องค์กรชั้นนำที่ไว้วางใจ JIEI Thailand เป็นผู้ผลิตชิ้นส่วนยางรถยนต์" : lang === "en" ? "Leading Companies Trust JIEI Thailand – Automotive Rubber Parts Manufacturer" : "大手企業から信頼されるJIEI Thailand – 自動車用ゴム部品メーカー"}</h1>
+                    <h2 className="partner-text">{lang === "th" ? "องค์กรชั้นนำที่ไว้วางใจ JIEI Thailand เป็นผู้ผลิตชิ้นส่วนยางรถยนต์" : lang === "en" ? "Leading Companies Trust JIEI Thailand – Automotive Rubber Parts Manufacturer" : "大手企業から信頼されるJIEI Thailand – 自動車用ゴム部品メーカー"}</h2>
 
                     <div className="image-logo-partner-homepage">
                         {partner.map((image, index) => (
-                            <Image key={index} className='image-partner-homepage' src={image} alt='' width={1000} height={1000} priority />
+                            <Image key={index} className='image-partner-homepage' src={image} alt='' width={1000} height={1000} loading="lazy" />
                         ))}
                     </div>
                 </div>
@@ -354,10 +348,9 @@ export default function Home() {
                                 telephone: "+66-33-136581-4",
                                 contactType: "customer service",
                                 areaServed: "TH",
-                                availableLanguage: ["Thai", "English", "Japan"]
+                                availableLanguage: ["Thai", "English", "Japanese"]
                             }
                         ],
-
                         mainEntity: [
                             {
                                 "@type": "Question",

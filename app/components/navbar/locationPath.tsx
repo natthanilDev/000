@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 import { useRef } from 'react';
+import Image from 'next/image';
 export default function Nav() {
   const [scrolled, setScrolled] = useState(false);
   const Path = usePathname()
@@ -116,7 +117,7 @@ const closeMenu = () => {
                     />
                     <span className="nav-link">
                       <label htmlFor="dropdown-menu">
-                        {langu === 'jp' ? "自動車用ゴム部品" : "Automotive Rubber Parts "}
+                        {langu === 'jp' ? "製品" : "Products"}
                       </label>
                     </span>
                     <i className="chevron-down bi bi-chevron-down"></i>
@@ -153,7 +154,9 @@ const closeMenu = () => {
                             onClick={closeMenu} href="/products/custom-parts"
                             className="Link-product-class"
                             title="Custom Rubber Parts Manufacturing Thailand">
-                            {langu === 'jp' ? "カスタムゴム部品" : "Custom Rubber Parts"}
+                            {langu === 'jp' ? "すべての製品" : "All Products"}
+
+                            {/* {langu === 'jp' ? "カスタムゴム部品" : "Custom Rubber Parts"} */}
                           </Link>
                         </li>
                       </ul>
@@ -219,8 +222,6 @@ const closeMenu = () => {
         </div>
       </nav>
 
-
-      {/* ✅ Structured Data for SEO */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -278,6 +279,5 @@ const closeMenu = () => {
         }}
       />
     </header>
-
   )
 }

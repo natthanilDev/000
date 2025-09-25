@@ -473,6 +473,8 @@ a:hover {
   margin: 5000px;
 }
 
+
+
 @media screen and (max-width : 426px) {
   .top-navigation {
     display: grid;
@@ -495,9 +497,6 @@ a:hover {
 }
 
 @media screen and (max-width : 321px) {
-
-
-
   .top-navigation-Link {
     font-size: 8px;
   }
@@ -908,7 +907,6 @@ a:hover {
   padding: 20px 30px;
   border-radius: 6px;
   transition: all ease 0.25s;
-
 }
 
 .card-support-box:hover {
@@ -1310,6 +1308,8 @@ a:hover {
   margin-bottom: 70px;
 }
 
+
+
 /* ----------------------------------------------------ISO AND IATF */
 
 @media screen and (max-width:1786px) {
@@ -1373,6 +1373,8 @@ a:hover {
   letter-spacing: 3px;
   transform: skew(-20deg);
 
+
+
 }
 
 .About-Company-box {
@@ -1380,10 +1382,10 @@ a:hover {
   grid-template-columns: 1fr 1fr;
   overflow: hidden;
   background-color: #ffff;
-  margin-top: -10px;
-
+  margin-bottom: 60px;
 
 }
+
 
 .about-box-home-page {
   display: flex;
@@ -1394,6 +1396,7 @@ a:hover {
   background-color: #ffff;
   padding: 50px 100px;
   margin-left: -12%;
+  border-left: 7px solid #959595;
 
 }
 
@@ -1428,8 +1431,6 @@ a:hover {
 
   .content-about {
     font-size: 14px;
-
-
   }
 
 }
@@ -1443,6 +1444,7 @@ a:hover {
   .about-box-home-page {
     transform: skew(0deg);
     /* background-color: #080808; */
+    border: none;
 
 
     padding: 50px 100px;
@@ -1569,16 +1571,14 @@ a:hover {
 /* -------------------------------------------------------------------ABOUTPAGE */
 
 
-.about-page {
-  /* background-image: url('/background-about2.png');
+/* .about-page { 
+   background-image: url('/background-about2.png');
 
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover; */
+  background-size: cover; 
 
-  /* color: var(--font); */
-
-}
+ }  */
 
 .background-company-profile {
   background-image: url('/backgroundCompanyProfile.png');
@@ -2525,7 +2525,7 @@ h4 {
   }
 
   100% {
-       transform: scale(1.05);
+    transform: scale(1.05);
 
   }
 }
@@ -3269,5 +3269,171 @@ h4 {
     font-weight: bold;
     font-size: 22px;
     padding-top: 20px;
+  }
+}
+
+.intro-allProduct {
+  padding: 50px 100px;
+  box-shadow: 0 0 2px #959595;
+
+}
+
+.allProduct-text {
+  -webkit-backdrop-filter: blur(100px);
+  backdrop-filter: blur(100px);
+  font-weight: 900;
+  color: #000000;
+  margin-top: 10px;
+  font-size: 100px;
+  letter-spacing: 20px;
+}
+
+.category-collection {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 100%;
+  margin: 20px auto;
+  gap: 100px;
+  overflow: hidden;
+  transition: all ease 0.25s;
+  width: 95%;
+}
+
+
+
+.card-collection {
+  transition: all ease 0.25s;
+  position: relative;
+  overflow: hidden;
+
+}
+
+.background-image {
+  position: absolute;
+  top: 0;
+  background: #0000005d;
+  width: 100%;
+  height: 0%;
+  text-align: center;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: all ease 0.25s;
+  border-radius: 6px;
+}
+
+.preview-image {
+  color: #eeeeee;
+  font-weight: bold;
+  font-size: 16px;
+
+}
+
+.card-collection:hover {
+  transition: all ease 0.25s;
+
+  .image-category {
+    transform: scale(1.1);
+    transition: all ease 0.25s;
+
+  }
+
+  .background-image {
+    opacity: 1;
+    height: 100%;
+    cursor: pointer;
+    border-bottom: #000796;
+
+  }
+}
+
+
+.collection-part {
+  width: 95%;
+  margin: 30px auto;
+
+}
+
+.text-collection {
+  font-weight: bold;
+  font-size: 60px;
+
+}
+
+.nameProduct {
+  font-size: 40px;
+  font-weight: bold;
+  margin-top: 50px;
+
+}
+
+.title-product-list {
+  font-size: 20px;
+  font-weight: 600;
+
+}
+
+.display-product {
+  cursor: pointer;
+
+}
+/* .description-product-text{
+
+
+
+} */
+
+@media screen and (max-width:768px) {
+  .allProduct-text {
+    font-size: 60px;
+  }
+
+  .category-collection {
+    grid-template-columns: 1fr 1fr;
+    margin: 20px auto;
+    gap: 100px;
+  }
+}
+
+
+@media screen and (max-width:426px) {
+  .intro-allProduct {
+    padding: 50px 20px;
+    box-shadow: 0 0 2px #959595;
+
+
+  }
+
+  .category-collection {
+    grid-template-columns: 1fr;
+    margin: 20px auto;
+    gap: 100px;
+
+  }
+
+  .card-collection {
+    width: 80%;
+    margin: 0 auto;
+
+  }
+
+  .allProduct-text {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width:320px) {
+  .intro-allProduct {
+    padding: 50px 20px;
+    box-shadow: 0 0 2px #959595;
+
+
+  }
+
+  .allProduct-text {
+    font-size: 16px;
   }
 }
