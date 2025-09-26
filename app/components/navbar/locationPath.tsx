@@ -117,7 +117,7 @@ const closeMenu = () => {
                     />
                     <span className="nav-link">
                       <label htmlFor="dropdown-menu">
-                        {langu === 'jp' ? "製品" : "Products"}
+                        {langu === 'jp' ? "製品" : "Products Collection"}
                       </label>
                     </span>
                     <i className="chevron-down bi bi-chevron-down"></i>
@@ -154,7 +154,7 @@ const closeMenu = () => {
                             onClick={closeMenu} href="/products/custom-parts"
                             className="Link-product-class"
                             title="Custom Rubber Parts Manufacturing Thailand">
-                            {langu === 'jp' ? "すべての製品" : "All Products"}
+                            {langu === 'jp' ? "すべての製品" : "Products Collection"}
 
                             {/* {langu === 'jp' ? "カスタムゴム部品" : "Custom Rubber Parts"} */}
                           </Link>

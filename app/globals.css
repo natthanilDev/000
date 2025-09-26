@@ -1669,9 +1669,45 @@ a:hover {
 }
 
 
+.google-map-box{
+  text-align: center;
+  margin-bottom: 50px;
 
 
+}
 
+.btn-googlemap{
+  box-shadow:  0 0 2px #959595;
+  padding: 10px 20px;
+  font-size: 30px;
+  background-color: #000796;
+  color: #eeeeee;
+  border-radius: 6px;
+  transition: all ease 0.25s;
+}
+.btn-googlemap:hover{
+  transform: scale(1.05);
+  box-shadow:  0 0 25px #010ac2;
+  background-color: #010ac2;
+
+}
+.map-jiei{
+  z-index: 9;
+  width: 100%;
+}
+
+.google-popup{
+  
+  
+
+  
+
+}
+.image-map{
+  width: 80%;
+  margin: 0 auto;
+
+}
 
 
 
@@ -1822,9 +1858,10 @@ h4 {
 .table-company-profile {
   box-shadow: 0 0 2px #959595;
   width: 80%;
-  margin: 50px auto 200px auto;
+  margin: 50px auto 50px auto;
   border-radius: 6px;
   overflow: hidden;
+
 }
 
 .content-inthe-table {
@@ -3282,10 +3319,12 @@ h4 {
   -webkit-backdrop-filter: blur(100px);
   backdrop-filter: blur(100px);
   font-weight: 900;
-  color: #000000;
   margin-top: 10px;
   font-size: 100px;
   letter-spacing: 20px;
+}
+.active{
+  color: rgb(0, 0, 127);
 }
 
 .category-collection {
@@ -3305,9 +3344,15 @@ h4 {
   transition: all ease 0.25s;
   position: relative;
   overflow: hidden;
+  background-color: #eeeeee;
+  box-shadow: 0 0 5px #959595;
+  border-radius: 6px;
+}
+.image-category{
+  width: 90%;
+  margin: 0 auto;
 
 }
-
 .background-image {
   position: absolute;
   top: 0;
@@ -3373,7 +3418,7 @@ h4 {
 .title-product-list {
   font-size: 20px;
   font-weight: 600;
-
+  margin-top: 20px;
 }
 
 .display-product {

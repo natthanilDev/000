@@ -27,6 +27,10 @@ export default function About() {
         '/logo-partners (11).png',
         '/logo-partners (12).png',
     ]
+    const [showMap, setShowMap] = useState(false)
+    const showGoogleMap = () => {
+        setShowMap(!showMap)
+    }
     return (
         <div className='about-page'>
             <div className="background-company-profile">
@@ -79,7 +83,7 @@ export default function About() {
                 <div className="tr-about">
                     <div className='content-inthe-table'>
                         <div className="content-in-aboutBox">
-                             <p className="title-about-text"> {lang === "th" ? "ชื่อบริษัท" : lang === "en" ? "Company Name" : "会社名"}</p>
+                            <p className="title-about-text"> {lang === "th" ? "ชื่อบริษัท" : lang === "en" ? "Company Name" : "会社名"}</p>
                         </div>
                         <div className="content-in-aboutBox">
 
@@ -89,7 +93,7 @@ export default function About() {
                     <div className='content-inthe-table1'>
                         <div className="content-in-aboutBox">
 
-                           <p className="title-about-text">   {lang === "th" ? "ที่อยู่" : lang === "en" ? "Address" : "住所"}</p>
+                            <p className="title-about-text">   {lang === "th" ? "ที่อยู่" : lang === "en" ? "Address" : "住所"}</p>
                         </div>
                         <div className="content-in-aboutBox">
 
@@ -98,7 +102,7 @@ export default function About() {
                     </div>
                     <div className='content-inthe-table'>
                         <div className="content-in-aboutBox">
-                             <p className="title-about-text"> {lang === "th" ? "ก่อตั้งเมื่อ" : lang === "en" ? "Established on" : "設立日"} </p>
+                            <p className="title-about-text"> {lang === "th" ? "ก่อตั้งเมื่อ" : lang === "en" ? "Established on" : "設立日"} </p>
                         </div>
                         <div className="content-in-aboutBox">
                             {lang === "th" ? "11/11/2554" : lang === "en" ? "11/11/2011" : "2011年11月11日"}
@@ -115,14 +119,32 @@ export default function About() {
                     </div>
                     <div className='content-inthe-table'>
                         <div className="content-in-aboutBox">
-                           <p className="title-about-text">  {lang === 'th' ? "จำนวนพนักงาน" : lang === "en" ? "Number of Employees" : "従業員数"}</p> 
+                            <p className="title-about-text">  {lang === 'th' ? "จำนวนพนักงาน" : lang === "en" ? "Number of Employees" : "従業員数"}</p>
                         </div>
                         <div className="content-in-aboutBox">
                             {lang === "th" ? "276 คน" : lang === "en" ? "276" : "276人"}
                         </div>
                     </div>
                 </div>
+
             </div>
+
+            <div className="google-map-box">
+                <button className='btn-googlemap' onClick={showGoogleMap}>
+                    Map <i className="bi bi-search-heart"></i>
+                </button>
+            </div>
+
+            {showMap === true ?
+                <div className='map-jiei'>
+                    <div className='google-popup'>
+                        <Image className='image-map' src={'/Map.png'} alt='' width={1000} height={1000} loading='lazy' />
+                    </div>
+                </div>
+
+                : ""}
+
+
             <div className="manager">
                 <ScrollReveal>
                     <h1 className='managerText'>{lang === "th" ? "คณะผู้บริหาร" : lang === "en" ? "Management" : "経営陣"}</h1>
