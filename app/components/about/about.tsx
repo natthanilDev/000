@@ -2,6 +2,7 @@
 import { useState, useEffect } from 'react';
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link';
 import ScrollReveal from '../ScrollReveal/ScrollReveal';
 export default function About() {
     const [lang, setLang] = useState<'th' | 'en' | 'jp'>('th');
@@ -27,10 +28,7 @@ export default function About() {
         '/logo-partners (11).png',
         '/logo-partners (12).png',
     ]
-    const [showMap, setShowMap] = useState(false)
-    const showGoogleMap = () => {
-        setShowMap(!showMap)
-    }
+ 
     return (
         <div className='about-page'>
             <div className="background-company-profile">
@@ -51,7 +49,7 @@ export default function About() {
                         <div className="line"></div>
                     </ScrollReveal>
                     <ScrollReveal>
-                        <h1 className='text-jiei-about-apage'>{lang === "th" ? "บริษัท เจไออีไอ (ประเทศไทย) จำกัด – ผู้ผลิตชิ้นส่วนยางรถยนต์" : lang === "en" ? "JIEI (Thailand) Co., Ltd. - Automotive Rubber Parts Manufacturer" : "JIEI（Thailand）株式会社 – 自動車用ゴム部品メーカー"}
+                        <h1 className='text-jiei-about-page'>{lang === "th" ? "บริษัท เจไออีไอ (ประเทศไทย) จำกัด – ผู้ผลิตชิ้นส่วนยางรถยนต์" : lang === "en" ? "JIEI (Thailand) Co., Ltd. - Automotive Rubber Parts Manufacturer" : "JIEI（Thailand）株式会社 – 自動車用ゴム部品メーカー"}
                         </h1>
                     </ScrollReveal>
                     <ScrollReveal>
@@ -66,7 +64,7 @@ export default function About() {
                             <h2 className='text-center'>{lang === "th" ? "เกี่ยวกับเรา" : lang === "en" ? "About Us" : "私たちについて"}    </h2>
                         </ScrollReveal>
                         <ScrollReveal>
-                            <h2 className='company-profile-text'>{lang === "th" ? "โปรไฟล์บริษัท" : lang === "en" ? "Company Profile" : "会社案内"}  </h2>
+                            <h2 className='company-profile-text1'>{lang === "th" ? "โปรไฟล์บริษัท" : lang === "en" ? "Company Profile" : "会社案内"}  </h2>
                             <h4 className='company-profile-text'>{lang === "th" ? "ขอบคุณเป็นอย่างยิ่งที่สละเวลาเยี่ยมชมเว็บไซต์ของเรา" : lang === "en" ? "Thank you very much for taking the time to visit our website." : "私たちのウェブサイトをご覧いただき、誠にありがとうございます。"}</h4>
                             <p className='company-profile-text'>{lang === "th" ? "บริษัท เจไออีไอ (ไทยแลนด์) จำกัด ก่อตั้งขึ้นเมื่อเดือนพฤศจิกายน พ.ศ. 2554 ในฐานะบริษัทย่อยของ กลุ่ม Kasei Kogyo Co., Ltd. ซึ่งมีประวัติยาวนานตั้งแต่ปี พ.ศ. 2509 และเป็นผู้เชี่ยวชาญด้าน การผลิตยางอัดรีดสำหรับอุตสาหกรรมยานยนต์ (Rubber Extrusion for Automobiles) ควบคู่มากับการพัฒนาของอุตสาหกรรมยานยนต์ระดับโลก" : lang === "en" ? "JIEI (Thailand) Co., Ltd. was established in November 2011 as a subsidiary of Kasei Kogyo Co., Ltd., a company with a long history dating back to 1966. The group specializes in rubber extrusion for automobiles, growing in parallel with the development of the global automotive industry." : "JIEI（Thailand）株式会社は、2011年11月にKasei Kogyo Co., Ltd.グループの子会社として設立されました。同グループは1966年に創業し、自動車産業向けのゴム押出成形における専門知識を有し、世界の自動車産業の発展と共に成長してきました。"}</p>
                             <p className='company-profile-text'>{lang === "th" ? "เรามุ่งเน้นการทำงานครบวงจร ตั้งแต่ การวางแผน การวิจัยและพัฒนา การผลิตด้วยเทคโนโลยีขั้นสูง เพื่อให้ได้ ชิ้นส่วนยางรถยนต์คุณภาพสูง ที่ตอบสนองความต้องการของลูกค้าหลากหลายประเภท ทั้งในญี่ปุ่น อเมริกา จีน และเอเชีย" : lang === "en" ? "We focus on a fully integrated process, from planning and research & development to high-tech production, to deliver high-quality automotive rubber parts that meet the diverse needs of customers in Japan, the United States, China, and across Asia." : "当社は、企画、研究開発から先端技術を用いた生産まで、一貫したプロセスに注力し、日本、アメリカ、中国、そしてアジア各国のお客様の多様なニーズに応える高品質な自動車用ゴム部品を提供しています。"}</p>
@@ -130,19 +128,25 @@ export default function About() {
             </div>
 
             <div className="google-map-box">
-                <button className='btn-googlemap' onClick={showGoogleMap}>
-                    Map <i className="bi bi-search-heart"></i>
-                </button>
-            </div>
+                <label htmlFor="btn-showMap">
+                    <p className='btn-googlemap' >
+                        Map <i className="bi bi-search-heart"></i>
+                    </p>
 
-            {showMap === true ?
+                </label>
+                <input className='btn-showMap d-none' type="checkbox" id="btn-showMap" />
+            
                 <div className='map-jiei'>
-                    <div className='google-popup'>
-                        <Image className='image-map' src={'/Map.png'} alt='' width={1000} height={1000} loading='lazy' />
-                    </div>
+                    <Link href={"/Map.png"} target='_blank'>
+                        <div className='google-popup'>
+                            <Image className='image-map' src={'/Map.png'} alt='' width={1000} height={1000} loading='lazy' />
+                        </div>
+                    </Link>
                 </div>
 
-                : ""}
+            </div>
+
+
 
 
             <div className="manager">

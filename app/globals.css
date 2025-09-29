@@ -212,7 +212,10 @@ a:hover {
 .nav-link {
   cursor: pointer;
 }
+.product-list{
+  cursor: pointer;
 
+}
 .ul-navigation {
   display: flex;
   gap: 30px;
@@ -1587,11 +1590,12 @@ a:hover {
   background-size: cover;
   width: 100%;
   display: grid;
-
   grid-template-columns: 1fr 1fr;
 
+}
 
-
+.company-profile-text1 {
+  font-size: 20px;
 }
 
 .company-profile-text-ji {
@@ -1645,39 +1649,47 @@ a:hover {
 
   .company-profile-text-ji {
     text-align: center;
-
     width: 100%;
 
   }
 
   .company-text-ji {
-    font-size: 80px;
+    font-size: 70px;
     text-align: center;
-
     width: 100%;
-
-
-
-
   }
 
   .company-text-ji1 {
-    font-size: 80px;
+    font-size: 70px;
     text-align: center;
 
   }
 }
 
+@media screen and (max-width:375px) {
+  .company-text-ji {
+    font-size: 50px;
+    text-align: center;
+    width: 100%;
+  }
 
-.google-map-box{
+  .company-text-ji1 {
+    font-size: 50px;
+    text-align: center;
+
+
+  }
+}
+
+.google-map-box {
   text-align: center;
   margin-bottom: 50px;
 
 
 }
 
-.btn-googlemap{
-  box-shadow:  0 0 2px #959595;
+.btn-googlemap {
+  box-shadow: 0 0 2px #959595;
   padding: 10px 20px;
   font-size: 30px;
   background-color: #000796;
@@ -1685,26 +1697,34 @@ a:hover {
   border-radius: 6px;
   transition: all ease 0.25s;
 }
-.btn-googlemap:hover{
+
+
+.btn-googlemap:hover {
   transform: scale(1.05);
-  box-shadow:  0 0 25px #010ac2;
+  box-shadow: 0 0 25px #010ac2;
   background-color: #010ac2;
 
 }
-.map-jiei{
+
+.map-jiei {
   z-index: 9;
-  width: 100%;
-}
+  width: 0%;
+  transition: all ease .25s;
+  z-index: -999;
+  margin: 0 auto;
+  margin-top: -5px;
 
-.google-popup{
-  
-  
-
-  
 
 }
-.image-map{
-  width: 80%;
+
+
+.btn-showMap:checked~.map-jiei {
+  width: 95%;
+  z-index: 999;
+  margin-top: 0;
+}
+
+.image-map {
   margin: 0 auto;
 
 }
@@ -1733,7 +1753,7 @@ a:hover {
 
 }
 
-.text-jiei-about-apage {
+.text-jiei-about-page {
   text-align: center;
   font-weight: 600;
   padding: 20px 0;
@@ -1958,7 +1978,7 @@ h4 {
     font-size: 40px;
   }
 
-  .text-jiei-about-apage {
+  .text-jiei-about-page {
     font-size: 35px;
   }
 
@@ -1972,7 +1992,7 @@ h4 {
     font-size: 22px;
   }
 
-  .text-jiei-about-apage {
+  .text-jiei-about-page {
     font-size: 20px;
   }
 
@@ -2027,9 +2047,6 @@ h4 {
   border-bottom: 5px solid rgb(0, 36, 239);
   width: 300px;
   margin: 0 auto;
-
-
-
 }
 
 .logo-partners1 {
@@ -2152,7 +2169,6 @@ h4 {
 }
 
 .numPage {
-
   text-decoration: none;
   width: 30px;
   text-align: center;
@@ -2251,11 +2267,11 @@ h4 {
 @media screen and (max-width : 1024px) {
 
   .activities-list {
-
     grid-template-columns: 1fr 1fr;
-
-
   }
+
+
+
 }
 
 @media screen and (max-width : 768px) {
@@ -2263,10 +2279,24 @@ h4 {
     grid-template-columns: 1fr 1fr;
   }
 
+  .about-company-name {
+    padding: 0 20px;
+    font-size: 25px;
+
+  }
+
   .activity-item {
     padding: 20px 20px;
 
+  }
 
+  .activities-page {
+    padding: 0px 0px;
+
+  }
+
+  .numPage {
+    margin-left: 20px;
   }
 }
 
@@ -2332,13 +2362,54 @@ h4 {
   -webkit-backdrop-filter: blur(50px);
   backdrop-filter: blur(50px);
   background-color: #ffffff;
-
   box-shadow: 0 0 2px var(--font-color);
 
 }
 
-.content-card-box {
-  padding: 30px;
+.box-card:hover {
+
+  .Read-more-box {
+    -webkit-backdrop-filter: blur(50px);
+    backdrop-filter: blur(5px);
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff67;
+    max-height: 100%;
+
+  }
+}
+
+.Read-more-box {
+  max-height: 0;
+  overflow: hidden;
+  transition: all ease 0.25s;
+  position: absolute;
+  cursor: pointer;
+
+}
+
+
+
+.title-news-content {
+  padding: 30px 20px 0px 20px;
+  font-size: 20px;
+  font-weight: bold;
+
+}
+
+.description-news-content {
+  padding: 0px 20px 10px 20px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  /* จำกัดแค่ 3 บรรทัด */
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 
 }
 
@@ -2368,11 +2439,40 @@ h4 {
   .container-card {
     grid-template-columns: 1fr 1fr 1fr;
   }
+
 }
 
 @media screen and (max-width : 768px) {
   .container-card {
     gap: 20px;
+    width: 90%;
+    margin: 0 auto;
+    grid-template-columns: 1fr 1fr;
+
+  }
+
+  .box-card {
+    margin: 0;
+  }
+
+
+  .page {
+    padding: 50px 0px
+  }
+
+  .content-box-page {
+    padding: 50px 0px;
+  }
+
+  .detail-news {
+    width: 95%;
+
+  }
+
+  .back-btn {
+
+    margin-right: 20px;
+
 
   }
 }
@@ -2380,7 +2480,6 @@ h4 {
 @media screen and (max-width : 426px) {
   .container-card {
     grid-template-columns: 1fr;
-
 
   }
 }
@@ -2426,20 +2525,15 @@ h4 {
 }
 
 .read-more {
-  color: #001b88;
+  color: #1f1f1f;
   padding: 10px 0;
   transition: all ease 0.25s;
+  font-weight: bold;
+
 
 }
 
-.read-more::before {
-  content: '> ';
-}
 
-.read-more::after {
-
-  content: ' <';
-}
 
 .read-more:hover {
   text-decoration: underline;
@@ -2451,6 +2545,7 @@ h4 {
   color: #fff;
   border-radius: 6px;
   transition: all ease 0.25s;
+
 
 
 }
@@ -2466,9 +2561,10 @@ h4 {
   margin-bottom: 100px;
   -webkit-backdrop-filter: blur(20px);
   backdrop-filter: blur(20px);
-  padding: 50px 20px;
+  padding: 50px 0px;
   font-style: 18px;
   color: var(--font-color);
+
 }
 
 
@@ -2658,8 +2754,22 @@ h4 {
     height: auto;
   }
 
+  .box-card:hover {
+    .Read-more-box {
+      display: none;
+    }
+  }
+
+  .title-news-content {
+    font-size: 16px;
+  }
+
   .image-news-page {
     width: 100%;
+  }
+
+  .container-card {
+    gap: 10px;
   }
 }
 
@@ -3323,7 +3433,8 @@ h4 {
   font-size: 100px;
   letter-spacing: 20px;
 }
-.active{
+
+.active {
   color: rgb(0, 0, 127);
 }
 
@@ -3348,11 +3459,13 @@ h4 {
   box-shadow: 0 0 5px #959595;
   border-radius: 6px;
 }
-.image-category{
+
+.image-category {
   width: 90%;
   margin: 0 auto;
 
 }
+
 .background-image {
   position: absolute;
   top: 0;
@@ -3425,6 +3538,7 @@ h4 {
   cursor: pointer;
 
 }
+
 /* .description-product-text{
 
 

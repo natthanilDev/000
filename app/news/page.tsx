@@ -15,10 +15,10 @@ export default function Page() {
   const perPage = 8;
 
   const news = [
-    'JIEI เปิดไลน์การผลิตใหม่ IT ไลน์',
-    '=-=',
-    'JIEI เปิดไลน์การผลิตใหม่ IT ไลน์',
-    '=-=',
+    'เปิดไลน์การผลิตใหม่ TI ไลน์',
+    'ท่างเที่ยวประจำปี 2025',
+    'เปิดไลน์การผลิตใหม่ TI ไลน์',
+    'ท่างเที่ยวประจำปี 2025',
 
   ];
 
@@ -119,7 +119,10 @@ export default function Page() {
           <div className="container-card">
             {paginatedData.map((item, index) => (
               <ScrollReveal key={index}>
-                <div className="box-card" >
+                <div className="box-card" onClick={() => {
+                  setSelectedNews(start + index)
+                  window.scrollTo({ top: 0, behavior: 'smooth' })
+                }} >
                   <div className="image-card">
                     <Image
                       src={img[start + index]}
@@ -133,19 +136,17 @@ export default function Page() {
 
                   <div className="content-card-box">
                     <div className="title-card">
-                      <h2>{item}</h2>
+                      <h2 className='title-news-content'>{item}</h2>
                     </div>
                     <div className="content-card">
-                      <p>{content[start + index]}</p>
+                      <p className='description-news-content'>{content[start + index]}</p>
                     </div>
-                    <button className="read-more"
-                      onClick={() => {
-                        setSelectedNews(start + index)
-                        window.scrollTo({ top: 0, behavior: 'smooth' })
-                      }} >
-                      {lang === 'th' ? "อ่านเพิ่มเติม" : lang === "en" ? "Read More" : "続きを読む"}
+                    <div className="Read-more-box">
+                      <p className="read-more">
+                        {lang === 'th' ? "อ่านเพิ่มเติม" : lang === "en" ? "Read More" : "続きを読む"}
+                      </p>
+                    </div>
 
-                    </button>
                   </div>
 
                 </div>

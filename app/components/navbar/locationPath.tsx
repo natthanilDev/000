@@ -4,7 +4,6 @@ import { useEffect, useState } from 'react';
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 import { useRef } from 'react';
-import Image from 'next/image';
 export default function Nav() {
   const [scrolled, setScrolled] = useState(false);
   const Path = usePathname()
@@ -24,17 +23,17 @@ export default function Nav() {
 
 
 
-const closeMenu = () => {
-  setMenu(false)
-  if (menuCheckboxRef.current) {
-    menuCheckboxRef.current.checked = false
-  }
-  if (menuCheck.current) {
-    menuCheck.current.checked = false
-  }
-};
+  const closeMenu = () => {
+    setMenu(false)
+    if (menuCheckboxRef.current) {
+      menuCheckboxRef.current.checked = false
+    }
+    if (menuCheck.current) {
+      menuCheck.current.checked = false
+    }
+  };
 
-  
+
 
 
   const onChange = (e: React.ChangeEvent<HTMLSelectElement>) => {

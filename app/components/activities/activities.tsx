@@ -136,33 +136,39 @@ export default function Page() {
           <ScrollReveal>
             <div className="container-card">
               {paginatedData.map((item, index) => (
-                <div className="box-card" key={index}>
-                  <div className="image-card">
-                    <Image
-                      src={img[start + index]}
-                      height={1000}
-                      width={1000}
-                      alt={item}
-                      className="image-activities"
-                      priority
-                    />
-                  </div>
-                  <div className="content-card-box">
-                    <div className="title-card">
-                      <h2>{lang === "th" ? item : lang === "en" ? item : ""}</h2>
+                <ScrollReveal key={index}>
+                  <div className="box-card" onClick={() => {
+                    setSelectedNews(start + index)
+                    window.scrollTo({ top: 0, behavior: 'smooth' })
+                  }} >
+                    <div className="image-card">
+                      <Image
+                        src={img[start + index]}
+                        height={1000}
+                        width={1000}
+                        alt={`News image: ${item}`}
+                        className="image-news"
+                        priority
+                      />
                     </div>
-                    <div className="description-activities">
-                      <p className='content-card'>{lang === "th" ? content[start + index] : lang === "en" ? content[start + index] : content[start + index]}</p>
+
+                    <div className="content-card-box">
+                      <div className="title-card">
+                        <h2 className='title-news-content'>{item}</h2>
+                      </div>
+                      <div className="content-card">
+                        <p className='description-news-content'>{content[start + index]}</p>
+                      </div>
+                      <div className="Read-more-box">
+                        <p className="read-more">
+                          {lang === 'th' ? "อ่านเพิ่มเติม" : lang === "en" ? "Read More" : "続きを読む"}
+                        </p>
+                      </div>
+
                     </div>
-                    <button className="read-more"
-                      onClick={() => {
-                        setSelectedNews(start + index)
-                        window.scrollTo({ top: 0, behavior: 'smooth' })
-                      }} >
-                      {lang === "th" ? "อ่านเพิ่มเติม" : lang === "en" ? "Read more" : "続きを読む"}
-                    </button>
+
                   </div>
-                </div>
+                </ScrollReveal>
               ))}
             </div>
           </ScrollReveal>
@@ -173,14 +179,12 @@ export default function Page() {
                   key={pageNum}
                   href={`/activities?page=${pageNum}`}
                   className={`numPage ${pageNum === currentPage ? "focusPage" : ""}`}
-                  title={`ไปหน้าที่ ${pageNum}`}
-                >
+                  title={`ไปหน้าที่ ${pageNum}`}>
                   {pageNum}
                 </Link>
               ))}
             </nav>
           </div>
-
         </div>
       ) : (
         <div className="detail-news">

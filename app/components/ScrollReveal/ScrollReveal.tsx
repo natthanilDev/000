@@ -18,7 +18,7 @@ export default function ScrollReveal({ children, className = '' }: ScrollRevealP
         //   observer.disconnect(); // ถ้าอยากให้เกิดแค่ครั้งเดียว
         }
       },
-      { threshold: 0.3 } // ปรับว่ากี่เปอร์เซ็นต์ของ element ถึง trigger
+      { threshold: 0 } // ปรับว่ากี่เปอร์เซ็นต์ของ element ถึง trigger
     );
 
     if (ref.current) observer.observe(ref.current);
