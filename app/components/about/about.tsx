@@ -260,7 +260,7 @@ export default function About() {
                                 <Image src={"/"} alt='' loading='lazy' width={1000} height={1000} />
                             </div>
                             <div className="employee-name-box">
-                                <h3 className='employee-name'> "*-*--*-*-*-*-*-*</h3>
+                                <h3 className='employee-name'>12345679</h3>
                                 <h4 className='departmain-text'>IT Department</h4>
                             </div>
                         </div>
