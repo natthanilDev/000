@@ -102,7 +102,7 @@ export default function Nav() {
               <ul id="main-navigation" className="ul-navigation">
                 <li onClick={closeMenu} className={`li-menu ${Path === '/' || Path === "/iso9001" || Path === "/iso14001" || Path === "/iatf16949" ? 'path' : ''}`} >
                   <Link href="/" className="nav-link" title="JIEI Thailand Homepage - Automotive Rubber Parts Manufacturer">
-                    {langu === 'jp' ? "ホーム" : "Home"}
+                    {langu === 'th' ? "หน้าแรก" : langu === "en" ? "Home" : "ホーム"}
                   </Link>
                 </li>
 
@@ -116,7 +116,7 @@ export default function Nav() {
                     />
                     <span className="nav-link">
                       <label htmlFor="dropdown-menu">
-                        {langu === 'jp' ? "製品" : "Products Collection"}
+                        {langu === 'th' ? "คอลเลกชันสินค้า" : langu === "en" ? "Products Collection" : "製品"}
                       </label>
                     </span>
                     <i className="chevron-down bi bi-chevron-down"></i>
@@ -128,16 +128,15 @@ export default function Nav() {
                             onClick={closeMenu} href="/products/engine-mount"
                             className="Link-product-class"
                             title="Engine Mounts - Automotive Rubber Parts JIEI Thailand">
-                            {langu === 'jp' ? "エンジンマウント" : "Engine Mounts"}
+                            {langu === 'th' ? "แท่นยึดเครื่องยนต์" : langu === "en" ? "Engine Mounts" : "エンジンマウント"}
                           </Link>
                         </li>
                         <li className={`li-product2 ${Path === '/products/suspension-bush' ? 'path' : ''}`} >
                           <Link
                             onClick={closeMenu} href="/products/suspension-bush"
                             className="Link-product-class"
-                            title="Suspension Bushings - OEM Rubber Parts JIEI Thailand"
-                          >
-                            {langu === 'jp' ? "サスペンションブッシュ" : "Suspension Bushings"}
+                            title="Suspension Bushings - OEM Rubber Parts JIEI Thailand" >
+                            {langu === 'th' ? "ยางรองบูชระบบกันสะเทือน" : langu === "en" ? "Suspension Bushings" : "サスペンションブッシュ"}
                           </Link>
                         </li>
                         <li className={`li-product3 ${Path === '/products/seals' ? 'path' : ''}`} >
@@ -145,7 +144,7 @@ export default function Nav() {
                             onClick={closeMenu} href="/products/seals"
                             className="Link-product-class"
                             title="Seals & Gaskets - Automotive Rubber Sealing Solutions">
-                            {langu === 'jp' ? "シール＆ガスケット" : " Seals & Gaskets"}
+                            {langu === 'th' ? "ซีลและปะเก็น" : langu === "en" ? "Seals & Gaskets" : "シール＆ガスケット"}
                           </Link>
                         </li>
                         <li className={`li-product4 ${Path === '/products/custom-parts' ? 'path' : ''}`} >
@@ -153,9 +152,7 @@ export default function Nav() {
                             onClick={closeMenu} href="/products/custom-parts"
                             className="Link-product-class"
                             title="Custom Rubber Parts Manufacturing Thailand">
-                            {langu === 'jp' ? "すべての製品" : "Products Collection"}
-
-                            {/* {langu === 'jp' ? "カスタムゴム部品" : "Custom Rubber Parts"} */}
+                            {langu === 'th' ? "คอลเลกชันสินค้า" : langu === "en" ? "Products Collection" : "すべての製品"}
                           </Link>
                         </li>
                       </ul>
@@ -167,7 +164,7 @@ export default function Nav() {
                     onClick={closeMenu} href="/about"
                     className="nav-link"
                     title="About JIEI Thailand - Rubber Parts Manufacturer">
-                    {langu === 'jp' ? "会社概要" : "About Us"}
+                    {langu === 'th' ? "เกี่ยวกับเรา" : langu === "en" ? "About Us" : "会社概要"}
                   </Link>
                 </li>
                 <li className={`li-menu ${Path === '/activities' ? 'path' : ''}`}>
@@ -176,17 +173,18 @@ export default function Nav() {
                     className="nav-link"
                     title="JIEI Thailand Activities - กิจกรรม โรงงานผู้ผลิตชิ้นส่วนยางรถยนต์"
                     aria-label="JIEI Thailand Activities - กิจกรรม และข่าวสารจากโรงงานผู้ผลิตชิ้นส่วนยางรถยนต์">
-                    {langu === 'jp' ? "活動内容" : "Activities"}
+                    {langu === 'th' ? "กิจกรรม" : langu === "en" ? "Activities" : "活動内容"}
+
                   </Link>
                 </li>
                 <li className={`li-menu ${Path === '/technologies' ? 'path' : ''}`}>
                   <Link onClick={closeMenu} href="/technologies" className="nav-link" title="JIEI Thailand Homepage - Automotive Rubber Parts Manufacturer">
-                    {langu === 'jp' ? "テクノロジー" : "Technologies"}
+                    {langu === 'th' ? "เทคโนโลยี" : langu === "en" ? "Technologies" : "テクノロジー"}
                   </Link>
                 </li>
                 <li className={`li-menu ${Path === '/network' ? 'path' : ''}`}>
                   <Link onClick={closeMenu} href="/network" className="nav-link" title="JIEI Thailand Homepage - Automotive Rubber Parts Manufacturer">
-                    {langu === 'jp' ? "ネットワーク" : "Network"}
+                    {langu === 'th' ? "เครือข่าย" : langu === "en" ? "Network" : "ネットワーク"}
                   </Link>
                 </li>
 
@@ -195,7 +193,7 @@ export default function Nav() {
                     onClick={closeMenu} href="/news"
                     className="nav-link"
                     title="News & Blog - JIEI Thailand Updates">
-                    {langu === 'jp' ? "ニュース＆ブログ" : "News & Blog"}
+                    {langu === 'th' ? "ข่าวและบทความ" : langu === "en" ? "News & Blog" : "ニュース＆ブログ"}
                   </Link>
                 </li>
                 <li className={` li-menu ${Path === '/contact' ? 'path' : ''}`}>
@@ -203,7 +201,8 @@ export default function Nav() {
                     onClick={closeMenu} href="/contact"
                     className="nav-link"
                     title="Contact JIEI Thailand - OEM Rubber Parts Manufacturer">
-                    {langu === 'jp' ? "お問い合わせ" : "Contact Us"}
+                    {langu === 'th' ? "ติดต่อเรา" : langu === "en" ? "Contact Us" : "お問い合わせ"}
+
                   </Link>
                 </li>
 

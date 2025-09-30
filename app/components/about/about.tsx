@@ -28,7 +28,37 @@ export default function About() {
         '/logo-partners (11).png',
         '/logo-partners (12).png',
     ]
- 
+
+
+    const manager = [
+        '/top-manager/murata-san.png',
+        '/top-manager/inoue-san.png',
+         '/top-manager/sato-san.png',
+        // '/top-manager/10.png',
+        '/top-manager/hirano-san.png',
+        '/top-manager/hayakawa-san.png',
+       
+
+    ]
+    const name_manager = [
+        'Kazuya Murata',
+        'Tetsuya Inoue',
+        'Yosuke Sato',
+        'Takanori Hirano',
+        'Tomoaki Hayakawa',
+    
+
+    ]
+    const department_top = [
+        'Manager',
+        'QA QC Manager',
+        'PD Manager',
+        'TE Manager',
+        'TE Manager'
+
+
+    ]
+
     return (
         <div className='about-page'>
             <div className="background-company-profile">
@@ -36,8 +66,8 @@ export default function About() {
                 </div>
                 <div className="company-profile-text-ji">
                     <ScrollReveal>
-                        <h1 className='company-text-ji'>Company</h1>
-                        <h1 className='company-text-ji1'>Profile</h1>
+                        <h1 className='company-text-ji'>{lang === 'th' ? "โปรไฟล์" : lang === "en" ? "Company" : "会社"}</h1>
+                        <h1 className='company-text-ji1'>{lang === 'th' ? "บริษัท" : lang === "en" ? "Profile" : "概要"}</h1>
                         <h3 className='company-text-ji2'>Jiei (Thailand).Co.,Ltd</h3>
                     </ScrollReveal>
                 </div>
@@ -130,12 +160,11 @@ export default function About() {
             <div className="google-map-box">
                 <label htmlFor="btn-showMap">
                     <p className='btn-googlemap' >
-                        Map <i className="bi bi-search-heart"></i>
+                        {lang === "th" ? "แผนที่" : lang === "en" ? "Map" : "地図"} <i className="bi bi-search-heart"></i>
                     </p>
-
                 </label>
                 <input className='btn-showMap d-none' type="checkbox" id="btn-showMap" />
-            
+
                 <div className='map-jiei'>
                     <Link href={"/Map.png"} target='_blank'>
                         <div className='google-popup'>
@@ -156,46 +185,88 @@ export default function About() {
                 </ScrollReveal>
                 <div className="manger-box">
                     <ScrollReveal>
+
                         <div className="image-manager">
-                            <div className="image-top-manager-box">
-                                <Image src={'/top-manager.png'} alt='บริษัท เจไออีไอ (ประเทศไทย) จำกัด
-                        เป็นผู้ผลิต ชิ้นส่วนยางรถยนต์คุณภาพสูง
-                        สำหรับอุตสาหกรรมยานยนต์ในประเทศไทยและต่างประเทศ
-                        โรงงานตั้งอยู่ที่จังหวัดชลบุรี พร้อมมาตรฐานสากล' width={1000} height={1000} className='manager-Image' />
-                            </div>
-                            <div className="name-top-manager">
-                                <h2 className='position'>{lang === "th" ? "ประธานประธานบริษัท" : lang === "en" ? "President" : "社長"} <p>{lang === "th" ? "" : lang === "en" ? "" : ""}Masashi Ezaka</p> </h2>
-                            </div>
-                        </div>
-                    </ScrollReveal>
-                    <ScrollReveal>
-                        <div className="manager-image-box">
-                            <div className="image-manager">
+                            <div className="top-manager-box">
                                 <div className="image-top-manager-box">
-                                    <Image src={'/top-manager.png'} alt='บริษัท เจไออีไอ (ประเทศไทย) จำกัด
-                        เป็นผู้ผลิต ชิ้นส่วนยางรถยนต์คุณภาพสูง
-                        สำหรับอุตสาหกรรมยานยนต์ในประเทศไทยและต่างประเทศ
-                        โรงงานตั้งอยู่ที่จังหวัดชลบุรี พร้อมมาตรฐานสากล' width={1000} height={1000} className='manager-Image' />
+                                    <Image src={'/top-manager/5.png'} alt='บริษัท เจไออีไอ (ประเทศไทย) จำกัด เป็นผู้ผลิต ชิ้นส่วนยางรถยนต์คุณภาพสูงสำหรับอุตสาหกรรมยานยนต์ในประเทศไทยและต่างประเทศโรงงานตั้งอยู่ที่จังหวัดชลบุรี พร้อมมาตรฐานสากล' width={1000} height={1000} className='manager-Image' />
                                 </div>
                                 <div className="name-top-manager">
-                                    <h2 className='position'>{lang === "th" ? "กรรมการ" : lang === "en" ? "Director" : "取締役"} <p>{lang === "th" ? "" : lang === "en" ? "" : ""}Kenji Kamei</p> </h2>
-                                </div>
-                            </div>
-                            <div className="image-manager">
-                                <div className="image-top-manager-box">
-                                    <Image src={'/top-manager.png'} alt='บริษัท เจไออีไอ (ประเทศไทย) จำกัด
-                        เป็นผู้ผลิต ชิ้นส่วนยางรถยนต์คุณภาพสูง
-                        สำหรับอุตสาหกรรมยานยนต์ในประเทศไทยและต่างประเทศ
-                        โรงงานตั้งอยู่ที่จังหวัดชลบุรี พร้อมมาตรฐานสากล' width={1000} height={1000} className='manager-Image' />
-                                </div>
-                                <div className="name-top-manager">
-                                    <h2 className='position'>{lang === "th" ? "กรรมการผู้จัดการ" : lang === "en" ? "Management Director" : "マネジメントディレクター"} <p>{lang === "th" ? "" : lang === "en" ? "" : ""}Yoshikatsu Inada</p> </h2>
+                                    <h2 className='position-topmanager'>{lang === "th" ? "ประธานประธานบริษัท" : lang === "en" ? "President" : "社長"} </h2>
+                                    <p className='top-manager-name'>Masashi Ezaka</p>
                                 </div>
                             </div>
                         </div>
+
+
+                        <div className="manager-box">
+                            <div className="image-manager2">
+                                <div className="top-manager-box1">
+                                    <div className="image-top-manager-box">
+                                        <Image src={"/top-manager/5.png"} alt='บริษัท เจไออีไอ (ประเทศไทย) จำกัด เป็นผู้ผลิต ชิ้นส่วนยางรถยนต์คุณภาพสูงสำหรับอุตสาหกรรมยานยนต์ในประเทศไทยและต่างประเทศโรงงานตั้งอยู่ที่จังหวัดชลบุรี พร้อมมาตรฐานสากล' width={1000} height={1000} className='manager-Image' />
+                                    </div>
+                                    <div className="name-top-manager">
+                                        <h2 className='position-topmanager'>{lang === "th" ? "ผู้อำนวยการ" : lang === "en" ? "Director" : "ディレクター"} </h2>
+                                        <p className='top-manager-name'>Kenji Kamei</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="image-manager2">
+                                <div className="top-manager-box1">
+                                    <div className="image-top-manager-box">
+                                        <Image src={"/top-manager/6.png"} alt='บริษัท เจไออีไอ (ประเทศไทย) จำกัด เป็นผู้ผลิต ชิ้นส่วนยางรถยนต์คุณภาพสูงสำหรับอุตสาหกรรมยานยนต์ในประเทศไทยและต่างประเทศโรงงานตั้งอยู่ที่จังหวัดชลบุรี พร้อมมาตรฐานสากล' width={1000} height={1000} className='manager-Image' />
+                                    </div>
+                                    <div className="name-top-manager">
+                                        <h2 className='position-topmanager'>{lang === "th" ? "กรรมการผู้จัดการ" : lang === "en" ? "Management Director" : "経営取締役"} </h2>
+                                        <p className='top-manager-name'>Yoshikatsu Inada</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+
+
+                        <div className="manager-group">
+                            {manager.map((item, index) =>
+                                <div key={index} className="image-manager1">
+                                    <div className="top-manager-box1">
+                                        <div className="image-top-manager-box">
+                                            <Image src={item} alt='บริษัท เจไออีไอ (ประเทศไทย) จำกัด เป็นผู้ผลิต ชิ้นส่วนยางรถยนต์คุณภาพสูงสำหรับอุตสาหกรรมยานยนต์ในประเทศไทยและต่างประเทศโรงงานตั้งอยู่ที่จังหวัดชลบุรี พร้อมมาตรฐานสากล' width={1000} height={1000} className='manager-Image' />
+                                        </div>
+                                        <div className="name-top-manager">
+                                            <h2 className='position-topmanager'>{lang === "th" ? department_top[index] : lang === "en" ? "President" : "社長"} </h2>
+                                            <p className='top-manager-name'>{name_manager[index]}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            )}
+                        </div>
+
                     </ScrollReveal>
                 </div>
             </div >
+
+            <div className="employee-intro">
+                <div className="employee-staff">
+                    <div className="employee-text">
+                        <h1 className='text-employee1'>แนะนำพนักงานคุณภาพของเรา</h1>
+                        <h2 className='text-employee2'>ทีมงานมืออาชีพ พร้อมให้บริการด้วยมาตรฐานระดับสากล</h2>
+                    </div>
+
+                    <div className="employee-box">
+
+                        <div className="employee-card-grid">
+                            <div className="employee-image">
+                                <Image src={"/"} alt='' loading='lazy' width={1000} height={1000} />
+                            </div>
+                            <div className="employee-name-box">
+                                <h3 className='employee-name'> "*-*--*-*-*-*-*-*</h3>
+                                <h4 className='departmain-text'>IT Department</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
             <div className="partners-box">
                 <div className="partners-text">

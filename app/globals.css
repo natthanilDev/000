@@ -212,10 +212,12 @@ a:hover {
 .nav-link {
   cursor: pointer;
 }
-.product-list{
+
+.product-list {
   cursor: pointer;
 
 }
+
 .ul-navigation {
   display: flex;
   gap: 30px;
@@ -1851,19 +1853,9 @@ h4 {
   color: #080808;
 }
 
-.image-manager {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 
-}
 
-.name-top-manager {
-  padding: 10px 0;
 
-}
 
 
 .about-company-name {
@@ -1905,12 +1897,7 @@ h4 {
 
 }
 
-.position {
-  font-size: 22px;
-  font-weight: bold;
-  color: var(--font-color);
 
-}
 
 .managerText {
   text-align: center;
@@ -1927,23 +1914,99 @@ h4 {
   margin: 20px auto;
 }
 
-.top-manager-Image {
-  width: 300px;
-}
-
-.manager-image-box {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 100px;
-  width: 80%;
-  margin: 50px auto;
-
-}
 
 .manager-Image {
-  width: 300px;
+  width: 90%;
+  border-radius: 20px;
+  transition: all ease .25s;
+  margin: 0 auto;
+}
+
+.top-manager-box {
+  box-shadow: 0 0 2px #959595;
+  width: 350px;
+  margin: 0 auto;
+  border-radius: 20px;
+  transition: all ease .25s;
+  background-color: #f1f1f1;
+
 
 }
+.top-manager-box1 {
+  box-shadow: 0 0 2px #959595;
+  margin: 0 auto;
+  border-radius: 20px;
+  transition: all ease .25s;
+  background-color: #f1f1f1;
+}
+
+.manager-box{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.image-manager2{
+  width: 350px;
+  margin: 0 auto;
+}
+.top-manager-box1:hover {
+  background-color: #ffff;
+  box-shadow: none;
+
+  .manager-Image {
+    transform: scale(1.2);
+  }
+  .name-top-manager {
+    transform: scale(1.2);
+  }
+}
+
+.name-top-manager {
+  transition: all ease 0.25s;
+  
+}
+
+.top-manager-box:hover {
+  background-color: #ffff;
+  box-shadow: none;
+
+  .manager-Image {
+    transform: scale(1.2);
+  }
+
+  .name-top-manager {
+    transform: scale(1.2);
+  }
+}
+
+.position-topmanager {
+  font-size: 25px;
+  text-align: center;
+  padding: 10px 10px 0px 10px;
+  font-weight: bold;
+  margin-top: 30px;
+
+}
+
+.top-manager-name {
+  text-align: center;
+  padding: 0 10px 10px 10px;
+  font-size: 20px;
+}
+
+.manager-group{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 70px;
+  width: 90%;
+  margin: 50px auto;
+}
+
+
+
 
 .why-chose-jiei {
   width: 90%;
