@@ -7,9 +7,7 @@ import { useRef } from 'react';
 export default function Nav() {
   const [scrolled, setScrolled] = useState(false);
   const Path = usePathname()
-  const [langu, setLangu] = useState('')
   const [menu, setMenu] = useState(false)
-
   const [lang, setLang] = useState<'th' | 'en' | 'jp'>(() => {
     if (typeof window !== 'undefined') {
       return (localStorage.getItem('lang') as 'th' | 'en' | 'jp') || 'th';
@@ -42,29 +40,29 @@ export default function Nav() {
     console.log(lang)
     localStorage.setItem('lang', selected);
     if (selected === 'th') {
-      setLangu('th')
       window.location.reload()
     } else if (selected === 'en') {
-      setLangu('en')
       window.location.reload()
     } else {
-      setLangu('jp')
       window.location.reload()
     }
-    setLangu(selected)
   }
 
   useEffect(() => {
-    if (typeof window !== 'undefined') {
-      const storedLang = localStorage.getItem('lang') as 'th' | 'en' | 'jp' | null;
-      if (storedLang) setLangu(storedLang);
-    }
+     if (typeof window !== 'undefined') {
+            const storedLang = localStorage.getItem('lang') as 'th' | 'en' | 'jp' | null;
+            if (storedLang) setLang(storedLang);
+        }
+
+
+
+
+
     const handleScroll = () => {
       setScrolled(window.scrollY > 50);
 
     };
 
-    localStorage.getItem('lang') as 'th' | 'en' | 'jp' | null
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -102,7 +100,7 @@ export default function Nav() {
               <ul id="main-navigation" className="ul-navigation">
                 <li onClick={closeMenu} className={`li-menu ${Path === '/' || Path === "/iso9001" || Path === "/iso14001" || Path === "/iatf16949" ? 'path' : ''}`} >
                   <Link href="/" className="nav-link" title="JIEI Thailand Homepage - Automotive Rubber Parts Manufacturer">
-                    {langu === 'th' ? "หน้าแรก" : langu === "en" ? "Home" : "ホーム"}
+                    {lang === 'th' ? 'หน้าแรก' : lang === 'en' ? 'Home' : 'ホーム'}
                   </Link>
                 </li>
 
@@ -116,7 +114,7 @@ export default function Nav() {
                     />
                     <span className="nav-link">
                       <label htmlFor="dropdown-menu">
-                        {langu === 'th' ? "คอลเลกชันสินค้า" : langu === "en" ? "Products Collection" : "製品"}
+                        {lang === 'th' ? "คอลเลกชันสินค้า" : lang === "en" ? "Products Collection" : "製品"}
                       </label>
                     </span>
                     <i className="chevron-down bi bi-chevron-down"></i>
@@ -128,7 +126,7 @@ export default function Nav() {
                             onClick={closeMenu} href="/products/engine-mount"
                             className="Link-product-class"
                             title="Engine Mounts - Automotive Rubber Parts JIEI Thailand">
-                            {langu === 'th' ? "แท่นยึดเครื่องยนต์" : langu === "en" ? "Engine Mounts" : "エンジンマウント"}
+                            {lang === 'th' ? "แท่นยึดเครื่องยนต์" : lang === "en" ? "Engine Mounts" : "エンジンマウント"}
                           </Link>
                         </li>
                         <li className={`li-product2 ${Path === '/products/suspension-bush' ? 'path' : ''}`} >
@@ -136,7 +134,7 @@ export default function Nav() {
                             onClick={closeMenu} href="/products/suspension-bush"
                             className="Link-product-class"
                             title="Suspension Bushings - OEM Rubber Parts JIEI Thailand" >
-                            {langu === 'th' ? "ยางรองบูชระบบกันสะเทือน" : langu === "en" ? "Suspension Bushings" : "サスペンションブッシュ"}
+                            {lang === 'th' ? "ยางรองบูชระบบกันสะเทือน" : lang === "en" ? "Suspension Bushings" : "サスペンションブッシュ"}
                           </Link>
                         </li>
                         <li className={`li-product3 ${Path === '/products/seals' ? 'path' : ''}`} >
@@ -144,7 +142,7 @@ export default function Nav() {
                             onClick={closeMenu} href="/products/seals"
                             className="Link-product-class"
                             title="Seals & Gaskets - Automotive Rubber Sealing Solutions">
-                            {langu === 'th' ? "ซีลและปะเก็น" : langu === "en" ? "Seals & Gaskets" : "シール＆ガスケット"}
+                            {lang === 'th' ? "ซีลและปะเก็น" : lang === "en" ? "Seals & Gaskets" : "シール＆ガスケット"}
                           </Link>
                         </li>
                         <li className={`li-product4 ${Path === '/products/custom-parts' ? 'path' : ''}`} >
@@ -152,7 +150,7 @@ export default function Nav() {
                             onClick={closeMenu} href="/products/custom-parts"
                             className="Link-product-class"
                             title="Custom Rubber Parts Manufacturing Thailand">
-                            {langu === 'th' ? "คอลเลกชันสินค้า" : langu === "en" ? "Products Collection" : "すべての製品"}
+                            {lang === 'th' ? "คอลเลกชันสินค้า" : lang === "en" ? "Products Collection" : "すべての製品"}
                           </Link>
                         </li>
                       </ul>
@@ -164,7 +162,7 @@ export default function Nav() {
                     onClick={closeMenu} href="/about"
                     className="nav-link"
                     title="About JIEI Thailand - Rubber Parts Manufacturer">
-                    {langu === 'th' ? "เกี่ยวกับเรา" : langu === "en" ? "About Us" : "会社概要"}
+                    {lang === 'th' ? "เกี่ยวกับเรา" : lang === "en" ? "About Us" : "会社概要"}
                   </Link>
                 </li>
                 <li className={`li-menu ${Path === '/activities' ? 'path' : ''}`}>
@@ -173,18 +171,18 @@ export default function Nav() {
                     className="nav-link"
                     title="JIEI Thailand Activities - กิจกรรม โรงงานผู้ผลิตชิ้นส่วนยางรถยนต์"
                     aria-label="JIEI Thailand Activities - กิจกรรม และข่าวสารจากโรงงานผู้ผลิตชิ้นส่วนยางรถยนต์">
-                    {langu === 'th' ? "กิจกรรม" : langu === "en" ? "Activities" : "活動内容"}
+                    {lang === 'th' ? "กิจกรรม" : lang === "en" ? "Activities" : "活動内容"}
 
                   </Link>
                 </li>
                 <li className={`li-menu ${Path === '/technologies' ? 'path' : ''}`}>
                   <Link onClick={closeMenu} href="/technologies" className="nav-link" title="JIEI Thailand Homepage - Automotive Rubber Parts Manufacturer">
-                    {langu === 'th' ? "เทคโนโลยี" : langu === "en" ? "Technologies" : "テクノロジー"}
+                    {lang === 'th' ? "เทคโนโลยี" : lang === "en" ? "Technologies" : "テクノロジー"}
                   </Link>
                 </li>
                 <li className={`li-menu ${Path === '/network' ? 'path' : ''}`}>
                   <Link onClick={closeMenu} href="/network" className="nav-link" title="JIEI Thailand Homepage - Automotive Rubber Parts Manufacturer">
-                    {langu === 'th' ? "เครือข่าย" : langu === "en" ? "Network" : "ネットワーク"}
+                    {lang === 'th' ? "เครือข่าย" : lang === "en" ? "Network" : "ネットワーク"}
                   </Link>
                 </li>
 
@@ -193,7 +191,7 @@ export default function Nav() {
                     onClick={closeMenu} href="/news"
                     className="nav-link"
                     title="News & Blog - JIEI Thailand Updates">
-                    {langu === 'th' ? "ข่าวและบทความ" : langu === "en" ? "News & Blog" : "ニュース＆ブログ"}
+                    {lang === 'th' ? "ข่าวและบทความ" : lang === "en" ? "News & Blog" : "ニュース＆ブログ"}
                   </Link>
                 </li>
                 <li className={` li-menu ${Path === '/contact' ? 'path' : ''}`}>
@@ -201,14 +199,14 @@ export default function Nav() {
                     onClick={closeMenu} href="/contact"
                     className="nav-link"
                     title="Contact JIEI Thailand - OEM Rubber Parts Manufacturer">
-                    {langu === 'th' ? "ติดต่อเรา" : langu === "en" ? "Contact Us" : "お問い合わせ"}
+                    {lang === 'th' ? "ติดต่อเรา" : lang === "en" ? "Contact Us" : "お問い合わせ"}
 
                   </Link>
                 </li>
 
                 <div className="lang-select">
                   <label htmlFor="language" className="sr-only">Language</label>
-                  <select id="language" value={langu} className='language' onChange={onChange} aria-label="Select language">
+                  <select id="language" value={lang} className='language' onChange={onChange} aria-label="Select language">
                     <option className='option' value="th">TH</option>
                     <option className='option' value="en">EN</option>
                     <option className='option' value="jp">JP</option>
