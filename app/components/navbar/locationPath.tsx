@@ -8,12 +8,13 @@ export default function Nav() {
   const [scrolled, setScrolled] = useState(false);
   const Path = usePathname()
   const [menu, setMenu] = useState(false)
-  const [lang, setLang] = useState<'th' | 'en' | 'jp'>(() => {
-    if (typeof window !== 'undefined') {
-      return (localStorage.getItem('lang') as 'th' | 'en' | 'jp') || 'th';
-    }
-    return 'th';
-  });
+
+
+  const [lang, setLang] = useState<'th' | 'en' | 'jp'>('th');
+  useEffect(() => {
+    const storedLang = localStorage.getItem('lang') as 'th' | 'en' | 'jp' | null;
+    if (storedLang) setLang(storedLang);
+  }, []);
 
   const menuCheckboxRef = useRef<HTMLInputElement>(null);
 
@@ -39,34 +40,25 @@ export default function Nav() {
     setLang(selected)
     console.log(lang)
     localStorage.setItem('lang', selected);
-    if (selected === 'th') {
-      window.location.reload()
-    } else if (selected === 'en') {
-      window.location.reload()
-    } else {
-      window.location.reload()
-    }
+
+    localStorage.setItem('lang', selected);
+    setLang(selected);
+    window.location.reload();
   }
 
   useEffect(() => {
-     if (typeof window !== 'undefined') {
-            const storedLang = localStorage.getItem('lang') as 'th' | 'en' | 'jp' | null;
-            if (storedLang) setLang(storedLang);
-        }
-
-
-
-
+    if (typeof window !== 'undefined') {
+      const storedLang = localStorage.getItem('lang') as 'th' | 'en' | 'jp' | null;
+      if (storedLang) setLang(storedLang);
+    }
 
     const handleScroll = () => {
       setScrolled(window.scrollY > 50);
-
     };
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-
 
   return (
 

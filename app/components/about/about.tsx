@@ -33,32 +33,261 @@ export default function About() {
     const manager = [
         '/top-manager/murata-san.png',
         '/top-manager/inoue-san.png',
-         '/top-manager/sato-san.png',
-        // '/top-manager/10.png',
+        '/top-manager/sato-san.png',
         '/top-manager/hirano-san.png',
         '/top-manager/hayakawa-san.png',
-       
-
+        '/top-manager/10.png',
     ]
+
     const name_manager = [
         'Kazuya Murata',
         'Tetsuya Inoue',
         'Yosuke Sato',
         'Takanori Hirano',
         'Tomoaki Hayakawa',
-    
-
+        'Hiroki Kako',
     ]
+
     const department_top = [
         'Manager',
-        'QA QC Manager',
-        'PD Manager',
-        'TE Manager',
-        'TE Manager'
+        'General Manager',
+        'Manager Factory',
+        'Advisor',
+        'Manager',
+        'Manager'
+    ]
 
+    const QAName = [
+        'Mr.Nut Kullamart (Nut)',
+        'Mr.Kanatip Ruangrit (Nook)',
+        'Ms.Pakakan Thiangtham (Jane)',
+        'Mr.Chatree Boonsawai (Tuy)',
+        'Ms.Duangrutai Asavapum (Ja ae)',
+        'Ms.Suttinee Pattamanawin (May'
+    ]
+    const QA = [
+        'Supervisor/QMR ',
+        'ASST.Leader',
+        'QA Staff',
+        'QA Staff',
+        'QA Engineer',
+        'QA Staff'
+    ]
+    const ImageQA = [
+        '/QA/nut.png',
+        '/QA/nook.png',
+        '/QA/jan.png',
+        '/QA/tuy.png',
+        '/QA/ja ae.png',
+        '/QA/may.png'
+    ]
+
+    const QC = [
+        'Leader',
+        'QC Staff',
+        'QC Staff',
+        'QC Staff',
+        'QC Staff',
+        'QC Staff',
+        'QC Staff',
+        'QC Staff',
+        'QC Staff',
+    ]
+    const QCName = [
+        'Ms.Pornjun Konboon (Aof)',
+        'Ms.Nuchjana Pimsan (Gaembum)',
+        'Mr.Thanachord Channguleam (Game)',
+        'Mr.Supote Noybunya (Pote)',
+        'Mr.Uthai Boonut (Thai)',
+        'Ms.Rerai Hanrop (Rose)',
+        'Ms.Lalana Sriwapee (Biew)',
+        'Mr.Teerayut Boonrod (Baw)',
+        'Mr.Peerawit Suwanna (Ice)',
+      
+    ]
+    const ImageQC = [
+        '/QC/aof.png',
+        '/QC/gambum.png',
+        '/QC/game.png',
+        '/QC/thod.png',
+        '/QC/thai.png',
+        '/QC/gulob.png',
+        '/QC/biwty.png',
+        '/QC/baw.png',
+        '/QC/ice.png',
+    ]
+
+
+    const PC = [
+        'Manager',
+        'ASST.Leader',
+        'PC Staff',
+        'PC Staff',
+        'PC Staff',
+    ]
+    const PCName = [
+        'Mr.Werayoot Ingkapakorn (B)',
+        'Ms.Larisa Seanchan (Koy)',
+        'Ms.Phonwilai Pholsakaew (Praewa)',
+        'Ms.Phutthika Chotmongkon (Ked)',
+        'Mr.Songsak Taothong (Max)',
+    ]
+    const ImagePC = [
+        '/PC/be.png',
+        '/PC/koy.png',
+        '/PC/kad.png',
+        '/PC/prawa.png',
+        '/PC/max.png',
+    ]
+    const PD = [
+        'ASST.Manager',
+        'PD Staff',
+        'PD Staff',
+    ]
+    const PDName = [
+        
+        'Mr.Athiwat Natacha (Num)',
+        'Ms.Sakaodeuan Limpakdee (Bee)',
+        'Ms.Nattha Masuk (Nut)',
+
+    ]
+    const ImagePD = [
+        '/PD/num.png',
+        '/PD/be.png',
+        '/PD/nutty.png',
 
     ]
 
+
+    const HR = [
+        'Manager',
+        'ASST.Leader',
+        'Staff',
+        'Staff',
+    ]
+    const HRName = [
+        'Ms.Wipada Singkham (Da)',
+        'Ms.Natchaya Nilchom (Ice)',
+        'Ms.Jiriyaporn Puttayakul (Jill)',
+        'Ms.Natcha Netvichian (Game)',
+    ]
+    const ImageHR = [
+        '/HR/da.png',
+        '/HR/ice.png',
+        '/HR/jill.png',
+        '/HR/game.png',
+
+    ]
+
+    const ACC = [
+        'Leader',
+        'ASST.Leader',
+        'Staff',
+
+    ]
+    const ACCName = [
+        'Ms.Monthip Meng-Ourm (Tip)',
+        'Ms.Watsana Kumkhonkhaen (Fem)',
+        'Ms.Netchanok Sudongpong (Nampetch)' ,
+
+    ]
+    const ImageACC = [
+        '/ACC/tip.png',
+        '/ACC/flean.png',
+        '/ACC/numplach.png',
+    ]
+const SA = [
+        'Manager',
+        'Leader',
+        'Leader',
+
+    ]
+    const SAName = [
+        'Mr. Tanatom Puttisa (Tee)',
+        'Mr.Thanasan Kasorn (Boom)',
+        'Ms. Thiparat Kamsing (Bow)',
+
+    ]
+    const ImageSA = [
+        '/SA/tee.png',
+        '/SA/boom.png',
+        '/SA/bow.png',
+    ]
+const IT = [
+        'Staff',
+        'Staff',
+    ]
+    const ITName = [
+        'Mr.Sompong Sae Boon (Pe)',
+        'Mr.Natthanil Wannasopa (Newton)',
+    ]
+    const ImageIT = [
+        '/IT/pe.png',
+        '/IT/newton.png',
+    ]
+
+    const SE = [
+        'Leader/EMR',
+        'Staff',
+    ]
+    const SEName = [
+        'Ms.Supreeya Kitbumrung (Fai)',
+        'Ms.Suwimon Phoncharoen (Mon)',
+    ]
+    const ImageSE = [
+        '/SE/fill.png',
+        '/SE/mon.png',
+    ]
+
+     const TE = [
+        'Interpreter',
+        'Leader',
+        'Leader',
+        'ASST.Leader',
+    ]
+    const TEName = [
+        'Mr.Pricha Prasoetsang (Num)',
+        'Mr.Natphon Cakpila (Ton)',
+        'Mr. Yutthakarn Samaknarong (Daew)',
+        'TE',
+    ]
+    const ImageTE = [
+        '/TE/alt.png',
+        '/TE/num.png',
+        '/TE/ton.png',
+        '/TE/deaw.png',
+    ]
+      const WH = [
+        'Leader',
+        'Staff',
+        'Staff',
+    ]
+    const WHName = [
+        'Ms.Sukunya Chamali (Tong )',
+        'Mrs.Sudarak Srinuan (Kaun)',
+        'Ms.Ausanee Duangrit (Pampam)',  
+    ]
+    const ImageWH = [
+        '/WH/tong.png',
+        '/WH/kwan.png',
+        '/WH/pam.png',
+    ]
+
+      const PUR = [
+        'Leader',
+        'ASST.Leader',
+        
+    ]
+    const PURName = [
+        'Ms.Napatsawan Chanapai (Nami)',
+        'Ms. Phairin Klinfung (Aom)',
+        
+    ]
+    const ImagePUR = [
+        '/PUR/nami.png',
+        '/PUR/aom.png',
+        
+    ]
     return (
         <div className='about-page'>
             <div className="background-company-profile">
@@ -214,7 +443,7 @@ export default function About() {
                             <div className="image-manager2">
                                 <div className="top-manager-box1">
                                     <div className="image-top-manager-box">
-                                        <Image src={"/top-manager/6.png"} alt='บริษัท เจไออีไอ (ประเทศไทย) จำกัด เป็นผู้ผลิต ชิ้นส่วนยางรถยนต์คุณภาพสูงสำหรับอุตสาหกรรมยานยนต์ในประเทศไทยและต่างประเทศโรงงานตั้งอยู่ที่จังหวัดชลบุรี พร้อมมาตรฐานสากล' width={1000} height={1000} className='manager-Image' />
+                                        <Image src={"/top-manager/inada-san.png"} alt='บริษัท เจไออีไอ (ประเทศไทย) จำกัด เป็นผู้ผลิต ชิ้นส่วนยางรถยนต์คุณภาพสูงสำหรับอุตสาหกรรมยานยนต์ในประเทศไทยและต่างประเทศโรงงานตั้งอยู่ที่จังหวัดชลบุรี พร้อมมาตรฐานสากล' width={1000} height={1000} className='manager-Image' />
                                     </div>
                                     <div className="name-top-manager">
                                         <h2 className='position-topmanager'>{lang === "th" ? "กรรมการผู้จัดการ" : lang === "en" ? "Management Director" : "経営取締役"} </h2>
@@ -223,7 +452,7 @@ export default function About() {
                                 </div>
                             </div>
                         </div>
-                        
+
 
 
                         <div className="manager-group">
@@ -252,19 +481,270 @@ export default function About() {
                         <h1 className='text-employee1'>แนะนำพนักงานคุณภาพของเรา</h1>
                         <h2 className='text-employee2'>ทีมงานมืออาชีพ พร้อมให้บริการด้วยมาตรฐานระดับสากล</h2>
                     </div>
+                    <div className="line"></div>
+                    {/* -------------------------------------------แนะนำเจ้าหน้าที่ด่านคุณภาพ QA */}
+                    <div className="QA">
+                        <h1 className="position-qaqc">เจ้าหน้าที่ด้านคุณภาพ QA (Quality Assurance) </h1>
+                        <h2 className='description-position'>ดูแล ตรวจสอบ และประกันคุณภาพของงาน ผลิตภัณฑ์ หรือบริการ ให้ได้มาตรฐานที่องค์กรกำหนดไว้</h2>
+                        <div className="QA-box">
+                            {QAName.map((item, index) =>
 
-                    <div className="employee-box">
+                                <div key={index} className="top-manager-box1">
+                                    <div className="image-top-manager-box">
+                                        <Image src={ImageQA[index]} alt='บริษัท เจไออีไอ (ประเทศไทย) จำกัด เป็นผู้ผลิต ชิ้นส่วนยางรถยนต์คุณภาพสูงสำหรับอุตสาหกรรมยานยนต์ในประเทศไทยและต่างประเทศโรงงานตั้งอยู่ที่จังหวัดชลบุรี พร้อมมาตรฐานสากล' width={1000} height={1000} className='manager-Image' />
+                                    </div>
+                                    <div className="name-top-manager">
+                                        <h2 className='position-topmanager'>{lang === "th" ? QA[index] : lang === "en" ? "President" : "社長"} </h2>
+                                        <p className='top-manager-name'>{item}</p>
+                                    </div>
+                                </div>
 
-                        <div className="employee-card-grid">
-                            <div className="employee-image">
-                                <Image src={"/"} alt='' loading='lazy' width={1000} height={1000} />
-                            </div>
-                            <div className="employee-name-box">
-                                <h3 className='employee-name'>12345679</h3>
-                                <h4 className='departmain-text'>IT Department</h4>
-                            </div>
+                            )}
+                        </div>
+
+                    </div>
+
+
+                    {/* -------------------------------------------แนะนำเจ้าหน้าที่ด่านคุณภาพ QC */}
+
+
+                    <div className="QC">
+                        <h1 className="position-qaqc">เจ้าหน้าที่ด้านคุณภาพ QC (Quality Control)</h1>
+                        <h2 className='description-position'>ตรวจสอบวัตถุดิบ ตรวจสอบระหว่างการผลิต คัดแยกสินค้าไม่ผ่านมาตรฐาน บันทึกผลการตรวจสอบ ปฏิบัติตามมาตรฐานคุณภาพและความปลอดภัย ให้ได้มาตรฐานที่องค์กรกำหนดไว้</h2>
+                       
+                        <div className="QC-box">
+                            {QCName.map((item, index) =>
+
+                                <div key={index} className="top-manager-box1">
+                                    <div className="image-top-manager-box">
+                                        <Image src={ImageQC[index]} alt='บริษัท เจไออีไอ (ประเทศไทย) จำกัด เป็นผู้ผลิต ชิ้นส่วนยางรถยนต์คุณภาพสูงสำหรับอุตสาหกรรมยานยนต์ในประเทศไทยและต่างประเทศโรงงานตั้งอยู่ที่จังหวัดชลบุรี พร้อมมาตรฐานสากล' width={1000} height={1000} className='manager-Image' />
+                                    </div>
+                                    <div className="name-top-manager">
+                                        <h2 className='position-topmanager'>{lang === "th" ? QC[index] : lang === "en" ? "President" : "社長"} </h2>
+                                        <p className='top-manager-name'>{item}</p>
+                                    </div>
+                                </div>
+
+                            )}
+                        </div>
+
+                    </div>
+
+                    <div className="PC">
+                        <h1 className="position-qaqc">เจ้าหน้าที่วางแผนการผลิต PC (Production Control) </h1>
+                        <h2 className='description-position'>เป็นผู้ที่รับผิดชอบในการ วางแผน ควบคุม และติดตามการผลิต ให้เป็นไปตามความต้องการของลูกค้า และสอดคล้องกับทรัพยากร</h2>
+                        
+                        <div className="PC-box">
+                            {PCName.map((item, index) =>
+
+                                <div key={index} className="top-manager-box1">
+                                    <div className="image-top-manager-box">
+                                        <Image src={ImagePC[index]} alt='บริษัท เจไออีไอ (ประเทศไทย) จำกัด เป็นผู้ผลิต ชิ้นส่วนยางรถยนต์คุณภาพสูงสำหรับอุตสาหกรรมยานยนต์ในประเทศไทยและต่างประเทศโรงงานตั้งอยู่ที่จังหวัดชลบุรี พร้อมมาตรฐานสากล' width={1000} height={1000} className='manager-Image' />
+                                    </div>
+                                    <div className="name-top-manager">
+                                        <h2 className='position-topmanager'>{lang === "th" ? PC[index] : lang === "en" ? "President" : "社長"} </h2>
+                                        <p className='top-manager-name'>{item}</p>
+                                    </div>
+                                </div>
+
+                            )}
+                        </div>
+
+                    </div>
+
+                    <div className="PD">
+                        <h1 className="position-qaqc">เจ้าหน้าที่ควบคุมการผลิต PD  (Production Department)</h1>
+                        <h2 className='description-position'>วางแผน ควบคุม และติดตามกระบวนการผลิต ให้เป็นไปตามกำหนดเวลา คุณภาพ และมาตรฐานขององค์กร</h2>
+
+                        <div className="PD-box">
+                            {PDName.map((item, index) =>
+
+                                <div key={index} className="top-manager-box1">
+                                    <div className="image-top-manager-box">
+                                        <Image src={ImagePD[index]} alt='บริษัท เจไออีไอ (ประเทศไทย) จำกัด เป็นผู้ผลิต ชิ้นส่วนยางรถยนต์คุณภาพสูงสำหรับอุตสาหกรรมยานยนต์ในประเทศไทยและต่างประเทศโรงงานตั้งอยู่ที่จังหวัดชลบุรี พร้อมมาตรฐานสากล' width={1000} height={1000} className='manager-Image' />
+                                    </div>
+                                    <div className="name-top-manager">
+                                        <h2 className='position-topmanager'>{lang === "th" ? PD[index] : lang === "en" ? "President" : "社長"} </h2>
+                                        <p className='top-manager-name'>{item}</p>
+                                    </div>
+                                </div>
+
+                            )}
+                        </div>
+
+                    </div>
+
+                    <div className="HR">
+                        <h1 className="position-qaqc">เจ้าหน้าที่ฝ่ายบุคคล HR (Human Resources)</h1>
+                        <h2 className='description-position'>บริหารจัดการและดูแลบุคลากรขององค์กร ตั้งแต่การสรรหา การฝึกอบรม การประเมินผล ไปจนถึงการดูแลสวัสดิการ เพื่อสร้างสภาพแวดล้อมการทำงานที่ดีและสนับสนุนเป้าหมายขององค์กร</h2>
+
+                        <div className="HR-box">
+                            {HRName.map((item, index) =>
+
+                                <div key={index} className="top-manager-box1">
+                                    <div className="image-top-manager-box">
+                                        <Image src={ImageHR[index]} alt='บริษัท เจไออีไอ (ประเทศไทย) จำกัด เป็นผู้ผลิต ชิ้นส่วนยางรถยนต์คุณภาพสูงสำหรับอุตสาหกรรมยานยนต์ในประเทศไทยและต่างประเทศโรงงานตั้งอยู่ที่จังหวัดชลบุรี พร้อมมาตรฐานสากล' width={1000} height={1000} className='manager-Image' />
+                                    </div>
+                                    <div className="name-top-manager">
+                                        <h2 className='position-topmanager'>{lang === "th" ? HR[index] : lang === "en" ? "President" : "社長"} </h2>
+                                        <p className='top-manager-name'>{item}</p>
+                                    </div>
+                                </div>
+
+                            )}
+                        </div>
+
+                    </div>
+
+
+                    <div className="ACC">
+                        <h1 className="position-qaqc">เจ้าหน้าที่ฝ่ายบัญชี (Accounting Officer) </h1>
+                        <h2 className='description-position'>จัดทำ บันทึก และตรวจสอบข้อมูลทางการเงิน ของบริษัท เพื่อให้ฝ่ายบริหารสามารถใช้ข้อมูลประกอบการตัดสินใจ และให้บริษัทปฏิบัติตามกฎหมายภาษีและมาตรฐานบัญชี</h2>
+
+                        <div className="ACC-box">
+                            {ACCName.map((item, index) =>
+
+                                <div key={index} className="top-manager-box1">
+                                    <div className="image-top-manager-box">
+                                        <Image src={ImageACC[index]} alt='บริษัท เจไออีไอ (ประเทศไทย) จำกัด เป็นผู้ผลิต ชิ้นส่วนยางรถยนต์คุณภาพสูงสำหรับอุตสาหกรรมยานยนต์ในประเทศไทยและต่างประเทศโรงงานตั้งอยู่ที่จังหวัดชลบุรี พร้อมมาตรฐานสากล' width={1000} height={1000} className='manager-Image' />
+                                    </div>
+                                    <div className="name-top-manager">
+                                        <h2 className='position-topmanager'>{lang === "th" ? ACC[index] : lang === "en" ? "President" : "社長"} </h2>
+                                        <p className='top-manager-name'>{item}</p>
+                                    </div>
+                                </div>
+
+                            )}
+                        </div>
+
+                    </div>
+
+
+                    <div className="SA">
+                        <h1 className="position-qaqc">เจ้าหน้าที่ฝ่ายขาย (Sales Officer) </h1>
+                        <h2 className='description-position'>นำเสนอสินค้าและบริการของบริษัทแก่ลูกค้า ออกอินวอย</h2>
+
+                        <div className="SA-box">
+                            {SAName.map((item, index) =>
+
+                                <div key={index} className="top-manager-box1">
+                                    <div className="image-top-manager-box">
+                                        <Image src={ImageSA[index]} alt='บริษัท เจไออีไอ (ประเทศไทย) จำกัด เป็นผู้ผลิต ชิ้นส่วนยางรถยนต์คุณภาพสูงสำหรับอุตสาหกรรมยานยนต์ในประเทศไทยและต่างประเทศโรงงานตั้งอยู่ที่จังหวัดชลบุรี พร้อมมาตรฐานสากล' width={1000} height={1000} className='manager-Image' />
+                                    </div>
+                                    <div className="name-top-manager">
+                                        <h2 className='position-topmanager'>{lang === "th" ? SA[index] : lang === "en" ? "President" : "社長"} </h2>
+                                        <p className='top-manager-name'>{item}</p>
+                                    </div>
+                                </div>
+                            )}
                         </div>
                     </div>
+
+
+                     <div className="IT">
+                        <h1 className="position-qaqc">เจ้าหน้าที่ฝ่าย IT (IT Staff)</h1>
+                        <h2 className='description-position'>ติดตั้ง ดูแล และแก้ไขปัญหาระบบสารสนเทศขององค์กร ทั้งด้านอุปกรณ์คอมพิวเตอร์ โปรแกรม ระบบเครือข่าย และฐานข้อมูล รวมถึงช่วยเหลือพนักงานในการใช้งานด้าน IT</h2>
+
+                        <div className="IT-box">
+                            {ITName.map((item, index) =>
+
+                                <div key={index} className="top-manager-box1">
+                                    <div className="image-top-manager-box">
+                                        <Image src={ImageIT[index]} alt='บริษัท เจไออีไอ (ประเทศไทย) จำกัด เป็นผู้ผลิต ชิ้นส่วนยางรถยนต์คุณภาพสูงสำหรับอุตสาหกรรมยานยนต์ในประเทศไทยและต่างประเทศโรงงานตั้งอยู่ที่จังหวัดชลบุรี พร้อมมาตรฐานสากล' width={1000} height={1000} className='manager-Image' />
+                                    </div>
+                                    <div className="name-top-manager">
+                                        <h2 className='position-topmanager'>{lang === "th" ? IT[index] : lang === "en" ? "President" : "社長"} </h2>
+                                        <p className='top-manager-name'>{item}</p>
+                                    </div>
+                                </div>
+                            )}
+                        </div>
+                    </div>
+
+
+                    <div className="SE">
+                        <h1 className="position-qaqc">เจ้าหน้าที่ฝ่ายความปลอดภัย (Safety Officer)</h1>
+                        <h2 className='description-position'>ป้องกันไม่ให้เกิดอุบัติเหตุและความเสี่ยง ในสถานประกอบการ ดูแลเรื่องสิ่งแวดล้อมการทำงาน ความปลอดภัยของพนักงาน เครื่องจักร อุปกรณ์ และสถานที่ รวมถึงให้ความรู้แก่พนักงาน</h2>
+                      
+                        <div className="SE-box">
+                            {SEName.map((item, index) =>
+
+                                <div key={index} className="top-manager-box1">
+                                    <div className="image-top-manager-box">
+                                        <Image src={ImageSE[index]} alt='บริษัท เจไออีไอ (ประเทศไทย) จำกัด เป็นผู้ผลิต ชิ้นส่วนยางรถยนต์คุณภาพสูงสำหรับอุตสาหกรรมยานยนต์ในประเทศไทยและต่างประเทศโรงงานตั้งอยู่ที่จังหวัดชลบุรี พร้อมมาตรฐานสากล' width={1000} height={1000} className='manager-Image' />
+                                    </div>
+                                    <div className="name-top-manager">
+                                        <h2 className='position-topmanager'>{lang === "th" ? SE[index] : lang === "en" ? "President" : "社長"} </h2>
+                                        <p className='top-manager-name'>{item}</p>
+                                    </div>
+                                </div>
+                            )}
+                        </div>
+                    </div>
+
+
+                    <div className="TE">
+                        <h1 className="position-qaqc">เจ้าหน้าที่ฝ่าย TE (Technical)</h1>
+                        <h2 className='description-position'> ดูแล สนับสนุน และแก้ไขปัญหาทางด้านเทคนิค ของการผลิตและเครื่องจักร เพื่อให้กระบวนการทำงานมีประสิทธิภาพสูงสุด ลดความสูญเสีย และรักษาคุณภาพตามมาตรฐาน</h2>
+
+                        <div className="TE-box">
+                            {TEName.map((item, index) =>
+
+                                <div key={index} className="top-manager-box1">
+                                    <div className="image-top-manager-box">
+                                        <Image src={ImageTE[index]} alt='บริษัท เจไออีไอ (ประเทศไทย) จำกัด เป็นผู้ผลิต ชิ้นส่วนยางรถยนต์คุณภาพสูงสำหรับอุตสาหกรรมยานยนต์ในประเทศไทยและต่างประเทศโรงงานตั้งอยู่ที่จังหวัดชลบุรี พร้อมมาตรฐานสากล' width={1000} height={1000} className='manager-Image' />
+                                    </div>
+                                    <div className="name-top-manager">
+                                        <h2 className='position-topmanager'>{lang === "th" ? TE[index] : lang === "en" ? "President" : "社長"} </h2>
+                                        <p className='top-manager-name'>{item}</p>
+                                    </div>
+                                </div>
+                            )}
+                        </div>
+                    </div>
+
+
+                    <div className="WH">
+                        <h1 className="position-qaqc">เจ้าหน้าที่ฝ่ายคลังสินค้า (Warehouse Officer)</h1>
+                        <h2 className='description-position'>บริหารจัดการคลังสินค้า ตั้งแต่การรับสินค้า ตรวจสอบคุณภาพ การจัดเก็บ จ่ายออก และดูแลสต็อกให้ถูกต้อง รวมถึงการจัดทำรายงานเพื่อให้ข้อมูลที่ถูกต้องแก่ฝ่ายที่เกี่ยวข้อง</h2>
+
+                        <div className="WH-box">
+                            {WHName.map((item, index) =>
+
+                                <div key={index} className="top-manager-box1">
+                                    <div className="image-top-manager-box">
+                                        <Image src={ImageWH[index]} alt='บริษัท เจไออีไอ (ประเทศไทย) จำกัด เป็นผู้ผลิต ชิ้นส่วนยางรถยนต์คุณภาพสูงสำหรับอุตสาหกรรมยานยนต์ในประเทศไทยและต่างประเทศโรงงานตั้งอยู่ที่จังหวัดชลบุรี พร้อมมาตรฐานสากล' width={1000} height={1000} className='manager-Image' />
+                                    </div>
+                                    <div className="name-top-manager">
+                                        <h2 className='position-topmanager'>{lang === "th" ? WH[index] : lang === "en" ? "President" : "社長"} </h2>
+                                        <p className='top-manager-name'>{item}</p>
+                                    </div>
+                                </div>
+                            )}
+                        </div>
+                    </div>
+
+                    <div className="PUR">
+                        <h1 className="position-qaqc">เจ้าหน้าที่ฝ่ายจัดซื้อ (Purchasing Officer)</h1>
+                        <h2 className='description-position'>สรรหา คัดเลือก ต่อรอง และสั่งซื้อ วัตถุดิบ อะไหล่ เครื่องจักร อุปกรณ์สำนักงาน รวมถึงบริการต่าง ๆ ที่จำเป็นต่อการดำเนินงานขององค์กร พร้อมทั้งสร้างและรักษาความสัมพันธ์กับซัพพลายเออร์</h2>
+
+                        <div className="PUR-box">
+                            {PURName.map((item, index) =>
+
+                                <div key={index} className="top-manager-box1">
+                                    <div className="image-top-manager-box">
+                                        <Image src={ImagePUR[index]} alt='บริษัท เจไออีไอ (ประเทศไทย) จำกัด เป็นผู้ผลิต ชิ้นส่วนยางรถยนต์คุณภาพสูงสำหรับอุตสาหกรรมยานยนต์ในประเทศไทยและต่างประเทศโรงงานตั้งอยู่ที่จังหวัดชลบุรี พร้อมมาตรฐานสากล' width={1000} height={1000} className='manager-Image' />
+                                    </div>
+                                    <div className="name-top-manager">
+                                        <h2 className='position-topmanager'>{lang === "th" ? PUR[index] : lang === "en" ? "President" : "社長"} </h2>
+                                        <p className='top-manager-name'>{item}</p>
+                                    </div>
+                                </div>
+                            )}
+                        </div>
+                    </div>
+
+
                 </div>
             </div>
 
