@@ -118,12 +118,13 @@ export default function Page() {
           </ScrollReveal>
           <div className="container-card">
             {paginatedData.map((item, index) => (
-              <ScrollReveal key={index}>
-                <div className="box-card" onClick={() => {
+              
+                <div key={index} className="box-card" onClick={() => {
                   setSelectedNews(start + index)
                   window.scrollTo({ top: 0, behavior: 'smooth' })
                 }} >
                   <div className="image-card">
+                    <ScrollReveal key={index}>
                     <Image
                       src={img[start + index]}
                       height={1000}
@@ -132,8 +133,8 @@ export default function Page() {
                       className="image-news"
                       priority
                     />
+                    </ScrollReveal>
                   </div>
-
                   <div className="content-card-box">
                     <div className="title-card">
                       <h2 className='title-news-content'>{item}</h2>
@@ -146,11 +147,8 @@ export default function Page() {
                         {lang === 'th' ? "อ่านเพิ่มเติม" : lang === "en" ? "Read More" : "続きを読む"}
                       </p>
                     </div>
-
                   </div>
-
                 </div>
-              </ScrollReveal>
             ))}
           </div>
           <div className="page">

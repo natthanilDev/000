@@ -1,6 +1,8 @@
 'use client'
 import Image from "next/image"
 import { useState, useEffect } from "react";
+import ScrollReveal from "../../components/ScrollReveal/ScrollReveal";
+
 export default function Page() {
 
   const [lang, setLang] = useState<'th' | 'en' | 'jp'>('th');
@@ -95,10 +97,7 @@ export default function Page() {
         "ซีลฝากระโปรงหลัง",
         "ช่วยลดน้ำหนักรถโดยไม่จำเป็นต้องใช้แกนโลหะในวัสดุกันกระแทกระหว่างฝากระโปรงหน้า กับกระจังหน้าและขอบตกแต่ง"
       ],
-      // [
-      //   "Bhd Lower Seal",
-      //   "Gaps through which air from the radiator flows into the engine room are secured by making cross sectional adjustments."
-      // ],
+
       [
         "ซีลทางดูดอากาศ",
         "วัสดุปิดผนึกนี้ช่วยกั้นอากาศร้อนจากภายในห้องเครื่อง ในขณะที่ปล่อยให้เฉพาะอากาศเย็นไหลผ่าน"
@@ -176,10 +175,7 @@ export default function Page() {
         "Hoodseal Rear",
         "	It helps reduce vehicular weight by eliminating the need for metal cores in cushioning material between the bonnet, and the grill and trim."
       ],
-      // [
-      //   "Bhd Lower Seal",
-      //   "Gaps through which air from the radiator flows into the engine room are secured by making cross sectional adjustments."
-      // ],
+
       [
         "Air Intake Seal",
         "	This is a sealing material that holds back warm air from within the engine room while only allowing cool air to pass."
@@ -224,7 +220,7 @@ export default function Page() {
       ]
     ]
   ]
-   const product_partJP = [
+  const product_partJP = [
     [
       [
         'ドアシール',
@@ -256,10 +252,7 @@ export default function Page() {
         "リアフードシール",
         "ボンネットとグリル・トリム間のクッション材に金属芯を使用せず、車両重量の軽減に貢献します。"
       ],
-      // [
-      //   "Bhd Lower Seal",
-      //   "Gaps through which air from the radiator flows into the engine room are secured by making cross sectional adjustments."
-      // ],
+
       [
         "エアインテークシール",
         "エンジンルーム内の暖かい空気を遮断し、冷たい空気のみを通すシーリング材です。"
@@ -310,28 +303,36 @@ export default function Page() {
     <div className='bg-allProduct'>
 
       <div className="intro-allProduct">
-        <h1 className='allProduct-text'>{lang === 'th' ? "คอลเลกชัน" : lang === "en" ? "PRODUCT" : "製品"}</h1>
-        <h2 className='allProduct-text active'>{lang === 'th' ? "ผลิตภัณฑ์" : lang === "en" ? "COLLECTION" : "コレクション"}</h2>
+        <ScrollReveal>
+          <h1 className='allProduct-text'>{lang === 'th' ? "คอลเลกชัน" : lang === "en" ? "PRODUCT" : "製品"}</h1>
+        </ScrollReveal>
+        <ScrollReveal>
+          <h2 className='allProduct-text active'>{lang === 'th' ? "ผลิตภัณฑ์" : lang === "en" ? "COLLECTION" : "コレクション"}</h2>
+        </ScrollReveal>
       </div>
 
       <div className="category-collection">
         {image_collection.map((item, index) => (
           <div className="card-collection" key={index}>
-            <Image
-              src={item}
-              alt="JIEI Thai ผู้ผลิตยางรถยนต์และชิ้นส่วนยางคุณภาพสูง จังหวัดชลบุรี ได้มาตรฐาน ISO/IATF16949 ผลิต Engine Mount, Suspension Bush, Seals และชิ้นส่วนยางอุตสาหกรรม"
-              className="image-category"
-              width={1000}
-              height={1000}
-              loading="lazy"
-            />
+            <ScrollReveal>
+              <Image
+                src={item}
+                alt="JIEI Thai ผู้ผลิตยางรถยนต์และชิ้นส่วนยางคุณภาพสูง จังหวัดชลบุรี ได้มาตรฐาน ISO/IATF16949 ผลิต Engine Mount, Suspension Bush, Seals และชิ้นส่วนยางอุตสาหกรรม"
+                className="image-category"
+                width={1000}
+                height={1000}
+                loading="lazy"
+              />
+            </ScrollReveal>
             <div
               className="background-image"
               onClick={() => {
                 window.open(collections[index], "_blank", "noopener,noreferrer")
               }}
             >
-              <p className="preview-image">{lang === 'th' ? hover_imageTH[index] : lang === "en" ? hover_imageEN[index] : hover_imageJP[index]} </p>
+              <ScrollReveal>
+                <p className="preview-image">{lang === 'th' ? hover_imageTH[index] : lang === "en" ? hover_imageEN[index] : hover_imageJP[index]} </p>
+              </ScrollReveal>
             </div>
           </div>
         ))}
@@ -339,18 +340,24 @@ export default function Page() {
 
       <div className="collection-part">
         <div className="text-collection-box">
-          <h2 className="text-collection">{lang === 'th' ? "รถยนต์" : lang === "en" ? "CAR" : "「自動車」"}</h2>
+          <ScrollReveal>
+            <h2 className="text-collection">{lang === 'th' ? "รถยนต์" : lang === "en" ? "CAR" : "「自動車」"}</h2>
+          </ScrollReveal>
         </div>
 
         <div className="collection-box">
           {lang == "en" ? title_partEN.map((item, index) => (
             <div key={index}>
-              <h2 className="nameProduct">{item}</h2>
+              <ScrollReveal>
+                <h2 className="nameProduct">{item}</h2>
+              </ScrollReveal>
               {product_partEN[index]?.map((product, i) => (
                 <div key={i}>
                   <div className="display-product">
-                    <h3 className="title-product-list"> {product[0]}</h3>
-                    <p className="description-product-text">{product[1]}</p>
+                    <ScrollReveal>
+                      <h3 className="title-product-list"> {product[0]}</h3>
+                      <p className="description-product-text">{product[1]}</p>
+                    </ScrollReveal>
                   </div>
 
                   <hr />
@@ -359,40 +366,44 @@ export default function Page() {
             </div>
           )) : lang === "th" ? title_partTH.map((item, index) => (
             <div key={index}>
-              <h2 className="nameProduct">{item}</h2>
+              <ScrollReveal>
+                <h2 className="nameProduct">{item}</h2>
+              </ScrollReveal>
               {product_partTH[index]?.map((product, i) => (
                 <div key={i}>
                   <div className="display-product">
-                    <h3 className="title-product-list">{product[0]}</h3>
-                    <p className="description-product-text">{product[1]}</p>
+                    <ScrollReveal>
+                      <h3 className="title-product-list">{product[0]}</h3>
+                      <p className="description-product-text">{product[1]}</p>
+                    </ScrollReveal>
                   </div>
 
                   <hr />
                 </div>
               ))}
             </div>
-          )) : 
-           title_partJP.map((item, index) => (
-            <div key={index}>
-              <h2 className="nameProduct">{item}</h2>
-              {product_partJP[index]?.map((product, i) => (
-                <div key={i}>
-                  <div className="display-product">
-                    <h3 className="title-product-list">{product[0]}</h3>
-                    <p className="description-product-text">{product[1]}</p>
-                  </div>
+          )) :
+            title_partJP.map((item, index) => (
+              <div key={index}>
+                <ScrollReveal>
+                  <h2 className="nameProduct">{item}</h2>
+                </ScrollReveal>
+                {product_partJP[index]?.map((product, i) => (
+                  <div key={i}>
+                    <div className="display-product">
+                      <ScrollReveal>
+                        <h3 className="title-product-list">{product[0]}</h3>
+                        <p className="description-product-text">{product[1]}</p>
+                      </ScrollReveal>
+                    </div>
 
-                  <hr />
-                </div>
-              ))}
-            </div>
-          ))
-          
-          
-          
+                    <hr />
+                  </div>
+                ))}
+              </div>
+            ))
           }
 
-          { }
         </div>
       </div>
 

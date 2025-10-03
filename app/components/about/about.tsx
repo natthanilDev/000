@@ -250,7 +250,7 @@ export default function About() {
         'Mr.Pricha Prasoetsang (Num)',
         'Mr.Natphon Cakpila (Ton)',
         'Mr. Yutthakarn Samaknarong (Daew)',
-        
+
     ]
     const ImageTE = [
         '/TE/alt.png',
@@ -332,8 +332,11 @@ export default function About() {
                             <p className='company-profile-text'>{lang === "th" ? "ในอนาคต บริษัทเจไออีไอ (ไทยแลนด์) จำกัด จะยังคงมุ่งมั่นพัฒนานวัตกรรมอย่างไม่หยุดยั้ง เพื่อสร้างสรรค์ผลิตภัณฑ์ที่มี คุณภาพ ความแม่นยำ และมาตรฐานสากล พร้อมก้าวสู่การเป็น ผู้ผลิตชิ้นส่วนยางรถยนต์ระดับโลก (Global Automotive Rubber Parts Manufacturer) ที่สร้างคุณค่าและประโยชน์ให้กับสังคมโลก" : lang === "en" ? "In the future, JIEI (Thailand) Co., Ltd. will continue to pursue relentless innovation to create products of exceptional quality, precision, and international standards. Our goal is to become a global automotive rubber parts manufacturer that delivers value and benefits to the global community." : "将来に向けて、JIEI（Thailand）株式会社は、優れた品質、精度、そして国際規格を備えた製品を生み出すため、絶え間ない革新を追求し続けます。私たちは、世界に価値と利益をもたらすグローバルな自動車用ゴム部品メーカーを目指しています。"}</p>
                         </ScrollReveal>
                     </div>
-                    <div className="about-grid-image">
-                    </div>
+                    <ScrollReveal>
+                        <div className="about-grid-image">
+
+                        </div>
+                    </ScrollReveal>
                 </div>
             </section >
             <ScrollReveal>
@@ -892,12 +895,15 @@ export default function About() {
             <div className="partners-box">
                 <div className="partners-text">
                     <br />
-                    <h1 className='thePartner'>{lang === "th" ? "คู่ค้าหลัก" : lang === "en" ? "The main trading partners" : "主要取引先"}</h1>
+                    <ScrollReveal>
+                        <h1 className='thePartner'>{lang === "th" ? "คู่ค้าหลัก" : lang === "en" ? "The main trading partners" : "主要取引先"}</h1>
+                    </ScrollReveal>
                     <div className="border-manager"></div>
                 </div>
                 <div className="logo-partners-box">
                     <div className="logo-partners">
                         {logo_partners.map((item, idx) => (
+
                             <Image key={idx} src={item} alt='บริษัท เจไออีไอ (ประเทศไทย) จำกัด
                         เป็นผู้ผลิต ชิ้นส่วนยางรถยนต์คุณภาพสูง
                         สำหรับอุตสาหกรรมยานยนต์ในประเทศไทยและต่างประเทศ
@@ -916,7 +922,9 @@ export default function About() {
                         )
                         )}
                     </div>
-                    <h4 className='thy text-center'>{lang === "th" ? "ขอขอบพระคุณทุกท่านสำหรับการสนับสนุน และเราหวังว่าจะได้รับความไว้วางใจจากท่านอย่างต่อเนื่องต่อไป" : lang === "en" ? "We sincerely thank everyone for their support and look forward to continuing to earn your trust." : "皆様のご支援に心より感謝申し上げます。今後とも変わらぬご信頼を賜りますようお願い申し上げます。"}</h4>
+                  
+                        <h4 className='thy text-center'>{lang === "th" ? "ขอขอบพระคุณทุกท่านสำหรับการสนับสนุน และเราหวังว่าจะได้รับความไว้วางใจจากท่านอย่างต่อเนื่องต่อไป" : lang === "en" ? "We sincerely thank everyone for their support and look forward to continuing to earn your trust." : "皆様のご支援に心より感謝申し上げます。今後とも変わらぬご信頼を賜りますようお願い申し上げます。"}</h4>
+                    
                 </div>
             </div>
         </div >

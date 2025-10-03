@@ -144,13 +144,7 @@ export default function Home() {
                                                 ? "About Us"
                                                 : "会社概要"}
                                     </Link>
-                                    {/* <Link href="/" className="btn_link2">
-                                        {lang === 'th'
-                                            ? "สินค้า"
-                                            : lang === "en"
-                                                ? "Product"
-                                                : "製品"}
-                                    </Link> */}
+
                                 </div>
                             </div>
                         </div>
@@ -160,23 +154,32 @@ export default function Home() {
 
 
                 <div className="why-choose-we">
-                    <ScrollReveal>
-                        <div className="why-choose-box">
-                            <div className="whyText-box">
-                                <h2 className='why-text'>{lang === 'en' ? 'Why Choose Us?' : lang === 'th' ? "ทำไมต้องเลือกเรา?" : "なぜ私たちを選ぶのか？"}  </h2>
-                            </div>
 
-                            <div className="why-choose-content">
+                    <div className="why-choose-box">
+                        <div className="whyText-box">
+                            <ScrollReveal>
+                                <h2 className='why-text'>{lang === 'en' ? 'Why Choose Us?' : lang === 'th' ? "ทำไมต้องเลือกเรา?" : "なぜ私たちを選ぶのか？"}  </h2>
+                            </ScrollReveal>
+                        </div>
+
+                        <div className="why-choose-content">
+                            <ScrollReveal>
                                 <p className='p-text-why'>{lang === "th" ? "ไม่ใช่แค่ผู้ผลิต แต่คือพาร์ทเนอร์ที่คุณไว้วางใจได้" : lang === "en" ? "Not just a manufacturer, but a partner you can trust." : "単なるメーカーではなく、信頼できるパートナーです。"}</p>
                                 <p className='t-w-y'>{lang === 'th' ? "ที่ JIEI Thailand เรามีความเชี่ยวชาญมากกว่าทศวรรษ  ด้วยระบบมาตรฐาน ISO9001, ISO14001, IATF16949 เราผลิตชิ้นส่วนยางที่ผ่านการตรวจสอบทุกขั้นตอน ตอบโจทย์ความแม่นยำ ความทนทาน และความเป็นมิตรต่อสิ่งแวดล้อม เพราะเรารู้ว่าธุรกิจของคุณต้องการมากกว่าคุณภาพ แต่ต้องการ ความมั่นใจในทุกชิ้นงาน" : lang === "en" ? "At JIEI Thailand, we have over a decade of expertise, certified with ISO 9001, ISO 14001, and IATF 16949. We manufacture rubber parts inspected at every stage, ensuring precision, durability, and environmental friendliness. Because we know your business needs more than just quality—it needs confidence in every product." : "JIEI Thailandでは、ISO9001、ISO14001、IATF16949の認証を取得し、10年以上の専門知識を有しています。当社は、すべての工程で検査を行ったゴム部品を製造し、精度、耐久性、環境への配慮を確保しています。 お客様のビジネスに必要なのは単なる品質だけでなく、すべての製品に対する信頼です。"}</p>
-                            </div>
-                            <div className="iso-why-choose">
-                                <h2 className='iso-text'>ISO</h2>
-                                <Iso_btn />
+                            </ScrollReveal>
 
-                            </div>
                         </div>
-                    </ScrollReveal>
+                        <div className="iso-why-choose">
+                            <ScrollReveal>
+                                <h2 className='iso-text'>ISO</h2>
+                            </ScrollReveal>
+                            <ScrollReveal>
+                                <Iso_btn />
+                            </ScrollReveal>
+
+                        </div>
+                    </div>
+
 
                     <div className="why-choose-image">
                         <ScrollReveal>
@@ -184,49 +187,61 @@ export default function Home() {
                         </ScrollReveal>
                     </div>
 
-                </div>
+                </div >
 
                 <div className="support">
-                    <ScrollReveal>
-                        <div className="support-box">
 
-                            {image_support.map((item, index) =>
-                                <div key={index} className="card-support-box">
-                                    <div className="card-support">
-                                        <div className="card-support-image">
+                    <div className="support-box">
+
+                        {image_support.map((item, index) =>
+                            <div key={index} className="card-support-box">
+                                <div className="card-support">
+                                    <div className="card-support-image">
+                                        <ScrollReveal>
                                             <Image src={item} alt='โรงงานผลิตชิ้นส่วนยางรถยนต์มาตรฐานสากล' className='icon-support' width={1000} height={1000} loading="lazy" />
-                                        </div>
-                                        <div className="card-support-content">
+                                        </ScrollReveal>
+                                    </div>
+                                    <div className="card-support-content">
+                                        <ScrollReveal>
                                             <p className="content-support">
                                                 {lang === "th" ? content_supportTH[index] : lang === "en" ? content_supportEN[index] : content_supportJP[index]}
                                             </p>
-                                        </div>
+                                        </ScrollReveal>
                                     </div>
                                 </div>
-                            )}
-
-                        </div>
-                    </ScrollReveal>
+                            </div>
+                        )}
+                    </div>
                 </div>
 
 
                 <div className="About-Company-box">
                     <div className="image-home-page-about">
-                        <Image src={'/Jiei(thailand).Co.,Ltd.jpg'} className="image-about-home-page" alt="โรงงานผลิตชิ้นส่วนยางรถยนต์มาตรฐานสากล ISO & IATF16949 ที่ชลบุรี ประเทศไทย" width={1000} height={1000} priority></Image>
+                        <ScrollReveal>
+                            <Image src={'/Jiei(thailand).Co.,Ltd.jpg'} className="image-about-home-page" alt="โรงงานผลิตชิ้นส่วนยางรถยนต์มาตรฐานสากล ISO & IATF16949 ที่ชลบุรี ประเทศไทย" width={1000} height={1000} priority></Image>
+                        </ScrollReveal>
                     </div>
+                    
                     <div className="about-box-home-page">
 
                         <div className="content-box">
-                            <ScrollReveal>
-                                <div className="about-box">
+
+                            <div className="about-box">
+                                <ScrollReveal>
                                     <h2 className="about"> {lang === "th" ? "เกี่ยวกับเรา" : lang === "en" ? "About Us" : "私たちについて"}</h2>
-                                </div>
+                                </ScrollReveal>
+                            </div>
+                            <ScrollReveal>
                                 <p className="content-about">
                                     {lang === "th" ? "JIEI Thailand Co., Ltd. เป็นผู้ผลิตชิ้นส่วนยางรถยนต์และยางอุตสาหกรรมคุณภาพสูง ตั้งอยู่ที่จังหวัดชลบุรี ประเทศไทย เรามีความเชี่ยวชาญด้านการออกแบบและการผลิต ยางขอบประตูรถยนต์ (Automotive Rubber Seals) และชิ้นส่วนยางที่ใช้ในอุตสาหกรรมยานยนต์มากกว่า 20 ปี" : lang === "en" ? "JIEI Thailand Co., Ltd. is a manufacturer of high-quality automotive and industrial rubber parts, located in Chonburi Province, Thailand. We have over 20 years of expertise in designing and producing automotive rubber seals and rubber components used in the automotive industry." : "JIEI Thailand株式会社は、タイ・チョンブリー県に拠点を置く高品質な自動車用および産業用ゴム部品のメーカーです。私たちは、自動車用ゴムシールや自動車産業で使用されるゴム部品の設計・製造において、20年以上の専門知識を持っています。"}
                                 </p>
+                            </ScrollReveal>
+                            <ScrollReveal>
                                 <p className="content-about">
                                     {lang === "th" ? "บริษัทมุ่งมั่นพัฒนาเทคโนโลยีการผลิตที่ทันสมัย ควบคู่กับมาตรฐานสากล เช่น ISO/TS16949 เพื่อตอบสนองความต้องการของผู้ผลิตรถยนต์ (OEM) และลูกค้าทั่วโลก ปัจจุบันเราได้ส่งออกสินค้าไปยัง สหรัฐอเมริกา ญี่ปุ่น และประเทศในยุโรป" : lang === "en" ? "The company is committed to developing advanced manufacturing technologies alongside international standards such as ISO/TS16949 to meet the requirements of automotive manufacturers (OEMs) and customers worldwide. Currently, we export our products to the United States, Japan, and European countries." : "当社は、ISO/TS16949などの国際規格と並行して、先進的な製造技術の開発に取り組み、自動車メーカー（OEM）および世界中の顧客のニーズに応えています。現在、当社の製品はアメリカ、日本、ヨーロッパ諸国に輸出されています。"}
                                 </p>
+                            </ScrollReveal>
+                            <ScrollReveal>
                                 <p className="content-about">
                                     {lang === "th" ? " จุดยืนของ JIEI คือการเป็น “พันธมิตรที่ไว้ใจได้ของอุตสาหกรรมยานยนต์” โดยให้ความสำคัญกับคุณภาพ ความทนทาน และการส่งมอบตรงเวลา" : lang === "en" ? "JIEI’s stance is to be a “trusted partner of the automotive industry,” focusing on quality, durability, and on-time delivery." : "JIEIの立場は、「自動車産業の信頼できるパートナー」であることであり、品質、耐久性、そして納期厳守を重視しています。"}
                                 </p>
@@ -246,66 +261,85 @@ export default function Home() {
                                 {lang === "th" ? "มั่นใจทุกการขับขี่" : lang === "en" ? "Confidence in Every Drive" : "すべてのドライブで自信を"}
                             </h2>
                         </ScrollReveal>
-                        <video className="video-car" autoPlay muted loop playsInline poster='/JIEI-New-Factory-scaled.jpg'>
-                            <source src="/background-video.mp4" type="video/mp4" />
-                            เบราว์เซอร์ไม่รองรับวิดีโอ
-                        </video>
-
+                        <ScrollReveal>
+                            <video className="video-car" autoPlay muted loop playsInline poster='/JIEI-New-Factory-scaled.jpg'>
+                                <source src="/background-video.mp4" type="video/mp4" />
+                                เบราว์เซอร์ไม่รองรับวิดีโอ
+                            </video>
+                        </ScrollReveal>
                         <div className="description-box">
                             <div className="why-choose-us1">
                                 <ScrollReveal>
                                     <h2 className="topic-art1">
                                         {lang === "th" ? "ประโยชน์ของยางขอบประตูรถยนต์มีอะไรบ้าง?" : lang === "en" ? "Benefits of car door rubber" : "自動車ドアゴムの利点"}
                                     </h2>
+                                </ScrollReveal>
+
+                                <ScrollReveal>
+
                                     <h3 className="art-for">
                                         {lang === 'th' ? "ยางขอบประตูรถยนต์ (Door Seal / Weatherstrip) มีประโยชน์ เช่น" : lang === "en" ? "Car door rubber (Door Seal / Weatherstrip) has benefits such as" : "自動車のドアゴム（ドアシール／ウェザーストリップ）には、次のような利点があります。"}
                                     </h3>
+                                </ScrollReveal>
 
-                                    <div className="description-box-art">
 
-                                        <div className="description1">
-                                            <ul>
-                                                <li className="data-description">
+                                <div className="description-box-art">
+
+                                    <div className="description1">
+                                        <ul>
+                                            <li className="data-description">
+                                                <ScrollReveal>
                                                     <h4 className="topic-list">{lang === 'th' ? "1. ป้องกันเสียงรบกวน" : lang === "en" ? "1. Reduces noise" : "1. 騒音を低減する"}</h4>
                                                     <p className="text-description-topic-list">
-
                                                         {lang === "th" ? "ลดเสียงลมและถนน ทำให้ห้องโดยสารเงียบขึ้น" : lang === "en" ? "Reduces wind and road noise, making the cabin quieter." : "風や道路の騒音を減らし、車内をより静かにします。"}
                                                     </p>
-                                                </li>
-                                                <li className="data-description">
+                                                </ScrollReveal>
+
+                                            </li>
+                                            <li className="data-description">
+                                                <ScrollReveal>
                                                     <h4 className="topic-list">{lang === "th" ? "2. ป้องกันน้ำและฝุ่น" : lang === "en" ? "2. Prevents water and dust" : "2. 水やほこりを防ぐ"} </h4>
                                                     <p className="text-description-topic-list">
                                                         {lang === "th" ? "กันน้ำฝนและฝุ่นเข้าสู่ภายในรถ" : lang === "en" ? "Prevents rainwater and dust from entering the vehicle interior." : "雨水やほこりが車内に入るのを防ぐ"}
                                                     </p>
-                                                </li>
-                                                <li className="data-description">
+                                                </ScrollReveal>
+
+                                            </li>
+                                            <li className="data-description">
+                                                <ScrollReveal>
                                                     <h4 className="topic-list">{lang === "th" ? "3. เพิ่มความปลอดภัย " : lang === "en" ? "3. Enhances safety" : "3. 安全性を高める"}   </h4>
                                                     <p className="text-description-topic-list">
                                                         {lang === "th" ? "ลดแรงกระแทกของประตู ปิดสนิทและยืดอายุการใช้งานตัวถัง" : lang === "en" ? "Reduces door impact, ensures tight closure, and extends the body’s lifespan." : "ドアの衝撃を軽減し、しっかり閉じ、車体の寿命を延ばす"}
                                                     </p>
-                                                </li>
-                                            </ul>
+                                                </ScrollReveal>
 
-                                            <ul>
-                                                <li className="data-description">
+                                            </li>
+                                        </ul>
+
+                                        <ul>
+                                            <li className="data-description">
+                                                <ScrollReveal>
                                                     <h4 className="topic-list">{lang === "th" ? "4. รักษาอุณหภูมิภายในรถ" : lang === "en" ? "4. Maintains the interior temperature of the vehicle" : "4. 車内の温度を保つ"}</h4>
                                                     <p className="text-description-topic-list">
                                                         {lang === "th" ? "ช่วยให้อากาศจากแอร์ไม่รั่วออก และกันอากาศร้อนจากภายนอกไม่ให้เข้ามา" : lang === "en" ? "Prevents air from the AC from leaking out and blocks hot air from entering from outside." : "エアコンの空気が漏れないようにし、外からの熱い空気の侵入を防ぐ"}
-
                                                     </p>
-                                                </li>
-                                                <li className="data-description">
+                                                </ScrollReveal>
+
+                                            </li>
+                                            <li className="data-description">
+                                                <ScrollReveal>
                                                     <h4 className="topic-list">{lang === "th" ? "5. เพิ่มความนุ่มนวลในการปิดประตู" : lang === "en" ? "5. Provides smoother door closing" : "5. ドアの閉まりをよりスムーズにする"} </h4>
                                                     <p className="text-description-topic-list">
                                                         {lang === "th" ? "เมื่อปิดประตูจะนุ่มขึ้น ไม่กระแทกแข็งเกินไป" : lang === "en" ? "The door closes more softly, without slamming harshly. " : "ドアを閉めるときに柔らかく閉まり、強くぶつからない"}
-
                                                     </p>
-                                                </li>
+                                                </ScrollReveal>
 
-                                            </ul>
-                                        </div>
+                                            </li>
+
+                                        </ul>
                                     </div>
-                                </ScrollReveal>
+                                </div>
+
 
                             </div>
                         </div>
@@ -321,7 +355,10 @@ export default function Home() {
 
                     <div className="image-logo-partner-homepage">
                         {partner.map((image, index) => (
-                            <Image key={index} className='image-partner-homepage' src={image} alt='' width={1000} height={1000} loading="lazy" />
+                            <ScrollReveal key={index}>
+                                <Image  className='image-partner-homepage' src={image} alt='' width={1000} height={1000} loading="lazy" />
+                            </ScrollReveal>
+
                         ))}
                     </div>
                 </div>

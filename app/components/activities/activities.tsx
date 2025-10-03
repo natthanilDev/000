@@ -125,53 +125,64 @@ export default function Page() {
         <div>
           <ScrollReveal>
             <h1 className='activities-text'>{lang === "th" ? "กิจกรรม" : lang === "en" ? "Activities" : "活動"}  </h1>
-            <div className="line"></div>
-            <div className="activities-text-description-box">
+          </ScrollReveal>
+          <div className="line"></div>
+          <div className="activities-text-description-box">
+            <ScrollReveal>
               <p className='activities-text-description'>
                 {lang === "th" ? "JIEI ทุ่มเทเพื่อสร้างสภาพแวดล้อมการทำงานระดับมืออาชีพ และสนับสนุนความร่วมมือรวมถึงนวัตกรรมผ่านกิจกรรมที่สร้างแรงบันดาลใจ" : lang === "en" ? "JIEI is dedicated to creating a professional work environment and promoting collaboration and innovation through inspiring activities." : "JIEIは、プロフェッショナルな職場環境の構築に尽力し、刺激的な活動を通じて協力とイノベーションを推進しています。"}
               </p>
-            </div>
-          </ScrollReveal>
+            </ScrollReveal>
+          </div>
 
-          <ScrollReveal>
-            <div className="container-card">
-              {paginatedData.map((item, index) => (
-                <ScrollReveal key={index}>
-                  <div className="box-card" onClick={() => {
-                    setSelectedNews(start + index)
-                    window.scrollTo({ top: 0, behavior: 'smooth' })
-                  }} >
-                    <div className="image-card">
-                      <Image
-                        src={img[start + index]}
-                        height={1000}
-                        width={1000}
-                        alt={`News image: ${item}`}
-                        className="image-news"
-                        priority
-                      />
+
+
+          <div className="container-card">
+            {paginatedData.map((item, index) => (
+
+              <div key={index} className="box-card" onClick={() => {
+                setSelectedNews(start + index)
+                window.scrollTo({ top: 0, behavior: 'smooth' })
+              }} >
+                <div className="image-card">
+                  <ScrollReveal>
+                    <Image
+                      src={img[start + index]}
+                      height={1000}
+                      width={1000}
+                      alt={`News image: ${item}`}
+                      className="image-news"
+                      priority
+                    />
+                  </ScrollReveal>
+                </div>
+
+                <div className="content-card-box">
+                 
+                    <div className="title-card">
+                      <h2 className='title-news-content'>{item}</h2>
                     </div>
+                  
+                  <div className="content-card">
 
-                    <div className="content-card-box">
-                      <div className="title-card">
-                        <h2 className='title-news-content'>{item}</h2>
-                      </div>
-                      <div className="content-card">
-                        <p className='description-news-content'>{content[start + index]}</p>
-                      </div>
-                      <div className="Read-more-box">
-                        <p className="read-more">
-                          {lang === 'th' ? "อ่านเพิ่มเติม" : lang === "en" ? "Read More" : "続きを読む"}
-                        </p>
-                      </div>
-
-                    </div>
+                    <p className='description-news-content'>{content[start + index]}</p>
 
                   </div>
-                </ScrollReveal>
-              ))}
-            </div>
-          </ScrollReveal>
+                  <div className="Read-more-box">
+
+                    <p className="read-more">
+                      {lang === 'th' ? "อ่านเพิ่มเติม" : lang === "en" ? "Read More" : "続きを読む"}
+                    </p>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            ))}
+          </div>
+
           <div className="page">
             <nav className="countPage" aria-label="Pagination">
               {Array.from({ length: totalPages }, (_, i) => i + 1).map((pageNum) => (

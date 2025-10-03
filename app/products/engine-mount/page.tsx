@@ -6,6 +6,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Head from 'next/head';
 import { useSearchParams } from "next/navigation";
+import ScrollReveal from "../../components/ScrollReveal/ScrollReveal";
 
 export default function Page() {
   const searchParams = useSearchParams();
@@ -117,9 +118,12 @@ export default function Page() {
         <>
           <div className='product-all'>
             <div className="product-title">
-
-              <h1 className='product-name'>Product Name</h1>
-              <p className="description-product">Lorem ipsum dolor sit, amet consectetur adipisicing elit. At amet quam culpa sed quaerat repellat similique vel facere quisquam, aliquid, nisi magnam nihil! Voluptatum minus maiores sunt fugit tenetur delectus.</p>
+              <ScrollReveal>
+                <h1 className='product-name'>Product Name</h1>
+              </ScrollReveal>
+              <ScrollReveal>
+                <p className="description-product">Lorem ipsum dolor sit, amet consectetur adipisicing elit. At amet quam culpa sed quaerat repellat similique vel facere quisquam, aliquid, nisi magnam nihil! Voluptatum minus maiores sunt fugit tenetur delectus.</p>
+              </ScrollReveal>
               <div className="line"></div>
               <div className="product">
 
@@ -130,17 +134,23 @@ export default function Page() {
                       window.scrollTo({ top: 0, behavior: 'smooth' })
                     }}>
                     <div className="image-product-part">
-                      <Image className='image-product' src={image[start + index]} alt='' width={1000} height={1000} priority />
+                      <ScrollReveal>
+                        <Image className='image-product' src={image[start + index]} alt='' width={1000} height={1000} priority />
+                      </ScrollReveal>
                     </div>
                     <div className="product-box">
                       <div className="product-card">
-                        <h4>{item}</h4>
+                        <ScrollReveal>
+                          <h4>{item}</h4>
+                        </ScrollReveal>
                       </div>
                       <div className="product-description-box">
                         <div className="space-part-box">
+
                           <p className='space-part'>
                             {description[start + index]}
                           </p>
+
                         </div>
 
                       </div>
@@ -179,39 +189,51 @@ export default function Page() {
           <div className="line"></div>
           <div className="product-description-card">
             <div className="image-product-card">
-              <Image
-                src={image[selectedNews]}
-                height={1000}
-                width={1000}
-                alt={`product image: ${description[selectedNews]}`}
-                className="image-product-page"
-              />
+              <ScrollReveal>
+                <Image
+                  src={image[selectedNews]}
+                  height={1000}
+                  width={1000}
+                  alt={`product image: ${description[selectedNews]}`}
+                  className="image-product-page"
+                />
+              </ScrollReveal>
             </div>
             <div className="description-box-product">
-
-              <h2 className='product-blog'>{lang === "th" ? "สินค้าที่เลือก" : lang === "en" ? "" : ""}   {product_name[selectedNews]}</h2>
-              <p className='description-box-page'>{description[selectedNews]}</p>
-
+              <ScrollReveal>
+                <h2 className='product-blog'>{lang === "th" ? "สินค้าที่เลือก" : lang === "en" ? "" : ""}   {product_name[selectedNews]}</h2>
+                <p className='description-box-page'>{description[selectedNews]}</p>
+              </ScrollReveal>
               <div className="product-description-box-2">
-                <h3>รายระเอียดสินค้า</h3>
+                <ScrollReveal>
+                  <h3>รายระเอียดสินค้า</h3>
+                </ScrollReveal>
               </div>
 
               <div className="description-product-table">
                 <div className="pop-product1">
                   <div className="table-spec1">
-                    <p className='product-description-table-title'>product</p>
+                    <ScrollReveal>
+                      <p className='product-description-table-title'>product</p>
+                    </ScrollReveal>
                   </div>
                   <div className="table-spec1">
-                    <p className='product-description-table'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, quo hic omnis, tempora quia, nobis accusantium quos ducimus autem ut soluta. Quas, doloribus. Cumque harum porro ipsa expedita fugit dolore?</p>
+                    <ScrollReveal>
+                      <p className='product-description-table'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, quo hic omnis, tempora quia, nobis accusantium quos ducimus autem ut soluta. Quas, doloribus. Cumque harum porro ipsa expedita fugit dolore?</p>
+                    </ScrollReveal>
                   </div>
                 </div>
 
                 <div className="pop-product2">
                   <div className="table-spec2">
-                    <p className='product-description-table-title'>product</p>
+                    <ScrollReveal>
+                      <p className='product-description-table-title'>product</p>
+                    </ScrollReveal>
                   </div>
                   <div className="table-spec2">
-                    <p className='product-description-table'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut recusandae dolorum officia fuga et, iure reiciendis rerum sit maiores alias repellat optio voluptates laboriosam, modi, ipsa odit consequuntur quis molestias?</p>
+                    <ScrollReveal>
+                      <p className='product-description-table'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut recusandae dolorum officia fuga et, iure reiciendis rerum sit maiores alias repellat optio voluptates laboriosam, modi, ipsa odit consequuntur quis molestias?</p>
+                    </ScrollReveal>
                   </div>
                 </div>
               </div>
@@ -237,8 +259,9 @@ export default function Page() {
               กลับไปหน้ารวม
             </button>
           </div>
-        </div>
-      )}
+        </div >
+      )
+      }
     </div >
   );
 }
