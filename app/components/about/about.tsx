@@ -49,12 +49,12 @@ export default function About() {
     ]
 
     const department_top = [
-        'Manager',
-        'General Manager',
-        'Manager Factory',
-        'Advisor',
-        'Manager',
-        'Manager'
+        'MANAGER',
+        'GENERAL MANAGER',
+        'MANAGER FACTORY',
+        'ADVISOR',
+        'MANAGER',
+        'MANAGER'
     ]
 
     const QAName = [
@@ -66,12 +66,12 @@ export default function About() {
         'Ms.Suttinee Pattamanawin (May'
     ]
     const QA = [
-        'Supervisor/QMR ',
-        'ASST.Leader',
-        'QA Staff',
-        'QA Staff',
+        'SUPERVISOR/QMR ',
+        'ASST.LEADER',
+        'QA STAFF',
+        'QA STAFF',
         'QA Engineer',
-        'QA Staff'
+        'QA STAFF'
     ]
     const ImageQA = [
         '/QA/nut.png',
@@ -83,15 +83,15 @@ export default function About() {
     ]
 
     const QC = [
-        'Leader',
-        'QC Staff',
-        'QC Staff',
-        'QC Staff',
-        'QC Staff',
-        'QC Staff',
-        'QC Staff',
-        'QC Staff',
-        'QC Staff',
+        'QC LEADER',
+        'QC STAFF',
+        'QC STAFF',
+        'QC STAFF',
+        'QC STAFF',
+        'QC STAFF',
+        'QC STAFF',
+        'QC STAFF',
+        'QC STAFF',
     ]
     const QCName = [
         'Ms.Pornjun Konboon (Aof)',
@@ -119,11 +119,11 @@ export default function About() {
 
 
     const PC = [
-        'Manager',
-        'ASST.Leader',
-        'PC Staff',
-        'PC Staff',
-        'PC Staff',
+        'PC MANAGER',
+        'ASST.LEADER',
+        'PC STAFF',
+        'PC STAFF',
+        'PC STAFF',
     ]
     const PCName = [
         'Mr.Werayoot Ingkapakorn (B)',
@@ -140,9 +140,9 @@ export default function About() {
         '/PC/max.png',
     ]
     const PD = [
-        'ASST.Manager',
-        'PD Staff',
-        'PD Staff',
+        'ASST.MANAGER',
+        'PD STAFF',
+        'PD STAFF',
     ]
     const PDName = [
 
@@ -160,10 +160,10 @@ export default function About() {
 
 
     const HR = [
-        'Manager',
-        'ASST.Leader',
-        'Staff',
-        'Staff',
+        'HR MANAGER',
+        'ASST.LEADER',
+        'HR STAFF',
+        'HR STAFF',
     ]
     const HRName = [
         'Ms.Wipada Singkham (Da)',
@@ -180,14 +180,14 @@ export default function About() {
     ]
 
     const ACC = [
-        'Leader',
-        'ASST.Leader',
-        'Staff',
+        'ACC LEADER',
+        'ASST.LEADER',
+        'HR STAFF',
 
     ]
     const ACCName = [
         'Ms.Monthip Meng-Ourm (Tip)',
-        'Ms.Watsana Kumkhonkhaen (Fem)',
+        'Ms.Watsana Kumkhonkhaen (Ferm)',
         'Ms.Netchanok Sudongpong (Nampetch)',
 
     ]
@@ -197,9 +197,9 @@ export default function About() {
         '/ACC/numplach.png',
     ]
     const SA = [
-        'Manager',
-        'Leader',
-        'Leader',
+        'SA MANAGER',
+        'SA LEADER',
+        'SA LEADER',
 
     ]
     const SAName = [
@@ -214,8 +214,8 @@ export default function About() {
         '/SA/bow.png',
     ]
     const IT = [
-        'Staff',
-        'Staff',
+        'IT STAFF',
+        'IT STAFF',
     ]
     const ITName = [
         'Mr.Sompong Sae Boon (Pe)',
@@ -227,11 +227,11 @@ export default function About() {
     ]
 
     const SE = [
-        'Leader/EMR',
-        'Staff',
+        'SE LEADER/EMR',
+        'SE STAFF',
     ]
     const SEName = [
-        'Ms.Supreeya Kitbumrung (Fai)',
+        'Ms.Supreeya Kitbumrung (Faii)',
         'Ms.Suwimon Phoncharoen (Mon)',
     ]
     const ImageSE = [
@@ -241,15 +241,16 @@ export default function About() {
 
     const TE = [
         'Interpreter',
-        'Leader',
-        'Leader',
-        'ASST.Leader',
+        'TE LEADER',
+        'TE LEADER',
+        'ASST.LEADER',
     ]
     const TEName = [
+        'MrTanit Keawkamphon (Art)',
         'Mr.Pricha Prasoetsang (Num)',
         'Mr.Natphon Cakpila (Ton)',
         'Mr. Yutthakarn Samaknarong (Daew)',
-        'TE',
+        
     ]
     const ImageTE = [
         '/TE/alt.png',
@@ -258,9 +259,9 @@ export default function About() {
         '/TE/deaw.png',
     ]
     const WH = [
-        'Leader',
-        'Staff',
-        'Staff',
+        'WH LEADER',
+        'WH STAFF',
+        'WH STAFF',
     ]
     const WHName = [
         'Ms.Sukunya Chamali (Tong )',
@@ -274,8 +275,8 @@ export default function About() {
     ]
 
     const PUR = [
-        'Leader',
-        'ASST.Leader',
+        'PUR LEADER',
+        'ASST.LEADER',
 
     ]
     const PURName = [
@@ -434,8 +435,6 @@ export default function About() {
                                     <h2 className='position-topmanager'>{lang === "th" ? "ประธานประธานบริษัท" : lang === "en" ? "President" : "社長"} </h2>
                                     <p className='top-manager-name'>Masashi Ezaka</p>
                                 </ScrollReveal>
-
-
                             </div>
                         </div>
                     </div>
@@ -733,7 +732,7 @@ export default function About() {
                     <div className="IT">
                         <ScrollReveal>
 
-                            <h1 className="position-qaqc">เจ้าหน้าที่ฝ่าย IT (IT Staff)</h1>
+                            <h1 className="position-qaqc">เจ้าหน้าที่ฝ่าย IT (IT STAFF)</h1>
                         </ScrollReveal>
                         <ScrollReveal>
                             <h2 className='description-position'>ติดตั้ง ดูแล และแก้ไขปัญหาระบบสารสนเทศขององค์กร ทั้งด้านอุปกรณ์คอมพิวเตอร์ โปรแกรม ระบบเครือข่าย และฐานข้อมูล รวมถึงช่วยเหลือพนักงานในการใช้งานด้าน IT</h2>
