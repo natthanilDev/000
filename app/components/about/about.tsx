@@ -103,7 +103,7 @@ export default function About() {
         'Ms.Lalana Sriwapee (Biew)',
         'Mr.Teerayut Boonrod (Baw)',
         'Mr.Peerawit Suwanna (Ice)',
-      
+
     ]
     const ImageQC = [
         '/QC/aof.png',
@@ -135,8 +135,8 @@ export default function About() {
     const ImagePC = [
         '/PC/be.png',
         '/PC/koy.png',
-        '/PC/kad.png',
         '/PC/prawa.png',
+        '/PC/kad.png',
         '/PC/max.png',
     ]
     const PD = [
@@ -145,7 +145,7 @@ export default function About() {
         'PD Staff',
     ]
     const PDName = [
-        
+
         'Mr.Athiwat Natacha (Num)',
         'Ms.Sakaodeuan Limpakdee (Bee)',
         'Ms.Nattha Masuk (Nut)',
@@ -188,7 +188,7 @@ export default function About() {
     const ACCName = [
         'Ms.Monthip Meng-Ourm (Tip)',
         'Ms.Watsana Kumkhonkhaen (Fem)',
-        'Ms.Netchanok Sudongpong (Nampetch)' ,
+        'Ms.Netchanok Sudongpong (Nampetch)',
 
     ]
     const ImageACC = [
@@ -196,7 +196,7 @@ export default function About() {
         '/ACC/flean.png',
         '/ACC/numplach.png',
     ]
-const SA = [
+    const SA = [
         'Manager',
         'Leader',
         'Leader',
@@ -213,7 +213,7 @@ const SA = [
         '/SA/boom.png',
         '/SA/bow.png',
     ]
-const IT = [
+    const IT = [
         'Staff',
         'Staff',
     ]
@@ -239,7 +239,7 @@ const IT = [
         '/SE/mon.png',
     ]
 
-     const TE = [
+    const TE = [
         'Interpreter',
         'Leader',
         'Leader',
@@ -257,7 +257,7 @@ const IT = [
         '/TE/ton.png',
         '/TE/deaw.png',
     ]
-      const WH = [
+    const WH = [
         'Leader',
         'Staff',
         'Staff',
@@ -265,7 +265,7 @@ const IT = [
     const WHName = [
         'Ms.Sukunya Chamali (Tong )',
         'Mrs.Sudarak Srinuan (Kaun)',
-        'Ms.Ausanee Duangrit (Pampam)',  
+        'Ms.Ausanee Duangrit (Pampam)',
     ]
     const ImageWH = [
         '/WH/tong.png',
@@ -273,20 +273,20 @@ const IT = [
         '/WH/pam.png',
     ]
 
-      const PUR = [
+    const PUR = [
         'Leader',
         'ASST.Leader',
-        
+
     ]
     const PURName = [
         'Ms.Napatsawan Chanapai (Nami)',
         'Ms. Phairin Klinfung (Aom)',
-        
+
     ]
     const ImagePUR = [
         '/PUR/nami.png',
         '/PUR/aom.png',
-        
+
     ]
     return (
         <div className='about-page'>
@@ -335,74 +335,81 @@ const IT = [
                     </div>
                 </div>
             </section >
-            <h1 className='about-company-name'>{lang === "th" ? "บริษัท เจไออีไอ (ประเทศไทย) จำกัด" : lang === 'en' ? "JIEI (Thailand) Co., Ltd." : "ジェイアイ (タイランド)株式会社"} </h1>
-            <div className="table-company-profile">
-                <div className="tr-about">
-                    <div className='content-inthe-table'>
-                        <div className="content-in-aboutBox">
-                            <p className="title-about-text"> {lang === "th" ? "ชื่อบริษัท" : lang === "en" ? "Company Name" : "会社名"}</p>
-                        </div>
-                        <div className="content-in-aboutBox">
+            <ScrollReveal>
+                <h1 className='about-company-name'>{lang === "th" ? "บริษัท เจไออีไอ (ประเทศไทย) จำกัด" : lang === 'en' ? "JIEI (Thailand) Co., Ltd." : "ジェイアイ (タイランド)株式会社"} </h1>
+            </ScrollReveal>
 
-                            {lang === "th" ? "บริษัท เจไออีไอ (ประเทศไทย) จำกัด" : lang === "en" ? "JIEI (Thailand) Co., Ltd." : "ジェイアイイーアイ（タイランド）株式会社"}
+
+
+            <ScrollReveal>
+                <div className="table-company-profile">
+                    <div className="tr-about">
+                        <div className='content-inthe-table'>
+                            <div className="content-in-aboutBox">
+                                <p className="title-about-text"> {lang === "th" ? "ชื่อบริษัท" : lang === "en" ? "Company Name" : "会社名"}</p>
+                            </div>
+                            <div className="content-in-aboutBox">
+
+                                {lang === "th" ? "บริษัท เจไออีไอ (ประเทศไทย) จำกัด" : lang === "en" ? "JIEI (Thailand) Co., Ltd." : "ジェイアイイーアイ（タイランド）株式会社"}
+                            </div>
+                        </div>
+                        <div className='content-inthe-table1'>
+                            <div className="content-in-aboutBox">
+
+                                <p className="title-about-text">   {lang === "th" ? "ที่อยู่" : lang === "en" ? "Address" : "住所"}</p>
+                            </div>
+                            <div className="content-in-aboutBox">
+
+                                {lang === "th" ? " นิคมอุตสาหกรรมปิ่นทอง 4 หน่วย G18 180/3 หมู่ 6 ต.บึง อ.ศรีราชา ชลบุรี 20230 ประเทศไทย โทร. 033136581-4" : lang === "en" ? "Pinthong Industrial Estate 4, Unit G18 180/3 Moo 6, Bueng Sub-district,Si Racha District, Chonburi 20230, Thailand Tel: +66 (0)33-136581-4" : "ピントン工業団地4、G18号ユニット 180/3 ムー6、ブン地区 シラチャー郡、チョンブリー県 20230 タイ王国 電話: +66 (0)33-136581-4"}
+                            </div>
+                        </div>
+                        <div className='content-inthe-table'>
+                            <div className="content-in-aboutBox">
+                                <p className="title-about-text"> {lang === "th" ? "ก่อตั้งเมื่อ" : lang === "en" ? "Established on" : "設立日"} </p>
+                            </div>
+                            <div className="content-in-aboutBox">
+                                {lang === "th" ? "11/11/2554" : lang === "en" ? "11/11/2011" : "2011年11月11日"}
+                            </div>
+                        </div>
+                        <div className='content-inthe-table1'>
+                            <div className="content-in-aboutBox">
+                                <p className="title-about-text">{lang === "th" ? "ทุนจดทะเบียน" : lang === "en" ? "Registered Capital" : "登録資本金"}</p>
+                            </div>
+                            <div className="content-in-aboutBox">
+
+                                {lang === "th" ? "150,000,000 บาท" : lang === "en" ? "150,000,000 Baht" : "1億5,000万バーツ"}
+                            </div>
+                        </div>
+                        <div className='content-inthe-table'>
+                            <div className="content-in-aboutBox">
+                                <p className="title-about-text">  {lang === 'th' ? "จำนวนพนักงาน" : lang === "en" ? "Number of Employees" : "従業員数"}</p>
+                            </div>
+                            <div className="content-in-aboutBox">
+                                {lang === "th" ? "276 คน" : lang === "en" ? "276" : "276人"}
+                            </div>
                         </div>
                     </div>
-                    <div className='content-inthe-table1'>
-                        <div className="content-in-aboutBox">
 
-                            <p className="title-about-text">   {lang === "th" ? "ที่อยู่" : lang === "en" ? "Address" : "住所"}</p>
-                        </div>
-                        <div className="content-in-aboutBox">
+                </div>
+            </ScrollReveal>
+            <ScrollReveal>
+                <div className="google-map-box">
+                    <label htmlFor="btn-showMap">
+                        <p className='btn-googlemap' >
+                            {lang === "th" ? "แผนที่" : lang === "en" ? "Map" : "地図"} <i className="bi bi-search-heart"></i>
+                        </p>
+                    </label>
+                    <input className='btn-showMap d-none' type="checkbox" id="btn-showMap" />
 
-                            {lang === "th" ? " นิคมอุตสาหกรรมปิ่นทอง 4 หน่วย G18 180/3 หมู่ 6 ต.บึง อ.ศรีราชา ชลบุรี 20230 ประเทศไทย โทร. 033136581-4" : lang === "en" ? "Pinthong Industrial Estate 4, Unit G18 180/3 Moo 6, Bueng Sub-district,Si Racha District, Chonburi 20230, Thailand Tel: +66 (0)33-136581-4" : "ピントン工業団地4、G18号ユニット 180/3 ムー6、ブン地区 シラチャー郡、チョンブリー県 20230 タイ王国 電話: +66 (0)33-136581-4"}
-                        </div>
-                    </div>
-                    <div className='content-inthe-table'>
-                        <div className="content-in-aboutBox">
-                            <p className="title-about-text"> {lang === "th" ? "ก่อตั้งเมื่อ" : lang === "en" ? "Established on" : "設立日"} </p>
-                        </div>
-                        <div className="content-in-aboutBox">
-                            {lang === "th" ? "11/11/2554" : lang === "en" ? "11/11/2011" : "2011年11月11日"}
-                        </div>
-                    </div>
-                    <div className='content-inthe-table1'>
-                        <div className="content-in-aboutBox">
-                            <p className="title-about-text">{lang === "th" ? "ทุนจดทะเบียน" : lang === "en" ? "Registered Capital" : "登録資本金"}</p>
-                        </div>
-                        <div className="content-in-aboutBox">
-
-                            {lang === "th" ? "150,000,000 บาท" : lang === "en" ? "150,000,000 Baht" : "1億5,000万バーツ"}
-                        </div>
-                    </div>
-                    <div className='content-inthe-table'>
-                        <div className="content-in-aboutBox">
-                            <p className="title-about-text">  {lang === 'th' ? "จำนวนพนักงาน" : lang === "en" ? "Number of Employees" : "従業員数"}</p>
-                        </div>
-                        <div className="content-in-aboutBox">
-                            {lang === "th" ? "276 คน" : lang === "en" ? "276" : "276人"}
-                        </div>
+                    <div className='map-jiei'>
+                        <Link href={"/Map.png"} target='_blank'>
+                            <div className='google-popup'>
+                                <Image className='image-map' src={'/Map.png'} alt='' width={1000} height={1000} loading='lazy' />
+                            </div>
+                        </Link>
                     </div>
                 </div>
-
-            </div>
-
-            <div className="google-map-box">
-                <label htmlFor="btn-showMap">
-                    <p className='btn-googlemap' >
-                        {lang === "th" ? "แผนที่" : lang === "en" ? "Map" : "地図"} <i className="bi bi-search-heart"></i>
-                    </p>
-                </label>
-                <input className='btn-showMap d-none' type="checkbox" id="btn-showMap" />
-
-                <div className='map-jiei'>
-                    <Link href={"/Map.png"} target='_blank'>
-                        <div className='google-popup'>
-                            <Image className='image-map' src={'/Map.png'} alt='' width={1000} height={1000} loading='lazy' />
-                        </div>
-                    </Link>
-                </div>
-
-            </div>
+            </ScrollReveal>
 
 
 
@@ -413,137 +420,185 @@ const IT = [
                     <div className="border-manager"></div>
                 </ScrollReveal>
                 <div className="manger-box">
-                    <ScrollReveal>
 
-                        <div className="image-manager">
-                            <div className="top-manager-box">
-                                <div className="image-top-manager-box">
+
+                    <div className="image-manager">
+                        <div className="top-manager-box">
+                            <div className="image-top-manager-box">
+                                <ScrollReveal>
                                     <Image src={'/top-manager/5.png'} alt='บริษัท เจไออีไอ (ประเทศไทย) จำกัด เป็นผู้ผลิต ชิ้นส่วนยางรถยนต์คุณภาพสูงสำหรับอุตสาหกรรมยานยนต์ในประเทศไทยและต่างประเทศโรงงานตั้งอยู่ที่จังหวัดชลบุรี พร้อมมาตรฐานสากล' width={1000} height={1000} className='manager-Image' />
-                                </div>
-                                <div className="name-top-manager">
+                                </ScrollReveal>
+                            </div>
+                            <div className="name-top-manager">
+                                <ScrollReveal>
                                     <h2 className='position-topmanager'>{lang === "th" ? "ประธานประธานบริษัท" : lang === "en" ? "President" : "社長"} </h2>
                                     <p className='top-manager-name'>Masashi Ezaka</p>
-                                </div>
+                                </ScrollReveal>
+
+
                             </div>
                         </div>
+                    </div>
 
 
-                        <div className="manager-box">
-                            <div className="image-manager2">
-                                <div className="top-manager-box1">
-                                    <div className="image-top-manager-box">
+                    <div className="manager-box">
+                        <div className="image-manager2">
+                            <div className="top-manager-box1">
+                                <div className="image-top-manager-box">
+                                    <ScrollReveal>
                                         <Image src={"/top-manager/5.png"} alt='บริษัท เจไออีไอ (ประเทศไทย) จำกัด เป็นผู้ผลิต ชิ้นส่วนยางรถยนต์คุณภาพสูงสำหรับอุตสาหกรรมยานยนต์ในประเทศไทยและต่างประเทศโรงงานตั้งอยู่ที่จังหวัดชลบุรี พร้อมมาตรฐานสากล' width={1000} height={1000} className='manager-Image' />
-                                    </div>
-                                    <div className="name-top-manager">
+                                    </ScrollReveal>
+                                </div>
+                                <div className="name-top-manager">
+                                    <ScrollReveal>
                                         <h2 className='position-topmanager'>{lang === "th" ? "ผู้อำนวยการ" : lang === "en" ? "Director" : "ディレクター"} </h2>
                                         <p className='top-manager-name'>Kenji Kamei</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="image-manager2">
-                                <div className="top-manager-box1">
-                                    <div className="image-top-manager-box">
-                                        <Image src={"/top-manager/inada-san.png"} alt='บริษัท เจไออีไอ (ประเทศไทย) จำกัด เป็นผู้ผลิต ชิ้นส่วนยางรถยนต์คุณภาพสูงสำหรับอุตสาหกรรมยานยนต์ในประเทศไทยและต่างประเทศโรงงานตั้งอยู่ที่จังหวัดชลบุรี พร้อมมาตรฐานสากล' width={1000} height={1000} className='manager-Image' />
-                                    </div>
-                                    <div className="name-top-manager">
-                                        <h2 className='position-topmanager'>{lang === "th" ? "กรรมการผู้จัดการ" : lang === "en" ? "Management Director" : "経営取締役"} </h2>
-                                        <p className='top-manager-name'>Yoshikatsu Inada</p>
-                                    </div>
+                                    </ScrollReveal>
                                 </div>
                             </div>
                         </div>
+                        <div className="image-manager2">
+                            <div className="top-manager-box1">
+                                <div className="image-top-manager-box">
+                                    <ScrollReveal>
+                                        <Image src={"/top-manager/inada-san.png"} alt='บริษัท เจไออีไอ (ประเทศไทย) จำกัด เป็นผู้ผลิต ชิ้นส่วนยางรถยนต์คุณภาพสูงสำหรับอุตสาหกรรมยานยนต์ในประเทศไทยและต่างประเทศโรงงานตั้งอยู่ที่จังหวัดชลบุรี พร้อมมาตรฐานสากล' width={1000} height={1000} className='manager-Image' />
+                                    </ScrollReveal>
+                                </div>
+                                <div className="name-top-manager">
+                                    <ScrollReveal>
+                                        <h2 className='position-topmanager'>{lang === "th" ? "กรรมการผู้จัดการ" : lang === "en" ? "Management Director" : "経営取締役"} </h2>
+                                        <p className='top-manager-name'>Yoshikatsu Inada</p>
+                                    </ScrollReveal>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
 
-
+                    <ScrollReveal>
                         <div className="manager-group">
+
                             {manager.map((item, index) =>
                                 <div key={index} className="image-manager1">
                                     <div className="top-manager-box1">
                                         <div className="image-top-manager-box">
-                                            <Image src={item} alt='บริษัท เจไออีไอ (ประเทศไทย) จำกัด เป็นผู้ผลิต ชิ้นส่วนยางรถยนต์คุณภาพสูงสำหรับอุตสาหกรรมยานยนต์ในประเทศไทยและต่างประเทศโรงงานตั้งอยู่ที่จังหวัดชลบุรี พร้อมมาตรฐานสากล' width={1000} height={1000} className='manager-Image' />
+                                            <ScrollReveal>
+                                                <Image src={item} alt='บริษัท เจไออีไอ (ประเทศไทย) จำกัด เป็นผู้ผลิต ชิ้นส่วนยางรถยนต์คุณภาพสูงสำหรับอุตสาหกรรมยานยนต์ในประเทศไทยและต่างประเทศโรงงานตั้งอยู่ที่จังหวัดชลบุรี พร้อมมาตรฐานสากล' width={1000} height={1000} className='manager-Image' />
+                                            </ScrollReveal>
                                         </div>
                                         <div className="name-top-manager">
-                                            <h2 className='position-topmanager'>{lang === "th" ? department_top[index] : lang === "en" ? "President" : "社長"} </h2>
-                                            <p className='top-manager-name'>{name_manager[index]}</p>
+                                            <ScrollReveal>
+                                                <h2 className='position-topmanager'>{lang === "th" ? department_top[index] : lang === "en" ? "President" : "社長"} </h2>
+                                                <p className='top-manager-name'>{name_manager[index]}</p>
+                                            </ScrollReveal>
                                         </div>
                                     </div>
                                 </div>
                             )}
                         </div>
-
                     </ScrollReveal>
-                </div>
+
+                </div >
             </div >
 
             <div className="employee-intro">
                 <div className="employee-staff">
                     <div className="employee-text">
-                        <h1 className='text-employee1'>แนะนำพนักงานคุณภาพของเรา</h1>
-                        <h2 className='text-employee2'>ทีมงานมืออาชีพ พร้อมให้บริการด้วยมาตรฐานระดับสากล</h2>
+                        <ScrollReveal>
+                            <h1 className='text-employee1'>แนะนำพนักงานคุณภาพของเรา</h1>
+                        </ScrollReveal>
+                        <ScrollReveal>
+                            <h2 className='text-employee2'>ทีมงานมืออาชีพ พร้อมให้บริการด้วยมาตรฐานระดับสากล</h2>
+                        </ScrollReveal>
                     </div>
                     <div className="line"></div>
                     {/* -------------------------------------------แนะนำเจ้าหน้าที่ด่านคุณภาพ QA */}
                     <div className="QA">
-                        <h1 className="position-qaqc">เจ้าหน้าที่ด้านคุณภาพ QA (Quality Assurance) </h1>
-                        <h2 className='description-position'>ดูแล ตรวจสอบ และประกันคุณภาพของงาน ผลิตภัณฑ์ หรือบริการ ให้ได้มาตรฐานที่องค์กรกำหนดไว้</h2>
+                        <ScrollReveal>
+                            <h1 className="position-qaqc">เจ้าหน้าที่ด้านคุณภาพ QA (Quality Assurance) </h1>
+                        </ScrollReveal>
+                        <ScrollReveal>
+                            <h2 className='description-position'>ดูแล ตรวจสอบ และประกันคุณภาพของงาน ผลิตภัณฑ์ หรือบริการ ให้ได้มาตรฐานที่องค์กรกำหนดไว้</h2>
+                        </ScrollReveal>
                         <div className="QA-box">
                             {QAName.map((item, index) =>
 
                                 <div key={index} className="top-manager-box1">
-                                    <div className="image-top-manager-box">
-                                        <Image src={ImageQA[index]} alt='บริษัท เจไออีไอ (ประเทศไทย) จำกัด เป็นผู้ผลิต ชิ้นส่วนยางรถยนต์คุณภาพสูงสำหรับอุตสาหกรรมยานยนต์ในประเทศไทยและต่างประเทศโรงงานตั้งอยู่ที่จังหวัดชลบุรี พร้อมมาตรฐานสากล' width={1000} height={1000} className='manager-Image' />
-                                    </div>
+                                    <ScrollReveal>
+                                        <div className="image-top-manager-box">
+                                            <Image src={ImageQA[index]} alt='บริษัท เจไออีไอ (ประเทศไทย) จำกัด เป็นผู้ผลิต ชิ้นส่วนยางรถยนต์คุณภาพสูงสำหรับอุตสาหกรรมยานยนต์ในประเทศไทยและต่างประเทศโรงงานตั้งอยู่ที่จังหวัดชลบุรี พร้อมมาตรฐานสากล' width={1000} height={1000} className='manager-Image' />
+                                        </div>
+                                    </ScrollReveal>
                                     <div className="name-top-manager">
-                                        <h2 className='position-topmanager'>{lang === "th" ? QA[index] : lang === "en" ? "President" : "社長"} </h2>
-                                        <p className='top-manager-name'>{item}</p>
+                                        <ScrollReveal>
+                                            <h2 className='position-topmanager'>{lang === "th" ? QA[index] : lang === "en" ? "President" : "社長"} </h2>
+                                            <p className='top-manager-name'>{item}</p>
+                                        </ScrollReveal>
                                     </div>
                                 </div>
 
                             )}
                         </div>
 
-                    </div>
+                    </div >
 
 
                     {/* -------------------------------------------แนะนำเจ้าหน้าที่ด่านคุณภาพ QC */}
 
 
-                    <div className="QC">
-                        <h1 className="position-qaqc">เจ้าหน้าที่ด้านคุณภาพ QC (Quality Control)</h1>
-                        <h2 className='description-position'>ตรวจสอบวัตถุดิบ ตรวจสอบระหว่างการผลิต คัดแยกสินค้าไม่ผ่านมาตรฐาน บันทึกผลการตรวจสอบ ปฏิบัติตามมาตรฐานคุณภาพและความปลอดภัย ให้ได้มาตรฐานที่องค์กรกำหนดไว้</h2>
-                       
+                    <div className="QC" >
+                        <ScrollReveal>
+                            <h1 className="position-qaqc">เจ้าหน้าที่ด้านคุณภาพ QC (Quality Control)</h1>
+                        </ScrollReveal>
+                        <ScrollReveal>
+                            <h2 className='description-position'>ตรวจสอบวัตถุดิบ ตรวจสอบระหว่างการผลิต คัดแยกสินค้าไม่ผ่านมาตรฐาน บันทึกผลการตรวจสอบ ปฏิบัติตามมาตรฐานคุณภาพและความปลอดภัย ให้ได้มาตรฐานที่องค์กรกำหนดไว้</h2>
+                        </ScrollReveal>
                         <div className="QC-box">
                             {QCName.map((item, index) =>
 
                                 <div key={index} className="top-manager-box1">
                                     <div className="image-top-manager-box">
-                                        <Image src={ImageQC[index]} alt='บริษัท เจไออีไอ (ประเทศไทย) จำกัด เป็นผู้ผลิต ชิ้นส่วนยางรถยนต์คุณภาพสูงสำหรับอุตสาหกรรมยานยนต์ในประเทศไทยและต่างประเทศโรงงานตั้งอยู่ที่จังหวัดชลบุรี พร้อมมาตรฐานสากล' width={1000} height={1000} className='manager-Image' />
+                                        <ScrollReveal>
+                                            <Image src={ImageQC[index]} alt='บริษัท เจไออีไอ (ประเทศไทย) จำกัด เป็นผู้ผลิต ชิ้นส่วนยางรถยนต์คุณภาพสูงสำหรับอุตสาหกรรมยานยนต์ในประเทศไทยและต่างประเทศโรงงานตั้งอยู่ที่จังหวัดชลบุรี พร้อมมาตรฐานสากล' width={1000} height={1000} className='manager-Image' />
+                                        </ScrollReveal>
                                     </div>
                                     <div className="name-top-manager">
-                                        <h2 className='position-topmanager'>{lang === "th" ? QC[index] : lang === "en" ? "President" : "社長"} </h2>
-                                        <p className='top-manager-name'>{item}</p>
+                                        <ScrollReveal>
+                                            <h2 className='position-topmanager'>{lang === "th" ? QC[index] : lang === "en" ? "President" : "社長"} </h2>
+                                            <p className='top-manager-name'>{item}</p>
+                                        </ScrollReveal>
                                     </div>
                                 </div>
 
                             )}
                         </div>
 
-                    </div>
+                    </div >
 
                     <div className="PC">
-                        <h1 className="position-qaqc">เจ้าหน้าที่วางแผนการผลิต PC (Production Control) </h1>
-                        <h2 className='description-position'>เป็นผู้ที่รับผิดชอบในการ วางแผน ควบคุม และติดตามการผลิต ให้เป็นไปตามความต้องการของลูกค้า และสอดคล้องกับทรัพยากร</h2>
-                        
+                        <ScrollReveal>
+                            <h1 className="position-qaqc">เจ้าหน้าที่วางแผนการผลิต PC (Production Control) </h1>
+                        </ScrollReveal>
+                        <ScrollReveal>
+                            <h2 className='description-position'>เป็นผู้ที่รับผิดชอบในการ วางแผน ควบคุม และติดตามการผลิต ให้เป็นไปตามความต้องการของลูกค้า และสอดคล้องกับทรัพยากร</h2>
+                        </ScrollReveal>
                         <div className="PC-box">
                             {PCName.map((item, index) =>
 
                                 <div key={index} className="top-manager-box1">
+
                                     <div className="image-top-manager-box">
-                                        <Image src={ImagePC[index]} alt='บริษัท เจไออีไอ (ประเทศไทย) จำกัด เป็นผู้ผลิต ชิ้นส่วนยางรถยนต์คุณภาพสูงสำหรับอุตสาหกรรมยานยนต์ในประเทศไทยและต่างประเทศโรงงานตั้งอยู่ที่จังหวัดชลบุรี พร้อมมาตรฐานสากล' width={1000} height={1000} className='manager-Image' />
+                                        <ScrollReveal>
+                                            <Image src={ImagePC[index]} alt='บริษัท เจไออีไอ (ประเทศไทย) จำกัด เป็นผู้ผลิต ชิ้นส่วนยางรถยนต์คุณภาพสูงสำหรับอุตสาหกรรมยานยนต์ในประเทศไทยและต่างประเทศโรงงานตั้งอยู่ที่จังหวัดชลบุรี พร้อมมาตรฐานสากล' width={1000} height={1000} className='manager-Image' />
+                                        </ScrollReveal>
                                     </div>
+
+
                                     <div className="name-top-manager">
-                                        <h2 className='position-topmanager'>{lang === "th" ? PC[index] : lang === "en" ? "President" : "社長"} </h2>
-                                        <p className='top-manager-name'>{item}</p>
+                                        <ScrollReveal>
+                                            <h2 className='position-topmanager'>{lang === "th" ? PC[index] : lang === "en" ? "President" : "社長"} </h2>
+                                            <p className='top-manager-name'>{item}</p>
+                                        </ScrollReveal>
                                     </div>
                                 </div>
 
@@ -553,41 +608,55 @@ const IT = [
                     </div>
 
                     <div className="PD">
-                        <h1 className="position-qaqc">เจ้าหน้าที่ควบคุมการผลิต PD  (Production Department)</h1>
-                        <h2 className='description-position'>วางแผน ควบคุม และติดตามกระบวนการผลิต ให้เป็นไปตามกำหนดเวลา คุณภาพ และมาตรฐานขององค์กร</h2>
-
+                        <ScrollReveal>
+                            <h1 className="position-qaqc">เจ้าหน้าที่ควบคุมการผลิต PD  (Production Department)</h1>
+                        </ScrollReveal>
+                        <ScrollReveal>
+                            <h2 className='description-position'>วางแผน ควบคุม และติดตามกระบวนการผลิต ให้เป็นไปตามกำหนดเวลา คุณภาพ และมาตรฐานขององค์กร</h2>
+                        </ScrollReveal>
                         <div className="PD-box">
                             {PDName.map((item, index) =>
 
                                 <div key={index} className="top-manager-box1">
                                     <div className="image-top-manager-box">
-                                        <Image src={ImagePD[index]} alt='บริษัท เจไออีไอ (ประเทศไทย) จำกัด เป็นผู้ผลิต ชิ้นส่วนยางรถยนต์คุณภาพสูงสำหรับอุตสาหกรรมยานยนต์ในประเทศไทยและต่างประเทศโรงงานตั้งอยู่ที่จังหวัดชลบุรี พร้อมมาตรฐานสากล' width={1000} height={1000} className='manager-Image' />
+                                        <ScrollReveal>
+                                            <Image src={ImagePD[index]} alt='บริษัท เจไออีไอ (ประเทศไทย) จำกัด เป็นผู้ผลิต ชิ้นส่วนยางรถยนต์คุณภาพสูงสำหรับอุตสาหกรรมยานยนต์ในประเทศไทยและต่างประเทศโรงงานตั้งอยู่ที่จังหวัดชลบุรี พร้อมมาตรฐานสากล' width={1000} height={1000} className='manager-Image' />
+                                        </ScrollReveal>
                                     </div>
                                     <div className="name-top-manager">
-                                        <h2 className='position-topmanager'>{lang === "th" ? PD[index] : lang === "en" ? "President" : "社長"} </h2>
-                                        <p className='top-manager-name'>{item}</p>
+                                        <ScrollReveal>
+                                            <h2 className='position-topmanager'>{lang === "th" ? PD[index] : lang === "en" ? "President" : "社長"} </h2>
+                                            <p className='top-manager-name'>{item}</p>
+                                        </ScrollReveal>
                                     </div>
                                 </div>
 
                             )}
                         </div>
 
-                    </div>
+                    </div >
 
                     <div className="HR">
-                        <h1 className="position-qaqc">เจ้าหน้าที่ฝ่ายบุคคล HR (Human Resources)</h1>
-                        <h2 className='description-position'>บริหารจัดการและดูแลบุคลากรขององค์กร ตั้งแต่การสรรหา การฝึกอบรม การประเมินผล ไปจนถึงการดูแลสวัสดิการ เพื่อสร้างสภาพแวดล้อมการทำงานที่ดีและสนับสนุนเป้าหมายขององค์กร</h2>
-
+                        <ScrollReveal>
+                            <h1 className="position-qaqc">เจ้าหน้าที่ฝ่ายบุคคล HR (Human Resources)</h1>
+                        </ScrollReveal>
+                        <ScrollReveal>
+                            <h2 className='description-position'>บริหารจัดการและดูแลบุคลากรขององค์กร ตั้งแต่การสรรหา การฝึกอบรม การประเมินผล ไปจนถึงการดูแลสวัสดิการ เพื่อสร้างสภาพแวดล้อมการทำงานที่ดีและสนับสนุนเป้าหมายขององค์กร</h2>
+                        </ScrollReveal>
                         <div className="HR-box">
                             {HRName.map((item, index) =>
 
                                 <div key={index} className="top-manager-box1">
                                     <div className="image-top-manager-box">
-                                        <Image src={ImageHR[index]} alt='บริษัท เจไออีไอ (ประเทศไทย) จำกัด เป็นผู้ผลิต ชิ้นส่วนยางรถยนต์คุณภาพสูงสำหรับอุตสาหกรรมยานยนต์ในประเทศไทยและต่างประเทศโรงงานตั้งอยู่ที่จังหวัดชลบุรี พร้อมมาตรฐานสากล' width={1000} height={1000} className='manager-Image' />
+                                        <ScrollReveal>
+                                            <Image src={ImageHR[index]} alt='บริษัท เจไออีไอ (ประเทศไทย) จำกัด เป็นผู้ผลิต ชิ้นส่วนยางรถยนต์คุณภาพสูงสำหรับอุตสาหกรรมยานยนต์ในประเทศไทยและต่างประเทศโรงงานตั้งอยู่ที่จังหวัดชลบุรี พร้อมมาตรฐานสากล' width={1000} height={1000} className='manager-Image' />
+                                        </ScrollReveal>
                                     </div>
                                     <div className="name-top-manager">
-                                        <h2 className='position-topmanager'>{lang === "th" ? HR[index] : lang === "en" ? "President" : "社長"} </h2>
-                                        <p className='top-manager-name'>{item}</p>
+                                        <ScrollReveal>
+                                            <h2 className='position-topmanager'>{lang === "th" ? HR[index] : lang === "en" ? "President" : "社長"} </h2>
+                                            <p className='top-manager-name'>{item}</p>
+                                        </ScrollReveal>
                                     </div>
                                 </div>
 
@@ -598,19 +667,28 @@ const IT = [
 
 
                     <div className="ACC">
-                        <h1 className="position-qaqc">เจ้าหน้าที่ฝ่ายบัญชี (Accounting Officer) </h1>
-                        <h2 className='description-position'>จัดทำ บันทึก และตรวจสอบข้อมูลทางการเงิน ของบริษัท เพื่อให้ฝ่ายบริหารสามารถใช้ข้อมูลประกอบการตัดสินใจ และให้บริษัทปฏิบัติตามกฎหมายภาษีและมาตรฐานบัญชี</h2>
-
+                        <ScrollReveal>
+                            <h1 className="position-qaqc">เจ้าหน้าที่ฝ่ายบัญชี (Accounting Officer) </h1>
+                        </ScrollReveal>
+                        <ScrollReveal>
+                            <h2 className='description-position'>จัดทำ บันทึก และตรวจสอบข้อมูลทางการเงิน ของบริษัท เพื่อให้ฝ่ายบริหารสามารถใช้ข้อมูลประกอบการตัดสินใจ และให้บริษัทปฏิบัติตามกฎหมายภาษีและมาตรฐานบัญชี</h2>
+                        </ScrollReveal>
                         <div className="ACC-box">
                             {ACCName.map((item, index) =>
 
                                 <div key={index} className="top-manager-box1">
                                     <div className="image-top-manager-box">
-                                        <Image src={ImageACC[index]} alt='บริษัท เจไออีไอ (ประเทศไทย) จำกัด เป็นผู้ผลิต ชิ้นส่วนยางรถยนต์คุณภาพสูงสำหรับอุตสาหกรรมยานยนต์ในประเทศไทยและต่างประเทศโรงงานตั้งอยู่ที่จังหวัดชลบุรี พร้อมมาตรฐานสากล' width={1000} height={1000} className='manager-Image' />
+                                        <ScrollReveal>
+                                            <Image src={ImageACC[index]} alt='บริษัท เจไออีไอ (ประเทศไทย) จำกัด เป็นผู้ผลิต ชิ้นส่วนยางรถยนต์คุณภาพสูงสำหรับอุตสาหกรรมยานยนต์ในประเทศไทยและต่างประเทศโรงงานตั้งอยู่ที่จังหวัดชลบุรี พร้อมมาตรฐานสากล' width={1000} height={1000} className='manager-Image' />
+                                        </ScrollReveal>
+
                                     </div>
                                     <div className="name-top-manager">
-                                        <h2 className='position-topmanager'>{lang === "th" ? ACC[index] : lang === "en" ? "President" : "社長"} </h2>
-                                        <p className='top-manager-name'>{item}</p>
+                                        <ScrollReveal>
+                                            <h2 className='position-topmanager'>{lang === "th" ? ACC[index] : lang === "en" ? "President" : "社長"} </h2>
+                                            <p className='top-manager-name'>{item}</p>
+                                        </ScrollReveal>
+
                                     </div>
                                 </div>
 
@@ -621,19 +699,30 @@ const IT = [
 
 
                     <div className="SA">
-                        <h1 className="position-qaqc">เจ้าหน้าที่ฝ่ายขาย (Sales Officer) </h1>
-                        <h2 className='description-position'>นำเสนอสินค้าและบริการของบริษัทแก่ลูกค้า ออกอินวอย</h2>
+                        <ScrollReveal>
+                            <h1 className="position-qaqc">เจ้าหน้าที่ฝ่ายขาย (Sales Officer) </h1>
+                        </ScrollReveal>
+
+                        <ScrollReveal>
+                            <h2 className='description-position'>นำเสนอสินค้าและบริการของบริษัทแก่ลูกค้า ออกอินวอย</h2>
+                        </ScrollReveal>
 
                         <div className="SA-box">
                             {SAName.map((item, index) =>
 
                                 <div key={index} className="top-manager-box1">
                                     <div className="image-top-manager-box">
-                                        <Image src={ImageSA[index]} alt='บริษัท เจไออีไอ (ประเทศไทย) จำกัด เป็นผู้ผลิต ชิ้นส่วนยางรถยนต์คุณภาพสูงสำหรับอุตสาหกรรมยานยนต์ในประเทศไทยและต่างประเทศโรงงานตั้งอยู่ที่จังหวัดชลบุรี พร้อมมาตรฐานสากล' width={1000} height={1000} className='manager-Image' />
+                                        <ScrollReveal>
+                                            <Image src={ImageSA[index]} alt='บริษัท เจไออีไอ (ประเทศไทย) จำกัด เป็นผู้ผลิต ชิ้นส่วนยางรถยนต์คุณภาพสูงสำหรับอุตสาหกรรมยานยนต์ในประเทศไทยและต่างประเทศโรงงานตั้งอยู่ที่จังหวัดชลบุรี พร้อมมาตรฐานสากล' width={1000} height={1000} className='manager-Image' />
+                                        </ScrollReveal>
+
                                     </div>
                                     <div className="name-top-manager">
-                                        <h2 className='position-topmanager'>{lang === "th" ? SA[index] : lang === "en" ? "President" : "社長"} </h2>
-                                        <p className='top-manager-name'>{item}</p>
+                                        <ScrollReveal>
+                                            <h2 className='position-topmanager'>{lang === "th" ? SA[index] : lang === "en" ? "President" : "社長"} </h2>
+                                            <p className='top-manager-name'>{item}</p>
+                                        </ScrollReveal>
+
                                     </div>
                                 </div>
                             )}
@@ -641,20 +730,31 @@ const IT = [
                     </div>
 
 
-                     <div className="IT">
-                        <h1 className="position-qaqc">เจ้าหน้าที่ฝ่าย IT (IT Staff)</h1>
-                        <h2 className='description-position'>ติดตั้ง ดูแล และแก้ไขปัญหาระบบสารสนเทศขององค์กร ทั้งด้านอุปกรณ์คอมพิวเตอร์ โปรแกรม ระบบเครือข่าย และฐานข้อมูล รวมถึงช่วยเหลือพนักงานในการใช้งานด้าน IT</h2>
+                    <div className="IT">
+                        <ScrollReveal>
+
+                            <h1 className="position-qaqc">เจ้าหน้าที่ฝ่าย IT (IT Staff)</h1>
+                        </ScrollReveal>
+                        <ScrollReveal>
+                            <h2 className='description-position'>ติดตั้ง ดูแล และแก้ไขปัญหาระบบสารสนเทศขององค์กร ทั้งด้านอุปกรณ์คอมพิวเตอร์ โปรแกรม ระบบเครือข่าย และฐานข้อมูล รวมถึงช่วยเหลือพนักงานในการใช้งานด้าน IT</h2>
+                        </ScrollReveal>
 
                         <div className="IT-box">
                             {ITName.map((item, index) =>
 
                                 <div key={index} className="top-manager-box1">
                                     <div className="image-top-manager-box">
-                                        <Image src={ImageIT[index]} alt='บริษัท เจไออีไอ (ประเทศไทย) จำกัด เป็นผู้ผลิต ชิ้นส่วนยางรถยนต์คุณภาพสูงสำหรับอุตสาหกรรมยานยนต์ในประเทศไทยและต่างประเทศโรงงานตั้งอยู่ที่จังหวัดชลบุรี พร้อมมาตรฐานสากล' width={1000} height={1000} className='manager-Image' />
+                                        <ScrollReveal>
+                                            <Image src={ImageIT[index]} alt='บริษัท เจไออีไอ (ประเทศไทย) จำกัด เป็นผู้ผลิต ชิ้นส่วนยางรถยนต์คุณภาพสูงสำหรับอุตสาหกรรมยานยนต์ในประเทศไทยและต่างประเทศโรงงานตั้งอยู่ที่จังหวัดชลบุรี พร้อมมาตรฐานสากล' width={1000} height={1000} className='manager-Image' />
+                                        </ScrollReveal>
+
                                     </div>
                                     <div className="name-top-manager">
-                                        <h2 className='position-topmanager'>{lang === "th" ? IT[index] : lang === "en" ? "President" : "社長"} </h2>
-                                        <p className='top-manager-name'>{item}</p>
+                                        <ScrollReveal>
+                                            <h2 className='position-topmanager'>{lang === "th" ? IT[index] : lang === "en" ? "President" : "社長"} </h2>
+                                            <p className='top-manager-name'>{item}</p>
+                                        </ScrollReveal>
+
                                     </div>
                                 </div>
                             )}
@@ -663,19 +763,30 @@ const IT = [
 
 
                     <div className="SE">
-                        <h1 className="position-qaqc">เจ้าหน้าที่ฝ่ายความปลอดภัย (Safety Officer)</h1>
-                        <h2 className='description-position'>ป้องกันไม่ให้เกิดอุบัติเหตุและความเสี่ยง ในสถานประกอบการ ดูแลเรื่องสิ่งแวดล้อมการทำงาน ความปลอดภัยของพนักงาน เครื่องจักร อุปกรณ์ และสถานที่ รวมถึงให้ความรู้แก่พนักงาน</h2>
-                      
+                        <ScrollReveal>
+                            <h1 className="position-qaqc">เจ้าหน้าที่ฝ่ายความปลอดภัย (Safety Officer)</h1>
+                        </ScrollReveal>
+                        <ScrollReveal>
+                            <h2 className='description-position'>ป้องกันไม่ให้เกิดอุบัติเหตุและความเสี่ยง ในสถานประกอบการ ดูแลเรื่องสิ่งแวดล้อมการทำงาน ความปลอดภัยของพนักงาน เครื่องจักร อุปกรณ์ และสถานที่ รวมถึงให้ความรู้แก่พนักงาน</h2>
+                        </ScrollReveal>
+
                         <div className="SE-box">
                             {SEName.map((item, index) =>
 
                                 <div key={index} className="top-manager-box1">
+
                                     <div className="image-top-manager-box">
-                                        <Image src={ImageSE[index]} alt='บริษัท เจไออีไอ (ประเทศไทย) จำกัด เป็นผู้ผลิต ชิ้นส่วนยางรถยนต์คุณภาพสูงสำหรับอุตสาหกรรมยานยนต์ในประเทศไทยและต่างประเทศโรงงานตั้งอยู่ที่จังหวัดชลบุรี พร้อมมาตรฐานสากล' width={1000} height={1000} className='manager-Image' />
+                                        <ScrollReveal>
+                                            <Image src={ImageSE[index]} alt='บริษัท เจไออีไอ (ประเทศไทย) จำกัด เป็นผู้ผลิต ชิ้นส่วนยางรถยนต์คุณภาพสูงสำหรับอุตสาหกรรมยานยนต์ในประเทศไทยและต่างประเทศโรงงานตั้งอยู่ที่จังหวัดชลบุรี พร้อมมาตรฐานสากล' width={1000} height={1000} className='manager-Image' />
+                                        </ScrollReveal>
+
                                     </div>
                                     <div className="name-top-manager">
-                                        <h2 className='position-topmanager'>{lang === "th" ? SE[index] : lang === "en" ? "President" : "社長"} </h2>
-                                        <p className='top-manager-name'>{item}</p>
+                                        <ScrollReveal>
+                                            <h2 className='position-topmanager'>{lang === "th" ? SE[index] : lang === "en" ? "President" : "社長"} </h2>
+                                            <p className='top-manager-name'>{item}</p>
+                                        </ScrollReveal>
+
                                     </div>
                                 </div>
                             )}
@@ -684,19 +795,30 @@ const IT = [
 
 
                     <div className="TE">
-                        <h1 className="position-qaqc">เจ้าหน้าที่ฝ่าย TE (Technical)</h1>
-                        <h2 className='description-position'> ดูแล สนับสนุน และแก้ไขปัญหาทางด้านเทคนิค ของการผลิตและเครื่องจักร เพื่อให้กระบวนการทำงานมีประสิทธิภาพสูงสุด ลดความสูญเสีย และรักษาคุณภาพตามมาตรฐาน</h2>
+                        <ScrollReveal>
+
+                            <h1 className="position-qaqc">เจ้าหน้าที่ฝ่าย TE (Technical)</h1>
+                        </ScrollReveal>
+                        <ScrollReveal>
+                            <h2 className='description-position'> ดูแล สนับสนุน และแก้ไขปัญหาทางด้านเทคนิค ของการผลิตและเครื่องจักร เพื่อให้กระบวนการทำงานมีประสิทธิภาพสูงสุด ลดความสูญเสีย และรักษาคุณภาพตามมาตรฐาน</h2>
+                        </ScrollReveal>
 
                         <div className="TE-box">
                             {TEName.map((item, index) =>
 
                                 <div key={index} className="top-manager-box1">
                                     <div className="image-top-manager-box">
-                                        <Image src={ImageTE[index]} alt='บริษัท เจไออีไอ (ประเทศไทย) จำกัด เป็นผู้ผลิต ชิ้นส่วนยางรถยนต์คุณภาพสูงสำหรับอุตสาหกรรมยานยนต์ในประเทศไทยและต่างประเทศโรงงานตั้งอยู่ที่จังหวัดชลบุรี พร้อมมาตรฐานสากล' width={1000} height={1000} className='manager-Image' />
+                                        <ScrollReveal>
+                                            <Image src={ImageTE[index]} alt='บริษัท เจไออีไอ (ประเทศไทย) จำกัด เป็นผู้ผลิต ชิ้นส่วนยางรถยนต์คุณภาพสูงสำหรับอุตสาหกรรมยานยนต์ในประเทศไทยและต่างประเทศโรงงานตั้งอยู่ที่จังหวัดชลบุรี พร้อมมาตรฐานสากล' width={1000} height={1000} className='manager-Image' />
+                                        </ScrollReveal>
+
                                     </div>
                                     <div className="name-top-manager">
-                                        <h2 className='position-topmanager'>{lang === "th" ? TE[index] : lang === "en" ? "President" : "社長"} </h2>
-                                        <p className='top-manager-name'>{item}</p>
+                                        <ScrollReveal>
+                                            <h2 className='position-topmanager'>{lang === "th" ? TE[index] : lang === "en" ? "President" : "社長"} </h2>
+                                            <p className='top-manager-name'>{item}</p>
+                                        </ScrollReveal>
+
                                     </div>
                                 </div>
                             )}
@@ -705,19 +827,29 @@ const IT = [
 
 
                     <div className="WH">
-                        <h1 className="position-qaqc">เจ้าหน้าที่ฝ่ายคลังสินค้า (Warehouse Officer)</h1>
-                        <h2 className='description-position'>บริหารจัดการคลังสินค้า ตั้งแต่การรับสินค้า ตรวจสอบคุณภาพ การจัดเก็บ จ่ายออก และดูแลสต็อกให้ถูกต้อง รวมถึงการจัดทำรายงานเพื่อให้ข้อมูลที่ถูกต้องแก่ฝ่ายที่เกี่ยวข้อง</h2>
+                        <ScrollReveal>
+                            <h1 className="position-qaqc">เจ้าหน้าที่ฝ่ายคลังสินค้า (Warehouse Officer)</h1>
+                        </ScrollReveal>
+                        <ScrollReveal>
+                            <h2 className='description-position'>บริหารจัดการคลังสินค้า ตั้งแต่การรับสินค้า ตรวจสอบคุณภาพ การจัดเก็บ จ่ายออก และดูแลสต็อกให้ถูกต้อง รวมถึงการจัดทำรายงานเพื่อให้ข้อมูลที่ถูกต้องแก่ฝ่ายที่เกี่ยวข้อง</h2>
+                        </ScrollReveal>
 
                         <div className="WH-box">
                             {WHName.map((item, index) =>
 
                                 <div key={index} className="top-manager-box1">
                                     <div className="image-top-manager-box">
-                                        <Image src={ImageWH[index]} alt='บริษัท เจไออีไอ (ประเทศไทย) จำกัด เป็นผู้ผลิต ชิ้นส่วนยางรถยนต์คุณภาพสูงสำหรับอุตสาหกรรมยานยนต์ในประเทศไทยและต่างประเทศโรงงานตั้งอยู่ที่จังหวัดชลบุรี พร้อมมาตรฐานสากล' width={1000} height={1000} className='manager-Image' />
+                                        <ScrollReveal>
+                                            <Image src={ImageWH[index]} alt='บริษัท เจไออีไอ (ประเทศไทย) จำกัด เป็นผู้ผลิต ชิ้นส่วนยางรถยนต์คุณภาพสูงสำหรับอุตสาหกรรมยานยนต์ในประเทศไทยและต่างประเทศโรงงานตั้งอยู่ที่จังหวัดชลบุรี พร้อมมาตรฐานสากล' width={1000} height={1000} className='manager-Image' />
+                                        </ScrollReveal>
+
                                     </div>
                                     <div className="name-top-manager">
-                                        <h2 className='position-topmanager'>{lang === "th" ? WH[index] : lang === "en" ? "President" : "社長"} </h2>
-                                        <p className='top-manager-name'>{item}</p>
+                                        <ScrollReveal>
+                                            <h2 className='position-topmanager'>{lang === "th" ? WH[index] : lang === "en" ? "President" : "社長"} </h2>
+                                            <p className='top-manager-name'>{item}</p>
+                                        </ScrollReveal>
+
                                     </div>
                                 </div>
                             )}
@@ -725,19 +857,29 @@ const IT = [
                     </div>
 
                     <div className="PUR">
-                        <h1 className="position-qaqc">เจ้าหน้าที่ฝ่ายจัดซื้อ (Purchasing Officer)</h1>
-                        <h2 className='description-position'>สรรหา คัดเลือก ต่อรอง และสั่งซื้อ วัตถุดิบ อะไหล่ เครื่องจักร อุปกรณ์สำนักงาน รวมถึงบริการต่าง ๆ ที่จำเป็นต่อการดำเนินงานขององค์กร พร้อมทั้งสร้างและรักษาความสัมพันธ์กับซัพพลายเออร์</h2>
+                        <ScrollReveal>
+                            <h1 className="position-qaqc">เจ้าหน้าที่ฝ่ายจัดซื้อ (Purchasing Officer)</h1>
+                        </ScrollReveal>
+                        <ScrollReveal>
+                            <h2 className='description-position'>สรรหา คัดเลือก ต่อรอง และสั่งซื้อ วัตถุดิบ อะไหล่ เครื่องจักร อุปกรณ์สำนักงาน รวมถึงบริการต่าง ๆ ที่จำเป็นต่อการดำเนินงานขององค์กร พร้อมทั้งสร้างและรักษาความสัมพันธ์กับซัพพลายเออร์</h2>
+                        </ScrollReveal>
 
                         <div className="PUR-box">
                             {PURName.map((item, index) =>
 
                                 <div key={index} className="top-manager-box1">
                                     <div className="image-top-manager-box">
-                                        <Image src={ImagePUR[index]} alt='บริษัท เจไออีไอ (ประเทศไทย) จำกัด เป็นผู้ผลิต ชิ้นส่วนยางรถยนต์คุณภาพสูงสำหรับอุตสาหกรรมยานยนต์ในประเทศไทยและต่างประเทศโรงงานตั้งอยู่ที่จังหวัดชลบุรี พร้อมมาตรฐานสากล' width={1000} height={1000} className='manager-Image' />
+                                        <ScrollReveal>
+                                            <Image src={ImagePUR[index]} alt='บริษัท เจไออีไอ (ประเทศไทย) จำกัด เป็นผู้ผลิต ชิ้นส่วนยางรถยนต์คุณภาพสูงสำหรับอุตสาหกรรมยานยนต์ในประเทศไทยและต่างประเทศโรงงานตั้งอยู่ที่จังหวัดชลบุรี พร้อมมาตรฐานสากล' width={1000} height={1000} className='manager-Image' />
+                                        </ScrollReveal>
+
                                     </div>
                                     <div className="name-top-manager">
-                                        <h2 className='position-topmanager'>{lang === "th" ? PUR[index] : lang === "en" ? "President" : "社長"} </h2>
-                                        <p className='top-manager-name'>{item}</p>
+                                        <ScrollReveal>
+                                            <h2 className='position-topmanager'>{lang === "th" ? PUR[index] : lang === "en" ? "President" : "社長"} </h2>
+                                            <p className='top-manager-name'>{item}</p>
+                                        </ScrollReveal>
+
                                     </div>
                                 </div>
                             )}
@@ -745,8 +887,8 @@ const IT = [
                     </div>
 
 
-                </div>
-            </div>
+                </div >
+            </div >
 
             <div className="partners-box">
                 <div className="partners-text">
