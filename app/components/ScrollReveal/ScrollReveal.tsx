@@ -30,7 +30,7 @@ export default function ScrollReveal({ children, className = '' }: ScrollRevealP
     <div
       ref={ref}
       className={`${className} transition-all duration-700 ease-out transform ${
-        visible ? ' translate-y-0' : 'translate-y-50'
+        visible ? ' translate-y-0' : 'translate-y-30'
       }`}
     >
       {children}

@@ -145,20 +145,15 @@ export default function About() {
         'PD STAFF',
     ]
     const PDName = [
-
         'Mr.Athiwat Natacha (Num)',
         'Ms.Sakaodeuan Limpakdee (Bee)',
         'Ms.Nattha Masuk (Nut)',
-
     ]
     const ImagePD = [
         '/PD/num.png',
         '/PD/be.png',
         '/PD/nutty.png',
-
     ]
-
-
     const HR = [
         'HR MANAGER',
         'ASST.LEADER',
@@ -176,9 +171,7 @@ export default function About() {
         '/HR/ice.png',
         '/HR/jill.png',
         '/HR/game.png',
-
     ]
-
     const ACC = [
         'ACC LEADER',
         'ASST.LEADER',

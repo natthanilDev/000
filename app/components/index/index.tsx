@@ -324,7 +324,6 @@ export default function Home() {
                                                         {lang === "th" ? "ช่วยให้อากาศจากแอร์ไม่รั่วออก และกันอากาศร้อนจากภายนอกไม่ให้เข้ามา" : lang === "en" ? "Prevents air from the AC from leaking out and blocks hot air from entering from outside." : "エアコンの空気が漏れないようにし、外からの熱い空気の侵入を防ぐ"}
                                                     </p>
                                                 </ScrollReveal>
-
                                             </li>
                                             <li className="data-description">
                                                 <ScrollReveal>
@@ -333,21 +332,15 @@ export default function Home() {
                                                         {lang === "th" ? "เมื่อปิดประตูจะนุ่มขึ้น ไม่กระแทกแข็งเกินไป" : lang === "en" ? "The door closes more softly, without slamming harshly. " : "ドアを閉めるときに柔らかく閉まり、強くぶつからない"}
                                                     </p>
                                                 </ScrollReveal>
-
                                             </li>
-
                                         </ul>
                                     </div>
                                 </div>
-
 
                             </div>
                         </div>
                     </div>
                 </div>
-
-
-
 
 
                 <div className="partner-homepage">
@@ -356,9 +349,8 @@ export default function Home() {
                     <div className="image-logo-partner-homepage">
                         {partner.map((image, index) => (
                             <ScrollReveal key={index}>
-                                <Image  className='image-partner-homepage' src={image} alt='' width={1000} height={1000} loading="lazy" />
+                                <Image  className='image-partner-homepage' src={image} alt='โรงงานผลิตชิ้นส่วนยางรถยนต์มาตรฐานสากล ISO & IATF16949 ที่ชลบุรี ประเทศไทย' width={1000} height={1000} loading="lazy" />
                             </ScrollReveal>
-
                         ))}
                     </div>
                 </div>

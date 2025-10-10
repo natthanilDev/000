@@ -4,6 +4,8 @@ import { motion, AnimatePresence } from "framer-motion";
 import Head from "next/head";
 import Iso_btn from "../iso_btn/iso_btn";
 import Image from "next/image";
+import ScrollReveal from "../../components/ScrollReveal/ScrollReveal";
+
 export default function Iso14001() {
   const [selectedImg, setSelectedImg] = useState<string | null>(null);
   const [lang, setLang] = useState<'th' | 'en' | 'jp'>('th');
@@ -45,32 +47,37 @@ export default function Iso14001() {
 
       <section className="p-6">
         <header>
-          <h1 className="ISO9001 text-center text-3xl font-bold">
-            {lang === "th" ? "การรับรองมาตรฐาน ISO 14001" : lang === "en" ? "ISO 14001 Certification " : "ISO 14001認証"}
-          </h1>
-          <p className="text-iso text-center text-xl mt-2">
-            {lang === 'en' ? " International standard for environmental management systems" : lang === "jp" ? "環境マネジメントシステムの国際規格" : "มาตรฐานระบบการจัดการสิ่งแวดล้อมระดับสากล"}
-          </p>
+          <ScrollReveal>
+            <h1 className="ISO9001 text-center text-3xl font-bold">
+              {lang === "th" ? "การรับรองมาตรฐาน ISO 14001" : lang === "en" ? "ISO 14001 Certification " : "ISO 14001認証"}
+            </h1>
+          </ScrollReveal>
+          <ScrollReveal>
+            <p className="text-iso text-center text-xl mt-2">
+              {lang === 'en' ? " International standard for environmental management systems" : lang === "jp" ? "環境マネジメントシステムの国際規格" : "มาตรฐานระบบการจัดการสิ่งแวดล้อมระดับสากล"}
+            </p>
+          </ScrollReveal>
         </header>
 
         <div className="line my-4 mx-auto w-20 border-b-2 border-gray-300" />
 
         {/* Gallery */}
-        <div className="image-iso-box flex justify-center items-center gap-4 mt-6">
-          {images.map((image, index) => (
-            <Image
-              width={1000}
-              height={1000}
-              priority
-              key={index}
-              src={image.src}
-              alt={image.alt}
-              className="rounded-lg shadow-md cursor-pointer hover:scale-105 transition-transform duration-300 w-80"
-              onClick={() => setSelectedImg(image.src)}
-            />
-          ))}
-        </div>
-
+        <ScrollReveal>
+          <div className="image-iso-box flex justify-center items-center gap-4 mt-6">
+            {images.map((image, index) => (
+              <Image
+                width={1000}
+                height={1000}
+                priority
+                key={index}
+                src={image.src}
+                alt={image.alt}
+                className="rounded-lg shadow-md cursor-pointer hover:scale-105 transition-transform duration-300 w-80"
+                onClick={() => setSelectedImg(image.src)}
+              />
+            ))}
+          </div>
+        </ScrollReveal>
         {/* Modal */}
         <AnimatePresence>
           {selectedImg && (
@@ -95,13 +102,18 @@ export default function Iso14001() {
 
 
         <div className="iso-box-description">
-          <h2 className="iso-name">ISO 14001</h2>
-          <p className="description-iso">{lang === "th" ? "ISO 14001 คือมาตรฐานสากลสำหรับ ระบบการจัดการสิ่งแวดล้อม (Environmental Management System: EMS) ที่กำหนดโดยองค์การมาตรฐานสากล (ISO) เพื่อให้องค์กรสามารถควบคุมและลดผลกระทบต่อสิ่งแวดล้อมจากการดำเนินงานของตน" : lang === "en" ? "ISO 14001 is an international standard for Environmental Management Systems (EMS) established by the International Organization for Standardization (ISO). It enables organizations to control and reduce the environmental impact of their operations." : " ISO 14001は、国際標準化機構（ISO）が定めた環境マネジメントシステム（EMS）の国際規格です。組織が事業活動による環境への影響を管理し、低減することを可能にします。"} </p>
+          <ScrollReveal>
+            <h2 className="iso-name">ISO 14001</h2>
+          </ScrollReveal>
+          <ScrollReveal>
+            <p className="description-iso">{lang === "th" ? "ISO 14001 คือมาตรฐานสากลสำหรับ ระบบการจัดการสิ่งแวดล้อม (Environmental Management System: EMS) ที่กำหนดโดยองค์การมาตรฐานสากล (ISO) เพื่อให้องค์กรสามารถควบคุมและลดผลกระทบต่อสิ่งแวดล้อมจากการดำเนินงานของตน" : lang === "en" ? "ISO 14001 is an international standard for Environmental Management Systems (EMS) established by the International Organization for Standardization (ISO). It enables organizations to control and reduce the environmental impact of their operations." : " ISO 14001は、国際標準化機構（ISO）が定めた環境マネジメントシステム（EMS）の国際規格です。組織が事業活動による環境への影響を管理し、低減することを可能にします。"} </p>
+          </ScrollReveal>
         </div>
 
 
-
-        <Iso_btn />
+        <ScrollReveal>
+          <Iso_btn />
+        </ScrollReveal>
       </section>
     </>
   );

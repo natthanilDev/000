@@ -3228,15 +3228,7 @@ h4 {
 
 }
 
-.content-card {
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  /* จำกัดแค่ 3 บรรทัด */
-  line-clamp: 3;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
+
 
 @media screen and (max-width : 1024px) {
   .container-card {
@@ -3301,7 +3293,9 @@ h4 {
   border-radius: 6px;
 
 }
-
+.preview-text{
+  color: #cbcbcb;
+}
 .title-news-page {
   padding: 50px 0 30px 0;
 
@@ -3991,7 +3985,9 @@ h4 {
   transition: all ease 0.35s;
 }
 
-
+.product-card{
+  margin-top: 20px;
+}
 
 .product-card-box {
   box-shadow: 0 0 2px #959595;
@@ -4026,8 +4022,8 @@ h4 {
 
 .space-part {
   display: -webkit-box;
-  -webkit-line-clamp: 2;
-  line-clamp: 2;
+  -webkit-line-clamp: 4;
+  line-clamp: 4;
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -4048,6 +4044,8 @@ h4 {
   grid-template-columns: 1fr 1fr;
   padding: 50px;
   gap: 50px;
+  justify-content: center;
+  align-items: center;
 }
 
 .image-product-page {

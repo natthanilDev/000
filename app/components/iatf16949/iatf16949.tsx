@@ -5,6 +5,8 @@ import Head from "next/head";
 import Iso_btn from "../iso_btn/iso_btn";
 import Image from "next/image";
 import { useEffect } from "react";
+import ScrollReveal from "../../components/ScrollReveal/ScrollReveal";
+
 export default function Iatf16949() {
   const [selectedImg, setSelectedImg] = useState<string | null>(null);
 
@@ -52,34 +54,37 @@ export default function Iatf16949() {
 
       <section className="p-6">
         <header>
-          <h1 className="ISO9001 text-center text-3xl font-bold">
-            {lang === 'th' ? "การรับรองมาตรฐาน IATF 16949" : lang === "en" ? "IATF 16949 Certification" : "IATF 16949認証"}
-          </h1>
-          <p className="text-iso text-center text-xl mt-2">
-            {lang === "th" ? " มาตรฐานระบบบริหารคุณภาพสำหรับอุตสาหกรรมยานยนต์" : lang === "en" ? " Quality management system standard for the automotive industry" : " 自動車産業向けの品質マネジメントシステム規格"}
-
-
-
-          </p>
+          <ScrollReveal>
+            <h1 className="ISO9001 text-center text-3xl font-bold">
+              {lang === 'th' ? "การรับรองมาตรฐาน IATF 16949" : lang === "en" ? "IATF 16949 Certification" : "IATF 16949認証"}
+            </h1>
+          </ScrollReveal>
+          <ScrollReveal>
+            <p className="text-iso text-center text-xl mt-2">
+              {lang === "th" ? " มาตรฐานระบบบริหารคุณภาพสำหรับอุตสาหกรรมยานยนต์" : lang === "en" ? " Quality management system standard for the automotive industry" : " 自動車産業向けの品質マネジメントシステム規格"}
+            </p>
+          </ScrollReveal>
         </header>
 
         <div className="line my-4 mx-auto w-20 border-b-2 border-gray-300" />
 
-        {/* Gallery */}
-        <div className="image-iso-box flex justify-center items-center gap-4 mt-6">
-          {images.map((image, index) => (
-            <Image
-              width={1000}
-              height={1000}
-              key={index}
-              src={image.src}
-              alt={image.alt}
-              className="rounded-lg shadow-md cursor-pointer hover:scale-105 transition-transform duration-300 w-80"
-              onClick={() => setSelectedImg(image.src)}
-            />
-          ))}
-        </div>
+        <ScrollReveal>
+          <div className="image-iso-box flex justify-center items-center gap-4 mt-6">
 
+            {images.map((image, index) => (
+              <Image
+                width={1000}
+                height={1000}
+                key={index}
+                src={image.src}
+                alt={image.alt}
+                className="rounded-lg shadow-md cursor-pointer hover:scale-105 transition-transform duration-300 w-80"
+                onClick={() => setSelectedImg(image.src)}
+              />
+            ))}
+
+          </div>
+        </ScrollReveal>
         {/* Modal */}
         <AnimatePresence>
           {selectedImg && (
@@ -102,13 +107,19 @@ export default function Iatf16949() {
           )}
         </AnimatePresence>
         <div className="iso-box-description">
-          <h2 className="iso-name">IATF 16949</h2>
-          <p className="description-iso"> {lang === "th" ? "IATF 16949 คือมาตรฐานระบบการจัดการคุณภาพเฉพาะสำหรับอุตสาหกรรมยานยนต์ กำหนดโดย International Automotive Task Force (IATF) ร่วมกับ ISO โดยอ้างอิงจาก ISO 9001 และเพิ่มข้อกำหนดเฉพาะสำหรับการผลิตชิ้นส่วนยานยนต์และบริการที่เกี่ยวข้อง" : lang === "en" ? "IATF 16949 is a quality management system standard specifically for the automotive industry, established by the International Automotive Task Force (IATF) in collaboration with ISO. It is based on ISO 9001 and includes additional requirements for the production of automotive parts and related services." : "IATF 16949は、自動車産業向けに特化した品質マネジメントシステム規格であり、国際自動車タスクフォース（IATF）がISOと共同で策定しました。この規格はISO 9001を基盤とし、自動車部品の製造および関連サービスに関する追加要件を含んでいます。"}
-          </p>
+          <ScrollReveal>
+            <h2 className="iso-name">IATF 16949</h2>
+          </ScrollReveal>
+          <ScrollReveal>
+            <p className="description-iso"> {lang === "th" ? "IATF 16949 คือมาตรฐานระบบการจัดการคุณภาพเฉพาะสำหรับอุตสาหกรรมยานยนต์ กำหนดโดย International Automotive Task Force (IATF) ร่วมกับ ISO โดยอ้างอิงจาก ISO 9001 และเพิ่มข้อกำหนดเฉพาะสำหรับการผลิตชิ้นส่วนยานยนต์และบริการที่เกี่ยวข้อง" : lang === "en" ? "IATF 16949 is a quality management system standard specifically for the automotive industry, established by the International Automotive Task Force (IATF) in collaboration with ISO. It is based on ISO 9001 and includes additional requirements for the production of automotive parts and related services." : "IATF 16949は、自動車産業向けに特化した品質マネジメントシステム規格であり、国際自動車タスクフォース（IATF）がISOと共同で策定しました。この規格はISO 9001を基盤とし、自動車部品の製造および関連サービスに関する追加要件を含んでいます。"}
+            </p>
+          </ScrollReveal>
         </div>
+        <ScrollReveal>
+          <Iso_btn />
+        </ScrollReveal>
 
 
-        <Iso_btn />
       </section>
     </>
   );
