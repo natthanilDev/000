@@ -60,46 +60,75 @@ export default function Home() {
         <>
             {/* 🔹 SEO Meta Tags */}
             <Head>
-                <title>
-                    JIEI Thailand | Automotive Rubber Parts Manufacturer in Chonburi
-                </title>
+                {/* ✅ Title & Meta Description */}
+                <title>JIEI Thailand | ผู้ผลิตชิ้นส่วนยางรถยนต์ในชลบุรี มาตรฐาน ISO IATF16949</title>
                 <meta
                     name="description"
-                    content="JIEI Thailand - ผู้ผลิตชิ้นส่วนยางรถยนต์ เช่น Engine Mounts, Suspension Bushings, Seals & Gaskets และ Custom Rubber Parts ในชลบุรี ประเทศไทย"
+                    content="JIEI Thailand โรงงานผู้ผลิตชิ้นส่วนยางรถยนต์มาตรฐานสากล ISO9001, ISO14001, IATF16949 ตั้งอยู่ที่ชลบุรี ผลิตยางกันเสียง ซีลยาง ยางขอบประตูรถยนต์ และชิ้นส่วนยางอุตสาหกรรม ส่งออกทั่วโลก"
+                />
+                <meta
+                    name="keywords"
+                    content="ผู้ผลิตชิ้นส่วนยางรถยนต์, โรงงานยางรถยนต์, ยางขอบประตูรถยนต์, Rubber Parts, Automotive Rubber Seals, ISO, IATF16949, JIEI Thailand, ชลบุรี"
                 />
                 <link rel="canonical" href="https://www.jiei-thai.co.th/" />
                 <meta name="robots" content="index, follow" />
 
-                {/* Hreflang สำหรับหลายภาษา */}
-                <link rel="alternate" href="https://www.jiei-thai.co.th/" hrefLang="th" />
-                <link rel="alternate" href="https://www.jiei-thai.co.th/" hrefLang="x-default" />
-                {/* Open Graph */}
+                {/* ✅ Open Graph / Facebook */}
                 <meta property="og:type" content="website" />
-                <meta property="og:title" content="JIEI Thailand - Automotive Rubber Parts Manufacturer" />
-                <meta property="og:description" content="โรงงานผลิตชิ้นส่วนยางรถยนต์มาตรฐานสากล ISO & IATF16949 ที่ชลบุรี ประเทศไทย" />
-                <meta property="og:url" content="https://www.jiei-thai.co.th/" />
+                <meta property="og:title" content="JIEI Thailand | ผู้ผลิตชิ้นส่วนยางรถยนต์ในชลบุรี" />
+                <meta property="og:description" content="โรงงานผลิตชิ้นส่วนยางรถยนต์มาตรฐาน ISO & IATF16949 ผลิตซีลยาง ยางขอบประตูรถยนต์ ยางกันสั่นสะเทือน ส่งออกทั่วโลก" />
                 <meta property="og:image" content="https://www.jiei-thai.co.th/factory-jiei-thailand.jpg" />
+                <meta property="og:url" content="https://www.jiei-thai.co.th/" />
                 <meta property="og:locale" content="th_TH" />
 
-                {/* Twitter Card */}
+                {/* ✅ Twitter */}
                 <meta name="twitter:card" content="summary_large_image" />
-                <meta name="twitter:title" content="JIEI Thailand - Automotive Rubber Parts" />
-                <meta name="twitter:description" content="ผู้ผลิตชิ้นส่วนยางรถยนต์คุณภาพสูงในประเทศไทย" />
+                <meta name="twitter:title" content="JIEI Thailand - Automotive Rubber Manufacturer" />
+                <meta name="twitter:description" content="โรงงานผลิตชิ้นส่วนยางรถยนต์คุณภาพสูงในประเทศไทย มาตรฐาน ISO IATF16949" />
                 <meta name="twitter:image" content="https://www.jiei-thai.co.th/factory-jiei-thailand.jpg" />
-                <meta
-                    name="description"
-                    content={
-                        lang === "th"
-                            ? "JIEI Thailand - ผู้ผลิตชิ้นส่วนยางรถยนต์ เช่น Engine Mounts, Suspension Bushings, Seals & Gaskets และ Custom Rubber Parts ในชลบุรี ประเทศไทย"
-                            : lang === "en"
-                                ? "JIEI Thailand - Manufacturer of automotive rubber parts such as engine mounts, suspension bushings, seals & gaskets, and custom rubber components in Chonburi, Thailand."
-                                : "JIEIタイランド - エンジンマウント、サスペンションブッシュ、シール＆ガスケット、カスタムゴム部品などを製造するタイ・チョンブリーの自動車用ゴム部品メーカー。"
-                    }
-                />
-                {/* Preload Video for Performance */}
-                <link rel="preload" as="video" href="/intro.mp4" type="video/mp4" />
-                <link rel="preload" as="video" href="/background-video.mp4" type="video/mp4" />
 
+                {/* ✅ Structured Data / Schema */}
+                <script
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{
+                        __html: JSON.stringify({
+                            "@context": "https://schema.org",
+                            "@type": "Organization",
+                            name: "JIEI Thailand Co., Ltd.",
+                            url: "https://www.jiei-thai.co.th",
+                            logo: "https://www.jiei-thai.co.th/jiei-thailand-logo.png",
+                            sameAs: [
+                                "https://www.facebook.com/jieithailand",
+                                "https://www.linkedin.com/company/jiei-thailand"
+                            ],
+                            address: {
+                                "@type": "PostalAddress",
+                                streetAddress: "180/3 Moo 6, T. Bueng, A. Sriracha",
+                                addressLocality: "Chonburi",
+                                postalCode: "20230",
+                                addressCountry: "TH"
+                            },
+                            contactPoint: [{
+                                "@type": "ContactPoint",
+                                telephone: "+66-33-136581-4",
+                                contactType: "Customer Service",
+                                areaServed: "TH",
+                                availableLanguage: ["Thai", "English", "Japanese"]
+                            }],
+                            description:
+                                "โรงงานผู้ผลิตชิ้นส่วนยางรถยนต์มาตรฐานสากลในชลบุรี ผลิตซีลยาง ยางขอบประตูรถยนต์ ยางกันสั่นสะเทือน และยางอุตสาหกรรม",
+                            makesOffer: [{
+                                "@type": "Offer",
+                                itemOffered: {
+                                    "@type": "Product",
+                                    name: "ยางขอบประตูรถยนต์",
+                                    category: "Automotive Rubber Parts",
+                                    brand: "JIEI Thailand"
+                                }
+                            }]
+                        })
+                    }}
+                />
             </Head>
 
             <div className="background" >
@@ -121,7 +150,18 @@ export default function Home() {
                                 <div className="company_name_box">
                                     <h1 className="company_name">
                                         {lang === 'th'
-                                            ? "JIEI Thailand – ผู้ผลิตชิ้นส่วนยางสำหรับยานยนต์ จังหวัดชลบุรี"
+                                            ? "JIEI THAILAND"   //....
+                                            : lang === 'en'
+                                                ? 'JIEI Thailand - Automotive Rubber Parts Manufacturer in Chonburi'
+                                                : 'JIEIタイランド – チョンブリーの自動車用ゴム部品メーカー'}
+                                    </h1>
+
+
+                                </div>
+                                <div className="company_name_box">
+                                    <h1 className="company_name_sub">
+                                        {lang === 'th'
+                                            ? "ผู้ผลิตชิ้นส่วนยางรถยนต์มาตรฐานสากล ISO & IATF16949 ในชลบุรี"   //....
                                             : lang === 'en'
                                                 ? 'JIEI Thailand - Automotive Rubber Parts Manufacturer in Chonburi'
                                                 : 'JIEIタイランド – チョンブリーの自動車用ゴム部品メーカー'}
@@ -130,7 +170,7 @@ export default function Home() {
                                 <div className="description_company_box">
                                     <p className="description_company">
                                         {lang === 'th'
-                                            ? "เราคือผู้ผลิตชิ้นส่วนยางรถยนต์คุณภาพสูงสำหรับอุตสาหกรรมยานยนต์ ด้วยมาตรฐานสากลและการผลิตที่ทันสมัย"
+                                            ? "โรงงานผลิตชิ้นส่วนยางรถยนต์ เช่น ซีลยาง ยางขอบประตูรถยนต์ และยางกันสั่นสะเทือน พร้อมเทคโนโลยีการผลิตทันสมัยและมาตรฐานระดับโลก"
                                             : lang === "en"
                                                 ? "We are a manufacturer of high-quality automotive rubber parts for the automotive industry, built on international standards and advanced production technology."
                                                 : "私たちは、自動車業界向けの高品質な自動車用ゴム部品を製造しており、国際規格と最新の生産技術を備えています。"}
@@ -183,7 +223,7 @@ export default function Home() {
 
                     <div className="why-choose-image">
                         <ScrollReveal>
-                            <Image src={'/Home-car.png'} className='image-iso' alt='โรงงานผลิตชิ้นส่วนยางรถยนต์มาตรฐานสากล ISO & IATF16949 ที่ชลบุรี ประเทศไทย"' width={1000} height={1000} loading="lazy" />
+                            <Image src={'/Home-car.png'} className='image-iso' alt='โรงงานผลิตชิ้นส่วนยางรถยนต์มาตรฐานสากล ISO & IATF16949 ที่ชลบุรี ประเทศไทย"' width={1000} height={1000}  priority/>
                         </ScrollReveal>
                     </div>
 
@@ -221,7 +261,7 @@ export default function Home() {
                             <Image src={'/Jiei(thailand).Co.,Ltd.jpg'} className="image-about-home-page" alt="โรงงานผลิตชิ้นส่วนยางรถยนต์มาตรฐานสากล ISO & IATF16949 ที่ชลบุรี ประเทศไทย" width={1000} height={1000} priority></Image>
                         </ScrollReveal>
                     </div>
-                    
+
                     <div className="about-box-home-page">
 
                         <div className="content-box">
@@ -349,7 +389,7 @@ export default function Home() {
                     <div className="image-logo-partner-homepage">
                         {partner.map((image, index) => (
                             <ScrollReveal key={index}>
-                                <Image  className='image-partner-homepage' src={image} alt='โรงงานผลิตชิ้นส่วนยางรถยนต์มาตรฐานสากล ISO & IATF16949 ที่ชลบุรี ประเทศไทย' width={1000} height={1000} loading="lazy" />
+                                <Image className='image-partner-homepage' src={image} alt='โรงงานผลิตชิ้นส่วนยางรถยนต์มาตรฐานสากล ISO & IATF16949 ที่ชลบุรี ประเทศไทย' width={1000} height={1000} loading="lazy" />
                             </ScrollReveal>
                         ))}
                     </div>

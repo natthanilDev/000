@@ -1,8 +1,7 @@
 'use client';
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Head from "next/head";
-import { useEffect } from "react";
 import Iso_btn from "../iso_btn/iso_btn";
 import Image from "next/image";
 import ScrollReveal from "../../components/ScrollReveal/ScrollReveal";
@@ -14,7 +13,7 @@ export default function Iso9001() {
   const images = [
     {
       src: "/iso9001.png",
-      alt: "ISO 9001 Certification - International Quality Management Standard",
+      alt: "ISO 9001 Certification - International Quality Management Standard by JIEI Thailand",
     },
   ];
 
@@ -28,41 +27,123 @@ export default function Iso9001() {
   return (
     <>
       <Head>
-        <title> ISO 9001 Certification | International Quality Standards</title>
+        {/* 🔹 Basic SEO */}
+        <title>ISO 9001 Certification | JIEI Thailand - Quality Management Standard</title>
         <meta
           name="description"
-          content="JIEI Thailand is ISO 9001 certified, ensuring international quality standards for automotive rubber parts manufacturing."
+          content="JIEI Thailand Co., Ltd. is ISO 9001 certified, ensuring international quality management standards in automotive rubber parts manufacturing located in Chonburi, Thailand."
         />
         <meta
           name="keywords"
-          content="ISO 9001, quality management, JIEI Thailand, automotive rubber parts, international standard"
+          content="ISO 9001, Quality Management, Automotive Rubber Parts, JIEI Thailand, Chonburi Manufacturer, Quality Standard, IATF 16949, Automotive Industry Thailand"
         />
+
+        {/* 🔹 Canonical */}
+        <link rel="canonical" href="https://www.jiei-thai.co.th/iso9001" />
+
+        {/* 🔹 Open Graph */}
         <meta property="og:title" content="ISO 9001 Certification - JIEI Thailand" />
         <meta
           property="og:description"
-          content="ISO 9001 Certification ensures our commitment to quality in every process."
+          content="ISO 9001 Certification demonstrates JIEI Thailand’s commitment to international quality management standards for automotive parts."
         />
         <meta property="og:image" content="/iso9001.png" />
         <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="JIEI Thailand Co., Ltd." />
+        <meta property="og:locale" content="th_TH" />
+        <meta property="og:locale:alternate" content="en_US" />
+        <meta property="og:locale:alternate" content="ja_JP" />
+
+        {/* 🔹 Alternate Languages */}
+        <link rel="alternate" hrefLang="th" href="https://www.jiei-thai.co.th/iso9001" />
+        <link rel="alternate" hrefLang="en" href="https://www.jiei-thai.co.th/en/iso9001" />
+        <link rel="alternate" hrefLang="ja" href="https://www.jiei-thai.co.th/jp/iso9001" />
+
+        {/* 🔹 Favicon */}
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+        <link rel="manifest" href="/site.webmanifest" />
+
+        {/* 🔹 Schema.org (Organization + Breadcrumbs) */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              name: "JIEI Thailand Co., Ltd.",
+              url: "https://www.jiei-thai.co.th",
+              logo: "https://www.jiei-thai.co.th/jiei-thailand-logo.png",
+              sameAs: [
+                "https://www.facebook.com/jieithailand",
+                "https://www.linkedin.com/company/jiei-thailand"
+              ],
+              contactPoint: [{
+                "@type": "ContactPoint",
+                telephone: "+66-33-136581-4",
+                contactType: "Customer Service",
+                availableLanguage: ["Thai", "English", "Japanese"]
+              }],
+              address: {
+                "@type": "PostalAddress",
+                streetAddress: "180/3 Moo 6, T. Bueng, A. Sriracha",
+                addressLocality: "Chonburi",
+                postalCode: "20230",
+                addressCountry: "TH"
+              }
+            })
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "BreadcrumbList",
+              itemListElement: [
+                {
+                  "@type": "ListItem",
+                  position: 1,
+                  name: "Home",
+                  item: "https://www.jiei-thai.co.th/"
+                },
+                {
+                  "@type": "ListItem",
+                  position: 2,
+                  name: "ISO 9001 Certification",
+                  item: "https://www.jiei-thai.co.th/iso9001"
+                }
+              ]
+            })
+          }}
+        />
       </Head>
 
       <section className="p-6">
         <header>
           <ScrollReveal>
             <h1 className="ISO9001 text-center text-3xl font-bold">
-              {lang === "th" ? "การรับรองมาตรฐาน ISO 9001" : lang === "en" ? "ISO 9001 Certification" : "ISO 9001認証"}
+              {lang === "th"
+                ? "การรับรองมาตรฐาน ISO 9001"
+                : lang === "en"
+                ? "ISO 9001 Certification"
+                : "ISO 9001認証"}
             </h1>
           </ScrollReveal>
           <ScrollReveal>
             <p className="text-iso text-center text-xl mt-2">
-              {lang === "th" ? "มาตรฐานด้านคุณภาพระดับสากลสำหรับอุตสาหกรรมยานยนต์" : lang === "en" ? "International quality standard for the automotive industry" : "自動車産業向けの国際的な品質規格"}
+              {lang === "th"
+                ? "มาตรฐานระบบบริหารคุณภาพระดับสากลสำหรับอุตสาหกรรมยานยนต์"
+                : lang === "en"
+                ? "International quality management standard for the automotive industry"
+                : "自動車産業向けの国際的な品質マネジメント規格"}
             </p>
           </ScrollReveal>
         </header>
 
         <div className="line my-4 mx-auto w-20 border-b-2 border-gray-300" />
 
-        {/* Gallery */}
+        {/* ✅ Gallery */}
         <ScrollReveal>
           <div className="image-iso-box flex justify-center items-center gap-4 mt-6">
             {images.map((image, index) => (
@@ -74,12 +155,14 @@ export default function Iso9001() {
                 height={1000}
                 className="rounded-lg shadow-md cursor-pointer hover:scale-105 transition-transform duration-300 w-80"
                 onClick={() => setSelectedImg(image.src)}
+                priority={index === 0}
+                loading={index === 0 ? "eager" : "lazy"}
               />
             ))}
           </div>
         </ScrollReveal>
 
-        {/* Modal */}
+        {/* ✅ Modal */}
         <AnimatePresence>
           {selectedImg && (
             <motion.div
@@ -101,12 +184,19 @@ export default function Iso9001() {
           )}
         </AnimatePresence>
 
+        {/* ✅ Description */}
         <div className="iso-box-description">
           <ScrollReveal>
             <h2 className="iso-name">ISO 9001</h2>
           </ScrollReveal>
           <ScrollReveal>
-            <p className="description-iso">{lang === 'th' ? "ISO 9001 คือมาตรฐานสากลสำหรับระบบการจัดการคุณภาพ (Quality Management System: QMS) ที่กำหนดโดย องค์การระหว่างประเทศว่าด้วยการมาตรฐาน (ISO) เพื่อช่วยให้องค์กรสามารถสร้างกระบวนการทำงานที่มีคุณภาพ ควบคุมได้ และมีการปรับปรุงอย่างต่อเนื่อง" : lang === "en" ? " ISO 9001 is an international standard for Quality Management Systems (QMS) established by the International Organization for Standardization (ISO). It helps organizations create quality-controlled processes and promotes continuous improvement." : "ISO 9001は、国際標準化機構（ISO）が定めた品質マネジメントシステム（QMS）の国際規格です。組織が品質管理されたプロセスを構築し、継続的な改善を促進するのに役立ちます。"}      </p>
+            <p className="description-iso">
+              {lang === 'th'
+                ? "ISO 9001 คือมาตรฐานสากลสำหรับระบบการจัดการคุณภาพ (Quality Management System: QMS) ที่กำหนดโดยองค์การระหว่างประเทศว่าด้วยการมาตรฐาน (ISO) เพื่อช่วยให้องค์กรสร้างกระบวนการทำงานที่มีคุณภาพ มีการควบคุม และปรับปรุงอย่างต่อเนื่อง เพื่อส่งมอบสินค้าที่มีคุณภาพแก่ลูกค้าอย่างสม่ำเสมอ"
+                : lang === "en"
+                ? "ISO 9001 is an international standard for Quality Management Systems (QMS), established by the International Organization for Standardization (ISO). It helps organizations build consistent, controlled, and continuously improving processes to deliver quality products to customers."
+                : "ISO 9001は、国際標準化機構（ISO）が制定した品質マネジメントシステム（QMS）の国際規格です。品質の一貫性を確保し、継続的な改善を通じてお客様に高品質な製品を提供するための基盤を提供します。"}
+            </p>
           </ScrollReveal>
         </div>
 

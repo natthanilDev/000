@@ -70,74 +70,85 @@ export default function Contact() {
         <meta name="twitter:title" content="Contact Us | JIEI Thailand" />
         <meta name="twitter:description" content="Get in touch with JIEI Thailand. Contact us via phone, email, or visit our address in Chonburi. We’re here to help you!" />
 
-        {/* JSON-LD Structured Data */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
-              "@type": "Organization",
-              "name": "JIEI Thailand",
-              "url": "https://www.jiei-thai.co.th",
-              "logo": "https://www.jiei-thai.co.th/logo.png",
-              "contactPoint": [
+              "@type": "FAQPage",
+              "mainEntity": [
                 {
-                  "@type": "ContactPoint",
-                  "telephone": "033-136581-4",
-                  "contactType": "Customer Service",
-                  "areaServed": "TH",
-                  "availableLanguage": ["Thai", "English"]
+                  "@type": "Question",
+                  "name": "บริษัท เจไออีไอ (ประเทศไทย) จำกัด ผลิตอะไร?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "บริษัท เจไออีไอ (ประเทศไทย) จำกัด เป็นผู้ผลิตชิ้นส่วนยางรถยนต์และยางอุตสาหกรรมคุณภาพสูง สำหรับอุตสาหกรรมยานยนต์ทั้งในและต่างประเทศ"
+                  }
                 },
                 {
-                  "@type": "ContactPoint",
-                  "email": "info@jiei-thai.co.th",
-                  "contactType": "Customer Support",
-                  "areaServed": "TH",
-                  "availableLanguage": ["Thai", "English"]
+                  "@type": "Question",
+                  "name": "โรงงานของ JIEI Thailand อยู่ที่ไหน?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "โรงงานตั้งอยู่ในนิคมอุตสาหกรรมปิ่นทอง 4 จังหวัดชลบุรี ประเทศไทย"
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "ติดต่อบริษัทได้ช่องทางไหนบ้าง?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "สามารถติดต่อได้ทางโทรศัพท์ 033-136581-4 อีเมล info@jiei-thai.co.th หรือกรอกแบบฟอร์มในหน้าเว็บไซต์"
+                  }
                 }
-              ],
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "Pinthong 4 Industrial Estate, Unit G18, 180/3 Moo 6",
-                "addressLocality": "Si Racha",
-                "addressRegion": "Chonburi",
-                "postalCode": "20230",
-                "addressCountry": "Thailand"
-              }
+              ]
             })
           }}
         />
+
+
       </Head>
+      <>
+        <div className="contact-level">
+          <div className="contact-contactUs">
+            <div className="box-w">
+              <h1 className='contactUsTitle'> {lang === 'th' ? "ติดต่อเรา" : lang === "en" ? "CONTACT US" : "お問い合わせ"}</h1>
+              <h2 className='text-title'>ติดต่อโรงงานผลิตชิ้นส่วนยางรถยนต์ JIEI Thailand</h2>
+              <h3 className='content-contact'>เราเป็นผู้ผลิตยางรถยนต์มาตรฐานญี่ปุ่นในจังหวัดชลบุรี</h3>
 
-      <div className="contact-level">
-        <div className="contact-contactUs">
-          <div className="box-w">
-            <h1 className='contactUsTitle'> {lang === 'th' ? "ติดต่อเรา" : lang === "en" ? "CONTACT US" : "お問い合わせ"}</h1>
-            <h5 className='here-you'>  {lang === 'th' ? "เราพร้อมให้ความช่วยเหลือคุณ!" : lang === "en" ? "We’re here to help you!" : "私たちはあなたをサポートするためにここにいます！"}</h5>
-            <div className="line-contact"></div>
+              <h5 className='here-you'>  {lang === 'th' ? "เราพร้อมให้ความช่วยเหลือคุณ!" : lang === "en" ? "We’re here to help you!" : "私たちはあなたをサポートするためにここにいます！"}</h5>
+              <div className="line-contact"></div>
 
-            <div className="container-icon">
-              {icon.map((item, index) => (
-                <Link className='a' href={link[index]} key={index}>
-                  <div  className="contact-box-icon">
-                    <div className="icon">
-                      <i className={item}></i>
+              <div className="container-icon">
+                {icon.map((item, index) => (
+                  <Link className='a' href={link[index]} key={index}>
+                    <div className="contact-box-icon">
+                      <div className="icon">
+                        <i className={item}></i>
+                      </div>
+                      <div className="title-box-icon">
+                        <p className="text-icon">{lang === 'th' ? titleTH[index] : lang === "en" ? titleEN[index] : titleJP[index]}</p>
+                        <p className='link-icon'>{contact[index]}</p>
+                      </div>
                     </div>
-                    <div className="title-box-icon">
-                      <p className="text-icon">{lang === 'th' ? titleTH[index] : lang === "en" ? titleEN[index] : titleJP[index]}</p>
-                      <p className='link-icon'>{contact[index]}</p>
-                    </div>
-                  </div>
-                </Link>
-              ))}
+                  </Link>
+                ))}
+              </div>
             </div>
           </div>
-        </div>
 
-        <div className="contact-form">
-          <Form_contact />
+          <div className="contact-form">
+            <Form_contact />
+
+          </div>
+
+
         </div>
-      </div>
+       
+      </>
+
     </div>
+
+
   )
 }

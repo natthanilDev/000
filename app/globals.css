@@ -531,15 +531,13 @@ a:hover {
 }
 
 .container-Display {
-
-  height: 90vh;
-  margin-top: -60px;
+  height: 100vh;
   display: flex;
   justify-content: center;
   flex-direction: column;
   gap: 60px;
   padding: 50px 100px;
-
+  background-color: #00000060;
 }
 
 .background {
@@ -587,7 +585,7 @@ a:hover {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  gap: 50px;
+  gap: 30px;
   border-left: 5px solid blue;
 }
 
@@ -613,11 +611,20 @@ a:hover {
   color: var(--background);
   font-size: var(--title-topic);
   text-shadow: 0 0 2px #ffffff00;
-  font-weight: bold;
-  font-size: 50px;
-  background-color: #00000083;
+  font-weight: 900;
+  font-size: 100px;
+  line-height: 1.2;
+  letter-spacing: 5px;
+  /* margin-top: -70px; */
 
+}
 
+.company_name_sub {
+  color: var(--background);
+  font-size: var(--title-topic);
+  text-shadow: 0 0 2px #ffffff00;
+
+  font-size: 30px;
 }
 
 .button-box {
@@ -773,17 +780,53 @@ a:hover {
   color: #eee;
 }
 
+@media screen and (max-width : 1860px) {
+  .partner-text {
+    font-size: 30px;
+  }
+
+  .company_name {
+    font-size: 60px;
+  }
+
+
+  .company_name_sub {
+    font-size: 22px;
+  }
+
+  .description_company {
+    font-size: 22px;
+  }
+
+
+
+}
+
 @media screen and (max-width : 1440px) {
   .partner-text {
     font-size: 30px;
   }
+
+  .company_name {
+    font-size: 60px;
+  }
+
+  .company_name_sub {
+    font-size: 16px;
+  }
+
+  .description_company {
+    font-size: 16px;
+  }
+
+
+
 }
 
 @media screen and (max-width : 1024px) {
   .why-choose-we {
     grid-template-columns: 1fr;
     margin-bottom: 100px;
-
   }
 
   /* mama */
@@ -799,18 +842,23 @@ a:hover {
 @media screen and (max-width : 768px) {
 
   .container-Display {
-
-    height: 90vh;
+    height: 110vh;
     margin-top: -60px;
     display: flex;
     justify-content: center;
     flex-direction: column;
     gap: 60px;
     padding: 50px 30px;
+
   }
 
   .company_name {
-    font-size: 30px;
+    font-size: 60px;
+
+  }
+
+  .company_name_sub {
+    font-size: 18px;
   }
 
   .description_company {
@@ -863,6 +911,19 @@ a:hover {
   .video-text {
     font-size: 20px;
     padding: 100px 0 20px 0;
+  }
+
+  .company_name {
+    font-size: 40px;
+
+  }
+
+  .company_name_sub {
+    font-size: 18px;
+  }
+
+  .description_company {
+    font-size: 18px;
   }
 
   .btn_link {
@@ -1808,23 +1869,30 @@ a:hover {
   height: 60vh;
   animation: display_company 10s infinite alternate ease-in-out;
 
+
 }
 
 @keyframes display_company {
   0% {
     background-image: url('/jiei-office.jpg');
+    box-shadow: 0 0 10px 2px #b7b7b7;
   }
 
   30% {
     background-image: url('/JIEI(Thailnad).co.,ltd.jpg');
+    box-shadow: 0 0 10px 2px #000796;
   }
 
   60% {
     background-image: url('/JIEI-New-Factory-scaled.jpg');
+    box-shadow: 0 0 10px 2px #3d47ff;
+
   }
 
   100% {
     background-image: url('/lobby.jpg');
+    box-shadow: 0 0 10px 2px #b7b7b7;
+
   }
 
 }
@@ -1987,7 +2055,7 @@ h4 {
 }
 
 .position-topmanager {
-  font-size: 20px;
+  font-size: 18px;
   text-align: center;
   padding: 10px 10px 0px 10px;
   font-weight: bold;
@@ -2507,7 +2575,7 @@ h4 {
   .top-manager-name {
     font-size: 16px;
   }
-  
+
 }
 
 @media screen and (max-width:426px) {
@@ -3293,9 +3361,11 @@ h4 {
   border-radius: 6px;
 
 }
-.preview-text{
+
+.preview-text {
   color: #cbcbcb;
 }
+
 .title-news-page {
   padding: 50px 0 30px 0;
 
@@ -3373,8 +3443,6 @@ h4 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   height: auto;
-
-
 
 }
 
@@ -3503,6 +3571,20 @@ h4 {
   margin: 50px auto;
 
 }
+
+.text-title {
+  font-size: 26px;
+  color: #fff;
+}
+
+.content-contact {
+  color: #fff;
+  font-size: 26px;
+
+
+}
+
+
 
 .label-input {
   font-size: 16px;
@@ -3766,6 +3848,11 @@ h4 {
     gap: 10px;
 
   }
+
+  .image-iso-box {
+    flex-direction: column;
+
+  }
 }
 
 
@@ -3808,6 +3895,9 @@ h4 {
 .image-iso-box {
   margin: 25px 0 100px 0;
   display: flex;
+  justify-content: center;
+  align-items: center;
+
   gap: 50px;
 
 }
@@ -3985,7 +4075,7 @@ h4 {
   transition: all ease 0.35s;
 }
 
-.product-card{
+.product-card {
   margin-top: 20px;
 }
 

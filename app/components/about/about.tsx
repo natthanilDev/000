@@ -4,6 +4,7 @@ import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link';
 import ScrollReveal from '../ScrollReveal/ScrollReveal';
+import Head from 'next/head';
 export default function About() {
     const [lang, setLang] = useState<'th' | 'en' | 'jp'>('th');
     useEffect(() => {
@@ -65,6 +66,7 @@ export default function About() {
         'Ms.Duangrutai Asavapum (Ja ae)',
         'Ms.Suttinee Pattamanawin (May'
     ]
+
     const QA = [
         'SUPERVISOR/QMR ',
         'ASST.LEADER',
@@ -93,6 +95,7 @@ export default function About() {
         'QC STAFF',
         'QC STAFF',
     ]
+
     const QCName = [
         'Ms.Pornjun Konboon (Aof)',
         'Ms.Nuchjana Pimsan (Gaembum)',
@@ -103,8 +106,8 @@ export default function About() {
         'Ms.Lalana Sriwapee (Biew)',
         'Mr.Teerayut Boonrod (Baw)',
         'Mr.Peerawit Suwanna (Ice)',
-
     ]
+
     const ImageQC = [
         '/QC/aof.png',
         '/QC/gambum.png',
@@ -117,7 +120,6 @@ export default function About() {
         '/QC/ice.png',
     ]
 
-
     const PC = [
         'PC MANAGER',
         'ASST.LEADER',
@@ -125,6 +127,7 @@ export default function About() {
         'PC STAFF',
         'PC STAFF',
     ]
+
     const PCName = [
         'Mr.Werayoot Ingkapakorn (B)',
         'Ms.Larisa Seanchan (Koy)',
@@ -132,6 +135,7 @@ export default function About() {
         'Ms.Phutthika Chotmongkon (Ked)',
         'Mr.Songsak Taothong (Max)',
     ]
+
     const ImagePC = [
         '/PC/be.png',
         '/PC/koy.png',
@@ -139,81 +143,95 @@ export default function About() {
         '/PC/kad.png',
         '/PC/max.png',
     ]
+
     const PD = [
         'ASST.MANAGER',
         'PD STAFF',
         'PD STAFF',
     ]
+
     const PDName = [
         'Mr.Athiwat Natacha (Num)',
         'Ms.Sakaodeuan Limpakdee (Bee)',
         'Ms.Nattha Masuk (Nut)',
     ]
+
     const ImagePD = [
         '/PD/num.png',
         '/PD/be.png',
         '/PD/nutty.png',
     ]
+
     const HR = [
         'HR MANAGER',
         'ASST.LEADER',
         'HR STAFF',
         'HR STAFF',
     ]
+
     const HRName = [
         'Ms.Wipada Singkham (Da)',
         'Ms.Natchaya Nilchom (Ice)',
         'Ms.Jiriyaporn Puttayakul (Jill)',
         'Ms.Natcha Netvichian (Game)',
     ]
+
     const ImageHR = [
         '/HR/da.png',
         '/HR/ice.png',
         '/HR/jill.png',
         '/HR/game.png',
     ]
+
     const ACC = [
         'ACC LEADER',
         'ASST.LEADER',
         'HR STAFF',
 
     ]
+
     const ACCName = [
         'Ms.Monthip Meng-Ourm (Tip)',
         'Ms.Watsana Kumkhonkhaen (Ferm)',
         'Ms.Netchanok Sudongpong (Nampetch)',
 
     ]
+
     const ImageACC = [
         '/ACC/tip.png',
         '/ACC/flean.png',
         '/ACC/numplach.png',
     ]
+
     const SA = [
         'SA MANAGER',
         'SA LEADER',
         'SA LEADER',
 
     ]
+
     const SAName = [
         'Mr. Tanatom Puttisa (Tee)',
         'Mr.Thanasan Kasorn (Boom)',
         'Ms. Thiparat Kamsing (Bow)',
-
     ]
+
     const ImageSA = [
         '/SA/tee.png',
         '/SA/boom.png',
         '/SA/bow.png',
     ]
+
     const IT = [
         'IT STAFF',
         'IT STAFF',
     ]
+
     const ITName = [
         'Mr.Sompong Sae Boon (Pe)',
         'Mr.Natthanil Wannasopa (Newton)',
     ]
+
     const ImageIT = [
         '/IT/pe.png',
         '/IT/newton.png',
@@ -223,10 +241,12 @@ export default function About() {
         'SE LEADER/EMR',
         'SE STAFF',
     ]
+
     const SEName = [
         'Ms.Supreeya Kitbumrung (Faii)',
         'Ms.Suwimon Phoncharoen (Mon)',
     ]
+
     const ImageSE = [
         '/SE/fill.png',
         '/SE/mon.png',
@@ -238,29 +258,33 @@ export default function About() {
         'TE LEADER',
         'ASST.LEADER',
     ]
+
     const TEName = [
         'MrTanit Keawkamphon (Art)',
         'Mr.Pricha Prasoetsang (Num)',
         'Mr.Natphon Cakpila (Ton)',
         'Mr. Yutthakarn Samaknarong (Daew)',
-
     ]
+
     const ImageTE = [
         '/TE/alt.png',
         '/TE/num.png',
         '/TE/ton.png',
         '/TE/deaw.png',
     ]
+
     const WH = [
         'WH LEADER',
         'WH STAFF',
         'WH STAFF',
     ]
+
     const WHName = [
         'Ms.Sukunya Chamali (Tong )',
         'Mrs.Sudarak Srinuan (Kaun)',
         'Ms.Ausanee Duangrit (Pampam)',
     ]
+
     const ImageWH = [
         '/WH/tong.png',
         '/WH/kwan.png',
@@ -270,19 +294,53 @@ export default function About() {
     const PUR = [
         'PUR LEADER',
         'ASST.LEADER',
-
     ]
+
     const PURName = [
         'Ms.Napatsawan Chanapai (Nami)',
         'Ms. Phairin Klinfung (Aom)',
-
     ]
+
     const ImagePUR = [
         '/PUR/nami.png',
         '/PUR/aom.png',
-
     ]
+
     return (
+        <>
+
+  <Head>
+                <title>JIEI Thai | ผู้ผลิตชิ้นส่วนยางรถยนต์ ชลบุรี | Automotive Rubber Parts Manufacturer</title>
+                <meta name="description" content="บริษัท เจไออีไอ (ประเทศไทย) จำกัด ผู้ผลิตชิ้นส่วนยางรถยนต์คุณภาพสูง จังหวัดชลบุรี มาตรฐาน ISO 9001, ISO 14001 และ IATF 16949 สำหรับอุตสาหกรรมยานยนต์ทั่วโลก" />
+                <meta name="keywords" content="JIEI Thai, ผู้ผลิตชิ้นส่วนยางรถยนต์, โรงงานยางรถยนต์ ชลบุรี, Automotive Rubber Parts Thailand, ยางรถยนต์คุณภาพสูง, ISO 9001, IATF 16949" />
+                <meta property="og:title" content="JIEI Thai | ผู้ผลิตชิ้นส่วนยางรถยนต์ ชลบุรี" />
+                <meta property="og:description" content="โรงงานผลิตยางรถยนต์คุณภาพสูงในชลบุรี ได้รับมาตรฐานสากล ISO/IATF16949 พร้อมทีมงานมืออาชีพ" />
+                <meta property="og:image" content="/meta-jiei.jpg" />
+                <meta property="og:url" content="https://jieithai.co.th/about" />
+                <meta name="robots" content="index, follow" />
+                <link rel="canonical" href="https://jieithai.co.th/about" />
+
+                {/* 🔎 Structured Data */}
+                <script type="application/ld+json" dangerouslySetInnerHTML={{
+                    __html: JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@type": "Organization",
+                        "name": "JIEI (Thailand) Co., Ltd.",
+                        "url": "https://jieithai.co.th",
+                        "logo": "https://jieithai.co.th/logo.png",
+                        "description": "ผู้ผลิตชิ้นส่วนยางรถยนต์คุณภาพสูง จังหวัดชลบุรี ได้รับมาตรฐาน ISO/IATF16949",
+                        "address": {
+                            "@type": "PostalAddress",
+                            "streetAddress": "Pinthong 4 Industrial Estate, Unit G18, 180/3 Moo 6, T.Bueng, A.Sriracha, Chonburi 20230",
+                            "addressCountry": "Thailand"
+                        },
+                        "sameAs": [
+                            "https://www.facebook.com/jieithai",
+                            "https://www.linkedin.com/company/jiei-thailand"
+                        ]
+                    })
+                }} />
+            </Head>
         <div className='about-page'>
             <div className="background-company-profile">
                 <div className='j'>
@@ -473,24 +531,26 @@ export default function About() {
                     <ScrollReveal>
                         <div className="manager-group">
 
+                          
                             {manager.map((item, index) =>
-                                <div key={index} className="image-manager1">
-                                    <div className="top-manager-box1">
+
+                                <div key={index} className="top-manager-box1">
+                                    <ScrollReveal>
                                         <div className="image-top-manager-box">
-                                            <ScrollReveal>
-                                                <Image src={item} alt='บริษัท เจไออีไอ (ประเทศไทย) จำกัด เป็นผู้ผลิต ชิ้นส่วนยางรถยนต์คุณภาพสูงสำหรับอุตสาหกรรมยานยนต์ในประเทศไทยและต่างประเทศโรงงานตั้งอยู่ที่จังหวัดชลบุรี พร้อมมาตรฐานสากล' width={1000} height={1000} className='manager-Image' />
-                                            </ScrollReveal>
+                                            <Image src={item} alt='บริษัท เจไออีไอ (ประเทศไทย) จำกัด เป็นผู้ผลิต ชิ้นส่วนยางรถยนต์คุณภาพสูงสำหรับอุตสาหกรรมยานยนต์ในประเทศไทยและต่างประเทศโรงงานตั้งอยู่ที่จังหวัดชลบุรี พร้อมมาตรฐานสากล' width={1000} height={1000} className='manager-Image' />
                                         </div>
-                                        <div className="name-top-manager">
-                                            <ScrollReveal>
-                                                <h2 className='position-topmanager'>{lang === "th" ? department_top[index] : lang === "en" ? "President" : "社長"} </h2>
-                                                <p className='top-manager-name'>{name_manager[index]}</p>
-                                            </ScrollReveal>
-                                        </div>
+                                    </ScrollReveal>
+                                    <div className="name-top-manager">
+                                        <ScrollReveal>
+                                            <h2 className='position-topmanager'>{lang === "th" ? department_top[index] : lang === "en" ? "President" : "社長"} </h2>
+                                            <p className='top-manager-name'>{name_manager[index]}</p>
+                                        </ScrollReveal>
                                     </div>
                                 </div>
+
                             )}
                         </div>
+                        
                     </ScrollReveal>
 
                 </div >
@@ -921,5 +981,6 @@ export default function About() {
                 </div>
             </div>
         </div >
+        </>
     )
 }
