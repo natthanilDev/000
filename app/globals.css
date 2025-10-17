@@ -1934,6 +1934,12 @@ h4 {
 
 
 }
+.content-in-aboutBox{
+  display: flex;
+  align-items: center;
+
+}
+
 
 .table-company-profile {
   box-shadow: 0 0 2px #959595;
@@ -1944,6 +1950,7 @@ h4 {
 
 }
 
+
 .content-inthe-table {
   display: grid;
   grid-template-columns: 0.5fr 1fr;
@@ -1952,6 +1959,8 @@ h4 {
   background-color: #eeeeee;
   font-size: 18px;
   font-weight: bold;
+  justify-content: center;
+  align-items: center;
 }
 
 .content-inthe-table1 {
@@ -1962,7 +1971,8 @@ h4 {
   font-weight: bold;
   color: var(--font-color);
   background-color: #ffffff;
-
+  justify-content: center;
+  align-items: center;
 }
 
 
@@ -2080,6 +2090,9 @@ h4 {
 
 .title-about-text {
   font-weight: bold;
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
 }
 
 .text-employee1 {

@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 export default function Footer() {
-  const currentYear = new Date().getFullYear();
+  const currentYear = new Date().getFullYear().toString();
 
   return (
     <footer itemScope itemType="https://schema.org/Organization">
@@ -131,7 +131,7 @@ export default function Footer() {
                   width="100%"
                   height="150"
                   style={{ border: 0 }}
-                  allowFullScreen={true}
+                  allowFullScreen
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
                 ></iframe>

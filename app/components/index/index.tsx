@@ -149,22 +149,16 @@ export default function Home() {
                             <div className="border-display">
                                 <div className="company_name_box">
                                     <h1 className="company_name">
-                                        {lang === 'th'
-                                            ? "JIEI THAILAND"   //....
-                                            : lang === 'en'
-                                                ? 'JIEI Thailand - Automotive Rubber Parts Manufacturer in Chonburi'
-                                                : 'JIEIタイランド – チョンブリーの自動車用ゴム部品メーカー'}
+                                            JIEI THAILAND   
                                     </h1>
-
-
                                 </div>
                                 <div className="company_name_box">
                                     <h1 className="company_name_sub">
                                         {lang === 'th'
                                             ? "ผู้ผลิตชิ้นส่วนยางรถยนต์มาตรฐานสากล ISO & IATF16949 ในชลบุรี"   //....
                                             : lang === 'en'
-                                                ? 'JIEI Thailand - Automotive Rubber Parts Manufacturer in Chonburi'
-                                                : 'JIEIタイランド – チョンブリーの自動車用ゴム部品メーカー'}
+                                                ? 'Automotive Rubber Parts Manufacturer with ISO & IATF 16949 International Standards, Chonburi, Thailand'
+                                                : 'ISOおよびIATF16949国際規格認証取得の自動車用ゴム部品メーカー（タイ・チョンブリー県）'}
                                     </h1>
                                 </div>
                                 <div className="description_company_box">
