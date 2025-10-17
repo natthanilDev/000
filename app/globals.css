@@ -296,7 +296,7 @@ a:hover {
   display: flex;
   gap: 5px;
   left: 0;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 100%;
   margin-left: -15px;
   overflow: scroll;
@@ -308,6 +308,7 @@ a:hover {
   display: none;
 }
 
+
 .li-product1 {
   width: 100%;
   padding: 100px 50px;
@@ -318,6 +319,8 @@ a:hover {
   background-position: center;
   filter: grayscale(50%);
   transition: all ease .25s;
+
+
 }
 
 .li-product1:hover {
@@ -405,7 +408,9 @@ a:hover {
 .icon-menu-show {
   display: none;
 }
-
+.category-product{
+  cursor: pointer;
+}
 
 
 
@@ -418,7 +423,25 @@ a:hover {
     grid-template-columns: 0.5fr 1fr;
   }
 
+.li-product1{
+  padding: 100px 10px;
+  
+}
+.li-product2{
+  padding: 100px 10px;
 
+}
+.li-product3{
+  padding: 100px 10px;
+
+}
+.li-product4{
+  padding: 100px 10px;
+}
+.ul-product{
+  width: 200%;
+
+}
 
 
   /* ------------------------------------------ NAVBAR */

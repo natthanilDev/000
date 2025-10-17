@@ -106,7 +106,7 @@ export default function Nav() {
                     />
                     <span className="nav-link">
                       <label htmlFor="dropdown-menu">
-                        {lang === 'th' ? "คอลเลกชันสินค้า" : lang === "en" ? "Products Collection" : "製品"}
+                      <span className='category-product'>{lang === 'th' ? "คอลเลกชันสินค้า" : lang === "en" ? "Products Collection" : "製品"}</span>  
                       </label>
                     </span>
                     <i className="chevron-down bi bi-chevron-down"></i>
@@ -142,7 +142,7 @@ export default function Nav() {
                             onClick={closeMenu} href="/products/custom-parts"
                             className="Link-product-class"
                             title="Custom Rubber Parts Manufacturing Thailand">
-                            {lang === 'th' ? "คอลเลกชันสินค้า" : lang === "en" ? "Products Collection" : "すべての製品"}
+                            {lang === 'th' ? "คอลเลกชันผลิตภัณฑ์" : lang === "en" ? "Products Collection" : "すべての製品"}
                           </Link>
                         </li>
                       </ul>
