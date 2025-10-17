@@ -63,7 +63,7 @@ useEffect(() => {
                 <Link href={'/products/seals'} className="link-footer">{lang.includes('th') ? "ซีลและปะเก็น" : lang.includes('en') ? "Seals & Gaskets" : "シール＆ガスケット"}</Link>
               </li>
               <li className='li-footer'>
-                <Link href={'/products/custom-parts'} className="link-footer">{lang.includes('th') ? "คอลเลกชันผลิตภัณฑ์" : lang.includes('en') ? "Product Collection" : "คอลเลกชันผลิตภัณฑ์"}</Link>
+                <Link href={'/products/custom-parts'} className="link-footer">{lang.includes('th') ? "คอลเลกชันผลิตภัณฑ์" : lang.includes('en') ? "Product Collection" : "製品コレクション"}</Link>
               </li>
             </ul>
           </div>
