@@ -150,13 +150,13 @@ export default function Tach() {
 
 
 
-    const Analysis = ['/catiav5.png', '/catiav5.png', '/catiav5.png', '/catiav5.png']
+    const Analysis = ['/dean_r1_c1.jpg', '/dean_r1_c3.jpg', '/dean_r3_c1.jpg', '/dean_r3_c3.jpg']
 
     const contentAnalysisTH = ["การเขียนแบบด้วย CAD", "การวิเคราะห์โครงสร้าง", "การจำลองพฤติกรรมของวัสดุ", "การทดสอบผลิตภัณฑ์"]
     const contentAnalysisEN = ["CAD Drawing", "Structural Analysis", "Material Simulation", "Product Testing"]
     const contentAnalysisJP = ["CAD図面作成", "構造解析", "材料シミュレーション", "製品試験"]
 
-    const materials = ['/catiav5.png', '/catiav5.png', '/catiav5.png', '/catiav5.png']
+    const materials = ['/03_r1_c1.jpg', '/03_r1_c3.jpg', '/03_r1_c5.jpg', '/03_r1_c8.jpg']
 
     const contentMaterialsTH = ['เครื่องทดสอบการรีด', "เครื่องวัดความหนืดแบบ Mooney", "เครื่องทดสอบแรงดึง", "การวิเคราะห์แรงกดอัดและความเค้นสัมผัส"]
     const contentMaterialsEN = ["Test Roll", "Money Viscosity meter", "Tensile strength testing machine", "Compressive load analysis and contact stress analysis"]
@@ -166,7 +166,7 @@ export default function Tach() {
 
 
 
-    const evaluatio = ['/catiav5.png', '/catiav5.png', '/catiav5.png', '/catiav5.png']
+    const evaluatio = ['/04_r1_c1.jpg', '/04_r1_c3.jpg', '/04_r1_c5.jpg', '/04_r1_c8.jpg']
 
     const contentEvaluatioTH = ["เครื่องทดสอบแรงกด", "การกระจายแรงดันบนพื้นผิว", 'การวัดการกระจายแรงดันบนพื้นผิว', "การวัดสมรรถนะการกันเสียงแบบง่าย"]
     const contentEvaluatioEN = ["Load Testing Machine", "Surface Pressure Distribution", "Surface Pressure Distribution Measurement", "Simple Sound Insulation Performance Measurement"]

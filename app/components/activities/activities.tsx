@@ -24,15 +24,15 @@ export default function Page() {
 
   const activities = [
     'COMPANY TRIP SCHEDULE 2025',
-    '1',
+ 
   ];
   const img = [
     '/companyTrip.png',
-    '/JIEI(Thailnad).co.,ltd.jpg',
+    
   ];
   const contentALL = [
     `วันเสาร์ (วันที่1 )06:30 รวมตัวที่บริษัท JIEI (พร้อมชุดลำลองสีสดใส) แจกของที่ระลึก เช่น หมวก + เสื้อทริป 07:00 ออกเดินทางด้วยรถบัส`,
-    '44444444444444444444444444444Lorem ipsum dolor sit amet consectetur adipisicing elit...',
+    
   ];
   const content = [
       `
@@ -72,7 +72,6 @@ export default function Page() {
     <hr>
     `,
     
-    `lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum `,
   ];
 
   const start = (currentPage - 1) * perPage;

@@ -408,7 +408,8 @@ a:hover {
 .icon-menu-show {
   display: none;
 }
-.category-product{
+
+.category-product {
   cursor: pointer;
 }
 
@@ -423,25 +424,29 @@ a:hover {
     grid-template-columns: 0.5fr 1fr;
   }
 
-.li-product1{
-  padding: 100px 10px;
-  
-}
-.li-product2{
-  padding: 100px 10px;
+  .li-product1 {
+    padding: 100px 10px;
 
-}
-.li-product3{
-  padding: 100px 10px;
+  }
 
-}
-.li-product4{
-  padding: 100px 10px;
-}
-.ul-product{
-  width: 200%;
+  .li-product2 {
+    padding: 100px 10px;
 
-}
+  }
+
+  .li-product3 {
+    padding: 100px 10px;
+
+  }
+
+  .li-product4 {
+    padding: 100px 10px;
+  }
+
+  .ul-product {
+    width: 200%;
+
+  }
 
 
   /* ------------------------------------------ NAVBAR */
@@ -1957,7 +1962,8 @@ h4 {
 
 
 }
-.content-in-aboutBox{
+
+.content-in-aboutBox {
   display: flex;
   align-items: center;
 
@@ -3258,7 +3264,7 @@ h4 {
   gap: 50px;
   margin: 50px auto;
   width: 90%;
-
+  transition: all ease 0.25s;
 
 }
 
@@ -3270,6 +3276,7 @@ h4 {
   backdrop-filter: blur(50px);
   background-color: #ffffff;
   box-shadow: 0 0 2px var(--font-color);
+  transition: all ease 0.25s;
 
 }
 
@@ -3284,10 +3291,24 @@ h4 {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #ffffff67;
+    background-color: #00000067;
     max-height: 100%;
+    transition: all ease 0.25s;
 
   }
+}
+.content-card{
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  /* จำกัดแค่ 3 บรรทัด */
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis
+}
+.content-card-box{
+  transition: all ease 0.25s;
+
 }
 
 .Read-more-box {
@@ -3428,19 +3449,16 @@ h4 {
 }
 
 .read-more {
-  color: #1f1f1f;
+  color: #ffffff;
   padding: 10px 0;
   transition: all ease 0.25s;
   font-weight: bold;
 
-
 }
 
 
 
-.read-more:hover {
-  text-decoration: underline;
-}
+
 
 .back-btn {
   padding: 20px 30px;
@@ -3983,6 +4001,11 @@ h4 {
   font-weight: bold;
 
 }
+
+.text-img-box {
+  margin-top: 20px;
+}
+
 
 .design-analysis-box {
   height: 100vh;
