@@ -38,7 +38,7 @@ export default function Nav() {
   const onChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     const selected = e.target.value as 'th' | 'en' | 'jp'
     setLang(selected)
-    console.log(lang)
+
     localStorage.setItem('lang', selected);
 
     localStorage.setItem('lang', selected);
