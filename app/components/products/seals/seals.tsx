@@ -31,7 +31,18 @@ export default function Seals() {
 
   ]
 
-
+  const datePostTH = [
+    '15 สิงหาคม 2023',
+    '20 สิงหาคม 2023',
+  ];
+  const datePostEN = [
+    'August 15, 2023',
+    'August 20, 2023',
+  ];
+  const datePostJP = [
+    '2023年8月15日',
+    '2023年8月20日',
+  ];
 
 
 
@@ -132,19 +143,19 @@ export default function Seals() {
                       window.scrollTo({ top: 0, behavior: 'smooth' })
                     }}>
                     <div className="image-product-part">
-                      
-                        <Image className='image-product' src={image[start + index]} alt='โรงงานผลิตชิ้นส่วนยางรถยนต์มาตรฐานสากล ISO & IATF16949 ที่ชลบุรี ประเทศไทย"' width={1000} height={1000} priority />
-                      
+
+                      <Image className='image-product' src={image[start + index]} alt='โรงงานผลิตชิ้นส่วนยางรถยนต์มาตรฐานสากล ISO & IATF16949 ที่ชลบุรี ประเทศไทย"' width={1000} height={1000} priority />
+
                     </div>
                     <div className="product-box">
                       <div className="product-card">
-                        <h4>{lang === 'th' ?  item : lang === 'en' ? "Product Name" : "Product Name"}</h4>
+                        <h4>{lang === 'th' ? item : lang === 'en' ? "Product Name" : "Product Name"}</h4>
                       </div>
                       <div className="product-description-box">
                         <div className="space-part-box">
 
                           <p className='space-part'>
-                            {lang === 'th' ? description[start + index] : lang === 'en' ? "123" : "456" }
+                            {lang === 'th' ? description[start + index] : lang === 'en' ? "123" : "456"}
                           </p>
 
                         </div>
@@ -153,9 +164,14 @@ export default function Seals() {
                     </div>
                     <div className="preview-product">
                       <div className="text-preview">
-                        <p className="preview-text">{lang === 'th' ? "ดูเพิ่มเติม" : lang == 'en' ? "" : ""}</p> 
+                        <p className="preview-text">{lang === 'th' ? "ดูเพิ่มเติม" : lang == 'en' ? "" : ""}</p>
                       </div>
 
+                    </div>
+                    <div className="posted">
+                      <div className="date_post">
+                        <h6 className='post'>{lang.includes('th') ? datePostTH[index] : lang.includes('en') ? datePostEN[index] : datePostJP[index]}</h6>
+                      </div>
                     </div>
                   </div>
                 ))}

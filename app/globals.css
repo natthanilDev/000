@@ -3239,8 +3239,15 @@ h4 {
   }
 }
 
+.post{
+ font-weight: 600;
 
-
+}
+.posted {
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+}
 
 /* -------------------------------------------------NEWS&BLOG */
 /* .news-bg {
@@ -3266,6 +3273,11 @@ h4 {
   width: 90%;
   transition: all ease 0.25s;
 
+}
+
+.news-box-card {
+  width: 90%;
+  margin: 0 auto;
 }
 
 .box-card {
@@ -3297,7 +3309,8 @@ h4 {
 
   }
 }
-.content-card{
+
+.content-card {
   display: -webkit-box;
   -webkit-line-clamp: 3;
   /* จำกัดแค่ 3 บรรทัด */
@@ -3306,7 +3319,8 @@ h4 {
   overflow: hidden;
   text-overflow: ellipsis
 }
-.content-card-box{
+
+.content-card-box {
   transition: all ease 0.25s;
 
 }
@@ -4118,12 +4132,10 @@ h4 {
 }
 
 .product {
-  padding: 50px 0;
+  padding: 50px 0 50px 0;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   gap: 20px;
-
-
 }
 
 .image-product-part {
@@ -4148,6 +4160,8 @@ h4 {
 }
 
 .product-card-box:hover {
+  transition: all ease 0.25s;
+
   box-shadow:
     0 -2px 2px rgb(252, 233, 233),
     0 2px 2px rgb(228, 255, 228),
@@ -4161,12 +4175,15 @@ h4 {
 
   }
 
+ 
+
 }
 
 
 .product-box {
-  padding: 0 20px 0 20px;
+  padding: 0 20px 30px 20px;
   overflow: hidden;
+
 }
 
 .space-part {
@@ -4228,7 +4245,7 @@ h4 {
     border-bottom: 1px solid #09008d;
     border-radius: 10px;
     height: 100%;
-
+    z-index: 999;
   }
 }
 
