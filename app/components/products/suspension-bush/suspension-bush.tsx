@@ -89,28 +89,27 @@ export default function Page() {
   
   ]
 
-  const revProduct_nameTH = product_nameTH.reverse()
-  const revProduct_nameEN = product_nameEN.reverse()
-  const revProduct_nameJP = product_nameJP.reverse()
+  const revProduct_nameTH = [...product_nameTH].reverse()
+  const revProduct_nameEN = [...product_nameEN].reverse()
+  const revProduct_nameJP = [...product_nameJP].reverse()
 
-  const revDescriptionTH = descriptionTH.reverse()
-  const revDescriptionEN = descriptionEN.reverse()
-  const revDescriptionJP = descriptionJP.reverse()
+  const revDescriptionTH = [...descriptionTH].reverse()
+  const revDescriptionEN = [...descriptionEN].reverse()
+  const revDescriptionJP = [...descriptionJP].reverse()
 
-  const revImage = image.reverse()
+  const revImage = [...image].reverse()
 
-  const revDatePostTH = datePostTH.reverse()
-  const revDatePostEN = datePostEN.reverse()
-  const revDatePostJP = datePostJP.reverse()
+  const revDatePostTH = [...datePostTH].reverse()
+  const revDatePostEN = [...datePostEN].reverse()
+  const revDatePostJP = [...datePostJP].reverse()
 
-  const revDetails_nameTH = details_nameTH.reverse()
-  const revDetails_nameEN = details_nameEN.reverse()
-  const revDetails_nameJP = details_nameJP.reverse()
+  const revDetails_nameTH = [...details_nameTH].reverse()
+  const revDetails_nameEN = [...details_nameEN].reverse()
+  const revDetails_nameJP = [...details_nameJP].reverse()
 
-  const revDetails_productTH = details_productTH.reverse()
-  const revDetails_productEN = details_productEN.reverse()
-  const revDetails_productJP = details_productJP.reverse()
-
+  const revDetails_productTH = [...details_productTH].reverse()
+  const revDetails_productEN = [...details_productEN].reverse()
+  const revDetails_productJP = [...details_productJP].reverse()
 
   const [lang, setLang] = useState<'th' | 'en' | 'jp'>('th');
 
@@ -120,8 +119,6 @@ export default function Page() {
       const storedLang = localStorage.getItem('lang') as 'th' | 'en' | 'jp' | null;
       if (storedLang) setLang(storedLang);
     }
-
-
 
   }, []);
 
