@@ -39,15 +39,36 @@ a:hover {
 
 }
 
-.location-tack{
-    border-radius: 30px;
-    margin-left: 30px;
-    z-index: 999;
-    background-color: #000796;
-    color: #fff;
-    padding: 5px 20px;
+.location-tack {
+  position: absolute;
+  border-radius: 30px;
+  margin-left: 30px;
+  z-index: 999;
+  background-color: #000796;
+  border: 1px solid #000796;
+  box-shadow: 0 0 5px #000796;
+  color: #fff;
+  padding: 8px 20px;
+  margin-top: 20px;
+  transition: all ease 0.5s;
+  cursor: pointer;
+  font-weight: bold;
+}
 
-  }
+.location_link {
+  text-decoration: none;
+  color: #fff;
+  transition: all ease 0.5s;
+  font-weight: bold;
+
+}
+
+.location_link:hover {
+  text-decoration: underline;
+}
+
+
+
 .logo-box {
   display: flex;
   align-items: center;
@@ -236,7 +257,7 @@ a:hover {
   padding-top: 20px;
   overflow: auto;
 
-  
+
 }
 
 
@@ -435,7 +456,7 @@ a:hover {
     grid-template-columns: 0.5fr 1fr;
   }
 
-  
+
 
   .li-product1 {
     padding: 100px 10px;
@@ -859,9 +880,6 @@ a:hover {
   .description_company {
     font-size: 16px;
   }
-
-
-
 }
 
 @media screen and (max-width : 1024px) {
@@ -872,13 +890,15 @@ a:hover {
 
   /* mama */
 
+  .location-tack {
+    display: none;
+  }
 
   .why-choose-image {
     display: none;
 
   }
 }
-
 
 @media screen and (max-width : 768px) {
 
@@ -3254,10 +3274,11 @@ h4 {
   }
 }
 
-.post{
- font-weight: 600;
+.post {
+  font-weight: 600;
 
 }
+
 .posted {
   position: absolute;
   bottom: 0;
@@ -3504,7 +3525,8 @@ h4 {
 
   background-color: #001b88;
 }
-.datePost{
+
+.datePost {
   font-weight: bold;
   /* margin-bottom: 20px; */
 
@@ -4193,7 +4215,7 @@ h4 {
 
   }
 
- 
+
 
 }
 
@@ -4320,7 +4342,7 @@ h4 {
   justify-content: center;
   padding: 10px 30px;
   margin: 0 auto;
-  
+
 }
 
 .product-description-table {
@@ -4578,5 +4600,48 @@ h4 {
 
   .allProduct-text {
     font-size: 16px;
+  }
+}
+
+
+.Top_Link {
+  position: sticky;
+  bottom: 30px;
+  left: 100%;
+  text-decoration: none;
+  margin-left: 50px;
+  width: 100px;
+  transition: all ease 0.55s;
+  animation: upper 1s 0s infinite;
+}
+
+.btn-upto {
+  margin-right: 50px;
+  z-index: -1;
+}
+
+.upIcon {
+  font-size: 50px;
+  color: #000796;
+
+
+}
+
+.upIcon:hover {
+  color: #000dff;
+
+}
+
+@keyframes upper {
+
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+
+
+
+  50% {
+    transform: translateY(-10px);
   }
 }

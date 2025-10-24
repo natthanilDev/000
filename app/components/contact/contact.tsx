@@ -121,7 +121,7 @@ export default function Contact() {
 
               <div className="container-icon">
                 {icon.map((item, index) => (
-                  <Link className='a' href={link[index]} key={index}>
+                  <Link className='a' target='_bank' href={link[index]} key={index}>
                     <div className="contact-box-icon">
                       <div className="icon">
                         <i className={item}></i>

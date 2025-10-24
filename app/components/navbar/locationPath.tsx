@@ -62,7 +62,7 @@ export default function Nav() {
 
   return (
 
-    <header
+    <header id='top'
       className={`header ${scrolled ? "scrolled" : ""}`}
       role="banner"
       aria-label="JIEI Thailand Main Header" >
