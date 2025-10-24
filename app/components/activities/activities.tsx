@@ -281,7 +281,7 @@ const datePostTH = [
           <ScrollReveal>
             <h1 className='activities-text'>
 
-              {lang === "th" ? "กิจกรรมบริษัท" : lang === "en" ? "Company Activities" : "会社の活動"}
+              {lang.includes('th') ? "กิจกรรมบริษัท" : lang.includes('en') ? "Company Activities" : "会社の活動"}
             </h1>
           </ScrollReveal>
           <div className="line"></div>
@@ -289,9 +289,9 @@ const datePostTH = [
           <div className="activities-text-description-box">
             <ScrollReveal>
               <p className='activities-text-description'>
-                {lang === "th"
+                {lang.includes('th')
                   ? "ติดตามข่าวสารและกิจกรรมจาก JIEI Thailand ผู้ผลิตชิ้นส่วนยางรถยนต์คุณภาพสูงจากชลบุรี เพื่อสร้างความสามัคคีและพัฒนาทีมงานอย่างต่อเนื่อง"
-                  : lang === "en"
+                  : lang.includes('en')
                     ? "Stay updated with activities from JIEI Thailand — a leading automotive rubber parts manufacturer based in Chonburi, Thailand."
                     : "JIEI Thailandの活動をチェック — チョンブリーにある自動車用ゴム部品メーカーです。"}
               </p>
@@ -313,7 +313,7 @@ const datePostTH = [
                 </div>
                 <div className="product-box">
                   <div className="product-card">
-                    <h4>{lang === 'th' ? item : lang === 'en' ? revActivitiesEN[index] :revActivitiesJP[index] }</h4>
+                    <h4>{lang.includes('th') ? item : lang.includes('en') ? revActivitiesEN[index] :revActivitiesJP[index] }</h4>
                   </div>
                   <div className="product-description-box">
                     <div className="space-part-box">
@@ -328,7 +328,7 @@ const datePostTH = [
                 <div className="preview-product">
                   <div className="text-preview">
                     <p className="preview-text">
-                      {lang === 'th' ? "อ่านเพิ่มเติม" : lang === "en" ? "Read More" : "続きを読む"}
+                      {lang.includes('th') ? "อ่านเพิ่มเติม" : lang.includes('en') ? "Read More" : "続きを読む"}
                     </p>
                   </div>
 
@@ -384,7 +384,7 @@ const datePostTH = [
                 setSelectedNews(null)
                 window.scrollTo({ top: 0, behavior: 'smooth' })
               }} className="back-btn">
-                {lang === "th" ? "กลับไปหน้ารวม" : lang === "en" ? "Back to Overview" : "一覧に戻る"}
+                {lang.includes('th') ? "กลับไปหน้ารวม" : lang.includes('en') ? "Back to Overview" : "一覧に戻る"}
               </button>
             </div>
           </ScrollReveal>

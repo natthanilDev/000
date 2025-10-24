@@ -1,7 +1,7 @@
-import React from 'react'
 import Link from 'next/link'
+// import Location from '../location/location'
 import Image from 'next/image'
-export default function topbar() {
+export default function Topbar() {
     return (
         <div>
             {/* Top Contact Bar */}
@@ -18,6 +18,7 @@ export default function topbar() {
                             className='image-logo'
                         />
                     </Link>
+                    {/* <Location /> */}
                 </div>
                 <div className="top-navigation-contact">
                     <div className="top-navigation-email">

@@ -123,18 +123,18 @@ export default function Iso9001() {
         <header>
           <ScrollReveal>
             <h1 className="ISO9001 text-center text-3xl font-bold">
-              {lang === "th"
+              {lang.includes('th')
                 ? "การรับรองมาตรฐาน ISO 9001"
-                : lang === "en"
+                : lang.includes('th')
                 ? "ISO 9001 Certification"
                 : "ISO 9001認証"}
             </h1>
           </ScrollReveal>
           <ScrollReveal>
             <p className="text-iso text-center text-xl mt-2">
-              {lang === "th"
+              {lang.includes('th')
                 ? "มาตรฐานระบบบริหารคุณภาพระดับสากลสำหรับอุตสาหกรรมยานยนต์"
-                : lang === "en"
+                : lang.includes('en')
                 ? "International quality management standard for the automotive industry"
                 : "自動車産業向けの国際的な品質マネジメント規格"}
             </p>
@@ -191,9 +191,9 @@ export default function Iso9001() {
           </ScrollReveal>
           <ScrollReveal>
             <p className="description-iso">
-              {lang === 'th'
+              {lang.includes('th')
                 ? "ISO 9001 คือมาตรฐานสากลสำหรับระบบการจัดการคุณภาพ (Quality Management System: QMS) ที่กำหนดโดยองค์การระหว่างประเทศว่าด้วยการมาตรฐาน (ISO) เพื่อช่วยให้องค์กรสร้างกระบวนการทำงานที่มีคุณภาพ มีการควบคุม และปรับปรุงอย่างต่อเนื่อง เพื่อส่งมอบสินค้าที่มีคุณภาพแก่ลูกค้าอย่างสม่ำเสมอ"
-                : lang === "en"
+                : lang.includes('en')
                 ? "ISO 9001 is an international standard for Quality Management Systems (QMS), established by the International Organization for Standardization (ISO). It helps organizations build consistent, controlled, and continuously improving processes to deliver quality products to customers."
                 : "ISO 9001は、国際標準化機構（ISO）が制定した品質マネジメントシステム（QMS）の国際規格です。品質の一貫性を確保し、継続的な改善を通じてお客様に高品質な製品を提供するための基盤を提供します。"}
             </p>

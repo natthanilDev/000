@@ -123,9 +123,9 @@ export default function Iso14001() {
         <header>
           <ScrollReveal>
             <h1 className="ISO9001 text-center text-3xl font-bold">
-              {lang === "th"
+              {lang.includes('th')
                 ? "การรับรองมาตรฐาน ISO 14001"
-                : lang === "en"
+                : lang.includes('en') 
                 ? "ISO 14001 Certification"
                 : "ISO 14001認証"}
             </h1>
@@ -133,9 +133,9 @@ export default function Iso14001() {
 
           <ScrollReveal>
             <p className="text-iso text-center text-xl mt-2">
-              {lang === "th"
+              {lang.includes('th')
                 ? "มาตรฐานระบบการจัดการสิ่งแวดล้อมระดับสากล"
-                : lang === "en"
+                : lang.includes('en') 
                 ? "International standard for environmental management systems"
                 : "環境マネジメントシステムの国際規格"}
             </p>
@@ -191,9 +191,9 @@ export default function Iso14001() {
           </ScrollReveal>
           <ScrollReveal>
             <p className="description-iso">
-              {lang === "th"
+              {lang.includes('th')
                 ? "ISO 14001 คือมาตรฐานสากลสำหรับระบบการจัดการสิ่งแวดล้อม (Environmental Management System: EMS) ที่กำหนดโดยองค์การมาตรฐานสากล (ISO) เพื่อให้องค์กรสามารถควบคุมและลดผลกระทบต่อสิ่งแวดล้อมจากการดำเนินงานของตนอย่างมีประสิทธิภาพ ส่งเสริมความยั่งยืนในระยะยาว"
-                : lang === "en"
+                : lang.includes('en')
                 ? "ISO 14001 is an international standard for Environmental Management Systems (EMS) established by the International Organization for Standardization (ISO). It enables organizations to systematically control and reduce environmental impact, ensuring sustainable development and responsible production."
                 : "ISO 14001は、国際標準化機構（ISO）が定めた環境マネジメントシステム（EMS）の国際規格です。組織が環境への影響を管理・低減し、持続可能な生産と責任ある事業活動を推進することを目的としています。"}
             </p>

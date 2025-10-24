@@ -166,11 +166,11 @@ export default function Tach() {
 
 
 
-    const evaluatio = ['/04_r1_c1.jpg', '/04_r1_c3.jpg', '/04_r1_c5.jpg', '/04_r1_c8.jpg']
+    const evaluation = ['/04_r1_c1.jpg', '/04_r1_c3.jpg', '/04_r1_c5.jpg', '/04_r1_c8.jpg']
 
-    const contentEvaluatioTH = ["เครื่องทดสอบแรงกด", "การกระจายแรงดันบนพื้นผิว", 'การวัดการกระจายแรงดันบนพื้นผิว', "การวัดสมรรถนะการกันเสียงแบบง่าย"]
-    const contentEvaluatioEN = ["Load Testing Machine", "Surface Pressure Distribution", "Surface Pressure Distribution Measurement", "Simple Sound Insulation Performance Measurement"]
-    const contentEvaluatioJP = ["荷重試験機", "表面圧分布", "表面圧分布測定", "簡易防音性能測定"]
+    const contentEvaluationTH = ["เครื่องทดสอบแรงกด", "การกระจายแรงดันบนพื้นผิว", 'การวัดการกระจายแรงดันบนพื้นผิว', "การวัดสมรรถนะการกันเสียงแบบง่าย"]
+    const contentEvaluationEN = ["Load Testing Machine", "Surface Pressure Distribution", "Surface Pressure Distribution Measurement", "Simple Sound Insulation Performance Measurement"]
+    const contentEvaluationJP = ["荷重試験機", "表面圧分布", "表面圧分布測定", "簡易防音性能測定"]
 
 
     // SEO Metadata
@@ -240,10 +240,12 @@ export default function Tach() {
                     <div className="introduction-tech-box">
                         <ScrollReveal>
                             <h1 className="introduction-tech">
-                                {lang === "th" ? "แนะนำเทคโนโลยีการพัฒนา - JIEI Thailand" : lang === "en" ? "Introduction of Development Technology - JIEI Thailand" : "開発技術の紹介 - JIEI Thailand"}
+                                {lang.includes('th') ? "แนะนำเทคโนโลยีการพัฒนา - JIEI Thailand" : lang.includes('en') ? "Introduction of Development Technology - JIEI Thailand" : "開発技術の紹介 - JIEI Thailand"}
 
                             </h1>
-                            <p className='introduction-content'>{lang === "th" ? "JIEI Thailand ใช้เทคโนโลยีการออกแบบ การวิเคราะห์ และการทดสอบที่ล้ำสมัย เพื่อให้มั่นใจในคุณภาพสูงสุดของชิ้นส่วนยางรถยนต์ กระบวนการของเราครอบคลุมการออกแบบ CAD การวิเคราะห์โครงสร้าง การจำลองวัสดุ และการประเมินสมรรถนะ เพื่อให้ได้มาตรฐานยานยนต์ระดับสากล" : lang === "en" ? "JIEI Thailand applies advanced design, analysis, and testing technologies to ensure the highest quality of automotive rubber parts. Our integrated process covers CAD design, structural analysis, material simulation, and performance evaluation to meet global automotive standards." : "JIEI Thailandは、自動車用ゴム部品の最高品質を保証するために、先進的な設計、解析、試験技術を採用しています。当社の統合プロセスは、CAD設計、構造解析、材料シミュレーション、性能評価を網羅し、世界的な自動車産業の基準に対応しています。"}</p>
+                            <p className='introduction-content'>{lang.includes('th') ? "JIEI Thailand ใช้เทคโนโลยีการออกแบบ การวิเคราะห์ และการทดสอบที่ล้ำสมัย เพื่อให้มั่นใจในคุณภาพสูงสุดของชิ้นส่วนยางรถยนต์ กระบวนการของเราครอบคลุมการออกแบบ CAD การวิเคราะห์โครงสร้าง การจำลองวัสดุ และการประเมินสมรรถนะ เพื่อให้ได้มาตรฐานยานยนต์ระดับสากล"
+                                : lang.includes('en') ? "JIEI Thailand applies advanced design, analysis, and testing technologies to ensure the highest quality of automotive rubber parts. Our integrated process covers CAD design, structural analysis, material simulation, and performance evaluation to meet global automotive standards."
+                                    : "JIEI Thailandは、自動車用ゴム部品の最高品質を保証するために、先進的な設計、解析、試験技術を採用しています。当社の統合プロセスは、CAD設計、構造解析、材料シミュレーション、性能評価を網羅し、世界的な自動車産業の基準に対応しています。"}</p>
                         </ScrollReveal>
                         <div className="line" />
 
@@ -254,7 +256,7 @@ export default function Tach() {
 
                         <div className="design-analysis-topic">
                             <ScrollReveal>
-                                <h2 itemProp="headline" className='topic-technology'>{lang === "th" ? "การออกแบบและการวิเคราะห์" : lang === "en" ? "Design & Analysis" : "日本語: 設計と解析"}</h2>
+                                <h2 itemProp="headline" className='topic-technology'>{lang.includes('th') ? "การออกแบบและการวิเคราะห์" : lang.includes('en') ? "Design & Analysis" : "日本語: 設計と解析"}</h2>
                                 <meta itemProp="author" content="JIEI Thailand" />
                             </ScrollReveal>
                         </div>
@@ -263,13 +265,15 @@ export default function Tach() {
                                 <div className="design-analysis-content" key={index}>
                                     <div className="design-analysis-content-topic">
                                         <ScrollReveal>
-                                            <h3 itemProp="about" className='topic-2'>{lang === "th" ? item : lang === "en" ? topicEN[index] : topicJP[index]}</h3>
+                                            <h3 itemProp="about" className='topic-2'>{lang.includes('th') ? item
+                                                : lang.includes('en') ? topicEN[index]
+                                                    : topicJP[index]}</h3>
                                         </ScrollReveal>
                                     </div>
                                     <div className="design-analysis-content-content">
                                         <ScrollReveal>
                                             <p itemProp="articleBody" className='content-technology'>
-                                                {lang === "th" ? contentTH[index] : lang === "en" ? contentEN[index] : contentJP[index]}
+                                                {lang.includes('th') ? contentTH[index] : lang.includes('en') ? contentEN[index] : contentJP[index]}
                                             </p>
                                         </ScrollReveal>
                                     </div>
@@ -281,7 +285,9 @@ export default function Tach() {
 
                         <div className="design-analysis-topic">
                             <ScrollReveal>
-                                <h2 itemProp="headline" className='topic-technology'>{lang === "th" ? "การพัฒนาวัสดุ" : lang === "en" ? "Materials Development" : "材料開発"}</h2>
+                                <h2 itemProp="headline" className='topic-technology'>{lang.includes('th') ? "การพัฒนาวัสดุ"
+                                    : lang.includes('en') ? "Materials Development"
+                                        : "材料開発"}</h2>
                                 <meta itemProp="author" content="JIEI Thailand" />
                             </ScrollReveal>
                         </div>
@@ -290,13 +296,13 @@ export default function Tach() {
                                 <div className="design-analysis-content" key={index}>
                                     <div className="design-analysis-content-topic">
                                         <ScrollReveal>
-                                            <h3 itemProp="about" className='topic-2'>{lang === "th" ? item : lang === "en" ? topicEN1[index] : topicJP1[index]}</h3>
+                                            <h3 itemProp="about" className='topic-2'>{lang.includes('th') ? item : lang.includes('en') ? topicEN1[index] : topicJP1[index]}</h3>
                                         </ScrollReveal>
                                     </div>
                                     <div className="design-analysis-content-content">
                                         <ScrollReveal>
                                             <p itemProp="articleBody" className='content-technology'>
-                                                {lang === "th" ? contentTH1[index] : lang === "en" ? contentEN1[index] : contentJP1[index]}
+                                                {lang.includes('th') ? contentTH1[index] : lang.includes('en') ? contentEN1[index] : contentJP1[index]}
                                             </p>
                                         </ScrollReveal>
                                     </div>
@@ -308,7 +314,7 @@ export default function Tach() {
 
                         <div className="design-analysis-topic">
                             <ScrollReveal>
-                                <h2 itemProp="headline" className='topic-technology'>{lang === "th" ? "การประเมินสมรรถนะ" : lang === "en" ? "Functional Evaluation" : "機能評価"}</h2>
+                                <h2 itemProp="headline" className='topic-technology'>{lang.includes('th') ? "การประเมินสมรรถนะ" : lang.includes('en')  ? "Functional Evaluation" : "機能評価"}</h2>
                                 <meta itemProp="author" content="JIEI Thailand" />
                             </ScrollReveal>
                         </div>
@@ -317,13 +323,13 @@ export default function Tach() {
                                 <div className="design-analysis-content" key={index}>
                                     <div className="design-analysis-content-topic">
                                         <ScrollReveal>
-                                            <h3 itemProp="about" className='topic-2'>{lang === "th" ? item : lang === "en" ? topicEN2[index] : topicJP2[index]}</h3>
+                                            <h3 itemProp="about" className='topic-2'>{lang.includes('th') ? item : lang.includes('en') ? topicEN2[index] : topicJP2[index]}</h3>
                                         </ScrollReveal>
                                     </div>
                                     <div className="design-analysis-content-content">
                                         <ScrollReveal>
                                             <p itemProp="articleBody" className='content-technology'>
-                                                {lang === "th" ? contentTH2[index] : lang === "en" ? contentEN2[index] : contentJP2[index]}
+                                                {lang.includes('th') ? contentTH2[index] : lang.includes('en') ? contentEN2[index] : contentJP2[index]}
                                             </p>
                                         </ScrollReveal>
                                     </div>
@@ -338,7 +344,7 @@ export default function Tach() {
                 <div className="Design-analysis-box">
                     <ScrollReveal>
                         <div className="Design-analysis-text-box">
-                            <h1 className='Design-analysis-text'>{lang === "th" ? "การออกแบบและการวิเคราะห์" : lang === "en" ? "Design & Analysis" : "設計と解析"}</h1>
+                            <h1 className='Design-analysis-text'>{lang.includes('th') ? "การออกแบบและการวิเคราะห์" : lang.includes('en') ? "Design & Analysis" : "設計と解析"}</h1>
                         </div>
                     </ScrollReveal>
 
@@ -355,7 +361,7 @@ export default function Tach() {
                                 </div>
                                 <div className="text-img-box">
                                     <ScrollReveal>
-                                        <h3 className='text-img'>{lang === "th" ? contentAnalysisTH[index] : lang === "en" ? contentAnalysisEN[index] : contentAnalysisJP[index]}</h3>
+                                        <h3 className='text-img'>{lang.includes('th') ? contentAnalysisTH[index] : lang.includes('en') ? contentAnalysisEN[index] : contentAnalysisJP[index]}</h3>
                                     </ScrollReveal>
                                 </div>
                             </div>
@@ -367,7 +373,7 @@ export default function Tach() {
                 <div className="Design-analysis-box">
                     <div className="Design-analysis-text-box">
                         <ScrollReveal>
-                            <h1 className='Design-analysis-text'>{lang === "th" ? "การพัฒนาวัสดุ" : lang === "en" ? "Materials Development" : "材料開発"}</h1>
+                            <h1 className='Design-analysis-text'>{lang.includes('th') ? "การพัฒนาวัสดุ" : lang.includes('en') ? "Materials Development" : "材料開発"}</h1>
                         </ScrollReveal>
                     </div>
                     <div className="line" />
@@ -381,7 +387,9 @@ export default function Tach() {
                                 </div>
                                 <div className="text-img-box">
                                     <ScrollReveal>
-                                        <h3 className='text-img'>{lang === "th" ? contentMaterialsTH[index] : lang === "en" ? contentMaterialsEN[index] : contentMaterialsJP[index]}</h3>
+                                        <h3 className='text-img'>{lang.includes('th') ? contentMaterialsTH[index] 
+                                        : lang.includes('en') ? contentMaterialsEN[index] 
+                                        : contentMaterialsJP[index]}</h3>
                                     </ScrollReveal>
                                 </div>
                             </div>
@@ -394,21 +402,21 @@ export default function Tach() {
                     <div className="Design-analysis-box">
                         <div className="Design-analysis-text-box">
                             <ScrollReveal>
-                                <h1 className='Design-analysis-text'>{lang === "th" ? "การประเมินสมรรถนะ" : lang === "en" ? "Functional Evaluation" : "機能評価"}</h1>
+                                <h1 className='Design-analysis-text'>{lang.includes('th') ? "การประเมินสมรรถนะ" : lang.includes('en') ? "Functional Evaluation" : "機能評価"}</h1>
                             </ScrollReveal>
                         </div>
                         <div className="line" />
                         <div className="deformation-jiei">
-                            {evaluatio.map((item, index) => (
+                            {evaluation.map((item, index) => (
                                 <div className="img-text-design" key={index}>
                                     <div className="img-design">
                                         <ScrollReveal>
-                                            <Image src={item} alt={contentEvaluatioTH[index]} priority width={1000} height={1000} />
+                                            <Image src={item} alt={contentEvaluationTH[index]} priority width={1000} height={1000} />
                                         </ScrollReveal>
                                     </div>
                                     <div className="text-img-box">
                                         <ScrollReveal>
-                                            <h3 className='text-img'>{lang === "th" ? contentEvaluatioTH[index] : lang === "en" ? contentEvaluatioEN[index] : contentEvaluatioJP[index]}{ }</h3>
+                                            <h3 className='text-img'>{lang.includes('th') ? contentEvaluationTH[index] : lang.includes('en') ? contentEvaluationEN[index] : contentEvaluationJP[index]}{ }</h3>
                                         </ScrollReveal>
                                     </div>
                                 </div>

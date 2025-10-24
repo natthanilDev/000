@@ -156,10 +156,12 @@ export default function News() {
       {selectedNews === null ? (
         <>
           <ScrollReveal>
-            <h1 className='title-news'>{lang === "th" ? "ข่าวสาร | บทความ" : lang === "en" ? "News | Blog" : "ニュース | ブログ"}  </h1>
+            <h1 className='title-news'>{lang.includes('th') ? "ข่าวสาร | บทความ" : lang.includes('en') ? "News | Blog" : "ニュース | ブログ"}  </h1>
             <div className="line"></div>
             <div className="news-text-description-box">
-              <p className='activities-text-description'>{lang === "th" ? "เราอัปเดตข้อมูลเกี่ยวกับนวัตกรรม เทคโนโลยีของบริษัทอย่างต่อเนื่อง เพื่อให้คุณไม่พลาดความเคลื่อนไหวสำคัญในอุตสาหกรรมและการพัฒนาของเรา" : lang === "en" ? "We continuously update information about the company’s innovations and technologies to ensure you never miss important industry trends and our developments." : "当社は、業界の重要な動向や当社の最新の取り組みを見逃さないよう、革新や技術に関する情報を継続的に更新しています。"} </p>
+              <p className='activities-text-description'>{lang.includes('th') ? "เราอัปเดตข้อมูลเกี่ยวกับนวัตกรรม เทคโนโลยีของบริษัทอย่างต่อเนื่อง เพื่อให้คุณไม่พลาดความเคลื่อนไหวสำคัญในอุตสาหกรรมและการพัฒนาของเรา" 
+              : lang.includes('en') ? "We continuously update information about the company’s innovations and technologies to ensure you never miss important industry trends and our developments." 
+              : "当社は、業界の重要な動向や当社の最新の取り組みを見逃さないよう、革新や技術に関する情報を継続的に更新しています。"} </p>
             </div>
           </ScrollReveal>
           <div className="news-box-card">
@@ -179,7 +181,7 @@ export default function News() {
                   </div>
                   <div className="product-box">
                     <div className="product-card">
-                      <h4>{lang === 'th' ? item : lang === 'en' ? revNewsEN[index] : revNewsJP[index]}</h4>
+                      <h4>{lang.includes('th') ? item : lang.includes('en') ? revNewsEN[index] : revNewsJP[index]}</h4>
                     </div>
                     <div className="product-description-box">
                       <div className="space-part-box">
@@ -194,7 +196,7 @@ export default function News() {
                   <div className="preview-product">
                     <div className="text-preview">
                       <p className="preview-text">
-                        {lang === 'th' ? "อ่านเพิ่มเติม" : lang === "en" ? "Read More" : "続きを読む"}
+                        {lang.includes('th') ? "อ่านเพิ่มเติม" : lang.includes('en') ? "Read More" : "続きを読む"}
                       </p>
                     </div>
 
@@ -249,7 +251,7 @@ export default function News() {
                 setSelectedNews(null)
                 window.scrollTo({ top: 0, behavior: 'smooth' })
               }} className="back-btn">
-                {lang === "th" ? "กลับไปหน้ารวม" : lang === "en" ? "Back to Overview" : "一覧に戻る"}
+                {lang.includes('th') ? "กลับไปหน้ารวม" : lang.includes('en') ? "Back to Overview" : "一覧に戻る"}
               </button>
             </div>
           </ScrollReveal>

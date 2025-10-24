@@ -112,11 +112,11 @@ export default function Contact() {
         <div className="contact-level">
           <div className="contact-contactUs">
             <div className="box-w">
-              <h1 className='contactUsTitle'> {lang === 'th' ? "ติดต่อเรา" : lang === "en" ? "CONTACT US" : "お問い合わせ"}</h1>
+              <h1 className='contactUsTitle'> {lang.includes('th') ? "ติดต่อเรา" : lang.includes('en') ? "CONTACT US" : "お問い合わせ"}</h1>
               <h2 className='text-title'>{lang.includes('th')? "ติดต่อโรงงานผลิตชิ้นส่วนยางรถยนต์ JIEI Thailand" : lang.includes('en')? "Contact JIEI Thailand Automotive Rubber Parts Manufacturing Factory" : "JIEI Thailand 自動車用ゴム部品製造工場へのお問い合わせ"}</h2>
               <h3 className='content-contact'>{lang.includes('th') ? "เราเป็นผู้ผลิตยางรถยนต์มาตรฐานญี่ปุ่นในจังหวัดชลบุรี" : lang.includes('en') ? "We are a Japanese-standard automotive rubber parts manufacturer located in Chonburi Province." : "私たちはチョンブリー県にある日本品質の自動車用ゴム部品メーカーです。"}</h3>
 
-              <h5 className='here-you'>  {lang === 'th' ? "เราพร้อมให้ความช่วยเหลือคุณ!" : lang === "en" ? "We’re here to help you!" : "私たちはあなたをサポートするためにここにいます！"}</h5>
+              <h5 className='here-you'>  {lang.includes('th') ? "เราพร้อมให้ความช่วยเหลือคุณ!" : lang.includes('en') ? "We’re here to help you!" : "私たちはあなたをサポートするためにここにいます！"}</h5>
               <div className="line-contact"></div>
 
               <div className="container-icon">
@@ -127,7 +127,7 @@ export default function Contact() {
                         <i className={item}></i>
                       </div>
                       <div className="title-box-icon">
-                        <p className="text-icon">{lang === 'th' ? titleTH[index] : lang === "en" ? titleEN[index] : titleJP[index]}</p>
+                        <p className="text-icon">{lang.includes('th') ? titleTH[index] : lang.includes('en') ? titleEN[index] : titleJP[index]}</p>
                         <p className='link-icon'>{contact[index]}</p>
                       </div>
                     </div>

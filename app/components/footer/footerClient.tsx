@@ -60,7 +60,7 @@ const dateEN = currentDay +" / "+ currentMonthEN +" / "+ currentYear
 const dateJP = currentDay +" / "+ currentMonthJP +" / "+ currentYear
 
 
-  const [lang, setLang] = React.useState<'th' | 'en' | 'jp'>('th');
+  const [lang, setLang] = useState<'th' | 'en' | 'jp'>('th');
   useEffect(() => {
     if (typeof window !== 'undefined') {
       const storedLang = localStorage.getItem('lang') as 'th' | 'en' | 'jp' | null;

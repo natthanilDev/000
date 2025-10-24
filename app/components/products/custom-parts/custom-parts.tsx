@@ -323,10 +323,10 @@ export default function CustomPart() {
 
         <div className="intro-allProduct">
           <ScrollReveal>
-            <h1 className='allProduct-text'>{lang === 'th' ? "คอลเลกชัน" : lang === "en" ? "PRODUCT" : "製品"}</h1>
+            <h1 className='allProduct-text'>{lang.includes('th') ? "คอลเลกชัน" : lang.includes('en') ? "PRODUCT" : "製品"}</h1>
           </ScrollReveal>
           <ScrollReveal>
-            <h2 className='allProduct-text active'>{lang === 'th' ? "ผลิตภัณฑ์" : lang === "en" ? "COLLECTION" : "コレクション"}</h2>
+            <h2 className='allProduct-text active'>{lang.includes('th') ? "ผลิตภัณฑ์" : lang.includes('en') ? "COLLECTION" : "コレクション"}</h2>
           </ScrollReveal>
         </div>
 
@@ -350,7 +350,7 @@ export default function CustomPart() {
                 }}
               >
                 <ScrollReveal>
-                  <p className="preview-image">{lang === 'th' ? hover_imageTH[index] : lang === "en" ? hover_imageEN[index] : hover_imageJP[index]} </p>
+                  <p className="preview-image">{lang.includes('th') ? hover_imageTH[index] : lang.includes('en') ? hover_imageEN[index] : hover_imageJP[index]} </p>
                 </ScrollReveal>
               </div>
             </div>
@@ -360,12 +360,12 @@ export default function CustomPart() {
         <div className="collection-part">
           <div className="text-collection-box">
             <ScrollReveal>
-              <h2 className="text-collection">{lang === 'th' ? "รถยนต์" : lang === "en" ? "CAR" : "「自動車」"}</h2>
+              <h2 className="text-collection">{lang.includes('th') ? "รถยนต์" : lang.includes('en') ? "CAR" : "「自動車」"}</h2>
             </ScrollReveal>
           </div>
 
           <div className="collection-box">
-            {lang == "en" ? title_partEN.map((item, index) => (
+            {lang.includes('en') ? title_partEN.map((item, index) => (
               <div key={index}>
                 <ScrollReveal>
                   <h2 className="nameProduct">{item}</h2>
@@ -383,7 +383,7 @@ export default function CustomPart() {
                   </div>
                 ))}
               </div>
-            )) : lang === "th" ? title_partTH.map((item, index) => (
+            )) : lang.includes('th') ? title_partTH.map((item, index) => (
               <div key={index}>
                 <ScrollReveal>
                   <h2 className="nameProduct">{item}</h2>

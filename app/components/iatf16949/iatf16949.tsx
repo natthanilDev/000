@@ -109,17 +109,17 @@ export default function Iatf16949() {
         <header>
           <ScrollReveal>
             <h1 className="ISO9001 text-center text-3xl font-bold">
-              {lang === 'th' ? "การรับรองมาตรฐาน IATF 16949" :
-               lang === "en" ? "IATF 16949 Certification" :
+              {lang.includes('th') ? "การรับรองมาตรฐาน IATF 16949" :
+               lang.includes('en') ? "IATF 16949 Certification" :
                "IATF 16949認証"}
             </h1>
           </ScrollReveal>
 
           <ScrollReveal>
             <p className="text-iso text-center text-xl mt-2">
-              {lang === "th"
+              {lang.includes('th')
                 ? "มาตรฐานระบบบริหารคุณภาพระดับโลกสำหรับอุตสาหกรรมยานยนต์ โดย JIEI Thailand ผู้ผลิตชิ้นส่วนยางรถยนต์ชั้นนำในจังหวัดชลบุรี"
-                : lang === "en"
+                : lang.includes('en')
                 ? "Global automotive quality management standard achieved by JIEI Thailand, a leading rubber parts manufacturer in Chonburi."
                 : "JIEI Thailandは、チョンブリにある自動車用ゴム部品メーカーであり、IATF 16949品質マネジメントシステムを取得しています。"}
             </p>
@@ -175,9 +175,9 @@ export default function Iatf16949() {
           </ScrollReveal>
           <ScrollReveal>
             <p className="description-iso">
-              {lang === "th"
+              {lang.includes('th')
                 ? "JIEI Thailand ได้รับการรับรองมาตรฐาน IATF 16949 ซึ่งเป็นมาตรฐานระบบการจัดการคุณภาพสำหรับอุตสาหกรรมยานยนต์ ช่วยยืนยันถึงคุณภาพ ความปลอดภัย และความน่าเชื่อถือของชิ้นส่วนยางรถยนต์ที่ผลิตในประเทศไทย"
-                : lang === "en"
+                : lang.includes('en')
                 ? "JIEI Thailand is certified with IATF 16949, ensuring excellence in automotive quality management, product reliability, and continuous improvement in our rubber parts manufacturing process."
                 : "JIEI ThailandはIATF 16949認証を取得しており、自動車用ゴム部品の品質、信頼性、継続的な改善を保証しています。"}
             </p>

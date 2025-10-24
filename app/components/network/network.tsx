@@ -190,13 +190,13 @@ export default function Network() {
                     <div className="network-container">
                         <div className="network-text-box">
                             <ScrollReveal>
-                                <h1 className="network-text">{lang === 'th' ? "บริษัทในเครือที่ตอบสนองความต้องการของคุณ" : lang === "en" ? "Our affiliated companies that meet your needs" : "お客様のニーズに応えるグループ会社"} </h1>
+                                <h1 className="network-text">{lang.includes('th') ? "บริษัทในเครือที่ตอบสนองความต้องการของคุณ" : lang.includes('en') ? "Our affiliated companies that meet your needs" : "お客様のニーズに応えるグループ会社"} </h1>
                                 <div className="line"></div>
                             </ScrollReveal>
                         </div>
 
                         <ScrollReveal>
-                            <h1 className="tokai-group">{lang === "th" ? "กลุ่มบริษัท Tokai Kogyo" : lang === "en" ? "Tokai Kogyo Group" : "東海工業グループ"}</h1>
+                            <h1 className="tokai-group">{lang.includes('th') ? "กลุ่มบริษัท Tokai Kogyo" : lang.includes('en') ? "Tokai Kogyo Group" : "東海工業グループ"}</h1>
                             <div className="scrollbar">
                                 <div className="network-box">
                                     {company.map((item, index) => (
@@ -229,7 +229,7 @@ export default function Network() {
 
 
                         <ScrollReveal>
-                            <h1 className="tokai-group">{lang === "th" ? "กลุ่มบริษัท Kasei Kogyo" : lang === "en" ? "Kasei Kogyo Group" : "化成工業グループ"}  </h1>
+                            <h1 className="tokai-group">{lang.includes('th') ? "กลุ่มบริษัท Kasei Kogyo" : lang.includes('en') ? "Kasei Kogyo Group" : "化成工業グループ"}  </h1>
                             <div className="scrollbar">
                                 <div className="network-box">
                                     {company1.map((item, index) => (
