@@ -5,7 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import ScrollReveal from '../ScrollReveal/ScrollReveal';
 import Iso_btn from '../iso_btn/iso_btn';
-// import Location from '../location/location';
+
 
 export default function Home() {
     const [lang, setLang] = useState<'th' | 'en' | 'jp'>('th');

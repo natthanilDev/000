@@ -1,17 +1,17 @@
 'use client'
 import { usePathname } from "next/navigation"
-// import { useEffect, useState } from "react"
+import { useEffect, useState } from "react"
 import Link from "next/link"
 export default function Location() {
-  // const [lang, setLang] = useState<'th' | 'en' | 'jp'>('th')
+  const [lang, setLang] = useState<'th' | 'en' | 'jp'>('th')
   const PathName = usePathname()
-  // useEffect(() => {
-  //   if (typeof window !== 'undefined') {
-  //     const stored = localStorage.getItem('lang') as 'th' | 'en' | 'jp' | null
-  //     if (stored) setLang(stored)
-  //   }
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const stored = localStorage.getItem('lang') as 'th' | 'en' | 'jp' | null
+      if (stored) setLang(stored)
+    }
 
-  // }, [])
+  }, [])
   return (
     <div className="location-tack">
 
