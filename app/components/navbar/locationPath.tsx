@@ -165,7 +165,7 @@ export default function Nav() {
                     className="nav-link"
                     title="JIEI Thailand Activities - กิจกรรม โรงงานผู้ผลิตชิ้นส่วนยางรถยนต์"
                     aria-label="JIEI Thailand Activities - กิจกรรม และข่าวสารจากโรงงานผู้ผลิตชิ้นส่วนยางรถยนต์">
-                    {lang.includes('th') ? "กิจกรรม" : lang.includes('en') ? "Activities" : "活動内容"}
+                    {lang.includes('th') ? "ข่าวสารและกิจกรรม" : lang.includes('en') ? "News & Activities" : "ニュースとイベント"}
 
                   </Link>
                 </li>
@@ -180,14 +180,14 @@ export default function Nav() {
                   </Link>
                 </li>
 
-                <li className={`li-menu ${Path === '/news' ? 'path' : ''}`}>
+                {/* <li className={`li-menu ${Path === '/news' ? 'path' : ''}`}>
                   <Link
                     onClick={closeMenu} href="/news"
                     className="nav-link"
                     title="News & Blog - JIEI Thailand Updates">
                     {lang.includes('th') ? "ข่าวและบทความ" : lang.includes('en') ? "News & Blog" : "ニュース＆ブログ"}
                   </Link>
-                </li>
+                </li> */}
                 <li className={` li-menu ${Path === '/contact' ? 'path' : ''}`}>
                   <Link
                     onClick={closeMenu} href="/contact"

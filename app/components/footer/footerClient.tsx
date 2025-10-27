@@ -153,36 +153,27 @@ const dateJP = currentDay +" / "+ currentMonthJP +" / "+ currentYear
           </div>
 
           {/* News & Blog */}
-          <div className="footer-box">
-            <div className="topic-box">
-              <h6>{lang.includes('th') ? "ข่าวสาร" : lang.includes('en') ? "News" : "ニュース"}</h6>
-            </div>
-            <div className="contentFooter-box">
-              <ul>
-                <li className='li-footer'>
-                  <Link href={'/news'} className="link-footer">{lang.includes('th') ? "ข่าวสาร" : lang.includes('en') ? "News" : "ニュース"}</Link>
-                </li>
-
-              </ul>
-            </div>
-          </div>
+          
 
           {/* Activities */}
           <div className="footer-box">
             <div className="footer-box2">
               <div className="topic-box">
-                <h6>{lang.includes('th') ? "กิจกรรม" : lang.includes('en') ? "Activities" : "活動"}</h6>
+                <h6>{lang.includes('th') ? "ข่าวสาร และกิจกรรม" : lang.includes('en') ? "News & Activities" : "ニュースとイベント"}</h6>
               </div>
             </div>
             <div className="contentFooter-box">
               <ul>
                 <li className='li-footer'>
-                  <Link href={'/activities'} className="link-footer">{lang.includes('th') ? "กิจกรรม" : lang.includes('en') ? "Activities" : "活動"}</Link>
+                  <Link href={'/activities'} className="link-footer">{lang.includes('th') ? "ข่าวสาร และกิจกรรม" : lang.includes('en') ? "Activities" : "活動"}</Link>
                 </li>
               </ul>
             </div>
 
-            <div className="footer-box2">
+          
+          </div>
+
+           <div className="footer-box2">
               <div className="topic-box">
                 <h6>Google Map</h6>
               </div>
@@ -201,7 +192,6 @@ const dateJP = currentDay +" / "+ currentMonthJP +" / "+ currentYear
                 </div>
               </div>
             </div>
-          </div>
         </div>
 
         {/* Bottom */}
