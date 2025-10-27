@@ -260,7 +260,7 @@ const datePostTH = [
                 "telephone": "033-136581-4",
                 "contactType": "Customer Service",
                 "areaServed": "TH",
-                "availableLanguage": ["Thai", "English"]
+                "availableLanguage": ["Thai", "English","Japan"]
               }],
               "address": {
                 "@type": "PostalAddress",

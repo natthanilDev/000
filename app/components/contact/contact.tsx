@@ -22,7 +22,7 @@ export default function Contact() {
   ]
   const link = [
     "tel:033-136581-4",
-    "https://jieithai.co.th",
+    "https://jiei-thai.co.th",
     "mailto:info@jiei-thai.co.th",
     "https://maps.app.goo.gl/rymNPgK529UiEo2g6"
   ]
@@ -47,7 +47,7 @@ export default function Contact() {
 
   const contact = [
     '033-136581-4',
-    'https://jieithai.co.th',
+    'https://jiei-thai.co.th',
     'info@jiei-thai.co.th',
     'Pinthong 4 Industrial Estate, Unit G18, 180/3 Moo 6, T.Bueng, A.Sriracha, Chonburi 20230 Thailand'
   ]

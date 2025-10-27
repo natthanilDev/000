@@ -6,7 +6,7 @@ import Link from 'next/link';
 import ScrollReveal from '../ScrollReveal/ScrollReveal';
 import Head from 'next/head';
 import Employee from './employee';
-// import Location from '../location/location';
+
 export default function About() {
     const [lang, setLang] = useState<'th' | 'en' | 'jp'>('th');
     useEffect(() => {
@@ -45,9 +45,9 @@ export default function About() {
                 <meta property="og:title" content="JIEI Thai | ผู้ผลิตชิ้นส่วนยางรถยนต์ ชลบุรี" />
                 <meta property="og:description" content="โรงงานผลิตยางรถยนต์คุณภาพสูงในชลบุรี ได้รับมาตรฐานสากล ISO/IATF16949 พร้อมทีมงานมืออาชีพ" />
                 <meta property="og:image" content="/meta-jiei.jpg" />
-                <meta property="og:url" content="https://jieithai.co.th/about" />
+                <meta property="og:url" content="https://jiei-thai.co.th/about" />
                 <meta name="robots" content="index, follow" />
-                <link rel="canonical" href="https://jieithai.co.th/about" />
+                <link rel="canonical" href="https://jiei-thai.co.th/about" />
 
                 {/* 🔎 Structured Data */}
                 <script type="application/ld+json" dangerouslySetInnerHTML={{
@@ -55,8 +55,8 @@ export default function About() {
                         "@context": "https://schema.org",
                         "@type": "Organization",
                         "name": "JIEI (Thailand) Co., Ltd.",
-                        "url": "https://jieithai.co.th",
-                        "logo": "https://jieithai.co.th/logo.png",
+                        "url": "https://jiei-thai.co.th",
+                        "logo": "https://jiei-thai.co.th/logo.png",
                         "description": "ผู้ผลิตชิ้นส่วนยางรถยนต์คุณภาพสูง จังหวัดชลบุรี ได้รับมาตรฐาน ISO/IATF16949",
                         "address": {
                             "@type": "PostalAddress",
