@@ -12,7 +12,7 @@ export default function Page() {
 
   const page = searchParams.get("page");
   const currentPage = page ? parseInt(page, 10) : 1;
-  const perPage = 8;
+  const perPage = 10;
   const [lang, setLang] = useState<'th' | 'en' | 'jp'>('th');
 
   useEffect(() => {
@@ -24,8 +24,6 @@ export default function Page() {
 
   const activitiesTH = [
     'ท่องเที่ยวประจำปี 2025',
-    
-
   ];
   const activitiesEN = [
     'COMPANY TRIP SCHEDULE 2025',
@@ -35,11 +33,11 @@ export default function Page() {
   ];
   const img = [
     '/companyTrip.png',
-
+   
   ];
   const contentALLTH = [
     `วันเสาร์ (วันที่1) 06:30 รวมตัวที่บริษัท JIEI (พร้อมชุดลำลองสีสดใส) แจกของที่ระลึก เช่น หมวก + เสื้อทริป 07:00 ออกเดินทางด้วยรถบัส`,
-
+   
   ];
   const contentALLEN = [
     `Saturday (Day 1) 06:30 Gather at JIEI company (wearing colorful casual clothes) Hand out souvenirs such as hats + trip shirts
@@ -88,6 +86,8 @@ export default function Page() {
     <h5>17:00</h5>  ถึงบริษัทโดยสวัสดิภาพ ปิดทริปพร้อมใจว่า “See you next year!”
     <hr>
     `,
+   
+
 
   ];
 
@@ -170,17 +170,17 @@ export default function Page() {
     <hr />`
   ];
 
-const datePostTH = [
-    '15 สิงหาคม 2023',
-   
+  const datePostTH = [
+    '15 สิงหาคม 2025',
+
   ];
   const datePostEN = [
     'August 15, 2023',
-    
+
   ];
   const datePostJP = [
     '2023年8月15日',
-    
+
   ];
 
   const revActivitiesTH = [...activitiesTH].reverse();
@@ -260,7 +260,7 @@ const datePostTH = [
                 "telephone": "033-136581-4",
                 "contactType": "Customer Service",
                 "areaServed": "TH",
-                "availableLanguage": ["Thai", "English","Japan"]
+                "availableLanguage": ["Thai", "English", "Japan"]
               }],
               "address": {
                 "@type": "PostalAddress",
@@ -281,7 +281,7 @@ const datePostTH = [
           <ScrollReveal>
             <h1 className='activities-text'>
 
-              {lang.includes('th') ? "กิจกรรมบริษัท" : lang.includes('en') ? "Company Activities" : "会社の活動"}
+              {lang.includes('th') ? "ข่าวสาร และกิจกรรมบริษัท" : lang.includes('en') ? "Company News & Activities" : "会社のニュースとイベント"}
             </h1>
           </ScrollReveal>
           <div className="line"></div>
@@ -313,7 +313,7 @@ const datePostTH = [
                 </div>
                 <div className="product-box">
                   <div className="product-card">
-                    <h4>{lang.includes('th') ? item : lang.includes('en') ? revActivitiesEN[index] :revActivitiesJP[index] }</h4>
+                    <h4>{lang.includes('th') ? item : lang.includes('en') ? revActivitiesEN[index] : revActivitiesJP[index]}</h4>
                   </div>
                   <div className="product-description-box">
                     <div className="space-part-box">
@@ -334,10 +334,10 @@ const datePostTH = [
 
                 </div>
                 <div className="posted">
-                    <div className="date_post">
-                      <h6 className='post'>{lang.includes('th') ? revDatePostTH[index] : lang.includes('en') ? revDatePostEN[index] : revDatePostJP[index]}</h6>
-                    </div>
+                  <div className="date_post">
+                    <h6 className='post'>{lang.includes('th') ? revDatePostTH[index] : lang.includes('en') ? revDatePostEN[index] : revDatePostJP[index]}</h6>
                   </div>
+                </div>
               </div>
             ))}
           </div>
@@ -345,17 +345,119 @@ const datePostTH = [
 
 
           <div className="page">
-            <nav className="countPage" aria-label="Pagination">
+            {/* <nav className="countPage" aria-label="Pagination">
+              {currentPage > 1?
+                <Link href={`/activities?page=${currentPage - 1}`}
+                  className={`numPage focusPage`}
+                  title={`ไปหน้าที่ ${currentPage-1}`}>
+                 <i className="bi bi-chevron-double-left"></i>
+                </Link> : ""}
+
               {Array.from({ length: totalPages }, (_, i) => i + 1).map((pageNum) => (
-                <Link
-                  key={pageNum}
+
+                <Link key={pageNum}
                   href={`/activities?page=${pageNum}`}
                   className={`numPage ${pageNum === currentPage ? "focusPage" : ""}`}
                   title={`ไปหน้าที่ ${pageNum}`}>
                   {pageNum}
                 </Link>
+
               ))}
+
+
+              {currentPage < totalPages ? <Link
+                href={`/activities?page=${currentPage + 1}`}
+                className={`numPage focusPage`}
+                title={`ไปหน้าที่ ${currentPage+1}`}>
+                <i className="bi bi-chevron-double-right"></i>
+              </Link> : ""}
+
+
+
+
+
+
+
+            </nav> */}
+            <nav className="countPage" aria-label="Pagination">
+              {/* ปุ่มย้อนกลับ */}
+              {currentPage > 1 && (
+                <Link
+                  href={`/activities?page=${currentPage - 1}`}
+                  className="numPage focusPage"
+                  title={`ไปหน้าที่ ${currentPage - 1}`}
+                >
+                  <i className="bi bi-chevron-double-left"></i>
+                </Link>
+              )}
+
+              {/* สร้างเลขหน้าที่แสดงได้สูงสุด 3 หน้า */}
+              {(() => {
+                const maxVisible = 3;
+                let start = Math.max(1, currentPage - 1);
+                let end = Math.min(totalPages, start + maxVisible - 1);
+                if (end - start < maxVisible - 1) {
+                  start = Math.max(1, end - maxVisible + 1);
+                }
+
+                const visiblePages = [];
+                for (let i = start; i <= end; i++) {
+                  visiblePages.push(i);
+                }
+
+                return (
+                  <>
+                    {/* แสดงหน้าแรก + จุดไข่ปลา ด้านหน้า */}
+                    {visiblePages[0] > 1 && (
+                      <>
+                        <Link href={`/activities?page=1`} className="numPage" title="ไปหน้าที่ 1">
+                          1
+                        </Link>
+                        {/* <span className="dots"><i className="bi bi-dash"></i></span> */}
+                      </>
+                    )}
+
+                    {/* แสดงหน้าปัจจุบันและใกล้เคียง */}
+                    {visiblePages.map((pageNum) => (
+                      <Link
+                        key={pageNum}
+                        href={`/activities?page=${pageNum}`}
+                        className={`numPage ${pageNum === currentPage ? "focusPage" : ""}`}
+                        title={`ไปหน้าที่ ${pageNum}`}
+                      >
+                        {pageNum}
+                      </Link>
+                    ))}
+
+                    {/* แสดงจุดไข่ปลา + หน้าสุดท้าย */}
+                    {visiblePages[visiblePages.length - 1] < totalPages && (
+                      <>
+                        {/* <span className="dots"><i className="bi bi-dash"></i></span> */}
+                        <Link
+                          href={`/activities?page=${totalPages}`}
+                          className="numPage"
+                          title={`ไปหน้าที่ ${totalPages}`}
+                        >
+                          {totalPages}
+                        </Link>
+                      </>
+                    )}
+                  </>
+                );
+              })()}
+
+              {/* ปุ่มหน้าถัดไป */}
+              {currentPage < totalPages && (
+                <Link
+                  href={`/activities?page=${currentPage + 1}`}
+                  className="numPage focusPage"
+                  title={`ไปหน้าที่ ${currentPage + 1}`}
+                >
+                  <i className="bi bi-chevron-double-right"></i>
+                </Link>
+              )}
             </nav>
+
           </div>
         </div>
       ) : (

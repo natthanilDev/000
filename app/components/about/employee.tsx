@@ -73,6 +73,7 @@ export default function Employee() {
         'マネージャー',
 
     ]
+    
 
     const QANameEN = [
         'Mr.Nut Kullamart (Nut)',

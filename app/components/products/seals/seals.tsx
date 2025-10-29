@@ -4,24 +4,37 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Head from 'next/head';
 import { useSearchParams } from "next/navigation";
-import ScrollReveal from "../../ScrollReveal/ScrollReveal";
+import ScrollReveal from '../../ScrollReveal/ScrollReveal'
 
 export default function Page() {
   const searchParams = useSearchParams();
-  const [selectedNews, setSelectedNews] = useState<number | null>(null);
+  const [selectedProduct, setSelectedProduct] = useState<number | null>(null);
 
-  const page = searchParams.get("page");
-  const currentPage = page ? parseInt(page, 10) : 1;
-  const perPage = 8;
+
+  const [lang, setLang] = useState<'th' | 'en' | 'jp'>('th');
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const storedLang = localStorage.getItem('lang') as 'th' | 'en' | 'jp' | null;
+      if (storedLang) setLang(storedLang);
+    }
+
+  }, []);
 
   const product_nameTH = [
     'แท่นยึดเครื่องยนต์',
-   
+    'แท่นยึดเครื่องยนต์28',
+    'แท่นยึดเครื่องยนต์29',
+    'แท่นยึดเครื่องยนต์30',
+    'แท่นยึดเครื่องยนต์31',
+    'แท่นยึดเครื่องยนต์32',
+
+
   ]
 
   const product_nameEN = [
     'Product Name',
-   
+
   ]
 
   const product_nameJP = [
@@ -30,7 +43,12 @@ export default function Page() {
   ]
   const descriptionTH = [
     'ยางแท่นยึดเครื่องยนต์ หรือชื่อที่มักได้ยินในวงการช่างว่า “แท่นเครื่อง” (Engine Mount) คือชิ้นส่วนเล็ก ๆ แต่สำคัญมากของรถยนต์ — หน้าที่ของมันคือ ยึดเครื่องยนต์และเกียร์เข้ากับตัวถังรถ พร้อมทั้งลดแรงสั่นสะเทือนและเสียงรบกวนที่เกิดจากการทำงานของเครื่องยนต์ไม่ให้ส่งต่อไปยังห้องโดยสาร',
-    
+    'ยางแท่นยึดเครื่องยนต์ หรือชื่อที่มักได้ยินในวงการช่างว่า “แท่นเครื่อง” (Engine Mount) คือชิ้นส่วนเล็ก ๆ แต่สำคัญมากของรถยนต์ — หน้าที่ของมันคือ ยึดเครื่องยนต์และเกียร์เข้ากับตัวถังรถ พร้อมทั้งลดแรงสั่นสะเทือนและเสียงรบกวนที่เกิดจากการทำงานของเครื่องยนต์ไม่ให้ส่งต่อไปยังห้องโดยสาร',
+    'ยางแท่นยึดเครื่องยนต์ หรือชื่อที่มักได้ยินในวงการช่างว่า “แท่นเครื่อง” (Engine Mount) คือชิ้นส่วนเล็ก ๆ แต่สำคัญมากของรถยนต์ — หน้าที่ของมันคือ ยึดเครื่องยนต์และเกียร์เข้ากับตัวถังรถ พร้อมทั้งลดแรงสั่นสะเทือนและเสียงรบกวนที่เกิดจากการทำงานของเครื่องยนต์ไม่ให้ส่งต่อไปยังห้องโดยสาร',
+    'ยางแท่นยึดเครื่องยนต์ หรือชื่อที่มักได้ยินในวงการช่างว่า “แท่นเครื่อง” (Engine Mount) คือชิ้นส่วนเล็ก ๆ แต่สำคัญมากของรถยนต์ — หน้าที่ของมันคือ ยึดเครื่องยนต์และเกียร์เข้ากับตัวถังรถ พร้อมทั้งลดแรงสั่นสะเทือนและเสียงรบกวนที่เกิดจากการทำงานของเครื่องยนต์ไม่ให้ส่งต่อไปยังห้องโดยสาร',
+    'ยางแท่นยึดเครื่องยนต์ หรือชื่อที่มักได้ยินในวงการช่างว่า “แท่นเครื่อง” (Engine Mount) คือชิ้นส่วนเล็ก ๆ แต่สำคัญมากของรถยนต์ — หน้าที่ของมันคือ ยึดเครื่องยนต์และเกียร์เข้ากับตัวถังรถ พร้อมทั้งลดแรงสั่นสะเทือนและเสียงรบกวนที่เกิดจากการทำงานของเครื่องยนต์ไม่ให้ส่งต่อไปยังห้องโดยสาร',
+    'ยางแท่นยึดเครื่องยนต์ หรือชื่อที่มักได้ยินในวงการช่างว่า “แท่นเครื่อง” (Engine Mount) คือชิ้นส่วนเล็ก ๆ แต่สำคัญมากของรถยนต์ — หน้าที่ของมันคือ ยึดเครื่องยนต์และเกียร์เข้ากับตัวถังรถ พร้อมทั้งลดแรงสั่นสะเทือนและเสียงรบกวนที่เกิดจากการทำงานของเครื่องยนต์ไม่ให้ส่งต่อไปยังห้องโดยสาร',
+
   ]
   const descriptionEN = [
     'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores illum at voluptate aperiam ducimus totam voluptatibus nemo corporis ut ratione excepturi quae veritatis quis sit, tenetur temporibus a laudantium! Aperiam?',
@@ -44,15 +62,26 @@ export default function Page() {
 
   const image = [
     '/ยางขอบประตูรถยนต์.png',
-    
+    '/ยางขอบประตูรถยนต์.png',
+    '/ยางขอบประตูรถยนต์.png',
+    '/ยางขอบประตูรถยนต์.png',
+    '/ยางขอบประตูรถยนต์.png',
+    '/ยางขอบประตูรถยนต์.png',
+
+
   ]
   const datePostTH = [
     'โพสเมื่อ 24 ตุลาคม 2025',
-    
+    'โพสเมื่อ 28 ตุลาคม 2025',
+    'โพสเมื่อ 29 ตุลาคม 2025',
+    'โพสเมื่อ 30 ตุลาคม 2025',
+    'โพสเมื่อ 31 ตุลาคม 2025',
+    'โพสเมื่อ 32 ตุลาคม 2025',
+
   ];
   const datePostEN = [
     'Posted on October 24, 2025',
-  
+
   ];
   const datePostJP = [
     '2025年10月24日掲載（とうこう）',
@@ -60,16 +89,23 @@ export default function Page() {
   ];
 
   const details_nameTH = [
-    ['ความแข็งแรง', 'ความทนทาน' , 'ต้านสารเคมี'],
-   
+    ['ความแข็งแรง', 'ความทนทาน', 'ต้านสารเคมี'],
+    ['ความแข็งแรง', 'มีสารเคมีอยู่'],
+    ['ความแข็งแรง',],
+    ['ความแข็งแรง', 'ความทนทาน', 'ต้านสารเคมี'],
+    ['ความแข็งแรง', 'มีสารเคมีอยู่'],
+    ['ความแข็งแรง',],
+
+
+
   ]
   const details_nameEN = [
     'Placeholder text1',
-   
+
   ]
   const details_nameJP = [
     'プレースホルダーテキスト1',
-    
+
   ]
 
   const details_productTH = [
@@ -78,15 +114,23 @@ export default function Page() {
       'ระยะเวลาในการใช้งาน 10 ปี',
       'สามารถต้านทานสารเคมีได้ทั้งหมด 129 ตัว ซึ่งเป็นสารเคมีที่ใช้กับรถยนต์ หมายความว่าสามารถต้านทานสารเคมีได้ทุกอย่างหากเคมีนั้นเกี่ยวกับรถยนต์'
     ],
-    
+    [
+      'รับน้ำหนักได้ 500 กิโลกรัม',
+
+    ],
+    [
+      'รับน้ำหนักได้ 500 กิโลกรัม',
+
+    ],
+
   ]
   const details_productEN = [
     'Placeholder text — Lorem ipsum is dummy text used in design and layout mockups1',
-    
+
   ]
   const details_productJP = [
     'プレースホルダーテキスト — Lorem ipsum はデザインやレイアウトのモックアップで使用されるダミーテキストです1',
-  
+
   ]
 
   const revProduct_nameTH = [...product_nameTH].reverse()
@@ -112,178 +156,265 @@ export default function Page() {
   const revDetails_productJP = [...details_productJP].reverse()
 
 
-  const [lang, setLang] = useState<'th' | 'en' | 'jp'>('th');
-
-
-  useEffect(() => {
-    if (typeof window !== 'undefined') {
-      const storedLang = localStorage.getItem('lang') as 'th' | 'en' | 'jp' | null;
-      if (storedLang) setLang(storedLang);
-    }
-
-
-
-  }, []);
-
+  const page = searchParams.get("page");
+  const currentPage = page ? parseInt(page, 10) : 1;
+  const perPage = 10;
   const start = (currentPage - 1) * perPage;
-  const totalPages = Math.ceil(revProduct_nameTH.length / perPage);
+  const end = start + perPage;
+  const paginatedData = revProduct_nameTH.slice(start, end);
+  const totalPages = Math.ceil(product_nameTH.length / perPage);
 
   useEffect(() => {
+   console.log(page)
     window.scrollTo({ top: 0, behavior: 'smooth' })
-  }, [searchParams])
+  }, [searchParams]);
 
-  const pageTitle = selectedNews === null
-    ? "News & Blog | JIEI Thailand"
-    : `${product_nameTH[selectedNews]} | JIEI Thailand`;
-  const pageDescription = selectedNews === null
-    ? "อ่านข่าวสารล่าสุดและบล็อกเกี่ยวกับการผลิตยางรถยนต์และกิจกรรมต่างๆ ของ JIEI Thailand."
-    : descriptionTH[selectedNews].slice(0, 160);
+  // ✅ SEO Metadata
+  const pageTitle = selectedProduct !== null
+    ? `${product_nameTH[selectedProduct]} | JIEI Thailand - ผู้ผลิตชิ้นส่วนยางรถยนต์ ชลบุรี`
+    : `กิจกรรมบริษัท | JIEI Thailand - ผู้ผลิตชิ้นส่วนยางรถยนต์คุณภาพสูง ชลบุรี`;
+
+  const pageDescription = selectedProduct !== null
+    ? descriptionTH[selectedProduct].replace(/<[^>]+>/g, '').slice(0, 160)
+    : 'JIEI Thailand ผู้ผลิตชิ้นส่วนยางรถยนต์ในจังหวัดชลบุรี มาตรฐาน ISO9001, ISO14001, IATF16949 พร้อมอัปเดตกิจกรรมและข่าวสารของบริษัท';
+
+  const pageUrl = selectedProduct !== null
+    ? `https://www.jiei-thai.co.th/products/seals?page=${selectedProduct}`
+    : `https://www.jiei-thai.co.th/products/seals?page=${currentPage}`;
 
   return (
-    <div className='product-bg'>
+    <div className='activities-page'>
       <Head>
         <title>{pageTitle}</title>
         <meta name="description" content={pageDescription} />
-        <link rel="canonical" href="https://www.jiei-thai.co.th/news" />
+        <meta name="keywords" content="JIEI Thailand, ผู้ผลิตชิ้นส่วนยางรถยนต์, ชลบุรี, Rubber Parts Manufacturer, ยางรถยนต์, โรงงานยาง, ISO9001, IATF16949" />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href={pageUrl} />
 
+        {/* Open Graph */}
         <meta property="og:title" content={pageTitle} />
         <meta property="og:description" content={pageDescription} />
-        <meta property="og:type" content="article" />
-        <meta property="og:image" content={image[selectedNews ?? 0]} />
-        <meta property="og:url" content="https://www.jiei-thai.co.th/news" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content={selectedProduct !== null ? image[selectedProduct] : '/JIEI(Thailnad).co.,ltd.jpg'} />
+        <meta property="og:url" content={pageUrl} />
+        <meta property="og:locale" content="th_TH" />
+        <meta property="og:site_name" content="JIEI Thailand" />
+
+        {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={pageTitle} />
         <meta name="twitter:description" content={pageDescription} />
-        <meta name="twitter:image" content={image[selectedNews ?? 0]} />
+        <meta name="twitter:image" content={selectedProduct !== null ? image[selectedProduct] : '/JIEI(Thailnad).co.,ltd.jpg'} />
 
-
-        {selectedNews !== null && (
-          <script
-            type="application/ld+json"
-            dangerouslySetInnerHTML={{
-              __html: JSON.stringify({
-                "@context": "https://schema.org",
-                "@type": "NewsArticle",
-                "headline": product_nameTH[selectedNews],
-                "image": [image[selectedNews]],
-                "datePublished": new Date().toISOString(),
-                "author": {
-                  "@type": "Organization",
-                  "name": "JIEI Thailand"
-                },
-                "publisher": {
-                  "@type": "Organization",
-                  "name": "JIEI Thailand",
-                  "logo": {
-                    "@type": "ImageObject",
-                    "url": image[0]
-                  }
-                },
-                "description": descriptionTH[selectedNews]
-              })
-            }}
-          />
-        )}
+        {/* ✅ Structured Data (SEO Boost) */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "JIEI Thailand",
+              "url": "https://www.jiei-thai.co.th",
+              "logo": "https://www.jiei-thai.co.th/logo.png",
+              "description": "ผู้ผลิตชิ้นส่วนยางรถยนต์คุณภาพสูงในจังหวัดชลบุรี ได้รับมาตรฐาน ISO9001, ISO14001, IATF16949",
+              "contactPoint": [{
+                "@type": "ContactPoint",
+                "telephone": "033-136581-4",
+                "contactType": "Customer Service",
+                "areaServed": "TH",
+                "availableLanguage": ["Thai", "English", "Japan"]
+              }],
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Pinthong 4 Industrial Estate, Unit G18, 180/3 Moo 6",
+                "addressLocality": "Si Racha",
+                "addressRegion": "Chonburi",
+                "postalCode": "20230",
+                "addressCountry": "Thailand"
+              }
+            })
+          }}
+        />
       </Head>
 
-      {selectedNews === null ? (
-        <>
-          <div className='product-all'>
-            <div className="product-title">
-              <ScrollReveal>
-                <h1 className='product-name'>{lang.includes('th') ? "แท่นยึดเครื่องยนต์" : lang.includes('en') ? "Engine Mounts" : "エンジンマウント"}</h1>
-              </ScrollReveal>
-              <ScrollReveal>
-                <p className="description-product"> {lang.includes('th') ? "ยางแท่นยึดเครื่องยนต์ หรือชื่อที่มักได้ยินในวงการช่างว่า “แท่นเครื่อง” (Engine Mount) คือชิ้นส่วนเล็ก ๆ แต่สำคัญมากของรถยนต์ — หน้าที่ของมันคือ ยึดเครื่องยนต์และเกียร์เข้ากับตัวถังรถ พร้อมทั้งลดแรงสั่นสะเทือนและเสียงรบกวนที่เกิดจากการทำงานของเครื่องยนต์ไม่ให้ส่งต่อไปยังห้องโดยสาร"
-                  : lang.includes('en') ? "An engine mount (commonly called “แท่นเครื่อง” in Thai) is a small but crucial component of a car. Its main function is to secure the engine and transmission to the vehicle’s chassis while reducing vibrations and noise generated by the engine from being transmitted into the cabin."
-                    : "エンジンマウント（タイ語で「แท่นเครื่อง（テンキアン）」とも呼ばれる）は、自動車の小さいながら非常に重要な部品です。主な役割は、エンジンとトランスミッションを車体に固定し、エンジンの作動による振動や騒音が車内に伝わるのを抑えることです。"}</p>
-              </ScrollReveal>
-              <div className="line"></div>
-              <div className="product">
+      {/* ---------- UI ---------- */}
+      {selectedProduct === null ? (
+        <div>
+          <ScrollReveal>
+            <h1 className='activities-text'>
 
-                {revProduct_nameTH.map((item, index) => (
-                  <div key={index} className="product-card-box"
-                    onClick={() => {
-                      setSelectedNews(start + index)
-                      window.scrollTo({ top: 0, behavior: 'smooth' })
-                    }}>
-                    <div className="image-product-part">
+              {lang.includes('th') ? "แท่นเครื่องยนต์" : lang.includes('en') ? "Engine-mount" : "エンジンマウント"}
+            </h1>
+          </ScrollReveal>
+          <div className="line"></div>
 
-                      <Image className='image-product' src={revImage[start + index]} alt='โรงงานผลิตชิ้นส่วนยางรถยนต์มาตรฐานสากล ISO & IATF16949 ที่ชลบุรี ประเทศไทย"' width={1000} height={1000} priority />
+          <div className="activities-text-description-box">
+            <ScrollReveal>
+              <p className='activities-text-description'>
+                {lang.includes('th')
+                  ? "ติดตามข่าวสารและกิจกรรมจาก JIEI Thailand ผู้ผลิตชิ้นส่วนยางรถยนต์คุณภาพสูงจากชลบุรี เพื่อสร้างความสามัคคีและพัฒนาทีมงานอย่างต่อเนื่อง"
+                  : lang.includes('en')
+                    ? "Stay updated with activities from JIEI Thailand — a leading automotive rubber parts manufacturer based in Chonburi, Thailand."
+                    : "JIEI Thailandの活動をチェック — チョンブリーにある自動車用ゴム部品メーカーです。"}
+              </p>
+            </ScrollReveal>
+          </div>
 
-                    </div>
-                    <div className="product-box">
-                      <div className="product-card">
-                        <h4>{lang.includes('th') ? item : lang.includes('en') ? revProduct_nameEN[index] : revProduct_nameJP[index]}</h4>
-                      </div>
-                      <div className="product-description-box">
-                        <div className="space-part-box">
 
-                          <p className='space-part'>
-                            {lang.includes('th') ? revDescriptionTH[start + index] : lang.includes('en') ? revDescriptionEN[index + start] : revDescriptionJP[index + start]}
-                          </p>
+          <div className="product">
+            {paginatedData.map((item, index) => (
+              <div key={index} className="product-card-box"
+                onClick={() => {
+                  setSelectedProduct(start + index)
+                  window.scrollTo({ top: 0, behavior: 'smooth' })
+                }}>
+                <div className="image-product-part">
 
-                        </div>
+                  <Image className='image-product' src={revImage[start + index]} alt='โรงงานผลิตชิ้นส่วนยางรถยนต์มาตรฐานสากล ISO & IATF16949 ที่ชลบุรี ประเทศไทย"' width={1000} height={1000} priority />
 
-                      </div>
-                    </div>
-                    <div className="preview-product">
-                      <div className="text-preview">
-                        {lang.includes('th') ? "อ่านเพิ่มเติม" : lang.includes('en') ? "Read More" : "続きを読む"}
-                      </div>
-
-                    </div>
-                    <div className="posted">
-                      <div className="date_post">
-                        <h6 className='post'>{lang.includes('th') ? revDatePostTH[index] : lang.includes('en') ? revDatePostEN[index] : revDatePostJP[index]}</h6>
-                      </div>
-                    </div>
+                </div>
+                <div className="product-box">
+                  <div className="product-card">
+                    <h4>{lang.includes('th') ? item : lang.includes('en') ? revProduct_nameEN[index] : revProduct_nameJP[index]}</h4>
                   </div>
-                ))}
+                  <div className="product-description-box">
+                    <div className="space-part-box">
+
+                      <p className='space-part'>
+                        {lang.includes('th') ? revDescriptionTH[start + index] : lang.includes('en') ? revDescriptionEN[start + index] : revDescriptionJP[start + index]}
+                      </p>
+                    </div>
+
+                  </div>
+                </div>
+                <div className="preview-product">
+                  <div className="text-preview">
+                    <p className="preview-text">
+                      {lang.includes('th') ? "อ่านเพิ่มเติม" : lang.includes('en') ? "Read More" : "続きを読む"}
+                    </p>
+                  </div>
+
+                </div>
+                <div className="posted">
+                  <div className="date_post">
+                    <h6 className='post'>{lang.includes('th') ? revDatePostTH[start + index] : lang.includes('en') ? revDatePostEN[start + index] : revDatePostJP[start + index]}</h6>
+                  </div>
+                </div>
               </div>
-            </div>
+            ))}
           </div>
 
 
 
           <div className="page">
+            
             <nav className="countPage" aria-label="Pagination">
-              {Array.from({ length: totalPages }, (_, i) => i + 1).map((pageNum) => (
+              {/* ปุ่มย้อนกลับ */}
+              {currentPage > 1 && (
                 <Link
-                  key={pageNum}
-                  href={`/products/engine-mount?page=${pageNum}`}
-                  className={`numPage ${pageNum === currentPage ? "focusPage" : ""}`}
-                  title={`ไปหน้าที่ ${pageNum}`}>
-                  {pageNum}
+                  href={`/products/seals?page=${currentPage - 1}`}
+                  className="numPage focusPage"
+                  title={`ไปหน้าที่ ${currentPage - 1}`}
+                >
+                  <i className="bi bi-chevron-double-left"></i>
                 </Link>
-              ))}
+              )}
+
+              {/* สร้างเลขหน้าที่แสดงได้สูงสุด 3 หน้า */}
+              {(() => {
+                const maxVisible = 3;
+                let start = Math.max(1, currentPage - 1);
+                let end = Math.min(totalPages, start + maxVisible - 1);
+                if (end - start < maxVisible - 1) {
+                  start = Math.max(1, end - maxVisible + 1);
+                }
+
+                const visiblePages = [];
+                for (let i = start; i <= end; i++) {
+                  visiblePages.push(i);
+                 
+
+                }
+
+                return (
+                  <>
+                    {/* แสดงหน้าแรก + จุดไข่ปลา ด้านหน้า */}
+                    {visiblePages[0] > 1 && (
+                      <>
+                        <Link href={`/products/seals?page=1`} className="numPage" title="ไปหน้าที่ 1">
+                          1
+                        </Link>
+                        {/* <span className="dots"><i className="bi bi-dash"></i></span> */}
+                      </>
+                    )}
+
+                    {/* แสดงหน้าปัจจุบันและใกล้เคียง */}
+                    {visiblePages.map((pageNum) => (
+                      <Link
+                        key={pageNum}
+                        href={`/products/seals?page=${pageNum}`}
+                        className={`numPage ${pageNum === currentPage ? "focusPage" : ""}`}
+                        title={`ไปหน้าที่ ${pageNum}`}
+                      >
+                        {pageNum}
+                      </Link>
+                    ))}
+
+                    {/* แสดงจุดไข่ปลา + หน้าสุดท้าย */}
+                    {visiblePages[visiblePages.length - 1] < totalPages && (
+                      <>
+                        {/* <span className="dots"><i className="bi bi-dash"></i></span> */}
+                        <Link
+                          href={`/products/seals?page=${totalPages}`}
+                          className="numPage"
+                          title={`ไปหน้าที่ ${totalPages}`}
+                        >
+                          {totalPages}
+                        </Link>
+                      </>
+                    )}
+                  </>
+                );
+              })()}
+
+              {/* ปุ่มหน้าถัดไป */}
+              {currentPage < totalPages && (
+                <Link
+                  href={`/products/seals?page=${currentPage + 1}`}
+                  className="numPage focusPage"
+                  title={`ไปหน้าที่ ${currentPage + 1}`}
+                >
+                  <i className="bi bi-chevron-double-right"></i>
+                </Link>
+              )}
             </nav>
+
           </div>
-        </>
+        </div>
       ) : (
         <div className="detail-product">
-          <h2 className='title-product-page'>{lang.includes('th') ? revProduct_nameTH[selectedNews] : lang.includes('en') ? revProduct_nameEN[selectedNews] : revProduct_nameJP[selectedNews]}</h2>
+          <h2 className='title-product-page'>{lang.includes('th') ? revProduct_nameTH[selectedProduct] : lang.includes('en') ? revProduct_nameEN[selectedProduct] : revProduct_nameJP[selectedProduct]}</h2>
           <div className="line"></div>
           <div className="product-description-card">
             <div className="image-product-card">
               <ScrollReveal>
-                 
+
                 <Image
-                  src={revImage[selectedNews]}
+                  src={revImage[selectedProduct]}
                   height={1000}
                   width={1000}
-                  alt={`product image: ${revDescriptionTH[selectedNews]}`}
+                  alt={`product image: ${revDescriptionTH[selectedProduct]}`}
                   className="image-product-page"
                 />
-                
+
               </ScrollReveal>
             </div>
             <div className="description-box-product">
               <ScrollReveal>
-                <p className='datePost'>{lang.includes('th') ? datePostTH[selectedNews] : lang.includes('en') ? datePostEN[selectedNews] : datePostJP[selectedNews]}</p>
-                <h2 className='product-blog'>{lang.includes('th') ? revProduct_nameTH[selectedNews] : lang.includes('en') ? revProduct_nameEN[selectedNews] : revProduct_nameJP[selectedNews]}</h2>
-                
-                <p className='description-box-page'>{lang.includes('th') ? revDescriptionTH[selectedNews] : lang.includes('en') ? revDescriptionEN[selectedNews] : revDescriptionJP[selectedNews]}</p>
+                <p className='datePost'>{lang.includes('th') ? revDatePostTH[selectedProduct] : lang.includes('en') ? revDatePostEN[selectedProduct] : revDatePostJP[selectedProduct]}</p>
+                <h2 className='product-blog'>{lang.includes('th') ? revProduct_nameTH[selectedProduct] : lang.includes('en') ? revProduct_nameEN[selectedProduct] : revProduct_nameJP[selectedProduct]}</h2>
+
+                <p className='description-box-page'>{lang.includes('th') ? revDescriptionTH[selectedProduct] : lang.includes('en') ? revDescriptionEN[selectedProduct] : revDescriptionJP[selectedProduct]}</p>
               </ScrollReveal>
               <div className="product-description-box-2">
                 <ScrollReveal>
@@ -292,16 +423,16 @@ export default function Page() {
               </div>
 
               <div className="description-product-table">
-                {details_nameTH[selectedNews].map((item, index) =>
+                {revDetails_nameTH[selectedProduct].map((item, index) =>
                   <div key={index} className={`pop-product${index % 2 == 0 ? 1 : 2}`}>
                     <div className={`table-spec1${index % 2 == 0 ? 1 : 2}`}>
                       <ScrollReveal>
-                        <p className='product-description-table-title'> {lang.includes('th') ? revDetails_nameTH[selectedNews][index] : lang.includes('en') ? revDetails_nameEN[selectedNews] : revDetails_nameJP[selectedNews]}</p>
+                        <p className='product-description-table-title'> {lang.includes('th') ? revDetails_nameTH[selectedProduct][index] : lang.includes('en') ? revDetails_nameEN[selectedProduct][index] : revDetails_nameJP[selectedProduct][index]}</p>
                       </ScrollReveal>
                     </div>
                     <div className={`table-spec${index % 2 == 0 ? 1 : 2}`}>
                       <ScrollReveal>
-                        <p className='product-description-table'> {lang.includes('th') ? revDetails_productTH[selectedNews][index] : lang.includes('en') ? revDetails_productEN[selectedNews] : revDetails_productJP[selectedNews]}</p>
+                        <p className='product-description-table'> {lang.includes('th') ? revDetails_productTH[selectedProduct][index] : lang.includes('en') ? revDetails_productEN[selectedProduct][index] : revDetails_productJP[selectedProduct][index]}</p>
                       </ScrollReveal>
                     </div>
                   </div>
@@ -312,15 +443,14 @@ export default function Page() {
 
           <div className="btn-back-newsPage">
             <button onClick={() => {
-              setSelectedNews(null)
+              setSelectedProduct(null)
               window.scrollTo({ top: 0, behavior: 'smooth' })
             }} className="back-btn">
               กลับไปหน้ารวม {lang.includes('th') ? "" : lang.includes('en') ? "" : ""}
             </button>
           </div>
         </div >
-      )
-      }
-    </div >
+      )}
+    </div>
   );
 }

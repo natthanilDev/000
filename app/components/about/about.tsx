@@ -114,10 +114,29 @@ export default function About() {
                             </ScrollReveal>
                         </div>
                         <ScrollReveal>
+                            <div className="president-image-box">
+                                <div className="president-image">
+                                    <Image className='image-president-company' src={'/top-manager/5.png'} alt='บริษัท เจไออีไอ (ประเทศไทย) จำกัด ผู้ผลิต ชิ้นส่วนยางรถยนต์ จังหวัดชลบุรี' priority width={1000} height={1000} />
+                                </div>
+                                <div className="president-content">
+                                    <ScrollReveal>
+                                        <h2 className='position-topmanager'>{lang === "th" ? "ประธานบริษัท" : lang === "en" ? "President" : "代表取締役社長"} </h2>
+                                        <p className='top-manager-name'>{lang === 'th' ? "คุณมาซาชิ เอซากะ" : lang.includes('en') ? "Mr.Masashi Ezaka" : "江坂 正志"}</p>
+                                    </ScrollReveal>
+                                </div>
+                            </div>
+                        </ScrollReveal>
+
+
+                        {/* <ScrollReveal>
+                            <div className="about-grid-image">
+                            </div>
+                        </ScrollReveal> */}
+                    </div>
+                    <ScrollReveal>
                             <div className="about-grid-image">
                             </div>
                         </ScrollReveal>
-                    </div>
                 </section >
                 <ScrollReveal>
                     <h1 className='about-company-name'>{lang.includes('th') ? "บริษัท เจไออีไอ (ประเทศไทย) จำกัด" : lang.includes('en') ? "JIEI (Thailand) Co., Ltd." : "ジェイアイ (タイランド)株式会社"} </h1>
@@ -193,7 +212,7 @@ export default function About() {
                 </ScrollReveal>
 
 
-                <Employee />
+                {/* <Employee /> */}
 
 
                 <div className="partners-box">

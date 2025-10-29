@@ -1915,7 +1915,7 @@ a:hover {
 
 .aboutUs-page {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1.5fr 1fr;
   width: 80%;
   margin: 50px auto;
   gap: 50px;
@@ -1924,32 +1924,33 @@ a:hover {
 }
 
 
+
 .about-grid-image {
   transition: all ease 0.25s;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 60vh;
+  height: 80vh;
+  width: 100%;
+  margin: 0 auto;
   animation: display_company 10s infinite alternate ease-in-out;
-
 
 }
 
 @keyframes display_company {
   0% {
     background-image: url('/jiei-office.jpg');
-    box-shadow: 0 0 10px 2px #b7b7b7;
+    /* box-shadow: 0 0 10px 2px #b7b7b7; */
   }
 
   30% {
     background-image: url('/JIEI(Thailnad).co.,ltd.jpg');
-    box-shadow: 0 0 10px 2px #000796;
+    /* box-shadow: 0 0 10px 2px #000796; */
   }
 
   60% {
     background-image: url('/JIEI-New-Factory-scaled.jpg');
-    box-shadow: 0 0 10px 2px #3d47ff;
-
+    /* box-shadow: 0 0 10px 2px #3d47ff; */
   }
 
   100% {
@@ -2616,6 +2617,10 @@ h4 {
     gap: 50px;
     width: 90%;
     margin: 0 auto;
+  }
+
+  .about-grid-image {
+    margin: 50px auto;
   }
 
   .description-position {
@@ -4039,7 +4044,7 @@ h4 {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; */
-
+  margin-bottom: 50px;
   color: var(--font-color);
 }
 
@@ -4062,12 +4067,14 @@ h4 {
 
 
 .design-analysis-box {
-  height: 100vh;
-  overflow: scroll;
-  scroll-snap-type: none;
+  /* height: 100vh; */
+  /* overflow: scroll; */
+  /* scroll-snap-type: none; */
 
 }
-
+.image-tach{
+  margin-bottom: 20px;
+}
 .introduction-content {
   text-align: center;
   margin-bottom: 20px;
@@ -4085,6 +4092,7 @@ h4 {
   display: grid;
   gap: 25px;
   grid-template-columns: 1fr 1fr;
+  
 
 }
 
@@ -4096,7 +4104,16 @@ h4 {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 25px;
 
+}
+.image-card-tach{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
 }
 
 .topic-2 {
@@ -4139,6 +4156,11 @@ h4 {
     grid-template-columns: 1fr;
 
   }
+  .design-analysis-content {
+
+  grid-template-columns: 1fr ;
+  
+}
 
   .deformation-jiei {
     grid-template-columns: 1fr 1fr;
@@ -4176,6 +4198,7 @@ h4 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   gap: 20px;
+
 }
 
 .image-product-part {
@@ -4308,6 +4331,8 @@ h4 {
   .product {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    width: 95%;
+    margin: 0 auto;
   }
 
   .product-card-box:hover {
@@ -4320,12 +4345,13 @@ h4 {
   }
 }
 
-@media screen and (max-width : 320px) {
+@media screen and (max-width : 500px) {
   .product {
     display: grid;
     grid-template-columns: 1fr;
+    width: 80%;
+    
   }
-
 }
 
 
@@ -4620,6 +4646,21 @@ h4 {
   z-index: -1;
 }
 
+.president-image-box {
+  margin: 0px auto;
+  text-align: center;
+  box-shadow: 0 0 2px #959595;
+  padding: 20px 0;
+  border-radius: 10px;
+  background-color: #eeeeee;
+
+}
+
+.image-president-company {
+  width: 80%;
+  margin: 0 auto;
+}
+
 .upIcon {
   font-size: 50px;
   color: #000796;
@@ -4644,4 +4685,31 @@ h4 {
   50% {
     transform: translateY(-10px);
   }
+}
+
+.contact-homepage {
+  text-align: center;
+  margin: 0 auto 100px auto;
+  width: 50%;
+}
+
+.contact-box-homepage {
+  background-color: #002671;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px 40px;
+  transition: all ease 0.25s;
+  border-radius: 10px;
+
+}
+
+.contactHomepage {
+  font-size: 18px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.contact-box-homepage:hover {
+  background-color: #003bb1;
+
 }

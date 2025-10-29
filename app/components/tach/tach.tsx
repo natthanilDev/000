@@ -1,4 +1,3 @@
-
 'use client'
 import React from 'react'
 import Head from 'next/head'
@@ -150,13 +149,13 @@ export default function Tach() {
 
 
 
-    const Analysis = ['/dean_r1_c1.jpg', '/dean_r1_c3.jpg', '/dean_r3_c1.jpg', '/dean_r3_c3.jpg']
+    const Analysis = ['/dean_r1_c1.png', '/dean_r1_c3.png', '/dean_r3_c1.png', '/dean_r3_c3.png', '/dean_r1_c3.png',]
 
     const contentAnalysisTH = ["การเขียนแบบด้วย CAD", "การวิเคราะห์โครงสร้าง", "การจำลองพฤติกรรมของวัสดุ", "การทดสอบผลิตภัณฑ์"]
     const contentAnalysisEN = ["CAD Drawing", "Structural Analysis", "Material Simulation", "Product Testing"]
     const contentAnalysisJP = ["CAD図面作成", "構造解析", "材料シミュレーション", "製品試験"]
 
-    const materials = ['/03_r1_c1.jpg', '/03_r1_c3.jpg', '/03_r1_c5.jpg', '/03_r1_c8.jpg']
+    const materials = ['/03_r1_c1.png', '/03_r1_c3.png', '/03_r1_c5.png', '/03_r1_c8.png']
 
     const contentMaterialsTH = ['เครื่องทดสอบการรีด', "เครื่องวัดความหนืดแบบ Mooney", "เครื่องทดสอบแรงดึง", "การวิเคราะห์แรงกดอัดและความเค้นสัมผัส"]
     const contentMaterialsEN = ["Test Roll", "Money Viscosity meter", "Tensile strength testing machine", "Compressive load analysis and contact stress analysis"]
@@ -166,7 +165,7 @@ export default function Tach() {
 
 
 
-    const evaluation = ['/04_r1_c1.jpg', '/04_r1_c3.jpg', '/04_r1_c5.jpg', '/04_r1_c8.jpg']
+    const evaluation = ['/04_r1_c1.png', '/04_r1_c3.png', '/04_r1_c5.png', '/04_r1_c8.png', '/04_r1_c8.png']
 
     const contentEvaluationTH = ["เครื่องทดสอบแรงกด", "การกระจายแรงดันบนพื้นผิว", 'การวัดการกระจายแรงดันบนพื้นผิว', "การวัดสมรรถนะการกันเสียงแบบง่าย"]
     const contentEvaluationEN = ["Load Testing Machine", "Surface Pressure Distribution", "Surface Pressure Distribution Measurement", "Simple Sound Insulation Performance Measurement"]
@@ -263,20 +262,26 @@ export default function Tach() {
                         <div className="design-analysis-content-box">
                             {topicTH.map((item, index) => (
                                 <div className="design-analysis-content" key={index}>
-                                    <div className="design-analysis-content-topic">
-                                        <ScrollReveal>
-                                            <h3 itemProp="about" className='topic-2'>{lang.includes('th') ? item
-                                                : lang.includes('en') ? topicEN[index]
-                                                    : topicJP[index]}</h3>
-                                        </ScrollReveal>
+                                    <div className="image-card-tach">
+                                        <Image className='image-tach' src={Analysis[index]} alt={item} priority width={1000} height={1000} />
                                     </div>
-                                    <div className="design-analysis-content-content">
-                                        <ScrollReveal>
-                                            <p itemProp="articleBody" className='content-technology'>
-                                                {lang.includes('th') ? contentTH[index] : lang.includes('en') ? contentEN[index] : contentJP[index]}
-                                            </p>
-                                        </ScrollReveal>
+                                    <div className="content-card-tach">
+                                        <div className="design-analysis-content-topic">
+                                            <ScrollReveal>
+                                                <h3 itemProp="about" className='topic-2'>{lang.includes('th') ? item
+                                                    : lang.includes('en') ? topicEN[index]
+                                                        : topicJP[index]}</h3>
+                                            </ScrollReveal>
+                                        </div>
+                                        <div className="design-analysis-content-content">
+                                            <ScrollReveal>
+                                                <p itemProp="articleBody" className='content-technology'>
+                                                    {lang.includes('th') ? contentTH[index] : lang.includes('en') ? contentEN[index] : contentJP[index]}
+                                                </p>
+                                            </ScrollReveal>
+                                        </div>
                                     </div>
+
                                 </div>
                             ))}
                         </div>
@@ -291,57 +296,76 @@ export default function Tach() {
                                 <meta itemProp="author" content="JIEI Thailand" />
                             </ScrollReveal>
                         </div>
+
                         <div className="design-analysis-content-box">
                             {topicTH1.map((item, index) => (
                                 <div className="design-analysis-content" key={index}>
-                                    <div className="design-analysis-content-topic">
-                                        <ScrollReveal>
-                                            <h3 itemProp="about" className='topic-2'>{lang.includes('th') ? item : lang.includes('en') ? topicEN1[index] : topicJP1[index]}</h3>
-                                        </ScrollReveal>
+                                    <div className="image-card-tach">
+                                        <Image className='image-tach' src={materials[index]} alt={item} priority width={1000} height={1000} />
                                     </div>
-                                    <div className="design-analysis-content-content">
-                                        <ScrollReveal>
-                                            <p itemProp="articleBody" className='content-technology'>
-                                                {lang.includes('th') ? contentTH1[index] : lang.includes('en') ? contentEN1[index] : contentJP1[index]}
-                                            </p>
-                                        </ScrollReveal>
+                                    <div className="content-card-tach">
+                                        <div className="design-analysis-content-topic">
+                                            <ScrollReveal>
+                                                <h3 itemProp="about" className='topic-2'>{lang.includes('th') ? item : lang.includes('en') ? topicEN1[index] : topicJP1[index]}</h3>
+
+                                            </ScrollReveal>
+                                        </div>
+                                        <div className="design-analysis-content-content">
+                                            <ScrollReveal>
+                                                <p itemProp="articleBody" className='content-technology'>
+                                                    {lang.includes('th') ? contentTH1[index] : lang.includes('en') ? contentEN1[index] : contentJP1[index]}
+                                                </p>
+                                            </ScrollReveal>
+                                        </div>
                                     </div>
+
                                 </div>
                             ))}
                         </div>
+
 
 
 
                         <div className="design-analysis-topic">
                             <ScrollReveal>
-                                <h2 itemProp="headline" className='topic-technology'>{lang.includes('th') ? "การประเมินสมรรถนะ" : lang.includes('en')  ? "Functional Evaluation" : "機能評価"}</h2>
+                                <h2 itemProp="headline" className='topic-technology'>{lang.includes('th') ? "การประเมินสมรรถนะ" : lang.includes('en') ? "Functional Evaluation" : "機能評価"}</h2>
                                 <meta itemProp="author" content="JIEI Thailand" />
                             </ScrollReveal>
                         </div>
+
                         <div className="design-analysis-content-box">
                             {topicTH2.map((item, index) => (
                                 <div className="design-analysis-content" key={index}>
-                                    <div className="design-analysis-content-topic">
-                                        <ScrollReveal>
-                                            <h3 itemProp="about" className='topic-2'>{lang.includes('th') ? item : lang.includes('en') ? topicEN2[index] : topicJP2[index]}</h3>
-                                        </ScrollReveal>
+                                    <div className="image-card-tach">
+                                        <Image className='image-tach' src={evaluation[index]} alt={item} priority width={1000} height={1000} />
                                     </div>
-                                    <div className="design-analysis-content-content">
-                                        <ScrollReveal>
-                                            <p itemProp="articleBody" className='content-technology'>
-                                                {lang.includes('th') ? contentTH2[index] : lang.includes('en') ? contentEN2[index] : contentJP2[index]}
-                                            </p>
-                                        </ScrollReveal>
+                                    <div className="content-card-tach">
+                                        <div className="design-analysis-content-topic">
+                                            <ScrollReveal>
+                                                <h3 itemProp="about" className='topic-2'>{lang.includes('th') ? item : lang.includes('en') ? topicEN2[index] : topicJP2[index]}</h3>
+                                            </ScrollReveal>
+                                        </div>
+                                        <div className="design-analysis-content-content">
+                                            <ScrollReveal>
+                                                <p itemProp="articleBody" className='content-technology'>
+                                                    {lang.includes('th') ? contentTH2[index] : lang.includes('en') ? contentEN2[index] : contentJP2[index]}
+                                                </p>
+                                            </ScrollReveal>
+                                        </div>
                                     </div>
+
                                 </div>
                             ))}
                         </div>
+
+
+                     
 
                     </div>
                 </div>
 
                 {/* Sections with Images */}
-                <div className="Design-analysis-box">
+                {/* <div className="Design-analysis-box">
                     <ScrollReveal>
                         <div className="Design-analysis-text-box">
                             <h1 className='Design-analysis-text'>{lang.includes('th') ? "การออกแบบและการวิเคราะห์" : lang.includes('en') ? "Design & Analysis" : "設計と解析"}</h1>
@@ -367,10 +391,10 @@ export default function Tach() {
                             </div>
                         ))}
                     </div>
-                </div>
+                </div> */}
 
 
-                <div className="Design-analysis-box">
+                {/* <div className="Design-analysis-box">
                     <div className="Design-analysis-text-box">
                         <ScrollReveal>
                             <h1 className='Design-analysis-text'>{lang.includes('th') ? "การพัฒนาวัสดุ" : lang.includes('en') ? "Materials Development" : "材料開発"}</h1>
@@ -387,17 +411,17 @@ export default function Tach() {
                                 </div>
                                 <div className="text-img-box">
                                     <ScrollReveal>
-                                        <h3 className='text-img'>{lang.includes('th') ? contentMaterialsTH[index] 
-                                        : lang.includes('en') ? contentMaterialsEN[index] 
-                                        : contentMaterialsJP[index]}</h3>
+                                        <h3 className='text-img'>{lang.includes('th') ? contentMaterialsTH[index]
+                                            : lang.includes('en') ? contentMaterialsEN[index]
+                                                : contentMaterialsJP[index]}</h3>
                                     </ScrollReveal>
                                 </div>
                             </div>
                         ))}
                     </div>
-                </div>
+                </div> */}
 
-
+                {/* 
                 <ScrollReveal>
                     <div className="Design-analysis-box">
                         <div className="Design-analysis-text-box">
@@ -423,7 +447,7 @@ export default function Tach() {
                             ))}
                         </div>
                     </div>
-                </ScrollReveal>
+                </ScrollReveal> */}
             </div>
         </div >
     )

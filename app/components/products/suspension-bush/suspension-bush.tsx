@@ -7,21 +7,18 @@ import { useSearchParams } from "next/navigation";
 import ScrollReveal from "../../ScrollReveal/ScrollReveal";
 
 export default function Page() {
-  const searchParams = useSearchParams();
-  const [selectedNews, setSelectedNews] = useState<number | null>(null);
 
-  const page = searchParams.get("page");
-  const currentPage = page ? parseInt(page, 10) : 1;
-  const perPage = 8;
 
   const product_nameTH = [
-    'แท่นยึดเครื่องยนต์',
-   
+    'แท่นยึดเครื่องยนต์1',
+    'แท่นยึดเครื่องยนต์2',
+    
+
   ]
 
   const product_nameEN = [
     'Product Name',
-   
+
   ]
 
   const product_nameJP = [
@@ -29,8 +26,10 @@ export default function Page() {
 
   ]
   const descriptionTH = [
-    'ยางแท่นยึดเครื่องยนต์ หรือชื่อที่มักได้ยินในวงการช่างว่า “แท่นเครื่อง” (Engine Mount) คือชิ้นส่วนเล็ก ๆ แต่สำคัญมากของรถยนต์ — หน้าที่ของมันคือ ยึดเครื่องยนต์และเกียร์เข้ากับตัวถังรถ พร้อมทั้งลดแรงสั่นสะเทือนและเสียงรบกวนที่เกิดจากการทำงานของเครื่องยนต์ไม่ให้ส่งต่อไปยังห้องโดยสาร',
+    'ยางแท่นยึดเครื่องยนต์ หรือชื่อที่มักได้ยินในวงการช่างว่า “แท่นเครื่อง” (Engine Mount) คือชิ้นส่วนเล็ก ๆ แต่สำคัญมากของรถยนต์ — หน้าที่ของมันคือ ยึดเครื่องยนต์และเกียร์เข้ากับตัวถังรถ พร้อมทั้งลดแรงสั่นสะเทือนและเสียงรบกวนที่เกิดจากการทำงานของเครื่องยนต์ไม่ให้ส่งต่อไปยังห้องโดยสาร1',
+    'ยางแท่นยึดเครื่องยนต์ หรือชื่อที่มักได้ยินในวงการช่างว่า “แท่นเครื่อง2” ',
     
+
   ]
   const descriptionEN = [
     'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores illum at voluptate aperiam ducimus totam voluptatibus nemo corporis ut ratione excepturi quae veritatis quis sit, tenetur temporibus a laudantium! Aperiam?',
@@ -44,15 +43,19 @@ export default function Page() {
 
   const image = [
     '/ยางขอบประตูรถยนต์.png',
+    '/ยางขอบประตูรถยนต์.png',
     
   ]
   const datePostTH = [
-    'โพสเมื่อ 24 ตุลาคม 2025',
+    'โพสเมื่อ 29 ตุลาคม 2025',
+    'โพสเมื่อ 30 ตุลาคม 2025',
     
+
+
   ];
   const datePostEN = [
     'Posted on October 24, 2025',
-  
+
   ];
   const datePostJP = [
     '2025年10月24日掲載（とうこう）',
@@ -60,33 +63,38 @@ export default function Page() {
   ];
 
   const details_nameTH = [
-    ['ความแข็งแรง', 'ความทนทาน' , 'ต้านสารเคมี'],
+    ['ความแข็งแรง1', 'ความทนทาน1', 'ต้านสารเคมี1'],
+    ['ความแข็งแรง2', 'ความทนทาน2', 'ต้านสารเคมี2'],
    
   ]
   const details_nameEN = [
     'Placeholder text1',
-   
+
   ]
   const details_nameJP = [
     'プレースホルダーテキスト1',
-    
+
   ]
 
   const details_productTH = [
     [
-      'รับน้ำหนักได้ 500 กิโลกรัม',
-      'ระยะเวลาในการใช้งาน 10 ปี',
-      'สามารถต้านทานสารเคมีได้ทั้งหมด 129 ตัว ซึ่งเป็นสารเคมีที่ใช้กับรถยนต์ หมายความว่าสามารถต้านทานสารเคมีได้ทุกอย่างหากเคมีนั้นเกี่ยวกับรถยนต์'
+      'รับน้ำหนักได้ 500 กิโลกรัม1',
+      'ระยะเวลาในการใช้งาน 10 ปี1',
+      'สามารถต้านทานสารเคมีได้ทั้งหมด 129 ตัว ซึ่งเป็นสารเคมีที่ใช้กับรถยนต์ หมายความว่าสามารถต้านทานสารเคมีได้ทุกอย่างหากเคมีนั้นเกี่ยวกับรถยนต์1'
     ],
-    
+    [
+      'รับน้ำหนักได้ 500 กิโลกรัม2',
+      'ระยะเวลาในการใช้งาน 10 ปี2',
+      'สามารถต้านทานสารเคมีได้ทั้งหมด 129 ตัว ซึ่งเป็นสารเคมีที่ใช้กับรถยนต์ หมายความว่าสามารถต้านทานสารเคมีได้ทุกอย่างหากเคมีนั้นเกี่ยวกับรถยนต์2'
+    ],
   ]
   const details_productEN = [
     'Placeholder text — Lorem ipsum is dummy text used in design and layout mockups1',
-    
+
   ]
   const details_productJP = [
     'プレースホルダーテキスト — Lorem ipsum はデザインやレイアウトのモックアップで使用されるダミーテキストです1',
-  
+
   ]
 
   const revProduct_nameTH = [...product_nameTH].reverse()
@@ -112,7 +120,16 @@ export default function Page() {
   const revDetails_productJP = [...details_productJP].reverse()
 
   const [lang, setLang] = useState<'th' | 'en' | 'jp'>('th');
+  const [selectedProduct, setSelectedProduct] = useState<number | null>(null);
+  const searchParams = useSearchParams()
 
+  const perPage = 10
+  const page = searchParams.get('page')
+  const currentPage = page ? parseInt(page, 10) : 1
+  const start = (currentPage - 1) * perPage
+  const end = start + perPage
+  const paginatedData = revProduct_nameTH.slice(start, end)
+  const totalPages = Math.ceil(revProduct_nameTH.length/perPage)
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
@@ -120,21 +137,22 @@ export default function Page() {
       if (storedLang) setLang(storedLang);
     }
 
+    console.log(totalPages)
+
   }, []);
 
-  const start = (currentPage - 1) * perPage;
-  const totalPages = Math.ceil(revProduct_nameTH.length / perPage);
+
 
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'smooth' })
   }, [searchParams])
 
-  const pageTitle = selectedNews === null
+  const pageTitle = selectedProduct === null
     ? "News & Blog | JIEI Thailand"
-    : `${product_nameTH[selectedNews]} | JIEI Thailand`;
-  const pageDescription = selectedNews === null
+    : `${product_nameTH[selectedProduct]} | JIEI Thailand`;
+  const pageDescription = selectedProduct === null
     ? "อ่านข่าวสารล่าสุดและบล็อกเกี่ยวกับการผลิตยางรถยนต์และกิจกรรมต่างๆ ของ JIEI Thailand."
-    : descriptionTH[selectedNews].slice(0, 160);
+    : descriptionTH[selectedProduct].slice(0, 160);
 
   return (
     <div className='product-bg'>
@@ -146,23 +164,23 @@ export default function Page() {
         <meta property="og:title" content={pageTitle} />
         <meta property="og:description" content={pageDescription} />
         <meta property="og:type" content="article" />
-        <meta property="og:image" content={image[selectedNews ?? 0]} />
+        <meta property="og:image" content={image[selectedProduct ?? 0]} />
         <meta property="og:url" content="https://www.jiei-thai.co.th/news" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={pageTitle} />
         <meta name="twitter:description" content={pageDescription} />
-        <meta name="twitter:image" content={image[selectedNews ?? 0]} />
+        <meta name="twitter:image" content={image[selectedProduct ?? 0]} />
 
 
-        {selectedNews !== null && (
+        {selectedProduct !== null && (
           <script
             type="application/ld+json"
             dangerouslySetInnerHTML={{
               __html: JSON.stringify({
                 "@context": "https://schema.org",
                 "@type": "NewsArticle",
-                "headline": product_nameTH[selectedNews],
-                "image": [image[selectedNews]],
+                "headline": product_nameTH[selectedProduct],
+                "image": [image[selectedProduct]],
                 "datePublished": new Date().toISOString(),
                 "author": {
                   "@type": "Organization",
@@ -176,14 +194,14 @@ export default function Page() {
                     "url": image[0]
                   }
                 },
-                "description": descriptionTH[selectedNews]
+                "description": descriptionTH[selectedProduct]
               })
             }}
           />
         )}
       </Head>
 
-      {selectedNews === null ? (
+      {selectedProduct === null ? (
         <>
           <div className='product-all'>
             <div className="product-title">
@@ -198,10 +216,10 @@ export default function Page() {
               <div className="line"></div>
               <div className="product">
 
-                {revProduct_nameTH.map((item, index) => (
+                {paginatedData.map((item, index) => (
                   <div key={index} className="product-card-box"
                     onClick={() => {
-                      setSelectedNews(start + index)
+                      setSelectedProduct(start + index)
                       window.scrollTo({ top: 0, behavior: 'smooth' })
                     }}>
                     <div className="image-product-part">
@@ -232,7 +250,7 @@ export default function Page() {
                     </div>
                     <div className="posted">
                       <div className="date_post">
-                        <h6 className='post'>{lang.includes('th') ? revDatePostTH[index] : lang.includes('en') ? revDatePostEN[index] : revDatePostJP[index]}</h6>
+                        <h6 className='post'>{lang.includes('th') ? revDatePostTH[start + index] : lang.includes('en') ? revDatePostEN[start + index] : revDatePostJP[start + index]}</h6>
                       </div>
                     </div>
                   </div>
@@ -245,42 +263,111 @@ export default function Page() {
 
           <div className="page">
             <nav className="countPage" aria-label="Pagination">
-              {Array.from({ length: totalPages }, (_, i) => i + 1).map((pageNum) => (
+
+              {currentPage > 1 &&
                 <Link
-                  key={pageNum}
-                  href={`/products/engine-mount?page=${pageNum}`}
-                  className={`numPage ${pageNum === currentPage ? "focusPage" : ""}`}
-                  title={`ไปหน้าที่ ${pageNum}`}>
-                  {pageNum}
+                  href={`/products/suspension-bush?page=${currentPage - 1}`}
+                  className="numPage focusPage"
+                  title={`ไปหน้าที่ ${currentPage - 1}`}>
+                  <i className="bi bi-chevron-double-left"></i>
                 </Link>
-              ))}
+
+              }
+              {(() => {
+                const maxVisible = 3;
+                let start = Math.max(1, currentPage-1 );
+                let end = Math.min(totalPages, start + maxVisible - 1);
+                if (end - start < maxVisible - 1) {
+                  start = Math.max(1, end - maxVisible + 1);
+                }
+
+                const visiblePages = [];
+                for (let i = start; i <= end; i++) {
+                  visiblePages.push(i);
+
+
+                }
+
+                return (
+                  <>
+                    {/* แสดงหน้าแรก + จุดไข่ปลา ด้านหน้า */}
+                    {visiblePages[0] > 1 && (
+                      <>
+                        <Link href={`/products/suspension-bush?page=1`} className="numPage" title="ไปหน้าที่ 1">
+                          1
+                        </Link>
+                        {/* <span className="dots"><i className="bi bi-dash"></i></span> */}
+                      </>
+                    )}
+
+                    {/* แสดงหน้าปัจจุบันและใกล้เคียง */}
+                    {visiblePages.map((pageNum) => (
+                      <Link
+                        key={pageNum}
+                        href={`/products/suspension-bush?page=${pageNum}`}
+                        className={`numPage ${pageNum === currentPage ? "focusPage" : ""}`}
+                        title={`ไปหน้าที่ ${pageNum}`}
+                      >
+                        {pageNum}
+                      </Link>
+                    ))}
+
+                    {/* แสดงจุดไข่ปลา + หน้าสุดท้าย */}
+                    {visiblePages[visiblePages.length - 1] < totalPages && (
+                      <>
+                        {/* <span className="dots"><i className="bi bi-dash"></i></span>  */}
+                        <Link
+                          href={`/products/suspension-bush?page=${totalPages}`}
+                          className="numPage"
+                          title={`ไปหน้าที่ ${totalPages}`}
+                        >
+                          {totalPages}
+                        </Link>
+                      </>
+                    )}
+                  </>
+                );
+              })()}
+
+
+
+
+              {currentPage < totalPages &&
+                <Link
+                  href={`/products/suspension-bush?page=${currentPage + 1}`}
+                  className="numPage focusPage"
+                  title={`ไปหน้าที่ ${currentPage + 1}`}>
+                  <i className="bi bi-chevron-double-right"></i>
+                </Link>
+
+              }
             </nav>
           </div>
         </>
       ) : (
         <div className="detail-product">
-          <h2 className='title-product-page'>{lang.includes('th') ? revProduct_nameTH[selectedNews] : lang.includes('en') ? revProduct_nameEN[selectedNews] : revProduct_nameJP[selectedNews]}</h2>
+          <h2 className='title-product-page'>{lang.includes('th') ? revProduct_nameTH[selectedProduct] : lang.includes('en') ? revProduct_nameEN[selectedProduct] : revProduct_nameJP[selectedProduct]}</h2>
           <div className="line"></div>
           <div className="product-description-card">
             <div className="image-product-card">
               <ScrollReveal>
-                 
+
                 <Image
-                  src={revImage[selectedNews]}
+                  src={revImage[selectedProduct]}
                   height={1000}
                   width={1000}
-                  alt={`product image: ${revDescriptionTH[selectedNews]}`}
+                  alt={`product image: ${revDescriptionTH[selectedProduct]}`}
                   className="image-product-page"
                 />
-                
+
               </ScrollReveal>
             </div>
             <div className="description-box-product">
               <ScrollReveal>
-                <p className='datePost'>{lang.includes('th') ? datePostTH[selectedNews] : lang.includes('en') ? datePostEN[selectedNews] : datePostJP[selectedNews]}</p>
-                <h2 className='product-blog'>{lang.includes('th') ? revProduct_nameTH[selectedNews] : lang.includes('en') ? revProduct_nameEN[selectedNews] : revProduct_nameJP[selectedNews]}</h2>
-                
-                <p className='description-box-page'>{lang.includes('th') ? revDescriptionTH[selectedNews] : lang.includes('en') ? revDescriptionEN[selectedNews] : revDescriptionJP[selectedNews]}</p>
+                <p className='datePost'>{lang.includes('th') ? revDatePostTH[selectedProduct] : lang.includes('en') ? revDatePostEN[selectedProduct] : revDatePostJP[selectedProduct]}</p>
+                <h2 className='product-blog'>{lang.includes('th') ? revProduct_nameTH[selectedProduct] : lang.includes('en') ? revProduct_nameEN[selectedProduct] : revProduct_nameJP[selectedProduct]}</h2>
+
+                <p className='description-box-page'>{lang.includes('th') ? revDescriptionTH[selectedProduct] : lang.includes('en') ? revDescriptionEN[selectedProduct] : revDescriptionJP[selectedProduct]}</p>
               </ScrollReveal>
               <div className="product-description-box-2">
                 <ScrollReveal>
@@ -289,34 +376,34 @@ export default function Page() {
               </div>
 
               <div className="description-product-table">
-                {details_nameTH[selectedNews].map((item, index) =>
+                {details_nameTH[selectedProduct].map((item, index) =>
                   <div key={index} className={`pop-product${index % 2 == 0 ? 1 : 2}`}>
                     <div className={`table-spec1${index % 2 == 0 ? 1 : 2}`}>
                       <ScrollReveal>
 
 
 
-                        <p className='product-description-table-title'> {lang.includes('th') ? revDetails_nameTH[selectedNews][index] : lang.includes('en') ? revDetails_nameEN[selectedNews] : revDetails_nameJP[selectedNews]}</p>
+                        <p className='product-description-table-title'> {lang.includes('th') ? revDetails_nameTH[selectedProduct][index] : lang.includes('en') ? revDetails_nameEN[selectedProduct] : revDetails_nameJP[selectedProduct]}</p>
                       </ScrollReveal>
                     </div>
                     <div className={`table-spec${index % 2 == 0 ? 1 : 2}`}>
                       <ScrollReveal>
-                        <p className='product-description-table'> {lang.includes('th') ? revDetails_productTH[selectedNews][index] : lang.includes('en') ? revDetails_productEN[selectedNews] : revDetails_productJP[selectedNews]}</p>
+                        <p className='product-description-table'> {lang.includes('th') ? revDetails_productTH[selectedProduct][index] : lang.includes('en') ? revDetails_productEN[selectedProduct] : revDetails_productJP[selectedProduct]}</p>
                       </ScrollReveal>
                     </div>
-                   
+
                   </div>
                 )}
 
 
-                
+
               </div>
             </div>
           </div>
 
           <div className="btn-back-newsPage">
             <button onClick={() => {
-              setSelectedNews(null)
+              setSelectedProduct(null)
               window.scrollTo({ top: 0, behavior: 'smooth' })
             }} className="back-btn">
               กลับไปหน้ารวม {lang.includes('th') ? "" : lang.includes('en') ? "" : ""}

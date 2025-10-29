@@ -131,7 +131,7 @@ export default function Home() {
                     }}
                 />
             </Head>
-                    
+
             <div className="background" >
                 <section className="relative h-screen w-full overflow-hidden">
                     <video
@@ -150,7 +150,7 @@ export default function Home() {
                             <div className="border-display">
                                 <div className="company_name_box">
                                     <h1 className="company_name">
-                                            JIEI THAILAND   
+                                        JIEI THAILAND
                                     </h1>
                                 </div>
                                 <div className="company_name_box">
@@ -200,9 +200,9 @@ export default function Home() {
                         <div className="why-choose-content">
                             <ScrollReveal>
                                 <p className='p-text-why'>{lang.includes('th') ? "ไม่ใช่แค่ผู้ผลิต แต่คือพาร์ทเนอร์ที่คุณไว้วางใจได้" : lang.includes('en') ? "Not just a manufacturer, but a partner you can trust." : "単なるメーカーではなく、信頼できるパートナーです。"}</p>
-                                <p className='t-w-y'>{lang.includes('th') ? "ที่ JIEI Thailand เรามีความเชี่ยวชาญมากกว่าทศวรรษ  ด้วยระบบมาตรฐาน ISO9001, ISO14001, IATF16949 เราผลิตชิ้นส่วนยางที่ผ่านการตรวจสอบทุกขั้นตอน ตอบโจทย์ความแม่นยำ ความทนทาน และความเป็นมิตรต่อสิ่งแวดล้อม เพราะเรารู้ว่าธุรกิจของคุณต้องการมากกว่าคุณภาพ แต่ต้องการ ความมั่นใจในทุกชิ้นงาน" 
-                                : lang.includes('en') ? "At JIEI Thailand, we have over a decade of expertise, certified with ISO 9001, ISO 14001, and IATF 16949. We manufacture rubber parts inspected at every stage, ensuring precision, durability, and environmental friendliness. Because we know your business needs more than just quality—it needs confidence in every product." 
-                                : "JIEI Thailandでは、ISO9001、ISO14001、IATF16949の認証を取得し、10年以上の専門知識を有しています。当社は、すべての工程で検査を行ったゴム部品を製造し、精度、耐久性、環境への配慮を確保しています。 お客様のビジネスに必要なのは単なる品質だけでなく、すべての製品に対する信頼です。"}</p>
+                                <p className='t-w-y'>{lang.includes('th') ? "ที่ JIEI Thailand เรามีความเชี่ยวชาญมากกว่าทศวรรษ  ด้วยระบบมาตรฐาน ISO9001, ISO14001, IATF16949 เราผลิตชิ้นส่วนยางที่ผ่านการตรวจสอบทุกขั้นตอน ตอบโจทย์ความแม่นยำ ความทนทาน และความเป็นมิตรต่อสิ่งแวดล้อม เพราะเรารู้ว่าธุรกิจของคุณต้องการมากกว่าคุณภาพ แต่ต้องการ ความมั่นใจในทุกชิ้นงาน"
+                                    : lang.includes('en') ? "At JIEI Thailand, we have over a decade of expertise, certified with ISO 9001, ISO 14001, and IATF 16949. We manufacture rubber parts inspected at every stage, ensuring precision, durability, and environmental friendliness. Because we know your business needs more than just quality—it needs confidence in every product."
+                                        : "JIEI Thailandでは、ISO9001、ISO14001、IATF16949の認証を取得し、10年以上の専門知識を有しています。当社は、すべての工程で検査を行ったゴム部品を製造し、精度、耐久性、環境への配慮を確保しています。 お客様のビジネスに必要なのは単なる品質だけでなく、すべての製品に対する信頼です。"}</p>
                             </ScrollReveal>
 
                         </div>
@@ -220,7 +220,7 @@ export default function Home() {
 
                     <div className="why-choose-image">
                         <ScrollReveal>
-                            <Image src={'/Home-car.png'} className='image-iso' alt='โรงงานผลิตชิ้นส่วนยางรถยนต์มาตรฐานสากล ISO & IATF16949 ที่ชลบุรี ประเทศไทย"' width={1000} height={1000}  priority/>
+                            <Image src={'/Home-car.png'} className='image-iso' alt='โรงงานผลิตชิ้นส่วนยางรถยนต์มาตรฐานสากล ISO & IATF16949 ที่ชลบุรี ประเทศไทย"' width={1000} height={1000} priority />
                         </ScrollReveal>
                     </div>
 
@@ -270,9 +270,9 @@ export default function Home() {
                             </div>
                             <ScrollReveal>
                                 <p className="content-about">
-                                    {lang.includes('th') ? "JIEI Thailand Co., Ltd. เป็นผู้ผลิตชิ้นส่วนยางรถยนต์และยางอุตสาหกรรมคุณภาพสูง ตั้งอยู่ที่จังหวัดชลบุรี ประเทศไทย เรามีความเชี่ยวชาญด้านการออกแบบและการผลิต ยางขอบประตูรถยนต์ (Automotive Rubber Seals) และชิ้นส่วนยางที่ใช้ในอุตสาหกรรมยานยนต์มากกว่า 20 ปี" 
-                                    : lang.includes('en')  ? "JIEI Thailand Co., Ltd. is a manufacturer of high-quality automotive and industrial rubber parts, located in Chonburi Province, Thailand. We have over 20 years of expertise in designing and producing automotive rubber seals and rubber components used in the automotive industry." 
-                                    : "JIEI Thailand株式会社は、タイ・チョンブリー県に拠点を置く高品質な自動車用および産業用ゴム部品のメーカーです。私たちは、自動車用ゴムシールや自動車産業で使用されるゴム部品の設計・製造において、20年以上の専門知識を持っています。"}
+                                    {lang.includes('th') ? "JIEI Thailand Co., Ltd. เป็นผู้ผลิตชิ้นส่วนยางรถยนต์และยางอุตสาหกรรมคุณภาพสูง ตั้งอยู่ที่จังหวัดชลบุรี ประเทศไทย เรามีความเชี่ยวชาญด้านการออกแบบและการผลิต ยางขอบประตูรถยนต์ (Automotive Rubber Seals) และชิ้นส่วนยางที่ใช้ในอุตสาหกรรมยานยนต์มากกว่า 20 ปี"
+                                        : lang.includes('en') ? "JIEI Thailand Co., Ltd. is a manufacturer of high-quality automotive and industrial rubber parts, located in Chonburi Province, Thailand. We have over 20 years of expertise in designing and producing automotive rubber seals and rubber components used in the automotive industry."
+                                            : "JIEI Thailand株式会社は、タイ・チョンブリー県に拠点を置く高品質な自動車用および産業用ゴム部品のメーカーです。私たちは、自動車用ゴムシールや自動車産業で使用されるゴム部品の設計・製造において、20年以上の専門知識を持っています。"}
                                 </p>
                             </ScrollReveal>
                             <ScrollReveal>
@@ -282,9 +282,9 @@ export default function Home() {
                             </ScrollReveal>
                             <ScrollReveal>
                                 <p className="content-about">
-                                    {lang.includes('th') ? " จุดยืนของ JIEI คือการเป็น “พันธมิตรที่ไว้ใจได้ของอุตสาหกรรมยานยนต์” โดยให้ความสำคัญกับคุณภาพ ความทนทาน และการส่งมอบตรงเวลา" 
-                                    : lang.includes('en') ? "JIEI’s stance is to be a “trusted partner of the automotive industry,” focusing on quality, durability, and on-time delivery." 
-                                    : "JIEIの立場は、「自動車産業の信頼できるパートナー」であることであり、品質、耐久性、そして納期厳守を重視しています。"}
+                                    {lang.includes('th') ? " จุดยืนของ JIEI คือการเป็น “พันธมิตรที่ไว้ใจได้ของอุตสาหกรรมยานยนต์” โดยให้ความสำคัญกับคุณภาพ ความทนทาน และการส่งมอบตรงเวลา"
+                                        : lang.includes('en') ? "JIEI’s stance is to be a “trusted partner of the automotive industry,” focusing on quality, durability, and on-time delivery."
+                                            : "JIEIの立場は、「自動車産業の信頼できるパートナー」であることであり、品質、耐久性、そして納期厳守を重視しています。"}
                                 </p>
                             </ScrollReveal>
 
@@ -299,9 +299,9 @@ export default function Home() {
 
                         <ScrollReveal>
                             <h2 className='video-text'>
-                                {lang.includes('th') ? "มั่นใจทุกการขับขี่" 
-                                : lang.includes('en') ? "Confidence in Every Drive" 
-                                : "すべてのドライブで自信を"}
+                                {lang.includes('th') ? "มั่นใจทุกการขับขี่"
+                                    : lang.includes('en') ? "Confidence in Every Drive"
+                                        : "すべてのドライブで自信を"}
                             </h2>
                         </ScrollReveal>
                         <ScrollReveal>
@@ -394,6 +394,13 @@ export default function Home() {
                             </ScrollReveal>
                         ))}
                     </div>
+                </div>
+                <div className="contact-homepage">
+                    <Link className='contactHomepage' href={"/contact"}>
+                        <div className="contact-box-homepage">
+                            {lang.includes('th') ? "ติดต่อเรา" : lang.includes('en') ? "Contact Us" : "お問い合わせ"}
+                        </div>
+                    </Link>
                 </div>
 
             </div >
