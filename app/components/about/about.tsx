@@ -5,7 +5,7 @@ import Image from 'next/image'
 import Link from 'next/link';
 import ScrollReveal from '../ScrollReveal/ScrollReveal';
 import Head from 'next/head';
-import Employee from './employee';
+// import Employee from './employee';
 
 export default function About() {
     const [lang, setLang] = useState<'th' | 'en' | 'jp'>('th');

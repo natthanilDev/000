@@ -165,7 +165,6 @@ export default function Page() {
   const totalPages = Math.ceil(product_nameTH.length / perPage);
 
   useEffect(() => {
-   console.log(page)
     window.scrollTo({ top: 0, behavior: 'smooth' })
   }, [searchParams]);
 
@@ -324,7 +323,7 @@ export default function Page() {
               {(() => {
                 const maxVisible = 3;
                 let start = Math.max(1, currentPage - 1);
-                let end = Math.min(totalPages, start + maxVisible - 1);
+                const end = Math.min(totalPages, start + maxVisible - 1);
                 if (end - start < maxVisible - 1) {
                   start = Math.max(1, end - maxVisible + 1);
                 }

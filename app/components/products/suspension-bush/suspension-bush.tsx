@@ -136,9 +136,6 @@ export default function Page() {
       const storedLang = localStorage.getItem('lang') as 'th' | 'en' | 'jp' | null;
       if (storedLang) setLang(storedLang);
     }
-
-    console.log(totalPages)
-
   }, []);
 
 
@@ -276,7 +273,7 @@ export default function Page() {
               {(() => {
                 const maxVisible = 3;
                 let start = Math.max(1, currentPage-1 );
-                let end = Math.min(totalPages, start + maxVisible - 1);
+                const end = Math.min(totalPages, start + maxVisible - 1);
                 if (end - start < maxVisible - 1) {
                   start = Math.max(1, end - maxVisible + 1);
                 }
