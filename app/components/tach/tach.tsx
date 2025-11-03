@@ -11,14 +11,14 @@ export default function Tach() {
         'การวิเคราะห์ความเค้น',
         'การวิเคราะห์การติดตามรัศมี (หรือการติดตามการเคลื่อนที่)',
         'การวิเคราะห์การไหลของวัสดุ',
-        'การวิเคราะห์แรงกดและความเค้นสัมผัส'
+        // 'การวิเคราะห์แรงกดและความเค้นสัมผัส'
     ]
     const topicEN = [
         'CAD / CATIA',
         'Stress Analysis',
         'R Tracking Analysis',
         'Material Flow Analysis',
-        'Compressive Load Analysis & Contact Stress Analysis'
+        // 'Compressive Load Analysis & Contact Stress Analysis'
     ]
 
     const topicJP = [
@@ -26,7 +26,7 @@ export default function Tach() {
         '応力解析',
         'R追従性解析',
         '材料流動解析',
-        '圧縮荷重解析・接触応力解析'
+        // '圧縮荷重解析・接触応力解析'
     ]
     // ----------------------------------------------------------------------------------
 
@@ -99,7 +99,7 @@ export default function Tach() {
         'การวัดการกระจายแรงดัน',
         'การประเมินประสิทธิภาพการกันเสียง',
         'การวัดแรงแบบไดนามิก',
-        'การประเมินค่าความเสียดทานขณะเลื่อน',
+        // 'การประเมินค่าความเสียดทานขณะเลื่อน',
     ]
 
     const topicEN2 = [
@@ -107,7 +107,7 @@ export default function Tach() {
         "Pressure Distribution Measurements",
         "Sound-Insulating Performance Evaluations",
         "Dynamic Load Measurements",
-        "Sliding Friction Ratings",
+        // "Sliding Friction Ratings",
     ]
 
     const topicJP2 = [
@@ -115,7 +115,7 @@ export default function Tach() {
         '圧力分布測定',
         '防音性能評価',
         '動的荷重測定',
-        '滑り摩擦評価',
+        // '滑り摩擦評価',
     ]
 
     // ---------------------------------------------------------------------------
