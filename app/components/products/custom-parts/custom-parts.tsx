@@ -427,6 +427,17 @@ export default function CustomPart() {
         </div>
 
       </div>
+
+      <div className="customProductBox">
+        <ScrollReveal>
+          <Image className="imageProductCarDescription" src={'/description-car (1).png'} alt="JIEI Thai ผู้ผลิตยางรถยนต์และชิ้นส่วนยางคุณภาพสูง จังหวัดชลบุรี ได้มาตรฐาน ISO/IATF16949 ผลิต Engine Mount, Suspension Bush, Seals และชิ้นส่วนยางอุตสาหกรรม" width={1000} height={1000} loading="lazy" />
+        </ScrollReveal>
+        <ScrollReveal>
+          <Image className="imageProductCarDescription" src={'/description-car (2).png'} alt="JIEI Thai ผู้ผลิตยางรถยนต์และชิ้นส่วนยางคุณภาพสูง จังหวัดชลบุรี ได้มาตรฐาน ISO/IATF16949 ผลิต Engine Mount, Suspension Bush, Seals และชิ้นส่วนยางอุตสาหกรรม" width={1000} height={1000} loading="lazy" />
+        </ScrollReveal>
+
+      </div>
+
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{

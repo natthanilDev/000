@@ -3868,7 +3868,7 @@ h4 {
 }
 
 .scrollbar {
-  height: 50vh;
+  height: 80vh;
   overflow: auto;
   margin: 50px 0;
 
@@ -4576,17 +4576,6 @@ h4 {
 
 } */
 
-@media screen and (max-width:768px) {
-  .allProduct-text {
-    font-size: 60px;
-  }
-
-  .category-collection {
-    grid-template-columns: 1fr 1fr;
-    margin: 20px auto;
-    gap: 100px;
-  }
-}
 
 
 @media screen and (max-width:426px) {
@@ -4723,4 +4712,30 @@ h4 {
   background-color: #000;
   color: #fff;
 
+}
+.customProductBox{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.imageProductCarDescription{
+  width: 80%;
+  margin: 0 auto;
+
+}
+@media screen and (max-width:768px) {
+  .allProduct-text {
+    font-size: 60px;
+  }
+
+  .category-collection {
+    grid-template-columns: 1fr 1fr;
+    margin: 20px auto;
+    gap: 100px;
+  }
+  .customProductBox{
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
 }

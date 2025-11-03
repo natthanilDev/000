@@ -323,9 +323,6 @@ export default function Tach() {
                             ))}
                         </div>
 
-
-
-
                         <div className="design-analysis-topic">
                             <ScrollReveal>
                                 <h2 itemProp="headline" className='topic-technology'>{lang.includes('th') ? "การประเมินสมรรถนะ" : lang.includes('en') ? "Functional Evaluation" : "機能評価"}</h2>
@@ -357,9 +354,6 @@ export default function Tach() {
                                 </div>
                             ))}
                         </div>
-
-
-                     
 
                     </div>
                 </div>
