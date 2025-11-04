@@ -16,12 +16,12 @@ export default function About() {
         }
     }, []);
     const logo_partners = [
-        '/logo-partners (1).png',
-        '/logo-partners (2).png',
-        '/logo-partners (3).png',
-        '/logo-partners (4).png',
-        '/logo-partners (5).png',
-        '/logo-partners (6).png',
+        '/logoPartner/logo-partners (1).png',
+        '/logoPartner/logo-partners (2).png',
+        '/logoPartner/logo-partners (3).png',
+        '/logoPartner/logo-partners (4).png',
+        '/logoPartner/logo-partners (5).png',
+        '/logoPartner/logo-partners (6).png',
         '/logoPartner/cs.png',
         '/logoPartner/csj.png',
         '/logoPartner/honda.png',
@@ -31,12 +31,12 @@ export default function About() {
 
     ]
     const logo_partners1 = [
-        '/logo-partners (7).png',
-        '/logo-partners (8).png',
-        '/logo-partners (9).png',
-        '/logo-partners (10).png',
-        '/logo-partners (11).png',
-        '/logo-partners (12).png',
+        '/logoPartner/logo-partners (7).png',
+        '/logoPartner/logo-partners (8).png',
+        '/logoPartner/logo-partners (9).png',
+        '/logoPartner/logo-partners (10).png',
+        '/logoPartner/logo-partners (11).png',
+        '/logoPartner/logo-partners (12).png',
         '/logoPartner/Tabuchielectric.png',
         '/logoPartner/te.png',
         '/logoPartner/Tec.png',
