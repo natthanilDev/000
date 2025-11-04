@@ -3006,6 +3006,7 @@ h4 {
   margin: 0 auto;
   position: relative;
   animation: sped1 10s 0s infinite linear alternate;
+  width: 100%;
 
 
 }
@@ -3024,20 +3025,18 @@ h4 {
   }
 
   100% {
-    transform: translateX(-30%);
+    transform: translateX(-100%);
 
   }
 }
 
 @keyframes sped1 {
   0% {
-    transform: translateX(-30%);
-
+    transform: translateX(5%);
   }
 
-
   100% {
-    transform: translateX(0%);
+    transform: translateX(-150%);
 
   }
 }

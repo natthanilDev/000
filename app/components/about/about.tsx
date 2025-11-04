@@ -22,6 +22,13 @@ export default function About() {
         '/logo-partners (4).png',
         '/logo-partners (5).png',
         '/logo-partners (6).png',
+        '/logoPartner/cs.png',
+        '/logoPartner/csj.png',
+        '/logoPartner/honda.png',
+        '/logoPartner/ht.png',
+        '/logoPartner/jg.png',
+        '/logoPartner/sum.png'
+
     ]
     const logo_partners1 = [
         '/logo-partners (7).png',
@@ -30,6 +37,13 @@ export default function About() {
         '/logo-partners (10).png',
         '/logo-partners (11).png',
         '/logo-partners (12).png',
+        '/logoPartner/Tabuchielectric.png',
+        '/logoPartner/te.png',
+        '/logoPartner/Tec.png',
+        '/logoPartner/thairung.png',
+        '/logoPartner/toacs.png',
+        '/logoPartner/y-tec.png'
+
     ]
 
 
