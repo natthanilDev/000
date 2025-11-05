@@ -655,7 +655,7 @@ export default function Employee() {
                             <div className="name-top-manager">
                                 <ScrollReveal>
                                     <h2 className='position-topmanager'>{lang === "th" ? "ประธานประธานบริษัท" : lang === "en" ? "President" : "代表取締役社長"} </h2>
-                                    <p className='top-manager-name'>{lang === 'th' ? "คุณมาซาชิ เอซากะ" : lang.includes('en') ? "Mr.Masashi Ezaka" : "江坂 正志"}</p>
+                                    <p className='top-manager-name'>{lang === 'th' ? "คุณมาซาชิ เอซากะ" : lang===('en') ? "Mr.Masashi Ezaka" : "江坂 正志"}</p>
                                 </ScrollReveal>
                             </div>
                         </div>
@@ -728,20 +728,20 @@ export default function Employee() {
                 <div className="employee-staff">
                     <div className="employee-text">
                         <ScrollReveal>
-                            <h1 className='text-employee1'>{lang.includes('th') ? "แนะนำพนักงานคุณภาพของเรา" : lang.includes('en') ? "Introducing our outstanding employees." : "当社の優秀な社員をご紹介します。"}</h1>
+                            <h1 className='text-employee1'>{lang===('th') ? "แนะนำพนักงานคุณภาพของเรา" : lang===('en') ? "Introducing our outstanding employees." : "当社の優秀な社員をご紹介します。"}</h1>
                         </ScrollReveal>
                         <ScrollReveal>
-                            <h2 className='text-employee2'>{lang.includes('th') ? "ทีมงานมืออาชีพ พร้อมให้บริการด้วยมาตรฐานระดับสากล" : lang.includes('en') ? "Our professional team is ready to provide services with international standards." : "プロフェッショナルなチームが、国際基準のサービスをご提供します。"}</h2>
+                            <h2 className='text-employee2'>{lang===('th') ? "ทีมงานมืออาชีพ พร้อมให้บริการด้วยมาตรฐานระดับสากล" : lang===('en') ? "Our professional team is ready to provide services with international standards." : "プロフェッショナルなチームが、国際基準のサービスをご提供します。"}</h2>
                         </ScrollReveal>
                     </div>
                     <div className="line"></div>
                     {/* -------------------------------------------แนะนำเจ้าหน้าที่ด่านคุณภาพ QA */}
                     <div className="QA">
                         <ScrollReveal>
-                            <h1 className="position-qaqc">{lang.includes('th') ? "เจ้าหน้าที่ด้านคุณภาพ QA (Quality Assurance)" : lang.includes('en') ? "Quality Assurance Officer (QA)" : "品質保証担当者（QA: クオリティ・アシュアランス）"}  </h1>
+                            <h1 className="position-qaqc">{lang===('th') ? "เจ้าหน้าที่ด้านคุณภาพ QA (Quality Assurance)" : lang===('en') ? "Quality Assurance Officer (QA)" : "品質保証担当者（QA: クオリティ・アシュアランス）"}  </h1>
                         </ScrollReveal>
                         <ScrollReveal>
-                            <h2 className='description-position'> {lang.includes('th') ? "ดูแล ตรวจสอบ และประกันคุณภาพของงาน ผลิตภัณฑ์ หรือบริการ ให้ได้มาตรฐานที่องค์กรกำหนดไว้" : lang.includes('en') ? "Oversee, inspect, and ensure the quality of work, products, or services to meet the standards established by the organization." : "業務、製品、またはサービスの品質を管理・確認し、組織が定めた基準を満たすよう保証します。"}</h2>
+                            <h2 className='description-position'> {lang===('th') ? "ดูแล ตรวจสอบ และประกันคุณภาพของงาน ผลิตภัณฑ์ หรือบริการ ให้ได้มาตรฐานที่องค์กรกำหนดไว้" : lang===('en') ? "Oversee, inspect, and ensure the quality of work, products, or services to meet the standards established by the organization." : "業務、製品、またはサービスの品質を管理・確認し、組織が定めた基準を満たすよう保証します。"}</h2>
                         </ScrollReveal>
                         <div className="QA-box">
                             {QANameEN.map((item, index) =>
@@ -755,7 +755,7 @@ export default function Employee() {
                                     <div className="name-top-manager">
                                         <ScrollReveal>
                                             <h2 className='position-topmanager'>{lang === "th" ? QATH[index] : lang === "en" ? QAEN[index] : QAJP[index]} </h2>
-                                            <p className='top-manager-name'> {lang.includes('th') ? QANameTH[index]  : lang.includes('en') ? item : QANameJP[index]}</p>
+                                            <p className='top-manager-name'> {lang===('th') ? QANameTH[index]  : lang===('en') ? item : QANameJP[index]}</p>
                                         </ScrollReveal>
                                     </div>
                                 </div>
@@ -771,10 +771,10 @@ export default function Employee() {
 
                     <div className="QC" >
                         <ScrollReveal>
-                            <h1 className="position-qaqc">{lang.includes('th') ? "เจ้าหน้าที่ด้านคุณภาพ QC (Quality Control)" : lang.includes('en') ? "Quality Control Officer (QC)" : "品質管理担当者（QC：クオリティコントロール）"}</h1>
+                            <h1 className="position-qaqc">{lang===('th') ? "เจ้าหน้าที่ด้านคุณภาพ QC (Quality Control)" : lang===('en') ? "Quality Control Officer (QC)" : "品質管理担当者（QC：クオリティコントロール）"}</h1>
                         </ScrollReveal>
                         <ScrollReveal>
-                            <h2 className='description-position'>{lang.includes('th') ? "ตรวจสอบวัตถุดิบ ตรวจสอบระหว่างการผลิต คัดแยกสินค้าไม่ผ่านมาตรฐาน บันทึกผลการตรวจสอบ ปฏิบัติตามมาตรฐานคุณภาพและความปลอดภัย ให้ได้มาตรฐานที่องค์กรกำหนดไว้" : lang.includes('en') ? "Inspect raw materials, monitor production processes, separate non-conforming products, record inspection results, and ensure compliance with quality and safety standards set by the organization." : "原材料の検査、製造工程中の検査、不良品の選別、検査結果の記録を行い、品質および安全基準を遵守し、会社が定めた基準を満たすようにします。"}</h2>
+                            <h2 className='description-position'>{lang===('th') ? "ตรวจสอบวัตถุดิบ ตรวจสอบระหว่างการผลิต คัดแยกสินค้าไม่ผ่านมาตรฐาน บันทึกผลการตรวจสอบ ปฏิบัติตามมาตรฐานคุณภาพและความปลอดภัย ให้ได้มาตรฐานที่องค์กรกำหนดไว้" : lang===('en') ? "Inspect raw materials, monitor production processes, separate non-conforming products, record inspection results, and ensure compliance with quality and safety standards set by the organization." : "原材料の検査、製造工程中の検査、不良品の選別、検査結果の記録を行い、品質および安全基準を遵守し、会社が定めた基準を満たすようにします。"}</h2>
                         </ScrollReveal>
                         <div className="QC-box">
                             {QCNameEN.map((item, index) =>
@@ -788,7 +788,7 @@ export default function Employee() {
                                     <div className="name-top-manager">
                                         <ScrollReveal>
                                             <h2 className='position-topmanager'>{lang === "th" ? QCTH[index] : lang === "en" ? QCEN[index] : QCJP[index]} </h2>
-                                            <p className='top-manager-name'>{lang.includes('th') ? QCNameTH[index] : lang.includes('en') ? item : QCNameJP[index]}</p>
+                                            <p className='top-manager-name'>{lang===('th') ? QCNameTH[index] : lang===('en') ? item : QCNameJP[index]}</p>
                                         </ScrollReveal>
                                     </div>
                                 </div>
@@ -800,10 +800,10 @@ export default function Employee() {
 
                     <div className="PC">
                         <ScrollReveal>
-                            <h1 className="position-qaqc">{lang.includes('th') ? "เจ้าหน้าที่วางแผนการผลิต PC (Production Control)" : lang.includes('en') ? "Production Control Officer (PC)" : "生産計画担当者（PC: プロダクションコントロール）"} </h1>
+                            <h1 className="position-qaqc">{lang===('th') ? "เจ้าหน้าที่วางแผนการผลิต PC (Production Control)" : lang===('en') ? "Production Control Officer (PC)" : "生産計画担当者（PC: プロダクションコントロール）"} </h1>
                         </ScrollReveal>
                         <ScrollReveal>
-                            <h2 className='description-position'>{lang.includes('th') ? "เป็นผู้ที่รับผิดชอบในการ วางแผน ควบคุม และติดตามการผลิต ให้เป็นไปตามความต้องการของลูกค้า และสอดคล้องกับทรัพยากร" : lang.includes('en') ? "Responsible for planning, controlling, and monitoring production to meet customer requirements and align with available resources." : "顧客の要望に応じ、資源に合わせて、生産計画の立案、管理、進捗の追跡を担当します。"} </h2>
+                            <h2 className='description-position'>{lang===('th') ? "เป็นผู้ที่รับผิดชอบในการ วางแผน ควบคุม และติดตามการผลิต ให้เป็นไปตามความต้องการของลูกค้า และสอดคล้องกับทรัพยากร" : lang===('en') ? "Responsible for planning, controlling, and monitoring production to meet customer requirements and align with available resources." : "顧客の要望に応じ、資源に合わせて、生産計画の立案、管理、進捗の追跡を担当します。"} </h2>
                         </ScrollReveal>
                         <div className="PC-box">
                             {PCNameTH.map((item, index) =>
@@ -820,7 +820,7 @@ export default function Employee() {
                                     <div className="name-top-manager">
                                         <ScrollReveal>
                                             <h2 className='position-topmanager'>{lang === "th" ? PCTH[index] : lang === "en" ? PCEN[index] : PCJP[index]} </h2>
-                                            <p className='top-manager-name'>{lang.includes('th') ? item : lang.includes('en') ? PCNameEN[index] : PCNameJP[index]}</p>
+                                            <p className='top-manager-name'>{lang===('th') ? item : lang===('en') ? PCNameEN[index] : PCNameJP[index]}</p>
                                         </ScrollReveal>
                                     </div>
                                 </div>
@@ -832,10 +832,10 @@ export default function Employee() {
 
                     <div className="PD">
                         <ScrollReveal>
-                            <h1 className="position-qaqc">{lang.includes('th') ? "เจ้าหน้าที่ควบคุมการผลิต PD  (Production Department)" : lang.includes('en') ? "Production Control Officer (PD: Production Department)" : "生産管理担当者（PD: プロダクションデパートメント）"}</h1>
+                            <h1 className="position-qaqc">{lang===('th') ? "เจ้าหน้าที่ควบคุมการผลิต PD  (Production Department)" : lang===('en') ? "Production Control Officer (PD: Production Department)" : "生産管理担当者（PD: プロダクションデパートメント）"}</h1>
                         </ScrollReveal>
                         <ScrollReveal>
-                            <h2 className='description-position'>{lang.includes('th') ? "วางแผน ควบคุม และติดตามกระบวนการผลิต ให้เป็นไปตามกำหนดเวลา คุณภาพ และมาตรฐานขององค์กร" : lang.includes('en') ? "Plan, control, and monitor the production process to ensure it meets deadlines, quality, and organizational standards." : "生産プロセスを計画・管理・監視し、納期、品質、および組織の基準に沿って実施されるようにします。"}</h2>
+                            <h2 className='description-position'>{lang===('th') ? "วางแผน ควบคุม และติดตามกระบวนการผลิต ให้เป็นไปตามกำหนดเวลา คุณภาพ และมาตรฐานขององค์กร" : lang===('en') ? "Plan, control, and monitor the production process to ensure it meets deadlines, quality, and organizational standards." : "生産プロセスを計画・管理・監視し、納期、品質、および組織の基準に沿って実施されるようにします。"}</h2>
                         </ScrollReveal>
                         <div className="PD-box">
                             {PDNameEN.map((item, index) =>
@@ -849,7 +849,7 @@ export default function Employee() {
                                     <div className="name-top-manager">
                                         <ScrollReveal>
                                             <h2 className='position-topmanager'>{lang === "th" ? PDTH[index] : lang === "en" ? PDEN[index] : PDJP[index]} </h2>
-                                            <p className='top-manager-name'>{lang.includes('th') ? PDNameTH[index] : lang.includes('en') ? item : PDNameJP[index]}</p>
+                                            <p className='top-manager-name'>{lang===('th') ? PDNameTH[index] : lang===('en') ? item : PDNameJP[index]}</p>
                                         </ScrollReveal>
                                     </div>
                                 </div>
@@ -861,10 +861,10 @@ export default function Employee() {
 
                     <div className="HR">
                         <ScrollReveal>
-                            <h1 className="position-qaqc">{lang.includes('th') ? "เจ้าหน้าที่ฝ่ายบุคคล HR (Human Resources)" : lang.includes('en') ? "Human Resources Officer (HR)" : "人事担当者（HR：ヒューマンリソース）"}</h1>
+                            <h1 className="position-qaqc">{lang===('th') ? "เจ้าหน้าที่ฝ่ายบุคคล HR (Human Resources)" : lang===('en') ? "Human Resources Officer (HR)" : "人事担当者（HR：ヒューマンリソース）"}</h1>
                         </ScrollReveal>
                         <ScrollReveal>
-                            <h2 className='description-position'>{lang.includes('th') ? "บริหารจัดการและดูแลบุคลากรขององค์กร ตั้งแต่การสรรหา การฝึกอบรม การประเมินผล ไปจนถึงการดูแลสวัสดิการ เพื่อสร้างสภาพแวดล้อมการทำงานที่ดีและสนับสนุนเป้าหมายขององค์กร" : lang.includes('en') ? "Manage and oversee the organization’s personnel, from recruitment, training, and evaluation to welfare management, in order to create a positive work environment and support the organization’s goals." : "採用、研修、評価から福利厚生の管理まで、組織の人材を総合的に管理・サポートし、良好な職場環境を築き、組織の目標達成を支援します。"}</h2>
+                            <h2 className='description-position'>{lang===('th') ? "บริหารจัดการและดูแลบุคลากรขององค์กร ตั้งแต่การสรรหา การฝึกอบรม การประเมินผล ไปจนถึงการดูแลสวัสดิการ เพื่อสร้างสภาพแวดล้อมการทำงานที่ดีและสนับสนุนเป้าหมายขององค์กร" : lang===('en') ? "Manage and oversee the organization’s personnel, from recruitment, training, and evaluation to welfare management, in order to create a positive work environment and support the organization’s goals." : "採用、研修、評価から福利厚生の管理まで、組織の人材を総合的に管理・サポートし、良好な職場環境を築き、組織の目標達成を支援します。"}</h2>
                         </ScrollReveal>
                         <div className="HR-box">
                             {HRNameTH.map((item, index) =>
@@ -878,7 +878,7 @@ export default function Employee() {
                                     <div className="name-top-manager">
                                         <ScrollReveal>
                                             <h2 className='position-topmanager'>{lang === "th" ? HRTH[index] : lang === "en" ? HREN[index] : HRJP[index]} </h2>
-                                            <p className='top-manager-name'>{lang.includes('th') ? item : lang.includes('en')? HRNameEN[index] : HRNameJP[index]}</p>
+                                            <p className='top-manager-name'>{lang===('th') ? item : lang===('en')? HRNameEN[index] : HRNameJP[index]}</p>
                                         </ScrollReveal>
                                     </div>
                                 </div>
@@ -891,10 +891,10 @@ export default function Employee() {
 
                     <div className="ACC">
                         <ScrollReveal>
-                            <h1 className="position-qaqc"> {lang.includes('th') ? "เจ้าหน้าที่ฝ่ายบัญชี (Accounting Officer)" : lang.includes('en') ? "Accounting Officer" : "経理担当者（Accounting Officer）"}</h1>
+                            <h1 className="position-qaqc"> {lang===('th') ? "เจ้าหน้าที่ฝ่ายบัญชี (Accounting Officer)" : lang===('en') ? "Accounting Officer" : "経理担当者（Accounting Officer）"}</h1>
                         </ScrollReveal>
                         <ScrollReveal>
-                            <h2 className='description-position'>{lang.includes('th') ? "จัดทำ บันทึก และตรวจสอบข้อมูลทางการเงินของบริษัท เพื่อให้ฝ่ายบริหารสามารถใช้ข้อมูลประกอบการตัดสินใจ และให้บริษัทปฏิบัติตามกฎหมายภาษีและมาตรฐานบัญชี" : lang.includes('en') ? "Prepare, record, and review the company’s financial information so management can make informed decisions and the company complies with tax laws and accounting standards." : "会社の財務情報を作成・記録・確認し、経営陣が意思決定に活用できるようにし、また会社が税法および会計基準を遵守するようにします。"}</h2>
+                            <h2 className='description-position'>{lang===('th') ? "จัดทำ บันทึก และตรวจสอบข้อมูลทางการเงินของบริษัท เพื่อให้ฝ่ายบริหารสามารถใช้ข้อมูลประกอบการตัดสินใจ และให้บริษัทปฏิบัติตามกฎหมายภาษีและมาตรฐานบัญชี" : lang===('en') ? "Prepare, record, and review the company’s financial information so management can make informed decisions and the company complies with tax laws and accounting standards." : "会社の財務情報を作成・記録・確認し、経営陣が意思決定に活用できるようにし、また会社が税法および会計基準を遵守するようにします。"}</h2>
                         </ScrollReveal>
                         <div className="ACC-box">
                             {ACCNameTH.map((item, index) =>
@@ -909,7 +909,7 @@ export default function Employee() {
                                     <div className="name-top-manager">
                                         <ScrollReveal>
                                             <h2 className='position-topmanager'>{lang === "th" ? ACCTH[index] : lang === "en" ? ACCEN[index] : ACCJP[index]} </h2>
-                                            <p className='top-manager-name'> {lang.includes('th')? item : lang.includes('en') ? ACCNameEN[index] : ACCNameJP[index]}</p>
+                                            <p className='top-manager-name'> {lang===('th')? item : lang===('en') ? ACCNameEN[index] : ACCNameJP[index]}</p>
                                         </ScrollReveal>
 
                                     </div>
@@ -923,11 +923,11 @@ export default function Employee() {
 
                     <div className="SA">
                         <ScrollReveal>
-                            <h1 className="position-qaqc">{lang.includes('th') ? "เจ้าหน้าที่ฝ่ายขาย (Sales Officer)" : lang.includes('en') ? "Sales Officer" : "営業担当者（Sales Officer）"} </h1>
+                            <h1 className="position-qaqc">{lang===('th') ? "เจ้าหน้าที่ฝ่ายขาย (Sales Officer)" : lang===('en') ? "Sales Officer" : "営業担当者（Sales Officer）"} </h1>
                         </ScrollReveal>
 
                         <ScrollReveal>
-                            <h2 className='description-position'>{lang.includes('th') ? "นำเสนอสินค้าและบริการของบริษัทแก่ลูกค้า ออกใบแจ้งหนี้ (อินวอยซ์)": lang.includes('en') ? "Present the company’s products and services to customers and issue invoices." : "顧客に会社の製品やサービスを提案し、請求書を発行します。"}</h2>
+                            <h2 className='description-position'>{lang===('th') ? "นำเสนอสินค้าและบริการของบริษัทแก่ลูกค้า ออกใบแจ้งหนี้ (อินวอยซ์)": lang===('en') ? "Present the company’s products and services to customers and issue invoices." : "顧客に会社の製品やサービスを提案し、請求書を発行します。"}</h2>
                         </ScrollReveal>
 
                         <div className="SA-box">
@@ -943,7 +943,7 @@ export default function Employee() {
                                     <div className="name-top-manager">
                                         <ScrollReveal>
                                             <h2 className='position-topmanager'>{lang === "th" ? SATH[index] : lang === "en" ? SAEN[index] : SAJP[index]} </h2>
-                                            <p className='top-manager-name'>{lang.includes('th') ? item : lang.includes('en') ? SANameEN[index] : SANameJP[index]}</p>
+                                            <p className='top-manager-name'>{lang===('th') ? item : lang===('en') ? SANameEN[index] : SANameJP[index]}</p>
                                         </ScrollReveal>
 
                                     </div>
@@ -956,10 +956,10 @@ export default function Employee() {
                     <div className="IT">
                         <ScrollReveal>
 
-                            <h1 className="position-qaqc">{lang.includes('th') ? "เจ้าหน้าที่ฝ่าย IT (IT Staff)" : lang.includes('en') ? "IT Staff" : "IT担当者（ITスタッフ）"}</h1>
+                            <h1 className="position-qaqc">{lang===('th') ? "เจ้าหน้าที่ฝ่าย IT (IT Staff)" : lang===('en') ? "IT Staff" : "IT担当者（ITスタッフ）"}</h1>
                         </ScrollReveal>
                         <ScrollReveal>
-                            <h2 className='description-position'>{lang.includes('th') ? "ติดตั้ง ดูแล และแก้ไขปัญหาระบบสารสนเทศขององค์กร ทั้งด้านอุปกรณ์คอมพิวเตอร์ โปรแกรม ระบบเครือข่าย และฐานข้อมูล รวมถึงช่วยเหลือพนักงานในการใช้งานด้าน IT" : lang.includes('en') ? "Install, maintain, and troubleshoot the organization’s information systems, including computer hardware, software, networks, and databases, and assist employees with IT usage." : "組織の情報システムをインストール、管理、トラブルシューティングし、コンピュータ機器、ソフトウェア、ネットワーク、データベースを含め、従業員のIT利用をサポートします。"}</h2>
+                            <h2 className='description-position'>{lang===('th') ? "ติดตั้ง ดูแล และแก้ไขปัญหาระบบสารสนเทศขององค์กร ทั้งด้านอุปกรณ์คอมพิวเตอร์ โปรแกรม ระบบเครือข่าย และฐานข้อมูล รวมถึงช่วยเหลือพนักงานในการใช้งานด้าน IT" : lang===('en') ? "Install, maintain, and troubleshoot the organization’s information systems, including computer hardware, software, networks, and databases, and assist employees with IT usage." : "組織の情報システムをインストール、管理、トラブルシューティングし、コンピュータ機器、ソフトウェア、ネットワーク、データベースを含め、従業員のIT利用をサポートします。"}</h2>
                         </ScrollReveal>
 
                         <div className="IT-box">
@@ -975,7 +975,7 @@ export default function Employee() {
                                     <div className="name-top-manager">
                                         <ScrollReveal>
                                             <h2 className='position-topmanager'>{lang === "th" ? ITTH[index] : lang === "en" ? ITEN[index] : ITJP[index]} </h2>
-                                            <p className='top-manager-name'>{lang.includes('th') ?  item : lang.includes('en') ? ITNameEN[index] : ITNameJP[index]}</p>
+                                            <p className='top-manager-name'>{lang===('th') ?  item : lang===('en') ? ITNameEN[index] : ITNameJP[index]}</p>
                                         </ScrollReveal>
                                     </div>
                                 </div>
@@ -986,10 +986,10 @@ export default function Employee() {
 
                     <div className="SE">
                         <ScrollReveal>
-                            <h1 className="position-qaqc">{lang.includes('th') ? "เจ้าหน้าที่ฝ่ายความปลอดภัย (Safety Officer)" : lang.includes('en') ? "Safety Officer" : "安全担当者（Safety Officer）"}</h1>
+                            <h1 className="position-qaqc">{lang===('th') ? "เจ้าหน้าที่ฝ่ายความปลอดภัย (Safety Officer)" : lang===('en') ? "Safety Officer" : "安全担当者（Safety Officer）"}</h1>
                         </ScrollReveal>
                         <ScrollReveal>
-                            <h2 className='description-position'>{lang.includes('th') ? "ป้องกันไม่ให้เกิดอุบัติเหตุและความเสี่ยงในสถานประกอบการ ดูแลเรื่องสิ่งแวดล้อมการทำงาน ความปลอดภัยของพนักงาน เครื่องจักร อุปกรณ์ และสถานที่ รวมถึงให้ความรู้แก่พนักงาน" : lang.includes('en') ? "Prevent accidents and risks in the workplace, oversee the working environment, employee safety, machinery, equipment, and facilities, and provide training to employees." : "事業所での事故やリスクを防止し、作業環境、従業員の安全、機械、設備、施設を管理し、従業員に教育を提供します。"}</h2>
+                            <h2 className='description-position'>{lang===('th') ? "ป้องกันไม่ให้เกิดอุบัติเหตุและความเสี่ยงในสถานประกอบการ ดูแลเรื่องสิ่งแวดล้อมการทำงาน ความปลอดภัยของพนักงาน เครื่องจักร อุปกรณ์ และสถานที่ รวมถึงให้ความรู้แก่พนักงาน" : lang===('en') ? "Prevent accidents and risks in the workplace, oversee the working environment, employee safety, machinery, equipment, and facilities, and provide training to employees." : "事業所での事故やリスクを防止し、作業環境、従業員の安全、機械、設備、施設を管理し、従業員に教育を提供します。"}</h2>
                         </ScrollReveal>
 
                         <div className="SE-box">
@@ -1006,7 +1006,7 @@ export default function Employee() {
                                     <div className="name-top-manager">
                                         <ScrollReveal>
                                             <h2 className='position-topmanager'>{lang === "th" ? SETH[index] : lang === "en" ? SEEN[index] : SEJP[index]} </h2>
-                                            <p className='top-manager-name'>{lang.includes('th') ? item : lang.includes('en') ? SENameEN[index] : SENameJP[index]}</p>
+                                            <p className='top-manager-name'>{lang===('th') ? item : lang===('en') ? SENameEN[index] : SENameJP[index]}</p>
                                         </ScrollReveal>
 
                                     </div>
@@ -1019,10 +1019,10 @@ export default function Employee() {
                     <div className="TE">
                         <ScrollReveal>
 
-                            <h1 className="position-qaqc">{lang.includes('th') ? "เจ้าหน้าที่ฝ่าย TE (Technical)" : lang.includes('en') ? "TE Officer (Technical)" : "TE担当者（テクニカル担当）"}</h1>
+                            <h1 className="position-qaqc">{lang===('th') ? "เจ้าหน้าที่ฝ่าย TE (Technical)" : lang===('en') ? "TE Officer (Technical)" : "TE担当者（テクニカル担当）"}</h1>
                         </ScrollReveal>
                         <ScrollReveal>
-                            <h2 className='description-position'>{lang.includes('th') ? "ดูแล สนับสนุน และแก้ไขปัญหาทางด้านเทคนิคของการผลิตและเครื่องจักร เพื่อให้กระบวนการทำงานมีประสิทธิภาพสูงสุด ลดความสูญเสีย และรักษาคุณภาพตามมาตรฐาน" : lang.includes('en') ? "Oversee, support, and troubleshoot technical aspects of production and machinery to maximize process efficiency, minimize losses, and maintain quality according to standards." : "生産および機械の技術面を管理・サポート・トラブルシューティングし、作業プロセスの効率を最大化し、損失を最小限に抑え、基準に沿った品質を維持します。" }</h2>
+                            <h2 className='description-position'>{lang===('th') ? "ดูแล สนับสนุน และแก้ไขปัญหาทางด้านเทคนิคของการผลิตและเครื่องจักร เพื่อให้กระบวนการทำงานมีประสิทธิภาพสูงสุด ลดความสูญเสีย และรักษาคุณภาพตามมาตรฐาน" : lang===('en') ? "Oversee, support, and troubleshoot technical aspects of production and machinery to maximize process efficiency, minimize losses, and maintain quality according to standards." : "生産および機械の技術面を管理・サポート・トラブルシューティングし、作業プロセスの効率を最大化し、損失を最小限に抑え、基準に沿った品質を維持します。" }</h2>
                         </ScrollReveal>
 
                         <div className="TE-box">
@@ -1038,7 +1038,7 @@ export default function Employee() {
                                     <div className="name-top-manager">
                                         <ScrollReveal>
                                             <h2 className='position-topmanager'>{lang === "th" ? TETH[index] : lang === "en" ? TEEN[index]: TEJP[index]} </h2>
-                                            <p className='top-manager-name'>{lang.includes('th') ? item : lang.includes('en') ? TENameEN[index] : TENameJP[index]}</p>
+                                            <p className='top-manager-name'>{lang===('th') ? item : lang===('en') ? TENameEN[index] : TENameJP[index]}</p>
                                         </ScrollReveal>
 
                                     </div>
@@ -1050,10 +1050,10 @@ export default function Employee() {
 
                     <div className="WH">
                         <ScrollReveal>
-                            <h1 className="position-qaqc">{lang.includes('th') ? "เจ้าหน้าที่ฝ่ายคลังสินค้า (Warehouse Officer)" : lang.includes('en') ? "Warehouse Officer" : "倉庫担当者（Warehouse Officer）"}</h1>
+                            <h1 className="position-qaqc">{lang===('th') ? "เจ้าหน้าที่ฝ่ายคลังสินค้า (Warehouse Officer)" : lang===('en') ? "Warehouse Officer" : "倉庫担当者（Warehouse Officer）"}</h1>
                         </ScrollReveal>
                         <ScrollReveal>
-                            <h2 className='description-position'>{lang.includes('th') ? "บริหารจัดการคลังสินค้า ตั้งแต่การรับสินค้า ตรวจสอบคุณภาพ การจัดเก็บ จ่ายออก และดูแลสต็อกให้ถูกต้อง รวมถึงการจัดทำรายงานเพื่อให้ข้อมูลที่ถูกต้องแก่ฝ่ายที่เกี่ยวข้อง" : lang.includes('en') ? "Manage the warehouse, including receiving goods, quality inspection, storage, dispatch, and accurate stock control, as well as preparing reports to provide accurate information to relevant departments." : "商品の受け入れ、品質チェック、保管、出荷、在庫管理を含め、倉庫を管理し、関連部門に正確な情報を提供するための報告書を作成します。"}</h2>
+                            <h2 className='description-position'>{lang===('th') ? "บริหารจัดการคลังสินค้า ตั้งแต่การรับสินค้า ตรวจสอบคุณภาพ การจัดเก็บ จ่ายออก และดูแลสต็อกให้ถูกต้อง รวมถึงการจัดทำรายงานเพื่อให้ข้อมูลที่ถูกต้องแก่ฝ่ายที่เกี่ยวข้อง" : lang===('en') ? "Manage the warehouse, including receiving goods, quality inspection, storage, dispatch, and accurate stock control, as well as preparing reports to provide accurate information to relevant departments." : "商品の受け入れ、品質チェック、保管、出荷、在庫管理を含め、倉庫を管理し、関連部門に正確な情報を提供するための報告書を作成します。"}</h2>
                         </ScrollReveal>
 
                         <div className="WH-box">
@@ -1069,7 +1069,7 @@ export default function Employee() {
                                     <div className="name-top-manager">
                                         <ScrollReveal>
                                             <h2 className='position-topmanager'>{lang === "th" ? WHTH[index] : lang === "en" ? WHEN[index] : WHJP[index]} </h2>
-                                            <p className='top-manager-name'>{lang.includes('th') ? item : lang.includes('en') ? WHNameEN[index] : WHNameJP[index]}</p>
+                                            <p className='top-manager-name'>{lang===('th') ? item : lang===('en') ? WHNameEN[index] : WHNameJP[index]}</p>
                                         </ScrollReveal>
 
                                     </div>
@@ -1080,10 +1080,10 @@ export default function Employee() {
 
                     <div className="PUR">
                         <ScrollReveal>
-                            <h1 className="position-qaqc">{lang.includes('th') ? "เจ้าหน้าที่ฝ่ายจัดซื้อ (Purchasing Officer)" : lang.includes('en') ? "Purchasing Officer" : "購買担当者（Purchasing Officer）"}</h1>
+                            <h1 className="position-qaqc">{lang===('th') ? "เจ้าหน้าที่ฝ่ายจัดซื้อ (Purchasing Officer)" : lang===('en') ? "Purchasing Officer" : "購買担当者（Purchasing Officer）"}</h1>
                         </ScrollReveal>
                         <ScrollReveal>
-                            <h2 className='description-position'>{lang.includes('th') ? "สรรหา คัดเลือก ต่อรอง และสั่งซื้อ วัตถุดิบ อะไหล่ เครื่องจักร อุปกรณ์สำนักงาน รวมถึงบริการต่าง ๆ ที่จำเป็นต่อการดำเนินงานขององค์กร พร้อมทั้งสร้างและรักษาความสัมพันธ์กับซัพพลายเออร์" : lang.includes('en') ? "Source, select, negotiate, and procure raw materials, parts, machinery, office supplies, and necessary services for organizational operations, while building and maintaining relationships with suppliers." : "原材料、部品、機械、事務用品、ならびに業務に必要な各種サービスの調達、選定、交渉、発注を行い、サプライヤーとの関係を構築・維持します。"}</h2>
+                            <h2 className='description-position'>{lang===('th') ? "สรรหา คัดเลือก ต่อรอง และสั่งซื้อ วัตถุดิบ อะไหล่ เครื่องจักร อุปกรณ์สำนักงาน รวมถึงบริการต่าง ๆ ที่จำเป็นต่อการดำเนินงานขององค์กร พร้อมทั้งสร้างและรักษาความสัมพันธ์กับซัพพลายเออร์" : lang===('en') ? "Source, select, negotiate, and procure raw materials, parts, machinery, office supplies, and necessary services for organizational operations, while building and maintaining relationships with suppliers." : "原材料、部品、機械、事務用品、ならびに業務に必要な各種サービスの調達、選定、交渉、発注を行い、サプライヤーとの関係を構築・維持します。"}</h2>
                         </ScrollReveal>
 
                         <div className="PUR-box">
@@ -1099,7 +1099,7 @@ export default function Employee() {
                                     <div className="name-top-manager">
                                         <ScrollReveal>
                                             <h2 className='position-topmanager'>{lang === "th" ? PURTH[index] : lang === "en" ? PUREN[index] : PURJP[index]} </h2>
-                                            <p className='top-manager-name'>{lang.includes('th') ?item : lang.includes('en') ? PURNameEN[index] : PURNameJP[index]}</p>
+                                            <p className='top-manager-name'>{lang===('th') ?item : lang===('en') ? PURNameEN[index] : PURNameJP[index]}</p>
                                         </ScrollReveal>
 
                                     </div>

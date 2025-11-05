@@ -123,21 +123,21 @@ export default function Iso14001() {
         <header>
           <ScrollReveal>
             <h1 className="ISO9001 text-center text-3xl font-bold">
-              {lang.includes('th')
+              {lang===('th')
                 ? "การรับรองมาตรฐาน ISO 14001"
-                : lang.includes('en') 
-                ? "ISO 14001 Certification"
-                : "ISO 14001認証"}
+                : lang===('en')
+                  ? "ISO 14001 Certification"
+                  : "ISO 14001認証"}
             </h1>
           </ScrollReveal>
 
           <ScrollReveal>
             <p className="text-iso text-center text-xl mt-2">
-              {lang.includes('th')
+              {lang===('th')
                 ? "มาตรฐานระบบการจัดการสิ่งแวดล้อมระดับสากล"
-                : lang.includes('en') 
-                ? "International standard for environmental management systems"
-                : "環境マネジメントシステムの国際規格"}
+                : lang===('en')
+                  ? "International standard for environmental management systems"
+                  : "環境マネジメントシステムの国際規格"}
             </p>
           </ScrollReveal>
         </header>
@@ -185,20 +185,35 @@ export default function Iso14001() {
         </AnimatePresence>
 
         {/* ✅ Description */}
-        <div className="iso-box-description">
-          <ScrollReveal>
-            <h2 className="iso-name">ISO 14001</h2>
+
+        <div className="iso-box-description mt-8 text-center">
+          <ScrollReveal delay={0.8}>
+            <motion.h2
+              className="iso-name text-2xl font-semibold text-gray-800 mb-3"
+              initial={{ opacity: 0, y: 15 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, ease: "easeOut" }}
+            >
+              ISO 14001
+            </motion.h2>
           </ScrollReveal>
-          <ScrollReveal>
-            <p className="description-iso">
-              {lang.includes('th')
+
+          <ScrollReveal delay={1}>
+            <motion.p
+              className="description-iso max-w-3xl mx-auto text-lg text-gray-600 leading-relaxed"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1.2, ease: "easeOut" }}
+            >
+              {lang===('th')
                 ? "ISO 14001 คือมาตรฐานสากลสำหรับระบบการจัดการสิ่งแวดล้อม (Environmental Management System: EMS) ที่กำหนดโดยองค์การมาตรฐานสากล (ISO) เพื่อให้องค์กรสามารถควบคุมและลดผลกระทบต่อสิ่งแวดล้อมจากการดำเนินงานของตนอย่างมีประสิทธิภาพ ส่งเสริมความยั่งยืนในระยะยาว"
-                : lang.includes('en')
-                ? "ISO 14001 is an international standard for Environmental Management Systems (EMS) established by the International Organization for Standardization (ISO). It enables organizations to systematically control and reduce environmental impact, ensuring sustainable development and responsible production."
-                : "ISO 14001は、国際標準化機構（ISO）が定めた環境マネジメントシステム（EMS）の国際規格です。組織が環境への影響を管理・低減し、持続可能な生産と責任ある事業活動を推進することを目的としています。"}
-            </p>
+                : lang===('en')
+                  ? "ISO 14001 is an international standard for Environmental Management Systems (EMS) established by the International Organization for Standardization (ISO). It enables organizations to systematically control and reduce environmental impact, ensuring sustainable development and responsible production."
+                  : "ISO 14001は、国際標準化機構（ISO）が定めた環境マネジメントシステム（EMS）の国際規格です。組織が環境への影響を管理・低減し、持続可能な生産と責任ある事業活動を推進することを目的としています。"}
+            </motion.p>
           </ScrollReveal>
         </div>
+       
 
         <ScrollReveal>
           <Iso_btn />

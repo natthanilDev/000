@@ -323,10 +323,10 @@ export default function CustomPart() {
 
         <div className="intro-allProduct">
           <ScrollReveal>
-            <h1 className='allProduct-text'>{lang.includes('th') ? "คอลเลกชัน" : lang.includes('en') ? "PRODUCT" : "製品"}</h1>
+            <h1 className='allProduct-text'>{lang === ('th') ? "ผลิตภัณฑ์" : lang === ('en') ? "PRODUCT" : "製品"}</h1>
           </ScrollReveal>
           <ScrollReveal>
-            <h2 className='allProduct-text active'>{lang.includes('th') ? "ผลิตภัณฑ์" : lang.includes('en') ? "COLLECTION" : "コレクション"}</h2>
+            <h2 className='allProduct-text active'>{lang === ('th') ? "สั่งทำพิเศษ" : lang === ('en') ? "Custom Made" : "特注"}</h2>
           </ScrollReveal>
         </div>
 
@@ -334,23 +334,11 @@ export default function CustomPart() {
           {image_collection.map((item, index) => (
             <div className="card-collection" key={index}>
               <ScrollReveal>
-                <Image
-                  src={item}
-                  alt="JIEI Thai ผู้ผลิตยางรถยนต์และชิ้นส่วนยางคุณภาพสูง จังหวัดชลบุรี ได้มาตรฐาน ISO/IATF16949 ผลิต Engine Mount, Suspension Bush, Seals และชิ้นส่วนยางอุตสาหกรรม"
-                  className="image-category"
-                  width={1000}
-                  height={1000}
-                  loading="lazy"
-                />
+                <Image src={item} alt="JIEI Thai ผู้ผลิตยางรถยนต์และชิ้นส่วนยางคุณภาพสูง จังหวัดชลบุรี ได้มาตรฐาน ISO/IATF16949 ผลิต Engine Mount, Suspension Bush, Seals และชิ้นส่วนยางอุตสาหกรรม" className="image-category" width={1000} height={1000} loading="lazy" />
               </ScrollReveal>
-              <div
-                className="background-image"
-                onClick={() => {
-                  window.open(collections[index], "_blank", "noopener,noreferrer")
-                }}
-              >
+              <div className="background-image" onClick={() => { window.open(collections[index], "_blank", "noopener,noreferrer") }}>
                 <ScrollReveal>
-                  <p className="preview-image">{lang.includes('th') ? hover_imageTH[index] : lang.includes('en') ? hover_imageEN[index] : hover_imageJP[index]} </p>
+                  <p className="preview-image">{lang === ('th') ? hover_imageTH[index] : lang === ('en') ? hover_imageEN[index] : hover_imageJP[index]} </p>
                 </ScrollReveal>
               </div>
             </div>
@@ -360,12 +348,12 @@ export default function CustomPart() {
         <div className="collection-part">
           <div className="text-collection-box">
             <ScrollReveal>
-              <h2 className="text-collection">{lang.includes('th') ? "รถยนต์" : lang.includes('en') ? "CAR" : "「自動車」"}</h2>
+              <h2 className="text-collection">{lang === ('th') ? "รถยนต์" : lang === ('en') ? "CAR" : "「自動車」"}</h2>
             </ScrollReveal>
           </div>
 
           <div className="collection-box">
-            {lang.includes('en') ? title_partEN.map((item, index) => (
+            {lang === ('en') ? title_partEN.map((item, index) => (
               <div key={index}>
                 <ScrollReveal>
                   <h2 className="nameProduct">{item}</h2>
@@ -383,7 +371,7 @@ export default function CustomPart() {
                   </div>
                 ))}
               </div>
-            )) : lang.includes('th') ? title_partTH.map((item, index) => (
+            )) : lang === ('th') ? title_partTH.map((item, index) => (
               <div key={index}>
                 <ScrollReveal>
                   <h2 className="nameProduct">{item}</h2>

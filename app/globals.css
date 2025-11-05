@@ -1167,8 +1167,7 @@ a:hover {
 .image-partner-homepage {
   width: 90%;
   margin: 0 auto;
-  /* filter: grayscale(100%); */
-
+  filter: grayscale(70%);
   transition: all ease 0.1s;
   animation: display_logo_company 1s infinite alternate;
 
@@ -1177,6 +1176,7 @@ a:hover {
     filter: grayscale(0%);
   }
 }
+
 
 @keyframes display_logo_company {
   0% {
@@ -3050,7 +3050,7 @@ h4 {
     display: flex;
     margin: 0 auto;
     position: relative;
-    animation: sped1 10s 0s infinite linear normal alternate;
+    animation: sped1 scroll-logos 20s linear infinite;
 
 
   }
@@ -4738,3 +4738,15 @@ h4 {
     gap: 10px;
   }
 }
+
+
+.btn-iso{
+  background-color: #00135d;
+  padding: 5px 20px;
+  text-decoration: none;
+  border-radius: 20px;
+  color: #fff;
+}
+
+
+

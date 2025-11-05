@@ -214,7 +214,7 @@ export default function Page() {
           <ScrollReveal>
             <h1 className='activities-text'>
 
-              {lang.includes('th') ? "แท่นเครื่องยนต์" : lang.includes('en') ? "Engine-mount" : "エンジンマウント"}
+              {lang===('th') ? "แท่นเครื่องยนต์" : lang===('en') ? "Engine-mount" : "エンジンマウント"}
             </h1>
           </ScrollReveal>
           <div className="line"></div>
@@ -222,9 +222,9 @@ export default function Page() {
           <div className="activities-text-description-box">
             <ScrollReveal>
               <p className='activities-text-description'>
-                {lang.includes('th')
+                {lang===('th')
                   ? "ติดตามข่าวสารและกิจกรรมจาก JIEI Thailand ผู้ผลิตชิ้นส่วนยางรถยนต์คุณภาพสูงจากชลบุรี เพื่อสร้างความสามัคคีและพัฒนาทีมงานอย่างต่อเนื่อง"
-                  : lang.includes('en')
+                  : lang===('en')
                     ? "Stay updated with activities from JIEI Thailand — a leading automotive rubber parts manufacturer based in Chonburi, Thailand."
                     : "JIEI Thailandの活動をチェック — チョンブリーにある自動車用ゴム部品メーカーです。"}
               </p>
@@ -246,13 +246,13 @@ export default function Page() {
                 </div>
                 <div className="product-box">
                   <div className="product-card">
-                    <h4>{lang.includes('th') ? item : lang.includes('en') ? revProduct_nameEN[index] : revProduct_nameJP[index]}</h4>
+                    <h4>{lang===('th') ? item : lang===('en') ? revProduct_nameEN[index] : revProduct_nameJP[index]}</h4>
                   </div>
                   <div className="product-description-box">
                     <div className="space-part-box">
 
                       <p className='space-part'>
-                        {lang.includes('th') ? revDescriptionTH[start + index] : lang.includes('en') ? revDescriptionEN[start + index] : revDescriptionJP[start + index]}
+                        {lang===('th') ? revDescriptionTH[start + index] : lang===('en') ? revDescriptionEN[start + index] : revDescriptionJP[start + index]}
                       </p>
                     </div>
 
@@ -261,14 +261,14 @@ export default function Page() {
                 <div className="preview-product">
                   <div className="text-preview">
                     <p className="preview-text">
-                      {lang.includes('th') ? "อ่านเพิ่มเติม" : lang.includes('en') ? "Read More" : "続きを読む"}
+                      {lang===('th') ? "อ่านเพิ่มเติม" : lang===('en') ? "Read More" : "続きを読む"}
                     </p>
                   </div>
 
                 </div>
                 <div className="posted">
                   <div className="date_post">
-                    <h6 className='post'>{lang.includes('th') ? revDatePostTH[start + index] : lang.includes('en') ? revDatePostEN[start + index] : revDatePostJP[start + index]}</h6>
+                    <h6 className='post'>{lang===('th') ? revDatePostTH[start + index] : lang===('en') ? revDatePostEN[start + index] : revDatePostJP[start + index]}</h6>
                   </div>
                 </div>
               </div>
@@ -397,7 +397,7 @@ export default function Page() {
         </div>
       ) : (
         <div className="detail-product">
-          <h2 className='title-product-page'>{lang.includes('th') ? revProduct_nameTH[selectedProduct] : lang.includes('en') ? revProduct_nameEN[selectedProduct] : revProduct_nameJP[selectedProduct]}</h2>
+          <h2 className='title-product-page'>{lang===('th') ? revProduct_nameTH[selectedProduct] : lang===('en') ? revProduct_nameEN[selectedProduct] : revProduct_nameJP[selectedProduct]}</h2>
           <div className="line"></div>
           <div className="product-description-card">
             <div className="image-product-card">
@@ -415,14 +415,14 @@ export default function Page() {
             </div>
             <div className="description-box-product">
               <ScrollReveal>
-                <p className='datePost'>{lang.includes('th') ? revDatePostTH[selectedProduct] : lang.includes('en') ? revDatePostEN[selectedProduct] : revDatePostJP[selectedProduct]}</p>
-                <h2 className='product-blog'>{lang.includes('th') ? revProduct_nameTH[selectedProduct] : lang.includes('en') ? revProduct_nameEN[selectedProduct] : revProduct_nameJP[selectedProduct]}</h2>
+                <p className='datePost'>{lang===('th') ? revDatePostTH[selectedProduct] : lang===('en') ? revDatePostEN[selectedProduct] : revDatePostJP[selectedProduct]}</p>
+                <h2 className='product-blog'>{lang===('th') ? revProduct_nameTH[selectedProduct] : lang===('en') ? revProduct_nameEN[selectedProduct] : revProduct_nameJP[selectedProduct]}</h2>
 
-                <p className='description-box-page'>{lang.includes('th') ? revDescriptionTH[selectedProduct] : lang.includes('en') ? revDescriptionEN[selectedProduct] : revDescriptionJP[selectedProduct]}</p>
+                <p className='description-box-page'>{lang===('th') ? revDescriptionTH[selectedProduct] : lang===('en') ? revDescriptionEN[selectedProduct] : revDescriptionJP[selectedProduct]}</p>
               </ScrollReveal>
               <div className="product-description-box-2">
                 <ScrollReveal>
-                  <h3> {lang.includes('th') ? "รายละเอียดผลิตภัณฑ์" : lang.includes('en') ? "Product Details" : "製品詳細（せいひんしょうさい）"} </h3>
+                  <h3> {lang===('th') ? "รายละเอียดผลิตภัณฑ์" : lang===('en') ? "Product Details" : "製品詳細（せいひんしょうさい）"} </h3>
                 </ScrollReveal>
               </div>
 
@@ -431,12 +431,12 @@ export default function Page() {
                   <div key={index} className={`pop-product${index % 2 == 0 ? 1 : 2}`}>
                     <div className={`table-spec1${index % 2 == 0 ? 1 : 2}`}>
                       <ScrollReveal>
-                        <p className='product-description-table-title'> {lang.includes('th') ? revDetails_nameTH[selectedProduct][index] : lang.includes('en') ? revDetails_nameEN[selectedProduct][index] : revDetails_nameJP[selectedProduct][index]}</p>
+                        <p className='product-description-table-title'> {lang===('th') ? revDetails_nameTH[selectedProduct][index] : lang===('en') ? revDetails_nameEN[selectedProduct][index] : revDetails_nameJP[selectedProduct][index]}</p>
                       </ScrollReveal>
                     </div>
                     <div className={`table-spec${index % 2 == 0 ? 1 : 2}`}>
                       <ScrollReveal>
-                        <p className='product-description-table'> {lang.includes('th') ? revDetails_productTH[selectedProduct][index] : lang.includes('en') ? revDetails_productEN[selectedProduct][index] : revDetails_productJP[selectedProduct][index]}</p>
+                        <p className='product-description-table'> {lang===('th') ? revDetails_productTH[selectedProduct][index] : lang===('en') ? revDetails_productEN[selectedProduct][index] : revDetails_productJP[selectedProduct][index]}</p>
                       </ScrollReveal>
                     </div>
                   </div>
@@ -450,7 +450,7 @@ export default function Page() {
               setSelectedProduct(null)
               window.scrollTo({ top: 0, behavior: 'smooth' })
             }} className="back-btn">
-              กลับไปหน้ารวม {lang.includes('th') ? "" : lang.includes('en') ? "" : ""}
+              กลับไปหน้ารวม {lang===('th') ? "" : lang===('en') ? "" : ""}
             </button>
           </div>
         </div >

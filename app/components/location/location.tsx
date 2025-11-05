@@ -10,16 +10,14 @@ export default function Location() {
       const stored = localStorage.getItem('lang') as 'th' | 'en' | 'jp' | null
       if (stored) setLang(stored)
     }
-
   }, [])
   return (
     <div className="location-tack">
-      {lang.includes('th') ? <Link className="location_link" href={"/"}>{"หน้าแรก"}</Link>
-        : lang.includes('en') ? <Link className="location_link" href={"/"}>{"Home"}</Link> : "ホーム"}
-
+      {lang===('th') ? <Link className="location_link" href={"/"}>{"หน้าแรก"}</Link>
+        : lang===('en') ? <Link className="location_link" href={"/"}>{"Home"}</Link> : "ホーム"}
       {PathName === '/' ? "" : " > "}
       <Link className="location_link" href={PathName}>
-        {lang.includes('en') ?
+        {lang===('en') ?
           PathName == '/about' ? "About"
             : PathName == '/products/engine-mount' ? "Products > Engine-mount"
               : PathName == '/products/suspension-bush' ? "Products > Suspension-bush"
@@ -34,7 +32,7 @@ export default function Location() {
                                 : PathName == '/iso14001' ? "ISO14001"
                                   : PathName == '/iatf16949' ? 'IATF16949'
                                     : ""
-          : lang.includes('th') ?
+          : lang===('th') ?
             PathName == '/about' ? "เกี่ยวกับเรา"
               : PathName == '/products/engine-mount' ? "สินค้า > แท่นเครื่องยนต์"
                 : PathName == '/products/suspension-bush' ? "สินค้า > บูชช่วงล่าง"

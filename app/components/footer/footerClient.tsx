@@ -2,11 +2,13 @@
 import React, { useEffect, useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
+import Map from './google-map'
+import Head from 'next/head'
 export default function FooterClient() {
   const currentYear = new Date().getFullYear().toString();
 
   const currentDay = new Date().getDate()
-  const currentMonth = new Date().getMonth() 
+  const currentMonth = new Date().getMonth()
   const MonthTH = [
     'มกราคม',
     'กุมภาพันธ์',
@@ -55,22 +57,27 @@ export default function FooterClient() {
   const currentMonthEN = MonthEN[currentMonth]
   const currentMonthJP = MonthJP[currentMonth]
 
-const dateTH = currentDay +" / "+ currentMonthTH +" / "+ currentYear
-const dateEN = currentDay +" / "+ currentMonthEN +" / "+ currentYear
-const dateJP = currentDay +" / "+ currentMonthJP +" / "+ currentYear
+  const dateTH = currentDay + " / " + currentMonthTH + " / " + currentYear
+  const dateEN = currentDay + " / " + currentMonthEN + " / " + currentYear
+  const dateJP = currentDay + " / " + currentMonthJP + " / " + currentYear
 
 
   const [lang, setLang] = useState<'th' | 'en' | 'jp'>('th');
   useEffect(() => {
     if (typeof window !== 'undefined') {
-      const storedLang = localStorage.getItem('lang') as 'th' | 'en' | 'jp' | null;
-      if (storedLang) setLang(storedLang);
+      const storedLang = localStorage.getItem('lang');
+      if (storedLang === 'th' || storedLang === 'en' || storedLang === 'jp') {
+        setLang(storedLang);
+      }
     }
   }, []);
 
   return (
     <div>
-
+      <Head>
+        <meta itemProp="department" content="Manufacturing Department" />
+        <meta itemProp="makesOffer" content="Automotive Rubber Parts" />
+      </Head>
       <footer itemScope itemType="https://schema.org/Organization">
         <div className="container-footer">
           {/* Company Info */}
@@ -92,32 +99,32 @@ const dateJP = currentDay +" / "+ currentMonthJP +" / "+ currentYear
             <div className="contentFooter-box">
               <h6 className='jiei-footer' itemProp="name">JIEI (Thailand) Co., Ltd.</h6>
               <p className='jiei-footer' itemProp="streetAddress">
-                {lang.includes('th') ? "นิคมอุตสาหกรรมปิ่นทอง 4 ยูนิต G18 180/3 หมู่ 6 ตำบลบึง อำเภอศรีราชา จังหวัดชลบุรี 20230 ประเทศไทย" : lang.includes('en') ? "Pinthong 4 Industrial Estate, Unit G18,180/3 Moo 6, T. Bueng, A. Sriracha, Chonburi 20230, Thailand" : "ピントン4工業団地 ユニットG18 180/3 ムー6 ブン区 シーラチャー郡 チョンブリー県 20230 タイ"}
+                {lang===('th') ? "นิคมอุตสาหกรรมปิ่นทอง 4 ยูนิต G18 180/3 หมู่ 6 ตำบลบึง อำเภอศรีราชา จังหวัดชลบุรี 20230 ประเทศไทย" : lang===('en') ? "Pinthong 4 Industrial Estate, Unit G18,180/3 Moo 6, T. Bueng, A. Sriracha, Chonburi 20230, Thailand" : "ピントン4工業団地 ユニットG18 180/3 ムー6 ブン区 シーラチャー郡 チョンブリー県 20230 タイ"}
               </p>
-              <p className='jiei-footer'>{lang.includes('th') ? "เวลาทำการ : " : lang.includes('en') ? "Opening Hours : " : "営業時間 ："}<time itemProp="openingHours" dateTime="Mo-Fr 08:00-17:00">{lang.includes('th') ? "จันทร์ - ศุกร์ เวลา 8.00 - 17.00 น." : lang.includes('en') ? "Mon - Fri, 8:00 AM - 5:00 PM" : "月曜日〜金曜日 8:00〜17:00"}</time></p>
-              <p className='jiei-footer'>{lang.includes('th') ? "โทร : " : lang.includes('en') ? "Tel : " : "電話 ："}<a href="tel:+6633136581" itemProp="telephone">033-136581-4</a></p>
-              <p className='jiei-footer'>{lang.includes('th') ? "เลขประจำตัวผู้เสียภาษี (TIN) : " : lang.includes('en') ? "TIN :" : "納税者識別番号 (TIN)："} <span itemProp="taxID">0215554005118</span></p>
+              <p className='jiei-footer'>{lang===('th') ? "เวลาทำการ : " : lang===('en') ? "Opening Hours : " : "営業時間 ："}<time itemProp="openingHours" dateTime="Mo-Fr 08:00-17:00">{lang===('th') ? "จันทร์ - ศุกร์ เวลา 8.00 - 17.00 น." : lang===('en') ? "Mon - Fri, 8:00 AM - 5:00 PM" : "月曜日〜金曜日 8:00〜17:00"}</time></p>
+              <p className='jiei-footer'>{lang===('th') ? "โทร : " : lang===('en') ? "Tel : " : "電話 ："}<a href="tel:+6633136581" itemProp="telephone">033-136581-4</a></p>
+              <p className='jiei-footer'>{lang===('th') ? "เลขประจำตัวผู้เสียภาษี (TIN) : " : lang===('en') ? "TIN :" : "納税者識別番号 (TIN)："} <span itemProp="taxID">0215554005118</span></p>
             </div>
           </div>
 
           {/* Products */}
           <div className="footer-box">
             <div className="topic-box">
-              <h6>{lang.includes('th') ? "ผลิตภัณฑ์" : lang.includes('en') ? "Products" : "製品"}</h6>
+              <h6>{lang===('th') ? "ผลิตภัณฑ์" : lang===('en') ? "Products" : "製品"}</h6>
             </div>
             <div className="contentFooter-box">
               <ul>
                 <li className='li-footer'>
-                  <Link href={'/products/engine-mount'} className="link-footer">{lang.includes('th') ? "แผ่นยึดเครื่องยนต์" : lang.includes('en') ? "Engine Mounts" : "エンジンマウント"}</Link>
+                  <Link href={'/products/engine-mount'} className="link-footer">{lang===('th') ? "แผ่นยึดเครื่องยนต์" : lang===('en') ? "Engine Mounts" : "エンジンマウント"}</Link>
                 </li>
                 <li className='li-footer'>
-                  <Link href={'/products/suspension-bush'} className="link-footer">{lang.includes('th') ? "บุชซิ่งช่วงล่าง" : lang.includes('en') ? "Suspension Bushings" : "サスペンションブッシュ"}</Link>
+                  <Link href={'/products/suspension-bush'} className="link-footer">{lang===('th') ? "บุชซิ่งช่วงล่าง" : lang===('en') ? "Suspension Bushings" : "サスペンションブッシュ"}</Link>
                 </li>
                 <li className='li-footer'>
-                  <Link href={'/products/seals'} className="link-footer">{lang.includes('th') ? "ซีลและปะเก็น" : lang.includes('en') ? "Seals & Gaskets" : "シール＆ガスケット"}</Link>
+                  <Link href={'/products/seals'} className="link-footer">{lang===('th') ? "ซีลและปะเก็น" : lang===('en') ? "Seals & Gaskets" : "シール＆ガスケット"}</Link>
                 </li>
                 <li className='li-footer'>
-                  <Link href={'/products/custom-parts'} className="link-footer">{lang.includes('th') ? "คอลเลกชันผลิตภัณฑ์" : lang.includes('en') ? "Product Collection" : "製品コレクション"}</Link>
+                  <Link href={'/products/custom-parts'} className="link-footer">{lang===('th') ? "คอลเลกชันผลิตภัณฑ์" : lang===('en') ? "Product Collection" : "製品コレクション"}</Link>
                 </li>
               </ul>
             </div>
@@ -127,12 +134,12 @@ const dateJP = currentDay +" / "+ currentMonthJP +" / "+ currentYear
           <div className="footer-box">
             <div className="footer-box2">
               <div className="topic-box">
-                <h6>{lang.includes('th') ? "เกี่ยวกับเรา" : lang.includes('en') ? "About Us" : "会社概要"}</h6>
+                <h6>{lang===('th') ? "เกี่ยวกับเรา" : lang===('en') ? "About Us" : "会社概要"}</h6>
               </div>
               <div className="contentFooter-box">
                 <ul>
                   <li className='li-footer'>
-                    <Link href={'/about'} className="link-footer">{lang.includes('th') ? "ข้อมูลบริษัท" : lang.includes('en') ? "Company Profile" : "会社概要"}</Link>
+                    <Link href={'/about'} className="link-footer">{lang===('th') ? "ข้อมูลบริษัท" : lang===('en') ? "Company Profile" : "会社概要"}</Link>
                   </li>
                 </ul>
               </div>
@@ -140,12 +147,12 @@ const dateJP = currentDay +" / "+ currentMonthJP +" / "+ currentYear
 
             <div className="footer-box2">
               <div className="topic-box">
-                <h6>{lang.includes('th') ? "ติดต่อเรา" : lang.includes('en') ? "Contact Us" : "お問い合わせ"}</h6>
+                <h6>{lang===('th') ? "ติดต่อเรา" : lang===('en') ? "Contact Us" : "お問い合わせ"}</h6>
               </div>
               <div className="contentFooter-box">
                 <ul>
                   <li className='li-footer'>
-                    <Link href={'/contact'} className="link-footer">{lang.includes('th') ? "ส่งข้อความถึงเรา" : lang.includes('en') ? "Send Us a Message" : "メッセージを送る"}</Link>
+                    <Link href={'/contact'} className="link-footer">{lang===('th') ? "ส่งข้อความถึงเรา" : lang===('en') ? "Send Us a Message" : "メッセージを送る"}</Link>
                   </li>
                 </ul>
               </div>
@@ -153,50 +160,42 @@ const dateJP = currentDay +" / "+ currentMonthJP +" / "+ currentYear
           </div>
 
           {/* News & Blog */}
-          
+
 
           {/* Activities */}
           <div className="footer-box">
             <div className="footer-box2">
               <div className="topic-box">
-                <h6>{lang.includes('th') ? "ข่าวสาร และกิจกรรม" : lang.includes('en') ? "News & Activities" : "ニュースとイベント"}</h6>
+                <h6>{lang===('th') ? "ข่าวสาร และกิจกรรม" : lang===('en') ? "News & Activities" : "ニュースとイベント"}</h6>
               </div>
             </div>
             <div className="contentFooter-box">
               <ul>
                 <li className='li-footer'>
-                  <Link href={'/activities'} className="link-footer">{lang.includes('th') ? "ข่าวสาร และกิจกรรม" : lang.includes('en') ? "Activities" : "活動"}</Link>
+                  <Link href={'/activities'} className="link-footer">{lang===('th') ? "ข่าวสาร และกิจกรรม" : lang===('en') ? "Activities" : "活動"}</Link>
                 </li>
               </ul>
             </div>
 
-          
+
           </div>
 
-           <div className="footer-box2">
-              <div className="topic-box">
-                <h6>Google Map</h6>
-              </div>
-              <div className="contentFooter-box">
-                <div className="map-container">
-                  <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.1518657435113!2d101.03399597572438!3d13.089560112279843!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3102c7dc30976c73%3A0x4d5814b37d43e107!2sJIEI(Thailand)%20Co.%2CLtd.!5e0!3m2!1sen!2sth!4v1760580362373!5m2!1sen!2sth"
-                    width="100%"
-                    height="150"
-                    style={{ border: 0 }}
-                    allowFullScreen
-                    loading="lazy"
-                    referrerPolicy="no-referrer-when-downgrade"
-                  ></iframe>
+          <div className="footer-box2">
+            <div className="topic-box">
+              <h6>Google Map</h6>
+            </div>
+            <div className="contentFooter-box">
+              <div className="map-container">
+               <Map />
 
-                </div>
               </div>
             </div>
+          </div>
         </div>
 
         {/* Bottom */}
         <div className="bottom-footer">
-          <p>{lang.includes('th') ? `ลิขสิทธิ์ © 2025 บริษัท เจไออี (ประเทศไทย) จำกัด | ผู้ผลิตชิ้นส่วนยางยานยนต์ในจังหวัดชลบุรี ประเทศไทย || อัปเดตเมื่อ ${dateTH}` : lang.includes('en') ? `Copyright © 2025 JIEI (Thailand) Co., Ltd. | Automotive Rubber Parts Manufacturer in Chonburi, Thailand || Update on ${dateEN}` : `著作権 © 2025 JIEI（タイ）株式会社｜タイ・チョンブリー県の自動車用ゴム部品メーカー || 更新日 ${dateJP}`}</p>
+          <p>{lang===('th') ? `ลิขสิทธิ์ © 2025 บริษัท เจไออี (ประเทศไทย) จำกัด | ผู้ผลิตชิ้นส่วนยางยานยนต์ในจังหวัดชลบุรี ประเทศไทย || อัปเดตเมื่อ ${dateTH}` : lang===('en') ? `Copyright © 2025 JIEI (Thailand) Co., Ltd. | Automotive Rubber Parts Manufacturer in Chonburi, Thailand || Update on ${dateEN}` : `著作権 © 2025 JIEI（タイ）株式会社｜タイ・チョンブリー県の自動車用ゴム部品メーカー || 更新日 ${dateJP}`}</p>
         </div>
       </footer>
     </div>

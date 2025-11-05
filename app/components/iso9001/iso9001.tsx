@@ -29,24 +29,11 @@ export default function Iso9001() {
       <Head>
         {/* 🔹 Basic SEO */}
         <title>ISO 9001 Certification | JIEI Thailand - Quality Management Standard</title>
-        <meta
-          name="description"
-          content="JIEI Thailand Co., Ltd. is ISO 9001 certified, ensuring international quality management standards in automotive rubber parts manufacturing located in Chonburi, Thailand."
-        />
-        <meta
-          name="keywords"
-          content="ISO 9001, Quality Management, Automotive Rubber Parts, JIEI Thailand, Chonburi Manufacturer, Quality Standard, IATF 16949, Automotive Industry Thailand"
-        />
-
-        {/* 🔹 Canonical */}
+        <meta name="description" content="JIEI Thailand Co., Ltd. is ISO 9001 certified, ensuring international quality management standards in automotive rubber parts manufacturing located in Chonburi, Thailand." />
+        <meta name="keywords" content="ISO 9001, Quality Management, Automotive Rubber Parts, JIEI Thailand, Chonburi Manufacturer, Quality Standard, IATF 16949, Automotive Industry Thailand" />
         <link rel="canonical" href="https://www.jiei-thai.co.th/iso9001" />
-
-        {/* 🔹 Open Graph */}
         <meta property="og:title" content="ISO 9001 Certification - JIEI Thailand" />
-        <meta
-          property="og:description"
-          content="ISO 9001 Certification demonstrates JIEI Thailand’s commitment to international quality management standards for automotive parts."
-        />
+        <meta property="og:description" content="ISO 9001 Certification demonstrates JIEI Thailand’s commitment to international quality management standards for automotive parts." />
         <meta property="og:image" content="/iso9001.png" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="JIEI Thailand Co., Ltd." />
@@ -123,27 +110,26 @@ export default function Iso9001() {
         <header>
           <ScrollReveal>
             <h1 className="ISO9001 text-center text-3xl font-bold">
-              {lang.includes('th')
+              {lang===('th')
                 ? "การรับรองมาตรฐาน ISO 9001"
-                : lang.includes('th')
-                ? "ISO 9001 Certification"
-                : "ISO 9001認証"}
+                : lang===('en')
+                  ? "ISO 9001 Certification"
+                  : "ISO 9001認証"}
             </h1>
           </ScrollReveal>
           <ScrollReveal>
             <p className="text-iso text-center text-xl mt-2">
-              {lang.includes('th')
+              {lang===('th')
                 ? "มาตรฐานระบบบริหารคุณภาพระดับสากลสำหรับอุตสาหกรรมยานยนต์"
-                : lang.includes('en')
-                ? "International quality management standard for the automotive industry"
-                : "自動車産業向けの国際的な品質マネジメント規格"}
+                : lang===('en')
+                  ? "International quality management standard for the automotive industry"
+                  : "自動車産業向けの国際的な品質マネジメント規格"}
             </p>
           </ScrollReveal>
         </header>
 
         <div className="line my-4 mx-auto w-20 border-b-2 border-gray-300" />
 
-        {/* ✅ Gallery */}
         <ScrollReveal>
           <div className="image-iso-box flex justify-center items-center gap-4 mt-6">
             {images.map((image, index) => (
@@ -162,7 +148,6 @@ export default function Iso9001() {
           </div>
         </ScrollReveal>
 
-        {/* ✅ Modal */}
         <AnimatePresence>
           {selectedImg && (
             <motion.div
@@ -184,26 +169,38 @@ export default function Iso9001() {
           )}
         </AnimatePresence>
 
-        {/* ✅ Description */}
-        <div className="iso-box-description">
-          <ScrollReveal>
-            <h2 className="iso-name">ISO 9001</h2>
+        <div className="iso-box-description mt-8 text-center">
+          <ScrollReveal delay={0.8}>
+            <motion.h2
+              className="iso-name text-2xl font-semibold text-gray-800 mb-3"
+              initial={{ opacity: 0, y: 15 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, ease: "easeOut" }}
+            >
+              ISO 9001
+            </motion.h2>
           </ScrollReveal>
-          <ScrollReveal>
-            <p className="description-iso">
-              {lang.includes('th')
+
+          <ScrollReveal delay={1}>
+            <motion.p
+              className="description-iso max-w-3xl mx-auto text-lg text-gray-600 leading-relaxed"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1.2, ease: "easeOut" }}
+            >
+              {lang===('th')
                 ? "ISO 9001 คือมาตรฐานสากลสำหรับระบบการจัดการคุณภาพ (Quality Management System: QMS) ที่กำหนดโดยองค์การระหว่างประเทศว่าด้วยการมาตรฐาน (ISO) เพื่อช่วยให้องค์กรสร้างกระบวนการทำงานที่มีคุณภาพ มีการควบคุม และปรับปรุงอย่างต่อเนื่อง เพื่อส่งมอบสินค้าที่มีคุณภาพแก่ลูกค้าอย่างสม่ำเสมอ"
-                : lang.includes('en')
-                ? "ISO 9001 is an international standard for Quality Management Systems (QMS), established by the International Organization for Standardization (ISO). It helps organizations build consistent, controlled, and continuously improving processes to deliver quality products to customers."
-                : "ISO 9001は、国際標準化機構（ISO）が制定した品質マネジメントシステム（QMS）の国際規格です。品質の一貫性を確保し、継続的な改善を通じてお客様に高品質な製品を提供するための基盤を提供します。"}
-            </p>
+                : lang===('en')
+                  ? "ISO 9001 is an international standard for Quality Management Systems (QMS), established by the International Organization for Standardization (ISO). It helps organizations build consistent, controlled, and continuously improving processes to deliver quality products to customers."
+                  : "ISO 9001は、国際標準化機構（ISO）が制定した品質マネジメントシステム（QMS）の国際規格です。品質の一貫性を確保し、継続的な改善を通じてお客様に高品質な製品を提供するための基盤を提供します。"}
+            </motion.p>
           </ScrollReveal>
         </div>
 
         <ScrollReveal>
           <Iso_btn />
         </ScrollReveal>
-      </section>
+      </section >
     </>
   );
 }
