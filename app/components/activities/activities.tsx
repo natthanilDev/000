@@ -33,11 +33,11 @@ export default function Page() {
   ];
   const img = [
     '/companyTrip.png',
-   
+
   ];
   const contentALLTH = [
     `วันเสาร์ (วันที่1) 06:30 รวมตัวที่บริษัท JIEI (พร้อมชุดลำลองสีสดใส) แจกของที่ระลึก เช่น หมวก + เสื้อทริป 07:00 ออกเดินทางด้วยรถบัส`,
-   
+
   ];
   const contentALLEN = [
     `Saturday (Day 1) 06:30 Gather at JIEI company (wearing colorful casual clothes) Hand out souvenirs such as hats + trip shirts
@@ -86,7 +86,7 @@ export default function Page() {
     <h5>17:00</h5>  ถึงบริษัทโดยสวัสดิภาพ ปิดทริปพร้อมใจว่า “See you next year!”
     <hr>
     `,
-   
+
 
 
   ];
@@ -244,35 +244,7 @@ export default function Page() {
         <meta name="twitter:description" content={pageDescription} />
         <meta name="twitter:image" content={selectedNews !== null ? img[selectedNews] : '/JIEI(Thailnad).co.,ltd.jpg'} />
 
-        {/* ✅ Structured Data (SEO Boost) */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Organization",
-              "name": "JIEI Thailand",
-              "url": "https://www.jiei-thai.co.th",
-              "logo": "https://www.jiei-thai.co.th/logo.png",
-              "description": "ผู้ผลิตชิ้นส่วนยางรถยนต์คุณภาพสูงในจังหวัดชลบุรี ได้รับมาตรฐาน ISO9001, ISO14001, IATF16949",
-              "contactPoint": [{
-                "@type": "ContactPoint",
-                "telephone": "033-136581-4",
-                "contactType": "Customer Service",
-                "areaServed": "TH",
-                "availableLanguage": ["Thai", "English", "Japan"]
-              }],
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "Pinthong 4 Industrial Estate, Unit G18, 180/3 Moo 6",
-                "addressLocality": "Si Racha",
-                "addressRegion": "Chonburi",
-                "postalCode": "20230",
-                "addressCountry": "Thailand"
-              }
-            })
-          }}
-        />
+      
       </Head>
 
       {/* ---------- UI ---------- */}
@@ -281,7 +253,7 @@ export default function Page() {
           <ScrollReveal>
             <h1 className='activities-text'>
 
-              {lang===('th') ? "ข่าวสาร และกิจกรรมบริษัท" : lang===('en') ? "Company News & Activities" : "会社のニュースとイベント"}
+              {lang === ('th') ? "ข่าวสาร และกิจกรรมบริษัท" : lang === ('en') ? "Company News & Activities" : "会社のニュースとイベント"}
             </h1>
           </ScrollReveal>
           <div className="line"></div>
@@ -289,9 +261,9 @@ export default function Page() {
           <div className="activities-text-description-box">
             <ScrollReveal>
               <p className='activities-text-description'>
-                {lang===('th')
+                {lang === ('th')
                   ? "ติดตามข่าวสารและกิจกรรมจาก JIEI Thailand ผู้ผลิตชิ้นส่วนยางรถยนต์คุณภาพสูงจากชลบุรี เพื่อสร้างความสามัคคีและพัฒนาทีมงานอย่างต่อเนื่อง"
-                  : lang===('en')
+                  : lang === ('en')
                     ? "Stay updated with activities from JIEI Thailand — a leading automotive rubber parts manufacturer based in Chonburi, Thailand."
                     : "JIEI Thailandの活動をチェック — チョンブリーにある自動車用ゴム部品メーカーです。"}
               </p>
@@ -313,13 +285,13 @@ export default function Page() {
                 </div>
                 <div className="product-box">
                   <div className="product-card">
-                    <h4>{lang===('th') ? item : lang===('en') ? revActivitiesEN[index] : revActivitiesJP[index]}</h4>
+                    <h4>{lang === ('th') ? item : lang === ('en') ? revActivitiesEN[index] : revActivitiesJP[index]}</h4>
                   </div>
                   <div className="product-description-box">
                     <div className="space-part-box">
 
                       <p className='space-part'>
-                        {lang===('th') ? revContentALLTH[start + index] : lang===('en') ? revContentALLEN[start + index] : revContentALLJP[start + index]}
+                        {lang === ('th') ? revContentALLTH[start + index] : lang === ('en') ? revContentALLEN[start + index] : revContentALLJP[start + index]}
                       </p>
                     </div>
 
@@ -328,14 +300,14 @@ export default function Page() {
                 <div className="preview-product">
                   <div className="text-preview">
                     <p className="preview-text">
-                      {lang===('th') ? "อ่านเพิ่มเติม" : lang===('en') ? "Read More" : "続きを読む"}
+                      {lang === ('th') ? "อ่านเพิ่มเติม" : lang === ('en') ? "Read More" : "続きを読む"}
                     </p>
                   </div>
 
                 </div>
                 <div className="posted">
                   <div className="date_post">
-                    <h6 className='post'>{lang===('th') ? revDatePostTH[index] : lang===('en') ? revDatePostEN[index] : revDatePostJP[index]}</h6>
+                    <h6 className='post'>{lang === ('th') ? revDatePostTH[index] : lang === ('en') ? revDatePostEN[index] : revDatePostJP[index]}</h6>
                   </div>
                 </div>
               </div>
@@ -345,40 +317,6 @@ export default function Page() {
 
 
           <div className="page">
-            {/* <nav className="countPage" aria-label="Pagination">
-              {currentPage > 1?
-                <Link href={`/activities?page=${currentPage - 1}`}
-                  className={`numPage focusPage`}
-                  title={`ไปหน้าที่ ${currentPage-1}`}>
-                 <i className="bi bi-chevron-double-left"></i>
-                </Link> : ""}
-
-              {Array.from({ length: totalPages }, (_, i) => i + 1).map((pageNum) => (
-
-                <Link key={pageNum}
-                  href={`/activities?page=${pageNum}`}
-                  className={`numPage ${pageNum === currentPage ? "focusPage" : ""}`}
-                  title={`ไปหน้าที่ ${pageNum}`}>
-                  {pageNum}
-                </Link>
-
-              ))}
-
-
-              {currentPage < totalPages ? <Link
-                href={`/activities?page=${currentPage + 1}`}
-                className={`numPage focusPage`}
-                title={`ไปหน้าที่ ${currentPage+1}`}>
-                <i className="bi bi-chevron-double-right"></i>
-              </Link> : ""}
-
-
-
-
-
-
-
-            </nav> */}
             <nav className="countPage" aria-label="Pagination">
               {/* ปุ่มย้อนกลับ */}
               {currentPage > 1 && (
@@ -420,12 +358,7 @@ export default function Page() {
                     {/* แสดงหน้าปัจจุบันและใกล้เคียง */}
                     {visiblePages.map((pageNum) => (
                       <Link
-                        key={pageNum}
-                        href={`/activities?page=${pageNum}`}
-                        className={`numPage ${pageNum === currentPage ? "focusPage" : ""}`}
-                        title={`ไปหน้าที่ ${pageNum}`}
-                      >
-                        {pageNum}
+                        key={pageNum} href={`/activities?page=${pageNum}`} className={`numPage ${pageNum === currentPage ? "focusPage" : ""}`} title={`ไปหน้าที่ ${pageNum}`}> {pageNum}
                       </Link>
                     ))}
 
@@ -433,12 +366,10 @@ export default function Page() {
                     {visiblePages[visiblePages.length - 1] < totalPages && (
                       <>
                         {/* <span className="dots"><i className="bi bi-dash"></i></span> */}
-                        <Link
-                          href={`/activities?page=${totalPages}`}
-                          className="numPage"
-                          title={`ไปหน้าที่ ${totalPages}`}
-                        >
-                          {totalPages}
+                        <Link href={`/activities?page=${totalPages}`} title={`ไปหน้าที่ ${totalPages}`}>
+                          <div className="numPage">
+                            {totalPages}
+                          </div>
                         </Link>
                       </>
                     )}
@@ -462,7 +393,7 @@ export default function Page() {
         </div>
       ) : (
         <div className="detail-news">
-          <h2 className='title-news-page'>{lang===('th') ? revActivitiesTH[selectedNews] : lang===('en') ? revActivitiesEN[selectedNews] : revActivitiesJP[selectedNews]}</h2>
+          <h2 className='title-news-page'>{lang === ('th') ? revActivitiesTH[selectedNews] : lang === ('en') ? revActivitiesEN[selectedNews] : revActivitiesJP[selectedNews]}</h2>
           <div className="line"></div>
           <Image
             src={revImg[selectedNews]}
@@ -471,25 +402,25 @@ export default function Page() {
             alt={revActivitiesTH[selectedNews]}
             className="image-news-page"
           />
-         
-            <div>
-              <div className="date_post">
-                <h6 className='post'>{lang===('th') ? revDatePostTH[selectedNews] : lang===('en') ? revDatePostEN[selectedNews] : revDatePostJP[selectedNews]}</h6>
-              </div>
+
+          <div>
+            <div className="date_post">
+              <h6 className='post'>{lang === ('th') ? revDatePostTH[selectedNews] : lang === ('en') ? revDatePostEN[selectedNews] : revDatePostJP[selectedNews]}</h6>
             </div>
-            <div
-              className='content-box-page'
-              dangerouslySetInnerHTML={{ __html: lang===('th') ? revContentTH[selectedNews] : lang===('en') ? revContentEN[selectedNews] : revContentJP[selectedNews] }}
-            />
-            <div className="btn-back-newsPage">
-              <button onClick={() => {
-                setSelectedNews(null)
-                window.scrollTo({ top: 0, behavior: 'smooth' })
-              }} className="back-btn">
-                {lang===('th') ? "กลับไปหน้ารวม" : lang===('en') ? "Back to Overview" : "一覧に戻る"}
-              </button>
-            </div>
-         
+          </div>
+          <div
+            className='content-box-page'
+            dangerouslySetInnerHTML={{ __html: lang === ('th') ? revContentTH[selectedNews] : lang === ('en') ? revContentEN[selectedNews] : revContentJP[selectedNews] }}
+          />
+          <div className="btn-back-newsPage">
+            <button onClick={() => {
+              setSelectedNews(null)
+              window.scrollTo({ top: 0, behavior: 'smooth' })
+            }} className="back-btn">
+              {lang === ('th') ? "กลับไปหน้ารวม" : lang === ('en') ? "Back to Overview" : "一覧に戻る"}
+            </button>
+          </div>
+
         </div>
       )}
     </div>

@@ -256,8 +256,6 @@ export default function Page() {
             </div>
           </div>
 
-
-
           <div className="page">
             <nav className="countPage" aria-label="Pagination">
 

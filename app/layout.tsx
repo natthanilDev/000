@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   title: "Jiei Thailand - ผู้ผลิตชิ้นส่วนยางรถยนต์คุณภาพสูงในชลบุรี",
   description: "บริษัท Jiei (Thailand) Ltd. ผู้นำด้านชิ้นส่วนยางสำหรับอุตสาหกรรมยานยนต์ พร้อมบริการและข่าวสารล่าสุดเกี่ยวกับผลิตภัณฑ์และโอกาสงาน",
   icons: {
-    icon: '/Jiei Thailand - ผู้ผลิตชิ้นส่วนยางรถยนต์คุณภาพสูงในชลบุรี.png'
+    icon: '/JieiThailand-logo.png'
   }
 };
 

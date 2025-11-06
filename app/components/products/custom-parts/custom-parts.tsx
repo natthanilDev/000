@@ -323,10 +323,13 @@ export default function CustomPart() {
 
         <div className="intro-allProduct">
           <ScrollReveal>
-            <h1 className='allProduct-text'>{lang === ('th') ? "ผลิตภัณฑ์" : lang === ('en') ? "PRODUCT" : "製品"}</h1>
+            <h1 className="product-custom">{lang === ('th') ? "ผลิตภัณฑ์" : lang === ('en') ? "PRODUCT" : "製品"}</h1>
           </ScrollReveal>
           <ScrollReveal>
-            <h2 className='allProduct-text active'>{lang === ('th') ? "สั่งทำพิเศษ" : lang === ('en') ? "Custom Made" : "特注"}</h2>
+            <h2 className="product-custom2">{lang === ('th') ? "สั่งทำพิเศษ" : lang === ('en') ? "Custom Made" : "特注"}</h2>
+            <></>
+           
+
           </ScrollReveal>
         </div>
 

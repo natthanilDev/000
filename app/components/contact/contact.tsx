@@ -70,43 +70,7 @@ export default function Contact() {
         <meta name="twitter:title" content="Contact Us | JIEI Thailand" />
         <meta name="twitter:description" content="Get in touch with JIEI Thailand. Contact us via phone, email, or visit our address in Chonburi. We’re here to help you!" />
 
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "FAQPage",
-              "mainEntity": [
-                {
-                  "@type": "Question",
-                  "name": "บริษัท เจไออีไอ (ประเทศไทย) จำกัด ผลิตอะไร?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "บริษัท เจไออีไอ (ประเทศไทย) จำกัด เป็นผู้ผลิตชิ้นส่วนยางรถยนต์และยางอุตสาหกรรมคุณภาพสูง สำหรับอุตสาหกรรมยานยนต์ทั้งในและต่างประเทศ"
-                  }
-                },
-                {
-                  "@type": "Question",
-                  "name": "โรงงานของ JIEI Thailand อยู่ที่ไหน?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "โรงงานตั้งอยู่ในนิคมอุตสาหกรรมปิ่นทอง 4 จังหวัดชลบุรี ประเทศไทย"
-                  }
-                },
-                {
-                  "@type": "Question",
-                  "name": "ติดต่อบริษัทได้ช่องทางไหนบ้าง?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "สามารถติดต่อได้ทางโทรศัพท์ 033-136581-4 อีเมล info@jiei-thai.co.th หรือกรอกแบบฟอร์มในหน้าเว็บไซต์"
-                  }
-                }
-              ]
-            })
-          }}
-        />
-
-
+      
       </Head>
       <>
         <div className="contact-level">
