@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 import { useRef } from 'react';
+import Image from 'next/image';
 export default function Nav() {
   const [scrolled, setScrolled] = useState(false);
   const Path = usePathname()
@@ -124,13 +125,23 @@ export default function Nav() {
 
       <nav className="navbar" role="navigation" aria-label="Main Navigation">
         <div className="container-box">
+          <Link href="/" aria-label="กลับไปหน้าแรก JIEI Thailand" title="JIEI Thailand - Automotive Rubber Parts Manufacturer">
+            <Image
+              src="/jiei-thailand-logo.png"
+              alt="JIEI Thailand Logo - Leading Automotive Rubber Parts Manufacturer in Thailand"
+              width={1000}
+              height={1000}
+              priority
+              className='image-logo'
+            />
+          </Link>
           <div className="nav-link-box" >
 
             <div className="icon-menu">
-              <label onClick={() => {setMenu(!menu)}} htmlFor="icon-menu-show" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="main-navigation" className="icon-menu-label">
+              <label onClick={() => { setMenu(!menu) }} htmlFor="icon-menu-show" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="main-navigation" className="icon-menu-label">
                 <i className={menu === true ? "bi bi-x" : "bi bi-list"}></i>
               </label>
-              <input ref={menuCheckboxRef} type="checkbox" className="icon-menu-show" id="icon-menu-show"/>
+              <input ref={menuCheckboxRef} type="checkbox" className="icon-menu-show" id="icon-menu-show" />
 
               <ul id="main-navigation" className="ul-navigation">
                 <li onClick={closeMenu} className={`li-menu ${Path === '/' || Path === "/iso9001" || Path === "/iso14001" || Path === "/iatf16949" ? 'path' : ''}`} >
@@ -193,7 +204,7 @@ export default function Nav() {
       </nav>
 
 
-    
+
 
 
     </header>

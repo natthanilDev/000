@@ -17,32 +17,66 @@ export default function Home() {
         }
     }, []);
 
-    const partner = [
-        '/logoPartner/logo-partners (1).png',
-        '/logoPartner/logo-partners (2).png',
-        '/logoPartner/logo-partners (3).png',
-        '/logoPartner/logo-partners (4).png',
-        '/logoPartner/logo-partners (5).png',
-        '/logoPartner/logo-partners (6).png',
-        '/logoPartner/logo-partners (7).png',
-        '/logoPartner/logo-partners (8).png',
-        '/logoPartner/logo-partners (9).png',
-        '/logoPartner/logo-partners (10).png',
-        '/logoPartner/logo-partners (11).png',
-        '/logoPartner/logo-partners (12).png',
-        '/logoPartner/cs.png',
-        // '/logoPartner/csj.png',
-        '/logoPartner/honda.png',
-        '/logoPartner/ht.png',
-        '/logoPartner/jg.png',
-        '/logoPartner/sum.png',
-        '/logoPartner/te.png',
-        '/logoPartner/Tec.png',
-        '/logoPartner/thairung.png',
-        // '/logoPartner/toacs.png',
-        // '/logoPartner/y-tec.png',
-    ];
+    // const partner = [
+    //     '/logoPartner/logo-partners (1).png',
+    //     '/logoPartner/logo-partners (2).png',
+    //     '/logoPartner/logo-partners (3).png',
+    //     '/logoPartner/logo-partners (4).png',
+    //     '/logoPartner/logo-partners (5).png',
+    //     '/logoPartner/logo-partners (6).png',
+    //     '/logoPartner/logo-partners (7).png',
+    //     '/logoPartner/logo-partners (8).png',
+    //     '/logoPartner/logo-partners (9).png',
+    //     '/logoPartner/logo-partners (10).png',
+    //     '/logoPartner/logo-partners (11).png',
+    //     '/logoPartner/logo-partners (12).png',
+    //     '/logoPartner/cs.png',
 
+    //     '/logoPartner/honda.png',
+    //     '/logoPartner/ht.png',
+    //     '/logoPartner/jg.png',
+    //     '/logoPartner/sum.png',
+    //     '/logoPartner/te.png',
+    //     '/logoPartner/Tec.png',
+    //     '/logoPartner/thairung.png',
+
+    // ];
+
+    const customerList = [
+        'HONDA R&D ASIA PACIFIC CO., LTD.',
+        'HONDA AUTOMOBILE (THAILAND) CO., LTD. - AYUTTHAYA',
+        'HONDA AUTOMOBILE (THAILAND) CO., LTD. - PRACHINBURI',
+        'HONDA TRADING ASIA CO., LTD.',
+        'ASIAN HONDA MOTOR CO., LTD.',
+        'AGC AUTOMOTIVE (THAILAND) CO., LTD.',
+        'SAINT-GOBAIN SEKURIT (THAILAND) CO., LTD.',
+        'HORI GLASS (THALAND) CO., LTD.',
+        'MORIROKU TECHNOLOGY (THAILAND) CO., LTD.',
+        'POLYNET PUBLIC CO., LTD.',
+        'THAI TOYO DENSO CO., LTD.',
+        'TOACS (THAILAND) CO., LTD.',
+        'INOAC AUTOMOTIVE (THAILAND) CO., LTD.',
+        'SANKO GOSEI TECHNOLOGY (THAILAND) CO., LTD.',
+        'KOJIMA INDUSTRIES ASIA CORPORATION CO., LTD.',
+        'SHIRAISHI CALCIUM (THAILAND) CO., LTD.',
+        'NARUMI (THAILAND) CO., LTD.',
+        'RESONAC AUTOMOTIVE PRODUCTS (THAILAND) CO., LTD.',
+        'P I INDUSTRY LTD.',
+        'ELASTOMIX (THAILAND) CO., LTD.',
+        'THAI DIAMOND&ZEBRA ELECTRIC CO., LTD.',
+        'SUNMETAL CO., LTD.',
+        'TOKAI JIEI ASIA CO., LTD.',
+        'PT. NARUMI MANUFACTURING INDONESIA',
+        'OKAYASU RUBBER (MALAYSIA) SDN. BHD.',
+        'MALAYSIAN SHEET GLASS SDN. BHD.',
+        'KASEI KOGYO CO., LTD. (USA)',
+        'PILKINGTON AUTOMOTIVE BELGIUM N.V.',
+        'JIAXING JIEI AUTOMOBILE PARTS CO., LTD.',
+        'KASEI KOGYO CO., LTD. (GTC)',
+        'KASEI KOGYO CO., LTD. (TKM)',
+
+
+    ]
     const image_support = [
         "/support (1).png",
         "/support (2).png",
@@ -69,20 +103,58 @@ export default function Home() {
     ]
 
     const aboutTH = [
-        "JIEI Thailand Co., Ltd. เป็นผู้ผลิตชิ้นส่วนยางรถยนต์และยางอุตสาหกรรมคุณภาพสูง ตั้งอยู่ที่จังหวัดชลบุรี ประเทศไทย เรามีความเชี่ยวชาญด้านการออกแบบและการผลิต ยางขอบประตูรถยนต์ (Automotive Rubber Seals) และชิ้นส่วนยางที่ใช้ในอุตสาหกรรมยานยนต์มากกว่า 20 ปี",
-        "บริษัทมุ่งมั่นพัฒนาเทคโนโลยีการผลิตที่ทันสมัย ควบคู่กับมาตรฐานสากล เช่น ISO/TS16949 เพื่อตอบสนองความต้องการของผู้ผลิตรถยนต์ (OEM) และลูกค้าทั่วโลก ปัจจุบันเราได้ส่งออกสินค้าไปยัง สหรัฐอเมริกา ญี่ปุ่น และประเทศในยุโรป",
+        "JIEI Thailand Co., Ltd. เป็นผู้ผลิตชิ้นส่วนยางรถยนต์และยางอุตสาหกรรมคุณภาพสูง ตั้งอยู่ที่จังหวัดชลบุรี ประเทศไทย เรามีความเชี่ยวชาญด้านการออกแบบและการผลิต ยางขอบประตูรถยนต์ (Automotive Rubber Seals) และชิ้นส่วนยางที่ใช้ในอุตสาหกรรมยานยนต์มากกว่า 14 ปี",
+        "บริษัทมุ่งมั่นพัฒนาเทคโนโลยีการผลิตที่ทันสมัย ควบคู่กับมาตรฐานสากล เช่น ISO/IATF16949 เพื่อตอบสนองความต้องการของผู้ผลิตรถยนต์ (OEM) และลูกค้าทั่วโลก ปัจจุบันเราได้ส่งออกสินค้าไปยัง สหรัฐอเมริกา ญี่ปุ่น และประเทศในยุโรป",
         "จุดยืนของ JIEI คือการเป็น “พันธมิตรที่ไว้ใจได้ของอุตสาหกรรมยานยนต์” โดยให้ความสำคัญกับคุณภาพ ความทนทาน และการส่งมอบตรงเวลา"
     ]
     const aboutEN = [
-        "JIEI Thailand Co., Ltd. is a manufacturer of high-quality automotive and industrial rubber parts, located in Chonburi Province, Thailand. We have over 20 years of expertise in designing and producing automotive rubber seals and rubber components used in the automotive industry.",
-        "The company is committed to developing advanced manufacturing technologies alongside international standards such as ISO/TS16949 to meet the requirements of automotive manufacturers (OEMs) and customers worldwide. Currently, we export our products to the United States, Japan, and European countries.",
+        "JIEI Thailand Co., Ltd. is a manufacturer of high-quality automotive and industrial rubber parts, located in Chonburi Province, Thailand. We have over 14 years of expertise in designing and producing automotive rubber seals and rubber components used in the automotive industry.",
+        "The company is committed to developing advanced manufacturing technologies alongside international standards such as ISO/IATF16949 to meet the requirements of automotive manufacturers (OEMs) and customers worldwide. Currently, we export our products to the United States, Japan, and European countries.",
         "JIEI’s stance is to be a “trusted partner of the automotive industry,” focusing on quality, durability, and on-time delivery.",
     ]
     const aboutJP = [
-        "JIEI Thailand株式会社は、タイ・チョンブリー県に拠点を置く高品質な自動車用および産業用ゴム部品のメーカーです。私たちは、自動車用ゴムシールや自動車産業で使用されるゴム部品の設計・製造において、20年以上の専門知識を持っています。",
-        "当社は、ISO/TS16949などの国際規格と並行して、先進的な製造技術の開発に取り組み、自動車メーカー（OEM）および世界中の顧客のニーズに応えています。現在、当社の製品はアメリカ、日本、ヨーロッパ諸国に輸出されています。",
+        "JIEI Thailand株式会社は、タイ・チョンブリー県に拠点を置く高品質な自動車用および産業用ゴム部品のメーカーです。私たちは、自動車用ゴムシールや自動車産業で使用されるゴム部品の設計・製造において、14年以上の専門知識を持っています。",
+        "当社は、ISO/IATF16949などの国際規格と並行して、先進的な製造技術の開発に取り組み、自動車メーカー（OEM）および世界中の顧客のニーズに応えています。現在、当社の製品はアメリカ、日本、ヨーロッパ諸国に輸出されています。",
         "JIEIの立場は、「自動車産業の信頼できるパートナー」であることであり、品質、耐久性、そして納期厳守を重視しています。"
     ]
+
+
+
+    const LinkPartners = [
+        'https://honda-rd.asia/th/',
+        'https://www.honda.co.th/en/contact/office-locations',
+        'https://www.honda.co.th/',
+        'https://www.hondatrading.com/en/company/htgroup/thailand/en/HTAS/',
+        'https://career.asianhonda.com/culture.aspx',
+        'https://www.agc-automotive.co.th/',
+        'https://www.saint-gobain.co.th/',
+        'https://www.wha-industrialestate.com/th/media-activities/news/customer-news/2004/hori-glass-grand-opening-at-hemarajs-eastern-seaboard-industrial-estate-rayong',
+        'https://www.moriroku.co.jp/english/network/mtt/index.html',
+        'https://www.polynet.co.th/en/home',
+        'https://www.toyo-denso.co.jp/en.html',
+        'https://www.toacs.co.th/',
+        'https://www.inoacauto.co.th/th/',
+        'https://www.sankogosei.co.jp/en/index.html',
+        'https://www.jobtopgun.com/en/company/285791',
+        'https://www.shiraishi.co.th/',
+        'http://www.ngm.co.jp/english/outline.html',
+        'https://www.isuzu.co.th/contact/RAPT',
+        'https://www.piindustries.com/',
+        'https://www.elastomix.co.th/',
+        'https://www.diaelec-hd.co.jp/en/about/base/',
+        'https://www.sun-metal.com/',
+        'https://companieshouse.co.th/tokai-jiei-asia-co-ltd-0205566000451',
+        '',
+        'https://www.okayasu-rubber-malaysia.com/',
+        '',
+        '',
+        'https://www.pilkington.com/en/be',
+        '',
+        '',
+        '',
+        
+    ]
+
     return (
         <>
             <Head>
@@ -269,9 +341,7 @@ export default function Home() {
                     </div>
 
                     <div className="about-box-home-page">
-
                         <div className="content-box">
-
                             <div className="about-box">
                                 <ScrollReveal>
                                     <h2 className="about"> {lang === ('th') ? "เกี่ยวกับเรา" : lang === ('en') ? "About Us" : "私たちについて"}</h2>
@@ -384,9 +454,9 @@ export default function Home() {
                     <h2 className="partner-text">{lang === ('th') ? "องค์กรชั้นนำที่ไว้วางใจ JIEI Thailand เป็นผู้ผลิตชิ้นส่วนยางรถยนต์" : lang === ('en') ? "Leading Companies Trust JIEI Thailand – Automotive Rubber Parts Manufacturer" : "大手企業から信頼されるJIEI Thailand – 自動車用ゴム部品メーカー"}</h2>
 
                     <div className="image-logo-partner-homepage">
-                        {partner.map((image, index) => (
+                        {customerList.map((item, index) => (
                             <ScrollReveal key={index}>
-                                <Image className='image-partner-homepage' src={image} alt='โรงงานผลิตชิ้นส่วนยางรถยนต์มาตรฐานสากล ISO & IATF16949 ที่ชลบุรี ประเทศไทย' width={1000} height={1000} loading="lazy" />
+                                <Link target='_blank' className='LinkWebsite' href={LinkPartners[index]}><p className='customers'>{item}<i className="search-company bi bi-search"></i></p> </Link>
                             </ScrollReveal>
                         ))}
                     </div>

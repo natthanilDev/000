@@ -126,23 +126,18 @@ export default function About() {
                                 </div>
                                 <div className="president-content">
                                     <ScrollReveal>
-                                        <h2 className='position-topmanager'>{lang === "th" ? "ประธานบริษัท" : lang === "en" ? "President" : "代表取締役社長"} </h2>
-                                        <p className='top-manager-name'>{lang === 'th' ? "คุณมาซาชิ เอซากะ" : lang === ('en') ? "Mr.Masashi Ezaka" : "江坂 正志"}</p>
+                                        <h2 className='position-topmanager'>{lang === "th" ? "ประธานกรรมการผู้จัดการ" : lang === "en" ? "Managing Director" : "代表取締役社長"} </h2>
+                                        <p className='top-manager-name'>{lang === "th" ? "คุณโยชิคัตสึ อินาดะ" : lang === "en" ? "Mr.Yoshikatsu Inada" : "稲田 義勝"}</p>
+
                                     </ScrollReveal>
                                 </div>
                             </div>
                         </ScrollReveal>
 
 
-                        {/* <ScrollReveal>
-                            <div className="about-grid-image">
-                            </div>
-                        </ScrollReveal> */}
+                        
                     </div>
-                    <ScrollReveal>
-                        <div className="about-grid-image">
-                        </div>
-                    </ScrollReveal>
+                    
                 </section >
                 <ScrollReveal>
                     <h1 className='about-company-name'>{lang === ('th') ? "บริษัท เจไออีไอ (ประเทศไทย) จำกัด" : lang === ('en') ? "JIEI (Thailand) Co., Ltd." : "ジェイアイ (タイランド)株式会社"} </h1>
@@ -174,7 +169,7 @@ export default function About() {
                                     <span className="title-about-text"> {lang === ('th') ? "ก่อตั้งเมื่อ" : lang === ('en') ? "Established on" : "設立日"} </span>
                                 </div>
                                 <div className="content-in-aboutBox">
-                                    {lang === ('th') ? "11/11/2554" : lang === ('en') ? "11/11/2011" : "2011年11月11日"}
+                                    {lang === ('th') ? "วันศุกร์ ที่ 11 พฤศจิกายน พ.ศ. 2554" : lang === ('en') ? "Friday, 11ᵗʰ November 2011" : "2011年11月11日（金曜日）"}
                                 </div>
                             </div>
                             <div className='content-inthe-table1'>
@@ -186,14 +181,7 @@ export default function About() {
                                     {lang === ('th') ? "150,000,000 บาท" : lang === ('en') ? "150,000,000 Baht" : "1億5,000万バーツ"}
                                 </div>
                             </div>
-                            <div className='content-inthe-table'>
-                                <div className="content-in-aboutBox">
-                                    <span className="title-about-text">  {lang === ('th') ? "จำนวนพนักงาน" : lang === ('en') ? "Number of Employees" : "従業員数"}</span>
-                                </div>
-                                <div className="content-in-aboutBox">
-                                    {lang === ('th') ? "276 คน" : lang === ('en') ? "276" : "276人"}
-                                </div>
-                            </div>
+                          
                         </div>
 
                     </div>

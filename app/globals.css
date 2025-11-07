@@ -78,6 +78,8 @@ a:hover {
 .image-logo {
   width: 120px;
   height: auto;
+  margin-left: 20px;
+
 }
 
 .top-navigation-contact {
@@ -1162,11 +1164,44 @@ a:hover {
 }
 
 .image-logo-partner-homepage {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  padding: 50px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 95%;
+  margin: 50px auto;
+  gap: 10px;
 
 }
+
+.customers {
+  display: flex;
+  padding: 20px 30px;
+  box-shadow: 0 0 5px #000791;
+  align-items: center;
+  text-align: center;
+  border-radius: 15px;
+  gap: 5px;
+  margin: 5px auto;
+  background-color: #ffff;
+
+  &:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+
+  }
+
+  &:active {
+    transform: scale(0.95);
+
+  }
+}
+
+.LinkWebsite {
+  text-decoration: none;
+  color: #000791;
+
+}
+
 
 .image-partner-homepage {
   width: 90%;
@@ -3302,15 +3337,18 @@ h4 {
   }
 }
 
+
 .post {
   font-weight: 600;
-
+  margin-top: 10px;
 }
 
 .posted {
   position: absolute;
   bottom: 0;
   right: 10px;
+  margin-top: 20px;
+
 }
 
 /* -------------------------------------------------NEWS&BLOG */
@@ -3497,7 +3535,9 @@ h4 {
 }
 
 .preview-text {
-  color: #cbcbcb;
+  color: #474747;
+  font-weight: bold;
+
 }
 
 .title-news-page {
@@ -4228,9 +4268,8 @@ h4 {
 .product {
   padding: 50px 0 50px 0;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 20px;
-
 }
 
 .image-product-part {
@@ -4243,6 +4282,13 @@ h4 {
 
 .product-card {
   margin-top: 20px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
 }
 
 .product-card-box {
@@ -4252,6 +4298,8 @@ h4 {
   transition: all ease 0.35s;
   background-color: #fff;
   position: relative;
+  padding-bottom: 20px;
+
 }
 
 .product-card-box:hover {
@@ -4283,8 +4331,8 @@ h4 {
 
 .space-part {
   display: -webkit-box;
-  -webkit-line-clamp: 4;
-  line-clamp: 4;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -4356,14 +4404,6 @@ h4 {
 
 
 
-@media screen and (max-width : 500px) {
-  .product {
-    display: grid;
-    grid-template-columns: 1fr;
-    width: 80%;
-
-  }
-}
 
 .product-custom {
   font-size: 100px;
@@ -4413,6 +4453,15 @@ h4 {
 
 
     }
+  }
+}
+
+@media screen and (max-width : 500px) {
+  .product {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 80%;
+
   }
 }
 
@@ -4823,7 +4872,7 @@ h4 {
     gap: 10px;
   }
 
- 
+
 }
 
 @media screen and (max-width:426px) {
@@ -4872,16 +4921,112 @@ h4 {
 }
 
 @media screen and (max-width:768px) {
-   .iso-box-index {
+  .iso-box-index {
     display: grid;
     grid-template-columns: 1fr 1fr;
+
+  }
+
+  .product {
+    display: grid;
+    grid-template-columns: 1fr;
 
   }
 }
 
 @media screen and (max-width:426px) {
-   .iso-box-index {
+  .iso-box-index {
     grid-template-columns: 1fr;
 
   }
+}
+
+
+
+.company-announcement {
+  background: #fafafa;
+  border-radius: 1rem;
+  padding: 2rem;
+  line-height: 1.8;
+  font-size: 1rem;
+  color: #222;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.company-announcement h2 {
+  font-size: 1.5rem;
+  color: #003366;
+  border-left: 6px solid #003366;
+  padding-left: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.company-announcement blockquote {
+  margin: 1.5rem 0;
+  padding: 1rem 1.5rem;
+  border-left: 4px solid #0a58ca;
+  background: #eef3fa;
+  font-style: italic;
+  color: #333;
+}
+
+.Import-Image {
+  position: relative;
+  box-shadow: 0 0 10px #959595;
+  border-radius: 6px;
+  width: 800px;
+  margin: 0 auto;
+  margin-top: 30px;
+
+}
+
+.image-fade {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.text-status-Image {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.btn-change-image-right {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+
+  &:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+
+  &:active {
+    transform: scale(0.9);
+
+  }
+}
+
+.btn-change-image-left {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+
+  &:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+
+  &:active {
+    transform: scale(0.9);
+
+  }
+}
+
+.change-Image-btn {
+  font-size: 30px;
+  padding: 10px 20px;
+  background-color: #f9f9f9cc;
+  border-radius: 50%;
+
+
 }

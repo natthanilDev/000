@@ -1,6 +1,5 @@
 import Link from 'next/link'
-// import Location from '../location/location'
-import Image from 'next/image'
+
 export default function Topbar() {
     return (
         <div>
@@ -8,16 +7,7 @@ export default function Topbar() {
             <div className="top-navigation">
                 {/* Logo */}
                 <div className="logo-box">
-                    <Link href="/" aria-label="กลับไปหน้าแรก JIEI Thailand" title="JIEI Thailand - Automotive Rubber Parts Manufacturer">
-                        <Image
-                            src="/jiei-thailand-logo.png"
-                            alt="JIEI Thailand Logo - Leading Automotive Rubber Parts Manufacturer in Thailand"
-                            width={1000}
-                            height={1000}
-                            priority
-                            className='image-logo'
-                        />
-                    </Link>
+                    
                     {/* <Location /> */}
                 </div>
                 <div className="top-navigation-contact">

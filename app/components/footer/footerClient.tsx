@@ -103,7 +103,7 @@ export default function FooterClient() {
               </p>
               <p className='jiei-footer'>{lang===('th') ? "เวลาทำการ : " : lang===('en') ? "Opening Hours : " : "営業時間 ："}<time itemProp="openingHours" dateTime="Mo-Fr 08:00-17:00">{lang===('th') ? "จันทร์ - ศุกร์ เวลา 8.00 - 17.00 น." : lang===('en') ? "Mon - Fri, 8:00 AM - 5:00 PM" : "月曜日〜金曜日 8:00〜17:00"}</time></p>
               <p className='jiei-footer'>{lang===('th') ? "โทร : " : lang===('en') ? "Tel : " : "電話 ："}<a href="tel:+6633136581" itemProp="telephone">033-136581-4</a></p>
-              <p className='jiei-footer'>{lang===('th') ? "เลขประจำตัวผู้เสียภาษี (TIN) : " : lang===('en') ? "TIN :" : "納税者識別番号 (TIN)："} <span itemProp="taxID">0215554005118</span></p>
+              {/* <p className='jiei-footer'>{lang===('th') ? "เลขประจำตัวผู้เสียภาษี (TIN) : " : lang===('en') ? "TIN :" : "納税者識別番号 (TIN)："} <span itemProp="taxID">0215554005118</span></p> */}
             </div>
           </div>
 
