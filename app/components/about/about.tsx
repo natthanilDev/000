@@ -1,9 +1,5 @@
 'use client'
-import { useState, useEffect } from 'react';
 import React from 'react'
-import Image from 'next/image'
-import Link from 'next/link';
-import ScrollReveal from '../ScrollReveal/ScrollReveal';
 import Head from 'next/head';
 import IntroAbout from './IntroAbout';
 import AboutJIEI from './AboutJIEI';

@@ -1,9 +1,9 @@
 'use client'
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import ScrollReveal from '../ScrollReveal/ScrollReveal'
 import Image from 'next/image';
-export default function imageDescription() {
-      const [lang, setLang] = useState<'th' | 'en' | 'jp'>('th');
+export default function ImageDescription() {
+    const [lang, setLang] = useState<'th' | 'en' | 'jp'>('th');
 
     useEffect(() => {
         if (typeof window !== 'undefined') {

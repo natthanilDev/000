@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import Link from 'next/link'
 import ScrollReveal from '../ScrollReveal/ScrollReveal'
 export default function Confidence() {
     const [lang, setLang] = useState<'th' | 'en' | 'jp'>('th')
