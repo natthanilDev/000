@@ -359,7 +359,7 @@ a:hover {
 
 .li-product1:hover {
   filter: grayscale(0%);
-
+  transform: scale(1.1);
 
 }
 
@@ -378,6 +378,8 @@ a:hover {
 
 .li-product2:hover {
   filter: grayscale(0%);
+  transform: scale(1.1);
+
 }
 
 .li-product3 {
@@ -394,6 +396,8 @@ a:hover {
 
 .li-product3:hover {
   filter: grayscale(0%);
+  transform: scale(1.1);
+
 
 }
 
@@ -411,19 +415,29 @@ a:hover {
 
 .li-product4:hover {
   filter: grayscale(0%);
+  transform: scale(1.1);
+
 }
 
 .Link-product-class {
-  color: #000791;
+  color: #000000;
   text-decoration: none;
   display: flex;
   flex-direction: column;
   gap: 20px;
-  -webkit-backdrop-filter: blur(15px);
-  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(30px);
+  backdrop-filter: blur(30px);
   border-radius: 10px;
   padding: 20px;
   font-weight: 900;
+
+
+  &:hover {
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
+    transform: scale(1.1);
+
+  }
 
 }
 
@@ -602,13 +616,6 @@ a:hover {
   background-color: #00000060;
 }
 
-.background {
-  /* background-image: url('/bcvdo.png'); */
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  z-index: -999;
-}
 
 .video_intro {
   z-index: 0;
@@ -1162,43 +1169,110 @@ a:hover {
 }
 
 .image-logo-partner-homepage {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
   width: 95%;
-  margin: 50px auto;
-  gap: 10px;
+  margin: 0 auto;
 
 }
 
-.customers {
-  display: flex;
-  padding: 20px 30px;
-  box-shadow: 0 0 5px #000791;
-  align-items: center;
+
+
+.partners {
+  width: 95%;
+  margin: 10px auto;
   text-align: center;
-  border-radius: 15px;
-  gap: 5px;
-  margin: 5px auto;
-  background-color: #ffff;
+  font-family: "Inter", sans-serif;
 
-  &:hover {
-    transform: scale(1.05);
-    cursor: pointer;
-
-  }
-
-  &:active {
-    transform: scale(0.95);
-
-  }
 }
 
-.LinkWebsite {
+.partners h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 40px;
+  color: #222;
+}
+
+
+.partner-grid div {
+  background: #f8f9fb;
+  border-radius: 12px;
+  padding: 20px 10px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #333;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  transition: all 0.2s ease;
+}
+
+
+.partner-grid div:hover {
+  background: #e9eef7;
+  transform: translateY(-3px);
+}
+
+.partners {
+  max-width: 1200px;
+  margin:  100px auto;
+  padding: 0 20px;
+  font-family: "Inter", sans-serif;
+}
+
+.partners-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.partners-header h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  letter-spacing: 0.5px;
+}
+
+.partners-header p {
+  color: #666;
+  font-size: 1.1rem;
+  margin-top: 10px;
+}
+
+.partners-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  
+}
+
+.partners-grid div {
+  background: #fffafe;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 20px 15px;
+  text-align: center;
+  color: #333;
+  font-size: 0.95rem;
+  font-weight: 500;
+  line-height: 1.4;
+  transition: all 0.25s ease;
+}
+.linkToWebsitePartners{
   text-decoration: none;
-  color: #000791;
-
+  color: #424242;
+  &:hover{
+    color: #000;
+  }
 }
+.partners-grid div:hover {
+  background: #eef3fa;
+  border-color: #cbd5e1;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+
+
+
+
 
 
 .image-partner-homepage {
@@ -1736,14 +1810,7 @@ a:hover {
 /* -------------------------------------------------------------------ABOUTPAGE */
 
 
-/* .about-page { 
-   background-image: url('/background-about2.png');
 
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; 
-
- }  */
 
 .background-company-profile {
   background-image: url('/backgroundCompanyProfile.png');

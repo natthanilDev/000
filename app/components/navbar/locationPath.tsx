@@ -5,6 +5,7 @@ import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 import { useRef } from 'react';
 import Image from 'next/image';
+import NavProduct from './NavProduct';
 export default function Nav() {
   const [scrolled, setScrolled] = useState(false);
   const Path = usePathname()
@@ -46,31 +47,7 @@ export default function Nav() {
     window.location.reload();
   }
 
-  const MenuProductTH = [
-    'แท่นยึดเครื่องยนต์',
-    'ยางรองบูชระบบกันสะเทือน',
-    'ซีลและปะเก็น',
-    'ผลิตภัณฑ์สั่งคำพิเศษ',
-  ]
-  const MenuProductEN = [
-    'Engine Mounts',
-    'Suspension Bushings',
-    'Seals & Gaskets',
-    'Products Collection',
-  ]
-  const MenuProductJP = [
-    'エンジンマウント',
-    'サスペンションブッシュ',
-    'シール＆ガスケット',
-    'すべての製品',
-  ]
 
-  const MenuProductPath = [
-    '/products/engine-mount',
-    '/products/suspension-bush',
-    '/products/seals',
-    '/products/custom-parts',
-  ]
 
   const MenuTH = [
     "เกี่ยวกับเรา",
@@ -150,32 +127,8 @@ export default function Nav() {
                   </Link>
                 </li>
 
-
-                <li className={`li-menu ${Path === '/products/engine-mount' || Path === '/products/suspension-bush' || Path === '/products/seals' || Path === '/products/custom-parts' ? 'path' : ''}`}>
-                  <div className="hover-for-show-product">
-                    <input type="checkbox" className="dropdown-menu" id="dropdown-menu" ref={menuCheck} />
-                    <span className="nav-link">
-                      <label htmlFor="dropdown-menu">
-                        <span className='category-product'>{lang === ('th') ? "คอลเลกชันผลิตภัณฑ์" : lang === ('en') ? "Products Collection" : "製品"}</span>
-                      </label>
-                    </span>
-                    <i className="chevron-down bi bi-chevron-down"></i>
-                    <div className="product-jiei-thai">
-                      <ul className="ul-product">
-                        {MenuProductTH.map((item, index) => (
-                          <li key={index} className={`li-product${index + 1} ${Path === MenuProductPath[index] ? 'path' : ''}`} >
-                            <Link
-                              onClick={closeMenu} href={`${MenuProductPath[index]}`}
-                              className="Link-product-class"
-                              title="Engine Mounts - Automotive Rubber Parts JIEI Thailand">
-                              {lang === ('th') ? item : lang === ('en') ? MenuProductEN[index] : MenuProductJP[index]}
-                            </Link>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-                </li>
+          <NavProduct />
+               
 
                 {MenuTH.map((item, index) => (
                   <li key={index} className={` li-menu ${Path === `${MenuPath[index]}` ? 'path' : ''}`}>
