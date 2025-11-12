@@ -15,6 +15,8 @@ export default function News() {
   const perPage = 8;
   const Image_Establishment = [
     [
+      // รูปภาพวันก่อตั้งบริษัท
+
       '/jieiImage/19.png',
       '/jieiImage/1.png',
       '/jieiImage/2.png',
@@ -38,27 +40,108 @@ export default function News() {
       '/jieiImage/21.png',
     ],
     [
-      '/imageEmployee.png',
+      // รูปภาพ Company trip
+      '/News/company-trip-2025/company-trip-2025 (1).jpg',
+      '/News/company-trip-2025/company-trip-2025 (2).jpg',
+      '/News/company-trip-2025/company-trip-2025 (3).jpg',
+      '/News/company-trip-2025/company-trip-2025 (4).jpg',
+      '/News/company-trip-2025/company-trip-2025 (5).jpg',
+      '/News/company-trip-2025/company-trip-2025 (6).jpg',
+      '/News/company-trip-2025/company-trip-2025 (7).jpg',
+      '/News/company-trip-2025/company-trip-2025 (8).jpg',
+      '/News/company-trip-2025/company-trip-2025 (9).jpg',
+      '/News/company-trip-2025/company-trip-2025 (10).jpg',
+      '/News/company-trip-2025/company-trip-2025 (11).jpg',
+      '/News/company-trip-2025/company-trip-2025 (12).jpg',
+      '/News/company-trip-2025/company-trip-2025 (13).jpg',
+      '/News/company-trip-2025/company-trip-2025 (14).jpg',
+      '/News/company-trip-2025/company-trip-2025 (15).jpg',
+      '/News/company-trip-2025/company-trip-2025 (16).jpg',
+      '/News/company-trip-2025/company-trip-2025 (17).jpg',
+      '/News/company-trip-2025/company-trip-2025 (18).jpg',
+      '/News/company-trip-2025/company-trip-2025 (19).jpg',
+      '/News/company-trip-2025/company-trip-2025 (20).jpg',
+      '/News/company-trip-2025/company-trip-2025 (21).jpg',
+      '/News/company-trip-2025/company-trip-2025 (22).jpg',
+      '/News/company-trip-2025/company-trip-2025 (23).jpg',
+      '/News/company-trip-2025/company-trip-2025 (24).jpg',
+      '/News/company-trip-2025/company-trip-2025 (25).jpg',
+      '/News/company-trip-2025/company-trip-2025 (26).jpg',
+      '/News/company-trip-2025/company-trip-2025 (27).jpg',
+      '/News/company-trip-2025/company-trip-2025 (28).jpg',
+      '/News/company-trip-2025/company-trip-2025 (29).jpg',
+      '/News/company-trip-2025/company-trip-2025 (30).jpg',
+      '/News/company-trip-2025/company-trip-2025 (31).jpg',
+      '/News/company-trip-2025/company-trip-2025 (32).jpg',
+      '/News/company-trip-2025/company-trip-2025 (33).jpg',
+      '/News/company-trip-2025/company-trip-2025 (34).jpg',
+      '/News/company-trip-2025/company-trip-2025 (35).jpg',
+      '/News/company-trip-2025/company-trip-2025 (36).jpg',
+      '/News/company-trip-2025/company-trip-2025 (37).jpg',
+      '/News/company-trip-2025/company-trip-2025 (38).jpg',
+      '/News/company-trip-2025/company-trip-2025 (39).jpg',
+      '/News/company-trip-2025/company-trip-2025 (40).jpg',
+      '/News/company-trip-2025/company-trip-2025 (41).jpg',
+      '/News/company-trip-2025/company-trip-2025 (42).jpg',
+      '/News/company-trip-2025/company-trip-2025 (43).jpg',
+      '/News/company-trip-2025/company-trip-2025 (44).jpg',
+      '/News/company-trip-2025/company-trip-2025 (45).jpg',
+      '/News/company-trip-2025/company-trip-2025 (46).jpg',
+      '/News/company-trip-2025/company-trip-2025 (47).jpg',
+      '/News/company-trip-2025/company-trip-2025 (48).jpg',
+      '/News/company-trip-2025/company-trip-2025 (49).jpg',
+      '/News/company-trip-2025/company-trip-2025 (50).jpg',
+      '/News/company-trip-2025/company-trip-2025 (51).jpg',
+      '/News/company-trip-2025/company-trip-2025 (52).jpg',
+      '/News/company-trip-2025/company-trip-2025 (53).jpg',
+      '/News/company-trip-2025/company-trip-2025 (54).jpg',
+      '/News/company-trip-2025/company-trip-2025 (55).jpg',
+      '/News/company-trip-2025/company-trip-2025 (56).jpg',
 
     ],
+    [
+      // รูปภาพรับสมัครงาน
+      '/News/imageEmployee.png',
+
+    ],
+    [
+      // รูปภาพวันเกิดบริษัท
+      '/News/11-11.png'
+    ]
 
   ]
   // --- เนื้อหาข่าว ---
   const newsTH = [
+    // Description TH C1
     'ก่อตั้งบริษัท เจไออีไอ (ประเทศไทย) จำกัด',
-    'รับสมัครพนักงานตำแหน่ง จป.วิชาชีพ (เจ้าหน้าที่ความปลอดภัยในการทำงานระดับวิชาชีพ)'
+    'ท่องเที่ยวบริษัท เจไออีไอ (ไทยแลนด์)',
+    'รับสมัครพนักงานตำแหน่ง จป.วิชาชีพ (เจ้าหน้าที่ความปลอดภัยในการทำงานระดับวิชาชีพ)',
+    'วันที่ 11 พฤศจิกายน พ.ศ. 2568 วันครบรอบวันเกิดบริษัท เจไออีไอ (ไทยแลนด์)',
   ];
   const newsEN = [
+    //  วันก่อตั้งบริษัท
     'Establishment of Jiei (Thailand) Co., Ltd.',
+    // Company trip
+    'Company Trip – JIEI (Thailand)',
+    // สมัครงาน
     'Hiring: Professional Occupational Safety Officer (OSH Officer — Professional Level)',
-    
+    // วันเกิดบริษัท
+    'November 11, 2025 – Anniversary of JIEI (Thailand) Company’s Founding',
   ];
   const newsJP = [
+
+    //  วันก่อตั้งบริษัท
     'Jiei（Thailand）Co., Ltd. の設立',
+    // Company trip
+    'JIEI（タイランド）社 社員旅行',
+    // สมัครงาน
     '募集：専門職 労働安全担当者（職業上の安全担当者・専門レベル）',
+    // วันเกิดบริษัท
+    '2025年11月11日 – JIEI（タイランド）会社設立記念日',
   ];
 
   const contentTH = [
+    //  วันก่อตั้งบริษัท
     `
     <section class="company-announcement">
       <h2>ประกาศก่อตั้งอย่างเป็นทางการ</h2>
@@ -94,55 +177,161 @@ export default function News() {
       </p>
     </section>
   `
+    // Company trip
     ,
-    ` <section class="company-announcement">
-      <h2>รับสมัครพนักงานตำแหน่ง จป.วิชาชีพ (เจ้าหน้าที่ความปลอดภัยในการทำงานระดับวิชาชีพ)</h2>
-      <p>
-        <h5> หน้าที่และความรับผิดชอบหลัก (Key Responsibilities): </h5>
-      </p>
-      <div>
-      <ul>
-        <li>1. ตรวจสอบและเสนอแนะให้นายจ้างปฏิบัติตามกฎหมายความปลอดภัยในการทำงาน</li>
-        <li>2. ประเมินความเสี่ยงด้านความปลอดภัย อาชีวอนามัย และสิ่งแวดล้อมภายในสถานประกอบการ</li>
-        <li>3. จัดทำแผนงานและมาตรการด้านความปลอดภัยในการทำงานประจำปี</li>
-        <li>4. ตรวจสอบสภาพแวดล้อมในการทำงาน เครื่องจักร เครื่องมือ และอุปกรณ์ให้เป็นไปตามมาตรฐานความปลอดภัย</li>
-        <li>5. จัดฝึกอบรม / ปฐมนิเทศพนักงานใหม่เกี่ยวกับความปลอดภัยในการทำงาน</li>
-        <li>6. รวบรวม วิเคราะห์ และรายงานสถิติการเกิดอุบัติเหตุ พร้อมเสนอแนวทางป้องกัน</li>
-        <li>7. ประสานงานกับหน่วยงานราชการที่เกี่ยวข้อง เช่น กรมสวัสดิการและคุ้มครองแรงงาน</li>
-        <li>8. จัดทำรายงานด้านความปลอดภัยส่งต่อผู้บริหารและหน่วยงานรัฐตามที่กฎหมายกำหนด</li>
-      </ul>
-       
-      <blockquote>
-        <h5>คุณสมบัติของผู้สมัคร (Qualifications):</h5> 
-      </blockquote>
+    `
+    <section class="company-announcement">
+    <h2>บริษัท เจไออีไอ จัดโครงการท่องเที่ยวประจำปี ระหว่างวันที่ 11-12 ตุลาคม 2568</h2>
+    <p>ในปี 2025 บริษัท เจไออีไอ ได้จัดโครงการท่องเที่ยวประจำปีขึ้นเพื่อส่งเสริมความสัมพันธ์ในทีมงาน เพิ่มพูนประสบการณ์ใหม่ๆ และเปิดโอกาสให้พนักงานได้พักผ่อนเติมพลัง</p>
+    <p>โครงการท่องเที่ยวในปีนี้มีจุดเด่นคือ “การผสมผสานระหว่างการพักผ่อนด้วยธรรมชาติ + กิจกรรมสร้างทีม + ความยั่งยืน”</p>
+    <blockquote>
+        <h5>กำหนดการ:</h5>
+    </blockquote>
+    <h5>วันที่ 11 ตุลาคม 2568 (วันที่ 1)</h5>
+    <hr />
+    <p><b>06.00-07.30 น.</b>  ลงทะเบียนรับ ป้ายชื่อ และ ป้ายกระเป๋า JIEI (ประตูความปลอดภัย) พร้อม กาแฟและขนมปังหรือแซนด์วิชฟรี 3 BUS / รถตำรวจอำนวยความสะดวก / เส้นทางมอเตอร์เวย์</p>
+    <hr />
+    <p>12.00 น. เดินทางถึง ร้านอาหารกลางวัน Nannam Country Home Resort & Restaurant 8 คน/โต๊ะ เมนู 
+        <ul>
+            <li>1. หมูสามชั้นทอดน้ำปลา</li>
+            <li>2. น้ำจิ้มถั่วเหลืองกับปลาเค็ม + ผัก</li>
+            <li>3. ไก่ผัดแกง</li>
+            <li>4. ปลาผัดแกงพริก (ชูชี)</li>
+            <li>5. ผัดกะหล่ำปลีใส่ปลาหมึกแห้ง</li>
+            <li>6. แกงส้มใส่ไข่ชะอม</li>
+            <li>7. ต้มยำไก่บ้าน</li>
+            <li>8. กุ้งเผ็ด</li>
+            <li>9. ข้าว</li>
+            <li>10. ผลไม้</li>
+            <li>11. น้ำดื่ม, น้ำแข็ง</li>
+        </ul>
+    </p>
+    <hr />
+    <p>13.30 น. เช็คอินที่ โรงแรมทองสมบูรณ์คลับ ทุกโซนของโรงแรม รับ สายรัดข้อมือ เพื่อเข้าโซนกิจกรรม</p>
+    <hr />
+    <p>14.30 - 17.30 น. ช่วงบ่าย Bake และ DJ Booth สระว่ายน้ำ & โซนสวน อาหาร: ส้มตำ, ขนมจีนแกงน้ำยา, หมูย่าง, ฯลฯ บริการรถรางรับส่งไปยังโซนกิจกรรม 15 กิจกรรม</p>
+    <hr />
+    <p>19.00-23.00 น. ปาร์ตี้กลางคืน ห้องปาร์ตี้ ชั้น 3 Backdrop, ถ่ายภาพ, MC / วงดนตรีสด ลงทะเบียนแข่งขัน คอสตูม บุฟเฟ่ต์, เครื่องดื่มแอลกอฮอล์/น้ำอัดลม ธีม: แคมปิ้ง</p>
+    <hr />
+    <p>22.00 น. บริการมาม่าคัพ</p>
+    <hr />
+    <p>23.00 น. ปาร์ตี้กลางคืนสิ้นสุด น้ำแข็งและน้ำอัดลมฟรี</p>
+    <hr />
+    <h5>วันที่ 12 ตุลาคม 2568 (วันที่ 2)</h5>
+    <hr />
+    <p>07.00-10.00 น. อาหารเช้า ร้านอาหาร ชั้น 2 บุฟเฟ่ต์ แจ้งหมายเลขห้องของคุณ</p>
+    <hr />
+    <p>10.00 น. เช็คเอาท์ > Hokkaido Flower Park เขาใหญ่ ออกเดินทางไปยัง JIEI</p>
+    <hr />
+    <p>12.00 น. เดินทางถึง ร้านอาหารกลางวัน Suankhunyaiy เขาใหญ่ กม.3 8 คน/โต๊ะ เมนู :
+        <ul>
+            <li>1. ปลาสายแดงทอดกระเทียม</li>
+            <li>2. ต้มยำไก่</li>
+            <li>3. ไก่ผัดแกง</li>
+            <li>4. ยำปลาช่อนกรอบ</li>
+            <li>5. ปีกไก่ทอดเกลือ</li>
+            <li>6. ผัดผักรวม</li>
+            <li>7. แกงไทยใส่หอยแมลงภู่และใบชะพลู</li>
+            <li>8. ข้าว</li>
+            <li>9. ผลไม้</li>
+            <li>10. น้ำดื่ม, น้ำแข็ง</li>
+        </ul>
+    </p>
+    <hr />
+    <p>15.00 น. ร้านขายของที่ระลึกที่ Cake Baan Suan Cake Baan Suan Shop</p>
+    <hr />
+    <p>19.30 น. เดินทางถึง JIEI แวะห้องน้ำระหว่างทางตามคำขอของลูกค้า</p>
+    <hr />
+</section>
 
-      <ul>
-        <li>1. เพศชาย / หญิง อายุ 22 ปีขึ้นไป</li>
-        <li>2. วุฒิปริญญาตรี สาขาอาชีวอนามัยและความปลอดภัย หรือสาขาที่เกี่ยวข้อง</li>
-        <li>3. ผ่านการอบรมและได้รับใบรับรอง จป.วิชาชีพ ตามกฎหมาย</li>
-        <li>4. มีประสบการณ์ในสายงานความปลอดภัย 1–3 ปี (หรือยินดีรับนักศึกษาจบใหม่)</li>
-        <li>5. มีความรู้เกี่ยวกับกฎหมายความปลอดภัย ระบบ ISO 45001 / ISO 14001 จะพิจารณาเป็นพิเศษ</li>
-        <li>6. มีทักษะการสื่อสาร การประสานงาน และสามารถทำงานร่วมกับผู้อื่นได้ดี</li>
-      </ul>
-       <blockquote>
-       <h5> สวัสดิการ (Welfare):</h5>
-      </blockquote>
- 
-<ul>
-        <li>1. เงินเดือนตามโครงสร้างและประสบการณ์</li>
-        <li>2. โบนัสประจำปี / ปรับเงินเดือนประจำปี</li>
-        <li>3. ประกันสังคม / ประกันกลุ่ม / ชุดยูนิฟอร์ม</li>
-        <li>4. วันหยุดประจำปี / ลาพักร้อน</li>
-        <li>5. อื่น ๆ ตามนโยบายบริษัท</li>
-  
-      </ul>
- สนใจติดต่อ <a href="mailto:info@jiei-thai.co.th">info@jiei-thai.co.th</a>
+    `
+    ,
+    // สมัครงาน
+    `
+    
+    <section class="company-announcement">
+  <h2>เปิดรับสมัครงาน: เจ้าหน้าที่ความปลอดภัยมืออาชีพ (เจ้าหน้าที่ความปลอดภัยและอาชีวอนามัย)</h2>
+  <p>
+    <h5>หน้าที่ความรับผิดชอบหลัก:</h5>
+  </p>
+  <div>
+    <ul>
+      <li>1. ตรวจสอบและให้คำแนะนำแก่ผู้ประกอบการเพื่อให้เป็นไปตามกฎหมายความปลอดภัยอาชีวอนามัย</li>
+      <li>2. ประเมินความเสี่ยงเกี่ยวกับความปลอดภัย อาชีวอนามัย และสภาพแวดล้อมในที่ทำงาน</li>
+      <li>3. จัดทำแผนความปลอดภัยประจำปีและมาตรการป้องกัน</li>
+      <li>4. ตรวจสอบสภาพที่ทำงาน เครื่องจักร เครื่องมือ และอุปกรณ์ให้เป็นไปตามมาตรฐานความปลอดภัย</li>
+      <li>5. จัดการฝึกอบรมด้านความปลอดภัยและปฐมนิเทศสำหรับพนักงานใหม่</li>
+      <li>6. เก็บรวบรวม วิเคราะห์ และรายงานสถิติอุบัติเหตุพร้อมข้อเสนอแนะในการป้องกัน</li>
+      <li>7. ประสานงานกับหน่วยงานรัฐที่เกี่ยวข้อง เช่น กรมสวัสดิการและคุ้มครองแรงงาน</li>
+      <li>8. จัดทำและส่งรายงานด้านความปลอดภัยต่อผู้บริหารและหน่วยงานรัฐตามที่กฎหมายกำหนด</li>
+    </ul>
+
+    <blockquote>
+      <h5>คุณสมบัติ:</h5>
+    </blockquote>
+
+    <ul>
+      <li>1. เพศชายหรือหญิง อายุ 22 ปีขึ้นไป</li>
+      <li>2. วุฒิปริญญาตรี สาขาความปลอดภัยและอาชีวอนามัยหรือสาขาที่เกี่ยวข้อง</li>
+      <li>3. ได้รับการรับรองเป็นเจ้าหน้าที่ความปลอดภัยมืออาชีพตามกฎหมายไทย</li>
+      <li>4. มีประสบการณ์ทำงานด้านความปลอดภัย 1–3 ปี (นักศึกษาจบใหม่สามารถสมัครได้)</li>
+      <li>5. มีความรู้เกี่ยวกับกฎหมายความปลอดภัย ISO 45001 / ISO 14001 จะได้รับการพิจารณาเป็นพิเศษ</li>
+      <li>6. มีทักษะการสื่อสารและประสานงานดี สามารถทำงานเป็นทีมได้</li>
+    </ul>
+
+    <blockquote>
+      <h5>สวัสดิการและผลประโยชน์:</h5>
+    </blockquote>
+
+    <ul>
+      <li>1. เงินเดือนตามโครงสร้างและประสบการณ์</li>
+      <li>2. โบนัสประจำปีและปรับเงินเดือน</li>
+      <li>3. ประกันสังคม ประกันกลุ่ม และชุดยูนิฟอร์มบริษัท</li>
+      <li>4. วันหยุดประจำปีและลาพักร้อน</li>
+      <li>5. สิทธิประโยชน์อื่นตามนโยบายบริษัท</li>
+    </ul>
+    ผู้สนใจสามารถติดต่อ <a href="mailto:info@jiei-thai.co.th">info@jiei-thai.co.th</a>
+  </div>
+</section>
+
+    `,
+    // วันเกิดบริษัท
+
+    ` <section class="company-announcement">
+      <h2>วันครบรอบบริษัท เจไออีไอ (ไทยแลนด์) – 11 พฤศจิกายน 2568</h2>
+     
+      <div>
+      <p>
+       ในโอกาสวันครบรอบการก่อตั้งบริษัท เจไออีไอ (ไทยแลนด์) เมื่อวันที่ 11 พฤศจิกายน 2568 <br /> ทางบริษัทได้จัดกิจกรรมเล็กๆ เพื่อเป็นการขอบคุณพนักงานทุกท่าน โดยในช่วงเที่ยงวัน พนักงานทุกคนได้รับของขวัญ ได้แก่ 
+      </p>
+
+       <p><b>
+          1. มาม่า 1 ห่อใหญ่
+      </b> </p>
+    
+       <p>
+       <b>
+       2. น้ำส้ม 1 ขวด
+      </b>
+       </p>
+    
+       <p>
+       <b>
+       3. ไอศกรีม 
+      </b>
+       </p>
+
+       <p>
+       <b>
+       4. อาหารกลางวันสุดพิเศษ ซึ่งประกอบด้วย ปลาซาบะย่าง และหมูทอดพร้อมน้ำจิ้มแจ่ว
+      </b> </p>
       </div>
    
     </section>`
   ];
 
   const contentTHNews = [
+    //  วันก่อตั้งบริษัท
     `  ประกาศก่อตั้งอย่างเป็นทางการ
         เมื่อวันที่ 11 พฤศจิกายน พ.ศ. 2554
         ณ นิคมอุตสาหกรรมปิ่นทอง 4 จังหวัดชลบุรี
@@ -152,11 +341,31 @@ export default function News() {
         เพื่อดำเนินธุรกิจด้านเทคโนโลยีอุตสาหกรรม 
         และการให้บริการด้านศวกรรมครบวงจร
       `,
+    // Company trip
     `
-      รับสมัครพนักงานตำแหน่ง จป.วิชาชีพ (เจ้าหน้าที่ความปลอดภัยในการทำงานระดับวิชาชีพ)
+        บริษัท เจไออีไอ จัดโครงการท่องเที่ยวประจำปี ระหว่างวันที่ 11-12 ตุลาคม 2568
+        ในปี 2025 บริษัท เจไออีไอ ได้จัดโครงการท่องเที่ยวประจำปีขึ้นเพื่อส่งเสริมความสัมพันธ์ในทีมงาน เพิ่มพูนประสบการณ์ใหม่ๆ และเปิดโอกาสให้พนักงานได้พักผ่อนเติมพลัง
+        โครงการท่องเที่ยวในปีนี้มีจุดเด่นคือ “การผสมผสานระหว่างการพักผ่อนด้วยธรรมชาติ + กิจกรรมสร้างทีม + ความยั่งยืน”
+      `,
+    // สมัครงาน
+    `
+    เปิดรับสมัครงาน: เจ้าหน้าที่ความปลอดภัยมืออาชีพ (เจ้าหน้าที่ความปลอดภัยและอาชีวอนามัย)
+  
+      `,
+    // วันเกิดบริษัท
+    `
+     วันครบรอบบริษัท เจไออีไอ (ไทยแลนด์) – 11 พฤศจิกายน 2568
+       ในโอกาสวันครบรอบการก่อตั้งบริษัท เจไออีไอ (ไทยแลนด์) เมื่อวันที่ 11 พฤศจิกายน 2568 <br /> ทางบริษัทได้จัดกิจกรรมเล็กๆ เพื่อเป็นการขอบคุณพนักงานทุกท่าน โดยในช่วงเที่ยงวัน พนักงานทุกคนได้รับของขวัญ ได้แก่ 
+       
+       1. มาม่า 1 ห่อใหญ่, 
+       2. น้ำส้ม 1 ขวด, 
+       3. ไอศกรีม 
+       4. อาหารกลางวันสุดพิเศษ ซึ่งประกอบด้วย ปลาซาบะย่าง และหมูทอดพร้อมน้ำจิ้มแจ่ว
      `
   ]
-  const contentEN = [`
+  const contentEN = [
+    //  วันก่อตั้งบริษัท
+    `
     <section class="company-announcement">
   <h2>Official Establishment Announcement</h2>
   <p>
@@ -190,6 +399,76 @@ export default function News() {
     and continues to drive innovation for the future of Thai industry.
   </p>
 </section>`,
+
+    // Company trip
+    `
+<section class="company-announcement">
+    <h2>JIEI Annual Company Trip: October 11-12, 2025</h2>
+    <p>In 2025, JIEI organized its annual company trip to strengthen team relationships, provide new experiences, and allow employees to relax and recharge.</p>
+    <p>This year’s trip highlights a “blend of nature-based relaxation + team-building activities + sustainability.”</p>
+    <blockquote>
+        <h5>Schedule:</h5>
+    </blockquote>
+    <h5>October 11, 2025 (Day 1)</h5>
+    <hr />
+    <p><b>06:00–07:30 AM</b> – Register to receive a name tag & JIEI bag tag (Safety Gate). Free coffee & bread or sandwich. 3 Buses / Police escort car / Motorway route.</p>
+    <hr />
+    <p>12:00 PM – Arrive at lunch restaurant Nannam Country Home Resort & Restaurant. 8 persons/table. Menu:
+        <ul>
+            <li>1. Fried pork belly with fish sauce</li>
+            <li>2. Soybean dipping sauce with salted fish + vegetables</li>
+            <li>3. Stir-fried curry chicken</li>
+            <li>4. Curry-fried fish (Chu Chee)</li>
+            <li>5. Stir-fried cabbage with dried squid</li>
+            <li>6. Sour yellow curry with Cha-Om omelette</li>
+            <li>7. Tom Yum soup with free-range chicken</li>
+            <li>8. Spicy shrimp</li>
+            <li>9. Rice</li>
+            <li>10. Fruit</li>
+            <li>11. Drinking water, ice</li>
+        </ul>
+    </p>
+    <hr />
+    <p>1:30 PM – Check-in at THONGSOMBOON CLUB Hotel. All hotel zones: Receive a wristband to enter the activity zone.</p>
+    <hr />
+    <p>2:30–5:30 PM – Afternoon Bake & DJ Booth, Pool & Garden Zone. Food: Somtam, Khanom Jeen Namya, Grilled Pork, etc. Tram service to activity zone (15 activities).</p>
+    <hr />
+    <p>7:00–11:00 PM – Night Party, Party Room 3F, Backdrop, photography, MC / Live music band. Register for costume contest. Buffet, alcoholic beverages / soft drinks. Theme: Camping.</p>
+    <hr />
+    <p>10:00 PM – Mama Cup Service</p>
+    <hr />
+    <p>11:00 PM – End of Night Party. Free ice & soda</p>
+    <hr />
+    <h5>October 12, 2025 (Day 2)</h5>
+    <hr />
+    <p>7:00–10:00 AM – Breakfast, Restaurant 2F, Buffet. Please inform your room number.</p>
+    <hr />
+    <p>10:00 AM – Check-Out > Hokkaido Flower Park, Khaoyai. Departure to JIEI.</p>
+    <hr />
+    <p>12:00 PM – Arrive at lunch restaurant Suankhunyaiy, Khaoyai Km3. 8 persons/table. Menu:
+        <ul>
+            <li>1. Deep-fried ruby fish with garlic</li>
+            <li>2. Tom Yum soup with chicken</li>
+            <li>3. Stir-fried curry chicken</li>
+            <li>4. Crisp catfish flake salad</li>
+            <li>5. Fried chicken wings with salt</li>
+            <li>6. Stir-fried mixed vegetables</li>
+            <li>7. Thai curry with river snail and betel leaf</li>
+            <li>8. Rice</li>
+            <li>9. Fruit</li>
+            <li>10. Drinking water, ice</li>
+        </ul>
+    </p>
+    <hr />
+    <p>3:00 PM – Souvenir shop at Cake Baan Suan.</p>
+    <hr />
+    <p>7:30 PM – Arrive at JIEI. Stop at the restroom along the way as requested by the customer.</p>
+    <hr />
+</section>
+
+`,
+
+    // สมัครงาน
     `
     <section class="company-announcement">
   <h2>Job Opening: Professional Safety Officer (Occupational Safety and Health Officer)</h2>
@@ -235,22 +514,61 @@ export default function News() {
     Interested applicants, please contact <a href="mailto:info@jiei-thai.co.th">info@jiei-thai.co.th</a>
   </div>
 </section>
-`
+`,
+
+    // วันเกิดบริษัท
+    `<section class="company-announcement">
+      <h2>JIEI (Thailand) Company Anniversary – November 11, 2025</h2>
+     
+      <div>
+      <p>
+       On the occasion of JIEI (Thailand)’s founding anniversary on November 11, 2025, <br />
+       the company organized a small event to thank all employees. At noon, every employee received gifts including: 
+      </p>
+
+       <p><b>1. 1 Large Pack of Instant Noodles</b></p>
+       <p><b>2. 1 Bottle of Orange Juice</b></p>
+       <p><b>3. Ice Cream</b></p>
+       <p><b>4. Special Lunch including Grilled Mackerel and Fried Pork with Spicy Sauce</b></p>
+      </div>
+</section>`
 
   ];
   const contentENNews = [
+    //  วันก่อตั้งบริษัท
     `Official Establishment Announcement
     On November 11, 2011,
     at Pinthong Industrial Estate 4, Chonburi Province,
     Jiei (Thailand) Co., Ltd. was officially established
     to operate in the field of industrial technology
-    and provide comprehensive engineering services.`,
+    and provide comprehensive engineering services.
+    `
+    // Company trip
+    ,
+    `
+    JIEI Annual Company Trip: October 11-12, 2025
+    In 2025, JIEI organized its annual company trip to strengthen team relationships, provide new experiences, and allow employees to relax and recharge.
+    This year’s trip highlights a “blend of nature-based relaxation + team-building activities + sustainability.”
+    `,
+    // สมัครงาน
     `
     We are hiring for the position of Professional Safety Officer (Occupational Safety and Health Officer – Professional Level)
     `
+    ,
+    // วันเกิดบริษัท
+    `
+     JIEI (Thailand) Company Anniversary – November 11, 2025
+      On the occasion of JIEI (Thailand)’s founding anniversary on November 11, 2025,
+       the company organized a small event to thank all employees. At noon, every employee received gifts including: 
+       1. 1 Large Pack of Instant Noodles
+       2. 1 Bottle of Orange Juice
+       3. Ice Cream
+       4. Special Lunch including Grilled Mackerel and Fried Pork with Spicy Sauce
+       `
   ]
-  const contentJP =
-    [`
+  const contentJP = [
+    //  วันก่อตั้งบริษัท
+    `
     <section class="company-announcement">
   <h2>正式設立のお知らせ</h2>
   <p>
@@ -281,7 +599,75 @@ export default function News() {
     タイ産業の未来に向けたイノベーション開発を継続しています。
   </p>
 </section>` ,
-      `
+    // Company trip
+    `
+<section class="company-announcement">
+    <h2>JIEI社 年間社員旅行：2025年10月11日～12日</h2>
+    <p>2025年、JIEI社はチームの結束を強化し、新しい経験を提供し、社員がリフレッシュできる年間社員旅行を開催しました。</p>
+    <p>今年の旅行の特徴は「自然の中でのリラックス + チームビルディング活動 + 持続可能性の融合」です。</p>
+    <blockquote>
+        <h5>スケジュール:</h5>
+    </blockquote>
+    <h5>2025年10月11日（1日目）</h5>
+    <hr />
+    <p><b>06:00～07:30</b> – 名札とJIEIバッグタグ（セーフティゲート）を受け取る。コーヒーとパンまたはサンドイッチ無料。バス3台 / 警察護送車 / 高速道路ルート</p>
+    <hr />
+    <p>12:00 – 昼食レストラン Nannam Country Home Resort & Restaurant に到着。1テーブル8名。メニュー：
+        <ul>
+            <li>1. 豚バラの揚げ物（ナンプラー風味）</li>
+            <li>2. 塩漬け魚入り大豆ソース＋野菜</li>
+            <li>3. カレー風味の鶏肉炒め</li>
+            <li>4. カレーフライドフィッシュ（チューチー）</li>
+            <li>5. イカ入りキャベツ炒め</li>
+            <li>6. チャオム入り酸味カレーオムレツ</li>
+            <li>7. 自家飼育鶏のトムヤムスープ</li>
+            <li>8. 辛いエビ</li>
+            <li>9. ご飯</li>
+            <li>10. フルーツ</li>
+            <li>11. 飲料水、氷</li>
+        </ul>
+    </p>
+    <hr />
+    <p>13:30 – トーンソムブーンクラブホテルにチェックイン。ホテル内全ゾーン：アクティビティゾーン入場用のリストバンドを受け取る。</p>
+    <hr />
+    <p>14:30 - 17:30 – 午後のベイク＆DJブース、プール＆ガーデンゾーン。食事：ソムタム、カノムジーンナムヤー、豚のグリルなど。アクティビティゾーン（15アクティビティ）への送迎トラムサービス。</p>
+    <hr />
+    <p>19:00 - 23:00 – ナイトパーティー、パーティールーム3階、バックドロップ、写真撮影、MC / ライブバンド。コスチュームコンテスト登録。ビュッフェ、アルコール飲料 / ソフトドリンク。テーマ：キャンプ</p>
+    <hr />
+    <p>22:00 – ママカップサービス</p>
+    <hr />
+    <p>23:00 – ナイトパーティー終了。無料の氷とソーダ</p>
+    <hr />
+    <h5>2025年10月12日（2日目）</h5>
+    <hr />
+    <p>07:00 - 10:00 – 朝食、レストラン2階、ビュッフェ。部屋番号をお知らせください。</p>
+    <hr />
+    <p>10:00 – チェックアウト > ホッカイドウフラワーパーク カオヤイ。JIEIへ出発</p>
+    <hr />
+    <p>12:00 – 昼食レストラン Suankhunyaiy カオヤイ Km3 に到着。1テーブル8名。メニュー：
+        <ul>
+            <li>1. ニンニク風味のルビーフィッシュフライ</li>
+            <li>2. 鶏肉のトムヤムスープ</li>
+            <li>3. カレー風味の鶏肉炒め</li>
+            <li>4. サクサクナマズサラダ</li>
+            <li>5. 塩味フライドチキンウィング</li>
+            <li>6. 野菜炒め盛り合わせ</li>
+            <li>7. タイカレー（川の巻貝とビンロウの葉入り）</li>
+            <li>8. ご飯</li>
+            <li>9. フルーツ</li>
+            <li>10. 飲料水、氷</li>
+        </ul>
+    </p>
+    <hr />
+    <p>15:00 – ケーキバーンスアンのお土産店</p>
+    <hr />
+    <p>19:30 – JIEIに到着。お客様の要望により途中でトイレに立ち寄る。</p>
+    <hr />
+</section>
+
+`,
+    // สมัครงาน
+    `
       <section class="company-announcement">
   <h2>募集職種：労働安全衛生担当者（専門職レベル）</h2>
   <p>
@@ -327,35 +713,99 @@ export default function News() {
   </div>
 </section>
 
+      `,
+    // วันเกิดบริษัท
+    `
+      <section class="company-announcement">
+      <h2>JIEI（タイランド）会社設立記念日 – 2025年11月11日</h2>
+     
+      <div>
+      <p>
+       JIEI（タイランド）の設立記念日2025年11月11日に際し、<br />
+       社員全員に感謝の気持ちを込めた小さなイベントを開催しました。正午には全社員に以下の贈り物が配られました：
+      </p>
+
+       <p><b>1. インスタントラーメン 1パック</b></p>
+       <p><b>2. オレンジジュース 1本</b></p>
+       <p><b>3. アイスクリーム</b></p>
+       <p><b>4. 特別ランチ：サバのグリルと揚げ豚、スパイシーソース付き</b></p>
+      </div>
+</section>
+
+      
       `
-    ];
+  ];
   const contentJPNews = [
+    // วันเกิดบริษัท
     `正式設立のお知らせ
     2011年11月11日、チョンブリー県ピントン工業団地4において
     Jiei（Thailand）Co., Ltd. は正式に設立されました。
     当社は産業技術分野での事業展開および
     総合的なエンジニアリングサービスの提供を目的としております。`
     ,
+    // Company trip
+    `
+    JIEI社 年間社員旅行：2025年10月11日～12日
+    2025年、JIEI社はチームの結束を強化し、新しい経験を提供し、社員がリフレッシュできる年間社員旅行を開催しました。
+    今年の旅行の特徴は「自然の中でのリラックス + チームビルディング活動 + 持続可能性の融合」です。
+    `,
+    // สมัครงาน
     `
     募集職種：労働安全衛生担当者（専門職レベル）
-    `,
+    `
+    ,
+    // วันเกิดบริษัท
+    `
+    company-announcement
+      JIEI（タイランド）会社設立記念日 – 2025年11月11日
+       JIEI（タイランド）の設立記念日2025年11月11日に際し、
+       社員全員に感謝の気持ちを込めた小さなイベントを開催しました。正午には全社員に以下の贈り物が配られました：
+    `
   ]
 
   const img = [
+    //  วันก่อตั้งบริษัท
     '/jieiImage/6.png',
-    `/imageEmployee.png`
+    // Company trip
+    '/News/company-trip-2025/company-trip-2025 (1).jpg',
+    // สมัครงาน
+    `/imageEmployee.png`,
+    // วันเกิดบริษัท
+    `/News/11-11.png`
+
   ];
   const datePostTH = [
+    //  วันก่อตั้งบริษัท
     '07 พฤษจิกายน 2025',
-    '08 พฤษจิกายน 2025'
+    // Company trip
+    '13 ตุลาคม 2025',
+    // สมัครงาน
+    '08 พฤษจิกายน 2025',
+    // วันเกิดบริษัท
+    '11 พฤษจิกายน 2025'
+
   ];
   const datePostEN = [
+    //  วันก่อตั้งบริษัท
     'November 07, 2025',
-    'November 08, 2025'
+    // Company trip
+    'October 13 , 2025',
+    // สมัครงาน
+    'November 08, 2025',
+    // วันเกิดบริษัท
+    'November 11, 2025'
+
   ];
   const datePostJP = [
+    //  วันก่อตั้งบริษัท
     '2025年11月07日',
-    '2025年11月08日'
+    // Company trip
+    '2025年10月13日',
+    // สมัครงาน
+    '2025年11月08日',
+    // วันเกิดบริษัท
+    '2025年11月11日'
+
   ];
 
 
@@ -451,7 +901,7 @@ export default function News() {
                     <div className="product-description-box">
                       <div className="space-part-box">
                         <div className='space-part'>
-                  
+
                           {lang === 'th'
                             ? revContentTHNews[index]
                             : lang === 'en'
@@ -488,7 +938,7 @@ export default function News() {
         </>
       ) : (
         <div className="detail-news">
-          <ScrollReveal>
+         
             <h2 className='title-news-page'>
               {lang === 'th' ? revNewsTH[selectedNews] : lang === 'en' ? revNewsEN[selectedNews] : revNewsJP[selectedNews]}
             </h2>
@@ -581,7 +1031,7 @@ export default function News() {
                 {lang === 'th' ? "กลับไปหน้ารวม" : lang === 'en' ? "Back to Overview" : "一覧に戻る"}
               </button>
             </div>
-          </ScrollReveal>
+         
         </div>
       )}
     </div>

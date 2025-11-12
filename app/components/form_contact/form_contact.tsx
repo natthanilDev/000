@@ -19,7 +19,7 @@ export default function ContactForm() {
         message: '',
         address: '',
         phone: '',
-        honeypot: '' // 🐝 เพิ่ม Honeypot field
+        honeypot: '' //  เพิ่ม Honeypot field
     });
 
     const containsURL = (text: string) => {

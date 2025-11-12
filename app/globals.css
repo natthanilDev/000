@@ -76,7 +76,7 @@ a:hover {
 }
 
 .image-logo {
-  width: 120px;
+  width: 140px;
   height: auto;
   margin-left: 20px;
 
@@ -5093,5 +5093,27 @@ h4 {
   background-color: #f9f9f9cc;
   border-radius: 50%;
 
+
+}
+
+@media screen and (max-width:1024px) {
+  
+.Import-Image {
+  
+  width: 90%;
+ 
+
+}
+
+}
+
+@media screen and (max-width:425px) {
+  
+.Import-Image {
+  
+  width: 100%;
+ 
+
+}
 
 }
