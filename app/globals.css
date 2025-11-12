@@ -1199,7 +1199,7 @@ a:hover {
   font-size: 1rem;
   font-weight: 500;
   color: #333;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
   transition: all 0.2s ease;
 }
 
@@ -1240,7 +1240,7 @@ a:hover {
   align-items: center;
   justify-content: center;
   gap: 25px;
-  
+
 }
 
 .partners-grid div {
@@ -1255,13 +1255,16 @@ a:hover {
   line-height: 1.4;
   transition: all 0.25s ease;
 }
-.linkToWebsitePartners{
+
+.linkToWebsitePartners {
   text-decoration: none;
   color: #424242;
-  &:hover{
+
+  &:hover {
     color: #000;
   }
 }
+
 .partners-grid div:hover {
   background: #eef3fa;
   border-color: #cbd5e1;
@@ -1634,8 +1637,9 @@ a:hover {
   background-color: #ffff;
   padding: 50px 100px;
   margin-left: -12%;
+  margin-top:0.5px ;
   border-left: 7px solid #bbbbbb;
-
+  z-index: 1;
 
 }
 
@@ -4409,7 +4413,8 @@ h4 {
 }
 
 .title-product-page {
-  padding: 50px 50px 20px 50px;
+  padding: 50px 0px 20px 0px;
+
   text-align: center;
 }
 
@@ -4499,8 +4504,9 @@ h4 {
   .product {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    width: 95%;
+    width: 100%;
     margin: 0 auto;
+    padding: 50px 50px;
   }
 
   .product-custom {
@@ -4525,7 +4531,14 @@ h4 {
   .product {
     display: grid;
     grid-template-columns: 1fr;
-    width: 80%;
+    width: 95%;
+
+
+  }
+
+  .product-title {
+    width: 100%;
+    margin: 0 auto;
 
   }
 }
@@ -4597,6 +4610,10 @@ h4 {
 @media screen and (max-width:768px) {
   .product-description-card {
     grid-template-columns: 1fr;
+    width: 95%;
+    padding: 70px 10px 50px 10px;
+
+
   }
 
   .image-product-page {
@@ -4657,7 +4674,7 @@ h4 {
   gap: 30px;
   overflow: hidden;
   transition: all ease 0.25s;
-
+  padding: 20px 20px;
 }
 
 
@@ -4748,6 +4765,11 @@ h4 {
 
 }
 
+.description-product {
+  text-align: center;
+  padding: 0 20px;
+}
+
 /* .description-product-text{
 
 
@@ -4808,7 +4830,7 @@ h4 {
   width: 100px;
   transition: all ease 0.55s;
   animation: upper 1s 0s infinite;
-
+  z-index: 999;
 }
 
 .btn-upto {
@@ -4840,7 +4862,7 @@ h4 {
 .upIcon {
   font-size: 50px;
   color: #000796;
-
+  z-index: 9999;
 
 }
 
@@ -4930,6 +4952,8 @@ h4 {
     grid-template-columns: 1fr 1fr;
     margin: 20px auto;
     gap: 20px;
+    padding:50px 20px ;
+
   }
 
   .customProductBox {
@@ -4992,11 +5016,7 @@ h4 {
 
   }
 
-  .product {
-    display: grid;
-    grid-template-columns: 1fr;
 
-  }
 }
 
 @media screen and (max-width:426px) {
@@ -5097,23 +5117,28 @@ h4 {
 }
 
 @media screen and (max-width:1024px) {
-  
-.Import-Image {
-  
-  width: 90%;
- 
 
-}
+  .Import-Image {
+
+    width: 90%;
+
+
+  }
 
 }
 
 @media screen and (max-width:425px) {
-  
-.Import-Image {
-  
-  width: 100%;
- 
 
-}
+  .Import-Image {
+
+    width: 100%;
+
+
+  }
+
+  .company-announcement {
+    padding: 0;
+
+  }
 
 }

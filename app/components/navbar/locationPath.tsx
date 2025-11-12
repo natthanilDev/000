@@ -20,15 +20,10 @@ const menuCheckboxRef = useRef<HTMLInputElement>(null);
         if (menuCheck.current) {
             menuCheck.current.checked = false
         }
+        setMenu(!menu)
+        
     };
   const [lang, setLang] = useState<'th' | 'en' | 'jp'>('th');
-
-
-
-
-
-
-
 
 
   const onChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
@@ -108,7 +103,7 @@ const menuCheckboxRef = useRef<HTMLInputElement>(null);
     const handleScroll = () => {
       setScrolled(window.scrollY > 50);
     };
-
+   
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -138,6 +133,7 @@ const menuCheckboxRef = useRef<HTMLInputElement>(null);
               <label onClick={() => { setMenu(!menu) }} htmlFor="icon-menu-show" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="main-navigation" className="icon-menu-label">
                 <i className={menu === true ? "bi bi-x" : "bi bi-list"}></i>
               </label>
+
               <input ref={menuCheckboxRef} type="checkbox" className="icon-menu-show" id="icon-menu-show" />
 
               <ul id="main-navigation" className="ul-navigation">
