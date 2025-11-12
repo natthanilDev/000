@@ -17,14 +17,15 @@ export default function Confidence() {
                 <div className="box-bc">
                     <ScrollReveal>
                         <h2 className='video-text'>
-                            {lang === ('th') ? "มั่นใจทุกการขับขี่"
-                                : lang === ('en') ? "Confidence in Every Drive"
-                                    : "すべてのドライブで自信を"}
+                            {lang === ('th') ? "เทคโนโลยีของเรา"
+                                : lang === ('en') ? "Our Technology"
+                                    : "私たちの技術"}
                         </h2>
+                        
                     </ScrollReveal>
                     <ScrollReveal>
                         <video className="video-car" autoPlay muted loop playsInline poster='/Automobile.png'>
-                            {/* <source src="" type="video/mp4" /> */}
+                            <source src="/Video-Intro.mp4" type="video/mp4" />
                             เบราว์เซอร์ไม่รองรับวิดีโอ
                         </video>
                     </ScrollReveal>
