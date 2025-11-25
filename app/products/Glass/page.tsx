@@ -1,4 +1,4 @@
-import SuspensionBush from "@/app/components/products/suspension-bush/suspension-bush"
+import SuspensionBush from "@/app/components/products/Glass/Glass"
 
 export default function page() {
   return (

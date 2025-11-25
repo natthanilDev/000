@@ -144,9 +144,9 @@ export default function ContactForm() {
     return (
         <section className="contact-page-contact" itemScope itemType="https://schema.org/ContactPage">
             <h1 className="text-2xl font-bold mb-4">
-                {lang===('th') ? "ติดต่อเรา | JIEI Thailand - ผู้ผลิตชิ้นส่วนยางรถยนต์คุณภาพสูง" :
-                    lang===('en') ? "Contact Us | JIEI Thailand - High-Quality Automotive Rubber Parts Manufacturer" :
-                        "お問い合わせ | JIEI Thailand - 高品質な自動車用ゴム部品メーカー"}
+                {lang===('th') ? "ติดต่อเรา | กรุณากรอกข้อมูลของคุณ!" :
+                    lang===('en') ? "Contact Us | Please fill in your information!" :
+                        "お問い合わせ | 情報をご入力ください！"}
             </h1>
 
             <p className="mb-6">

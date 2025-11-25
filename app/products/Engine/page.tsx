@@ -1,4 +1,4 @@
-import EngineMount from "@/app/components/products/engine-mount/engine-mount"
+import EngineMount from "@/app/components/products/Engine/Engine"
 export default function page() {
   return (
     <div>

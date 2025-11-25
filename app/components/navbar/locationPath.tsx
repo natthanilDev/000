@@ -10,19 +10,19 @@ export default function Nav() {
   const Path = usePathname()
   const [menu, setMenu] = useState(false)
 
-const menuCheckboxRef = useRef<HTMLInputElement>(null);
+  const menuCheckboxRef = useRef<HTMLInputElement>(null);
 
-    const menuCheck = useRef<HTMLInputElement>(null);
-    const closeMenu = () => {
-        if (menuCheckboxRef.current) {
-            menuCheckboxRef.current.checked = false
-        }
-        if (menuCheck.current) {
-            menuCheck.current.checked = false
-        }
-        setMenu(!menu)
-        
-    };
+  const menuCheck = useRef<HTMLInputElement>(null);
+  const closeMenu = () => {
+    if (menuCheckboxRef.current) {
+      menuCheckboxRef.current.checked = false
+    }
+    if (menuCheck.current) {
+      menuCheck.current.checked = false
+    }
+    setMenu(!menu)
+
+  };
   const [lang, setLang] = useState<'th' | 'en' | 'jp'>('th');
 
 
@@ -69,30 +69,30 @@ const menuCheckboxRef = useRef<HTMLInputElement>(null);
     'お問い合わせ'
   ]
   const MenuProductTH = [
-        'แท่นยึดเครื่องยนต์',
-        'ยางรองบูชระบบกันสะเทือน',
-        'ซีลและปะเก็น',
-        'ผลิตภัณฑ์สั่งคำพิเศษ',
-    ]
-    const MenuProductEN = [
-        'Engine Mounts',
-        'Suspension Bushings',
-        'Seals & Gaskets',
-        'Products Collection',
-    ]
-    const MenuProductJP = [
-        'エンジンマウント',
-        'サスペンションブッシュ',
-        'シール＆ガスケット',
-        'すべての製品',
-    ]
+    'ชิ้นส่วนสำหรับกระจก',
+    'ชิ้นส่วนห้องเครื่องยนต์',
+    'ชิ้นส่วนประตู',
+    // 'ผลิตภัณฑ์สั่งคำพิเศษ',
+  ]
+  const MenuProductEN = [
+    'Parts for Glass',
+    'Engine Room Parts',
+    'Door Parts',
+    // 'Products Collection',
+  ]
+  const MenuProductJP = [
+    'ガラス用部品',
+    'エンジンルーム部品',
+    'ドア部品',
+    // 'すべての製品',
+  ]
 
-    const MenuProductPath = [
-        '/products/engine-mount',
-        '/products/suspension-bush',
-        '/products/seals',
-        '/products/custom-parts',
-    ]
+  const MenuProductPath = [
+    '/products/Glass',
+    '/products/Engine',
+    '/products/Door',
+    // '/products/custom-parts',
+  ]
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
@@ -103,7 +103,7 @@ const menuCheckboxRef = useRef<HTMLInputElement>(null);
     const handleScroll = () => {
       setScrolled(window.scrollY > 50);
     };
-   
+
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -143,35 +143,40 @@ const menuCheckboxRef = useRef<HTMLInputElement>(null);
                   </Link>
                 </li>
 
-          {/* <NavProduct /> */}
-          <div>
-            <li className={`li-menu ${Path === '/products/engine-mount' || Path === '/products/suspension-bush' || Path === '/products/seals' || Path === '/products/custom-parts' ? 'path' : ''}`}>
-                <div className="hover-for-show-product">
-                    <input type="checkbox" className="dropdown-menu" id="dropdown-menu" ref={menuCheck} />
-                    <span className="nav-link">
+                {/* <NavProduct /> */}
+                <div>
+                  <li className={`li-menu ${Path === '/products/Glass' || Path === '/products/Engine' || Path === '/products/Door' || Path === '/products/custom-parts' ? 'path' : ''}`}>
+                    <div className="hover-for-show-product">
+                      <input type="checkbox" className="dropdown-menu" id="dropdown-menu" ref={menuCheck} />
+                      <span className="nav-link">
                         <label htmlFor="dropdown-menu">
-                            <span className='category-product'>{lang === ('th') ? "คอลเลกชันผลิตภัณฑ์" : lang === ('en') ? "Products Collection" : "製品"}</span>
+                          <span className='category-product'>{lang === ('th') ? "คอลเลกชันผลิตภัณฑ์" : lang === ('en') ? "Products Collection" : "製品"}</span>
                         </label>
-                    </span>
-                    <i className="chevron-down bi bi-chevron-down"></i>
-                    <div className="product-jiei-thai">
+                      </span>
+                      <i className="chevron-down bi bi-chevron-down"></i>
+                      <div className="product-jiei-thai">
                         <ul className="ul-product">
-                            {MenuProductTH.map((item, index) => (
-                                <li key={index} className={`li-product${index + 1} ${Path === MenuProductPath[index] ? 'path' : ''}`} >
-                                    <Link
-                                        onClick={closeMenu} href={`${MenuProductPath[index]}`}
-                                        className="Link-product-class"
-                                        title="Engine Mounts - Automotive Rubber Parts JIEI Thailand">
-                                        {lang === ('th') ? item : lang === ('en') ? MenuProductEN[index] : MenuProductJP[index]}
-                                    </Link>
-                                </li>
-                            ))}
+                          {MenuProductTH.map((item, index) => (
+                            <Link key={index}
+                              onClick={closeMenu} href={`${MenuProductPath[index]}`}
+                              className="Link-product-class"
+                              title="Engine Mounts - Automotive Rubber Parts JIEI Thailand">
+                              <li className={`li-product${index + 1} ${Path === MenuProductPath[index] ? 'path' : ''}`} >
+                               
+                                <p className='menu-c'>
+                                  {lang === ('th') ? item : lang === ('en') ? MenuProductEN[index] : MenuProductJP[index]}
+                                </p>
+
+                              </li>
+                            </Link>
+
+                          ))}
                         </ul>
+                      </div>
                     </div>
+                  </li>
                 </div>
-            </li>
-        </div>
-               
+
 
                 {MenuTH.map((item, index) => (
                   <li key={index} className={` li-menu ${Path === `${MenuPath[index]}` ? 'path' : ''}`}>

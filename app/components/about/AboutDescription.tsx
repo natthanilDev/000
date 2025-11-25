@@ -1,22 +1,28 @@
 'use client'
 import React from 'react'
 import ScrollReveal from '../ScrollReveal/ScrollReveal'
-import { useEffect , useState } from 'react';
+import Image from 'next/image'
+import { useEffect, useState } from 'react';
 export default function AboutDescription() {
-     const [lang, setLang] = useState<'th' | 'en' | 'jp'>('th');
-        useEffect(() => {
-            if (typeof window !== 'undefined') {
-                const storedLang = localStorage.getItem('lang') as 'th' | 'en' | 'jp' | null;
-                if (storedLang) setLang(storedLang);
-            }
-        }, []);
-  return (
-    <div>
-        <ScrollReveal>
-                    <h1 className='about-company-name'>{lang === ('th') ? "บริษัท เจไออีไอ (ประเทศไทย) จำกัด" : lang === ('en') ? "JIEI (Thailand) Co., Ltd." : "ジェイアイ (タイランド)株式会社"} </h1>
-                </ScrollReveal>
+    const [lang, setLang] = useState<'th' | 'en' | 'jp'>('th');
+    useEffect(() => {
+        if (typeof window !== 'undefined') {
+            const storedLang = localStorage.getItem('lang') as 'th' | 'en' | 'jp' | null;
+            if (storedLang) setLang(storedLang);
+        }
+    }, []);
+    return (
+        <div>
+            <ScrollReveal>
+                <h1 className='about-company-name'>{lang === ('th') ? "บริษัท เจไออีไอ (ประเทศไทย) จำกัด" : lang === ('en') ? "JIEI (Thailand) Co., Ltd." : "ジェイアイ (タイランド)株式会社"} </h1>
+            </ScrollReveal>
 
-                <ScrollReveal>
+            <ScrollReveal>
+                <div className="grid-about-page-description">
+                    <div className="image-company-grid">
+                        <Image className='image-company-f' src={'/about-page.jpg'} alt='ผู้ผลิตชิ้นส่วนยางรถยนต์ จังหวัดชลบุรี' width={1000} height={1000} loading='lazy' />
+                    </div>
+
                     <div className="table-company-profile">
                         <div className="tr-about">
                             <div className='content-inthe-table'>
@@ -58,7 +64,9 @@ export default function AboutDescription() {
                         </div>
 
                     </div>
-                </ScrollReveal>
-    </div>
-  )
+
+                </div>
+            </ScrollReveal>
+        </div>
+    )
 }

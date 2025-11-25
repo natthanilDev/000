@@ -42,7 +42,10 @@ export default function AboutJIEI() {
                     </ScrollReveal>
                     <ScrollReveal>
                         <p className='text-center'>
-                            {lang === ('th') ? "บริษัท เจไออีไอ (ประเทศไทย) จำกัด เป็นผู้ผลิต ชิ้นส่วนยางรถยนต์คุณภาพสูง สำหรับอุตสาหกรรมยานยนต์ในประเทศไทยและต่างประเทศ โรงงานตั้งอยู่ที่จังหวัดชลบุรี พร้อมมาตรฐานสากล ISO 9001, ISO 14001 และ IATF 16949 ที่รับรองคุณภาพการผลิตทุกขั้นตอน" : lang === ('en') ? "JIEI (Thailand) Co., Ltd. is a manufacturer of high-quality automotive rubber parts for the automotive industry in Thailand and overseas. Our factory is located in Chonburi Province and operates under international standards ISO 9001, ISO 14001, and IATF 16949, ensuring quality at every stage of production." : "JIEI（Thailand）株式会社は、タイ国内および海外の自動車産業向けに高品質な自動車用ゴム部品を製造するメーカーです。工場はチョンブリー県に位置し、ISO 9001、ISO 14001、IATF 16949といった国際規格に基づき、生産のあらゆる工程で品質を保証しています。"}
+                            {lang === ('th') 
+                            ? "บริษัท เจไออีไอ (ไทยแลนด์) จํากัด เป็นผู้ผลิตชิ้นส่วนซีลยาง ทั้งภายใน ภายนอกของรถยนต์ และอุปกรณ์ให้กำเนิดพลังงาน ตามมาตรฐานสากล ISO & IATF ด้วยเทคโนโลยีการผลิตที่ทันสมัย" 
+                            : lang === ('en') ? "JIEI (Thailand) Co., Ltd. is a manufacturer of rubber sealing components for both interior and exterior automotive applications, as well as energy-generating equipment. The company operates under international ISO and IATF standards with advanced production technology." 
+                            : "JIEI（タイランド）株式会社は、自動車の内外装用ゴムシール部品および発電関連機器の製造メーカーです。ISOおよびIATFの国際規格に基づき、先進的な生産技術で運営しています。"}
                         </p>
                     </ScrollReveal>
                 </div>

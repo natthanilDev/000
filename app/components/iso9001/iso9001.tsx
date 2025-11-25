@@ -111,10 +111,10 @@ export default function Iso9001() {
           <ScrollReveal>
             <h1 className="ISO9001 text-center text-3xl font-bold">
               {lang===('th')
-                ? "การรับรองมาตรฐาน ISO 9001"
+                ? "ISO 9001"
                 : lang===('en')
-                  ? "ISO 9001 Certification"
-                  : "ISO 9001認証"}
+                  ? "ISO 9001"
+                  : "ISO 9001"}
             </h1>
           </ScrollReveal>
           <ScrollReveal>
@@ -170,16 +170,7 @@ export default function Iso9001() {
         </AnimatePresence>
 
         <div className="iso-box-description mt-8 text-center">
-          <ScrollReveal delay={0.8}>
-            <motion.h2
-              className="iso-name text-2xl font-semibold text-gray-800 mb-3"
-              initial={{ opacity: 0, y: 15 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1, ease: "easeOut" }}
-            >
-              ISO 9001
-            </motion.h2>
-          </ScrollReveal>
+         
 
           <ScrollReveal delay={1}>
             <motion.p

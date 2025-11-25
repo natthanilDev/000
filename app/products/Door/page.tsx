@@ -1,4 +1,4 @@
-import Seals from "@/app/components/products/seals/seals"
+import Seals from "@/app/components/products/Door/Door"
 
 
 export default function page() {

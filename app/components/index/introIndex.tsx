@@ -22,25 +22,25 @@ export default function IntroIndex() {
                         <div className="border-display">
                             <div className="company_name_box">
                                 <h1 className="company_name">
-                                    JIEI THAILAND
+                                   {lang === 'th' ? 'บริษัท เจไออีไอ (ไทยแลนด์) จํากัด'  : lang === 'en' ? 'JIEI THAILAND CO., LTD.' : 'JIEI THAILAND CO., LTD.'} 
                                 </h1>
                             </div>
                             <div className="company_name_box">
-                                <h1 className="company_name_sub">
+                                <h1 className = "company_name_sub">
                                     {lang === ('th')
-                                        ? "ผู้ผลิตชิ้นส่วนยางรถยนต์มาตรฐานสากล ISO & IATF16949 ในชลบุรี"   //....
+                                        ? "คือ ผู้ผลิตชิ้นส่วนซีลยาง ทั้งภายใน ภายนอกของรถยนต์ และอุปกรณ์ให้กำเนิดพลังงาน"   //....
                                         : lang === ('en')
-                                            ? 'Automotive Rubber Parts Manufacturer with ISO & IATF 16949 International Standards, Chonburi, Thailand'
-                                            : 'ISOおよびIATF16949国際規格認証取得の自動車用ゴム部品メーカー（タイ・チョンブリー県）'}
+                                            ? 'A manufacturer of rubber seal components for both the interior and exterior of automobiles, as well as for power-generation equipment.'
+                                            : '自動車の内装・外装用のゴムシール部品と、発電関連機器向け部品を製造するメーカーです。'}
                                 </h1>
                             </div>
                             <div className="description_company_box">
                                 <p className="description_company">
                                     {lang === ('th')
-                                        ? "โรงงานผลิตชิ้นส่วนยางรถยนต์ เช่น ซีลยาง ยางขอบประตูรถยนต์ และยางกันสั่นสะเทือน พร้อมเทคโนโลยีการผลิตทันสมัยและมาตรฐานระดับโลก"
+                                        ? "ตามมาตรฐานสากล ISO & IATF ด้วยเทคโนโลยีการผลิตที่ทันสมัย"
                                         : lang === ('en')
-                                            ? "We are a manufacturer of high-quality automotive rubber parts for the automotive industry, built on international standards and advanced production technology."
-                                            : "私たちは、自動車業界向けの高品質な自動車用ゴム部品を製造しており、国際規格と最新の生産技術を備えています。"}
+                                            ? "Compliant with international ISO & IATF standards, using advanced manufacturing technology."
+                                            : "国際規格である ISO と IATF に準拠し、先進的な製造技術を採用しています。"}
                                 </p>
                             </div>
 

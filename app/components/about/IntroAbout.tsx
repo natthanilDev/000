@@ -20,7 +20,7 @@ export default function IntroAbout() {
                     <ScrollReveal>
                         <h1 className='company-text-ji'>{lang === ('th') ? "โปรไฟล์" : lang === ('en') ? "Company" : "会社"}</h1>
                         <h1 className='company-text-ji1'>{lang === ('th') ? "บริษัท" : lang === ('en') ? "Profile" : "概要"}</h1>
-                        <h3 className='company-text-ji2'>Jiei (Thailand).Co.,Ltd</h3>
+                        <h3 className='company-text-ji2'>JIEI (THAILAND) CO., LTD.</h3>
                     </ScrollReveal>
                 </div>
             </div>

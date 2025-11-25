@@ -215,13 +215,13 @@ export default function Page() {
           <ScrollReveal>
             <h1 className='activities-text'>
 
-              {lang===('th') ? "แท่นเครื่องยนต์" : lang===('en') ? "Engine-mount" : "エンジンマウント"}
+              {lang===('th') ? "ชิ้นส่วนประตู" : lang===('en') ? "Door Parts" : "ドア部品"}
             </h1>
           </ScrollReveal>
           <div className="line"></div>
 
           <div className="activities-text-description-box">
-            <ScrollReveal>
+            {/* <ScrollReveal>
               <p className='activities-text-description'>
                 {lang===('th')
                   ? "ติดตามข่าวสารและกิจกรรมจาก JIEI Thailand ผู้ผลิตชิ้นส่วนยางรถยนต์คุณภาพสูงจากชลบุรี เพื่อสร้างความสามัคคีและพัฒนาทีมงานอย่างต่อเนื่อง"
@@ -229,7 +229,7 @@ export default function Page() {
                     ? "Stay updated with activities from JIEI Thailand — a leading automotive rubber parts manufacturer based in Chonburi, Thailand."
                     : "JIEI Thailandの活動をチェック — チョンブリーにある自動車用ゴム部品メーカーです。"}
               </p>
-            </ScrollReveal>
+            </ScrollReveal> */}
           </div>
 
 

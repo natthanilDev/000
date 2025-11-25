@@ -19,9 +19,9 @@ export default function Location() {
       <Link className="location_link" href={PathName}>
         {lang===('en') ?
           PathName == '/about' ? "About"
-            : PathName == '/products/engine-mount' ? "Products > Engine-mount"
-              : PathName == '/products/suspension-bush' ? "Products > Suspension-bush"
-                : PathName == '/products/seals' ? "Products > Seals"
+            : PathName == '/products/Engine' ? "Products > Engine Room Parts"
+              : PathName == '/products/Glass' ? "Products > Parts for Glass"
+                : PathName == '/products/Door' ? "Products > Door Parts"
                   : PathName == '/products/custom-parts' ? "Products > Custom-parts"
                     // : PathName == '/activities' ? "Activities"
                       : PathName == '/technologies' ? "Technologies"
@@ -34,9 +34,9 @@ export default function Location() {
                                     : ""
           : lang===('th') ?
             PathName == '/about' ? "เกี่ยวกับเรา"
-              : PathName == '/products/engine-mount' ? "สินค้า > แท่นเครื่องยนต์"
-                : PathName == '/products/suspension-bush' ? "สินค้า > บูชช่วงล่าง"
-                  : PathName == '/products/seals' ? "สินค้า > ซีลยาง"
+              : PathName == '/products/Glass' ? "สินค้า > ชิ้นส่วนสำหรับกระจก"
+                : PathName == '/products/Engine' ? "สินค้า > ชิ้นส่วนห้องเครื่องยนต์"
+                  : PathName == '/products/Door' ? "สินค้า > ชิ้นส่วนประตู"
                     : PathName == '/products/custom-parts' ? "สินค้า > ชิ้นส่วนสั่งผลิตพิเศษ"
                       // : PathName == '/activities' ? "ข่าวสารและกิจกรรม"
                         : PathName == '/technologies' ? "เทคโนโลยี"
@@ -48,9 +48,9 @@ export default function Location() {
                                   : PathName == '/iatf16949' ? 'มาตรฐาน IATF16949'
                                     : ""
             : PathName == '/about' ? "会社概要（かいしゃがいよう）"
-              : PathName == '/products/engine-mount' ? "製品 > エンジンマウント"
-                : PathName == '/products/suspension-bush' ? "製品 > サスペンションブッシュ"
-                  : PathName == '/products/seals' ? "製品 > シール"
+              : PathName == '/products/Glass' ? "製品 > ガラス用部品"
+                : PathName == '/products/Engine' ? "製品 > エンジンルーム部品"
+                  : PathName == '/products/Door' ? "製品 > ドア部品"
                     : PathName == '/products/custom-parts' ? "製品 > カスタムパーツ"
                       // : PathName == '/activities' ? "活動（かつどう）"
                         : PathName == '/technologies' ? "技術（ぎじゅつ）"

@@ -46,9 +46,9 @@ export default function Iatf16949() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, ease: "easeOut" }}
             >
-              {lang === 'th' ? "การรับรองมาตรฐาน IATF 16949"
-                : lang === 'en' ? "IATF 16949 Certification"
-                : "IATF 16949認証"}
+              {lang === 'th' ? "IATF 16949"
+                : lang === 'en' ? "IATF 16949 "
+                : "IATF 16949"}
             </motion.h1>
           </ScrollReveal>
 
@@ -60,10 +60,10 @@ export default function Iatf16949() {
               transition={{ duration: 1.2, ease: "easeOut" }}
             >
               {lang === 'th'
-                ? "มาตรฐานระบบบริหารคุณภาพระดับโลกสำหรับอุตสาหกรรมยานยนต์ โดย JIEI Thailand ผู้ผลิตชิ้นส่วนยางรถยนต์ชั้นนำในจังหวัดชลบุรี"
+                ? "มาตรฐานระบบบริหารคุณภาพระดับโลกสำหรับอุตสาหกรรมยานยนต์"
                 : lang === 'en'
-                ? "Global automotive quality management standard achieved by JIEI Thailand, a leading rubber parts manufacturer in Chonburi."
-                : "JIEI Thailandは、チョンブリにある自動車用ゴム部品メーカーであり、IATF 16949品質マネジメントシステムを取得しています。"}
+                ? "Global quality management system standard for the automotive industry"
+                : "自動車産業向けの国際的な品質管理システム標準"}
             </motion.p>
           </ScrollReveal>
         </header>
@@ -123,16 +123,7 @@ export default function Iatf16949() {
 
         {/* Description */}
         <div className="iso-box-description mt-8 text-center">
-          <ScrollReveal delay={0.8}>
-            <motion.h2
-              className="iso-name text-2xl font-semibold text-gray-800 mb-3"
-              initial={{ opacity: 0, y: 15 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1, ease: "easeOut" }}
-            >
-              IATF 16949
-            </motion.h2>
-          </ScrollReveal>
+         
 
           <ScrollReveal delay={1}>
             <motion.p
@@ -142,10 +133,10 @@ export default function Iatf16949() {
               transition={{ duration: 1.2, ease: "easeOut" }}
             >
               {lang === 'th'
-                ? "JIEI Thailand ได้รับการรับรองมาตรฐาน IATF 16949 ซึ่งเป็นมาตรฐานระบบการจัดการคุณภาพสำหรับอุตสาหกรรมยานยนต์ ช่วยยืนยันถึงคุณภาพ ความปลอดภัย และความน่าเชื่อถือของชิ้นส่วนยางรถยนต์ที่ผลิตในประเทศไทย"
+                ? "เป็นมาตรฐานระบบการจัดการคุณภาพสำหรับอุตสาหกรรมยานยนต์ ช่วยยืนยันถึงคุณภาพ ความปลอดภัย และความน่าเชื่อถือของชิ้นส่วนยางรถยนต์ที่ผลิตในประเทศไทย"
                 : lang === 'en'
-                ? "JIEI Thailand is certified with IATF 16949, ensuring excellence in automotive quality management, product reliability, and continuous improvement in our rubber parts manufacturing process."
-                : "JIEI ThailandはIATF 16949認証を取得しており、自動車用ゴム部品の品質、信頼性、継続的な改善を保証しています。"}
+                ? "It is a quality management system standard for the automotive industry, ensuring the quality, safety, and reliability of automotive rubber parts manufactured in Thailand."
+                : "これは自動車産業向けの品質管理システムの標準であり、タイで製造された自動車用ゴム部品の品質、安全性、信頼性を保証します。"}
             </motion.p>
           </ScrollReveal>
         </div>

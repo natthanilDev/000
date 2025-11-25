@@ -6,19 +6,22 @@ import { useState, useEffect } from 'react'
 export default function AboutHomePage() {
     const [lang, setLang] = useState<'th' | 'en' | 'jp'>('th');
     const aboutTH = [
-        "JIEI Thailand Co., Ltd. เป็นผู้ผลิตชิ้นส่วนยางรถยนต์และยางอุตสาหกรรมคุณภาพสูง ตั้งอยู่ที่จังหวัดชลบุรี ประเทศไทย เรามีความเชี่ยวชาญด้านการออกแบบและการผลิต ยางขอบประตูรถยนต์ (Automotive Rubber Seals) และชิ้นส่วนยางที่ใช้ในอุตสาหกรรมยานยนต์มากกว่า 14 ปี",
-        "บริษัทมุ่งมั่นพัฒนาเทคโนโลยีการผลิตที่ทันสมัย ควบคู่กับมาตรฐานสากล เช่น ISO/IATF16949 เพื่อตอบสนองความต้องการของผู้ผลิตรถยนต์ (OEM) และลูกค้าทั่วโลก ปัจจุบันเราได้ส่งออกสินค้าไปยัง สหรัฐอเมริกา ญี่ปุ่น และประเทศในยุโรป",
-        "จุดยืนของ JIEI คือการเป็น “พันธมิตรที่ไว้ใจได้ของอุตสาหกรรมยานยนต์” โดยให้ความสำคัญกับคุณภาพ ความทนทาน และการส่งมอบตรงเวลา"
+        "บริษัท เจไออีไอ (ไทยแลนด์) จํากัด ก่อตั้งขึ้นในเดือนพฤศจิกายน 2554 ในฐานะบริษัทสมาชิกของกลุ่มบริษัท Kasei Kogyo Co., Ltd. กลุ่มบริษัท Kasei Kogyo ซึ่งดำเนินธุรกิจมาตั้งแต่ปี 1966 โดยเน้นที่การอัดขึ้นรูปยางสำหรับใช้ในรถยนต์ ได้พัฒนามาถึงปัจจุบันพร้อมกับการพัฒนาอุตสาหกรรมยานยนต์ของโลก",
+        "ผ่านกระบวนการที่หลากหลาย ตั้งแต่การวางแผนและการพัฒนาในวิธีการทางอุตสาหกรรมไปจนถึงการผลิต เราให้ความสำคัญกับการตอบสนองความต้องการของโลก และมีส่วนร่วมในการผลิตผลิตภัณฑ์ที่มีความแม่นยำและคุณภาพโดยใช้เทคโนโลยีขั้นสูงที่สามารถตอบสนองความต้องการของลูกค้าหลากหลายประเภท ทั้งหมดนี้มาจากฐานการผลิตของเราไม่เพียงแต่ในญี่ปุ่นเท่านั้น แต่ยังรวมถึงอเมริกาเหนือ จีน และเอเชีย",
+        "กลุ่มบริษัท Kasei Kogyo ได้จัดโครงสร้างเพื่อให้สามารถตอบสนองต่อความต้องการที่เปลี่ยนแปลงอย่างรวดเร็วของอุตสาหกรรม โดยนำความรู้ความสามารถเชิงสร้างสรรค์ที่ได้รับจากการสั่งสมประสบการณ์ในอุตสาหกรรมยานยนต์มาปฏิบัติจริง",
+        "ในอนาคต เราจะทุ่มเทความพยายามอย่างเต็มที่ในฐานะองค์กร เพื่อสร้างคุณประโยชน์ที่ยิ่งใหญ่กว่าเดิมให้กับสังคมโลก เราขอขอบคุณทุกท่านที่ให้การสนับสนุนและให้กำลังใจ และหวังว่าจะได้รับความอุปถัมภ์จากท่านต่อไปในอนาคต",
     ]
     const aboutEN = [
-        "JIEI Thailand Co., Ltd. is a manufacturer of high-quality automotive and industrial rubber parts, located in Chonburi Province, Thailand. We have over 14 years of expertise in designing and producing automotive rubber seals and rubber components used in the automotive industry.",
-        "The company is committed to developing advanced manufacturing technologies alongside international standards such as ISO/IATF16949 to meet the requirements of automotive manufacturers (OEMs) and customers worldwide. Currently, we export our products to the United States, Japan, and European countries.",
-        "JIEI’s stance is to be a “trusted partner of the automotive industry,” focusing on quality, durability, and on-time delivery.",
+        "JIEI (Thailand) Co., Ltd. was established in November 2011 as a member of the Kasei Kogyo Co., Ltd. group. Kasei Kogyo, which has been in business since 1966 focusing on rubber molding for automotive use, has developed over the years alongside the global automotive industry.",
+        "Through a diverse process, from planning and industrial method development to production, we focus on meeting global demands and contribute to producing precise and high-quality products using advanced technology that caters to various customer needs. All of this stems from our production bases not only in Japan but also in North America, China, and Asia.",
+        "The Kasei Kogyo group has structured itself to respond to the rapidly changing demands of the industry, applying the creative knowledge and expertise accumulated through experience in the automotive sector.",
+        "In the future, we will dedicate ourselves as an organization to create even greater benefits for global society. We sincerely thank everyone for their support and encouragement and hope to continue receiving your patronage.",
     ]
     const aboutJP = [
-        "JIEI Thailand株式会社は、タイ・チョンブリー県に拠点を置く高品質な自動車用および産業用ゴム部品のメーカーです。私たちは、自動車用ゴムシールや自動車産業で使用されるゴム部品の設計・製造において、14年以上の専門知識を持っています。",
-        "当社は、ISO/IATF16949などの国際規格と並行して、先進的な製造技術の開発に取り組み、自動車メーカー（OEM）および世界中の顧客のニーズに応えています。現在、当社の製品はアメリカ、日本、ヨーロッパ諸国に輸出されています。",
-        "JIEIの立場は、「自動車産業の信頼できるパートナー」であることであり、品質、耐久性、そして納期厳守を重視しています。"
+        "JIEI（タイランド）株式会社は、2011年11月にKasei Kogyo株式会社グループの一員として設立されました。1966年から自動車用ゴム成形を中心に事業を展開してきたKasei Kogyoグループは、世界の自動車産業の発展とともに成長してきました。",
+        "計画や工業的手法の開発から製造まで、多様なプロセスを経て、私たちは世界のニーズに応えることに重点を置き、さまざまな顧客の要求に対応できる高度な技術を用いて、精密で高品質な製品の生産に貢献しています。これらは日本だけでなく、北米、中国、アジアの生産拠点からも行われています。",
+        "Kasei Kogyoグループは、急速に変化する産業の需要に対応できるように組織を整え、自動車産業で蓄積した経験から得た創造的な知識と専門知識を実践に活かしています。",
+        "今後、私たちは組織として全力を尽くし、世界社会により大きな貢献をしていきます。ご支援と励ましをくださった皆様に心より感謝申し上げ、今後ともご厚誼を賜りますようお願い申し上げます。",
     ]
 
     useEffect(() => {
@@ -45,7 +48,7 @@ export default function AboutHomePage() {
                                 <h2 className="about"> {lang === ('th') ? "เกี่ยวกับเรา" : lang === ('en') ? "About Us" : "私たちについて"}</h2>
                             </ScrollReveal>
                         </div>
-
+                        <p className="content-about">{lang === ('th') ? "ขอบคุณมากที่สละเวลาเยี่ยมชมเว็บไซต์ของเรา" : lang === ('en') ? "Thank you very much for taking the time to visit our website." : "当社のウェブサイトをご覧いただき、誠にありがとうございます。"}</p>
                         {aboutTH.map((item, index) => (
                             <ScrollReveal key={index}>
                                 <p className="content-about">
