@@ -199,17 +199,17 @@ export default function Partners() {
                         <p className={`partnerList5 ${suse.variable}`}>HORI GLASS</p>
                         <p className='partnerList6'>MORIROKU</p>
                         <p className='partnerList7'><span className='lynet'>PO</span>LYNET</p>
-                        <p className={`partnerList9 ${im_fell_english.variable}`}>TEC</p>
+                        <p className={`partnerList9 ${im_fell_english.variable}`}>TOYODENSO</p>
                         <p className={`partnerList10`}>TOACS</p>
                         <p className={`partnerList11 ${sniglet.variable}`}>INOAC</p>
                         <p className={`partnerList12 ${encode_sans_semi_condensed.variable}`}>SANKO GOSEI</p>
                         <p className='partnerList13'>KOJIMA</p>
-                        <p className={`partnerList14 ${piazzolla.variable}`}>STC</p>
+                        <p className={`partnerList14 ${piazzolla.variable}`}>Shiraishi Calcium</p>
                         <p className='partnerList15'>NARUMI</p>
                         <p className={`partnerList16 ${cantora_one}`}>RESONAC</p>
                         <p className='partnerList17'><span className='p'>P</span> <span className='i'>I </span>INDUSTRY</p>
                         <p className='partnerList20'>ELASTOMIX</p>
-                        <p className='partnerList21'>DZ</p>
+                        <p className='partnerList21'>Thai Diamond & Zebra Electric</p>
                         <p className={`partnerList22 ${sour_gummy.variable}`}>SUNMETAL</p>
                         <p className={`partnerList23 ${poetsen_one.variable}`}>TOKAI JIEI ASIA</p>    
                         <p className='partnerList25'>OKAYASU</p>
@@ -217,6 +217,7 @@ export default function Partners() {
                         <p className='partnerList27'>KASEI KOGYO</p>
                         <p className='partnerList28'>PILKINGTON</p>
                         <p className='partnerList29'>JIAXING JIEI</p>
+                        <p className='partnerList30'>GREEN TOKAI</p>
 
                     </div>
 

@@ -37,7 +37,7 @@ export default function AboutJIEI() {
                         <div className="line"></div>
                     </ScrollReveal>
                     <ScrollReveal>
-                        <h1 className='text-jiei-about-page'>{lang === ('th') ? "บริษัท เจไออีไอ (ประเทศไทย) จำกัด – ผู้ผลิตชิ้นส่วนยางรถยนต์" : lang === ('en') ? "JIEI (Thailand) Co., Ltd. - Automotive Rubber Parts Manufacturer" : "JIEI（Thailand）株式会社 – 自動車用ゴム部品メーカー"}
+                        <h1 className='text-jiei-about-page'>{lang === ('th') ? "บริษัท เจไออีไอ (ไทยแลนด์) จำกัด – เป็นผู้ผลิตชิ้นส่วนซีลยาง" : lang === ('en') ? "JIEI (Thailand) Co., Ltd. - Automotive Rubber Parts Manufacturer" : "JIEI（Thailand）株式会社 – 自動車用ゴム部品メーカー"}
                         </h1>
                     </ScrollReveal>
                     <ScrollReveal>

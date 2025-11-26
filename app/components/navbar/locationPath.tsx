@@ -68,24 +68,24 @@ export default function Nav() {
     'ネットワーク',
     'お問い合わせ'
   ]
-  const MenuProductTH = [
-    'ชิ้นส่วนสำหรับกระจก',
-    'ชิ้นส่วนห้องเครื่องยนต์',
-    'ชิ้นส่วนประตู',
-    // 'ผลิตภัณฑ์สั่งคำพิเศษ',
-  ]
-  const MenuProductEN = [
-    'Parts for Glass',
-    'Engine Room Parts',
-    'Door Parts',
-    // 'Products Collection',
-  ]
-  const MenuProductJP = [
-    'ガラス用部品',
-    'エンジンルーム部品',
-    'ドア部品',
-    // 'すべての製品',
-  ]
+  // const MenuProductTH = [
+  //   'ชิ้นส่วนสำหรับกระจก',
+  //   'ชิ้นส่วนห้องเครื่องยนต์',
+  //   'ชิ้นส่วนประตู',
+  //   // 'ผลิตภัณฑ์สั่งคำพิเศษ',
+  // ]
+  // const MenuProductEN = [
+  //   'Parts for Glass',
+  //   'Engine Room Parts',
+  //   'Door Parts',
+  //   // 'Products Collection',
+  // ]
+  // const MenuProductJP = [
+  //   'ガラス用部品',
+  //   'エンジンルーム部品',
+  //   'ドア部品',
+  //   // 'すべての製品',
+  // ]
 
   const MenuProductPath = [
     '/products/Glass',
@@ -145,18 +145,20 @@ export default function Nav() {
 
                 {/* <NavProduct /> */}
                 <div>
-                  <li className={`li-menu ${Path === '/products/Glass' || Path === '/products/Engine' || Path === '/products/Door' || Path === '/products/custom-parts' ? 'path' : ''}`}>
+                  <li className={`li-menu ${Path === '/products/Glass' || Path === '/products/Engine' || Path === '/products/Door' || Path === '/products/custom-parts' || Path === '/products' ? 'path' : ''}`}>
                     <div className="hover-for-show-product">
                       <input type="checkbox" className="dropdown-menu" id="dropdown-menu" ref={menuCheck} />
                       <span className="nav-link">
                         <label htmlFor="dropdown-menu">
-                          <span className='category-product'>{lang === ('th') ? "คอลเลกชันผลิตภัณฑ์" : lang === ('en') ? "Products Collection" : "製品"}</span>
+                          <Link href={'/products'} className="nav-link" title="JIEI Thailand Homepage - Automotive Rubber Parts Manufacturer">
+                            <span className='category-product'>{lang === ('th') ? "คอลเลกชันผลิตภัณฑ์" : lang === ('en') ? "Products Collection" : "製品"}</span>
+                          </Link>
                         </label>
                       </span>
-                      <i className="chevron-down bi bi-chevron-down"></i>
+                      {/* <i className="chevron-down bi bi-chevron-down"></i> */}
                       <div className="product-jiei-thai">
                         <ul className="ul-product">
-                          {MenuProductTH.map((item, index) => (
+                          {/* {MenuProductTH.map((item, index) => (
                             <Link key={index}
                               onClick={closeMenu} href={`${MenuProductPath[index]}`}
                               className="Link-product-class"
@@ -170,7 +172,7 @@ export default function Nav() {
                               </li>
                             </Link>
 
-                          ))}
+                          ))} */}
                         </ul>
                       </div>
                     </div>
