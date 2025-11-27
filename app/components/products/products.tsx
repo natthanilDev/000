@@ -425,7 +425,7 @@ useEffect(()=>{
               </div>
 
               <form onSubmit={submitData} className='form-contactUs'>
-                <h2 className='text-contactUs'>สอบถามเกี่ยวกับสินค้า {lang === 'th' ? productTH[selectedProduct - 1].title : lang === 'en' ? productsEN[selectedProduct - 1].title : productJP[selectedProduct - 1].content}</h2>
+                <h2 className='text-contactUs'>{lang === 'th' ? "สอบถามเกี่ยวกับสินค้า ": lang === 'en' ?" Product Inquiry" :" 商品に関するお問い合わせ" } {lang === 'th' ? productTH[selectedProduct - 1].title : lang === 'en' ? productsEN[selectedProduct - 1].title : productJP[selectedProduct - 1].title}</h2>
 
                 <div className="input-form-contactUs">
                   <label className='label-input-contactUs' htmlFor="product-name">Product Name</label>

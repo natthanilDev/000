@@ -5640,13 +5640,17 @@ h4 {
 }
 
 .Hood-Seal {
-  font-size: 20px;
+  font-size: 22px;
   font-weight: bold;
   display: -webkit-box;
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
   overflow: hidden;
-
+  background-color: #000055;
+  color: #fff;
+  padding: 10px 0;
+  border-radius: 6px;
+  
 }
 
 
