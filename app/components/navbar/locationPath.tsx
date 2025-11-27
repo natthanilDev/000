@@ -87,12 +87,12 @@ export default function Nav() {
   //   // 'すべての製品',
   // ]
 
-  const MenuProductPath = [
-    '/products/Glass',
-    '/products/Engine',
-    '/products/Door',
-    // '/products/custom-parts',
-  ]
+  // const MenuProductPath = [
+  //   '/products/Glass',
+  //   '/products/Engine',
+  //   '/products/Door',
+  //   // '/products/custom-parts',
+  // ]
 
   useEffect(() => {
     if (typeof window !== 'undefined') {

@@ -4,6 +4,7 @@ import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import Swal from 'sweetalert2'
+import ScrollReveal from '../ScrollReveal/ScrollReveal';
 
 export default function Products() {
   const [selectedProduct, setSelectedProduct] = useState<number | null>(null);
@@ -18,7 +19,7 @@ export default function Products() {
     '#Engine Seal',
     '#Weatherstrip Door Seal',
   ]
-  const products = [
+  const productsEN = [
     // Hood Seal
     {
       id: 1,
@@ -82,6 +83,126 @@ export default function Products() {
       content: `[EPDM sponge rubber + EPDM solid rubber] Sealing material that suppresses warm air and allows only cool air to pass through the engine room to boost fuel efficiency.`
     },
   ]
+
+  const productTH = [
+    {
+      id: 1,
+      category: 'ซีลฝากระโปรง',
+      title: 'ซีลฝากระโปรงหน้า',
+      image: '/Menu/Hood seal Front.png',
+      content: `[ผลิตจาก EPDM อัดรีด + TPO ขึ้นรูป] วัสดุซีลสำหรับฝากระโปรง ไฟหน้า และกระจังหน้า ปรับรูปตัดหน้าตัดให้ไม่รบกวนพื้นผิวด้านบนของห้องเครื่องด้านหน้า ทำให้ประสิทธิภาพการซีลดีขึ้น และสอดคล้องกับข้อกำหนดด้านชิ้นส่วนภายนอก`
+    },
+    {
+      id: 2,
+      category: 'ซีลฝากระโปรง',
+      title: 'ซีลฝากระโปรงหลัง',
+      image: '/Menu/Hood seal Rear.png',
+      content: `[EPDM ฟองน้ำ + EPDM ยางทึบ] วัสดุกันกระแทกระหว่างฝากระโปรงและคาวล์ท็อป การนำแกนเหล็กออกทำให้โครงสร้างมีน้ำหนักเบาลง`
+    },
+    {
+      id: 3,
+      category: 'ซีลกระจก',
+      title: 'โมลดิ้งกระจกหน้า',
+      image: '/Menu/Front Window Molding.png',
+      content: `[EPDM ฟองน้ำ + EPDM ยางทึบ + TPO ขึ้นรูป] การปรับจากวัสดุเรซินมาเป็นยาง ช่วยให้น้ำหนักเบาขึ้น เพิ่มประสิทธิภาพอากาศพลศาสตร์ และเพิ่มการเก็บเสียง`
+    },
+    {
+      id: 4,
+      category: 'ซีลกระจก',
+      title: 'Dam Rubber / Dam lip rubber',
+      image: '/Menu/Dam Rubber  Dam lip rubber.png',
+      content: `[วัสดุกันกระแทกระหว่างตัวถังและกระจก] ไม่เพียงแค่กันน้ำ แต่ยังช่วยเพิ่มความสวยงามภายนอกรถ รองรับความต้องการด้านเอกลักษณ์ของสินค้า`
+    },
+    {
+      id: 5,
+      category: 'ซีลขอบประตู',
+      title: 'ซีลประตูหลัง',
+      image: '/Menu/Back Door Weatherstrip.png',
+      content: `[วัสดุซีลระหว่างตัวรถและประตู] ได้รับการประเมินสูงในด้านการกันน้ำ การเก็บเสียง และประสิทธิภาพการปิดประตู อีกทั้งยังรองรับการออกแบบน้ำหนักเบา`
+    },
+    {
+      id: 6,
+      category: 'ซีลขอบช่องประตู',
+      title: 'ซีลโอเพนนิ่งประตู',
+      image: '/Menu/Door opening trim.png',
+      content: `[ผลิตภัณฑ์อัดรีด 3 ชั้น: EPDM ฟองน้ำ + EPDM ยางทึบ + แกนเหล็ก] มีรุ่น 4 ชั้นด้วย ใช้เป็นซีลติดประตูและกรอบประตู ให้ประสิทธิภาพสูงเรื่องการเก็บเสียง กันน้ำ การปิดประตู และน้ำหนักเบา`
+    },
+    {
+      id: 7,
+      category: 'ซีลล่างประตู',
+      title: 'ซีลล่างประตู',
+      image: '/Menu/Door lower seal.png',
+      content: `[วัสดุซีลสำหรับตัวรถและประตู] ป้องกันน้ำ โคลน และทรายได้ดีเยี่ยม โดดเด่นในด้านการเก็บเสียงและน้ำหนักเบา`
+    },
+    {
+      id: 8,
+      category: 'ซีลเครื่องยนต์',
+      title: 'ซีลห้องเครื่อง',
+      image: '/Menu/Air intake seal.png',
+      content: `[EPDM ฟองน้ำ + EPDM ยางทึบ] วัสดุซีลที่ช่วยกั้นอากาศร้อน และให้อากาศเย็นไหลผ่านเข้าสู่ห้องเครื่องเพื่อเพิ่มประสิทธิภาพการประหยัดน้ำมัน`
+    }
+
+  ]
+
+  const productJP = [
+    {
+      id: 1,
+      category: 'フードシール',
+      title: 'フロントフードシール',
+      image: '/Menu/Hood seal Front.png',
+      content: `[EPDM 押出製品 + TPO 成形品] フード、ヘッドライト、グリル用のシーリング材。断面形状を最適化し、エンジンルーム前上部との干渉を防ぎ、シール性能を向上。外装突起規制にも適合。`
+    },
+    {
+      id: 2,
+      category: 'フードシール',
+      title: 'リアフードシール',
+      image: '/Menu/Hood seal Rear.png',
+      content: `[EPDM スポンジゴム + EPDM ソリッドゴム] フードとカウルトップ間の緩衝材。芯材の除去により軽量化を実現。`
+    },
+    {
+      id: 3,
+      category: 'ガラスシール',
+      title: 'フロントウィンドウモールディング',
+      image: '/Menu/Front Window Molding.png',
+      content: `[EPDM スポンジゴム + EPDM ソリッドゴム + TPO 成形品] 樹脂からゴムへの変更で軽量化、空力性能、遮音性が向上。`
+    },
+    {
+      id: 4,
+      category: 'ガラスシール',
+      title: 'ダムラバー / ダムリップラバー',
+      image: '/Menu/Dam Rubber  Dam lip rubber.png',
+      content: `[車体とガラス間の緩衝材] 防水だけでなく車両外観の美観向上にも寄与。個性化ニーズに対応。`
+    },
+    {
+      id: 5,
+      category: 'ウェザーストリップドアシール',
+      title: 'バックドアウェザーストリップ',
+      image: '/Menu/Back Door Weatherstrip.png',
+      content: `[車体とドアのシーリング材] 防水性、遮音性、閉まり性能で高評価。市場ニーズに応える軽量設計も可能。`
+    },
+    {
+      id: 6,
+      category: 'ドアオープニングシール',
+      title: 'ドアオープニングシール',
+      image: '/Menu/Door opening trim.png',
+      content: `[3 層押出製品: EPDM スポンジ + EPDM ソリッド + 芯材] 4 層タイプもあり、遮音性、防水性、閉まり性能、軽量性に優れる。`
+    },
+    {
+      id: 7,
+      category: 'ドアロアシール',
+      title: 'ドアロアシール',
+      image: '/Menu/Door lower seal.png',
+      content: `[車体とドアのシーリング材] 水・泥・砂の侵入を防ぎ、遮音性と軽量性に優れる。`
+    },
+    {
+      id: 8,
+      category: 'エンジンシール',
+      title: 'エンジンシール',
+      image: '/Menu/Air intake seal.png',
+      content: `[EPDM スポンジゴム + EPDM ソリッドゴム] 暖気を遮断し、冷気のみをエンジンルームへ通すことで燃費向上に寄与。`
+    }
+
+  ]
   const containsURL = (text: string) => {
     const urlPattern = /(https?:\/\/|www\.)/i;
     return urlPattern.test(text);
@@ -90,7 +211,7 @@ export default function Products() {
 
 
 
-  const categories = [...new Set(products.map(p => p.category))]
+  const categories = [...new Set(productsEN.map(p => p.category))]
 
   const [dataForForm, setDataForForm] = useState({ productName: '', message: '', email: '', phone: '', honeypot: '' })
 
@@ -178,11 +299,11 @@ export default function Products() {
               text: lang === ('th') ? "เราจะติดต่อกลับโดยเร็วที่สุด" : lang === ('en') ? "We will contact you as soon as possible." : "できるだけ早くご連絡いたします。"
             });
             setDataForForm({
-                productName: '',
-                email: '',
-                message: '',
-                phone: '',
-                honeypot: ''
+              productName: '',
+              email: '',
+              message: '',
+              phone: '',
+              honeypot: ''
             });
             window.location.reload()
           } else {
@@ -206,24 +327,18 @@ export default function Products() {
   }
 
 
-
-
-
-
   useEffect(() => {
     if (typeof window !== 'undefined') {
       const storedLang = localStorage.getItem('lang') as 'th' | 'en' | 'jp' | null;
       if (storedLang) setLang(storedLang);
     }
-  })
-  useEffect(() => {
     if (selectedProduct !== null) {
       setDataForForm(prev => ({
         ...prev,
-        productName: products[selectedProduct - 1].title
+        productName: productsEN[selectedProduct - 1].title
       }))
     }
-  }, [selectedProduct])
+  }, [])
   return (
     <div>
 
@@ -232,49 +347,59 @@ export default function Products() {
           <div className="menuProductBox">
             <div className="boxMargin">
               {imageProductIntro.map((imageSrc, index) => (
-                <div key={index} className="menuProductItem">
-                  <Link href={location[index]}>
-                    <Image
-                      src={imageSrc}
-                      alt={`Product ${index + 1}`}
-                      width={200}
-                      height={250}
-                      className={`menuProductImage${index}`}
-                      loading='lazy'
-                    />
-                  </Link>
-                </div>
+                <ScrollReveal key={index}>
+                  <div key={index} className="menuProductItem">
+                    <Link href={location[index]}>
+                      <Image
+                        src={imageSrc}
+                        alt={`Product ${index + 1}`}
+                        width={200}
+                        height={250}
+                        className={`menuProductImage${index}`}
+                        loading='lazy'
+                      />
+                    </Link>
+                  </div>
+                </ScrollReveal>
               ))}
             </div>
           </div>
 
 
-          <div>
+          <div className='columns-product'>
             {categories.map(category => (
               <div key={category} className="menu-Hood-seal-Front" id={category}>
-                <h1 className="Hood-Seal">{category}</h1>
+                <ScrollReveal>
+                  <h1 className="Hood-Seal">{category}</h1>
+                </ScrollReveal>
+
                 <div className="grad-products">
-                  {products
+                  {productsEN
                     .filter(p => p.category === category)
                     .map((item, index) => (
+                      <ScrollReveal key={index}>
+                        <Link className='top-locationProduct' href={'#top'}>
+                          <div onClick={() => setSelectedProduct(item.id)} className="box-Hood-seal-Front">
+                            <div className="item-Hood-seal-Front-image">
+                              <Image
+                                src={item.image}
+                                alt={item.title}
+                                width={300}
+                                height={200}
+                                className="image-Hood-seal-Front"
+                                loading="lazy"
+                              />
+                            </div>
+                            <div className="item-Hood-seal-Front">
+                              <h2 className="titleProduct">
+                                {lang === 'th' ? productTH[item.id - 1].title : lang === 'en' ? item.title : productJP[item.id - 1].title}
+                              </h2>
+                              <p className="text-Hood-seal-Front">{lang === 'th' ? productTH[item.id - 1].content : lang === 'en' ? item.content : productJP[item.id - 1].content}</p>
+                            </div>
 
-                      <div onClick={() => setSelectedProduct(item.id)} key={index} className="box-Hood-seal-Front">
-                        <div className="item-Hood-seal-Front-image">
-                          <Image
-                            src={item.image}
-                            alt={item.title}
-                            width={300}
-                            height={200}
-                            className="image-Hood-seal-Front"
-                            loading="lazy"
-                          />
-                        </div>
-                        <div className="item-Hood-seal-Front">
-                          <h2 className="titleProduct">{item.title}</h2>
-                          <p className="text-Hood-seal-Front">{item.content}</p>
-                        </div>
-
-                      </div>
+                          </div>
+                        </Link>
+                      </ScrollReveal>
 
                     ))}
                 </div>
@@ -287,24 +412,24 @@ export default function Products() {
         <>
 
           <div className="title-product-active">
-            <h1 className='product-title-text'> {products[selectedProduct - 1].title}</h1>
+            <h1 className='product-title-text'> {lang === 'th' ? productTH[selectedProduct - 1].title : productsEN[selectedProduct - 1].title}</h1>
           </div>
           <div className="line" />
 
           <div className="grid-product-active">
             <div className="form-product-active">
               <div className="content-product-active">
-                <p className="content-active"> {products[selectedProduct - 1].content}</p>
+                <p className="content-active"> {lang === 'th' ? productTH[selectedProduct - 1].content : lang === 'en' ? productsEN[selectedProduct - 1].content : productJP[selectedProduct - 1].content}</p>
               </div>
 
               <form onSubmit={submitData} className='form-contactUs'>
-                <h2 className='text-contactUs'>สอบถามเกี่ยวกับสินค้า {products[selectedProduct].title}</h2>
+                <h2 className='text-contactUs'>สอบถามเกี่ยวกับสินค้า {lang === 'th' ? productTH[selectedProduct - 1].title : lang === 'en' ? productsEN[selectedProduct - 1].title : productJP[selectedProduct - 1].content}</h2>
 
                 <div className="input-form-contactUs">
                   <label className='label-input-contactUs' htmlFor="product-name">Product Name</label>
                   <div className="input-data-product">
-                    <input required defaultValue={products[selectedProduct - 1].title} readOnly className='input-contactUs' type="text" name="productName" id="product-name" />
-                    <input onChange={formData} type="hidden" defaultValue={products[selectedProduct - 1].title} name="productName" />
+                    <input required defaultValue={productsEN[selectedProduct - 1].title} readOnly className='input-contactUs' type="text" name="productName" id="product-name" />
+                    <input onChange={formData} type="hidden" defaultValue={productsEN[selectedProduct - 1].title} name="productName" />
                   </div>
                 </div>
 
@@ -341,7 +466,7 @@ export default function Products() {
 
             <div className="card-product-active">
               <div className="image-active-product">
-                <Image className='image-active' src={products[selectedProduct - 1].image} alt='' width={1000} height={1000} loading='lazy' />
+                <Image className='image-active' src={productsEN[selectedProduct - 1].image} alt='' width={1000} height={1000} loading='lazy' />
               </div>
             </div>
 
