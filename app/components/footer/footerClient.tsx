@@ -114,7 +114,11 @@ export default function FooterClient() {
             </div>
             <div className="contentFooter-box">
               <ul>
-                <li className='li-footer'>
+                 <li className='li-footer'>
+                  <Link href={'/products'} className="link-footer">{lang===('th') ? "ผลิตภัณฑ์" : lang===('en') ? "Products" : "製品"}</Link>
+                </li>
+
+                {/* <li className='li-footer'>
                   <Link href={'/products/engine-mount'} className="link-footer">{lang===('th') ? "แผ่นยึดเครื่องยนต์" : lang===('en') ? "Engine Mounts" : "エンジンマウント"}</Link>
                 </li>
                 <li className='li-footer'>
@@ -125,7 +129,7 @@ export default function FooterClient() {
                 </li>
                 <li className='li-footer'>
                   <Link href={'/products/custom-parts'} className="link-footer">{lang===('th') ? "คอลเลกชันผลิตภัณฑ์" : lang===('en') ? "Product Collection" : "製品コレクション"}</Link>
-                </li>
+                </li> */}
               </ul>
             </div>
           </div>

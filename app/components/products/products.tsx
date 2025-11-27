@@ -255,7 +255,7 @@ export default function Products() {
       }
     }
 
-    if (!dataForForm.productName || !dataForForm.email || !dataForForm.message || !dataForForm.phone) {
+    if ( !dataForForm.email || !dataForForm.message ) {
       Swal.fire({
         icon: 'warning',
         title: lang === ('th') ? 'กรุณากรอกข้อมูลในช่องที่จำเป็นให้ครบถ้วน' :
@@ -326,19 +326,21 @@ export default function Products() {
 
   }
 
-
-  useEffect(() => {
+useEffect(()=>{
     if (typeof window !== 'undefined') {
       const storedLang = localStorage.getItem('lang') as 'th' | 'en' | 'jp' | null;
       if (storedLang) setLang(storedLang);
     }
+},[])
+  useEffect(() => {
+  
     if (selectedProduct !== null) {
       setDataForForm(prev => ({
         ...prev,
         productName: productsEN[selectedProduct - 1].title
       }))
     }
-  }, [])
+  }, [selectedProduct])
   return (
     <div>
 
