@@ -3,7 +3,7 @@ import About from "../components/about/about"
 export default function page() {
   const seo = (
     <>
-      {/* 🔎 Structured Data */}
+    
       <script type="application/ld+json" dangerouslySetInnerHTML={{
         __html: JSON.stringify({
           "@context": "https://schema.org",
