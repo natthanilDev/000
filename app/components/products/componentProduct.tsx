@@ -378,7 +378,7 @@ useEffect(()=>{
                 <div className="grad-products">
                   {productsEN
                     .filter(p => p.category === category)
-                    .map((item, index) => (
+                    .map((item, index) => ( 
                       <ScrollReveal key={index}>
                         <Link className='top-locationProduct' href={'#top'}>
                           <div onClick={() => setSelectedProduct(item.id)} className="box-Hood-seal-Front">
@@ -488,6 +488,7 @@ useEffect(()=>{
         </>
       )}
 
+    
     </div>
   )
 }
