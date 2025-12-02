@@ -25,14 +25,14 @@ export default function Products() {
       id: 1,
       category: 'Hood Seal',
       title: 'Hood Seal Front',
-      image: '/Menu/Hood seal Front.png',
+      image: '/Products/Hood seal Front.png',
       content: `[EPDM extrusion product + TPO molded product] Sealing material for hood, headlight, and grille. Having refined its cross-section to avoid interference with the front upper surface of the engine room, it improves sealing performance and complies with the regulation for exterior prongs.`
     },
     {
       id: 2,
       category: 'Hood Seal',
       title: 'Hood Seal Rear',
-      image: '/Menu/Hood seal Rear.png',
+      image: '/Products/Hood seal Rear.png',
       content: `[EPDM sponge rubber + EPDM solid rubber] Buffering material between the hood and the cowl top. Removing the cored bar enabled lightweight construction.`
     },
     // Glass Seal
@@ -40,14 +40,14 @@ export default function Products() {
       id: 3,
       category: 'Glass Seal',
       title: 'Front Window Molding',
-      image: '/Menu/Front Window Molding.png',
+      image: '/Products/Front Window Molding.png',
       content: `[EPDM sponge rubber + EPDM solid rubber + TPO molded product] Transition from resin to rubber enhanced lightweight construction, aerodynamic performance, and sound insulation.`
     },
     {
       id: 4,
       category: 'Glass Seal',
       title: 'Dam Rubber / Dam lip rubber',
-      image: '/Menu/Dam Rubber  Dam lip rubber.png',
+      image: '/Products/Dam Rubber  Dam lip rubber.png',
       content: `[Buffering material between vehicle body and glass] Not only waterproof, but also adding aesthetic value to the vehicle’s external appearance. Corresponding to the demand for product individualization.`
     },
     // Weatherstrip Door Seal
@@ -55,7 +55,7 @@ export default function Products() {
       id: 5,
       category: 'Weatherstrip Door Seal',
       title: 'Back Door Weatherstrip',
-      image: '/Menu/Back Door Weatherstrip.png',
+      image: '/Products/Back Door Weatherstrip.png',
       content: `[Sealing material for vehicle body and doors] This product is highly evaluated in terms of water-tightness, sound insulation, and closing performance. It also enables lightweight design to respond to market needs.`
     },
     // Door Opening Seal
@@ -63,7 +63,7 @@ export default function Products() {
       id: 6,
       category: 'Door Opening Seal',
       title: 'Door Opening Seal',
-      image: '/Menu/Door opening trim.png',
+      image: '/Products/Door opening trim.png',
       content: `[3-layer extrusion product: EPDM sponge rubber + EPDM solid rubber + cored bar.] A 4-layer product is also available. As a sealing material attached to vehicle doors and door frames, it is proven to deliver excellent sound insulation, water-tightness, closing performance, and lightweight characteristics.`
     },
     // Door Lower Seal
@@ -71,7 +71,7 @@ export default function Products() {
       id: 7,
       category: 'Door Lower Seal',
       title: 'Door Lower Seal',
-      image: '/Menu/Door lower seal.png',
+      image: '/Products/Door lower seal.png',
       content: `[Sealing material for vehicle body and doors] A sealing material to keep out water, mud, and sand. It is superior in sound insulation and lightness.`
     },
     // Engine Seal
@@ -79,7 +79,7 @@ export default function Products() {
       id: 8,
       category: 'Engine Seal',
       title: 'Engine Seal',
-      image: '/Menu/Air intake seal.png',
+      image: '/Products/Air intake seal.png',
       content: `[EPDM sponge rubber + EPDM solid rubber] Sealing material that suppresses warm air and allows only cool air to pass through the engine room to boost fuel efficiency.`
     },
   ]
@@ -89,56 +89,56 @@ export default function Products() {
       id: 1,
       category: 'ซีลฝากระโปรง',
       title: 'ซีลฝากระโปรงหน้า',
-      image: '/Menu/Hood seal Front.png',
+      image: '/Products/Hood seal Front.png',
       content: `[ผลิตจาก EPDM อัดรีด + TPO ขึ้นรูป] วัสดุซีลสำหรับฝากระโปรง ไฟหน้า และกระจังหน้า ปรับรูปตัดหน้าตัดให้ไม่รบกวนพื้นผิวด้านบนของห้องเครื่องด้านหน้า ทำให้ประสิทธิภาพการซีลดีขึ้น และสอดคล้องกับข้อกำหนดด้านชิ้นส่วนภายนอก`
     },
     {
       id: 2,
       category: 'ซีลฝากระโปรง',
       title: 'ซีลฝากระโปรงหลัง',
-      image: '/Menu/Hood seal Rear.png',
+      image: '/Products/Hood seal Rear.png',
       content: `[EPDM ฟองน้ำ + EPDM ยางทึบ] วัสดุกันกระแทกระหว่างฝากระโปรงและคาวล์ท็อป การนำแกนเหล็กออกทำให้โครงสร้างมีน้ำหนักเบาลง`
     },
     {
       id: 3,
       category: 'ซีลกระจก',
       title: 'โมลดิ้งกระจกหน้า',
-      image: '/Menu/Front Window Molding.png',
+      image: '/Products/Front Window Molding.png',
       content: `[EPDM ฟองน้ำ + EPDM ยางทึบ + TPO ขึ้นรูป] การปรับจากวัสดุเรซินมาเป็นยาง ช่วยให้น้ำหนักเบาขึ้น เพิ่มประสิทธิภาพอากาศพลศาสตร์ และเพิ่มการเก็บเสียง`
     },
     {
       id: 4,
       category: 'ซีลกระจก',
       title: 'Dam Rubber / Dam lip rubber',
-      image: '/Menu/Dam Rubber  Dam lip rubber.png',
+      image: '/Products/Dam Rubber  Dam lip rubber.png',
       content: `[วัสดุกันกระแทกระหว่างตัวถังและกระจก] ไม่เพียงแค่กันน้ำ แต่ยังช่วยเพิ่มความสวยงามภายนอกรถ รองรับความต้องการด้านเอกลักษณ์ของสินค้า`
     },
     {
       id: 5,
       category: 'ซีลขอบประตู',
       title: 'ซีลประตูหลัง',
-      image: '/Menu/Back Door Weatherstrip.png',
+      image: '/Products/Back Door Weatherstrip.png',
       content: `[วัสดุซีลระหว่างตัวรถและประตู] ได้รับการประเมินสูงในด้านการกันน้ำ การเก็บเสียง และประสิทธิภาพการปิดประตู อีกทั้งยังรองรับการออกแบบน้ำหนักเบา`
     },
     {
       id: 6,
       category: 'ซีลขอบช่องประตู',
       title: 'ซีลโอเพนนิ่งประตู',
-      image: '/Menu/Door opening trim.png',
+      image: '/Products/Door opening trim.png',
       content: `[ผลิตภัณฑ์อัดรีด 3 ชั้น: EPDM ฟองน้ำ + EPDM ยางทึบ + แกนเหล็ก] มีรุ่น 4 ชั้นด้วย ใช้เป็นซีลติดประตูและกรอบประตู ให้ประสิทธิภาพสูงเรื่องการเก็บเสียง กันน้ำ การปิดประตู และน้ำหนักเบา`
     },
     {
       id: 7,
       category: 'ซีลล่างประตู',
       title: 'ซีลล่างประตู',
-      image: '/Menu/Door lower seal.png',
+      image: '/Products/Door lower seal.png',
       content: `[วัสดุซีลสำหรับตัวรถและประตู] ป้องกันน้ำ โคลน และทรายได้ดีเยี่ยม โดดเด่นในด้านการเก็บเสียงและน้ำหนักเบา`
     },
     {
       id: 8,
       category: 'ซีลเครื่องยนต์',
       title: 'ซีลห้องเครื่อง',
-      image: '/Menu/Air intake seal.png',
+      image: '/Products/Air intake seal.png',
       content: `[EPDM ฟองน้ำ + EPDM ยางทึบ] วัสดุซีลที่ช่วยกั้นอากาศร้อน และให้อากาศเย็นไหลผ่านเข้าสู่ห้องเครื่องเพื่อเพิ่มประสิทธิภาพการประหยัดน้ำมัน`
     }
 
@@ -149,56 +149,56 @@ export default function Products() {
       id: 1,
       category: 'フードシール',
       title: 'フロントフードシール',
-      image: '/Menu/Hood seal Front.png',
+      image: '/Products/Hood seal Front.png',
       content: `[EPDM 押出製品 + TPO 成形品] フード、ヘッドライト、グリル用のシーリング材。断面形状を最適化し、エンジンルーム前上部との干渉を防ぎ、シール性能を向上。外装突起規制にも適合。`
     },
     {
       id: 2,
       category: 'フードシール',
       title: 'リアフードシール',
-      image: '/Menu/Hood seal Rear.png',
+      image: '/Products/Hood seal Rear.png',
       content: `[EPDM スポンジゴム + EPDM ソリッドゴム] フードとカウルトップ間の緩衝材。芯材の除去により軽量化を実現。`
     },
     {
       id: 3,
       category: 'ガラスシール',
       title: 'フロントウィンドウモールディング',
-      image: '/Menu/Front Window Molding.png',
+      image: '/Products/Front Window Molding.png',
       content: `[EPDM スポンジゴム + EPDM ソリッドゴム + TPO 成形品] 樹脂からゴムへの変更で軽量化、空力性能、遮音性が向上。`
     },
     {
       id: 4,
       category: 'ガラスシール',
       title: 'ダムラバー / ダムリップラバー',
-      image: '/Menu/Dam Rubber  Dam lip rubber.png',
+      image: '/Products/Dam Rubber  Dam lip rubber.png',
       content: `[車体とガラス間の緩衝材] 防水だけでなく車両外観の美観向上にも寄与。個性化ニーズに対応。`
     },
     {
       id: 5,
       category: 'ウェザーストリップドアシール',
       title: 'バックドアウェザーストリップ',
-      image: '/Menu/Back Door Weatherstrip.png',
+      image: '/Products/Back Door Weatherstrip.png',
       content: `[車体とドアのシーリング材] 防水性、遮音性、閉まり性能で高評価。市場ニーズに応える軽量設計も可能。`
     },
     {
       id: 6,
       category: 'ドアオープニングシール',
       title: 'ドアオープニングシール',
-      image: '/Menu/Door opening trim.png',
+      image: '/Products/Door opening trim.png',
       content: `[3 層押出製品: EPDM スポンジ + EPDM ソリッド + 芯材] 4 層タイプもあり、遮音性、防水性、閉まり性能、軽量性に優れる。`
     },
     {
       id: 7,
       category: 'ドアロアシール',
       title: 'ドアロアシール',
-      image: '/Menu/Door lower seal.png',
+      image: '/Products/Door lower seal.png',
       content: `[車体とドアのシーリング材] 水・泥・砂の侵入を防ぎ、遮音性と軽量性に優れる。`
     },
     {
       id: 8,
       category: 'エンジンシール',
       title: 'エンジンシール',
-      image: '/Menu/Air intake seal.png',
+      image: '/Products/Air intake seal.png',
       content: `[EPDM スポンジゴム + EPDM ソリッドゴム] 暖気を遮断し、冷気のみをエンジンルームへ通すことで燃費向上に寄与。`
     }
 
