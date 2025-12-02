@@ -255,7 +255,7 @@ export default function Products() {
       }
     }
 
-    if ( !dataForForm.email || !dataForForm.message ) {
+    if (!dataForForm.email || !dataForForm.message) {
       Swal.fire({
         icon: 'warning',
         title: lang === ('th') ? 'กรุณากรอกข้อมูลในช่องที่จำเป็นให้ครบถ้วน' :
@@ -326,14 +326,14 @@ export default function Products() {
 
   }
 
-useEffect(()=>{
+  useEffect(() => {
     if (typeof window !== 'undefined') {
       const storedLang = localStorage.getItem('lang') as 'th' | 'en' | 'jp' | null;
       if (storedLang) setLang(storedLang);
     }
-},[])
+  }, [])
   useEffect(() => {
-  
+
     if (selectedProduct !== null) {
       setDataForForm(prev => ({
         ...prev,
@@ -378,26 +378,32 @@ useEffect(()=>{
                 <div className="grad-products">
                   {productsEN
                     .filter(p => p.category === category)
-                    .map((item, index) => ( 
+                    .map((item, index) => (
                       <ScrollReveal key={index}>
                         <Link className='top-locationProduct' href={'#top'}>
                           <div onClick={() => setSelectedProduct(item.id)} className="box-Hood-seal-Front">
-                            <div className="item-Hood-seal-Front-image">
-                              <Image
-                                src={item.image}
-                                alt={item.title}
-                                width={300}
-                                height={200}
-                                className="image-Hood-seal-Front"
-                                loading="lazy"
-                              />
+                            <div className="box-spi-product">
+                              <div className="item-Hood-seal-Front-image">
+                                <Image
+                                  src={item.image}
+                                  alt={item.title}
+                                  width={300}
+                                  height={200}
+                                  className="image-Hood-seal-Front"
+                                  loading="lazy"
+                                />
+                                 <h2 className="titleProduct">
+                                  {lang === 'th' ? productTH[item.id - 1].title : lang === 'en' ? item.title : productJP[item.id - 1].title}
+                                </h2>
+                              </div>
+                              <div className="item-Hood-seal-Front">
+                                {/* <h2 className="titleProduct">
+                                  {lang === 'th' ? productTH[item.id - 1].title : lang === 'en' ? item.title : productJP[item.id - 1].title}
+                                </h2> */}
+                                <p className="text-Hood-seal-Front">{lang === 'th' ? productTH[item.id - 1].content : lang === 'en' ? item.content : productJP[item.id - 1].content}</p>
+                              </div>
                             </div>
-                            <div className="item-Hood-seal-Front">
-                              <h2 className="titleProduct">
-                                {lang === 'th' ? productTH[item.id - 1].title : lang === 'en' ? item.title : productJP[item.id - 1].title}
-                              </h2>
-                              <p className="text-Hood-seal-Front">{lang === 'th' ? productTH[item.id - 1].content : lang === 'en' ? item.content : productJP[item.id - 1].content}</p>
-                            </div>
+
 
                           </div>
                         </Link>
@@ -425,7 +431,7 @@ useEffect(()=>{
               </div>
 
               <form onSubmit={submitData} className='form-contactUs'>
-                <h2 className='text-contactUs'>{lang === 'th' ? "สอบถามเกี่ยวกับสินค้า ": lang === 'en' ?" Product Inquiry" :" 商品に関するお問い合わせ" } {lang === 'th' ? productTH[selectedProduct - 1].title : lang === 'en' ? productsEN[selectedProduct - 1].title : productJP[selectedProduct - 1].title}</h2>
+                <h2 className='text-contactUs'>{lang === 'th' ? "สอบถามเกี่ยวกับสินค้า " : lang === 'en' ? " Product Inquiry" : " 商品に関するお問い合わせ"} {lang === 'th' ? productTH[selectedProduct - 1].title : lang === 'en' ? productsEN[selectedProduct - 1].title : productJP[selectedProduct - 1].title}</h2>
 
                 <div className="input-form-contactUs">
                   <label className='label-input-contactUs' htmlFor="product-name">Product Name</label>
@@ -488,7 +494,7 @@ useEffect(()=>{
         </>
       )}
 
-    
+
     </div>
   )
 }
