@@ -77,20 +77,20 @@ export default function Tach() {
     const contentTH1 = [
         'เรามีการวิจัยและพัฒนาเพื่อสร้างสรรค์ยางคุณภาพสูง',
         'และตรวจสอบเพื่อให้มั่นใจว่าเป็นไปตามคุณสมบัติทางกายภาพที่หลากหลาย',
-        "",
+        "ตรวจสอบความแข็งและความถ่วงจำเพาะของผลิตภัณฑ์",
         "",
     ]
 
     const contentEN1 = [
         "We are engaged in research and development for superior rubber.",
         "And check to ensure that it satisfies a variety of physical property requirements.",
-        "",
+        "Check to ensure hardness & Specific gravity of products",
         "",
     ]
     const contentJP1 = [
         '当社は高品質なゴムの研究開発に取り組んでいます。',
         'さらに、さまざまな物理的特性の要件を満たしていることを確認します。',
-        '',
+        '製品の硬度と比重を確認する',
         '',
     ]
 
@@ -99,7 +99,7 @@ export default function Tach() {
         'การวัดการกระจายแรงดัน',
         'การประเมินประสิทธิภาพการกันเสียง',
         'การวัดแรงแบบไดนามิก',
-        // 'การประเมินค่าความเสียดทานขณะเลื่อน',
+        'เครื่องวัดขนาดชิ้นงานด้วยภาพเสมือนจริง',
     ]
 
     const topicEN2 = [
@@ -107,7 +107,7 @@ export default function Tach() {
         "Pressure Distribution Measurements",
         "Sound-Insulating Performance Evaluations",
         "Dynamic Load Measurements",
-        // "Sliding Friction Ratings",
+        "Video Measuring Machine ",
     ]
 
     const topicJP2 = [
@@ -115,7 +115,7 @@ export default function Tach() {
         '圧力分布測定',
         '防音性能評価',
         '動的荷重測定',
-        // '滑り摩擦評価',
+        'ビデオ測定機',    
     ]
 
     // ---------------------------------------------------------------------------
@@ -126,7 +126,7 @@ export default function Tach() {
         "การวัดแรงกดที่กระทำบนผลิตภัณฑ์แบบเรียลไทม์ช่วยในการวิเคราะห์ข้อบกพร่องของผลิตภัณฑ์",
         "เนื่องจากลูกค้าต้องการห้องโดยสารที่สะดวกสบาย เราจึงมุ่งมั่นค้นคว้าวัสดุที่มีคุณสมบัติการกันเสียงที่ดียิ่งขึ้นอย่างต่อเนื่อง",
         "",
-        "",
+        "ตรวจสอบให้มั่นใจว่าขนาดทั้งหมดของผลิตภัณฑ์ถูกต้อง",
     ]
 
 
@@ -135,7 +135,7 @@ export default function Tach() {
         "The measuring of contact pressure exerted on products in real-time aids in the analysis of product defects.",
         "As comfortable cabin spaces are highly desired by our customers, we are constantly in pursuit of materials with enhanced sound-insulating performance.",
         "",
-        "",
+        "Check to ensure all dimensions of products",
     ]
 
     const contentJP2 = [
@@ -143,7 +143,7 @@ export default function Tach() {
         '製品に加わる接触圧力をリアルタイムで測定することで、製品の欠陥分析に役立ちます。',
         '快適なキャビン空間はお客様に非常に求められているため、当社は防音性能を向上させた材料の研究を常に行っています。',
         "",
-        "",
+        "製品の全ての寸法が正しいことを確認する",
     ]
     // ----------------------------------------------------------
 
@@ -155,7 +155,7 @@ export default function Tach() {
     // const contentAnalysisEN = ["CAD Drawing", "Structural Analysis", "Material Simulation", "Product Testing"]
     // const contentAnalysisJP = ["CAD図面作成", "構造解析", "材料シミュレーション", "製品試験"]
 
-    const materials = ['/03_r1_c1.png', '/03_r1_c3.png', '/03_r1_c5.png', '/03_r1_c8.png']
+    const materials = ['/03_r1_c1.png', '/03_r1_c3.png', '/tech (2).png', '/tech (1).png']
 
     // const contentMaterialsTH = ['เครื่องทดสอบการรีด', "เครื่องวัดความหนืดแบบ Mooney", "เครื่องทดสอบแรงดึง", "การวิเคราะห์แรงกดอัดและความเค้นสัมผัส"]
     // const contentMaterialsEN = ["Test Roll", "Money Viscosity meter", "Tensile strength testing machine", "Compressive load analysis and contact stress analysis"]
@@ -165,7 +165,7 @@ export default function Tach() {
 
 
 
-    const evaluation = ['/04_r1_c1.png', '/04_r1_c3.png', '/04_r1_c5.png', '/04_r1_c8.png', '/04_r1_c8.png']
+    const evaluation = ['/04_r1_c1.png', '/04_r1_c3.png', '/04_r1_c5.png', '/04_r1_c8.png', '/tech (3).png', ]  //เปลี่ยนรูปสุดท้าย
 
     // const contentEvaluationTH = ["เครื่องทดสอบแรงกด", "การกระจายแรงดันบนพื้นผิว", 'การวัดการกระจายแรงดันบนพื้นผิว', "การวัดสมรรถนะการกันเสียงแบบง่าย"]
     // const contentEvaluationEN = ["Load Testing Machine", "Surface Pressure Distribution", "Surface Pressure Distribution Measurement", "Simple Sound Insulation Performance Measurement"]

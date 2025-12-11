@@ -14,7 +14,7 @@ export default function AboutDescription() {
     return (
         <div>
             <ScrollReveal>
-                <h1 className='about-company-name'>{lang === ('th') ? "บริษัท เจไออีไอ (ประเทศไทย) จำกัด" : lang === ('en') ? "JIEI (Thailand) Co., Ltd." : "ジェイアイ (タイランド)株式会社"} </h1>
+                <h1 className='about-company-name'>{lang === ('th') ? "บริษัท เจไออีไอ (ไทยแลนด์) จำกัด" : lang === ('en') ? "JIEI (Thailand) Co., Ltd." : "ジェイアイ (タイランド)株式会社"} </h1>
             </ScrollReveal>
 
             <ScrollReveal>

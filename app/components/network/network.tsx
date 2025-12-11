@@ -184,7 +184,8 @@ export default function Network() {
                         </div>
 
                         <ScrollReveal>
-                            <h1 className="tokai-group">{lang===('th') ? "กลุ่มบริษัท Tokai Kogyo" : lang===('en') ? "Tokai Kogyo Group" : "東海工業グループ"}</h1>
+                            <h1 className="tokai-group">{lang===('th') ? "กลุ่มบริษัท Kasei Kogyo" : lang===('en') ? "Kasei Kogyo Group" : "化成工業グループ"}  </h1>
+
                             <div className="scrollbar">
                                 <div className="network-box">
                                     {company.map((item, index) => (
@@ -217,7 +218,8 @@ export default function Network() {
 
 
                         <ScrollReveal>
-                            <h1 className="tokai-group">{lang===('th') ? "กลุ่มบริษัท Kasei Kogyo" : lang===('en') ? "Kasei Kogyo Group" : "化成工業グループ"}  </h1>
+                            <h1 className="tokai-group">{lang===('th') ? "กลุ่มบริษัท Tokai Kogyo" : lang===('en') ? "Tokai Kogyo Group" : "東海工業グループ"}</h1>
+
                             <div className="scrollbar">
                                 <div className="network-box">
                                     {company1.map((item, index) => (

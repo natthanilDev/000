@@ -22,7 +22,7 @@ export default function IntroIndex() {
                         <div className="border-display">
                             <div className="company_name_box">
                                 <h1 className="company_name">
-                                   {lang === 'th' ? 'บริษัท เจไออีไอ (ไทยแลนด์) จํากัด'  : lang === 'en' ? 'JIEI THAILAND CO., LTD.' : 'JIEI THAILAND CO., LTD.'} 
+                                   {lang === 'th' ? 'บริษัท เจไออีไอ (ไทยแลนด์) จํากัด'  : lang === 'en' ? 'JIEI (THAILAND) CO., LTD.' : 'JIEI (THAILAND) CO., LTD.'} 
                                 </h1>
                             </div>
                             <div className="company_name_box">

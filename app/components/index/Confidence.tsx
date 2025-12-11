@@ -12,8 +12,8 @@ export default function Confidence() {
     const Development = [
         '/03_r1_c1.png',
         '/03_r1_c3.png',
-        '/03_r1_c5.png',
-        '/03_r1_c8.png',
+        '/tech (2).png',
+        '/tech (1).png',
         
 
     ]
@@ -22,6 +22,7 @@ export default function Confidence() {
         '/04_r1_c3.png',
         '/04_r1_c5.png',
         '/04_r1_c8.png',
+        '/tech (3).png'
     ]
     useEffect(() => {
         if (typeof window !== 'undefined') {
