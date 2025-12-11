@@ -2,6 +2,20 @@
   "name": "jieithai-website",
   "version": "0.1.0",
   "private": true,
+  "description": "This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).",
+  "keywords": [],
+  "homepage": "https://github.com/natthanilDev/000#readme",
+  "bugs": {
+    "url": "https://github.com/natthanilDev/000/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/natthanilDev/000.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "index.js",
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
@@ -38,11 +52,5 @@
     "eslint-config-next": "15.5.2",
     "tailwindcss": "^4",
     "typescript": "^5"
-  },
-  "description": "This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).",
-  "main": "index.js",
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "module"
+  }
 }
