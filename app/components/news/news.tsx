@@ -6,6 +6,7 @@ import Head from 'next/head';
 import { useSearchParams } from "next/navigation";
 import ScrollReveal from '../ScrollReveal/ScrollReveal';
 import DOMPurify from "isomorphic-dompurify";
+import Link from 'next/link';
 export default function News() {
   const searchParams = useSearchParams();
   const [selectedNews, setSelectedNews] = useState<number | null>(null);
@@ -13,6 +14,8 @@ export default function News() {
   const page = searchParams.get("page");
   const currentPage = page ? parseInt(page, 10) : 1;
   const perPage = 8;
+
+
   const Image_Establishment = [
     [
       // รูปภาพวันก่อตั้งบริษัท
@@ -97,7 +100,6 @@ export default function News() {
       '/News/company-trip-2025/company-trip-2025 (54).jpg',
       '/News/company-trip-2025/company-trip-2025 (55).jpg',
       '/News/company-trip-2025/company-trip-2025 (56).jpg',
-
     ],
     [
       // รูปภาพรับสมัครงาน
@@ -107,6 +109,61 @@ export default function News() {
     [
       // รูปภาพวันเกิดบริษัท
       '/News/11-11.png'
+    ],
+    [
+      //New year party
+      '/News/New-Year-Party/Party (2).jpg',
+      '/News/New-Year-Party/Party (3).jpg',
+      '/News/New-Year-Party/Party (4).jpg',
+      '/News/New-Year-Party/Party (5).jpg',
+      '/News/New-Year-Party/Party (6).jpg',
+      '/News/New-Year-Party/Party (7).jpg',
+      '/News/New-Year-Party/Party (8).jpg',
+      '/News/New-Year-Party/Party (9).jpg',
+      '/News/New-Year-Party/Party (10).jpg',
+      '/News/New-Year-Party/Party (11).jpg',
+      '/News/New-Year-Party/Party (12).jpg',
+      '/News/New-Year-Party/Party (13).jpg',
+      '/News/New-Year-Party/Party (14).jpg',
+      '/News/New-Year-Party/Party (15).jpg',
+      '/News/New-Year-Party/Party (16).jpg',
+      '/News/New-Year-Party/Party (17).jpg',
+      '/News/New-Year-Party/Party (18).jpg',
+      '/News/New-Year-Party/Party (19).jpg',
+      '/News/New-Year-Party/Party (20).jpg',
+      '/News/New-Year-Party/Party (21).jpg',
+      '/News/New-Year-Party/Party (22).jpg',
+      '/News/New-Year-Party/Party (23).jpg',
+      '/News/New-Year-Party/Party (24).jpg',
+      '/News/New-Year-Party/Party (25).jpg',
+      '/News/New-Year-Party/Party (26).jpg',
+      '/News/New-Year-Party/Party (27).jpg',
+      '/News/New-Year-Party/Party (28).jpg',
+      '/News/New-Year-Party/Party (29).jpg',
+      '/News/New-Year-Party/Party (30).jpg',
+      '/News/New-Year-Party/Party (31).jpg',
+      '/News/New-Year-Party/Party (32).jpg',
+      '/News/New-Year-Party/Party (33).jpg',
+      '/News/New-Year-Party/Party (34).jpg',
+      '/News/New-Year-Party/Party (35).jpg',
+      '/News/New-Year-Party/Party (36).jpg',
+      '/News/New-Year-Party/Party (37).jpg',
+      '/News/New-Year-Party/Party (38).jpg',
+      '/News/New-Year-Party/Party (39).jpg',
+      '/News/New-Year-Party/Party (40).jpg',
+      '/News/New-Year-Party/Party (41).jpg',
+      '/News/New-Year-Party/Party (42).jpg',
+      '/News/New-Year-Party/Party (43).jpg',
+      '/News/New-Year-Party/Party (44).jpg',
+      '/News/New-Year-Party/Party (45).jpg',
+      '/News/New-Year-Party/Party (47).jpg',
+      '/News/New-Year-Party/Party (48).jpg',
+      '/News/New-Year-Party/Party (49).jpg',
+      '/News/New-Year-Party/Party (50).jpg',
+      '/News/New-Year-Party/Party (51).jpg',
+      '/News/New-Year-Party/Party (52).jpg',
+      '/News/New-Year-Party/Party (53).jpg',
+
     ]
 
   ]
@@ -115,8 +172,9 @@ export default function News() {
     // Description TH C1
     'ก่อตั้งบริษัท เจไออีไอ (ไทยแลนด์) จำกัด',
     'ท่องเที่ยวบริษัท เจไออีไอ (ไทยแลนด์)',
-    'รับสมัครพนักงานตำแหน่ง จป.วิชาชีพ (เจ้าหน้าที่ความปลอดภัยในการทำงานระดับวิชาชีพ)',
+    'รับสมัครพนักงานตำแหน่ง Staff',
     'วันที่ 11 พฤศจิกายน พ.ศ. 2568 วันครบรอบวันเกิดบริษัท เจไออีไอ (ไทยแลนด์)',
+    'งานเลี้ยงปีใหม่ ประจำปี 2025 วันที่ 5 ธันวาคม 2025'
   ];
   const newsEN = [
     //  วันก่อตั้งบริษัท
@@ -124,9 +182,10 @@ export default function News() {
     // Company trip
     'Company Trip – JIEI (Thailand)',
     // สมัครงาน
-    'Hiring: Professional Occupational Safety Officer (OSH Officer — Professional Level)',
+    'Now Hiring: Staff Position',
     // วันเกิดบริษัท
     'November 11, 2025 – Anniversary of JIEI (Thailand) Company’s Founding',
+    'New Year Party 2025 Date: 5 December 2025',
   ];
   const newsJP = [
 
@@ -135,9 +194,11 @@ export default function News() {
     // Company trip
     'JIEI（タイランド）社 社員旅行',
     // สมัครงาน
-    '募集：専門職 労働安全担当者（職業上の安全担当者・専門レベル）',
+    'スタッフ職を募集しています',
     // วันเกิดบริษัท
     '2025年11月11日 – JIEI（タイランド）会社設立記念日',
+
+    '2025年 新年会 開催日：2025年12月5日'
   ];
 
   const contentTH = [
@@ -250,20 +311,20 @@ export default function News() {
     `
     
     <section class="company-announcement">
-  <h2>เปิดรับสมัครงาน: เจ้าหน้าที่ความปลอดภัยมืออาชีพ (เจ้าหน้าที่ความปลอดภัยและอาชีวอนามัย)</h2>
+  <h2>เปิดรับสมัครงาน: Staff</h2>
   <p>
     <h5>หน้าที่ความรับผิดชอบหลัก:</h5>
   </p>
   <div>
     <ul>
-      <li>1. ตรวจสอบและให้คำแนะนำแก่ผู้ประกอบการเพื่อให้เป็นไปตามกฎหมายความปลอดภัยอาชีวอนามัย</li>
-      <li>2. ประเมินความเสี่ยงเกี่ยวกับความปลอดภัย อาชีวอนามัย และสภาพแวดล้อมในที่ทำงาน</li>
-      <li>3. จัดทำแผนความปลอดภัยประจำปีและมาตรการป้องกัน</li>
-      <li>4. ตรวจสอบสภาพที่ทำงาน เครื่องจักร เครื่องมือ และอุปกรณ์ให้เป็นไปตามมาตรฐานความปลอดภัย</li>
-      <li>5. จัดการฝึกอบรมด้านความปลอดภัยและปฐมนิเทศสำหรับพนักงานใหม่</li>
-      <li>6. เก็บรวบรวม วิเคราะห์ และรายงานสถิติอุบัติเหตุพร้อมข้อเสนอแนะในการป้องกัน</li>
-      <li>7. ประสานงานกับหน่วยงานรัฐที่เกี่ยวข้อง เช่น กรมสวัสดิการและคุ้มครองแรงงาน</li>
-      <li>8. จัดทำและส่งรายงานด้านความปลอดภัยต่อผู้บริหารและหน่วยงานรัฐตามที่กฎหมายกำหนด</li>
+      <li>1. ยังไม่กำหนด</li>
+      <li>2. ยังไม่กำหนด</li>
+      <li>3. ยังไม่กำหนด</li>
+      <li>4. ยังไม่กำหนด</li>
+      <li>5. ยังไม่กำหนด</li>
+      <li>6. ยังไม่กำหนด</li>
+      <li>7. ยังไม่กำหนด </li>
+      <li>8. ยังไม่กำหนด</li>
     </ul>
 
     <blockquote>
@@ -271,12 +332,14 @@ export default function News() {
     </blockquote>
 
     <ul>
-      <li>1. เพศชายหรือหญิง อายุ 22 ปีขึ้นไป</li>
-      <li>2. วุฒิปริญญาตรี สาขาความปลอดภัยและอาชีวอนามัยหรือสาขาที่เกี่ยวข้อง</li>
-      <li>3. ได้รับการรับรองเป็นเจ้าหน้าที่ความปลอดภัยมืออาชีพตามกฎหมายไทย</li>
-      <li>4. มีประสบการณ์ทำงานด้านความปลอดภัย 1–3 ปี (นักศึกษาจบใหม่สามารถสมัครได้)</li>
-      <li>5. มีความรู้เกี่ยวกับกฎหมายความปลอดภัย ISO 45001 / ISO 14001 จะได้รับการพิจารณาเป็นพิเศษ</li>
-      <li>6. มีทักษะการสื่อสารและประสานงานดี สามารถทำงานเป็นทีมได้</li>
+      <li>1. ยังไม่กำหนด</li>
+      <li>2. ยังไม่กำหนด</li>
+      <li>3. ยังไม่กำหนด</li>
+      <li>4. ยังไม่กำหนด</li>
+      <li>5. ยังไม่กำหนด</li>
+      <li>6. ยังไม่กำหนด</li>
+      <li>7. ยังไม่กำหนด </li>
+      <li>8. ยังไม่กำหนด</li>
     </ul>
 
     <blockquote>
@@ -284,16 +347,18 @@ export default function News() {
     </blockquote>
 
     <ul>
-      <li>1. เงินเดือนตามโครงสร้างและประสบการณ์</li>
-      <li>2. โบนัสประจำปีและปรับเงินเดือน</li>
-      <li>3. ประกันสังคม ประกันกลุ่ม และชุดยูนิฟอร์มบริษัท</li>
-      <li>4. วันหยุดประจำปีและลาพักร้อน</li>
-      <li>5. สิทธิประโยชน์อื่นตามนโยบายบริษัท</li>
+      <li>1. ยังไม่กำหนด</li>
+      <li>2. ยังไม่กำหนด</li>
+      <li>3. ยังไม่กำหนด</li>
+      <li>4. ยังไม่กำหนด</li>
+      <li>5. ยังไม่กำหนด</li>
+      <li>6. ยังไม่กำหนด</li>
+      <li>7. ยังไม่กำหนด </li>
+      <li>8. ยังไม่กำหนด</li>
     </ul>
     ผู้สนใจสามารถติดต่อ <a href="mailto:info@jiei-thai.co.th">info@jiei-thai.co.th</a>
   </div>
 </section>
-
     `,
     // วันเกิดบริษัท
 
@@ -327,7 +392,26 @@ export default function News() {
       </b> </p>
       </div>
    
-    </section>`
+    </section>`,
+
+    ` <section class="company-announcement">
+      <h2>วันครบรอบบริษัท เจไออีไอ (ไทยแลนด์) – 11 พฤศจิกายน 2568</h2>
+     
+      <div>
+      <p>
+       ในวันที่ 5 ธันวาคม 2025 บริษัท JIEI (Thailand) Co., Ltd. ได้จัดงานเลี้ยงปีใหม่เพื่อขอบคุณพนักงานทุกท่านที่ทุ่มเททำงานอย่างหนักตลอดปี
+      </p>
+
+       <p><b>
+         พร้อมกิจกรรมจับฉลากของขวัญมากกว่า 67 รายการ สร้างรอยยิ้มและความสนุกสนานให้กับทุกคน
+      </b> </p>
+    
+      
+      </div>
+   
+    </section>`,
+
+
   ];
 
   const contentTHNews = [
@@ -349,7 +433,7 @@ export default function News() {
       `,
     // สมัครงาน
     `
-    เปิดรับสมัครงาน: เจ้าหน้าที่ความปลอดภัยมืออาชีพ (เจ้าหน้าที่ความปลอดภัยและอาชีวอนามัย)
+    เปิดรับสมัครงาน: Staff
   
       `,
     // วันเกิดบริษัท
@@ -361,6 +445,12 @@ export default function News() {
        2. น้ำส้ม 1 ขวด, 
        3. ไอศกรีม 
        4. อาหารกลางวันสุดพิเศษ ซึ่งประกอบด้วย ปลาซาบะย่าง และหมูทอดพร้อมน้ำจิ้มแจ่ว
+     `,
+
+    //New year party
+
+    `ในวันที่ 5 ธันวาคม 2025 บริษัท JIEI (Thailand) Co., Ltd. ได้จัดงานเลี้ยงปีใหม่เพื่อขอบคุณพนักงานทุกท่านที่ทุ่มเททำงานอย่างหนักตลอดปี
+    พร้อมกิจกรรมจับฉลากของขวัญมากกว่า 67 รายการ สร้างรอยยิ้มและความสนุกสนานให้กับทุกคน
      `
   ]
   const contentEN = [
@@ -471,20 +561,20 @@ export default function News() {
     // สมัครงาน
     `
     <section class="company-announcement">
-  <h2>Job Opening: Professional Safety Officer (Occupational Safety and Health Officer)</h2>
+  <h2>Job Opening: Staff</h2>
   <p>
-    <h5>Key Responsibilities:</h5>
+    <h5>Main Responsibilities:</h5>
   </p>
   <div>
     <ul>
-      <li>1. Inspect and advise the employer to ensure compliance with occupational safety laws.</li>
-      <li>2. Assess risks related to occupational safety, health, and environmental conditions within the workplace.</li>
-      <li>3. Prepare annual safety plans and preventive measures.</li>
-      <li>4. Inspect workplace conditions, machinery, tools, and equipment to ensure safety standards are met.</li>
-      <li>5. Conduct safety training and orientation for new employees.</li>
-      <li>6. Collect, analyze, and report accident statistics with preventive recommendations.</li>
-      <li>7. Coordinate with relevant government agencies such as the Department of Labour Protection and Welfare.</li>
-      <li>8. Prepare and submit safety reports to management and government agencies as required by law.</li>
+      <li>1. Not specified</li>
+      <li>2. Not specified</li>
+      <li>3. Not specified</li>
+      <li>4. Not specified</li>
+      <li>5. Not specified</li>
+      <li>6. Not specified</li>
+      <li>7. Not specified</li>
+      <li>8. Not specified</li>
     </ul>
 
     <blockquote>
@@ -492,28 +582,35 @@ export default function News() {
     </blockquote>
 
     <ul>
-      <li>1. Male or Female, aged 22 or older.</li>
-      <li>2. Bachelor’s degree in Occupational Health and Safety or a related field.</li>
-      <li>3. Certified as a Professional Safety Officer according to Thai law.</li>
-      <li>4. 1–3 years of experience in safety-related work (new graduates are also welcome).</li>
-      <li>5. Knowledge of safety regulations, ISO 45001 / ISO 14001 is an advantage.</li>
-      <li>6. Strong communication and coordination skills, with the ability to work well in a team.</li>
+      <li>1. Not specified</li>
+      <li>2. Not specified</li>
+      <li>3. Not specified</li>
+      <li>4. Not specified</li>
+      <li>5. Not specified</li>
+      <li>6. Not specified</li>
+      <li>7. Not specified</li>
+      <li>8. Not specified</li>
     </ul>
 
     <blockquote>
-      <h5>Welfare & Benefits:</h5>
+      <h5>Benefits:</h5>
     </blockquote>
 
     <ul>
-      <li>1. Salary based on structure and experience.</li>
-      <li>2. Annual bonus and salary adjustment.</li>
-      <li>3. Social security, group insurance, and company uniform.</li>
-      <li>4. Annual holidays and paid vacation.</li>
-      <li>5. Other benefits according to company policy.</li>
+      <li>1. Not specified</li>
+      <li>2. Not specified</li>
+      <li>3. Not specified</li>
+      <li>4. Not specified</li>
+      <li>5. Not specified</li>
+      <li>6. Not specified</li>
+      <li>7. Not specified</li>
+      <li>8. Not specified</li>
     </ul>
-    Interested applicants, please contact <a href="mailto:info@jiei-thai.co.th">info@jiei-thai.co.th</a>
+    Interested candidates can contact <a href="mailto:info@jiei-thai.co.th">info@jiei-thai.co.th</a>
   </div>
 </section>
+
+
 `,
 
     // วันเกิดบริษัท
@@ -531,7 +628,22 @@ export default function News() {
        <p><b>3. Ice Cream</b></p>
        <p><b>4. Special Lunch including Grilled Mackerel and Fried Pork with Spicy Sauce</b></p>
       </div>
-</section>`
+</section>`,
+
+    //New year party
+
+
+    `<section class="company-announcement">
+      <h2>    On December 5, 2025, JIEI (Thailand) Co., Ltd. held a New Year party to express appreciation to all employees for their hard work throughout the year.           </h2>
+      <div>
+      <p>
+      The event included a lucky draw with more than 67 prizes, adding joy and excitement for everyone.
+      </p>
+
+     
+      </div>
+</section>`,
+
 
   ];
   const contentENNews = [
@@ -552,7 +664,7 @@ export default function News() {
     `,
     // สมัครงาน
     `
-    We are hiring for the position of Professional Safety Officer (Occupational Safety and Health Officer – Professional Level)
+    Now Hiring: Staff Position
     `
     ,
     // วันเกิดบริษัท
@@ -564,6 +676,11 @@ export default function News() {
        2. 1 Bottle of Orange Juice
        3. Ice Cream
        4. Special Lunch including Grilled Mackerel and Fried Pork with Spicy Sauce
+       `,
+    //New year party
+    `
+       On December 5, 2025, JIEI (Thailand) Co., Ltd. held a New Year party to express appreciation to all employees for their hard work throughout the year.
+The event included a lucky draw with more than 67 prizes, adding joy and excitement for everyone.
        `
   ]
   const contentJP = [
@@ -668,21 +785,20 @@ export default function News() {
 `,
     // สมัครงาน
     `
-      <section class="company-announcement">
-  <h2>募集職種：労働安全衛生担当者（専門職レベル）</h2>
+      <h2>求人募集：スタッフ</h2>
   <p>
-    <h5>主な職務内容：</h5>
+    <h5>主な業務内容：</h5>
   </p>
   <div>
     <ul>
-      <li>1. 事業主が労働安全衛生法に準拠しているかを確認し、改善を提案する。</li>
-      <li>2. 事業所内の安全・衛生・環境リスクを評価する。</li>
-      <li>3. 年間安全計画および安全対策を策定する。</li>
-      <li>4. 職場環境、機械、工具、設備の安全基準を点検する。</li>
-      <li>5. 新入社員への安全教育およびオリエンテーションを実施する。</li>
-      <li>6. 労働災害の統計を収集・分析し、予防策を提案する。</li>
-      <li>7. 労働保護福祉局などの関連官庁との調整を行う。</li>
-      <li>8. 経営陣および政府機関への安全報告書を作成・提出する。</li>
+      <li>1. 未定</li>
+      <li>2. 未定</li>
+      <li>3. 未定</li>
+      <li>4. 未定</li>
+      <li>5. 未定</li>
+      <li>6. 未定</li>
+      <li>7. 未定</li>
+      <li>8. 未定</li>
     </ul>
 
     <blockquote>
@@ -690,12 +806,14 @@ export default function News() {
     </blockquote>
 
     <ul>
-      <li>1. 男女不問、22歳以上。</li>
-      <li>2. 労働安全衛生または関連分野の学士号を有すること。</li>
-      <li>3. タイ法に基づく専門職安全管理者資格を取得していること。</li>
-      <li>4. 安全関連業務の経験1〜3年（新卒者も歓迎）。</li>
-      <li>5. 労働安全法、ISO 45001 / ISO 14001 の知識があれば尚可。</li>
-      <li>6. コミュニケーション能力、調整能力に優れ、チームワークができる方。</li>
+      <li>1. 未定</li>
+      <li>2. 未定</li>
+      <li>3. 未定</li>
+      <li>4. 未定</li>
+      <li>5. 未定</li>
+      <li>6. 未定</li>
+      <li>7. 未定</li>
+      <li>8. 未定</li>
     </ul>
 
     <blockquote>
@@ -703,13 +821,16 @@ export default function News() {
     </blockquote>
 
     <ul>
-      <li>1. 給与は経験および社内規定により決定。</li>
-      <li>2. 年次ボーナス・昇給制度あり。</li>
-      <li>3. 社会保険、団体保険、制服支給。</li>
-      <li>4. 年次有給休暇・休日制度。</li>
-      <li>5. その他、会社規定による福利厚生。</li>
+      <li>1. 未定</li>
+      <li>2. 未定</li>
+      <li>3. 未定</li>
+      <li>4. 未定</li>
+      <li>5. 未定</li>
+      <li>6. 未定</li>
+      <li>7. 未定</li>
+      <li>8. 未定</li>
     </ul>
-    ご応募・お問い合わせは <a href="mailto:info@jiei-thai.co.th">info@jiei-thai.co.th</a> までご連絡ください。
+    応募希望の方は <a href="mailto:info@jiei-thai.co.th">info@jiei-thai.co.th</a> までご連絡ください。
   </div>
 </section>
 
@@ -731,9 +852,22 @@ export default function News() {
        <p><b>4. 特別ランチ：サバのグリルと揚げ豚、スパイシーソース付き</b></p>
       </div>
 </section>
+      `,
 
-      
-      `
+    `
+      <section class="company-announcement">
+      <h2>
+      2025年12月5日、JIEI（Thailand）Co., Ltd. は、1年間懸命に働いてくれた従業員への感謝を込めて、新年会を開催しました。
+      </h2>
+     
+      <div>
+      <p>
+    当日は、67種類以上の景品が当たる抽選会も行われ、会場は笑顔と活気にあふれました。
+      </p>
+
+      </div>
+</section>
+      `,
   ];
   const contentJPNews = [
     // วันเกิดบริษัท
@@ -760,6 +894,11 @@ export default function News() {
       JIEI（タイランド）会社設立記念日 – 2025年11月11日
        JIEI（タイランド）の設立記念日2025年11月11日に際し、
        社員全員に感謝の気持ちを込めた小さなイベントを開催しました。正午には全社員に以下の贈り物が配られました：
+    `,
+    `
+    2025年12月5日、JIEI（Thailand）Co., Ltd. は、1年間懸命に働いてくれた従業員への感謝を込めて、新年会を開催しました。 
+    当日は、67種類以上の景品が当たる抽選会も行われ、会場は笑顔と活気にあふれました。
+    
     `
   ]
 
@@ -771,7 +910,10 @@ export default function News() {
     // สมัครงาน
     `/imageEmployee.png`,
     // วันเกิดบริษัท
-    `/News/11-11.png`
+    `/News/11-11.png`,
+    //New year party
+    `/News/New-Year-Party/Party (53).jpg`,
+
 
   ];
   const datePostTH = [
@@ -782,7 +924,10 @@ export default function News() {
     // สมัครงาน
     '08 พฤษจิกายน 2025',
     // วันเกิดบริษัท
-    '11 พฤษจิกายน 2025'
+    '11 พฤษจิกายน 2025',
+    `
+    05 ธันวาคม 2025
+    `
 
   ];
   const datePostEN = [
@@ -793,7 +938,8 @@ export default function News() {
     // สมัครงาน
     'November 08, 2025',
     // วันเกิดบริษัท
-    'November 11, 2025'
+    'November 11, 2025',
+    `05 December 2025`,
 
   ];
   const datePostJP = [
@@ -804,7 +950,8 @@ export default function News() {
     // สมัครงาน
     '2025年11月08日',
     // วันเกิดบริษัท
-    '2025年11月11日'
+    '2025年11月11日',
+    `2025年12月05日`
 
   ];
 
@@ -840,7 +987,7 @@ export default function News() {
   const start = (currentPage - 1) * perPage;
   const end = start + perPage;
   const paginatedData = revNewsTH.slice(start, end);
-  // const totalPages = Math.ceil(newsTH.length / perPage);
+  const totalPages = Math.ceil(newsTH.length / perPage);
 
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -934,104 +1081,185 @@ export default function News() {
                 </div>
               ))}
             </div>
+             <nav className="countPage" aria-label="Pagination">
+              {/* ปุ่มย้อนกลับ */}
+              {currentPage > 1 && (
+                <Link
+                  href={`/products/engine-mount?page=${currentPage - 1}`}
+                  className="numPage focusPage"
+                  title={`ไปหน้าที่ ${currentPage - 1}`}
+                >
+                  <i className="bi bi-chevron-double-left"></i>
+                </Link>
+              )}
+
+              {/* สร้างเลขหน้าที่แสดงได้สูงสุด 3 หน้า */}
+              {(() => {
+                const maxVisible = 3;
+                let start = Math.max(1, currentPage - 1);
+                const end = Math.min(totalPages, start + maxVisible - 1);
+                if (end - start < maxVisible - 1) {
+                  start = Math.max(1, end - maxVisible + 1);
+                }
+
+                const visiblePages = [];
+                for (let i = start; i <= end; i++) {
+                  visiblePages.push(i);
+                 
+
+                }
+
+                return (
+                  <>
+                    {/* แสดงหน้าแรก + จุดไข่ปลา ด้านหน้า */}
+                    {visiblePages[0] > 1 && (
+                      <>
+                        <Link href={`/products/engine-mount?page=1`} className="numPage" title="ไปหน้าที่ 1">
+                          1
+                        </Link>
+                        {/* <span className="dots"><i className="bi bi-dash"></i></span> */}
+                      </>
+                    )}
+
+                    {/* แสดงหน้าปัจจุบันและใกล้เคียง */}
+                    {visiblePages.map((pageNum) => (
+                      <Link
+                        key={pageNum}
+                        href={`/products/engine-mount?page=${pageNum}`}
+                        className={`numPage ${pageNum === currentPage ? "focusPage" : ""}`}
+                        title={`ไปหน้าที่ ${pageNum}`}
+                      >
+                        {pageNum}
+                      </Link>
+                    ))}
+
+                    {/* แสดงจุดไข่ปลา + หน้าสุดท้าย */}
+                    {/* {visiblePages[visiblePages.length - 1] < totalPages && (
+                      <>
+                         <span className="dots"><i className="bi bi-dash"></i></span> 
+                        <Link
+                          href={`/products/engine-mount?page=${totalPages}`}
+                          className="numPage"
+                          title={`ไปหน้าที่ ${totalPages}`}
+                        >
+                          {totalPages}
+                        </Link>
+                      </>
+                    )} */}
+                  </>
+                );
+              })()}
+
+              {/* ปุ่มหน้าถัดไป */}
+              {currentPage < totalPages && (
+                <Link
+                  href={`/products/engine-mount?page=${currentPage + 1}`}
+                  className="numPage focusPage"
+                  title={`ไปหน้าที่ ${currentPage + 1}`}
+                >
+                  <i className="bi bi-chevron-double-right"></i>
+                </Link>
+              )}
+            </nav>
           </div>
+          <br />
         </>
       ) : (
         <div className="detail-news">
-         
-            <h2 className='title-news-page'>
-              {lang === 'th' ? revNewsTH[selectedNews] : lang === 'en' ? revNewsEN[selectedNews] : revNewsJP[selectedNews]}
-            </h2>
-            <div className="line"></div>
 
-            <div className="image-Establishment">
-              <div className='Import-Image' style={{ textAlign: 'center' }}>
-                {(() => {
-                  const currentImage = revImage_Establishment[selectedNews][imgIndex];
+          <h2 className='title-news-page'>
+            {lang === 'th' ? revNewsTH[selectedNews] : lang === 'en' ? revNewsEN[selectedNews] : revNewsJP[selectedNews]}
+          </h2>
+          <div className="line"></div>
 
-
-
-                  const handleNextImage = () => {
-                    setImgIndex((prev) => (prev + 1) % revImage_Establishment[selectedNews].length);
-                  };
-
-                  const handleNextImage1 = () => {
-                    setImgIndex((prev) =>
-                      prev === 0
-                        ? revImage_Establishment[selectedNews].length - 1
-                        : prev - 1
-                    );
-                  };
-                  return (
-                    <>
-                      <Image
-                        src={currentImage}
-                        alt={`ภาพที่ ${imgIndex + 1}`}
-                        width={800}
-                        height={600}
-                        loading="lazy"
-                        className="image-fade"
-                      />
-                      <p onClick={handleNextImage} className="btn-change-image-right">
-                        <i className="change-Image-btn bi bi-chevron-right"></i>
-                      </p>
-                      <button onClick={handleNextImage1} className="btn-change-image-left">
-                        <i className="change-Image-btn bi bi-chevron-left"></i>
-                      </button>
-
-
-                    </>
-                  )
-                })()}
+          <div className="image-Establishment">
+            <div className='Import-Image' style={{ textAlign: 'center' }}>
+              {(() => {
+                const currentImage = revImage_Establishment[selectedNews][imgIndex];
 
 
 
+                const handleNextImage = () => {
+                  setImgIndex((prev) => (prev + 1) % revImage_Establishment[selectedNews].length);
+                };
+
+                const handleNextImage1 = () => {
+                  setImgIndex((prev) =>
+                    prev === 0
+                      ? revImage_Establishment[selectedNews].length - 1
+                      : prev - 1
+                  );
+                };
+                return (
+                  <>
+                    <Image
+                      src={currentImage}
+                      alt={`ภาพที่ ${imgIndex + 1}`}
+                      width={800}
+                      height={600}
+                      loading="lazy"
+                      className="image-fade"
+                    />
+                    <p onClick={handleNextImage} className="btn-change-image-right">
+                      <i className="change-Image-btn bi bi-chevron-right"></i>
+                    </p>
+                    <button onClick={handleNextImage1} className="btn-change-image-left">
+                      <i className="change-Image-btn bi bi-chevron-left"></i>
+                    </button>
 
 
-              </div>
-              <p className='text-center text-status-Image'>รูปที่ {imgIndex + 1} / {revImage_Establishment[selectedNews].length}</p>
+                  </>
+                )
+              })()}
+
+
+
+
+
             </div>
+            <p className='text-center text-status-Image'>รูปที่ {imgIndex + 1} / {revImage_Establishment[selectedNews].length}</p>
+          </div>
 
 
-            <div className="date_post">
-              <h6 className='post'>
-                {lang === 'th'
-                  ? revDatePostTH[selectedNews]
+          <div className="date_post">
+            <h6 className='post'>
+              {lang === 'th'
+                ? revDatePostTH[selectedNews]
+                : lang === 'en'
+                  ? revDatePostEN[selectedNews]
+                  : revDatePostJP[selectedNews]}
+            </h6>
+          </div>
+
+          {/* ✅ Render HTML ที่ sanitize แล้ว */}
+          <div
+            className='content-box-page'
+            dangerouslySetInnerHTML={{
+              __html: DOMPurify.sanitize(
+                lang === 'th'
+                  ? revContentTH[selectedNews]
                   : lang === 'en'
-                    ? revDatePostEN[selectedNews]
-                    : revDatePostJP[selectedNews]}
-              </h6>
-            </div>
+                    ? revContentEN[selectedNews]
+                    : revContentJP[selectedNews]
+              ),
+            }}
+          />
 
-            {/* ✅ Render HTML ที่ sanitize แล้ว */}
-            <div
-              className='content-box-page'
-              dangerouslySetInnerHTML={{
-                __html: DOMPurify.sanitize(
-                  lang === 'th'
-                    ? revContentTH[selectedNews]
-                    : lang === 'en'
-                      ? revContentEN[selectedNews]
-                      : revContentJP[selectedNews]
-                ),
+
+
+          <div className="btn-back-newsPage">
+            <button
+              onClick={() => {
+                setSelectedNews(null);
+                window.location.reload()
+                window.scrollTo({ top: 0, behavior: 'smooth' });
               }}
-            />
+              className="back-btn"
+            >
+              {lang === 'th' ? "กลับไปหน้ารวม" : lang === 'en' ? "Back to Overview" : "一覧に戻る"}
+            </button>
+          </div>
 
-
-
-            <div className="btn-back-newsPage">
-              <button
-                onClick={() => {
-                  setSelectedNews(null);
-                  window.location.reload()
-                  window.scrollTo({ top: 0, behavior: 'smooth' });
-                }}
-                className="back-btn"
-              >
-                {lang === 'th' ? "กลับไปหน้ารวม" : lang === 'en' ? "Back to Overview" : "一覧に戻る"}
-              </button>
-            </div>
-         
         </div>
       )}
     </div>
