@@ -145,7 +145,7 @@ export default function Nav() {
 
                 {/* <NavProduct /> */}
                 <div>
-                  <li className={`li-menu ${Path === '/products/Glass' || Path === '/products/Engine' || Path === '/products/Door' || Path === '/products/custom-parts' || Path === '/products' ? 'path' : ''}`}>
+                  <li onClick={closeMenu}  className={`li-menu ${Path === '/products/Glass' || Path === '/products/Engine' || Path === '/products/Door' || Path === '/products/custom-parts' || Path === '/products' ? 'path' : ''}`}>
                     <div className="hover-for-show-product">
                       <input type="checkbox" className="dropdown-menu" id="dropdown-menu" ref={menuCheck} />
                       <span className="nav-link">

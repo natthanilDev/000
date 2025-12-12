@@ -4719,6 +4719,8 @@ h4 {
     display: grid;
     grid-template-columns: 1fr;
     width: 95%;
+    padding: 50px 0;
+
 
 
   }
@@ -5800,17 +5802,19 @@ h4 {
   }
 }
 
-@media screen and (max-width : 425px) {
+@media screen and (max-width : 426px) {
 
   .menuProductItem {
 
-    padding: 100px 10px;
+    padding: 100px 0px;
+
 
   }
 
   .columns-product {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
+    
   }
 
 
@@ -5967,7 +5971,7 @@ h4 {
   }
 
   .btn-back-product {
-    left: 75%;
+    left: 5%;
   }
 }
 
