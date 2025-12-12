@@ -135,7 +135,6 @@ export default function News() {
       '/News/New-Year-Party/Party (22).jpg',
       '/News/New-Year-Party/Party (23).jpg',
       '/News/New-Year-Party/Party (24).jpg',
-      '/News/New-Year-Party/Party (25).jpg',
       '/News/New-Year-Party/Party (26).jpg',
       '/News/New-Year-Party/Party (27).jpg',
       '/News/New-Year-Party/Party (28).jpg',
@@ -164,6 +163,13 @@ export default function News() {
       '/News/New-Year-Party/Party (52).jpg',
       '/News/New-Year-Party/Party (53).jpg',
 
+    ],
+    [
+      '/News/Sport-Day/Sport (1).jpeg',
+      '/News/Sport-Day/Sport (2).jpeg',
+      '/News/Sport-Day/Sport (3).jpeg',
+      '/News/Sport-Day/Sport (4).jpeg',
+      '/News/Sport-Day/Sport (5).jpeg',
     ]
 
   ]
@@ -174,7 +180,8 @@ export default function News() {
     'ท่องเที่ยวบริษัท เจไออีไอ (ไทยแลนด์)',
     'รับสมัครพนักงานตำแหน่ง Staff',
     'วันที่ 11 พฤศจิกายน พ.ศ. 2568 วันครบรอบวันเกิดบริษัท เจไออีไอ (ไทยแลนด์)',
-    'งานเลี้ยงปีใหม่ ประจำปี 2025 วันที่ 5 ธันวาคม 2025'
+    'งานเลี้ยงปีใหม่ ประจำปี 2025 วันที่ 5 ธันวาคม 2025',
+    'จังานกีฬาสี บริษัท JIEI (Thailand) Co., Ltd.'
   ];
   const newsEN = [
     //  วันก่อตั้งบริษัท
@@ -185,7 +192,10 @@ export default function News() {
     'Now Hiring: Staff Position',
     // วันเกิดบริษัท
     'November 11, 2025 – Anniversary of JIEI (Thailand) Company’s Founding',
+    //New year party 
     'New Year Party 2025 Date: 5 December 2025',
+    //Sports Day
+    'Sports Day Event JIEI (Thailand) Co., Ltd.'
   ];
   const newsJP = [
 
@@ -197,8 +207,10 @@ export default function News() {
     'スタッフ職を募集しています',
     // วันเกิดบริษัท
     '2025年11月11日 – JIEI（タイランド）会社設立記念日',
-
-    '2025年 新年会 開催日：2025年12月5日'
+    //New year party
+    '2025年 新年会 開催日：2025年12月5日',
+    //Sports day
+    'JIEI（Thailand）Co., Ltd. スポーツデーイベント'
   ];
 
   const contentTH = [
@@ -362,7 +374,8 @@ export default function News() {
     `,
     // วันเกิดบริษัท
 
-    ` <section class="company-announcement">
+    ` 
+    <section class="company-announcement">
       <h2>วันครบรอบบริษัท เจไออีไอ (ไทยแลนด์) – 11 พฤศจิกายน 2568</h2>
      
       <div>
@@ -392,10 +405,12 @@ export default function News() {
       </b> </p>
       </div>
    
-    </section>`,
-
-    ` <section class="company-announcement">
-      <h2>วันครบรอบบริษัท เจไออีไอ (ไทยแลนด์) – 11 พฤศจิกายน 2568</h2>
+    </section>
+    `,
+    //New year party
+    ` 
+    <section class="company-announcement">
+      <h2>ในวันที่ 5 ธันวาคม 2025 บริษัท JIEI (Thailand) Co., Ltd. ได้จัดงานเลี้ยงปีใหม่</h2>
      
       <div>
       <p>
@@ -403,20 +418,36 @@ export default function News() {
       </p>
 
        <p><b>
-         พร้อมกิจกรรมจับฉลากของขวัญมากกว่า 67 รายการ สร้างรอยยิ้มและความสนุกสนานให้กับทุกคน
+         พร้อมกิจกรรมจับฉลากของขวัญมากกว่า 71 รายการ สร้างรอยยิ้มและความสนุกสนานให้กับทุกคน
       </b> </p>
     
       
       </div>
    
-    </section>`,
+    </section>
+    `,
+
+    //Sports Day
+    `
+    <section class="company-announcement">
+      <h2> งานกีฬาสี บริษัท JIEI(Thailand) Co., Ltd.</h2>
+     
+      <div>
+      <p>
+      งานกีฬาสี บริษัท JIEI (Thailand) Co., Ltd. จัดขึ้นในวันที่ 9, 15 และ 18 ธันวาคม 2025 โดยมีวัตถุประสงค์เพื่อสร้างความสามัคคี ส่งเสริมสุขภาพ และเพิ่มความสนุกสนานให้กับพนักงานทุกแผนก ทุกสีทีมได้เข้าร่วมแข่งขันในกิจกรรมต่าง ๆ อย่างเต็มที่ พร้อมเชียร์ลีดเดอร์สุดคึกคัก สร้างบรรยากาศที่เต็มไปด้วยพลังและเสียงหัวเราะตลอดทั้งงาน
+      </p>
+      </div>
+   
+    </section>
+    `
 
 
   ];
 
   const contentTHNews = [
     //  วันก่อตั้งบริษัท
-    `  ประกาศก่อตั้งอย่างเป็นทางการ
+    `
+      ประกาศก่อตั้งอย่างเป็นทางการ
         เมื่อวันที่ 11 พฤศจิกายน พ.ศ. 2554
         ณ นิคมอุตสาหกรรมปิ่นทอง 4 จังหวัดชลบุรี
         บริษัท เจไออีไอ (ไทยแลนด์) จำกัดหรือ 
@@ -424,20 +455,19 @@ export default function News() {
         11 พฤศจิกายน พ.ศ. 2554 (11-11-2011)
         เพื่อดำเนินธุรกิจด้านเทคโนโลยีอุตสาหกรรม 
         และการให้บริการด้านศวกรรมครบวงจร
-      `,
+     `,
     // Company trip
     `
         บริษัท เจไออีไอ จัดโครงการท่องเที่ยวประจำปี ระหว่างวันที่ 11-12 ตุลาคม 2568
         ในปี 2025 บริษัท เจไออีไอ ได้จัดโครงการท่องเที่ยวประจำปีขึ้นเพื่อส่งเสริมความสัมพันธ์ในทีมงาน เพิ่มพูนประสบการณ์ใหม่ๆ และเปิดโอกาสให้พนักงานได้พักผ่อนเติมพลัง
         โครงการท่องเที่ยวในปีนี้มีจุดเด่นคือ “การผสมผสานระหว่างการพักผ่อนด้วยธรรมชาติ + กิจกรรมสร้างทีม + ความยั่งยืน”
-      `,
+    `,
     // สมัครงาน
     `
     เปิดรับสมัครงาน: Staff
-  
-      `,
+    `,
     // วันเกิดบริษัท
-    `
+     `
      วันครบรอบบริษัท เจไออีไอ (ไทยแลนด์) – 11 พฤศจิกายน 2568
        ในโอกาสวันครบรอบการก่อตั้งบริษัท เจไออีไอ (ไทยแลนด์) เมื่อวันที่ 11 พฤศจิกายน 2568 <br /> ทางบริษัทได้จัดกิจกรรมเล็กๆ เพื่อเป็นการขอบคุณพนักงานทุกท่าน โดยในช่วงเที่ยงวัน พนักงานทุกคนได้รับของขวัญ ได้แก่ 
        
@@ -449,8 +479,15 @@ export default function News() {
 
     //New year party
 
-    `ในวันที่ 5 ธันวาคม 2025 บริษัท JIEI (Thailand) Co., Ltd. ได้จัดงานเลี้ยงปีใหม่เพื่อขอบคุณพนักงานทุกท่านที่ทุ่มเททำงานอย่างหนักตลอดปี
-    พร้อมกิจกรรมจับฉลากของขวัญมากกว่า 67 รายการ สร้างรอยยิ้มและความสนุกสนานให้กับทุกคน
+    `
+    ในวันที่ 5 ธันวาคม 2025 บริษัท JIEI (Thailand) Co., Ltd. ได้จัดงานเลี้ยงปีใหม่เพื่อขอบคุณพนักงานทุกท่านที่ทุ่มเททำงานอย่างหนักตลอดปี
+    พร้อมกิจกรรมจับฉลากของขวัญมากกว่า 71 รายการ สร้างรอยยิ้มและความสนุกสนานให้กับทุกคน
+     `,
+
+    //Sports Day
+    `
+     งานกีฬาสี บริษัท JIEI (Thailand) Co., Ltd.
+    งานกีฬาสี บริษัท JIEI (Thailand) Co., Ltd. จัดขึ้นในวันที่ 9, 15 และ 18 ธันวาคม 2025 โดยมีวัตถุประสงค์เพื่อสร้างความสามัคคี ส่งเสริมสุขภาพ และเพิ่มความสนุกสนานให้กับพนักงานทุกแผนก ทุกสีทีมได้เข้าร่วมแข่งขันในกิจกรรมต่าง ๆ อย่างเต็มที่ พร้อมเชียร์ลีดเดอร์สุดคึกคัก สร้างบรรยากาศที่เต็มไปด้วยพลังและเสียงหัวเราะตลอดทั้งงาน
      `
   ]
   const contentEN = [
@@ -488,7 +525,8 @@ export default function News() {
     both domestically and internationally,
     and continues to drive innovation for the future of Thai industry.
   </p>
-</section>`,
+</section>
+    `,
 
     // Company trip
     `
@@ -556,7 +594,7 @@ export default function News() {
     <hr />
 </section>
 
-`,
+    `,
 
     // สมัครงาน
     `
@@ -609,12 +647,11 @@ export default function News() {
     Interested candidates can contact <a href="mailto:info@jiei-thai.co.th">info@jiei-thai.co.th</a>
   </div>
 </section>
-
-
-`,
+    `,
 
     // วันเกิดบริษัท
-    `<section class="company-announcement">
+    `
+    <section class="company-announcement">
       <h2>JIEI (Thailand) Company Anniversary – November 11, 2025</h2>
      
       <div>
@@ -628,27 +665,45 @@ export default function News() {
        <p><b>3. Ice Cream</b></p>
        <p><b>4. Special Lunch including Grilled Mackerel and Fried Pork with Spicy Sauce</b></p>
       </div>
-</section>`,
+</section>
+    `,
 
     //New year party
 
 
-    `<section class="company-announcement">
+    `
+    <section class="company-announcement">
       <h2>    On December 5, 2025, JIEI (Thailand) Co., Ltd. held a New Year party to express appreciation to all employees for their hard work throughout the year.           </h2>
       <div>
       <p>
-      The event included a lucky draw with more than 67 prizes, adding joy and excitement for everyone.
+      The event included a lucky draw with more than 71 prizes, adding joy and excitement for everyone.
       </p>
 
      
       </div>
-</section>`,
+</section>
+    `,
+
+    //Sport Day
+    `
+     <section class="company-announcement">
+      <h2>Sports Day Event – JIEI (Thailand) Co., Ltd.</h2>
+     
+      <div>
+      <p>
+   The JIEI (Thailand) Co., Ltd. Sports Day will take place on December 9, 15, and 18, 2025. The event aims to promote teamwork, strengthen relationships, and encourage good health among employees across all departments. Each team participates enthusiastically in various activities, supported by lively cheerleaders, creating a vibrant and energetic atmosphere throughout the event.
+      </p>
+      </div>
+   
+    </section>
+    `
 
 
   ];
   const contentENNews = [
     //  วันก่อตั้งบริษัท
-    `Official Establishment Announcement
+    `
+    Official Establishment Announcement
     On November 11, 2011,
     at Pinthong Industrial Estate 4, Chonburi Province,
     Jiei (Thailand) Co., Ltd. was officially established
@@ -680,7 +735,12 @@ export default function News() {
     //New year party
     `
        On December 5, 2025, JIEI (Thailand) Co., Ltd. held a New Year party to express appreciation to all employees for their hard work throughout the year.
-The event included a lucky draw with more than 67 prizes, adding joy and excitement for everyone.
+       The event included a lucky draw with more than 71 prizes, adding joy and excitement for everyone.
+       `,
+    //Sports Day
+    `
+       Sports Day Event – JIEI (Thailand) Co., Ltd.
+       The JIEI (Thailand) Co., Ltd. Sports Day will take place on December 9, 15, and 18, 2025. The event aims to promote teamwork, strengthen relationships, and encourage good health among employees across all departments. Each team participates enthusiastically in various activities, supported by lively cheerleaders, creating a vibrant and energetic atmosphere throughout the event.
        `
   ]
   const contentJP = [
@@ -715,10 +775,11 @@ The event included a lucky draw with more than 67 prizes, adding joy and excitem
     当社は国内外の有力企業との協力と事業領域を拡大し、
     タイ産業の未来に向けたイノベーション開発を継続しています。
   </p>
-</section>` ,
+</section>
+    ` ,
     // Company trip
     `
-<section class="company-announcement">
+    <section class="company-announcement">
     <h2>JIEI社 年間社員旅行：2025年10月11日～12日</h2>
     <p>2025年、JIEI社はチームの結束を強化し、新しい経験を提供し、社員がリフレッシュできる年間社員旅行を開催しました。</p>
     <p>今年の旅行の特徴は「自然の中でのリラックス + チームビルディング活動 + 持続可能性の融合」です。</p>
@@ -782,7 +843,7 @@ The event included a lucky draw with more than 67 prizes, adding joy and excitem
     <hr />
 </section>
 
-`,
+    `,
     // สมัครงาน
     `
       <h2>求人募集：スタッフ</h2>
@@ -834,7 +895,7 @@ The event included a lucky draw with more than 67 prizes, adding joy and excitem
   </div>
 </section>
 
-      `,
+    `,
     // วันเกิดบริษัท
     `
       <section class="company-announcement">
@@ -852,8 +913,8 @@ The event included a lucky draw with more than 67 prizes, adding joy and excitem
        <p><b>4. 特別ランチ：サバのグリルと揚げ豚、スパイシーソース付き</b></p>
       </div>
 </section>
-      `,
-
+    `,
+    //New year party
     `
       <section class="company-announcement">
       <h2>
@@ -867,15 +928,33 @@ The event included a lucky draw with more than 67 prizes, adding joy and excitem
 
       </div>
 </section>
-      `,
+    `,
+    //Sports Day
+    `
+      <section class="company-announcement">
+      <h2>
+      JIEI（Thailand）Co., Ltd. スポーツデー
+      </h2>
+     
+      <div>
+      <p>
+      JIEI（Thailand）Co., Ltd. のスポーツデーは、2025年12月9日、15日、18日に開催されます。社員同士の団結力向上、健康促進、そして職場の活気づくりを目的としたイベントです。各チームが様々な競技に元気よく参加し、応援団の盛り上がりとともに、会場は終始にぎやかで楽しい雰囲気に包まれます。
+      </p>
+
+      </div>
+</section>
+      
+    `
   ];
   const contentJPNews = [
     // วันเกิดบริษัท
-    `正式設立のお知らせ
+    `
+    正式設立のお知らせ
     2011年11月11日、チョンブリー県ピントン工業団地4において
     Jiei（Thailand）Co., Ltd. は正式に設立されました。
     当社は産業技術分野での事業展開および
-    総合的なエンジニアリングサービスの提供を目的としております。`
+    総合的なエンジニアリングサービスの提供を目的としております。
+    `
     ,
     // Company trip
     `
@@ -895,10 +974,16 @@ The event included a lucky draw with more than 67 prizes, adding joy and excitem
        JIEI（タイランド）の設立記念日2025年11月11日に際し、
        社員全員に感謝の気持ちを込めた小さなイベントを開催しました。正午には全社員に以下の贈り物が配られました：
     `,
+    //NeW year party
     `
     2025年12月5日、JIEI（Thailand）Co., Ltd. は、1年間懸命に働いてくれた従業員への感謝を込めて、新年会を開催しました。 
     当日は、67種類以上の景品が当たる抽選会も行われ、会場は笑顔と活気にあふれました。
     
+    `,
+    //Sport Day
+    `
+    JIEI（Thailand）Co., Ltd. スポーツデー
+    JIEI（Thailand）Co., Ltd. のスポーツデーは、2025年12月9日、15日、18日に開催されます。社員同士の団結力向上、健康促進、そして職場の活気づくりを目的としたイベントです。各チームが様々な競技に元気よく参加し、応援団の盛り上がりとともに、会場は終始にぎやかで楽しい雰囲気に包まれます。
     `
   ]
 
@@ -913,7 +998,8 @@ The event included a lucky draw with more than 67 prizes, adding joy and excitem
     `/News/11-11.png`,
     //New year party
     `/News/New-Year-Party/Party (53).jpg`,
-
+    //Sports Day
+    `/News/Sport-Day/Sport (3).jpeg`,
 
   ];
   const datePostTH = [
@@ -925,9 +1011,12 @@ The event included a lucky draw with more than 67 prizes, adding joy and excitem
     '08 พฤษจิกายน 2025',
     // วันเกิดบริษัท
     '11 พฤษจิกายน 2025',
+    //New year party
     `
     05 ธันวาคม 2025
-    `
+    `,
+    //Sports Day
+    ` 12 ธันวาคม 2025`
 
   ];
   const datePostEN = [
@@ -939,7 +1028,11 @@ The event included a lucky draw with more than 67 prizes, adding joy and excitem
     'November 08, 2025',
     // วันเกิดบริษัท
     'November 11, 2025',
+    //New year party
     `05 December 2025`,
+    //Sport Day
+    `12 December 2025`,
+
 
   ];
   const datePostJP = [
@@ -951,7 +1044,9 @@ The event included a lucky draw with more than 67 prizes, adding joy and excitem
     '2025年11月08日',
     // วันเกิดบริษัท
     '2025年11月11日',
-    `2025年12月05日`
+    `2025年12月05日`,
+    `2025年12月12日`,
+
 
   ];
 
@@ -1081,7 +1176,7 @@ The event included a lucky draw with more than 67 prizes, adding joy and excitem
                 </div>
               ))}
             </div>
-             <nav className="countPage" aria-label="Pagination">
+            <nav className="countPage" aria-label="Pagination">
               {/* ปุ่มย้อนกลับ */}
               {currentPage > 1 && (
                 <Link
@@ -1105,7 +1200,7 @@ The event included a lucky draw with more than 67 prizes, adding joy and excitem
                 const visiblePages = [];
                 for (let i = start; i <= end; i++) {
                   visiblePages.push(i);
-                 
+
 
                 }
 
