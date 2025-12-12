@@ -5650,12 +5650,14 @@ h4 {
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
   overflow: hidden;
-  background-color: #000092;
-  color: #fff;
+  box-shadow: 0 0 30px 2px #959595;
+  color: #ffffff;
+  background-color: #15009d;
   padding: 10px 0;
-
+  border-radius: 6px;
 
 }
+
 
 
 
