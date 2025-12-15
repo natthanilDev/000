@@ -208,7 +208,7 @@ export default function Partners() {
                         <p className='partnerList15'>NARUMI</p>
                         <p className={`partnerList16 ${cantora_one}`}>RESONAC</p>
                         <p className='partnerList17'><span className='p'>P</span> <span className='i'>I </span>INDUSTRY</p>
-                        <p className='partnerList20'>ELASTOMIX</p>
+                        {/* <p className='partnerList20'>ELASTOMIX</p> */}
                         <p className='partnerList21'>Thai Diamond & Zebra Electric</p>
                         <p className={`partnerList22 ${sour_gummy.variable}`}>SUNMETAL</p>
                         <p className={`partnerList23 ${poetsen_one.variable}`}>TOKAI JIEI ASIA</p>    

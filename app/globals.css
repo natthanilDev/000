@@ -2180,18 +2180,31 @@ a:hover {
 
 .grid-about-page-description {
   display: grid;
-  grid-template-columns: 1fr 1.5fr;
+  grid-template-columns: 1fr 2fr;
   justify-content: center;
   align-items: center;
   width: 95%;
   margin: 50px auto;
-  gap: 30px;
+  /* gap: 30px; */
+  border-radius: 10px;
+  overflow: hidden;
+  align-items: stretch;
+  
+}
 
+.image-company-grid {
+  width: 100%;
 }
 
 .image-company-f {
-  border-radius: 10px;
-  box-shadow: 0 0 2px #959595;
+  /* border-radius: 10px; */
+  /* box-shadow: 0 0 2px #959595; */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* สำคัญมาก */
+
+
 
 }
 
@@ -2267,11 +2280,16 @@ h4 {
 .table-company-profile {
   box-shadow: 0 0 2px #959595;
   width: 100%;
-  margin: 50px auto 50px auto;
+  margin: 0 auto;
   border-radius: 6px;
+  height: 100%;
   overflow: hidden;
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
+
 
 
 .content-inthe-table {
@@ -3875,7 +3893,7 @@ h4 {
   background-position: 10%;
   background-repeat: no-repeat;
   background-size: cover;
-  
+
 }
 
 .box-w {
@@ -5695,7 +5713,8 @@ h4 {
 }
 
 
-.item-Hood-seal-Front-image , .item-Hood-seal-Front{
+.item-Hood-seal-Front-image,
+.item-Hood-seal-Front {
   position: absolute;
   backface-visibility: hidden;
   width: 100%;
@@ -5706,7 +5725,7 @@ h4 {
   flex-direction: column;
 }
 
-.item-Hood-seal-Front{
+.item-Hood-seal-Front {
   transform: rotateX(180deg);
 }
 
@@ -5729,7 +5748,7 @@ h4 {
   gap: 30px;
   margin: 50px auto;
   width: 95%;
-  
+
 }
 
 .titleProduct {
@@ -5760,7 +5779,7 @@ h4 {
   overflow: hidden;
 }
 
-.item-Hood-seal-Front-image{
+.item-Hood-seal-Front-image {
   box-shadow: 0 0 2px #959595;
   border-radius: 6px;
   overflow: hidden;
@@ -5816,7 +5835,7 @@ h4 {
   .columns-product {
     display: grid;
     grid-template-columns: 1fr;
-    
+
   }
 
 
