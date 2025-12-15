@@ -17,8 +17,8 @@ export default function News() {
 
 
   const Image_Establishment = [
+    // รูปภาพวันก่อตั้งบริษัท
     [
-      // รูปภาพวันก่อตั้งบริษัท
 
       '/jieiImage/19.png',
       '/jieiImage/1.png',
@@ -42,8 +42,8 @@ export default function News() {
       '/jieiImage/20.png',
       '/jieiImage/21.png',
     ],
+    // รูปภาพ Company trip
     [
-      // รูปภาพ Company trip
       '/News/company-trip-2025/company-trip-2025 (1).jpg',
       '/News/company-trip-2025/company-trip-2025 (2).jpg',
       '/News/company-trip-2025/company-trip-2025 (3).jpg',
@@ -101,17 +101,17 @@ export default function News() {
       '/News/company-trip-2025/company-trip-2025 (55).jpg',
       '/News/company-trip-2025/company-trip-2025 (56).jpg',
     ],
+    // รูปภาพรับสมัครงาน
     [
-      // รูปภาพรับสมัครงาน
       '/News/imageEmployee.png',
 
     ],
+    // รูปภาพวันเกิดบริษัท
     [
-      // รูปภาพวันเกิดบริษัท
       '/News/11-11.png'
     ],
+    //New year party
     [
-      //New year party
       '/News/New-Year-Party/Party (2).jpg',
       '/News/New-Year-Party/Party (3).jpg',
       '/News/New-Year-Party/Party (4).jpg',
@@ -148,7 +148,7 @@ export default function News() {
       '/News/New-Year-Party/Party (36).jpg',
       '/News/New-Year-Party/Party (37).jpg',
       '/News/New-Year-Party/Party (38).jpg',
-      '/News/New-Year-Party/Party (39).jpg',
+      // '/News/New-Year-Party/Party (39).jpg',
       '/News/New-Year-Party/Party (40).jpg',
       '/News/New-Year-Party/Party (41).jpg',
       '/News/New-Year-Party/Party (42).jpg',
@@ -164,6 +164,7 @@ export default function News() {
       '/News/New-Year-Party/Party (53).jpg',
 
     ],
+    //Sports Day
     [
       '/News/Sport-Day/Sport (1).jpeg',
       '/News/Sport-Day/Sport (2).jpeg',
@@ -175,12 +176,18 @@ export default function News() {
   ]
   // --- เนื้อหาข่าว ---
   const newsTH = [
-    // Description TH C1
+
+    // วันก่อตั้งบริษัท
     'ก่อตั้งบริษัท เจไออีไอ (ไทยแลนด์) จำกัด',
+    // Company trip
     'ท่องเที่ยวบริษัท เจไออีไอ (ไทยแลนด์)',
+    // สมัครงาน
     'รับสมัครพนักงานตำแหน่ง Staff',
+    // วันเกิดบริษัท
     'วันที่ 11 พฤศจิกายน พ.ศ. 2568 วันครบรอบวันเกิดบริษัท เจไออีไอ (ไทยแลนด์)',
+    //New year party
     'งานเลี้ยงปีใหม่ ประจำปี 2025 วันที่ 5 ธันวาคม 2025',
+    //Sports Day
     'จังานกีฬาสี บริษัท JIEI (Thailand) Co., Ltd.'
   ];
   const newsEN = [
@@ -467,7 +474,7 @@ export default function News() {
     เปิดรับสมัครงาน: Staff
     `,
     // วันเกิดบริษัท
-     `
+    `
      วันครบรอบบริษัท เจไออีไอ (ไทยแลนด์) – 11 พฤศจิกายน 2568
        ในโอกาสวันครบรอบการก่อตั้งบริษัท เจไออีไอ (ไทยแลนด์) เมื่อวันที่ 11 พฤศจิกายน 2568 <br /> ทางบริษัทได้จัดกิจกรรมเล็กๆ เพื่อเป็นการขอบคุณพนักงานทุกท่าน โดยในช่วงเที่ยงวัน พนักงานทุกคนได้รับของขวัญ ได้แก่ 
        
