@@ -1,6 +1,7 @@
 'use client';
 import Head from "next/head";
-import Partners from './partners';
+// import Partners from './partners';
+import Btn_contactUs from "./btn-contactUs";
 import Confidence from './Confidence';
 import AboutHomePage from './AboutHomePage';
 import ImageDescription from './imageDescription';
@@ -70,14 +71,14 @@ export default function Home() {
                 />
             </Head>
 
-           
-                <IntroIndex />
-                <WhyChooseUs />
-                <ImageDescription />
-                <AboutHomePage />
-                <Confidence />
-                <Partners />
-           
+
+            <IntroIndex />
+            <WhyChooseUs />
+            <ImageDescription />
+            <AboutHomePage />
+            <Confidence />
+            {/* <Partners /> */}
+            <Btn_contactUs />
 
 
             <script

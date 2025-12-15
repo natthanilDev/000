@@ -37,7 +37,7 @@ export default function AboutPartners() {
     // ]
     return (
         <div>
-            <Partners />
+            {/* <Partners /> */}
             {/* <div className="partners-box">
                 <div className="partners-text">
                     <br />

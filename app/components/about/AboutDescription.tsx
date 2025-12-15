@@ -64,7 +64,7 @@ export default function AboutDescription() {
                         </div>
 
                     </div>
-
+                    
                 </div>
             </ScrollReveal>
         </div>
