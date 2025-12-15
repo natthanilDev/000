@@ -2189,7 +2189,7 @@ a:hover {
   border-radius: 10px;
   overflow: hidden;
   align-items: stretch;
-  
+  box-shadow: 0 0 2px #959595;
 }
 
 .image-company-grid {
