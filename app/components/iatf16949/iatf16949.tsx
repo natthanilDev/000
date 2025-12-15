@@ -102,7 +102,7 @@ export default function Iatf16949() {
         <AnimatePresence>
           {selectedImg && (
             <motion.div
-              className="fixed inset-0 bg-black/60 backdrop-blur-sm flex justify-center items-center z-50"
+              className="fixed inset-0 bg-black/60 backdrop-blur-sm flex justify-center items-center z-9999999"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}

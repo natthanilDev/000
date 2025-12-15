@@ -18,19 +18,19 @@ export default function ImageDescription() {
         "/support (4).png",
     ]
     const content_supportEN = [
-        "Our company, JIEI (Thailand) is focused on the ASEAN region and offers a variety of rubber products for construction materials, automobiles, and other industrial uses."
+        "Our company, JIEI (Thailand), manufactures and exports products worldwide, offering a wide range of rubber products for construction materials, automotive applications, and other industrial uses."
         , "Our high-precision technology utilizes proprietary techniques and boasts real results in supporting the creation of beautiful and comfortable vehicles."
         , "Committed to responding to the demands of our customers, we are always incorporating the latest state-of-the-art technology.",
         "We fully support a schedule that extends from richly-experienced design planning and material development to mass production through industrial methods development."
     ]
     const content_supportTH = [
-        "บริษัทของเรา JIEI (ประเทศไทย) มุ่งเน้นตลาดในภูมิภาคอาเซียน และนำเสนอผลิตภัณฑ์ยางหลากหลายประเภทสำหรับวัสดุก่อสร้าง ยานยนต์ และการใช้งานในอุตสาหกรรมอื่น ๆ",
+        "บริษัทของเรา JIEI (ประเทศไทย) ได้ผลิตและส่งออกผลิตภัณฑ์ไปทั่วโลก โดยนำเสนอผลิตภัณฑ์ยางหลากหลายประเภทสำหรับวัสดุก่อสร้าง ยานยนต์ และการใช้งานในอุตสาหกรรมอื่น ๆ",
         "เทคโนโลยีความแม่นยำสูงของเราใช้เทคนิคเฉพาะตัว และมีผลงานจริงในการสนับสนุนการสร้างยานยนต์ที่สวยงามและสะดวกสบาย",
         "เรามุ่งมั่นที่จะตอบสนองความต้องการของลูกค้าอยู่เสมอ โดยการนำเทคโนโลยีล้ำสมัยล่าสุดเข้ามาใช้อย่างต่อเนื่อง",
         "เราสนับสนุนกระบวนการอย่างเต็มรูปแบบ ตั้งแต่การวางแผนการออกแบบอย่างมีประสบการณ์ การพัฒนาวัสดุ ไปจนถึงการผลิตจำนวนมากผ่านการพัฒนากระบวนการทางอุตสาหกรรม",
     ]
     const content_supportJP = [
-        "当社、JIEI（タイ）はASEAN地域に注力しており、建設資材、自動車、その他の工業用途向けのさまざまなゴム製品を提供しています。",
+        "当社 JIEI（タイランド）は、製品を製造し、世界各国へ輸出しており、建設資材、自動車用途、その他さまざまな産業用途向けに多様なゴム製品を提供しています。",
         "当社の高精度技術は独自の手法を活用しており、美しく快適な車両の創造を支援する実績があります。",
         "お客様のニーズに応えることを使命とし、常に最新の最先端技術を取り入れています。",
         "豊富な経験に基づく設計計画や素材開発から、産業的手法による量産まで、一貫したサポートを提供しています。"
