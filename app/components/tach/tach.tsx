@@ -165,7 +165,7 @@ export default function Tach() {
 
 
 
-    const evaluation = ['/04_r1_c1.png', '/04_r1_c3.png', '/04_r1_c5.png', '/04_r1_c8.png', '/tech (3).png', ]  //เปลี่ยนรูปสุดท้าย
+    const evaluation = ['/compressive.png', '/04_r1_c3.png', '/04_r1_c5.png', '/04_r1_c8.png', '/tech (3).png', ]  
 
     // const contentEvaluationTH = ["เครื่องทดสอบแรงกด", "การกระจายแรงดันบนพื้นผิว", 'การวัดการกระจายแรงดันบนพื้นผิว', "การวัดสมรรถนะการกันเสียงแบบง่าย"]
     // const contentEvaluationEN = ["Load Testing Machine", "Surface Pressure Distribution", "Surface Pressure Distribution Measurement", "Simple Sound Insulation Performance Measurement"]

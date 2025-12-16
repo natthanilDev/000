@@ -32,8 +32,8 @@ export default function AboutMap() {
                     </div> */}
 
                     <div className='map-showMap'>
-                        <Link href={"/map-jiei.png"} target='_blank'>
-                            <Image className='google-showMap' src={'/map-jiei.png'} alt='' width={1000} height={1000} loading='lazy' />
+                        <Link href={"/map.png"} target='_blank'>
+                            <Image className='google-showMap' src={'/map.png'} alt='' width={1000} height={1000} loading='lazy' />
                         </Link>
                     </div>
                      <Link target='_blank' href={'https://maps.app.goo.gl/roZPoBoMZhDkPnUb7'}>
