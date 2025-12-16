@@ -1,4 +1,5 @@
 'use client'
+
 import { useState, useEffect } from 'react';
 import React from 'react'
 import Link from 'next/link'
@@ -354,7 +355,7 @@ export default function Products() {
                     <Link href={location[index]}>
                       <Image
                         src={imageSrc}
-                        alt={`Product ${index + 1}`}
+                        alt={`ผู้ผลิตชิ้นส่วนยางรถยนต์ จังหวัดชลบุรี`}
                         width={200}
                         height={250}
                         className={`menuProductImage${index}`}
@@ -386,7 +387,7 @@ export default function Products() {
                               <div className="item-Hood-seal-Front-image">
                                 <Image
                                   src={item.image}
-                                  alt={item.title}
+                                  alt={`ผู้ผลิตชิ้นส่วนยางรถยนต์ จังหวัดชลบุรี`}
                                   width={300}
                                   height={200}
                                   className="image-Hood-seal-Front"
@@ -474,26 +475,17 @@ export default function Products() {
 
             <div className="card-product-active">
               <div className="image-active-product">
-                <Image className='image-active' src={productsEN[selectedProduct - 1].image} alt='' width={1000} height={1000} loading='lazy' />
+                <Image className='image-active' src={productsEN[selectedProduct - 1].image} alt='ผู้ผลิตชิ้นส่วนยางรถยนต์ จังหวัดชลบุรี' width={1000} height={1000} loading='lazy' />
               </div>
             </div>
 
-
-
-
-
           </div>
-
-
-
-
 
           <div onClick={() => setSelectedProduct(null)} className="btn-back-product">
             <button>Back</button>
           </div>
         </>
       )}
-
 
     </div>
   )

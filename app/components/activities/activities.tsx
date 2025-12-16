@@ -399,7 +399,7 @@ export default function Page() {
             src={revImg[selectedNews]}
             height={1000}
             width={1000}
-            alt={revActivitiesTH[selectedNews]}
+            alt={`ผู้ผลิตชิ้นส่วนยางรถยนต์ จังหวัดชลบุรี`}
             className="image-news-page"
           />
 

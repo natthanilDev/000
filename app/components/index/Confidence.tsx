@@ -18,7 +18,7 @@ export default function Confidence() {
 
     ]
     const Evaluation =[
-        '/04_r1_c1.png',
+        '/compressive.png',
         '/04_r1_c3.png',
         '/04_r1_c5.png',
         '/04_r1_c8.png',
@@ -61,7 +61,7 @@ export default function Confidence() {
                         {Analysis.map((item, index) => (
                             <ScrollReveal key={index}>
                                 <div className="box-tech-our">
-                                    <Image src={item} width={1000} height={1000} loading='lazy' alt={`Analysis ${index + 1}`} className="img-tech-our" />
+                                    <Image src={item} width={1000} height={1000} loading='lazy' alt={`jiei(thailand).Co.,Ltd`} className="img-tech-our" />
                                 </div>
                             </ScrollReveal>
                         ))}
@@ -79,7 +79,7 @@ export default function Confidence() {
                         {Development.map((item, index) => (
                             <ScrollReveal key={index}>
                                 <div className="box-tech-our">
-                                    <Image width={1000} height={1000} loading='lazy' src={item} alt={`Analysis ${index + 1}`} className="img-tech-our" />
+                                    <Image width={1000} height={1000} loading='lazy' src={item} alt={`jiei(thailand).Co.,Ltd`} className="img-tech-our" />
                                 </div>
                             </ScrollReveal>
                         ))}
@@ -96,7 +96,7 @@ export default function Confidence() {
                         {Evaluation.map((item, index) => (
                             <ScrollReveal key={index}>
                                 <div className="box-tech-our">
-                                    <Image width={1000} height={1000} loading='lazy' src={item} alt={`Analysis ${index + 1}`} className="img-tech-our" />
+                                    <Image width={1000} height={1000} loading='lazy' src={item} alt={`jiei(thailand).Co.,Ltd`} className="img-tech-our" />
                                 </div>
                             </ScrollReveal>
                         ))}

@@ -33,7 +33,7 @@ export default function AboutMap() {
 
                     <div className='map-showMap'>
                         <Link href={"/map.png"} target='_blank'>
-                            <Image className='google-showMap' src={'/map.png'} alt='' width={1000} height={1000} loading='lazy' />
+                            <Image className='google-showMap' src={'/map.png'} alt='ผู้ผลิตชิ้นส่วนยางรถยนต์ จังหวัดชลบุรี' width={1000} height={1000} loading='lazy' />
                         </Link>
                     </div>
                      <Link target='_blank' href={'https://maps.app.goo.gl/roZPoBoMZhDkPnUb7'}>

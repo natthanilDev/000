@@ -1,5 +1,5 @@
 // import Image from 'next/image'
-import Partners from '../index/partners';
+// import Partners from '../index/partners';
 
 export default function AboutPartners() {
  

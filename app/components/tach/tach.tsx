@@ -263,7 +263,7 @@ export default function Tach() {
                             {topicTH.map((item, index) => (
                                 <div className="design-analysis-content" key={index}>
                                     <div className="image-card-tach">
-                                        <Image className='image-tach' src={Analysis[index]} alt={item} priority width={1000} height={1000} />
+                                        <Image className='image-tach' src={Analysis[index]} alt={`ผู้ผลิตชิ้นส่วนยางรถยนต์ จังหวัดชลบุรี`} priority width={1000} height={1000} />
                                     </div>
                                     <div className="content-card-tach">
                                         <div className="design-analysis-content-topic">
@@ -301,7 +301,7 @@ export default function Tach() {
                             {topicTH1.map((item, index) => (
                                 <div className="design-analysis-content" key={index}>
                                     <div className="image-card-tach">
-                                        <Image className='image-tach' src={materials[index]} alt={item} priority width={1000} height={1000} />
+                                        <Image className='image-tach' src={materials[index]} alt={`ผู้ผลิตชิ้นส่วนยางรถยนต์ จังหวัดชลบุรี`} priority width={1000} height={1000} />
                                     </div>
                                     <div className="content-card-tach">
                                         <div className="design-analysis-content-topic">
@@ -334,7 +334,7 @@ export default function Tach() {
                             {topicTH2.map((item, index) => (
                                 <div className="design-analysis-content" key={index}>
                                     <div className="image-card-tach">
-                                        <Image className='image-tach' src={evaluation[index]} alt={item} priority width={1000} height={1000} />
+                                        <Image className='image-tach' src={evaluation[index]} alt={`ผู้ผลิตชิ้นส่วนยางรถยนต์ จังหวัดชลบุรี`} priority width={1000} height={1000} />
                                     </div>
                                     <div className="content-card-tach">
                                         <div className="design-analysis-content-topic">
