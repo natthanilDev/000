@@ -11,7 +11,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Prompt", "Noto Sans JP", sans-serif;
+  /* font-family: "Prompt", "Noto Sans JP", sans-serif; */
+  font-family: "Kanit", sans-serif;
   font-weight: 300;
   font-style: normal;
   font-optical-sizing: auto;
@@ -2993,13 +2994,14 @@ h4 {
     padding-top: 50px;
   }
 
-    .AboutUS {
+  .AboutUS {
     width: 100%;
     font-size: 30px;
 
 
 
   }
+
   .text-jiei-about-page {
     font-size: 20px;
   }
@@ -3010,6 +3012,12 @@ h4 {
     display: grid;
     grid-template-columns: 1fr;
   }
+ .columns-product {
+    display: grid;
+    grid-template-columns: 1fr;
+ 
+  }
+
 
   .about-box-home-page {
 
@@ -3026,6 +3034,7 @@ h4 {
 
 
   }
+
   .text-jiei-about-page {
     font-size: 20px;
   }
@@ -6189,4 +6198,15 @@ h4 {
 
 .back-box {
   transform: rotateY(-180deg);
+}
+
+
+
+@media screen and (max-width :600px) {
+
+ .columns-product {
+    display: grid;
+    grid-template-columns: 1fr;
+ 
+  }
 }
