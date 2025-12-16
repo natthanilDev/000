@@ -39,8 +39,7 @@ export default function AboutDescription() {
                                     <span className="title-about-text">   {lang === ('th') ? "ที่อยู่" : lang === ('en') ? "Address" : "住所"}</span>
                                 </div>
                                 <div className="content-in-aboutBox">
-
-                                    {lang === ('th') ? " นิคมอุตสาหกรรมปิ่นทอง 4 หน่วย G18 180/3 หมู่ 6 ต.บึง อ.ศรีราชา ชลบุรี 20230 ประเทศไทย Tel: +66 (0)33-136581-4" : lang === ('en') ? "Pinthong Industrial Estate 4, Unit G18 180/3 Moo 6, Bueng Sub-district,Si Racha District, Chonburi 20230, Thailand Tel: +66 (0)33-136581-4" : "ピントン工業団地4、G18号ユニット 180/3 ムー6、ブン地区 シラチャー郡、チョンブリー県 20230 タイ王国 電話: +66 (0)33-136581-4"}
+                                    {lang === ('th') ? "นิคมอุตสาหกรรมปิ่นทอง 4 หน่วย G18 180/3 หมู่ 6 ต.บึง อ.ศรีราชา ชลบุรี 20230 ประเทศไทย 0331365814" : lang === ('en') ? "Pinthong Industrial Estate 4, Unit G18 180/3 Moo 6, Bueng Sub-district,Si Racha District, Chonburi 20230, Thailand Tel: +66 (0)33-136581-4" : "ピントン工業団地4、G18号ユニット 180/3 ムー6、ブン地区 シラチャー郡、チョンブリー県 20230 タイ王国 電話: +66 (0)33-136581-4"}
                                 </div>
                             </div>
                             <div className='content-inthe-table'>
