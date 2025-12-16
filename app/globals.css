@@ -2157,15 +2157,19 @@ a:hover {
 
 .aboutUs-page {
   display: grid;
-  grid-template-columns: 1.5fr 1fr;
+  grid-template-columns: 2fr 1fr;
   width: 80%;
-  margin: 50px auto;
-  gap: 50px;
+  margin: 100px auto;
+  gap: 30px;
   justify-content: center;
   align-items: center;
+
 }
 
+.about-grid {
+  margin-top: -50px;
 
+}
 
 .about-grid-image {
   transition: all ease 0.25s;
@@ -2941,6 +2945,10 @@ h4 {
     font-size: 16px;
   }
 
+  .about-grid {
+    order: 2;
+    padding-top: 50px;
+  }
 }
 
 @media screen and (max-width:426px) {
@@ -5054,10 +5062,11 @@ h4 {
 .president-image-box {
   margin: 0px auto;
   text-align: center;
-  box-shadow: 0 0 2px #959595;
-  padding: 20px 0;
+  /* box-shadow: 0 0 2px #959595; */
+  width: 100%;
   border-radius: 10px;
   background-color: #eeeeee;
+
 
 }
 

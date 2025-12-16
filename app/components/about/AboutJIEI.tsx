@@ -66,7 +66,7 @@ export default function AboutJIEI() {
                     <ScrollReveal>
                         <div className="president-image-box">
                             <div className="president-image">
-                                <Image className='image-president-company' src={'/imageUser.png'} alt='บริษัท เจไออีไอ (ประเทศไทย) จำกัด ผู้ผลิต ชิ้นส่วนยางรถยนต์ จังหวัดชลบุรี' priority width={1000} height={1000} />
+                                <Image className='image-president-company' src={'/MD/MD.jpeg'} alt='บริษัท เจไออีไอ (ประเทศไทย) จำกัด ผู้ผลิต ชิ้นส่วนยางรถยนต์ จังหวัดชลบุรี' priority width={1000} height={1000} />
                             </div>
                             <div className="president-content">
                                 <ScrollReveal>
