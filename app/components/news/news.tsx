@@ -102,10 +102,10 @@ export default function News() {
       '/News/company-trip-2025/company-trip-2025 (56).jpg',
     ],
     // รูปภาพรับสมัครงาน
-    [
-      '/News/imageEmployee.png',
+    // [
+    //   '/News/imageEmployee.png',
 
-    ],
+    // ],
     // รูปภาพวันเกิดบริษัท
     [
       '/News/11-11.png'
@@ -182,7 +182,7 @@ export default function News() {
     // Company trip
     'ท่องเที่ยวบริษัท เจไออีไอ (ไทยแลนด์)',
     // สมัครงาน
-    'รับสมัครพนักงานตำแหน่ง Staff',
+    // 'รับสมัครพนักงานตำแหน่ง Staff',
     // วันเกิดบริษัท
     'วันที่ 11 พฤศจิกายน พ.ศ. 2568 วันครบรอบวันเกิดบริษัท เจไออีไอ (ไทยแลนด์)',
     //New year party
@@ -196,7 +196,7 @@ export default function News() {
     // Company trip
     'Company Trip – JIEI (Thailand)',
     // สมัครงาน
-    'Now Hiring: Staff Position',
+    // 'Now Hiring: Staff Position',
     // วันเกิดบริษัท
     'November 11, 2025 – Anniversary of JIEI (Thailand) Company’s Founding',
     //New year party 
@@ -211,7 +211,7 @@ export default function News() {
     // Company trip
     'JIEI（タイランド）社 社員旅行',
     // สมัครงาน
-    'スタッフ職を募集しています',
+    // 'スタッフ職を募集しています',
     // วันเกิดบริษัท
     '2025年11月11日 – JIEI（タイランド）会社設立記念日',
     //New year party
@@ -325,62 +325,62 @@ export default function News() {
 </section>
 
     `
-    ,
-    // สมัครงาน
-    `
+//     ,
+//     // สมัครงาน
+//     `
     
-    <section class="company-announcement">
-  <h2>เปิดรับสมัครงาน: Staff</h2>
-  <p>
-    <h5>หน้าที่ความรับผิดชอบหลัก:</h5>
-  </p>
-  <div>
-    <ul>
-      <li>1. ยังไม่กำหนด</li>
-      <li>2. ยังไม่กำหนด</li>
-      <li>3. ยังไม่กำหนด</li>
-      <li>4. ยังไม่กำหนด</li>
-      <li>5. ยังไม่กำหนด</li>
-      <li>6. ยังไม่กำหนด</li>
-      <li>7. ยังไม่กำหนด </li>
-      <li>8. ยังไม่กำหนด</li>
-    </ul>
+//     <section class="company-announcement">
+//   <h2>เปิดรับสมัครงาน: Staff</h2>
+//   <p>
+//     <h5>หน้าที่ความรับผิดชอบหลัก:</h5>
+//   </p>
+//   <div>
+//     <ul>
+//       <li>1. ยังไม่กำหนด</li>
+//       <li>2. ยังไม่กำหนด</li>
+//       <li>3. ยังไม่กำหนด</li>
+//       <li>4. ยังไม่กำหนด</li>
+//       <li>5. ยังไม่กำหนด</li>
+//       <li>6. ยังไม่กำหนด</li>
+//       <li>7. ยังไม่กำหนด </li>
+//       <li>8. ยังไม่กำหนด</li>
+//     </ul>
 
-    <blockquote>
-      <h5>คุณสมบัติ:</h5>
-    </blockquote>
+//     <blockquote>
+//       <h5>คุณสมบัติ:</h5>
+//     </blockquote>
 
-    <ul>
-      <li>1. ยังไม่กำหนด</li>
-      <li>2. ยังไม่กำหนด</li>
-      <li>3. ยังไม่กำหนด</li>
-      <li>4. ยังไม่กำหนด</li>
-      <li>5. ยังไม่กำหนด</li>
-      <li>6. ยังไม่กำหนด</li>
-      <li>7. ยังไม่กำหนด </li>
-      <li>8. ยังไม่กำหนด</li>
-    </ul>
+//     <ul>
+//       <li>1. ยังไม่กำหนด</li>
+//       <li>2. ยังไม่กำหนด</li>
+//       <li>3. ยังไม่กำหนด</li>
+//       <li>4. ยังไม่กำหนด</li>
+//       <li>5. ยังไม่กำหนด</li>
+//       <li>6. ยังไม่กำหนด</li>
+//       <li>7. ยังไม่กำหนด </li>
+//       <li>8. ยังไม่กำหนด</li>
+//     </ul>
 
-    <blockquote>
-      <h5>สวัสดิการและผลประโยชน์:</h5>
-    </blockquote>
+//     <blockquote>
+//       <h5>สวัสดิการและผลประโยชน์:</h5>
+//     </blockquote>
 
-    <ul>
-      <li>1. ยังไม่กำหนด</li>
-      <li>2. ยังไม่กำหนด</li>
-      <li>3. ยังไม่กำหนด</li>
-      <li>4. ยังไม่กำหนด</li>
-      <li>5. ยังไม่กำหนด</li>
-      <li>6. ยังไม่กำหนด</li>
-      <li>7. ยังไม่กำหนด </li>
-      <li>8. ยังไม่กำหนด</li>
-    </ul>
-    ผู้สนใจสามารถติดต่อ <a href="mailto:info@jiei-thai.co.th">info@jiei-thai.co.th</a>
-  </div>
-</section>
-    `,
+//     <ul>
+//       <li>1. ยังไม่กำหนด</li>
+//       <li>2. ยังไม่กำหนด</li>
+//       <li>3. ยังไม่กำหนด</li>
+//       <li>4. ยังไม่กำหนด</li>
+//       <li>5. ยังไม่กำหนด</li>
+//       <li>6. ยังไม่กำหนด</li>
+//       <li>7. ยังไม่กำหนด </li>
+//       <li>8. ยังไม่กำหนด</li>
+//     </ul>
+//     ผู้สนใจสามารถติดต่อ <a href="mailto:info@jiei-thai.co.th">info@jiei-thai.co.th</a>
+//   </div>
+// </section>
+//     `,
     // วันเกิดบริษัท
-
+,
     ` 
     <section class="company-announcement">
       <h2>วันครบรอบบริษัท เจไออีไอ (ไทยแลนด์) – 11 พฤศจิกายน 2568</h2>
@@ -470,9 +470,10 @@ export default function News() {
         โครงการท่องเที่ยวในปีนี้มีจุดเด่นคือ “การผสมผสานระหว่างการพักผ่อนด้วยธรรมชาติ + กิจกรรมสร้างทีม + ความยั่งยืน”
     `,
     // สมัครงาน
-    `
-    เปิดรับสมัครงาน: Staff
-    `,
+    // `
+    // เปิดรับสมัครงาน: Staff
+    // `
+    ,
     // วันเกิดบริษัท
     `
      วันครบรอบบริษัท เจไออีไอ (ไทยแลนด์) – 11 พฤศจิกายน 2568
@@ -604,57 +605,57 @@ export default function News() {
     `,
 
     // สมัครงาน
-    `
-    <section class="company-announcement">
-  <h2>Job Opening: Staff</h2>
-  <p>
-    <h5>Main Responsibilities:</h5>
-  </p>
-  <div>
-    <ul>
-      <li>1. Not specified</li>
-      <li>2. Not specified</li>
-      <li>3. Not specified</li>
-      <li>4. Not specified</li>
-      <li>5. Not specified</li>
-      <li>6. Not specified</li>
-      <li>7. Not specified</li>
-      <li>8. Not specified</li>
-    </ul>
+//     `
+//     <section class="company-announcement">
+//   <h2>Job Opening: Staff</h2>
+//   <p>
+//     <h5>Main Responsibilities:</h5>
+//   </p>
+//   <div>
+//     <ul>
+//       <li>1. Not specified</li>
+//       <li>2. Not specified</li>
+//       <li>3. Not specified</li>
+//       <li>4. Not specified</li>
+//       <li>5. Not specified</li>
+//       <li>6. Not specified</li>
+//       <li>7. Not specified</li>
+//       <li>8. Not specified</li>
+//     </ul>
 
-    <blockquote>
-      <h5>Qualifications:</h5>
-    </blockquote>
+//     <blockquote>
+//       <h5>Qualifications:</h5>
+//     </blockquote>
 
-    <ul>
-      <li>1. Not specified</li>
-      <li>2. Not specified</li>
-      <li>3. Not specified</li>
-      <li>4. Not specified</li>
-      <li>5. Not specified</li>
-      <li>6. Not specified</li>
-      <li>7. Not specified</li>
-      <li>8. Not specified</li>
-    </ul>
+//     <ul>
+//       <li>1. Not specified</li>
+//       <li>2. Not specified</li>
+//       <li>3. Not specified</li>
+//       <li>4. Not specified</li>
+//       <li>5. Not specified</li>
+//       <li>6. Not specified</li>
+//       <li>7. Not specified</li>
+//       <li>8. Not specified</li>
+//     </ul>
 
-    <blockquote>
-      <h5>Benefits:</h5>
-    </blockquote>
+//     <blockquote>
+//       <h5>Benefits:</h5>
+//     </blockquote>
 
-    <ul>
-      <li>1. Not specified</li>
-      <li>2. Not specified</li>
-      <li>3. Not specified</li>
-      <li>4. Not specified</li>
-      <li>5. Not specified</li>
-      <li>6. Not specified</li>
-      <li>7. Not specified</li>
-      <li>8. Not specified</li>
-    </ul>
-    Interested candidates can contact <a href="mailto:info@jiei-thai.co.th">info@jiei-thai.co.th</a>
-  </div>
-</section>
-    `,
+//     <ul>
+//       <li>1. Not specified</li>
+//       <li>2. Not specified</li>
+//       <li>3. Not specified</li>
+//       <li>4. Not specified</li>
+//       <li>5. Not specified</li>
+//       <li>6. Not specified</li>
+//       <li>7. Not specified</li>
+//       <li>8. Not specified</li>
+//     </ul>
+//     Interested candidates can contact <a href="mailto:info@jiei-thai.co.th">info@jiei-thai.co.th</a>
+//   </div>
+// </section>
+//     `,
 
     // วันเกิดบริษัท
     `
@@ -725,10 +726,10 @@ export default function News() {
     This year’s trip highlights a “blend of nature-based relaxation + team-building activities + sustainability.”
     `,
     // สมัครงาน
-    `
-    Now Hiring: Staff Position
-    `
-    ,
+    // `
+    // Now Hiring: Staff Position
+    // `
+    // ,
     // วันเกิดบริษัท
     `
      JIEI (Thailand) Company Anniversary – November 11, 2025
@@ -851,58 +852,58 @@ export default function News() {
 </section>
 
     `,
-    // สมัครงาน
-    `
-      <h2>求人募集：スタッフ</h2>
-  <p>
-    <h5>主な業務内容：</h5>
-  </p>
-  <div>
-    <ul>
-      <li>1. 未定</li>
-      <li>2. 未定</li>
-      <li>3. 未定</li>
-      <li>4. 未定</li>
-      <li>5. 未定</li>
-      <li>6. 未定</li>
-      <li>7. 未定</li>
-      <li>8. 未定</li>
-    </ul>
+//     // สมัครงาน
+//     `
+//       <h2>求人募集：スタッフ</h2>
+//   <p>
+//     <h5>主な業務内容：</h5>
+//   </p>
+//   <div>
+//     <ul>
+//       <li>1. 未定</li>
+//       <li>2. 未定</li>
+//       <li>3. 未定</li>
+//       <li>4. 未定</li>
+//       <li>5. 未定</li>
+//       <li>6. 未定</li>
+//       <li>7. 未定</li>
+//       <li>8. 未定</li>
+//     </ul>
 
-    <blockquote>
-      <h5>応募資格：</h5>
-    </blockquote>
+//     <blockquote>
+//       <h5>応募資格：</h5>
+//     </blockquote>
 
-    <ul>
-      <li>1. 未定</li>
-      <li>2. 未定</li>
-      <li>3. 未定</li>
-      <li>4. 未定</li>
-      <li>5. 未定</li>
-      <li>6. 未定</li>
-      <li>7. 未定</li>
-      <li>8. 未定</li>
-    </ul>
+//     <ul>
+//       <li>1. 未定</li>
+//       <li>2. 未定</li>
+//       <li>3. 未定</li>
+//       <li>4. 未定</li>
+//       <li>5. 未定</li>
+//       <li>6. 未定</li>
+//       <li>7. 未定</li>
+//       <li>8. 未定</li>
+//     </ul>
 
-    <blockquote>
-      <h5>福利厚生：</h5>
-    </blockquote>
+//     <blockquote>
+//       <h5>福利厚生：</h5>
+//     </blockquote>
 
-    <ul>
-      <li>1. 未定</li>
-      <li>2. 未定</li>
-      <li>3. 未定</li>
-      <li>4. 未定</li>
-      <li>5. 未定</li>
-      <li>6. 未定</li>
-      <li>7. 未定</li>
-      <li>8. 未定</li>
-    </ul>
-    応募希望の方は <a href="mailto:info@jiei-thai.co.th">info@jiei-thai.co.th</a> までご連絡ください。
-  </div>
-</section>
+//     <ul>
+//       <li>1. 未定</li>
+//       <li>2. 未定</li>
+//       <li>3. 未定</li>
+//       <li>4. 未定</li>
+//       <li>5. 未定</li>
+//       <li>6. 未定</li>
+//       <li>7. 未定</li>
+//       <li>8. 未定</li>
+//     </ul>
+//     応募希望の方は <a href="mailto:info@jiei-thai.co.th">info@jiei-thai.co.th</a> までご連絡ください。
+//   </div>
+// </section>
 
-    `,
+//     `,
     // วันเกิดบริษัท
     `
       <section class="company-announcement">
@@ -970,10 +971,10 @@ export default function News() {
     今年の旅行の特徴は「自然の中でのリラックス + チームビルディング活動 + 持続可能性の融合」です。
     `,
     // สมัครงาน
-    `
-    募集職種：労働安全衛生担当者（専門職レベル）
-    `
-    ,
+    // `
+    // 募集職種：労働安全衛生担当者（専門職レベル）
+    // `
+    // ,
     // วันเกิดบริษัท
     `
     company-announcement
@@ -1000,7 +1001,7 @@ export default function News() {
     // Company trip
     '/News/company-trip-2025/company-trip-2025 (1).jpg',
     // สมัครงาน
-    `/imageEmployee.png`,
+    // `/imageEmployee.png`,
     // วันเกิดบริษัท
     `/News/11-11.png`,
     //New year party
@@ -1013,7 +1014,7 @@ export default function News() {
     //  วันก่อตั้งบริษัท
     '07 พฤษจิกายน 2025',
     // Company trip
-    '13 ตุลาคม 2025',
+    // '13 ตุลาคม 2025',
     // สมัครงาน
     '08 พฤษจิกายน 2025',
     // วันเกิดบริษัท
@@ -1030,7 +1031,7 @@ export default function News() {
     //  วันก่อตั้งบริษัท
     'November 07, 2025',
     // Company trip
-    'October 13 , 2025',
+    // 'October 13 , 2025',
     // สมัครงาน
     'November 08, 2025',
     // วันเกิดบริษัท
@@ -1046,7 +1047,7 @@ export default function News() {
     //  วันก่อตั้งบริษัท
     '2025年11月07日',
     // Company trip
-    '2025年10月13日',
+    // '2025年10月13日',
     // สมัครงาน
     '2025年11月08日',
     // วันเกิดบริษัท
@@ -1133,7 +1134,7 @@ export default function News() {
                     <Image
                       className='image-product'
                       src={revImg[start + index]}
-                      alt={revNewsTH[start + index]}
+                      alt={`ผู้ผลิตชิ้นส่วนยางรถยนต์ จังหวัดชลบุรี JIEI Thailand`}
                       width={1000}
                       height={1000}
                       priority
@@ -1296,7 +1297,7 @@ export default function News() {
                   <>
                     <Image
                       src={currentImage}
-                      alt={`ภาพที่ ${imgIndex + 1}`}
+                      alt={`ผู้ผลิตชิ้นส่วนยางรถยนต์ จังหวัดชลบุรี JIEI Thailand`}
                       width={800}
                       height={600}
                       loading="lazy"
