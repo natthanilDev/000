@@ -5065,7 +5065,12 @@ h4 {
   /* box-shadow: 0 0 2px #959595; */
   width: 100%;
   border-radius: 10px;
-  background-color: #eeeeee;
+  /* background-color: #eeeeee; */
+
+
+}
+.president-image{
+  padding-top:40px ;
 
 
 }
@@ -5073,6 +5078,7 @@ h4 {
 .image-president-company {
   width: 80%;
   margin: 0 auto;
+  border-radius: 10px;
 }
 
 .upIcon {
@@ -5080,6 +5086,9 @@ h4 {
   color: #000796;
   z-index: 9999;
 
+}
+.president-content{
+  margin-top: -30px;
 }
 
 .upIcon:hover {
