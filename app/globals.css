@@ -12,12 +12,13 @@
   padding: 0;
   box-sizing: border-box;
   /* font-family: "Prompt", "Noto Sans JP", sans-serif; */
-  font-family: "Kanit", sans-serif;
+  font-family: "Prompt", "Noto Sans", "Noto Sans JP", sans-serif;
   font-weight: 300;
   font-style: normal;
   font-optical-sizing: auto;
   transition: all ease 0.25s;
 }
+
 
 a {
   text-decoration: none;
@@ -3012,10 +3013,11 @@ h4 {
     display: grid;
     grid-template-columns: 1fr;
   }
- .columns-product {
+
+  .columns-product {
     display: grid;
     grid-template-columns: 1fr;
- 
+
   }
 
 
@@ -6201,12 +6203,11 @@ h4 {
 }
 
 
-
 @media screen and (max-width :600px) {
 
- .columns-product {
+  .columns-product {
     display: grid;
     grid-template-columns: 1fr;
- 
+
   }
 }

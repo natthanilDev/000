@@ -17,38 +17,38 @@ export default function Contact() {
   const icon = [
     "icon-contact bi bi-telephone-fill",
     "icon-contact bi bi-globe",
-    "icon-contact bi bi-envelope-at-fill",
+    // "icon-contact bi bi-envelope-at-fill",
     "icon-contact bi bi-geo-alt-fill"
   ]
   const link = [
     "tel:033-136581-4",
     "https://jiei-thai.co.th",
-    "mailto:info@jiei-thai.co.th",
+    // "mailto:info@jiei-thai.co.th",
     "https://maps.app.goo.gl/rymNPgK529UiEo2g6"
   ]
   const titleTH = [
     'โทรศัพท์',
     'เว็บไซต์',
-    'อีเมล',
+    // 'อีเมล',
     'ที่อยู่',
   ]
   const titleEN = [
     "Phone",
     "Website",
-    "E-Mail",
+    // "E-Mail",
     "Address"
   ]
   const titleJP = [
     '電話番号',
     'ウェブサイト',
-    'メール',
+    // 'メール',
     '住所',
   ]
 
   const contact = [
     '033-136581-4',
     'https://jiei-thai.co.th',
-    'info@jiei-thai.co.th',
+    // 'info@jiei-thai.co.th',
     'Pinthong 4 Industrial Estate, Unit G18, 180/3 Moo 6, T.Bueng, A.Sriracha, Chonburi 20230 Thailand'
   ]
 

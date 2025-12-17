@@ -75,7 +75,7 @@ export default function ContactForm() {
                 title: lang===('th') ? 'กรุณากรอกข้อมูลในช่องที่จำเป็นให้ครบถ้วน' :
                     lang===('en') ? 'Please complete all required fields' :
                         '必須項目をすべて入力してください',
-                text: lang===('th') ? 'กรุณากรอกชื่อ อีเมล และข้อความ' :
+                text: lang===('th') ? 'กรุณากรอกข้อมูลทั้งหมด' :
                     lang===('en') ? 'Please enter your name, email, and message.' :
                         '名前、メールアドレス、およびメッセージを入力してください。',
             });

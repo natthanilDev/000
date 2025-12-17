@@ -78,6 +78,17 @@ export async function POST(req: NextRequest) {
     let { name, email, subject, message, address, phone } = data;
 
     // validate length
+    if(name.length > limits.name ||
+      email.length > limits.email ||
+      (subject && subject.length > limits.subject) ||
+      phone.length > limits.phone ||
+      address.length > limits.address) {
+      return NextResponse.json(
+        { success: false, message: "Input exceeds maximum length." },
+        { status: 400 }
+      );
+    }
+
     validateLength("Name", name, limits.name);
     validateLength("Email", email, limits.email);
     validateLength("Subject", subject || "New Contact Form Message", limits.subject);
