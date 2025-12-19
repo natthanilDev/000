@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Prompt, Noto_Sans_JP , Kanit , Noto_Sans} from "next/font/google";
+import { Prompt, Noto_Sans_JP} from "next/font/google";
 import "./globals.css";
 import Topbar from "./components/topbar/topbar";
 import Navbar from "./components/navbar/navbar";
@@ -11,18 +11,10 @@ import Top from "./components/top/top";
 
 
 
-const noto_Sans = Noto_Sans({
-  variable: "--font-Noto_Sans_Thai",
-  subsets: ['latin'],
-  weight: '400'
-})
 
 
-const kanit = Kanit({
-  variable: "--font-kanit",
-  subsets: ['latin'],
-  weight: '400'
-})
+
+
 
 const prompt = Prompt({
   variable: "--font-prompt",

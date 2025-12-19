@@ -285,7 +285,7 @@ export default function Products() {
     }).then(async (result) => {
       if (result.isConfirmed) {
         try {
-          const res = await fetch('/api/products', {
+          const res = await fetch('http://localhost:8000/api/send-email-product.php', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(dataForForm),
