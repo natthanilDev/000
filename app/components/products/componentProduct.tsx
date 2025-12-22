@@ -285,7 +285,7 @@ export default function Products() {
     }).then(async (result) => {
       if (result.isConfirmed) {
         try {
-          const res = await fetch('http://localhost:8000/api/send-email-product.php', {
+          const res = await fetch('https://jiei-thai.co.th/api-product/send-email-product.php', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(dataForForm),
@@ -306,7 +306,7 @@ export default function Products() {
               phone: '',
               honeypot: ''
             });
-            window.location.reload()
+            window.location.href = "/products"
           } else {
             Swal.fire({
               icon: 'error',
@@ -438,14 +438,14 @@ export default function Products() {
                   <label className='label-input-contactUs' htmlFor="product-name">Product Name</label>
                   <div className="input-data-product">
                     <input required defaultValue={productsEN[selectedProduct - 1].title} readOnly className='input-contactUs' type="text" name="productName" id="product-name" />
-                    <input onChange={formData} type="hidden" defaultValue={productsEN[selectedProduct - 1].title} name="productName" />
+                    <input onChange={formData} type="hidden" defaultValue={productsEN[selectedProduct - 1].title} name="productName" placeholder='product name' />
                   </div>
                 </div>
 
                 <div className="input-form-contactUs">
                   <label className='label-input-contactUs' htmlFor="message">Message</label>
                   <div className="input-data-product">
-                    <input onChange={formData} required className='input-contactUs' type="text" name="message" id="message" />
+                    <input onChange={formData} required className='input-contactUs' placeholder='message' type="text" name="message" id="message" />
                   </div>
                 </div>
 
@@ -453,7 +453,7 @@ export default function Products() {
                 <div className="input-form-contactUs">
                   <label className='label-input-contactUs' htmlFor="email">Email</label>
                   <div className="input-data-product">
-                    <input onChange={formData} required className='input-contactUs' type="email" name="email" id="email" />
+                    <input onChange={formData} required className='input-contactUs' placeholder='gmail'  type="email" name="email" id="email" />
                   </div>
                 </div>
 
@@ -461,7 +461,7 @@ export default function Products() {
                 <div className="input-form-contactUs">
                   <label className='label-input-contactUs' htmlFor="phone">Phone</label>
                   <div className="input-data-product">
-                    <input onChange={formData} required className='input-contactUs' type="number" name="phone" id="phone" />
+                    <input onChange={formData} required className='input-contactUs' placeholder='phone' type="number" name="phone" id="phone" />
                   </div>
                 </div>
 

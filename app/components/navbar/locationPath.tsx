@@ -32,7 +32,6 @@ export default function Nav() {
 
     localStorage.setItem('lang', selected);
 
-    localStorage.setItem('lang', selected);
     setLang(selected);
     window.location.reload();
   }
@@ -54,11 +53,11 @@ export default function Nav() {
     'Contact Us'
   ]
   const MenuPath = [
-    '/about',
-    '/news',
-    '/technologies',
-    '/network',
-    '/contact'
+    '/about/',
+    '/news/',
+    '/technologies/',
+    '/network/',
+    '/contact/'
   ]
   const MenuJP = [
 
@@ -68,31 +67,7 @@ export default function Nav() {
     'ネットワーク',
     'お問い合わせ'
   ]
-  // const MenuProductTH = [
-  //   'ชิ้นส่วนสำหรับกระจก',
-  //   'ชิ้นส่วนห้องเครื่องยนต์',
-  //   'ชิ้นส่วนประตู',
-  //   // 'ผลิตภัณฑ์สั่งคำพิเศษ',
-  // ]
-  // const MenuProductEN = [
-  //   'Parts for Glass',
-  //   'Engine Room Parts',
-  //   'Door Parts',
-  //   // 'Products Collection',
-  // ]
-  // const MenuProductJP = [
-  //   'ガラス用部品',
-  //   'エンジンルーム部品',
-  //   'ドア部品',
-  //   // 'すべての製品',
-  // ]
 
-  // const MenuProductPath = [
-  //   '/products/Glass',
-  //   '/products/Engine',
-  //   '/products/Door',
-  //   // '/products/custom-parts',
-  // ]
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
@@ -137,7 +112,7 @@ export default function Nav() {
               <input ref={menuCheckboxRef} type="checkbox" className="icon-menu-show" id="icon-menu-show" />
 
               <ul id="main-navigation" className="ul-navigation">
-                <li onClick={closeMenu} className={`li-menu ${Path === '/' || Path === "/iso9001" || Path === "/iso14001" || Path === "/iatf16949" ? 'path' : ''}`} >
+                <li onClick={closeMenu} className={`li-menu ${Path === '/' || Path === "/iso9001/" || Path === "/iso14001/" || Path === "/iatf16949/" ? 'path' : ''}`} >
                   <Link href="/" className="nav-link" title="JIEI Thailand Homepage - Automotive Rubber Parts Manufacturer">
                     {lang === ('th') ? 'หน้าแรก' : lang === ('en') ? 'Home' : 'ホーム'}
                   </Link>
@@ -145,7 +120,7 @@ export default function Nav() {
 
                 {/* <NavProduct /> */}
                 <div>
-                  <li onClick={closeMenu}  className={`li-menu ${Path === '/products/Glass' || Path === '/products/Engine' || Path === '/products/Door' || Path === '/products/custom-parts' || Path === '/products' ? 'path' : ''}`}>
+                  <li onClick={closeMenu} className={`li-menu ${Path === '/products/Glass/' || Path === '/products/Engine/' || Path === '/products/Door/' || Path === '/products/custom-parts/' || Path === '/products/' ? 'path' : ''}`}>
                     <div className="hover-for-show-product">
                       <input type="checkbox" className="dropdown-menu" id="dropdown-menu" ref={menuCheck} />
                       <span className="nav-link">
@@ -155,24 +130,10 @@ export default function Nav() {
                           </Link>
                         </label>
                       </span>
-                      {/* <i className="chevron-down bi bi-chevron-down"></i> */}
+
                       <div className="product-jiei-thai">
                         <ul className="ul-product">
-                          {/* {MenuProductTH.map((item, index) => (
-                            <Link key={index}
-                              onClick={closeMenu} href={`${MenuProductPath[index]}`}
-                              className="Link-product-class"
-                              title="Engine Mounts - Automotive Rubber Parts JIEI Thailand">
-                              <li className={`li-product${index + 1} ${Path === MenuProductPath[index] ? 'path' : ''}`} >
-                               
-                                <p className='menu-c'>
-                                  {lang === ('th') ? item : lang === ('en') ? MenuProductEN[index] : MenuProductJP[index]}
-                                </p>
 
-                              </li>
-                            </Link>
-
-                          ))} */}
                         </ul>
                       </div>
                     </div>
@@ -181,7 +142,7 @@ export default function Nav() {
 
 
                 {MenuTH.map((item, index) => (
-                  <li key={index} className={` li-menu ${Path === `${MenuPath[index]}` ? 'path' : ''}`}>
+                  <li key={index} className={`li-menu ${Path === `${MenuPath[index]}` ? 'path' : ''}`}>
                     <Link
                       onClick={closeMenu} href={`${MenuPath[index]}`}
                       className="nav-link"

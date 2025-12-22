@@ -155,15 +155,15 @@ export default function ContactForm() {
                                 lang === ('th') ? "ส่งอีเมลสำเร็จ!" : lang === ('en') ? "Email sent successfully!" : "メールが正常に送信されました！",
                             text: lang === ('th') ? "เราจะติดต่อกลับโดยเร็วที่สุด" : lang === ('en') ? "We will contact you as soon as possible." : "できるだけ早くご連絡いたします。"
                         });
-                        // setForm({
-                        //     name: '',
-                        //     email: '',
-                        //     subject: '',
-                        //     message: '',
-                        //     address: '',
-                        //     phone: '',
-                        //     honeypot: ''
-                        // });
+                        setForm({
+                            name: '',
+                            email: '',
+                            subject: '',
+                            message: '',
+                            address: '',
+                            phone: '',
+                            honeypot: ''
+                        });
                     } else {
                         Swal.fire({
                             icon: 'error',
