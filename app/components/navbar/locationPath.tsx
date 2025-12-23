@@ -9,10 +9,10 @@ export default function Nav() {
   const [scrolled, setScrolled] = useState(false);
   const Path = usePathname()
   const [menu, setMenu] = useState(false)
-
+  const pathName = Path.replace('/', '')
   const menuCheckboxRef = useRef<HTMLInputElement>(null);
-
   const menuCheck = useRef<HTMLInputElement>(null);
+  
   const closeMenu = () => {
     if (menuCheckboxRef.current) {
       menuCheckboxRef.current.checked = false
@@ -36,9 +36,9 @@ export default function Nav() {
     window.location.reload();
   }
 
-
-
   const MenuTH = [
+    "หน้าแรก",
+    "คอลเลกชันผลิตภัณฑ์",
     "เกี่ยวกับเรา",
     "ข่าวสารและกิจกรรม",
     "เทคโนโลยี",
@@ -46,21 +46,36 @@ export default function Nav() {
     "ติดต่อเรา"
   ]
   const MenuEN = [
+    'Home',
+    'Products Collection',
     'About Us',
     'News & Activities',
     'Technologies',
     'Network',
     'Contact Us'
   ]
-  const MenuPath = [
+  const MenuPathLink = [
+    '/',
+    '/products/',
     '/about/',
     '/news/',
     '/technologies/',
     '/network/',
     '/contact/'
   ]
-  const MenuJP = [
 
+    const MenuPath = [
+    '',
+    'products/',
+    'about/',
+    'news/',
+    'technologies/',
+    'network/',
+    'contact/'
+  ]
+  const MenuJP = [
+    'ホーム',
+    '製品',
     '会社概要',
     'ニュースとイベント',
     'テクノロジー',
@@ -112,20 +127,20 @@ export default function Nav() {
               <input ref={menuCheckboxRef} type="checkbox" className="icon-menu-show" id="icon-menu-show" />
 
               <ul id="main-navigation" className="ul-navigation">
-                <li onClick={closeMenu} className={`li-menu ${Path === '/' || Path === "/iso9001/" || Path === "/iso14001/" || Path === "/iatf16949/" ? 'path' : ''}`} >
+                {/* <li onClick={closeMenu} className={`li-menu ${pathName.startsWith('')  || pathName.startsWith("iso9001/") || pathName.startsWith("iso14001/") || pathName === "iatf16949/" ? 'path' : ''}`} >
                   <Link href="/" className="nav-link" title="JIEI Thailand Homepage - Automotive Rubber Parts Manufacturer">
                     {lang === ('th') ? 'หน้าแรก' : lang === ('en') ? 'Home' : 'ホーム'}
                   </Link>
-                </li>
+                </li> */}
 
                 {/* <NavProduct /> */}
-                <div>
-                  <li onClick={closeMenu} className={`li-menu ${Path === '/products/Glass/' || Path === '/products/Engine/' || Path === '/products/Door/' || Path === '/products/custom-parts/' || Path === '/products/' ? 'path' : ''}`}>
+                {/* <div>
+                  <li onClick={closeMenu} className={`li-menu ${pathName === 'products/Glass/' || pathName === 'products/Engine/' || pathName === 'products/Door/' || pathName === 'products/custom-parts/' || pathName === 'products/' ? 'path' : ''}`}>
                     <div className="hover-for-show-product">
                       <input type="checkbox" className="dropdown-menu" id="dropdown-menu" ref={menuCheck} />
                       <span className="nav-link">
                         <label htmlFor="dropdown-menu">
-                          <Link href={'/products'} className="nav-link" title="JIEI Thailand Homepage - Automotive Rubber Parts Manufacturer">
+                          <Link href={'/products/'} className="nav-link" title="JIEI Thailand Homepage - Automotive Rubber Parts Manufacturer">
                             <span className='category-product'>{lang === ('th') ? "คอลเลกชันผลิตภัณฑ์" : lang === ('en') ? "Products Collection" : "製品"}</span>
                           </Link>
                         </label>
@@ -138,20 +153,19 @@ export default function Nav() {
                       </div>
                     </div>
                   </li>
-                </div>
+                </div> */}
 
 
                 {MenuTH.map((item, index) => (
-                  <li key={index} className={`li-menu ${Path === `${MenuPath[index]}` ? 'path' : ''}`}>
+                  <li key={index} className={`li-menu ${pathName.startsWith(`${MenuPath[index]}`) ? 'path' : ''}`}>
                     <Link
-                      onClick={closeMenu} href={`${MenuPath[index]}`}
+                      onClick={closeMenu} href={`${MenuPathLink[index]}`}
                       className="nav-link"
                       title="JIEI(THAILAND).CO.,LTD ผลิตยางเกี่ยวกับรถยนต์ ชลบุรี">
                       {lang === ('th') ? item : lang === ('en') ? MenuEN[index] : MenuJP[index]}
                     </Link>
                   </li>
                 ))}
-
 
                 <div className="lang-select">
                   <label htmlFor="language" className="sr-only">Language</label>
@@ -166,10 +180,6 @@ export default function Nav() {
           </div>
         </div>
       </nav>
-
-
-
-
 
     </header>
   )

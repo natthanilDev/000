@@ -1840,10 +1840,11 @@ a:hover {
   width: 100%;
   background-size: cover;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 50px;
   padding: 30px;
   border-top: 1px solid #959595;
+  
 }
 
 .logo-footer {

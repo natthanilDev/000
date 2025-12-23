@@ -184,7 +184,7 @@ export default function FooterClient() {
 
           </div>
 
-          <div className="footer-box2">
+          {/* <div className="footer-box2">
             <div className="topic-box">
               <h6>Google Map</h6>
             </div>
@@ -194,7 +194,7 @@ export default function FooterClient() {
 
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
 
         {/* Bottom */}
