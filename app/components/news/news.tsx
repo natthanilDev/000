@@ -90,7 +90,6 @@ export default function News() {
       '/News/company-trip-2025/company-trip-2025 (44).jpg',
       '/News/company-trip-2025/company-trip-2025 (45).jpg',
       '/News/company-trip-2025/company-trip-2025 (46).jpg',
-      '/News/company-trip-2025/company-trip-2025 (47).jpg',
       '/News/company-trip-2025/company-trip-2025 (48).jpg',
       '/News/company-trip-2025/company-trip-2025 (49).jpg',
       '/News/company-trip-2025/company-trip-2025 (50).jpg',

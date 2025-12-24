@@ -12,7 +12,7 @@ export default function Nav() {
   const pathName = Path.replace('/', '')
   const menuCheckboxRef = useRef<HTMLInputElement>(null);
   const menuCheck = useRef<HTMLInputElement>(null);
-  
+
   const closeMenu = () => {
     if (menuCheckboxRef.current) {
       menuCheckboxRef.current.checked = false
@@ -38,8 +38,8 @@ export default function Nav() {
 
   const MenuTH = [
     "หน้าแรก",
-    "คอลเลกชันผลิตภัณฑ์",
     "เกี่ยวกับเรา",
+    "คอลเลกชันผลิตภัณฑ์",
     "ข่าวสารและกิจกรรม",
     "เทคโนโลยี",
     "เครือข่าย",
@@ -47,8 +47,8 @@ export default function Nav() {
   ]
   const MenuEN = [
     'Home',
-    'Products Collection',
     'About Us',
+    'Products Collection',
     'News & Activities',
     'Technologies',
     'Network',
@@ -56,8 +56,8 @@ export default function Nav() {
   ]
   const MenuPathLink = [
     '/',
-    '/products/',
     '/about/',
+    '/products/',
     '/news/',
     '/technologies/',
     '/network/',
@@ -66,8 +66,8 @@ export default function Nav() {
 
     const MenuPath = [
     '',
-    'products/',
     'about/',
+    'products/',
     'news/',
     'technologies/',
     'network/',
@@ -75,8 +75,8 @@ export default function Nav() {
   ]
   const MenuJP = [
     'ホーム',
-    '製品',
     '会社概要',
+    '製品',
     'ニュースとイベント',
     'テクノロジー',
     'ネットワーク',
@@ -107,10 +107,10 @@ export default function Nav() {
 
       <nav className="navbar" role="navigation" aria-label="Main Navigation">
         <div className="container-box">
-          <Link href="/" aria-label="กลับไปหน้าแรก JIEI Thailand" title="JIEI Thailand - Automotive Rubber Parts Manufacturer">
+          <Link href="/" aria-label="กลับไปหน้าแรก JIEI Thailand" title="ผู้ผลิตชิ้นส่วนยางรถยนต์">
             <Image
               src="/jiei-thailand-logo.png"
-              alt="JIEI Thailand Logo - Leading Automotive Rubber Parts Manufacturer in Thailand"
+              alt="ผลิตภัณฑ์ยางรถยนต์ JIEI Thailand โลโก้"
               width={1000}
               height={1000}
               priority
@@ -120,11 +120,17 @@ export default function Nav() {
           <div className="nav-link-box" >
 
             <div className="icon-menu">
+              <input ref={menuCheckboxRef} type="checkbox" className="icon-menu-show" id="icon-menu-show" />
+              
               <label onClick={() => { setMenu(!menu) }} htmlFor="icon-menu-show" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="main-navigation" className="icon-menu-label">
-                <i className={menu === true ? "bi bi-x" : "bi bi-list"}></i>
+                {/* <i className={menu === true ? "bi bi-x" : "bi bi-list"}></i> */}
+                <div className="div-menu-box">
+                  <div className="menu-div" />
+                  <div className="menu-div" />
+                  <div className="menu-div" />
+                </div>
               </label>
 
-              <input ref={menuCheckboxRef} type="checkbox" className="icon-menu-show" id="icon-menu-show" />
 
               <ul id="main-navigation" className="ul-navigation">
                 {/* <li onClick={closeMenu} className={`li-menu ${pathName.startsWith('')  || pathName.startsWith("iso9001/") || pathName.startsWith("iso14001/") || pathName === "iatf16949/" ? 'path' : ''}`} >
@@ -158,10 +164,7 @@ export default function Nav() {
 
                 {MenuTH.map((item, index) => (
                   <li key={index} className={`li-menu ${pathName.startsWith(`${MenuPath[index]}`) ? 'path' : ''}`}>
-                    <Link
-                      onClick={closeMenu} href={`${MenuPathLink[index]}`}
-                      className="nav-link"
-                      title="JIEI(THAILAND).CO.,LTD ผลิตยางเกี่ยวกับรถยนต์ ชลบุรี">
+                    <Link onClick={closeMenu} href={`${MenuPathLink[index]}`} className="nav-link" title="JIEI(THAILAND).CO.,LTD ผลิตยางเกี่ยวกับรถยนต์ ชลบุรี">
                       {lang === ('th') ? item : lang === ('en') ? MenuEN[index] : MenuJP[index]}
                     </Link>
                   </li>
