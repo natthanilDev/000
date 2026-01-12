@@ -10,16 +10,16 @@ import ScrollReveal from '../ScrollReveal/ScrollReveal';
 export default function Products() {
   const [selectedProduct, setSelectedProduct] = useState<number | null>(null);
   const [lang, setLang] = useState<'th' | 'en' | 'jp'>('th');
-  const imageProductIntro = [
-    `/Menu/Menu (1).png`,
-    `/Menu/Menu (2).png`,
-    `/Menu/Menu (3).png`,
-  ]
-  const location = [
-    '#Glass Seal',
-    '#Engine Seal',
-    '#Weatherstrip Door Seal',
-  ]
+  // const imageProductIntro = [
+  //   `/Menu/Menu (1).png`,
+  //   `/Menu/Menu (2).png`,
+  //   `/Menu/Menu (3).png`,
+  // ]
+  // const location = [
+  //   '#Glass Seal',
+  //   '#Engine Seal',
+  //   '#Weatherstrip Door Seal',
+  // ]
   const productsEN = [
     // Hood Seal
     {
@@ -347,7 +347,13 @@ export default function Products() {
 
       {selectedProduct === null ? (
         <>
-          <div className="menuProductBox">
+        <ScrollReveal>
+          <h1 className="title-product-page">
+             {lang == 'en' ? "Our products" : lang == "th" ? "สินค้าของเรา" : "当社の商品"}
+          </h1>
+          <div className="line" />
+          </ScrollReveal>
+          {/* <div className="menuProductBox">
             <div className="boxMargin">
               {imageProductIntro.map((imageSrc, index) => (
                 <ScrollReveal key={index}>
@@ -366,7 +372,7 @@ export default function Products() {
                 </ScrollReveal>
               ))}
             </div>
-          </div>
+          </div> */}
 
 
           <div className='columns-product'>
@@ -393,7 +399,7 @@ export default function Products() {
                                   className="image-Hood-seal-Front"
                                   loading="lazy"
                                 />
-                                 <h2 className="titleProduct">
+                                <h2 className="titleProduct">
                                   {lang === 'th' ? productTH[item.id - 1].title : lang === 'en' ? item.title : productJP[item.id - 1].title}
                                 </h2>
                               </div>
@@ -453,7 +459,7 @@ export default function Products() {
                 <div className="input-form-contactUs">
                   <label className='label-input-contactUs' htmlFor="email">Email</label>
                   <div className="input-data-product">
-                    <input onChange={formData} required className='input-contactUs' placeholder='gmail'  type="email" name="email" id="email" />
+                    <input onChange={formData} required className='input-contactUs' placeholder='gmail' type="email" name="email" id="email" />
                   </div>
                 </div>
 

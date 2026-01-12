@@ -568,17 +568,19 @@ a:hover {
     opacity: 1;
     z-index: 9;
   }
-.icon-menu-show:checked~ .icon-menu-label .div-menu-box .menu-div:nth-child(1) {
-  
+
+  .icon-menu-show:checked~.icon-menu-label .div-menu-box .menu-div:nth-child(1) {
+
     transform: rotate(45deg) translate(5px, 5px);
   }
 
-  .icon-menu-show:checked~ .icon-menu-label .div-menu-box .menu-div:nth-child(2) {
-  
+  .icon-menu-show:checked~.icon-menu-label .div-menu-box .menu-div:nth-child(2) {
+
     opacity: 0;
   }
-  .icon-menu-show:checked~ .icon-menu-label .div-menu-box .menu-div:nth-child(3) {
-    transform: rotate(-45deg) translate(6px ,-6px);
+
+  .icon-menu-show:checked~.icon-menu-label .div-menu-box .menu-div:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
 
   }
 
@@ -614,7 +616,7 @@ a:hover {
   .image-logo {
     width: 100px;
     height: auto;
-    
+
   }
 
   .top-navigation-Link {
@@ -825,7 +827,7 @@ a:hover {
 
 .why-choose-we {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1.5fr 1fr;
 }
 
 .whyText-box {
@@ -1082,14 +1084,14 @@ a:hover {
 .support-box {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 50px;
+  gap: 30px;
   width: 95%;
   margin: 0 auto 50px auto;
 
 }
 
 .card-support-box {
-  background-color: #eeeeee79;
+  background-color: #fff;
   box-shadow: 0 0 2px #959595;
   padding: 20px 30px;
   border-radius: 6px;
@@ -1113,8 +1115,8 @@ a:hover {
 } */
 
 .icon-support {
-  width: 80%;
-  margin: 0px auto 20px auto;
+  width: 50%;
+  margin: 20px auto 20px auto;
 
 }
 
@@ -1613,22 +1615,21 @@ a:hover {
   font-weight: 900;
   position: absolute;
   bottom: 0;
-  background-color: #ffffff;
+  background: none;
   padding: 5px 20px;
   border-radius: 6px;
-  margin-left: 10px;
+  margin-left: 30px;
 }
 
 .btn-bsi-iso {
   position: absolute;
   bottom: 0;
   font-weight: 900;
-  left: 170px;
-  background-color: #ffffff;
+  left: 210px;
+  background: none;
   padding: 5px 20px;
   border-radius: 6px;
   color: #000;
-
 }
 
 
@@ -1681,12 +1682,17 @@ a:hover {
   }
 
 
+  .btn-bsi {
+
+    border-radius: 6px;
+    margin-left: 10px;
+  }
 
   .btn-bsi-iso {
     position: absolute;
     bottom: -10px;
     font-weight: 900;
-    left: 130px;
+    left: 160px;
     background-color: #ffffff;
     padding: 5px 20px;
     border-radius: 6px;
@@ -1709,6 +1715,21 @@ a:hover {
 
   .description1 {
     gap: 100px;
+  }
+}
+
+@media screen and (max-width:1786px) {
+
+  .btn-bsi-iso {
+    position: absolute;
+    bottom: -10px;
+    font-weight: 900;
+    left: 140px;
+    background: none;
+    padding: 5px 20px;
+    border-radius: 6px;
+    color: #000;
+
   }
 }
 
@@ -1768,13 +1789,12 @@ a:hover {
 
 .About-Company-box {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1.5fr;
   overflow: hidden;
   background-color: #ffff;
   margin-bottom: 60px;
   justify-content: center;
   align-items: center;
-
 }
 
 
@@ -2180,6 +2200,8 @@ a:hover {
   margin: 100px auto;
   border: 3px solid #000;
   border-radius: 20px;
+  width: 40%;
+  height: auto;
 }
 
 
@@ -2842,7 +2864,10 @@ h4 {
     width: 100%;
   }
 
-
+  .google-showMap {
+    width: 70%;
+    height: auto;
+  }
 
   .aboutUs-page {
     grid-template-columns: 1fr;
@@ -3993,8 +4018,15 @@ h4 {
 
 .tech-our {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 30px;
+
+}
+
+.img-tech-our {
+  border-radius: 6px;
+  box-shadow: 0 0 10px 2px #959595;
+
 }
 
 .topic-tech-card {
@@ -4686,8 +4718,8 @@ h4 {
 .product {
   padding: 50px 0 50px 0;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 30px;
 }
 
 .image-product-part {
@@ -4763,8 +4795,11 @@ h4 {
 
 .title-product-page {
   padding: 50px 0px 20px 0px;
-
+  text-shadow: 0 0 1px #000084;
   text-align: center;
+  font-weight: bold;
+  letter-spacing: 3px;
+  font-size: 50px;
 }
 
 .product-description-card {
@@ -5746,7 +5781,7 @@ h4 {
 
 
 
-.menuProductBox {
+/* .menuProductBox {
   background-image: url('/ยางขอบประตูรถยนต์.png');
   background-repeat: no-repeat;
   background-size: cover;
@@ -5754,7 +5789,7 @@ h4 {
   width: 100%;
   filter: grayscale(40%);
 
-}
+} */
 
 .boxMargin {
   display: flex;
@@ -5823,16 +5858,15 @@ h4 {
 }
 
 .Hood-Seal {
-  font-size: 22px;
+ font-size: 22px;
   font-weight: bold;
-  display: -webkit-box;
-  -webkit-line-clamp: 1;
-  -webkit-box-orient: vertical;
+  white-space: nowrap;        
   overflow: hidden;
+  text-overflow: ellipsis;   
   box-shadow: 0 0 30px 2px #959595;
   color: #ffffff;
   background-color: #15009d;
-  padding: 10px 0;
+  padding: 10px 12px;
   border-radius: 6px;
 
 }
@@ -5905,7 +5939,7 @@ h4 {
 
 .columns-product {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   gap: 30px;
   margin: 50px auto;
   width: 95%;
@@ -5955,26 +5989,28 @@ h4 {
 
 @media screen and (max-width : 1860px) {
 
-  /* .grad-products {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
 
-  } */
   .columns-product {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 
 
   }
 }
 
-@media screen and (max-width : 1860px) {
-  /* .grad-products {
+@media screen and (max-width : 1440px) {
+  .columns-product {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+  }
+}
+
+@media screen and (max-width:1024px) {
+  .columns-product {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-
-
-  } */
+  }
 }
 
 @media screen and (max-width:768px) {

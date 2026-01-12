@@ -22,7 +22,7 @@ export default function Tach() {
     ]
 
     const topicJP = [
-        'CAD / CATIA (キャティア)',
+        'CAD / CATIA',
         '応力解析',
         'R追従性解析',
         '材料流動解析',
@@ -31,21 +31,21 @@ export default function Tach() {
     // ----------------------------------------------------------------------------------
 
     const contentTH = [
-        'เราออกแบบโดยใช้ V5 ซึ่งเป็นเวอร์ชันล่าสุดของซอฟต์แวร์ CATIA 3-D CAD ช่วยให้สร้างแบบจำลองที่แม่นยำสำหรับชิ้นส่วนยางรถยนต์ เพื่อให้มั่นใจในคุณภาพและความถูกต้อง',
+        'เราใช้ซอฟต์แวร์ CATIA 3-D CAD ในการออกแบบ ซึ่งช่วยให้สามารถสร้างแบบจำลองชิ้นส่วนยางสำหรับยานยนต์ได้อย่างแม่นยำ และรับประกันคุณภาพและความเที่ยงตรงในระดับสูง',
         'โดยการวิเคราะห์ความเค้นและพฤติกรรมของผลิตภัณฑ์ด้วยคอมพิวเตอร์ สามารถประมาณประสิทธิภาพของผลิตภัณฑ์ได้อย่างแม่นยำก่อนการผลิตจริง',
         'เราวิเคราะห์พฤติกรรมของวัสดุในแม่พิมพ์ระหว่างกระบวนการฉีดขึ้นรูป และสร้างการจำลองการไหลของวัสดุ ความดัน การหดตัว และการบิดงอระหว่างการเติมวัสดุ เพื่อให้สามารถปรับแต่งการออกแบบแม่พิมพ์ให้เหมาะสมกับการเปลี่ยนแปลงเหล่านี้',
         'เราวิเคราะห์แรงกดและความเค้นสัมผัสเพื่อยืนยันว่าประสิทธิภาพของซีลเป็นไปตามที่ต้องการ',
     ]
 
     const contentEN = [
-        "We design using V5, the latest version of the CATIA 3-D CAD software. This allows precise modeling for automotive rubber parts ensuring high quality and accuracy.",
+        "We use CATIA 3-D CAD software for design, enabling precise modeling of automotive rubber components and ensuring a high level of quality and accuracy.",
         "By analyzing the stresses and behaviours of products with the aid of computers, a product's performance can be accurately estimated before actually making the product.",
         "",
         "We analyze the behaviour of materials in moulds during the injection moulding process and create simulations of material flow, pressure, contraction, and warp deformation during the filling process, allowing us to optimize mould designs to reflect those changes.",
         "We analyze compressive loads and contact stresses to confirm that seal performance is satisfactory."
     ]
     const contentJP = [
-        '私たちは、CATIA 3-D CAD ソフトウェアの最新バージョンである V5 を使用して設計を行っています。これにより、自動車用ゴム部品の精密なモデリングが可能となり、高品質と高精度を保証します。',
+        '私たちは、CATIA 3-D CAD ソフトウェアを使用して設計を行っており、自動車用ゴム部品の精密なモデリングを可能にし、高い品質と精度を保証しています。',
         '製品の応力や挙動をコンピュータで解析することにより、実際に製造する前に製品の性能を正確に見積もることができます。',
         '射出成形プロセス中の金型内における材料の挙動を解析し、充填プロセス中の材料の流動、圧力、収縮、反り変形をシミュレーションすることで、それらの変化を反映させた最適な金型設計を行います。',
         'シール性能が十分であることを確認するために、圧縮荷重および接触応力を解析します。',
@@ -67,7 +67,7 @@ export default function Tach() {
     ]
 
     const topicJP1 = [
-        'テストロール（試験用の圧延）',
+        'テストロール',
         'ムーニー粘度測定',
         '硬度および比重測定',
         '引張強度測定'
