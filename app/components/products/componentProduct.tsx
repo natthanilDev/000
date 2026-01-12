@@ -54,7 +54,7 @@ export default function Products() {
     // Weatherstrip Door Seal
     {
       id: 5,
-      category: 'Weatherstrip Door Seal',
+      category: 'Back Door Weatherstrip',
       title: 'Back Door Weatherstrip',
       image: '/Products/Back Door Weatherstrip.png',
       content: `[Sealing material for vehicle body and doors] This product is highly evaluated in terms of water-tightness, sound insulation, and closing performance. It also enables lightweight design to respond to market needs.`
@@ -62,7 +62,7 @@ export default function Products() {
     // Door Opening Seal
     {
       id: 6,
-      category: 'Door Opening Seal',
+      category: 'Door Opening Trim',
       title: 'Door Opening Seal',
       image: '/Products/Door opening trim.png',
       content: `[3-layer extrusion product: EPDM sponge rubber + EPDM solid rubber + cored bar.] A 4-layer product is also available. As a sealing material attached to vehicle doors and door frames, it is proven to deliver excellent sound insulation, water-tightness, closing performance, and lightweight characteristics.`

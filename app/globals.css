@@ -827,7 +827,7 @@ a:hover {
 
 .why-choose-we {
   display: grid;
-  grid-template-columns: 1.5fr 1fr;
+  grid-template-columns: 1fr 1fr;
 }
 
 .whyText-box {
@@ -890,7 +890,7 @@ a:hover {
 }
 
 .image-iso {
-  width: 100%;
+  width: 80%;
   height: auto;
   margin: 0 auto;
   padding-bottom: 0;
@@ -1618,14 +1618,14 @@ a:hover {
   background: none;
   padding: 5px 20px;
   border-radius: 6px;
-  margin-left: 30px;
+  margin-left: 10px;
 }
 
 .btn-bsi-iso {
   position: absolute;
   bottom: 0;
   font-weight: 900;
-  left: 210px;
+  left: 170px;
   background: none;
   padding: 5px 20px;
   border-radius: 6px;
@@ -5858,7 +5858,7 @@ h4 {
 }
 
 .Hood-Seal {
- font-size: 22px;
+ font-size: 16px;
   font-weight: bold;
   white-space: nowrap;        
   overflow: hidden;

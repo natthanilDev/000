@@ -14,7 +14,7 @@ export default function AboutDescription() {
     return (
         <div>
             <ScrollReveal>
-                <h1 className='about-company-name'>{lang === ('th') ? "บริษัท เจไออีไอ (ไทยแลนด์) จำกัด" : lang === ('en') ? "JIEI (Thailand) Co., Ltd." : "ジェイアイ (タイランド)株式会社"} </h1>
+                <h1 className='about-company-name'>{lang === ('th') ? "บริษัท เจไออีไอ (ไทยแลนด์) จำกัด" : "JIEI (Thailand) Co., Ltd." } </h1>
             </ScrollReveal>
 
             <ScrollReveal>
@@ -27,37 +27,37 @@ export default function AboutDescription() {
                         <div className="tr-about">
                             <div className='content-inthe-table'>
                                 <div className="content-in-aboutBox">
-                                    <span className="title-about-text"> {lang === ('th') ? "ชื่อบริษัท" : lang === ('en') ? "Company Name" : "会社名"}</span>
+                                    <span className="title-about-text"> {lang === ('th') ? "ชื่อบริษัท" : "Company Name" }</span>
                                 </div>
                                 <div className="content-in-aboutBox">
-                                    {lang === ('th') ? "บริษัท เจไออีไอ (ประเทศไทย) จำกัด" : lang === ('en') ? "JIEI (Thailand) Co., Ltd." : "ジェイアイイーアイ（タイランド）株式会社"}
+                                    {lang === ('th') ? "บริษัท เจไออีไอ (ประเทศไทย) จำกัด" : "JIEI (Thailand) Co., Ltd." }
                                 </div>
                             </div>
                             <div className='content-inthe-table1'>
                                 <div className="content-in-aboutBox">
 
-                                    <span className="title-about-text">   {lang === ('th') ? "ที่อยู่" : lang === ('en') ? "Address" : "住所"}</span>
+                                    <span className="title-about-text">   {lang === ('th') ? "ที่อยู่" : "Address" }</span>
                                 </div>
                                 <div className="content-in-aboutBox">
 
-                                    {lang === ('th') ? " นิคมอุตสาหกรรมปิ่นทอง 4 หน่วย G18 180/3 หมู่ 6 ต.บึง อ.ศรีราชา ชลบุรี 20230 ประเทศไทย โทร. 033136581-4" : lang === ('en') ? "Pinthong Industrial Estate 4, Unit G18 180/3 Moo 6, Bueng Sub-district,Si Racha District, Chonburi 20230, Thailand Tel: +66 (0)33-136581-4" : "ピントン工業団地4、G18号ユニット 180/3 ムー6、ブン地区 シラチャー郡、チョンブリー県 20230 タイ王国 電話: +66 (0)33-136581-4"}
+                                    {lang === ('th') ? " นิคมอุตสาหกรรมปิ่นทอง 4 หน่วย G18 180/3 หมู่ 6 ต.บึง อ.ศรีราชา ชลบุรี 20230 ประเทศไทย โทร. 033136581-4" : "Pinthong Industrial Estate 4, Unit G18 180/3 Moo 6, Bueng Sub-district,Si Racha District, Chonburi 20230, Thailand Tel: +66 (0)33-136581-4" }
                                 </div>
                             </div>
                             <div className='content-inthe-table'>
                                 <div className="content-in-aboutBox">
-                                    <span className="title-about-text"> {lang === ('th') ? "ก่อตั้งเมื่อ" : lang === ('en') ? "Established on" : "設立日"} </span>
+                                    <span className="title-about-text"> {lang === ('th') ? "ก่อตั้งเมื่อ" : "Established on"} </span>
                                 </div>
                                 <div className="content-in-aboutBox">
-                                    {lang === ('th') ? "วันศุกร์ ที่ 11 พฤศจิกายน พ.ศ. 2554" : lang === ('en') ? "Friday, 11ᵗʰ November 2011" : "2011年11月11日（金曜日）"}
+                                    {lang === ('th') ? "วันศุกร์ ที่ 11 พฤศจิกายน พ.ศ. 2554" : "Friday, 11ᵗʰ November 2011" }
                                 </div>
                             </div>
                             <div className='content-inthe-table1'>
                                 <div className="content-in-aboutBox">
-                                    <span className="title-about-text">{lang === ('th') ? "ทุนจดทะเบียน" : lang === ('en') ? "Registered Capital" : "登録資本金"}</span>
+                                    <span className="title-about-text">{lang === ('th') ? "ทุนจดทะเบียน" : "Registered Capital" }</span>
                                 </div>
                                 <div className="content-in-aboutBox">
 
-                                    {lang === ('th') ? "150,000,000 บาท" : lang === ('en') ? "150,000,000 Baht" : "1億5,000万バーツ"}
+                                    {lang === ('th') ? "150,000,000 บาท" : "150,000,000 Baht" }
                                 </div>
                             </div>
 

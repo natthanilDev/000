@@ -10,7 +10,7 @@ export default function Network() {
         '/JieiThailand-logo.png',
     ]
     const company = [
-        'JIEI(Thailand) Co.,Ltd.',
+        'KASEI KOGYO.CO.,LTD',
         'Jiaxing JIEI Automobile Parts Co., Ltd.',
         'JIEI (Singapore) Pte. Ltd.',
         'JIEI Technical Trading(Shanghai)Co., Ltd.',
@@ -19,7 +19,7 @@ export default function Network() {
 
     ]
     const address = [
-        'Bueng, Si Racha District, Chon Buri 20230',
+        '1-64 Bouzuyama, Yokone-cho, Obu-shi, Aichi, 474-0011, Japan',
         'No.1055, Bazi Road, Xiuzhou Industrial estate, Jiaxing City, Zhejiang, China. 314000',
         '',
         '',
@@ -29,7 +29,7 @@ export default function Network() {
         '',
     ]
     const map = [
-        'https://maps.app.goo.gl/uA6kMUg9A16CFL6E8',
+        'https://maps.app.goo.gl/ympsAZb9fjxn13Vb9',
         'https://maps.app.goo.gl/xFhGFhJkuiuiJm7r5',
         '',
         '',
@@ -64,26 +64,26 @@ export default function Network() {
         "TOKAI JIEI ASIA CO., LTD."
     ]
     const address1 = [
-        "4 Chome-1 Naganecho, Obu, Aichi 474-0021 ญี่ปุ่น",
-        "ญี่ปุ่น 〒474-0001 Aichi, Obu, Kitasakimachi, Ida−129 物流センター",
-        "ถ.นวลจันทร์ แขวงนวลจันทร์ เขตบึงกุ่ม กรุงเทพมหานคร 10230",
+        "4 Chome-1 Naganecho, Obu, Aichi 474-0021 Japan",
+        "Japan 〒474-0001 Ida-129, Kitasaki-machi, Obu City, Aichi Prefecture Logistics Center",
+        "Nuan Chan Road, Nuan Chan Sub-district, Bueng Kum District, Bangkok 10230, Thailand",
         " 4-33 Nakayamacho, Kariya City, Aichi Prefecture, 448-0026",
-        "267 Shintashiro, Kumiyama-cho, คุเซะกุน จังหวัดเกียวโต 613-0022",
+        "267 Shintashiro, Kumiyama-cho, Kuse-gun, Kyoto 613-0022, Japan",
         "6 KAZAKOSHI KAMIHASUMI-CHO NISHIO-CITY AICHI PRE-0011 JAPAN JP",
-        "Shojisaku-8-21 Izumicho, Anjo, Aichi 444-1221 ญี่ปุ่น",
-        "4X8Q+WF เทศบาลนครแหลมฉบัง อำเภอบางละมุง ชลบุรี",
+        "Shojisaku-8-21 Izumicho, Anjo, Aichi 444-1221 Japan",
+        "4X8Q+WF, Laem Chabang City Municipality, Bang Lamung District, Chonburi, Thailand",
         "3-1-13, Senbanishi, Minoh city, Osaka, 562-0036 Japan",
-        "1 Chome-16-5 Torikaikami, Settsu, Osaka 566-0062 ญี่ปุ่น",
-        "55 Robert Wright Dr, Brookville, OH 45309 สหรัฐอเมริกา",
-        "700/65 ซอย กรมดิษฐ์ 6 ตำบล คลองตำหรุ อำเภอเมืองชลบุรี ชลบุรี 20000",
+        "1 Chome-16-5 Torikaikami, Settsu, Osaka 566-0062 Japan",
+        "55 Robert Wright Dr, Brookville, OH 45309, United States",
+        "700/65 Kromdit 6 Alley,Khlong Tamru Sub-district, Mueang Chonburi District,Chonburi 20000, Thailand",
         "",
         "1 RD HOA CAM IZ CAM LE DIST DANANG CITY VIETNAM DANANG DA550000 VN",
         "",
         "",
-        "C. de Los Arellano 202 Gigante, de Los, 20392 Arellano, Ags., เม็กซิโก",
-        "Kawasan Industri MM2100, Jl. Irian Blok LL-3, Jatiwangi, Kec. Cikarang Bar., Kabupaten Bekasi, Jawa Barat 17530 อินโดนีเซีย",
-        "CGMW+2GJ, Block F, Surajpur Site V, Greater Noida, Uttar Pradesh 201312 อินเดีย",
-        "700/2 Moo. 1, Amata Service Center building, 4th Floor Room 402, Bangna-Trad Highway Km.57, ตำบล คลองตำหรุ อำเภอเมืองชลบุรี 20000"
+        "C. de Los Arellano 202,Gigante de Los,Arellano, Aguascalientes 20392, Mexico",
+        "MM2100 Industrial Estate,Jl. Irian Block LL-3, Jatiwangi,West Cikarang District, Bekasi Regency,West Java 17530, Indonesia",
+        "CGMW+2GJ, Block F,Surajpur Site V, Greater Noida,Uttar Pradesh 201312, India",
+        "700/2 Moo 1,Amata Service Center Building, 4th Floor, Room 402,Bangna–Trad Highway, Km. 57,Khlong Tamru Sub-district, Mueang Chonburi District,Chonburi 20000, Thailand"
 
 
 
@@ -218,22 +218,12 @@ export default function Network() {
 
 
                         <ScrollReveal>
-                            <h1 className="tokai-group">{lang===('th') ? "กลุ่มบริษัท Tokai Kogyo" : lang===('en') ? "Tokai Kogyo Group" : "東海工業グループ"}</h1>
+                            <h1 className="tokai-group">{lang===('th') ? "กลุ่มบริษัท Tokai Kogyo" : lang===('en') ? "Tokai Kogyo Group" : "東海興業グループ"}</h1>
 
                             <div className="scrollbar">
                                 <div className="network-box">
                                     {company1.map((item, index) => (
                                         <div className="network-component" key={index}>
-                                            {/* <div className="image-box-network">
-                                                <Image
-                                                    className="image-logo-company-partners"
-                                                    src={logo[index]}
-                                                    alt={`Logo of ${item}`}
-                                                    width={2000}
-                                                    height={2000}
-                                                    priority
-                                                />
-                                            </div> */}
                                             <div className="content-company-partners">
                                                 <h2 className="company-name">{item}</h2>
                                                 <p className="company-content">{address1[index]}</p>

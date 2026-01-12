@@ -71,7 +71,7 @@ export default function AboutJIEI() {
                             <div className="president-content">
                                 <ScrollReveal>
                                     <h2 className='position-topmanager'>{lang === "th" ? "ประธานกรรมการผู้จัดการ" : lang === "en" ? "Managing Director" : "代表取締役社長"} </h2>
-                                    <p className='top-manager-name'>{lang === "th" ? "คุณโยชิคัตสึ อินาดะ" : lang === "en" ? "Mr.Yoshikatsu Inada" : "稲田 義勝"}</p>
+                                    <p className='top-manager-name'>{lang === "th" ? "คุณโยชิคัตสึ อินาดะ" : lang === "en" ? "Mr.Yoshikatsu Inada" : "稲田 好克"}</p>
 
                                 </ScrollReveal>
                             </div>

@@ -31,21 +31,21 @@ export default function Tach() {
     // ----------------------------------------------------------------------------------
 
     const contentTH = [
-        'เราใช้ซอฟต์แวร์ CATIA 3-D CAD ในการออกแบบ ซึ่งช่วยให้สามารถสร้างแบบจำลองชิ้นส่วนยางสำหรับยานยนต์ได้อย่างแม่นยำ และรับประกันคุณภาพและความเที่ยงตรงในระดับสูง',
+        'เราใช้ซอฟต์แวร์ CATIA 3D CAD ในการออกแบบ ซึ่งช่วยให้สามารถสร้างแบบจำลองชิ้นส่วนยางสำหรับยานยนต์ได้อย่างแม่นยำ และรับประกันคุณภาพและความเที่ยงตรงในระดับสูง',
         'โดยการวิเคราะห์ความเค้นและพฤติกรรมของผลิตภัณฑ์ด้วยคอมพิวเตอร์ สามารถประมาณประสิทธิภาพของผลิตภัณฑ์ได้อย่างแม่นยำก่อนการผลิตจริง',
         'เราวิเคราะห์พฤติกรรมของวัสดุในแม่พิมพ์ระหว่างกระบวนการฉีดขึ้นรูป และสร้างการจำลองการไหลของวัสดุ ความดัน การหดตัว และการบิดงอระหว่างการเติมวัสดุ เพื่อให้สามารถปรับแต่งการออกแบบแม่พิมพ์ให้เหมาะสมกับการเปลี่ยนแปลงเหล่านี้',
         'เราวิเคราะห์แรงกดและความเค้นสัมผัสเพื่อยืนยันว่าประสิทธิภาพของซีลเป็นไปตามที่ต้องการ',
     ]
 
     const contentEN = [
-        "We use CATIA 3-D CAD software for design, enabling precise modeling of automotive rubber components and ensuring a high level of quality and accuracy.",
+        "We use CATIA 3D CAD software for design, enabling precise modeling of automotive rubber components and ensuring a high level of quality and accuracy.",
         "By analyzing the stresses and behaviours of products with the aid of computers, a product's performance can be accurately estimated before actually making the product.",
         "",
         "We analyze the behaviour of materials in moulds during the injection moulding process and create simulations of material flow, pressure, contraction, and warp deformation during the filling process, allowing us to optimize mould designs to reflect those changes.",
         "We analyze compressive loads and contact stresses to confirm that seal performance is satisfactory."
     ]
     const contentJP = [
-        '私たちは、CATIA 3-D CAD ソフトウェアを使用して設計を行っており、自動車用ゴム部品の精密なモデリングを可能にし、高い品質と精度を保証しています。',
+        '私たちは、CATIA 3D CAD ソフトウェアを使用して設計を行っており、自動車用ゴム部品の精密なモデリングを可能にし、高い品質と精度を保証しています。',
         '製品の応力や挙動をコンピュータで解析することにより、実際に製造する前に製品の性能を正確に見積もることができます。',
         '射出成形プロセス中の金型内における材料の挙動を解析し、充填プロセス中の材料の流動、圧力、収縮、反り変形をシミュレーションすることで、それらの変化を反映させた最適な金型設計を行います。',
         'シール性能が十分であることを確認するために、圧縮荷重および接触応力を解析します。',
@@ -53,21 +53,19 @@ export default function Tach() {
 
 
     const topicTH1 = [
-        "การทดสอบการรีดตัวอย่าง",
+        
         "การวัดความหนืดของยาง (Mooney Viscosity)",
         "การวัดค่าความแข็งและความถ่วงจำเพาะ",
         "การวัดค่าความต้านทานแรงดึง",
     ]
 
     const topicEN1 = [
-        "Test roll",
         "Money Viscosity Measurements",
         "Hardness & Specific Gravity Measurements",
         "Tensile Strength Measurements",
     ]
 
     const topicJP1 = [
-        'テストロール',
         'ムーニー粘度測定',
         '硬度および比重測定',
         '引張強度測定'
@@ -75,20 +73,17 @@ export default function Tach() {
 
 
     const contentTH1 = [
-        'เรามีการวิจัยและพัฒนาเพื่อสร้างสรรค์ยางคุณภาพสูง',
         'และตรวจสอบเพื่อให้มั่นใจว่าเป็นไปตามคุณสมบัติทางกายภาพที่หลากหลาย',
         "ตรวจสอบความแข็งและความถ่วงจำเพาะของผลิตภัณฑ์",
         "",
     ]
 
     const contentEN1 = [
-        "We are engaged in research and development for superior rubber.",
         "And check to ensure that it satisfies a variety of physical property requirements.",
         "Check to ensure hardness & Specific gravity of products",
         "",
     ]
     const contentJP1 = [
-        '当社は高品質なゴムの研究開発に取り組んでいます。',
         'さらに、さまざまな物理的特性の要件を満たしていることを確認します。',
         '製品の硬度と比重を確認する',
         '',
@@ -155,7 +150,7 @@ export default function Tach() {
     // const contentAnalysisEN = ["CAD Drawing", "Structural Analysis", "Material Simulation", "Product Testing"]
     // const contentAnalysisJP = ["CAD図面作成", "構造解析", "材料シミュレーション", "製品試験"]
 
-    const materials = ['/03_r1_c1.png', '/03_r1_c3.png', '/tech (2).png', '/tech (1).png']
+    const materials = ['/03_r1_c3.png', '/tech (2).png', '/tech (1).png']
 
     // const contentMaterialsTH = ['เครื่องทดสอบการรีด', "เครื่องวัดความหนืดแบบ Mooney", "เครื่องทดสอบแรงดึง", "การวิเคราะห์แรงกดอัดและความเค้นสัมผัส"]
     // const contentMaterialsEN = ["Test Roll", "Money Viscosity meter", "Tensile strength testing machine", "Compressive load analysis and contact stress analysis"]

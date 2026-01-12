@@ -69,7 +69,7 @@ export default function WhyChooseUs() {
 
                 <div className="why-choose-image">
                     <ScrollReveal>
-                        <Image src={'/Home-car.png'} className='image-iso' alt='โรงงานผลิตชิ้นส่วนยางรถยนต์มาตรฐานสากล ISO & IATF16949 ที่ชลบุรี ประเทศไทย"' width={1000} height={1000} priority />
+                        <Image src={'/Automobile.png'} className='image-iso' alt='โรงงานผลิตชิ้นส่วนยางรถยนต์มาตรฐานสากล ISO & IATF16949 ที่ชลบุรี ประเทศไทย"' width={1000} height={1000} priority />
                     </ScrollReveal>
                 </div>
 
