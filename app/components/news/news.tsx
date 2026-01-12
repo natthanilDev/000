@@ -19,86 +19,13 @@ export default function News() {
   const Image_Establishment = [
     // รูปภาพวันก่อตั้งบริษัท
     [
-
       '/jieiImage/19.png',
-      '/jieiImage/1.png',
-      '/jieiImage/2.png',
-      '/jieiImage/3.png',
-      '/jieiImage/4.png',
-      '/jieiImage/5.png',
-      '/jieiImage/6.png',
-      '/jieiImage/7.png',
-      '/jieiImage/8.png',
-      '/jieiImage/9.png',
-      '/jieiImage/10.png',
-      '/jieiImage/11.png',
-      '/jieiImage/12.png',
-      '/jieiImage/13.png',
-      '/jieiImage/14.png',
-      '/jieiImage/15.png',
-      '/jieiImage/16.png',
-      '/jieiImage/17.png',
-      '/jieiImage/18.png',
-      '/jieiImage/20.png',
-      '/jieiImage/21.png',
+     
     ],
     // รูปภาพ Company trip
     [
       '/News/company-trip-2025/company-trip-2025 (1).jpg',
-      '/News/company-trip-2025/company-trip-2025 (2).jpg',
-      '/News/company-trip-2025/company-trip-2025 (3).jpg',
-      '/News/company-trip-2025/company-trip-2025 (4).jpg',
-      '/News/company-trip-2025/company-trip-2025 (5).jpg',
-      '/News/company-trip-2025/company-trip-2025 (6).jpg',
-      '/News/company-trip-2025/company-trip-2025 (7).jpg',
-      '/News/company-trip-2025/company-trip-2025 (8).jpg',
-      '/News/company-trip-2025/company-trip-2025 (9).jpg',
-      '/News/company-trip-2025/company-trip-2025 (10).jpg',
-      '/News/company-trip-2025/company-trip-2025 (11).jpg',
-      '/News/company-trip-2025/company-trip-2025 (12).jpg',
-      '/News/company-trip-2025/company-trip-2025 (13).jpg',
-      '/News/company-trip-2025/company-trip-2025 (14).jpg',
-      '/News/company-trip-2025/company-trip-2025 (15).jpg',
-      '/News/company-trip-2025/company-trip-2025 (16).jpg',
-      '/News/company-trip-2025/company-trip-2025 (17).jpg',
-      '/News/company-trip-2025/company-trip-2025 (18).jpg',
-      '/News/company-trip-2025/company-trip-2025 (19).jpg',
-      '/News/company-trip-2025/company-trip-2025 (20).jpg',
-      '/News/company-trip-2025/company-trip-2025 (21).jpg',
-      '/News/company-trip-2025/company-trip-2025 (22).jpg',
-      '/News/company-trip-2025/company-trip-2025 (23).jpg',
-      '/News/company-trip-2025/company-trip-2025 (24).jpg',
-      '/News/company-trip-2025/company-trip-2025 (25).jpg',
-      '/News/company-trip-2025/company-trip-2025 (26).jpg',
-      '/News/company-trip-2025/company-trip-2025 (27).jpg',
-      '/News/company-trip-2025/company-trip-2025 (28).jpg',
-      '/News/company-trip-2025/company-trip-2025 (29).jpg',
-      '/News/company-trip-2025/company-trip-2025 (30).jpg',
-      '/News/company-trip-2025/company-trip-2025 (31).jpg',
-      '/News/company-trip-2025/company-trip-2025 (32).jpg',
-      '/News/company-trip-2025/company-trip-2025 (33).jpg',
-      '/News/company-trip-2025/company-trip-2025 (34).jpg',
-      '/News/company-trip-2025/company-trip-2025 (35).jpg',
-      '/News/company-trip-2025/company-trip-2025 (36).jpg',
-      '/News/company-trip-2025/company-trip-2025 (37).jpg',
-      '/News/company-trip-2025/company-trip-2025 (38).jpg',
-      '/News/company-trip-2025/company-trip-2025 (39).jpg',
-      '/News/company-trip-2025/company-trip-2025 (40).jpg',
-      '/News/company-trip-2025/company-trip-2025 (41).jpg',
-      '/News/company-trip-2025/company-trip-2025 (42).jpg',
-      '/News/company-trip-2025/company-trip-2025 (43).jpg',
-      '/News/company-trip-2025/company-trip-2025 (44).jpg',
-      '/News/company-trip-2025/company-trip-2025 (45).jpg',
-      '/News/company-trip-2025/company-trip-2025 (46).jpg',
-      '/News/company-trip-2025/company-trip-2025 (48).jpg',
-      '/News/company-trip-2025/company-trip-2025 (49).jpg',
-      '/News/company-trip-2025/company-trip-2025 (50).jpg',
-      '/News/company-trip-2025/company-trip-2025 (51).jpg',
-      '/News/company-trip-2025/company-trip-2025 (52).jpg',
-      '/News/company-trip-2025/company-trip-2025 (53).jpg',
-      '/News/company-trip-2025/company-trip-2025 (54).jpg',
-      '/News/company-trip-2025/company-trip-2025 (55).jpg',
-      '/News/company-trip-2025/company-trip-2025 (56).jpg',
+  
     ],
     // รูปภาพรับสมัครงาน
     // [
@@ -111,60 +38,14 @@ export default function News() {
     ],
     //New year party
     [
-      '/News/New-Year-Party/new-year-party.png',
-      '/News/New-Year-Party/new-year-party (1).png',
-      '/News/New-Year-Party/new-year-party (2).png',
-      '/News/New-Year-Party/new-year-party (3).png',
-      '/News/New-Year-Party/new-year-party (4).png',
-      '/News/New-Year-Party/new-year-party (5).png',
-      '/News/New-Year-Party/new-year-party (6).png',
-      '/News/New-Year-Party/new-year-party (7).png',
-      '/News/New-Year-Party/new-year-party (8).png',
-      '/News/New-Year-Party/new-year-party (9).png',
-      '/News/New-Year-Party/new-year-party (10).png',
-      '/News/New-Year-Party/new-year-party (11).png',
-      '/News/New-Year-Party/new-year-party (12).png',
-      '/News/New-Year-Party/new-year-party (13).png',
-      '/News/New-Year-Party/new-year-party (14).png',
-      '/News/New-Year-Party/new-year-party (15).png',
-      '/News/New-Year-Party/new-year-party (16).png',
-      '/News/New-Year-Party/new-year-party (17).png',
-      '/News/New-Year-Party/new-year-party (18).png',
-      '/News/New-Year-Party/new-year-party (19).png',
-      '/News/New-Year-Party/new-year-party (20).png',
-      '/News/New-Year-Party/new-year-party (21).png',
-      '/News/New-Year-Party/new-year-party (22).png',
-      '/News/New-Year-Party/new-year-party (23).png',
-      '/News/New-Year-Party/new-year-party (24).png',
-      '/News/New-Year-Party/new-year-party (25).png',
-      '/News/New-Year-Party/new-year-party (26).png',
-      '/News/New-Year-Party/new-year-party (27).png',
-      '/News/New-Year-Party/new-year-party (28).png',
-      '/News/New-Year-Party/new-year-party (29).png',
-      '/News/New-Year-Party/new-year-party (30).png',
-      '/News/New-Year-Party/new-year-party (31).png',
-      '/News/New-Year-Party/new-year-party (32).png',
-      '/News/New-Year-Party/new-year-party (33).png',
-      '/News/New-Year-Party/new-year-party (34).png',
-      '/News/New-Year-Party/new-year-party (35).png',
-      '/News/New-Year-Party/new-year-party (36).png',
-      '/News/New-Year-Party/new-year-party (37).png',
-      '/News/New-Year-Party/new-year-party (38).png',
-      '/News/New-Year-Party/new-year-party (39).png',
-      '/News/New-Year-Party/new-year-party (40).png',
-      '/News/New-Year-Party/new-year-party (41).png',
-      '/News/New-Year-Party/new-year-party (42).png',
-      '/News/New-Year-Party/new-year-party (43).png',
-      '/News/New-Year-Party/new-year-party (44).png',
-      '/News/New-Year-Party/new-year-party (45).png',
+      '/News/New-Year-Party/newyear-party.png',
+     
     ],
     //Sports Day
     [
-      '/News/Sport-Day/Sport (1).jpeg',
-      '/News/Sport-Day/Sport (2).jpeg',
-      '/News/Sport-Day/Sport (3).jpeg',
-      '/News/Sport-Day/Sport (4).jpeg',
-      '/News/Sport-Day/Sport (5).jpeg',
+      
+      '/News/Sport-Day/sportDay.png',
+    
     ]
 
   ]
@@ -182,7 +63,7 @@ export default function News() {
     //New year party
     'งานเลี้ยงปีใหม่ ประจำปี 2025 วันที่ 5 ธันวาคม 2025',
     //Sports Day
-    'จังานกีฬาสี บริษัท JIEI (Thailand) Co., Ltd.'
+    'งานกีฬาสี บริษัท JIEI (Thailand) Co., Ltd.'
   ];
   const newsEN = [
     //  วันก่อตั้งบริษัท
@@ -463,11 +344,8 @@ export default function News() {
         ในปี 2025 บริษัท เจไออีไอ ได้จัดโครงการท่องเที่ยวประจำปีขึ้นเพื่อส่งเสริมความสัมพันธ์ในทีมงาน เพิ่มพูนประสบการณ์ใหม่ๆ และเปิดโอกาสให้พนักงานได้พักผ่อนเติมพลัง
         โครงการท่องเที่ยวในปีนี้มีจุดเด่นคือ “การผสมผสานระหว่างการพักผ่อนด้วยธรรมชาติ + กิจกรรมสร้างทีม + ความยั่งยืน”
     `,
-    // สมัครงาน
-    // `
-    // เปิดรับสมัครงาน: Staff
-    // `
-    ,
+  
+    
     // วันเกิดบริษัท
     `
      วันครบรอบบริษัท เจไออีไอ (ไทยแลนด์) – 11 พฤศจิกายน 2568
@@ -999,9 +877,9 @@ export default function News() {
     // วันเกิดบริษัท
     `/News/11-11.png`,
     //New year party
-    `/News/New-Year-Party/new-year-party (1).png`,
+    `/News/New-Year-Party/newyear-party.png`,
     //Sports Day
-    `/News/Sport-Day/Sport (3).jpeg`,
+    `/News/Sport-Day/sportDay.png`,
 
   ];
   const datePostTH = [
@@ -1297,12 +1175,12 @@ export default function News() {
                       loading="lazy"
                       className="image-fade"
                     />
-                    <p onClick={handleNextImage} className="btn-change-image-right">
+                    {/* <p onClick={handleNextImage} className="btn-change-image-right">
                       <i className="change-Image-btn bi bi-chevron-right"></i>
                     </p>
                     <button onClick={handleNextImage1} className="btn-change-image-left">
                       <i className="change-Image-btn bi bi-chevron-left"></i>
-                    </button>
+                    </button> */}
 
 
                   </>
@@ -1314,7 +1192,7 @@ export default function News() {
 
 
             </div>
-            <p className='text-center text-status-Image'>รูปที่ {imgIndex + 1} / {revImage_Establishment[selectedNews].length}</p>
+            {/* <p className='text-center text-status-Image'>รูปที่ {imgIndex + 1} / {revImage_Establishment[selectedNews].length}</p> */}
           </div>
 
 
