@@ -2,7 +2,6 @@
 import React, { useEffect, useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import Map from './google-map'
 import Head from 'next/head'
 export default function FooterClient() {
   const currentYear = new Date().getFullYear().toString();

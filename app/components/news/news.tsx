@@ -1154,17 +1154,17 @@ export default function News() {
 
 
 
-                const handleNextImage = () => {
-                  setImgIndex((prev) => (prev + 1) % revImage_Establishment[selectedNews].length);
-                };
+                // const handleNextImage = () => {
+                //   setImgIndex((prev) => (prev + 1) % revImage_Establishment[selectedNews].length);
+                // };
 
-                const handleNextImage1 = () => {
-                  setImgIndex((prev) =>
-                    prev === 0
-                      ? revImage_Establishment[selectedNews].length - 1
-                      : prev - 1
-                  );
-                };
+                // const handleNextImage1 = () => {
+                //   setImgIndex((prev) =>
+                //     prev === 0
+                //       ? revImage_Establishment[selectedNews].length - 1
+                //       : prev - 1
+                //   );
+                // };
                 return (
                   <>
                     <Image
