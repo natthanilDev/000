@@ -1224,13 +1224,7 @@ export default function News() {
 
           <div className="btn-back-newsPage">
             <button
-              onClick={() => {
-                setSelectedNews(null);
-                // window.location.reload()
-                window.scrollTo({ top: 0, behavior: 'smooth' });
-              }}
-              className="back-btn"
-            >
+              onClick={() => { setSelectedNews(null); window.scrollTo({ top: 0, behavior: 'smooth' });}} className="back-btn">
               {lang === 'th' ? "กลับไปหน้ารวม" : lang === 'en' ? "Back to Overview" : "一覧に戻る"}
             </button>
           </div>
