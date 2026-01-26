@@ -947,7 +947,7 @@ export default function News() {
   const revImg = rev(img);
   const revImage_Establishment = rev(Image_Establishment)
 
-  const [imgIndex, setImgIndex] = useState(0);
+  const [imgIndex,] = useState(0);
 
 
   const [lang, setLang] = useState<'th' | 'en' | 'jp'>('th');

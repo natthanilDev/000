@@ -54,8 +54,8 @@ export default function Products() {
     // Weatherstrip Door Seal
     {
       id: 5,
-      category: 'Back Door Weatherstrip',
-      title: 'Back Door Weatherstrip',
+      category: 'DOOR SEAL',
+      title: 'Door Seal',
       image: '/Products/Back Door Weatherstrip.png',
       content: `[Sealing material for vehicle body and doors] This product is highly evaluated in terms of water-tightness, sound insulation, and closing performance. It also enables lightweight design to respond to market needs.`
     },
@@ -177,7 +177,7 @@ export default function Products() {
     {
       id: 5,
       category: 'ウェザーストリップドアシール',
-      title: 'バックドアウェザーストリップ',
+      title: 'ドアシール',
       image: '/Products/Back Door Weatherstrip.png',
       content: `[車体とドアのシーリング材] 防水性、遮音性、閉まり性能で高評価。市場ニーズに応える軽量設計も可能。`
     },

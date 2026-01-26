@@ -40,46 +40,48 @@ export default function Nav() {
     "หน้าแรก",
     "เกี่ยวกับเรา",
     "เทคโนโลยี",
-    "เครือข่าย",
     "คอลเลกชันผลิตภัณฑ์",
     "ข่าวสารและกิจกรรม",
+    "เครือข่าย",
+
+
     "ติดต่อเรา"
   ]
   const MenuEN = [
     'Home',
     'About Us',
     'Technologies',
-    'Network',
     'Products Collection',
     'News & Activities',
+    'Network',
     'Contact Us'
   ]
   const MenuPathLink = [
     '/',
-    '/about/',
-    '/technologies/',
-    '/network/',
-    '/products/',
-    '/news/',
-    '/contact/'
+    '/about',
+    '/technologies',
+    '/products',
+    '/news',
+    '/network',
+    '/contact'
   ]
 
   const MenuPath = [
     '',
     'about/',
     'technologies/',
-    'network/',
     'products/',
     'news/',
+    'network/',
     'contact/'
   ]
   const MenuJP = [
     'ホーム',
     '会社概要',
     'テクノロジー',
-    'ネットワーク',
     '製品',
     'ニュースとイベント',
+    'ネットワーク',
     'お問い合わせ'
   ]
 
