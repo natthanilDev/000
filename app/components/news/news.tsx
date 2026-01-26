@@ -1226,7 +1226,7 @@ export default function News() {
             <button
               onClick={() => {
                 setSelectedNews(null);
-                window.location.reload()
+                // window.location.reload()
                 window.scrollTo({ top: 0, behavior: 'smooth' });
               }}
               className="back-btn"
