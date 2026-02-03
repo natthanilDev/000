@@ -5455,6 +5455,11 @@ h4 {
   margin-bottom: 1rem;
 }
 
+.company-announcement .box-text{
+  background-color: #000055;
+  color: #fff;
+}
+
 .company-announcement blockquote {
   margin: 1.5rem 0;
   padding: 1rem 1.5rem;

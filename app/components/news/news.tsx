@@ -130,6 +130,16 @@ export default function News() {
         ทั้งในประเทศและต่างประเทศ 
         พร้อมเดินหน้าพัฒนานวัตกรรมเพื่ออนาคตของอุตสาหกรรมไทยอย่างต่อเนื่อง
       </p>
+      <blockquote>ประวัติความเป็นมา</blockquote>
+
+      <p>พฤศจิกายน 2011: ก่อตั้งบริษัท</p>
+      <p>กลางปี 2014: เริ่มเดินสายการผลิตโรงงานแปรรูปสินค้าสำเร็จรูป ณ นิคมอุตสาหกรรมปิ่นทอง 1</p>
+      <p>กลางปี 2016: ลงทุนในสายการผลิตแบบอัดรีด (Extrusion Line)</p>
+      <p>กลางปี 2017: โรงงานแห่งที่ 2 เริ่มดำเนินการ</p>
+      <p>มกราคม 2023: โรงงานแห่งใหม่เริ่มดำเนินการ ณ นิคมอุตสาหกรรมปิ่นทอง 4</p>
+      <hr />
+
+
     </section>
   `
     // Company trip
@@ -139,6 +149,8 @@ export default function News() {
     <h2>บริษัท เจไออีไอ จัดโครงการท่องเที่ยวประจำปี ระหว่างวันที่ 11-12 ตุลาคม 2568</h2>
     <p>ในปี 2025 บริษัท เจไออีไอ ได้จัดโครงการท่องเที่ยวประจำปีขึ้นเพื่อส่งเสริมความสัมพันธ์ในทีมงาน เพิ่มพูนประสบการณ์ใหม่ๆ และเปิดโอกาสให้พนักงานได้พักผ่อนเติมพลัง</p>
     <p>โครงการท่องเที่ยวในปีนี้มีจุดเด่นคือ “การผสมผสานระหว่างการพักผ่อนด้วยธรรมชาติ + กิจกรรมสร้างทีม + ความยั่งยืน”</p>
+
+   
     <hr />
 </section>
 
@@ -325,6 +337,18 @@ export default function News() {
     both domestically and internationally,
     and continues to drive innovation for the future of Thai industry.
   </p>
+<blockquote>History</blockquote>
+
+<p>November 2011: Company established</p>
+<p>Mid-2014: Finished product processing plant commenced operations at Pinthong Industrial Estate 1</p>
+<p>Mid-2016: Investment in extrusion molding production line</p>
+<p>Mid-2017: Second factory commenced operations</p>
+<p>January 2023: New factory commenced operations at Pinthong Industrial Estate 4</p>
+
+
+<hr />
+
+
 </section>
     `,
 
@@ -492,8 +516,8 @@ export default function News() {
   </p>
   <p>
     <strong>Jiei (Thailand) Co., Ltd.</strong>（タイ語名：<em>เจไออีไอ (ประเทศไทย) จำกัด</em>）は、
-    <strong>2011年11月11日（11-11-2011）</strong> に設立されました。
-    当社は <b>産業技術</b> 分野で事業を展開し、
+    <strong>2011年11月11日 削除 </strong> に設立されました。
+    当社は <b>自動車用押出成形ゴム部品の</b> 分野で事業を展開し、
     <b>総合的なエンジニアリングサービス</b> を提供することを目的としています。
   </p>
   <p>
@@ -513,6 +537,18 @@ export default function News() {
     当社は国内外の有力企業との協力と事業領域を拡大し、
     タイ産業の未来に向けたイノベーション開発を継続しています。
   </p>
+
+
+
+<blockquote>ヒストリー</blockquote>
+
+<p>2011年11月：設立</p>
+<p>2014年中頃：ピントン第１工業団地にて完成品加工工場が稼働</p>
+<p>2016年中頃：押出成形ライン投資</p>
+<p>2017年中頃：第２工場が稼働</p>
+<p>2023年1月：ピントン第４工業団地にて新工場が稼働</p>
+
+<hr />
 </section>
     ` ,
     // Company trip
