@@ -16,7 +16,7 @@ export default function Products() {
   //   `/Menu/Menu (3).png`,
   // ]
   // const location = [
-  //   '#Glass Seal',
+  //   '#Front window Molding',
   //   '#Engine Seal',
   //   '#Weatherstrip Door Seal',
   // ]
@@ -31,22 +31,22 @@ export default function Products() {
     },
     {
       id: 2,
-      category: 'Hood Seal',
+      category: 'Hood Seal Rear',
       title: 'Hood Seal Rear',
       image: '/Products/Hood seal Rear.png',
       content: `[EPDM sponge rubber + EPDM solid rubber] Buffering material between the hood and the cowl top. Removing the cored bar enabled lightweight construction.`
     },
-    // Glass Seal
+    // Front window Molding
     {
       id: 3,
-      category: 'Glass Seal',
+      category: 'Front Window Molding',
       title: 'Front Window Molding',
       image: '/Products/Front Window Molding.png',
       content: `[EPDM sponge rubber + EPDM solid rubber + TPO molded product] Transition from resin to rubber enhanced lightweight construction, aerodynamic performance, and sound insulation.`
     },
     {
       id: 4,
-      category: 'Glass Seal',
+      category: 'Front window Molding',
       title: 'Dam Rubber / Dam lip rubber',
       image: '/Products/Dam Rubber  Dam lip rubber.png',
       content: `[Buffering material between vehicle body and glass] Not only waterproof, but also adding aesthetic value to the vehicle’s external appearance. Corresponding to the demand for product individualization.`
@@ -149,58 +149,58 @@ export default function Products() {
     {
       id: 1,
       category: 'フードシール',
-      title: 'フロントフードシール',
+      title: 'フードシールフロント',
       image: '/Products/Hood seal Front.png',
-      content: `[EPDM 押出製品 + TPO 成形品] フード、ヘッドライト、グリル用のシーリング材。断面形状を最適化し、エンジンルーム前上部との干渉を防ぎ、シール性能を向上。外装突起規制にも適合。`
+      content: `[EPDM 押出製品 + TPO 成形品] フード、ヘッドライト、グリル用のシール材。断面形状を最適化し、エンジンルーム前上部との干渉を防ぎ、シール性能を向上。外装突起規制にも適合。`
     },
     {
       id: 2,
       category: 'フードシール',
-      title: 'リアフードシール',
+      title: 'フードシールリア',
       image: '/Products/Hood seal Rear.png',
-      content: `[EPDM スポンジゴム + EPDM ソリッドゴム] フードとカウルトップ間の緩衝材。芯材の除去により軽量化を実現。`
+      content: `[EPDM スポンジゴム + EPDM ソリッドゴム] ボンネットとカウルトップ間の緩衝材。芯金を廃止することで軽量化を実現。`
     },
     {
       id: 3,
       category: 'ガラスシール',
       title: 'フロントウィンドウモールディング',
       image: '/Products/Front Window Molding.png',
-      content: `[EPDM スポンジゴム + EPDM ソリッドゴム + TPO 成形品] 樹脂からゴムへの変更で軽量化、空力性能、遮音性が向上。`
+      content: `[EPDM スポンジゴム + EPDM ソリッドゴム + TPO 成形品] 樹脂からゴムへの変更で軽量化、空力性、遮音性が向上。`
     },
     {
       id: 4,
       category: 'ガラスシール',
       title: 'ダムラバー / ダムリップラバー',
       image: '/Products/Dam Rubber  Dam lip rubber.png',
-      content: `[車体とガラス間の緩衝材] 防水だけでなく車両外観の美観向上にも寄与。個性化ニーズに対応。`
+      content: `[ボディとガラス間の緩衝材] 防水だけでなくダム性能に高い外観意匠性を加え、製品の個性化時代に対応。`
     },
     {
       id: 5,
       category: 'ウェザーストリップドアシール',
       title: 'ドアシール',
       image: '/Products/Back Door Weatherstrip.png',
-      content: `[車体とドアのシーリング材] 防水性、遮音性、閉まり性能で高評価。市場ニーズに応える軽量設計も可能。`
+      content: `[車体とドアのシール材] 止水性、遮音性、ドア閉まり性で高評価。市場ニーズに対応した意匠性を備え、軽量化も実現`
     },
     {
       id: 6,
       category: 'ドアオープニングシール',
       title: 'ドアオープニングシール',
       image: '/Products/Door opening trim.png',
-      content: `[3 層押出製品: EPDM スポンジ + EPDM ソリッド + 芯材] 4 層タイプもあり、遮音性、防水性、閉まり性能、軽量性に優れる。`
+      content: `[3 層押出製品: EPDM スポンジ + EPDM ソリッド + 芯材の３層押出製品　4層押出製品も可能、遮音性、水密性、ドア閉まり性、及び軽量化にも優れている。`
     },
     {
       id: 7,
       category: 'ドアロアシール',
       title: 'ドアロアシール',
       image: '/Products/Door lower seal.png',
-      content: `[車体とドアのシーリング材] 水・泥・砂の侵入を防ぎ、遮音性と軽量性に優れる。`
+      content: `[車体とドアのシール材] 水・泥・砂の侵入を防ぎ、遮音性と軽量性に優れる。`
     },
     {
       id: 8,
       category: 'エンジンシール',
-      title: 'エンジンシール',
+      title: 'エアーインテークシール',
       image: '/Products/Air intake seal.png',
-      content: `[EPDM スポンジゴム + EPDM ソリッドゴム] 暖気を遮断し、冷気のみをエンジンルームへ通すことで燃費向上に寄与。`
+      content: `[エンジンルーム内の暖気を抑えて冷気のみを導入し、燃費を向上させるシール材。`
     }
 
   ]
@@ -441,7 +441,7 @@ export default function Products() {
                 <h2 className='text-contactUs'>{lang === 'th' ? "สอบถามเกี่ยวกับสินค้า " : lang === 'en' ? " Product Inquiry" : " 商品に関するお問い合わせ"} {lang === 'th' ? productTH[selectedProduct - 1].title : lang === 'en' ? productsEN[selectedProduct - 1].title : productJP[selectedProduct - 1].title}</h2>
 
                 <div className="input-form-contactUs">
-                  <label className='label-input-contactUs' htmlFor="product-name">Product Name</label>
+                  <label className='label-input-contactUs' htmlFor="product-name">{lang == "en" ? "Product Name" : lang == "th" ? "ชื่อสินค้า" : "商品名"}</label>
                   <div className="input-data-product">
                     <input required defaultValue={productsEN[selectedProduct - 1].title} readOnly className='input-contactUs' type="text" name="productName" id="product-name" />
                     <input onChange={formData} type="hidden" defaultValue={productsEN[selectedProduct - 1].title} name="productName" placeholder='product name' />
@@ -449,7 +449,7 @@ export default function Products() {
                 </div>
 
                 <div className="input-form-contactUs">
-                  <label className='label-input-contactUs' htmlFor="message">Message</label>
+                  <label className='label-input-contactUs' htmlFor="message">{lang == "en" ? "Message" : lang == "th" ? "ข้อความ" : "メッセージ"}</label>
                   <div className="input-data-product">
                     <input onChange={formData} required className='input-contactUs' placeholder='message' type="text" name="message" id="message" />
                   </div>
@@ -457,7 +457,7 @@ export default function Products() {
 
 
                 <div className="input-form-contactUs">
-                  <label className='label-input-contactUs' htmlFor="email">Email</label>
+                  <label className='label-input-contactUs' htmlFor="email">{lang == "en" ? "Email" : lang == "th" ? "อีเมล" : "メール"}</label>
                   <div className="input-data-product">
                     <input onChange={formData} required className='input-contactUs' placeholder='gmail' type="email" name="email" id="email" />
                   </div>
@@ -465,7 +465,7 @@ export default function Products() {
 
 
                 <div className="input-form-contactUs">
-                  <label className='label-input-contactUs' htmlFor="phone">Phone</label>
+                  <label className='label-input-contactUs' htmlFor="phone">{lang == "en" ? "Phone" : lang == "th" ? "เบอร์โทรศัพท์" : "電話番号"}</label>
                   <div className="input-data-product">
                     <input onChange={formData} required className='input-contactUs' placeholder='phone' type="number" name="phone" id="phone" />
                   </div>
@@ -473,7 +473,7 @@ export default function Products() {
 
 
                 <div className="btn-submit-contactUs">
-                  <button className='submit-contactUs' type='submit'>Send</button>
+                  <button className='submit-contactUs' type='submit'>{lang == "en" ? "Send" : lang == "th" ? "ส่ง" : "送信"}</button>
                 </div>
               </form>
 
@@ -488,7 +488,7 @@ export default function Products() {
           </div>
 
           <div onClick={() => setSelectedProduct(null)} className="btn-back-product">
-            <button>Back</button>
+            <button>{lang == "en" ? "Back" : lang == "th" ? "กลับ" : "戻る"}</button>
           </div>
         </>
       )}

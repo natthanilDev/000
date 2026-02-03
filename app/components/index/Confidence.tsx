@@ -134,7 +134,7 @@ export default function Confidence() {
                                             <ScrollReveal>
                                                 <h4 className="topic-list">{lang === 'th' ? "2. ป้องกันน้ำและฝุ่น" : lang === 'en' ? "2. Prevents water and dust" : "2. 水やほこりを防ぐ"} </h4>
                                                 <p className="text-description-topic-list">
-                                                    {lang === 'th' ? "กันน้ำฝนและฝุ่นเข้าสู่ภายในรถ" : lang === 'en' ? "Prevents rainwater and dust from entering the vehicle interior." : "雨水やほこりが車内に入るのを防ぐ"}
+                                                    {lang === 'th' ? "กันน้ำฝนและฝุ่นเข้าสู่ภายในรถ" : lang === 'en' ? "Prevents rainwater and dust from entering the vehicle interior." : "雨水やほこりが車内に入るのを防ぎます。"}
                                                 </p>
                                             </ScrollReveal>
                                         </li>
@@ -142,7 +142,7 @@ export default function Confidence() {
                                             <ScrollReveal>
                                                 <h4 className="topic-list">{lang === 'th' ? "3. เพิ่มความปลอดภัย " : lang === 'en' ? "3. Enhances safety" : "3. 安全性を高める"}   </h4>
                                                 <p className="text-description-topic-list">
-                                                    {lang === 'th' ? "ลดแรงกระแทกของประตู ปิดสนิทและยืดอายุการใช้งานตัวถัง" : lang === 'en' ? "Reduces door impact, ensures tight closure, and extends the body’s lifespan." : "ドアの衝撃を軽減し、しっかり閉じ、車体の寿命を延ばす"}
+                                                    {lang === 'th' ? "ลดแรงกระแทกของประตู ปิดสนิทและยืดอายุการใช้งานตัวถัง" : lang === 'en' ? "Reduces door impact, ensures tight closure, and extends the body’s lifespan." : "ドアの衝撃を軽減し、しっかり閉じ、車体の寿命を延ばします。"}
                                                 </p>
                                             </ScrollReveal>
 
@@ -154,7 +154,7 @@ export default function Confidence() {
                                             <ScrollReveal>
                                                 <h4 className="topic-list">{lang === 'th' ? "4. รักษาอุณหภูมิภายในรถ" : lang === 'en' ? "4. Maintains the interior temperature of the vehicle" : "4. 車内の温度を保つ"}</h4>
                                                 <p className="text-description-topic-list">
-                                                    {lang === 'th' ? "ช่วยให้อากาศจากแอร์ไม่รั่วออก และกันอากาศร้อนจากภายนอกไม่ให้เข้ามา" : lang === 'en' ? "Prevents air from the AC from leaking out and blocks hot air from entering from outside." : "エアコンの空気が漏れないようにし、外からの熱い空気の侵入を防ぐ"}
+                                                    {lang === 'th' ? "ช่วยให้อากาศจากแอร์ไม่รั่วออก และกันอากาศร้อนจากภายนอกไม่ให้เข้ามา" : lang === 'en' ? "Prevents air from the AC from leaking out and blocks hot air from entering from outside." : "エアコンの空気が漏れないようにし、外からの熱い空気の侵入を防ぎます。"}
                                                 </p>
                                             </ScrollReveal>
                                         </li>
@@ -162,7 +162,7 @@ export default function Confidence() {
                                             <ScrollReveal>
                                                 <h4 className="topic-list">{lang === 'th' ? "5. เพิ่มความนุ่มนวลในการปิดประตู" : lang === 'en' ? "5. Provides smoother door closing" : "5. ドアの閉まりをよりスムーズにする"} </h4>
                                                 <p className="text-description-topic-list">
-                                                    {lang === 'th' ? "เมื่อปิดประตูจะนุ่มขึ้น ไม่กระแทกแข็งเกินไป" : lang === 'en' ? "The door closes more softly, without slamming harshly. " : "ドアを閉めるときに柔らかく閉まり、強くぶつからない"}
+                                                    {lang === 'th' ? "เมื่อปิดประตูจะนุ่มขึ้น ไม่กระแทกแข็งเกินไป" : lang === 'en' ? "The door closes more softly, without slamming harshly. " : "ドアを閉めるときに柔らかく閉まり、強くぶつかりません。"}
                                                 </p>
                                             </ScrollReveal>
                                         </li>

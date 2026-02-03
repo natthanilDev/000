@@ -19,13 +19,14 @@ export default function News() {
   const Image_Establishment = [
     // รูปภาพวันก่อตั้งบริษัท
     [
-      '/jieiImage/19.png',
-     
+      '/News/ac1.png',
+      '/News/ac2.png',
+
     ],
     // รูปภาพ Company trip
     [
       '/News/company-trip-2025/company-trip-2025 (1).jpg',
-  
+
     ],
     // รูปภาพรับสมัครงาน
     // [
@@ -39,13 +40,13 @@ export default function News() {
     //New year party
     [
       '/News/New-Year-Party/newyear-party.png',
-     
+
     ],
     //Sports Day
     [
-      
+
       '/News/Sport-Day/sportDay.png',
-    
+
     ]
 
   ]
@@ -92,7 +93,7 @@ export default function News() {
     //New year party
     '2025年 新年会 開催日：2025年12月5日',
     //Sports day
-    'JIEI（Thailand）Co., Ltd. スポーツデーイベント'
+    'JIEI(THAILAND)CO.,LTD. スポーツデーイベント'
   ];
 
   const contentTH = [
@@ -139,152 +140,75 @@ export default function News() {
     <h2>บริษัท เจไออีไอ จัดโครงการท่องเที่ยวประจำปี ระหว่างวันที่ 11-12 ตุลาคม 2568</h2>
     <p>ในปี 2025 บริษัท เจไออีไอ ได้จัดโครงการท่องเที่ยวประจำปีขึ้นเพื่อส่งเสริมความสัมพันธ์ในทีมงาน เพิ่มพูนประสบการณ์ใหม่ๆ และเปิดโอกาสให้พนักงานได้พักผ่อนเติมพลัง</p>
     <p>โครงการท่องเที่ยวในปีนี้มีจุดเด่นคือ “การผสมผสานระหว่างการพักผ่อนด้วยธรรมชาติ + กิจกรรมสร้างทีม + ความยั่งยืน”</p>
-    <blockquote>
-        <h5>กำหนดการ:</h5>
-    </blockquote>
-    <h5>วันที่ 11 ตุลาคม 2568 (วันที่ 1)</h5>
-    <hr />
-    <p><b>06.00-07.30 น.</b>  ลงทะเบียนรับ ป้ายชื่อ และ ป้ายกระเป๋า JIEI (ประตูความปลอดภัย) พร้อม กาแฟและขนมปังหรือแซนด์วิชฟรี 3 BUS / รถตำรวจอำนวยความสะดวก / เส้นทางมอเตอร์เวย์</p>
-    <hr />
-    <p>12.00 น. เดินทางถึง ร้านอาหารกลางวัน Nannam Country Home Resort & Restaurant 8 คน/โต๊ะ เมนู 
-        <ul>
-            <li>1. หมูสามชั้นทอดน้ำปลา</li>
-            <li>2. น้ำจิ้มถั่วเหลืองกับปลาเค็ม + ผัก</li>
-            <li>3. ไก่ผัดแกง</li>
-            <li>4. ปลาผัดแกงพริก (ชูชี)</li>
-            <li>5. ผัดกะหล่ำปลีใส่ปลาหมึกแห้ง</li>
-            <li>6. แกงส้มใส่ไข่ชะอม</li>
-            <li>7. ต้มยำไก่บ้าน</li>
-            <li>8. กุ้งเผ็ด</li>
-            <li>9. ข้าว</li>
-            <li>10. ผลไม้</li>
-            <li>11. น้ำดื่ม, น้ำแข็ง</li>
-        </ul>
-    </p>
-    <hr />
-    <p>13.30 น. เช็คอินที่ โรงแรมทองสมบูรณ์คลับ ทุกโซนของโรงแรม รับ สายรัดข้อมือ เพื่อเข้าโซนกิจกรรม</p>
-    <hr />
-    <p>14.30 - 17.30 น. ช่วงบ่าย Bake และ DJ Booth สระว่ายน้ำ & โซนสวน อาหาร: ส้มตำ, ขนมจีนแกงน้ำยา, หมูย่าง, ฯลฯ บริการรถรางรับส่งไปยังโซนกิจกรรม 15 กิจกรรม</p>
-    <hr />
-    <p>19.00-23.00 น. ปาร์ตี้กลางคืน ห้องปาร์ตี้ ชั้น 3 Backdrop, ถ่ายภาพ, MC / วงดนตรีสด ลงทะเบียนแข่งขัน คอสตูม บุฟเฟ่ต์, เครื่องดื่มแอลกอฮอล์/น้ำอัดลม ธีม: แคมปิ้ง</p>
-    <hr />
-    <p>22.00 น. บริการมาม่าคัพ</p>
-    <hr />
-    <p>23.00 น. ปาร์ตี้กลางคืนสิ้นสุด น้ำแข็งและน้ำอัดลมฟรี</p>
-    <hr />
-    <h5>วันที่ 12 ตุลาคม 2568 (วันที่ 2)</h5>
-    <hr />
-    <p>07.00-10.00 น. อาหารเช้า ร้านอาหาร ชั้น 2 บุฟเฟ่ต์ แจ้งหมายเลขห้องของคุณ</p>
-    <hr />
-    <p>10.00 น. เช็คเอาท์ > Hokkaido Flower Park เขาใหญ่ ออกเดินทางไปยัง JIEI</p>
-    <hr />
-    <p>12.00 น. เดินทางถึง ร้านอาหารกลางวัน Suankhunyaiy เขาใหญ่ กม.3 8 คน/โต๊ะ เมนู :
-        <ul>
-            <li>1. ปลาสายแดงทอดกระเทียม</li>
-            <li>2. ต้มยำไก่</li>
-            <li>3. ไก่ผัดแกง</li>
-            <li>4. ยำปลาช่อนกรอบ</li>
-            <li>5. ปีกไก่ทอดเกลือ</li>
-            <li>6. ผัดผักรวม</li>
-            <li>7. แกงไทยใส่หอยแมลงภู่และใบชะพลู</li>
-            <li>8. ข้าว</li>
-            <li>9. ผลไม้</li>
-            <li>10. น้ำดื่ม, น้ำแข็ง</li>
-        </ul>
-    </p>
-    <hr />
-    <p>15.00 น. ร้านขายของที่ระลึกที่ Cake Baan Suan Cake Baan Suan Shop</p>
-    <hr />
-    <p>19.30 น. เดินทางถึง JIEI แวะห้องน้ำระหว่างทางตามคำขอของลูกค้า</p>
     <hr />
 </section>
 
     `
-//     ,
-//     // สมัครงาน
-//     `
-    
-//     <section class="company-announcement">
-//   <h2>เปิดรับสมัครงาน: Staff</h2>
-//   <p>
-//     <h5>หน้าที่ความรับผิดชอบหลัก:</h5>
-//   </p>
-//   <div>
-//     <ul>
-//       <li>1. ยังไม่กำหนด</li>
-//       <li>2. ยังไม่กำหนด</li>
-//       <li>3. ยังไม่กำหนด</li>
-//       <li>4. ยังไม่กำหนด</li>
-//       <li>5. ยังไม่กำหนด</li>
-//       <li>6. ยังไม่กำหนด</li>
-//       <li>7. ยังไม่กำหนด </li>
-//       <li>8. ยังไม่กำหนด</li>
-//     </ul>
+    //     ,
+    //     // สมัครงาน
+    //     `
 
-//     <blockquote>
-//       <h5>คุณสมบัติ:</h5>
-//     </blockquote>
+    //     <section class="company-announcement">
+    //   <h2>เปิดรับสมัครงาน: Staff</h2>
+    //   <p>
+    //     <h5>หน้าที่ความรับผิดชอบหลัก:</h5>
+    //   </p>
+    //   <div>
+    //     <ul>
+    //       <li>1. ยังไม่กำหนด</li>
+    //       <li>2. ยังไม่กำหนด</li>
+    //       <li>3. ยังไม่กำหนด</li>
+    //       <li>4. ยังไม่กำหนด</li>
+    //       <li>5. ยังไม่กำหนด</li>
+    //       <li>6. ยังไม่กำหนด</li>
+    //       <li>7. ยังไม่กำหนด </li>
+    //       <li>8. ยังไม่กำหนด</li>
+    //     </ul>
 
-//     <ul>
-//       <li>1. ยังไม่กำหนด</li>
-//       <li>2. ยังไม่กำหนด</li>
-//       <li>3. ยังไม่กำหนด</li>
-//       <li>4. ยังไม่กำหนด</li>
-//       <li>5. ยังไม่กำหนด</li>
-//       <li>6. ยังไม่กำหนด</li>
-//       <li>7. ยังไม่กำหนด </li>
-//       <li>8. ยังไม่กำหนด</li>
-//     </ul>
+    //     <blockquote>
+    //       <h5>คุณสมบัติ:</h5>
+    //     </blockquote>
 
-//     <blockquote>
-//       <h5>สวัสดิการและผลประโยชน์:</h5>
-//     </blockquote>
+    //     <ul>
+    //       <li>1. ยังไม่กำหนด</li>
+    //       <li>2. ยังไม่กำหนด</li>
+    //       <li>3. ยังไม่กำหนด</li>
+    //       <li>4. ยังไม่กำหนด</li>
+    //       <li>5. ยังไม่กำหนด</li>
+    //       <li>6. ยังไม่กำหนด</li>
+    //       <li>7. ยังไม่กำหนด </li>
+    //       <li>8. ยังไม่กำหนด</li>
+    //     </ul>
 
-//     <ul>
-//       <li>1. ยังไม่กำหนด</li>
-//       <li>2. ยังไม่กำหนด</li>
-//       <li>3. ยังไม่กำหนด</li>
-//       <li>4. ยังไม่กำหนด</li>
-//       <li>5. ยังไม่กำหนด</li>
-//       <li>6. ยังไม่กำหนด</li>
-//       <li>7. ยังไม่กำหนด </li>
-//       <li>8. ยังไม่กำหนด</li>
-//     </ul>
-//     ผู้สนใจสามารถติดต่อ <a href="mailto:info@jiei-thai.co.th">info@jiei-thai.co.th</a>
-//   </div>
-// </section>
-//     `,
+    //     <blockquote>
+    //       <h5>สวัสดิการและผลประโยชน์:</h5>
+    //     </blockquote>
+
+    //     <ul>
+    //       <li>1. ยังไม่กำหนด</li>
+    //       <li>2. ยังไม่กำหนด</li>
+    //       <li>3. ยังไม่กำหนด</li>
+    //       <li>4. ยังไม่กำหนด</li>
+    //       <li>5. ยังไม่กำหนด</li>
+    //       <li>6. ยังไม่กำหนด</li>
+    //       <li>7. ยังไม่กำหนด </li>
+    //       <li>8. ยังไม่กำหนด</li>
+    //     </ul>
+    //     ผู้สนใจสามารถติดต่อ <a href="mailto:info@jiei-thai.co.th">info@jiei-thai.co.th</a>
+    //   </div>
+    // </section>
+    //     `,
     // วันเกิดบริษัท
-,
+    ,
     ` 
     <section class="company-announcement">
       <h2>วันครบรอบบริษัท เจไออีไอ (ไทยแลนด์) – 11 พฤศจิกายน 2568</h2>
      
       <div>
       <p>
-       ในโอกาสวันครบรอบการก่อตั้งบริษัท เจไออีไอ (ไทยแลนด์) เมื่อวันที่ 11 พฤศจิกายน 2568 <br /> ทางบริษัทได้จัดกิจกรรมเล็กๆ เพื่อเป็นการขอบคุณพนักงานทุกท่าน โดยในช่วงเที่ยงวัน พนักงานทุกคนได้รับของขวัญ ได้แก่ 
+       ในโอกาสวันครบรอบการก่อตั้งบริษัท เจไออีไอ (ไทยแลนด์) เมื่อวันที่ 11 พฤศจิกายน 2568 <br /> ทางบริษัทได้จัดกิจกรรมเล็กๆ เพื่อเป็นการขอบคุณพนักงานทุกท่าน โดยในช่วงเที่ยงวัน พนักงานทุกคนได้รับของขวัญ
       </p>
 
-       <p><b>
-          1. มาม่า 1 ห่อใหญ่
-      </b> </p>
-    
-       <p>
-       <b>
-       2. น้ำส้ม 1 ขวด
-      </b>
-       </p>
-    
-       <p>
-       <b>
-       3. ไอศกรีม 
-      </b>
-       </p>
-
-       <p>
-       <b>
-       4. อาหารกลางวันสุดพิเศษ ซึ่งประกอบด้วย ปลาซาบะย่าง และหมูทอดพร้อมน้ำจิ้มแจ่ว
-      </b> </p>
       </div>
    
     </section>
@@ -344,17 +268,14 @@ export default function News() {
         ในปี 2025 บริษัท เจไออีไอ ได้จัดโครงการท่องเที่ยวประจำปีขึ้นเพื่อส่งเสริมความสัมพันธ์ในทีมงาน เพิ่มพูนประสบการณ์ใหม่ๆ และเปิดโอกาสให้พนักงานได้พักผ่อนเติมพลัง
         โครงการท่องเที่ยวในปีนี้มีจุดเด่นคือ “การผสมผสานระหว่างการพักผ่อนด้วยธรรมชาติ + กิจกรรมสร้างทีม + ความยั่งยืน”
     `,
-  
-    
+
+
     // วันเกิดบริษัท
     `
      วันครบรอบบริษัท เจไออีไอ (ไทยแลนด์) – 11 พฤศจิกายน 2568
-       ในโอกาสวันครบรอบการก่อตั้งบริษัท เจไออีไอ (ไทยแลนด์) เมื่อวันที่ 11 พฤศจิกายน 2568 <br /> ทางบริษัทได้จัดกิจกรรมเล็กๆ เพื่อเป็นการขอบคุณพนักงานทุกท่าน โดยในช่วงเที่ยงวัน พนักงานทุกคนได้รับของขวัญ ได้แก่ 
+       ในโอกาสวันครบรอบการก่อตั้งบริษัท เจไออีไอ (ไทยแลนด์) เมื่อวันที่ 11 พฤศจิกายน 2568 <br /> ทางบริษัทได้จัดกิจกรรมเล็กๆ เพื่อเป็นการขอบคุณพนักงานทุกท่าน โดยในช่วงเที่ยงวัน พนักงานทุกคนได้รับของขวัญ 
        
-       1. มาม่า 1 ห่อใหญ่, 
-       2. น้ำส้ม 1 ขวด, 
-       3. ไอศกรีม 
-       4. อาหารกลางวันสุดพิเศษ ซึ่งประกอบด้วย ปลาซาบะย่าง และหมูทอดพร้อมน้ำจิ้มแจ่ว
+       
      `,
 
     //New year party
@@ -414,120 +335,63 @@ export default function News() {
     <h2>JIEI Annual Company Trip: October 11-12, 2025</h2>
     <p>In 2025, JIEI organized its annual company trip to strengthen team relationships, provide new experiences, and allow employees to relax and recharge.</p>
     <p>This year’s trip highlights a “blend of nature-based relaxation + team-building activities + sustainability.”</p>
-    <blockquote>
-        <h5>Schedule:</h5>
-    </blockquote>
-    <h5>October 11, 2025 (Day 1)</h5>
-    <hr />
-    <p><b>06:00–07:30 AM</b> – Register to receive a name tag & JIEI bag tag (Safety Gate). Free coffee & bread or sandwich. 3 Buses / Police escort car / Motorway route.</p>
-    <hr />
-    <p>12:00 PM – Arrive at lunch restaurant Nannam Country Home Resort & Restaurant. 8 persons/table. Menu:
-        <ul>
-            <li>1. Fried pork belly with fish sauce</li>
-            <li>2. Soybean dipping sauce with salted fish + vegetables</li>
-            <li>3. Stir-fried curry chicken</li>
-            <li>4. Curry-fried fish (Chu Chee)</li>
-            <li>5. Stir-fried cabbage with dried squid</li>
-            <li>6. Sour yellow curry with Cha-Om omelette</li>
-            <li>7. Tom Yum soup with free-range chicken</li>
-            <li>8. Spicy shrimp</li>
-            <li>9. Rice</li>
-            <li>10. Fruit</li>
-            <li>11. Drinking water, ice</li>
-        </ul>
-    </p>
-    <hr />
-    <p>1:30 PM – Check-in at THONGSOMBOON CLUB Hotel. All hotel zones: Receive a wristband to enter the activity zone.</p>
-    <hr />
-    <p>2:30–5:30 PM – Afternoon Bake & DJ Booth, Pool & Garden Zone. Food: Somtam, Khanom Jeen Namya, Grilled Pork, etc. Tram service to activity zone (15 activities).</p>
-    <hr />
-    <p>7:00–11:00 PM – Night Party, Party Room 3F, Backdrop, photography, MC / Live music band. Register for costume contest. Buffet, alcoholic beverages / soft drinks. Theme: Camping.</p>
-    <hr />
-    <p>10:00 PM – Mama Cup Service</p>
-    <hr />
-    <p>11:00 PM – End of Night Party. Free ice & soda</p>
-    <hr />
-    <h5>October 12, 2025 (Day 2)</h5>
-    <hr />
-    <p>7:00–10:00 AM – Breakfast, Restaurant 2F, Buffet. Please inform your room number.</p>
-    <hr />
-    <p>10:00 AM – Check-Out > Hokkaido Flower Park, Khaoyai. Departure to JIEI.</p>
-    <hr />
-    <p>12:00 PM – Arrive at lunch restaurant Suankhunyaiy, Khaoyai Km3. 8 persons/table. Menu:
-        <ul>
-            <li>1. Deep-fried ruby fish with garlic</li>
-            <li>2. Tom Yum soup with chicken</li>
-            <li>3. Stir-fried curry chicken</li>
-            <li>4. Crisp catfish flake salad</li>
-            <li>5. Fried chicken wings with salt</li>
-            <li>6. Stir-fried mixed vegetables</li>
-            <li>7. Thai curry with river snail and betel leaf</li>
-            <li>8. Rice</li>
-            <li>9. Fruit</li>
-            <li>10. Drinking water, ice</li>
-        </ul>
-    </p>
-    <hr />
-    <p>3:00 PM – Souvenir shop at Cake Baan Suan.</p>
-    <hr />
-    <p>7:30 PM – Arrive at JIEI. Stop at the restroom along the way as requested by the customer.</p>
-    <hr />
+   
 </section>
 
     `,
 
     // สมัครงาน
-//     `
-//     <section class="company-announcement">
-//   <h2>Job Opening: Staff</h2>
-//   <p>
-//     <h5>Main Responsibilities:</h5>
-//   </p>
-//   <div>
-//     <ul>
-//       <li>1. Not specified</li>
-//       <li>2. Not specified</li>
-//       <li>3. Not specified</li>
-//       <li>4. Not specified</li>
-//       <li>5. Not specified</li>
-//       <li>6. Not specified</li>
-//       <li>7. Not specified</li>
-//       <li>8. Not specified</li>
-//     </ul>
+    //     `
+    //     <section class="company-announcement">
+    //   <h2>Job Opening: Staff</h2>
+    //   <p>
+    //     <h5>Main Responsibilities:</h5>
+    //   </p>
+    //   <div>
+    //     <ul>
+    //       <li>1. Not specified</li>
+    //       <li>2. Not specified</li>
+    //       <li>3. Not specified</li>
+    //       <li>4. Not specified</li>
+    //       <li>5. Not specified</li>
+    //       <li>6. Not specified</li>
+    //       <li>7. Not specified</li>
+    //       <li>8. Not specified</li>
+    //     </ul>
 
-//     <blockquote>
-//       <h5>Qualifications:</h5>
-//     </blockquote>
+    //     <blockquote>
+    //       <h5>Qualifications:</h5>
+    //     </blockquote>
 
-//     <ul>
-//       <li>1. Not specified</li>
-//       <li>2. Not specified</li>
-//       <li>3. Not specified</li>
-//       <li>4. Not specified</li>
-//       <li>5. Not specified</li>
-//       <li>6. Not specified</li>
-//       <li>7. Not specified</li>
-//       <li>8. Not specified</li>
-//     </ul>
+    //     <ul>
+    //       <li>1. Not specified</li>
+    //       <li>2. Not specified</li>
+    //       <li>3. Not specified</li>
+    //       <li>4. Not specified</li>
+    //       <li>5. Not specified</li>
+    //       <li>6. Not specified</li>
+    //       <li>7. Not specified</li>
+    //       <li>8. Not specified</li>
+    //     </ul>
 
-//     <blockquote>
-//       <h5>Benefits:</h5>
-//     </blockquote>
+    //     <blockquote>
+    //       <h5>Benefits:</h5>
+    //     </blockquote>
 
-//     <ul>
-//       <li>1. Not specified</li>
-//       <li>2. Not specified</li>
-//       <li>3. Not specified</li>
-//       <li>4. Not specified</li>
-//       <li>5. Not specified</li>
-//       <li>6. Not specified</li>
-//       <li>7. Not specified</li>
-//       <li>8. Not specified</li>
-//     </ul>
-//     Interested candidates can contact <a href="mailto:info@jiei-thai.co.th">info@jiei-thai.co.th</a>
-//   </div>
-// </section>
-//     `,
+    //     <ul>
+    //       <li>1. Not specified</li>
+    //       <li>2. Not specified</li>
+    //       <li>3. Not specified</li>
+    //       <li>4. Not specified</li>
+    //       <li>5. Not specified</li>
+    //       <li>6. Not specified</li>
+    //       <li>7. Not specified</li>
+    //       <li>8. Not specified</li>
+    //     </ul>
+    //     Interested candidates can contact <a href="mailto:info@jiei-thai.co.th">info@jiei-thai.co.th</a>
+    //   </div>
+    // </section>
+    //     `,
 
     // วันเกิดบริษัท
     `
@@ -537,13 +401,8 @@ export default function News() {
       <div>
       <p>
        On the occasion of JIEI (Thailand)’s founding anniversary on November 11, 2025, <br />
-       the company organized a small event to thank all employees. At noon, every employee received gifts including: 
+       the company organized a small event to thank all employees. At noon, every employee received gifts  
       </p>
-
-       <p><b>1. 1 Large Pack of Instant Noodles</b></p>
-       <p><b>2. 1 Bottle of Orange Juice</b></p>
-       <p><b>3. Ice Cream</b></p>
-       <p><b>4. Special Lunch including Grilled Mackerel and Fried Pork with Spicy Sauce</b></p>
       </div>
 </section>
     `,
@@ -663,119 +522,63 @@ export default function News() {
     <h2>JIEI社 年間社員旅行：2025年10月11日～12日</h2>
     <p>2025年、JIEI社はチームの結束を強化し、新しい経験を提供し、社員がリフレッシュできる年間社員旅行を開催しました。</p>
     <p>今年の旅行の特徴は「自然の中でのリラックス + チームビルディング活動 + 持続可能性の融合」です。</p>
-    <blockquote>
-        <h5>スケジュール:</h5>
-    </blockquote>
-    <h5>2025年10月11日（1日目）</h5>
-    <hr />
-    <p><b>06:00～07:30</b> – 名札とJIEIバッグタグ（セーフティゲート）を受け取る。コーヒーとパンまたはサンドイッチ無料。バス3台 / 警察護送車 / 高速道路ルート</p>
-    <hr />
-    <p>12:00 – 昼食レストラン Nannam Country Home Resort & Restaurant に到着。1テーブル8名。メニュー：
-        <ul>
-            <li>1. 豚バラの揚げ物（ナンプラー風味）</li>
-            <li>2. 塩漬け魚入り大豆ソース＋野菜</li>
-            <li>3. カレー風味の鶏肉炒め</li>
-            <li>4. カレーフライドフィッシュ（チューチー）</li>
-            <li>5. イカ入りキャベツ炒め</li>
-            <li>6. チャオム入り酸味カレーオムレツ</li>
-            <li>7. 自家飼育鶏のトムヤムスープ</li>
-            <li>8. 辛いエビ</li>
-            <li>9. ご飯</li>
-            <li>10. フルーツ</li>
-            <li>11. 飲料水、氷</li>
-        </ul>
-    </p>
-    <hr />
-    <p>13:30 – トーンソムブーンクラブホテルにチェックイン。ホテル内全ゾーン：アクティビティゾーン入場用のリストバンドを受け取る。</p>
-    <hr />
-    <p>14:30 - 17:30 – 午後のベイク＆DJブース、プール＆ガーデンゾーン。食事：ソムタム、カノムジーンナムヤー、豚のグリルなど。アクティビティゾーン（15アクティビティ）への送迎トラムサービス。</p>
-    <hr />
-    <p>19:00 - 23:00 – ナイトパーティー、パーティールーム3階、バックドロップ、写真撮影、MC / ライブバンド。コスチュームコンテスト登録。ビュッフェ、アルコール飲料 / ソフトドリンク。テーマ：キャンプ</p>
-    <hr />
-    <p>22:00 – ママカップサービス</p>
-    <hr />
-    <p>23:00 – ナイトパーティー終了。無料の氷とソーダ</p>
-    <hr />
-    <h5>2025年10月12日（2日目）</h5>
-    <hr />
-    <p>07:00 - 10:00 – 朝食、レストラン2階、ビュッフェ。部屋番号をお知らせください。</p>
-    <hr />
-    <p>10:00 – チェックアウト > ホッカイドウフラワーパーク カオヤイ。JIEIへ出発</p>
-    <hr />
-    <p>12:00 – 昼食レストラン Suankhunyaiy カオヤイ Km3 に到着。1テーブル8名。メニュー：
-        <ul>
-            <li>1. ニンニク風味のルビーフィッシュフライ</li>
-            <li>2. 鶏肉のトムヤムスープ</li>
-            <li>3. カレー風味の鶏肉炒め</li>
-            <li>4. サクサクナマズサラダ</li>
-            <li>5. 塩味フライドチキンウィング</li>
-            <li>6. 野菜炒め盛り合わせ</li>
-            <li>7. タイカレー（川の巻貝とビンロウの葉入り）</li>
-            <li>8. ご飯</li>
-            <li>9. フルーツ</li>
-            <li>10. 飲料水、氷</li>
-        </ul>
-    </p>
-    <hr />
-    <p>15:00 – ケーキバーンスアンのお土産店</p>
-    <hr />
-    <p>19:30 – JIEIに到着。お客様の要望により途中でトイレに立ち寄る。</p>
+    
     <hr />
 </section>
 
     `,
-//     // สมัครงาน
-//     `
-//       <h2>求人募集：スタッフ</h2>
-//   <p>
-//     <h5>主な業務内容：</h5>
-//   </p>
-//   <div>
-//     <ul>
-//       <li>1. 未定</li>
-//       <li>2. 未定</li>
-//       <li>3. 未定</li>
-//       <li>4. 未定</li>
-//       <li>5. 未定</li>
-//       <li>6. 未定</li>
-//       <li>7. 未定</li>
-//       <li>8. 未定</li>
-//     </ul>
+    //     // สมัครงาน
+    //     `
+    //       <h2>求人募集：スタッフ</h2>
+    //   <p>
+    //     <h5>主な業務内容：</h5>
+    //   </p>
+    //   <div>
+    //     <ul>
+    //       <li>1. 未定</li>
+    //       <li>2. 未定</li>
+    //       <li>3. 未定</li>
+    //       <li>4. 未定</li>
+    //       <li>5. 未定</li>
+    //       <li>6. 未定</li>
+    //       <li>7. 未定</li>
+    //       <li>8. 未定</li>
+    //     </ul>
 
-//     <blockquote>
-//       <h5>応募資格：</h5>
-//     </blockquote>
+    //     <blockquote>
+    //       <h5>応募資格：</h5>
+    //     </blockquote>
 
-//     <ul>
-//       <li>1. 未定</li>
-//       <li>2. 未定</li>
-//       <li>3. 未定</li>
-//       <li>4. 未定</li>
-//       <li>5. 未定</li>
-//       <li>6. 未定</li>
-//       <li>7. 未定</li>
-//       <li>8. 未定</li>
-//     </ul>
+    //     <ul>
+    //       <li>1. 未定</li>
+    //       <li>2. 未定</li>
+    //       <li>3. 未定</li>
+    //       <li>4. 未定</li>
+    //       <li>5. 未定</li>
+    //       <li>6. 未定</li>
+    //       <li>7. 未定</li>
+    //       <li>8. 未定</li>
+    //     </ul>
 
-//     <blockquote>
-//       <h5>福利厚生：</h5>
-//     </blockquote>
+    //     <blockquote>
+    //       <h5>福利厚生：</h5>
+    //     </blockquote>
 
-//     <ul>
-//       <li>1. 未定</li>
-//       <li>2. 未定</li>
-//       <li>3. 未定</li>
-//       <li>4. 未定</li>
-//       <li>5. 未定</li>
-//       <li>6. 未定</li>
-//       <li>7. 未定</li>
-//       <li>8. 未定</li>
-//     </ul>
-//     応募希望の方は <a href="mailto:info@jiei-thai.co.th">info@jiei-thai.co.th</a> までご連絡ください。
-//   </div>
-// </section>
+    //     <ul>
+    //       <li>1. 未定</li>
+    //       <li>2. 未定</li>
+    //       <li>3. 未定</li>
+    //       <li>4. 未定</li>
+    //       <li>5. 未定</li>
+    //       <li>6. 未定</li>
+    //       <li>7. 未定</li>
+    //       <li>8. 未定</li>
+    //     </ul>
+    //     応募希望の方は <a href="mailto:info@jiei-thai.co.th">info@jiei-thai.co.th</a> までご連絡ください。
+    //   </div>
+    // </section>
 
-//     `,
+    //     `,
     // วันเกิดบริษัท
     `
       <section class="company-announcement">
@@ -784,13 +587,8 @@ export default function News() {
       <div>
       <p>
        JIEI（タイランド）の設立記念日2025年11月11日に際し、<br />
-       社員全員に感謝の気持ちを込めた小さなイベントを開催しました。正午には全社員に以下の贈り物が配られました：
+       社員全員に感謝の気持ちを込めた小さなイベントを開催しました。正午には全社員に記念品が配られました。
       </p>
-
-       <p><b>1. インスタントラーメン 1パック</b></p>
-       <p><b>2. オレンジジュース 1本</b></p>
-       <p><b>3. アイスクリーム</b></p>
-       <p><b>4. 特別ランチ：サバのグリルと揚げ豚、スパイシーソース付き</b></p>
       </div>
 </section>
     `,
@@ -798,12 +596,12 @@ export default function News() {
     `
       <section class="company-announcement">
       <h2>
-      2025年12月5日、JIEI（Thailand）Co., Ltd. は、1年間懸命に働いてくれた従業員への感謝を込めて、新年会を開催しました。
+      2025年12月5日、JIEI(THAILAND)CO.,LTD. は、1年間懸命に働いてくれた従業員への感謝を込めて、新年会を開催しました。
       </h2>
      
       <div>
       <p>
-    当日は、67種類以上の景品が当たる抽選会も行われ、会場は笑顔と活気にあふれました。
+    当日は、景品が当たる抽選会も行われ、会場は笑顔と活気にあふれました。
       </p>
 
       </div>
@@ -813,12 +611,12 @@ export default function News() {
     `
       <section class="company-announcement">
       <h2>
-      JIEI（Thailand）Co., Ltd. スポーツデー
+      JIEI(THAILAND)CO.,LTD. スポーツデー
       </h2>
      
       <div>
       <p>
-      JIEI（Thailand）Co., Ltd. のスポーツデーは、2025年12月9日、15日、18日に開催されます。社員同士の団結力向上、健康促進、そして職場の活気づくりを目的としたイベントです。各チームが様々な競技に元気よく参加し、応援団の盛り上がりとともに、会場は終始にぎやかで楽しい雰囲気に包まれます。
+      JIEI(THAILAND)CO.,LTD. のスポーツデーは、2025年12月9日、15日、18日に開催されました。社員同士の団結力向上、健康促進、そして職場の活気づくりを目的としたイベントです。各チームが様々な競技に元気よく参加し、応援団の盛り上がりとともに、会場は終始にぎやかで楽しい雰囲気に包まれました。
       </p>
 
       </div>
@@ -852,24 +650,25 @@ export default function News() {
     company-announcement
       JIEI（タイランド）会社設立記念日 – 2025年11月11日
        JIEI（タイランド）の設立記念日2025年11月11日に際し、
-       社員全員に感謝の気持ちを込めた小さなイベントを開催しました。正午には全社員に以下の贈り物が配られました：
+       社員全員に感謝の気持ちを込めた小さなイベントを開催しました。正午には全社員に記念日が配られました。
     `,
     //NeW year party
     `
-    2025年12月5日、JIEI（Thailand）Co., Ltd. は、1年間懸命に働いてくれた従業員への感謝を込めて、新年会を開催しました。 
-    当日は、67種類以上の景品が当たる抽選会も行われ、会場は笑顔と活気にあふれました。
+    2025年12月5日、JIEI(THAILAND)CO.,LTD. は、1年間懸命に働いてくれた従業員への感謝を込めて、新年会を開催しました。 
+    当日は、景品が当たる抽選会も行われ、会場は笑顔と活気にあふれました。
     
     `,
     //Sport Day
     `
-    JIEI（Thailand）Co., Ltd. スポーツデー
-    JIEI（Thailand）Co., Ltd. のスポーツデーは、2025年12月9日、15日、18日に開催されます。社員同士の団結力向上、健康促進、そして職場の活気づくりを目的としたイベントです。各チームが様々な競技に元気よく参加し、応援団の盛り上がりとともに、会場は終始にぎやかで楽しい雰囲気に包まれます。
+    JIEI(THAILAND)CO.,LTD. スポーツデー
+    JIEI(THAILAND)CO.,LTD. のスポーツデーは、2025年12月9日、15日、18日に開催されました。社員同士の団結力向上、健康促進、そして職場の活気づくりを目的としたイベントです。各チームが様々な競技に元気よく参加し、応援団の盛り上がりとともに、会場は終始にぎやかで楽しい雰囲気に包まれました。
     `
   ]
 
   const img = [
     //  วันก่อตั้งบริษัท
-    '/jieiImage/6.png',
+    '/News/ac1.png',
+
     // Company trip
     '/News/company-trip-2025/company-trip-2025 (1).jpg',
     // สมัครงาน
@@ -931,6 +730,7 @@ export default function News() {
   ];
 
 
+
   const rev = <T,>(arr: T[]): T[] => [...arr].reverse();
   const revDatePostTH = rev(datePostTH);
   const revDatePostEN = rev(datePostEN);
@@ -947,7 +747,7 @@ export default function News() {
   const revImg = rev(img);
   const revImage_Establishment = rev(Image_Establishment)
 
-  const [imgIndex,] = useState(0);
+  const [imgIndex, setImgIndex] = useState(0);
 
 
   const [lang, setLang] = useState<'th' | 'en' | 'jp'>('th');
@@ -1015,9 +815,9 @@ export default function News() {
 
                   <div className="product-box">
                     <div className="product-card">
-                      <h4>
+                      <h5 className='title-activity'>
                         {lang === 'th' ? item : lang === 'en' ? revNewsEN[index] : revNewsJP[index]}
-                      </h4>
+                      </h5>
                     </div>
 
                     <div className="product-description-box">
@@ -1154,17 +954,17 @@ export default function News() {
 
 
 
-                // const handleNextImage = () => {
-                //   setImgIndex((prev) => (prev + 1) % revImage_Establishment[selectedNews].length);
-                // };
+                const handleNextImage = () => {
+                  setImgIndex((prev) => (prev + 1) % revImage_Establishment[selectedNews].length);
+                };
 
-                // const handleNextImage1 = () => {
-                //   setImgIndex((prev) =>
-                //     prev === 0
-                //       ? revImage_Establishment[selectedNews].length - 1
-                //       : prev - 1
-                //   );
-                // };
+                const handleNextImage1 = () => {
+                  setImgIndex((prev) =>
+                    prev === 0
+                      ? revImage_Establishment[selectedNews].length - 1
+                      : prev - 1
+                  );
+                };
                 return (
                   <>
                     <Image
@@ -1175,12 +975,12 @@ export default function News() {
                       loading="lazy"
                       className="image-fade"
                     />
-                    {/* <p onClick={handleNextImage} className="btn-change-image-right">
+                    <p onClick={handleNextImage} className="btn-change-image-right">
                       <i className="change-Image-btn bi bi-chevron-right"></i>
                     </p>
                     <button onClick={handleNextImage1} className="btn-change-image-left">
                       <i className="change-Image-btn bi bi-chevron-left"></i>
-                    </button> */}
+                    </button>
 
 
                   </>
@@ -1192,7 +992,7 @@ export default function News() {
 
 
             </div>
-            {/* <p className='text-center text-status-Image'>รูปที่ {imgIndex + 1} / {revImage_Establishment[selectedNews].length}</p> */}
+            <p className='text-center text-status-Image'>รูปที่ {imgIndex + 1} / {revImage_Establishment[selectedNews].length}</p>
           </div>
 
 
@@ -1224,7 +1024,7 @@ export default function News() {
 
           <div className="btn-back-newsPage">
             <button
-              onClick={() => { setSelectedNews(null); window.scrollTo({ top: 0, behavior: 'smooth' });}} className="back-btn">
+              onClick={() => { setSelectedNews(null); window.scrollTo({ top: 0, behavior: 'smooth' }); setImgIndex(0) }} className="back-btn">
               {lang === 'th' ? "กลับไปหน้ารวม" : lang === 'en' ? "Back to Overview" : "一覧に戻る"}
             </button>
           </div>

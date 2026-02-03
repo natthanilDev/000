@@ -35,13 +35,13 @@ export default function AboutHomePage() {
     return (
         <div>
             <div className="About-Company-box">
-                <div className="image-home-page-about">
+                {/* <div className="image-home-page-about">
                     <ScrollReveal>
                         <Image src={'/lobby.jpg'} className="image-about-home-page" alt="โรงงานผลิตชิ้นส่วนยางรถยนต์มาตรฐานสากล ISO & IATF16949 ที่ชลบุรี ประเทศไทย" width={1000} height={1000} priority></Image>
                     </ScrollReveal>
-                </div>
+                </div> */}
 
-                <div className="about-box-home-page">
+                {/* <div className="about-box-home-page">
                     <div className="content-box">
                         <div className="about-box">
                             <ScrollReveal>
@@ -58,7 +58,7 @@ export default function AboutHomePage() {
                         ))}
 
                     </div>
-                </div>
+                </div> */}
             </div>
         </div>
     )

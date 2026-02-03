@@ -40,7 +40,7 @@ export default function AboutMap() {
                         {/* <label htmlFor="btn-showMap"> */}
                         <label htmlFor="" className="btn-s">
                             <p className='btn-googlemap' >
-                                Google Map <i className="bi bi-search-heart"></i>
+                                Google Map <i className="icon-google-map bi bi-geo-alt-fill"></i>
                                 {/* {lang === ('th') ? "แผนที่" : lang === ('en') ? "Map" : "地図"} <i className="bi bi-search-heart"></i> */}
                             </p>
                         </label>

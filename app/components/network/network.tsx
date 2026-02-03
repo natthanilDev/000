@@ -10,14 +10,22 @@ export default function Network() {
         '/JieiThailand-logo.png',
     ]
     const company = [
-        'KASEI KOGYO.CO.,LTD',
-        'Jiaxing JIEI Automobile Parts Co., Ltd.',
-        'JIEI (Singapore) Pte. Ltd.',
-        'JIEI Technical Trading(Shanghai)Co., Ltd.',
-        'JIEI Technical Trading(Shanghai)Co., Ltd. Guangzhou Office',
-        'JIEI Technical Trading(Shanghai)Co., Ltd. Wuhan Office',
+        '化成工業株式会社',
+        '嘉興滋栄汽車配件有限公司',
+        'JIEI (SINGAPORE) PTE.,LTD.',
+        '滋栄技研貿易（上海）有限公司',
+        '滋栄技研貿易（上海）有限公司　広州営業所',
+        '滋栄技研貿易（上海）有限公司　武漢営業所',
 
     ]
+    //  const company = [
+    //     'KASEI KOGYO.CO.,LTD',
+    //     'Jiaxing JIEI Automobile Parts Co., Ltd.',
+    //     'JIEI (Singapore) Pte. Ltd.',
+    //     'JIEI Technical Trading(Shanghai)Co., Ltd.',
+    //     'JIEI Technical Trading(Shanghai)Co., Ltd. Guangzhou Office',
+    //     'JIEI Technical Trading(Shanghai)Co., Ltd. Wuhan Office',
+    // ]
     const address = [
         '1-64 Bouzuyama, Yokone-cho, Obu-shi, Aichi, 474-0011, Japan',
         'No.1055, Bazi Road, Xiuzhou Industrial estate, Jiaxing City, Zhejiang, China. 314000',
@@ -28,9 +36,9 @@ export default function Network() {
         '',
         '',
     ]
-    const map = [
-        'https://maps.app.goo.gl/ympsAZb9fjxn13Vb9',
-        'https://maps.app.goo.gl/xFhGFhJkuiuiJm7r5',
+    const web = [
+        'https://www.kaseikogyo.com/index.html',
+        '',
         '',
         '',
         '',
@@ -38,23 +46,19 @@ export default function Network() {
         '',
         '',
     ]
-    // -----------------------------------------------------------------------
-
-
+    // ----------------------------------------------------------------------
     const company1 = [
-        "Tokai Kogyo Co., Ltd.",
-        "ADO CO., LTD.",
+        "東海興業株式会社",
+        "アド株式会社",
         "ALFA CO., LTD. ",
-        "COWERK CO., LTD.",
-        "SEIWA KOGYO CO., LTD.",
-        "TAKARA KASEI KOGYO CO., LTD.",
-        "TOA GOMU KOGYO CO., LTD.",
+        "コワーク株式会社",
+        "株式会社セイワ工業",
+        "タカラ化成工業株式会社",
+        "東亜ゴム工業k株式会社",
         "TOKAI KOGYO SEIKI CO., LTD.",
-        "FUJI CO., LTD.",
-        "BUTSURYU CENTER LTD.",
+        "フジ株式会社",
         "GREEN TOKAI CO., LTD.",
         "TOACS THAILAND CO., LTD.",
-        "TOACS CENTER PTE., LTD.",
         "VIETNAM TOKAI CO., LTD.",
         "GUANGZHOU TOKAI MINTH AUTOMOTIVE PARTS CO., LTD.",
         "WUHAN TOKAIMINTH AUTOMOTIVE PARTS CO., LTD.",
@@ -73,10 +77,8 @@ export default function Network() {
         "Shojisaku-8-21 Izumicho, Anjo, Aichi 444-1221 Japan",
         "4X8Q+WF, Laem Chabang City Municipality, Bang Lamung District, Chonburi, Thailand",
         "3-1-13, Senbanishi, Minoh city, Osaka, 562-0036 Japan",
-        "1 Chome-16-5 Torikaikami, Settsu, Osaka 566-0062 Japan",
         "55 Robert Wright Dr, Brookville, OH 45309, United States",
         "700/65 Kromdit 6 Alley,Khlong Tamru Sub-district, Mueang Chonburi District,Chonburi 20000, Thailand",
-        "",
         "1 RD HOA CAM IZ CAM LE DIST DANANG CITY VIETNAM DANANG DA550000 VN",
         "",
         "",
@@ -84,31 +86,27 @@ export default function Network() {
         "MM2100 Industrial Estate,Jl. Irian Block LL-3, Jatiwangi,West Cikarang District, Bekasi Regency,West Java 17530, Indonesia",
         "CGMW+2GJ, Block F,Surajpur Site V, Greater Noida,Uttar Pradesh 201312, India",
         "700/2 Moo 1,Amata Service Center Building, 4th Floor, Room 402,Bangna–Trad Highway, Km. 57,Khlong Tamru Sub-district, Mueang Chonburi District,Chonburi 20000, Thailand"
-
-
-
     ]
-    const map1 = [
-        "https://maps.app.goo.gl/TjU2dM3Mibio89aFA",
-        "https://maps.app.goo.gl/5vEXETmVghBWUK6z5",
-        "https://maps.app.goo.gl/61H6mL9uwGWUwCgG7",
-        "",
-        "https://maps.app.goo.gl/hwQw3baTf7LQLBpw6",
-        "https://maps.app.goo.gl/r6ctC651vdy74ieRA",
-        "https://maps.app.goo.gl/3UWDby49k1V913WSA",
-        "https://maps.app.goo.gl/c3dHZws7SXVwYEyW8",
-        "",
-        "https://maps.app.goo.gl/r44U5wL7PChwr6eG9",
-        "https://maps.app.goo.gl/axsfE3hZfawfCuGJA",
-        "https://maps.app.goo.gl/9mterAL9bosTQbJG7",
-        "",
-        "https://maps.app.goo.gl/nj3mJ2GwkNqyjEqF8",
+    const web1 = [
+        "https://tokaikogyo.co.jp/",
+        "https://e-ado.co.jp/",
         "",
         "",
-        "https://maps.app.goo.gl/FV7sVULhYwS1LbRHA",
-        "https://maps.app.goo.gl/MRyhcPvf7Q5HK9p16",
-        "https://maps.app.goo.gl/59gfgKrPx5Stwirs9",
-        "https://maps.app.goo.gl/RhmRdcRM6eoz8qxq5"
+        "",
+        "https://www.takarakasei.com/",
+        "",
+        "http://www.t-seiki.co.jp/",
+        "http://www.fuji-nt.jp/",
+        "https://www.greentokai.com/",
+        "https://www.toacs.co.th/",
+        "",
+        "",
+        "",
+        "https://www.tokaikogyodemexico.com/home",
+        "",
+        "",
+        "",
+
 
     ]
 
@@ -166,7 +164,7 @@ export default function Network() {
                                 "@type": "Organization",
                                 "name": c,
                                 "address": address[idx],
-                                "url": map[idx]
+                                "url": web[idx]
                             }))
                         })
                     }}
@@ -178,13 +176,13 @@ export default function Network() {
                     <div className="network-container">
                         <div className="network-text-box">
                             <ScrollReveal>
-                                <h1 className="network-text">{lang===('th') ? "บริษัทในเครือที่ตอบสนองความต้องการของคุณ" : lang===('en') ? "Our affiliated companies that meet your needs" : "お客様のニーズに応えるグループ会社"} </h1>
+                                <h1 className="network-text">{lang === ('th') ? "บริษัทในเครือที่ตอบสนองความต้องการของคุณ" : lang === ('en') ? "Our affiliated companies that meet your needs" : "お客様のニーズに応えるグループ会社"} </h1>
                                 <div className="line"></div>
                             </ScrollReveal>
                         </div>
 
                         <ScrollReveal>
-                            <h1 className="tokai-group">{lang===('th') ? "กลุ่มบริษัท Kasei Kogyo" : lang===('en') ? "Kasei Kogyo Group" : "化成工業グループ"}  </h1>
+                            <h1 className="tokai-group">{lang === ('th') ? "กลุ่มบริษัท Kasei Kogyo" : lang === ('en') ? "Kasei Kogyo Group" : "化成工業グループ"}  </h1>
 
                             <div className="scrollbar">
                                 <div className="network-box">
@@ -196,6 +194,7 @@ export default function Network() {
                                                     src={logo[index]}
                                                     alt={`Logo of ${item}`}
                                                     width={2000}
+
                                                     height={2000}
                                                     priority
                                                 />
@@ -205,9 +204,11 @@ export default function Network() {
                                                 <p className="company-content">{address[index]}</p>
                                             </div>
                                             <div className="google-map">
-                                                <Link target="_blank" href={map[index]} className="google-map-icon" aria-label={`Open Google Map for ${item}`}>
-                                                    <i className="bi bi-geo-alt-fill"></i>
-                                                </Link>
+                                                {web[index] == "" ? <i className="bi bi-ban google-map-icon"></i> :
+                                                    <Link target="_blank" href={web[index]} className="google-map-icon" aria-label={`Open Google Map for ${item}`}>
+                                                        <i className="bi bi-browser-edge" />
+                                                    </Link>}
+
                                             </div>
                                         </div>
                                     ))}
@@ -218,7 +219,7 @@ export default function Network() {
 
 
                         <ScrollReveal>
-                            <h1 className="tokai-group">{lang===('th') ? "กลุ่มบริษัท Tokai Kogyo" : lang===('en') ? "Tokai Kogyo Group" : "東海興業グループ"}</h1>
+                            <h1 className="tokai-group">{lang === ('th') ? "กลุ่มบริษัท Tokai Kogyo" : lang === ('en') ? "Tokai Kogyo Group" : "東海興業グループ"}</h1>
 
                             <div className="scrollbar">
                                 <div className="network-box">
@@ -229,9 +230,12 @@ export default function Network() {
                                                 <p className="company-content">{address1[index]}</p>
                                             </div>
                                             <div className="google-map">
-                                                <Link target="_blank" href={map1[index]} className="google-map-icon" aria-label={`Open Google Map for ${item}`}>
-                                                    <i className="bi bi-geo-alt-fill"></i>
-                                                </Link>
+                                                {web1[index] == "" ? <i className="bi bi-ban google-map-icon"></i> ///<i className="google-map-icon bi bi-ban"></i> 
+                                                    :
+                                                    <Link target="_blank" href={web1[index]} className="google-map-icon" aria-label={`Open Google Map for ${item}`}>
+                                                        <i className="bi bi-browser-edge" />
+                                                    </Link>}
+
                                             </div>
                                         </div>
                                     ))}

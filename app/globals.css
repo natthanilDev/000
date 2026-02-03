@@ -2140,11 +2140,12 @@ a:hover {
 .btn-googlemap {
   padding: 10px 20px;
   font-size: 30px;
-  background-color: #00135d;
+  background-color: #000c3a;
   color: #eeeeee;
   border-radius: 6px;
   transition: all ease 0.25s;
   cursor: pointer;
+
 
   &:hover {
     transform: scale(1.05);
@@ -2233,10 +2234,13 @@ a:hover {
   padding: 20px 0;
   margin-top: 30px;
   color: var(--font-color);
-
+  font-size: 30px;
 
 }
-
+.icon-google-map{
+  color: red;
+  
+}
 .why-chose-jiei-div {
   width: 100%;
   margin: 50px 0;
@@ -4373,8 +4377,9 @@ h4 {
 
 .google-map-icon {
   font-size: 50px;
-  color: rgb(189, 0, 0);
+  color: blue;
   transition: all ease 0.25s;
+
 }
 
 .google-map-icon:hover {
@@ -4740,7 +4745,10 @@ h4 {
   text-overflow: ellipsis;
 
 }
-
+.title-activity{
+  font-weight: bold;
+  font-size: 18px;
+}
 .product-card-box {
   box-shadow: 0 0 2px #959595;
   border-radius: 10px;
@@ -4799,7 +4807,7 @@ h4 {
   text-align: center;
   font-weight: bold;
   letter-spacing: 3px;
-  font-size: 50px;
+  font-size: 35px;
 }
 
 .product-description-card {
@@ -5858,7 +5866,7 @@ h4 {
 }
 
 .Hood-Seal {
- font-size: 16px;
+ font-size: 14px;
   font-weight: bold;
   white-space: nowrap;        
   overflow: hidden;
@@ -5868,9 +5876,9 @@ h4 {
   background-color: #15009d;
   padding: 10px 12px;
   border-radius: 6px;
-
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
-
 
 
 
@@ -5928,9 +5936,7 @@ h4 {
 
 
 .grad-products {
-  display: grid;
-  /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr; */
-  gap: 30px;
+
   width: 100%;
   margin: 30px auto;
 
@@ -5939,22 +5945,20 @@ h4 {
 
 .columns-product {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   gap: 30px;
   margin: 50px auto;
-  width: 95%;
-
+  width: 85%;
 }
 
 .titleProduct {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: bold;
   text-align: center;
   display: -webkit-box;
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
   overflow: hidden;
-
 }
 
 .text-Hood-seal-Front {
@@ -5992,7 +5996,7 @@ h4 {
 
   .columns-product {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 
 
   }
@@ -6116,7 +6120,7 @@ h4 {
 
 .grid-product-active {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1.8fr 1fr;
   gap: 30px;
   width: 90%;
   margin: 50px auto;

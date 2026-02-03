@@ -17,16 +17,16 @@ export default function AboutJIEI() {
         "ในอนาคต บริษัทเจไออีไอ (ไทยแลนด์) จำกัด จะยังคงมุ่งมั่นพัฒนานวัตกรรมอย่างไม่หยุดยั้ง เพื่อสร้างสรรค์ผลิตภัณฑ์ที่มี คุณภาพ ความแม่นยำ และมาตรฐานสากล พร้อมก้าวสู่การเป็น ผู้ผลิตชิ้นส่วนยางรถยนต์ระดับโลก (Global Automotive Rubber Parts Manufacturer) ที่สร้างคุณค่าและประโยชน์ให้กับสังคมโลก"
     ]
     const aboutEN = [
-        "JIEI (Thailand) Co., Ltd. was founded on November 11, 2011, as a subsidiary of the Kasei Kogyo Co., Ltd. group, which has a long history dating back to 1966. The group specializes in rubber extrusion for the automotive industry, growing alongside the development of the global automotive sector.",
+        "JIEI(THAILAND)CO.,LTD. was founded on November 11, 2011, as a subsidiary of the Kasei Kogyo Co., Ltd. group, which has a long history dating back to 1966. The group specializes in rubber extrusion for the automotive industry, growing alongside the development of the global automotive sector.",
         "We focus on a fully integrated process, from planning and research & development to high-tech production, to deliver high-quality automotive rubber parts that meet the diverse needs of customers in Japan, the United States, China, and across Asia.",
         "The Kasei Kogyo Group is recognized as an organization capable of responding to the rapid changes in the automotive industry, backed by over 50 years of know-how and experience in automotive rubber parts manufacturing.",
-        "In the future, JIEI (Thailand) Co., Ltd. will continue to pursue relentless innovation to create products of exceptional quality, precision, and international standards. Our goal is to become a global automotive rubber parts manufacturer that delivers value and benefits to the global community.",
+        "In the future, JIEI(THAILAND) CO.,LTD. will continue to pursue relentless innovation to create products of exceptional quality, precision, and international standards. Our goal is to become a global automotive rubber parts manufacturer that delivers value and benefits to the global community.",
     ]
     const aboutJP = [
-        "JIEI（タイランド）株式会社は、2011年11月11日にKasei Kogyo株式会社グループの子会社として設立されました。Kasei Kogyoグループは1966年からの長い歴史を持ち、自動車産業向けゴム押出（Rubber Extrusion for Automobiles）専門メーカーとして、世界の自動車産業の発展とともに成長してきました。",
+        "JIEI(THAILAND)CO.,LTD.は、2011年11月11日に化成工業株式会社のグループ子会社として設立されました。化成工業グループは1966年からの長い歴史を持ち、自動車産業向けゴム押出（Rubber Extrusion for Automobiles）専門メーカーとして、世界の自動車産業の発展とともに成長してきました。",
         "当社は、企画、研究開発から先端技術を用いた生産まで、一貫したプロセスに注力し、日本、アメリカ、中国、そしてアジア各国のお客様の多様なニーズに応える高品質な自動車用ゴム部品を提供しています。",
-        "Kasei Kogyoグループは、自動車産業の急速な変化に対応できる組織として認められており、自動車用ゴム部品製造における50年以上のノウハウと経験を有しています。",
-        "将来に向けて、JIEI（Thailand）株式会社は、優れた品質、精度、そして国際規格を備えた製品を生み出すため、絶え間ない革新を追求し続けます。私たちは、世界に価値と利益をもたらすグローバルな自動車用ゴム部品メーカーを目指しています。",
+        "化成工業グループは、自動車産業の急速な変化に対応できる組織として認められており、自動車用ゴム部品製造における50年以上のノウハウと経験を有しています。",
+        "将来に向けて、JIEI(THAILAND)CO.,LTD.は、優れた品質、精度、そして国際規格を備えた製品を生み出すため、絶え間ない革新を追求し続けます。私たちは、世界に価値と利益をもたらすグローバルな自動車用ゴム部品メーカーを目指しています。",
     ]
     return (
         <div>
@@ -37,15 +37,15 @@ export default function AboutJIEI() {
                         <div className="line"></div>
                     </ScrollReveal>
                     <ScrollReveal>
-                        <h1 className='text-jiei-about-page'>{lang === ('th') ? "บริษัท เจไออีไอ (ไทยแลนด์) จำกัด – เป็นผู้ผลิตชิ้นส่วนซีลยาง" : lang === ('en') ? "JIEI (Thailand) Co., Ltd. - Automotive Rubber Parts Manufacturer" : "JIEI（Thailand）株式会社 – 自動車用ゴム部品メーカー"}
+                        <h1 className='text-jiei-about-page'>{lang === ('th') ? "บริษัท เจไออีไอ (ไทยแลนด์) จำกัด – เป็นผู้ผลิตชิ้นส่วนซีลยาง" : lang === ('en') ? "JIEI(THAILAND)CO.,LTD.ILAND) CO.,LTD. - Automotive Rubber Parts Manufacturer" : "JIEI(THAILAND)CO.,LTD. – 自動車用ゴム部品メーカー"}
                         </h1>
                     </ScrollReveal>
                     <ScrollReveal>
                         <p className='text-center'>
                             {lang === ('th') 
                             ? "บริษัท เจไออีไอ (ไทยแลนด์) จํากัด เป็นผู้ผลิตชิ้นส่วนซีลยาง ทั้งภายใน ภายนอกของรถยนต์ และอุปกรณ์ให้กำเนิดพลังงาน ตามมาตรฐานสากล ISO & IATF ด้วยเทคโนโลยีการผลิตที่ทันสมัย" 
-                            : lang === ('en') ? "JIEI (Thailand) Co., Ltd. is a manufacturer of rubber sealing components for both interior and exterior automotive applications, as well as energy-generating equipment. The company operates under international ISO and IATF standards with advanced production technology." 
-                            : "JIEI（タイランド）株式会社は、自動車の内外装用ゴムシール部品および発電関連機器の製造メーカーです。ISOおよびIATFの国際規格に基づき、先進的な生産技術で運営しています。"}
+                            : lang === ('en') ? "JIEI(THAILAND)CO.,LTD.ILAND) CO.,LTD. is a manufacturer of rubber sealing components for both interior and exterior automotive applications, as well as energy-generating equipment. The company operates under international ISO and IATF standards with advanced production technology." 
+                            : "自動車運用押出成形ゴム部品を製造するメーカーです。国際規格である ISO と IATF に準拠し、先進的な製造技術を採用しています。"}
                         </p>
                     </ScrollReveal>
                 </div>
