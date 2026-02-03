@@ -19,8 +19,7 @@ export default function News() {
   const Image_Establishment = [
     // รูปภาพวันก่อตั้งบริษัท
     [
-      '/News/ac1.png',
-      '/News/ac2.png',
+      '/jieiImage/19.png'
 
     ],
     // รูปภาพ Company trip
@@ -667,7 +666,7 @@ export default function News() {
 
   const img = [
     //  วันก่อตั้งบริษัท
-    '/News/ac1.png',
+    '/jieiImage/19.png',
 
     // Company trip
     '/News/company-trip-2025/company-trip-2025 (1).jpg',

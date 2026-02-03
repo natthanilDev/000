@@ -24,7 +24,7 @@ export default function Products() {
     // Hood Seal
     {
       id: 1,
-      category: 'Hood Seal',
+      category: 'Hood Seal Front',
       title: 'Hood Seal Front',
       image: '/Products/Hood seal Front.png',
       content: `[EPDM extrusion product + TPO molded product] Sealing material for hood, headlight, and grille. Having refined its cross-section to avoid interference with the front upper surface of the engine room, it improves sealing performance and complies with the regulation for exterior prongs.`
@@ -46,7 +46,7 @@ export default function Products() {
     },
     {
       id: 4,
-      category: 'Front window Molding',
+      category: 'Dam Rubber / Dam lip rubber',
       title: 'Dam Rubber / Dam lip rubber',
       image: '/Products/Dam Rubber  Dam lip rubber.png',
       content: `[Buffering material between vehicle body and glass] Not only waterproof, but also adding aesthetic value to the vehicle’s external appearance. Corresponding to the demand for product individualization.`
@@ -78,8 +78,8 @@ export default function Products() {
     // Engine Seal
     {
       id: 8,
-      category: 'Engine Seal',
-      title: 'Engine Seal',
+      category: 'AIR INTAKE SEAL',
+      title: 'AIR INTAKE SEAL',
       image: '/Products/Air intake seal.png',
       content: `[EPDM sponge rubber + EPDM solid rubber] Sealing material that suppresses warm air and allows only cool air to pass through the engine room to boost fuel efficiency.`
     },

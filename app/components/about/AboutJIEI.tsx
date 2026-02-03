@@ -45,7 +45,7 @@ export default function AboutJIEI() {
                             {lang === ('th') 
                             ? "บริษัท เจไออีไอ (ไทยแลนด์) จํากัด เป็นผู้ผลิตชิ้นส่วนซีลยาง ทั้งภายใน ภายนอกของรถยนต์ และอุปกรณ์ให้กำเนิดพลังงาน ตามมาตรฐานสากล ISO & IATF ด้วยเทคโนโลยีการผลิตที่ทันสมัย" 
                             : lang === ('en') ? "JIEI(THAILAND)CO.,LTD.ILAND) CO.,LTD. is a manufacturer of rubber sealing components for both interior and exterior automotive applications, as well as energy-generating equipment. The company operates under international ISO and IATF standards with advanced production technology." 
-                            : "自動車運用押出成形ゴム部品を製造するメーカーです。国際規格である ISO と IATF に準拠し、先進的な製造技術を採用しています。"}
+                            : "自動車用押出成形ゴム部品を製造するメーカーです。国際規格である ISO と IATF に準拠し、先進的な製造技術を採用しています。"}
                         </p>
                     </ScrollReveal>
                 </div>

@@ -203,13 +203,13 @@ export default function Network() {
                                                 <h2 className="company-name">{item}</h2>
                                                 <p className="company-content">{address[index]}</p>
                                             </div>
-                                            <div className="google-map">
+                                            {/* <div className="google-map">
                                                 {web[index] == "" ? <i className="bi bi-ban google-map-icon"></i> :
                                                     <Link target="_blank" href={web[index]} className="google-map-icon" aria-label={`Open Google Map for ${item}`}>
                                                         <i className="bi bi-browser-edge" />
                                                     </Link>}
 
-                                            </div>
+                                            </div> */}
                                         </div>
                                     ))}
                                 </div>
@@ -229,14 +229,14 @@ export default function Network() {
                                                 <h2 className="company-name">{item}</h2>
                                                 <p className="company-content">{address1[index]}</p>
                                             </div>
-                                            <div className="google-map">
+                                            {/* <div className="google-map">
                                                 {web1[index] == "" ? <i className="bi bi-ban google-map-icon"></i> ///<i className="google-map-icon bi bi-ban"></i> 
                                                     :
                                                     <Link target="_blank" href={web1[index]} className="google-map-icon" aria-label={`Open Google Map for ${item}`}>
                                                         <i className="bi bi-browser-edge" />
                                                     </Link>}
 
-                                            </div>
+                                            </div> */}
                                         </div>
                                     ))}
                                 </div>
