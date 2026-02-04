@@ -1,6 +1,6 @@
 'use client'
 import { useEffect, useState } from "react"
-import Link from "next/link"
+// import Link from "next/link"
 import ScrollReveal from "../ScrollReveal/ScrollReveal"
 import Head from "next/head"
 
@@ -85,28 +85,28 @@ export default function Network() {
         "CGMW+2GJ, Block F,Surajpur Site V, Greater Noida,Uttar Pradesh 201312, India",
         "700/2 Moo 1,Amata Service Center Building, 4th Floor, Room 402,Bangna–Trad Highway, Km. 57,Khlong Tamru Sub-district, Mueang Chonburi District,Chonburi 20000, Thailand"
     ]
-    const web1 = [
-        "https://tokaikogyo.co.jp/",
-        "https://e-ado.co.jp/",
-        "",
-        "",
-        "",
-        "https://www.takarakasei.com/",
-        "",
-        "http://www.t-seiki.co.jp/",
-        "http://www.fuji-nt.jp/",
-        "https://www.greentokai.com/",
-        "https://www.toacs.co.th/",
-        "",
-        "",
-        "",
-        "https://www.tokaikogyodemexico.com/home",
-        "",
-        "",
-        "",
+    // const web1 = [
+    //     "https://tokaikogyo.co.jp/",
+    //     "https://e-ado.co.jp/",
+    //     "",
+    //     "",
+    //     "",
+    //     "https://www.takarakasei.com/",
+    //     "",
+    //     "http://www.t-seiki.co.jp/",
+    //     "http://www.fuji-nt.jp/",
+    //     "https://www.greentokai.com/",
+    //     "https://www.toacs.co.th/",
+    //     "",
+    //     "",
+    //     "",
+    //     "https://www.tokaikogyodemexico.com/home",
+    //     "",
+    //     "",
+    //     "",
 
 
-    ]
+    // ]
 
     const pageTitle = "Our Network & Partner Companies | JIEI Thailand";
     const pageDescription = "Explore JIEI Thailand's partner companies and network, including locations, addresses, and Google Map links for automotive rubber parts manufacturing.";
