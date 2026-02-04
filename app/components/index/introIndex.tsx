@@ -31,7 +31,7 @@ export default function IntroIndex() {
                                         ? "คือ ผู้ผลิตชิ้นส่วนซีลยาง ทั้งภายใน ภายนอกของรถยนต์ และอุปกรณ์ให้กำเนิดพลังงาน"   //....
                                         : lang === ('en')
                                             ? 'A manufacturer of rubber seal components for both the interior and exterior of automobiles, as well as for power-generation equipment.'
-                                            : '自動車運用押出成形ゴム部品を製造するメーカーです。'}
+                                            : '自動車用押出成形ゴム部品を製造するメーカーです。'}
                                 </h1>
                             </div>
                             <div className="description_company_box">
