@@ -67,7 +67,7 @@ export default function News() {
   ];
   const newsEN = [
     //  วันก่อตั้งบริษัท
-    'Establishment of JIEI(THAILAND) Co., Ltd.',
+    'Establishment of JIEI(THAILAND) CO.,LTD.',
     // Company trip
     'Company Trip – JIEI(THAILAND)',
     // สมัครงาน
@@ -82,7 +82,7 @@ export default function News() {
   const newsJP = [
 
     //  วันก่อตั้งบริษัท
-    'Jiei（Thailand）Co., Ltd. の設立',
+    'JIEI(THAILAND)CO.,LTD. の設立',
     // Company trip
     'JIEI(THAILAND) CO.,LTD 社 社員旅行',
     // สมัครงาน
@@ -106,7 +106,7 @@ export default function News() {
       </p>
       <p>
         บริษัท <strong>เจไออีไอ (ไทยแลนด์) จำกัด</strong> หรือ 
-        <em>Jiei (Thailand) Co., Ltd.</em> ได้ก่อตั้งขึ้นเมื่อวันที่ 
+        <em>JIEI(THAILAND) CO.,LTD</em> ได้ก่อตั้งขึ้นเมื่อวันที่ 
         <strong>11 พฤศจิกายน พ.ศ. 2554 (11-11-2011)</strong> 
         เพื่อดำเนินธุรกิจด้าน <b>เทคโนโลยีอุตสาหกรรม</b> 
         และการให้บริการด้าน <b>วิศวกรรมครบวงจร</b>
@@ -121,7 +121,7 @@ export default function News() {
         “Together, We Grow with Technology and Integrity”
       </blockquote>
       <p>
-        <strong>Jiei (Thailand)</strong> มุ่งเน้นการเติบโตอย่างยั่งยืนร่วมกับพันธมิตรทางธุรกิจ 
+        <strong>JIEI(THAILAND)</strong> มุ่งเน้นการเติบโตอย่างยั่งยืนร่วมกับพันธมิตรทางธุรกิจ 
         โดยยึดมั่นในคุณภาพ ความซื่อสัตย์ และความรับผิดชอบต่อสังคม
       </p>
       <p>
@@ -247,7 +247,7 @@ export default function News() {
     //Sports Day
     `
     <section class="company-announcement">
-      <h2> งานกีฬาสี บริษัท JIEI(Thailand) Co., Ltd.</h2>
+      <h2> งานกีฬาสี บริษัท JIEI(Thailand) CO.,LTD.</h2>
      
       <div>
       <p>
@@ -268,7 +268,7 @@ export default function News() {
         เมื่อวันที่ 11 พฤศจิกายน พ.ศ. 2554
         ณ นิคมอุตสาหกรรมปิ่นทอง 4 จังหวัดชลบุรี
         บริษัท เจไออีไอ (ไทยแลนด์) จำกัดหรือ 
-       Jiei (Thailand) Co., Ltd. ได้ก่อตั้งขึ้นเมื่อวันที่ 
+       JIEI(THAILAND) CO.,LTD ได้ก่อตั้งขึ้นเมื่อวันที่ 
         11 พฤศจิกายน พ.ศ. 2554 (11-11-2011)
         เพื่อดำเนินธุรกิจด้านเทคโนโลยีอุตสาหกรรม 
         และการให้บริการด้านศวกรรมครบวงจร
@@ -312,7 +312,7 @@ export default function News() {
     at <strong>Pinthong Industrial Estate 4, Chonburi Province</strong>
   </p>
   <p>
-    <strong>Jiei (Thailand) Co., Ltd.</strong>, also known in Thai as 
+    <strong>JIEI(THAILAND) CO.,LTD</strong>, also known in Thai as 
     <em>เจไออีไอ (ไทยแลนด์) จำกัด</em>, was established on 
     <strong>November 11, 2011 (11-11-2011)</strong> 
     to operate in the field of <b>industrial technology</b> 
@@ -328,7 +328,7 @@ export default function News() {
     “Together, We Grow with Technology and Integrity”
   </blockquote>
   <p>
-    <strong>Jiei (Thailand)</strong> focuses on sustainable growth with business partners,
+    <strong>JIEI(THAILAND)</strong> focuses on sustainable growth with business partners,
     adhering to quality, integrity, and social responsibility.
   </p>
   <p>
@@ -468,7 +468,7 @@ export default function News() {
     Official Establishment Announcement
     On November 11, 2011,
     at Pinthong Industrial Estate 4, Chonburi Province,
-    Jiei (Thailand) Co., Ltd. was officially established
+    JIEI(THAILAND) CO.,LTD was officially established
     to operate in the field of industrial technology
     and provide comprehensive engineering services.
     `
@@ -488,11 +488,8 @@ export default function News() {
     `
      JIEI(THAILAND) Company Anniversary – November 11, 2025
       On the occasion of JIEI(THAILAND)’s founding anniversary on November 11, 2025,
-       the company organized a small event to thank all employees. At noon, every employee received gifts including: 
-       1. 1 Large Pack of Instant Noodles
-       2. 1 Bottle of Orange Juice
-       3. Ice Cream
-       4. Special Lunch including Grilled Mackerel and Fried Pork with Spicy Sauce
+       the company organized a small event to thank all employees. At noon, every employee received gifts. 
+      
        `,
     //New year party
     `
@@ -515,7 +512,7 @@ export default function News() {
     <strong>チョンブリー県 ピントン工業団地4</strong> にて
   </p>
   <p>
-    <strong>Jiei (Thailand) Co., Ltd.</strong>（タイ語名：<em>เจไออีไอ (ประเทศไทย) จำกัด</em>）は、
+    <strong>JIEI(THAILAND) CO.,LTD</strong>（タイ語名：<em>เจไออีไอ (ประเทศไทย) จำกัด</em>）は、
     <strong>2011年11月11日 削除 </strong> に設立されました。
     当社は <b>自動車用押出成形ゴム部品の</b> 分野で事業を展開し、
     <b>総合的なエンジニアリングサービス</b> を提供することを目的としています。
@@ -529,7 +526,7 @@ export default function News() {
     「ともに、技術と誠実さで成長する」
   </blockquote>
   <p>
-    <strong>Jiei (Thailand)</strong> は、ビジネスパートナーと共に持続的な成長を目指し、
+    <strong>JIEI(THAILAND)</strong> は、ビジネスパートナーと共に持続的な成長を目指し、
     品質、誠実さ、社会的責任を重んじます。
   </p>
   <p>
@@ -554,8 +551,8 @@ export default function News() {
     // Company trip
     `
     <section class="company-announcement">
-    <h2>JIEI (Thailand) Co., Ltd. 年間社員旅行：2025年10月11日～12日</h2>
-    <p>2025年、JIEI社はチームの結束を強化し、新しい経験を提供し、社員がリフレッシュできる年間社員旅行を開催しました。</p>
+    <h2>JIEI (Thailand) CO.,LTD. 年間社員旅行：2025年10月11日～12日</h2>
+    <p>2025年、JIEI (Thailand) CO.,LTD. はチームの結束を強化し、新しい経験を提供し、社員がリフレッシュできる年間社員旅行を開催しました。</p>
     <p>今年の旅行の特徴は「自然の中でのリラックス + チームビルディング活動 + 持続可能性の融合」です。</p>
     
     <hr />
@@ -664,7 +661,7 @@ export default function News() {
     `
     正式設立のお知らせ
     2011年11月11日、チョンブリー県ピントン工業団地4において
-    Jiei（Thailand）Co., Ltd. は正式に設立されました。
+    JIEI(THAILAND)CO.,LTD. は正式に設立されました。
     当社は産業技術分野での事業展開および
     総合的なエンジニアリングサービスの提供を目的としております。
     `
