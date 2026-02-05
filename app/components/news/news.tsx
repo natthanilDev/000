@@ -84,7 +84,7 @@ export default function News() {
     //  วันก่อตั้งบริษัท
     'JIEI(THAILAND)CO.,LTD. の設立',
     // Company trip
-    'JIEI(THAILAND) CO.,LTD 社 社員旅行',
+    'JIEI(THAILAND) CO.,LTD　社員旅行',
     // สมัครงาน
     // 'スタッフ職を募集しています',
     // วันเกิดบริษัท
@@ -506,7 +506,7 @@ export default function News() {
     //  วันก่อตั้งบริษัท
     `
     <section class="company-announcement">
-  <h2>正式設立のお知らせ</h2>
+  <h2>設立</h2>
   <p>
     2011年11月11日、  
     <strong>チョンブリー県 ピントン工業団地4</strong> にて
@@ -551,7 +551,7 @@ export default function News() {
     // Company trip
     `
     <section class="company-announcement">
-    <h2>JIEI (Thailand) CO.,LTD. 年間社員旅行：2025年10月11日～12日</h2>
+    <h2>JIEI (Thailand) CO.,LTD. 社員旅行：2025年10月11日～12日</h2>
     <p>2025年、JIEI (Thailand) CO.,LTD. はチームの結束を強化し、新しい経験を提供し、社員がリフレッシュできる年間社員旅行を開催しました。</p>
     <p>今年の旅行の特徴は「自然の中でのリラックス + チームビルディング活動 + 持続可能性の融合」です。</p>
     
@@ -659,7 +659,7 @@ export default function News() {
   const contentJPNews = [
     // วันเกิดบริษัท
     `
-    正式設立のお知らせ
+    設立
     2011年11月11日、チョンブリー県ピントン工業団地4において
     JIEI(THAILAND)CO.,LTD. は正式に設立されました。
     当社は産業技術分野での事業展開および

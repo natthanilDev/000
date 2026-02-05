@@ -48,14 +48,15 @@ export default function Network() {
     ]
     // ----------------------------------------------------------------------
     const company1 = [
+        "東海ホールディングス株式会社",
         "東海興業株式会社",
         "アド株式会社",
         "株式会社コベルク",
         "成和工業株式会社",
         "タカラ化成工業株式会社",
         "東亜ゴム工業株式会社",
-        "東海興業株式会社",
-        "富士株式会社",
+        
+        "株式会社富士",
         "GREEN TOKAI CO., LTD.",
         "TOACS THAILAND CO., LTD.",
         "VIETNAM TOKAI CO., LTD.",
@@ -67,13 +68,14 @@ export default function Network() {
         "TOKAI JIEI ASIA CO., LTD."
     ]
     const address1 = [
-        "4 Chome-1 Naganecho, Obu, Aichi 474-0021 Japan",
+        "4-1 Nagane Cho, Obu City, Aichi Pref 474-8688 Japan",
+        "4-1 Nagane-Cho, Obu City, Aichi Pref  474-8688 Japan",
         "Japan 〒474-0001 Ida-129, Kitasaki-machi, Obu City, Aichi Prefecture Logistics Center",
         " 4-33 Nakayamacho, Kariya City, Aichi Prefecture, 448-0026",
         "2-11-17, Matsue, Edogawa-Ku,Tokyo 132-0025　Japan　",
         "6 KAZAKOSHI KAMIHASUMI-CHO NISHIO-CITY AICHI PRE-0011 JAPAN JP",
         "Shojisaku-8-21 Izumicho, Anjo, Aichi 444-1221 Japan",
-        "4-1 Nagane-cho Obu City Aich Pref. Japan 474-8688",
+        
         "7667-24 Ichimaru located in Kokufu-cho, Suzuka City, Mie 513-0836,Japan",
         "55 Robert Wright Dr, Brookville, OH 45309, United States",
         "700/65 Kromdit 6 Alley,Khlong Tamru Sub-district, Mueang Chonburi District,Chonburi 20000, Thailand",

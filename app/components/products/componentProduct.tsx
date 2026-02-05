@@ -349,7 +349,7 @@ export default function Products() {
         <>
         <ScrollReveal>
           <h1 className="title-product-page">
-             {lang == 'en' ? "Our products" : lang == "th" ? "สินค้าของเรา" : "当社の商品"}
+             {lang == 'en' ? "Our products" : lang == "th" ? "สินค้าของเรา" : "当社の製品"}
           </h1>
           <div className="line" />
           </ScrollReveal>
