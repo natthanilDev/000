@@ -38,18 +38,18 @@ export default function FooterClient() {
     'December'
   ]
   const MonthJP = [
-    '1月（いちがつ）',
-    '2月（にがつ）',
-    '3月（さんがつ）',
-    '4月（しがつ）',
-    '5月（ごがつ）',
-    '6月（ろくがつ）',
-    '7月（しちがつ）',
-    '8月（はちがつ）',
-    '9月（くがつ）',
-    '10月（じゅうがつ）',
-    '11月（じゅういちがつ）',
-    '12月（じゅうにがつ）'
+    '1月',
+    '2月',
+    '3月',
+    '4月',
+    '5月',
+    '6月',
+    '7月',
+    '8月',
+    '9月',
+    '10月',
+    '11月',
+    '12月'
   ]
 
   const currentMonthTH = MonthTH[currentMonth]
@@ -58,7 +58,7 @@ export default function FooterClient() {
 
   const dateTH = currentDay + " / " + currentMonthTH + " / " + currentYear
   const dateEN = currentDay + " / " + currentMonthEN + " / " + currentYear
-  const dateJP = currentDay + " / " + currentMonthJP + " / " + currentYear
+  const dateJP = currentDay + "日" + " / " + currentMonthJP + " / " + currentYear + "年" 
 
 
   const [lang, setLang] = useState<'th' | 'en' | 'jp'>('th');
@@ -96,12 +96,12 @@ export default function FooterClient() {
 
             </div>
             <div className="contentFooter-box">
-              <h6 className='jiei-footer' itemProp="name">JIEI (Thailand) Co., Ltd.</h6>
+              <h6 className='jiei-footer' itemProp="name">JIEI (THAILAND) CO., LTD.</h6>
               <p className='jiei-footer' itemProp="streetAddress">
-                {lang===('th') ? "นิคมอุตสาหกรรมปิ่นทอง 4 ยูนิต G18 180/3 หมู่ 6 ตำบลบึง อำเภอศรีราชา จังหวัดชลบุรี 20230 ประเทศไทย" : lang===('en') ? "Pinthong 4 Industrial Estate, Unit G18,180/3 Moo 6, T. Bueng, A. Sriracha, Chonburi 20230, Thailand" : "ピントン4工業団地 ユニットG18 180/3 ムー6 ブン区 シーラチャー郡 チョンブリー県 20230 タイ"}
+                {lang === ('th') ? "นิคมอุตสาหกรรมปิ่นทอง 4 ยูนิต G18 180/3 หมู่ 6 ตำบลบึง อำเภอศรีราชา จังหวัดชลบุรี 20230 ประเทศไทย" : lang === ('en') ? "Pinthong 4 Industrial Estate, Unit G18,180/3 Moo 6, T. Bueng, A. Sriracha, Chonburi 20230, Thailand" : "ピントン4工業団地 ユニットG18 180/3 ムー6 ブン区 シーラチャー郡 チョンブリー県 20230 タイ"}
               </p>
-              <p className='jiei-footer'>{lang===('th') ? "เวลาทำการ : " : lang===('en') ? "Opening Hours : " : "営業時間 ："}<time itemProp="openingHours" dateTime="Mo-Fr 08:00-17:00">{lang===('th') ? "จันทร์ - ศุกร์ เวลา 8.00 - 17.00 น." : lang===('en') ? "Mon - Fri, 8:00 AM - 5:00 PM" : "月曜日〜金曜日 8:00〜17:00"}</time></p>
-              <p className='jiei-footer'>{lang===('th') ? "โทร : " : lang===('en') ? "Tel : " : "電話 ："}<a href="tel:+6633136581" itemProp="telephone">033-136581-4</a></p>
+              <p className='jiei-footer'>{lang === ('th') ? "เวลาทำการ : " : lang === ('en') ? "Opening Hours : " : "営業時間 ："}<time itemProp="openingHours" dateTime="Mo-Fr 08:00-17:00">{lang === ('th') ? "จันทร์ - ศุกร์ เวลา 8.00 - 17.00 น." : lang === ('en') ? "Mon - Fri, 8:00 AM - 5:00 PM" : "月曜日〜金曜日 8:00〜17:00"}</time></p>
+              <p className='jiei-footer'>{lang === ('th') ? "โทร : " : lang === ('en') ? "Tel : " : "電話 ："}<a href="tel:+6633136581" itemProp="telephone">033-136581-4</a></p>
               {/* <p className='jiei-footer'>{lang===('th') ? "เลขประจำตัวผู้เสียภาษี (TIN) : " : lang===('en') ? "TIN :" : "納税者識別番号 (TIN)："} <span itemProp="taxID">0215554005118</span></p> */}
             </div>
           </div>
@@ -109,12 +109,12 @@ export default function FooterClient() {
           {/* Products */}
           <div className="footer-box">
             <div className="topic-box">
-              <h6>{lang===('th') ? "ผลิตภัณฑ์" : lang===('en') ? "Products" : "製品"}</h6>
+              <h6>{lang === ('th') ? "ผลิตภัณฑ์" : lang === ('en') ? "Products" : "製品"}</h6>
             </div>
             <div className="contentFooter-box">
               <ul>
-                 <li className='li-footer'>
-                  <Link href={'/products'} className="link-footer">{lang===('th') ? "ผลิตภัณฑ์" : lang===('en') ? "Products" : "製品"}</Link>
+                <li className='li-footer'>
+                  <Link href={'/products'} className="link-footer">{lang === ('th') ? "ผลิตภัณฑ์" : lang === ('en') ? "Products" : "製品"}</Link>
                 </li>
 
                 {/* <li className='li-footer'>
@@ -137,12 +137,12 @@ export default function FooterClient() {
           <div className="footer-box">
             <div className="footer-box2">
               <div className="topic-box">
-                <h6>{lang===('th') ? "เกี่ยวกับเรา" : lang===('en') ? "About Us" : "会社概要"}</h6>
+                <h6>{lang === ('th') ? "เกี่ยวกับเรา" : lang === ('en') ? "About Us" : "会社概要"}</h6>
               </div>
               <div className="contentFooter-box">
                 <ul>
                   <li className='li-footer'>
-                    <Link href={'/about'} className="link-footer">{lang===('th') ? "ข้อมูลบริษัท" : lang===('en') ? "Company Profile" : "会社概要"}</Link>
+                    <Link href={'/about'} className="link-footer">{lang === ('th') ? "ข้อมูลบริษัท" : lang === ('en') ? "Company Profile" : "会社概要"}</Link>
                   </li>
                 </ul>
               </div>
@@ -150,12 +150,12 @@ export default function FooterClient() {
 
             <div className="footer-box2">
               <div className="topic-box">
-                <h6>{lang===('th') ? "ติดต่อเรา" : lang===('en') ? "Contact Us" : "お問い合わせ"}</h6>
+                <h6>{lang === ('th') ? "ติดต่อเรา" : lang === ('en') ? "Contact Us" : "お問い合わせ"}</h6>
               </div>
               <div className="contentFooter-box">
                 <ul>
                   <li className='li-footer'>
-                    <Link href={'/contact'} className="link-footer">{lang===('th') ? "ส่งข้อความถึงเรา" : lang===('en') ? "Send Us a Message" : "メッセージを送る"}</Link>
+                    <Link href={'/contact'} className="link-footer">{lang === ('th') ? "ส่งข้อความถึงเรา" : lang === ('en') ? "Send Us a Message" : "メッセージを送る"}</Link>
                   </li>
                 </ul>
               </div>
@@ -169,13 +169,13 @@ export default function FooterClient() {
           <div className="footer-box">
             <div className="footer-box2">
               <div className="topic-box">
-                <h6>{lang===('th') ? "ข่าวสาร และกิจกรรม" : lang===('en') ? "News & Activities" : "ニュースとイベント"}</h6>
+                <h6>{lang === ('th') ? "ข่าวสาร และกิจกรรม" : lang === ('en') ? "News & Activities" : "ニュースとイベント"}</h6>
               </div>
             </div>
             <div className="contentFooter-box">
               <ul>
                 <li className='li-footer'>
-                  <Link href={'/activities'} className="link-footer">{lang===('th') ? "ข่าวสาร และกิจกรรม" : lang===('en') ? "Activities" : "活動"}</Link>
+                  <Link href={'/activities'} className="link-footer">{lang === ('th') ? "ข่าวสาร และกิจกรรม" : lang === ('en') ? "Activities" : "活動"}</Link>
                 </li>
               </ul>
             </div>
@@ -198,7 +198,8 @@ export default function FooterClient() {
 
         {/* Bottom */}
         <div className="bottom-footer">
-          <p>{lang===('th') ? `ลิขสิทธิ์ © 2025 บริษัท เจไออี (ประเทศไทย) จำกัด | ผู้ผลิตชิ้นส่วนยางยานยนต์ในจังหวัดชลบุรี ประเทศไทย || อัปเดตเมื่อ ${dateTH}` : lang===('en') ? `Copyright © 2025 JIEI (Thailand) Co., Ltd. | Automotive Rubber Parts Manufacturer in Chonburi, Thailand || Update on ${dateEN}` : `著作権 © 2025 JIEI（タイ）株式会社｜タイ・チョンブリー県の自動車用ゴム部品メーカー || 更新日 ${dateJP}`}</p>
+          <p>{lang === ('th') ? `ลิขสิทธิ์ © 2025 บริษัท เจไออี (ประเทศไทย) จำกัด | ผู้ผลิตชิ้นส่วนยางยานยนต์ในจังหวัดชลบุรี ประเทศไทย || อัปเดตเมื่อ ${dateTH}` : lang === ('en') ? `Copyright © 2025 JIEI (THAILAND) CO., LTD. | Automotive Rubber Parts Manufacturer in Chonburi, Thailand || Update on ${dateEN}` : `著作権 © 2025 JIEI (THAILAND) CO.,LTD ｜タイ・チョンブリー県の自動車用ゴム部品メーカー || 更新日 ${dateJP} 
+          `}</p>
         </div>
       </footer>
     </div>

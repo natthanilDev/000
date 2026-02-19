@@ -27,7 +27,7 @@ export default function Network() {
     //     'JIEI Technical Trading(Shanghai)Co., Ltd. Wuhan Office',
     // ]
     const address = [
-        '1-64 Bouzuyama, Yokone-cho, Obu-shi, Aichi, 474-0011, Japan',
+        '1-64 Bouzuyama, Yokone Cho, Obu Shi, Aichi Pref., 474-0011, Japan',
         'No.1055, Bazi Road, Xiuzhou Industrial estate, Jiaxing City, Zhejiang, China. 314000',
         '',
         '',
@@ -48,7 +48,7 @@ export default function Network() {
     ]
     // ----------------------------------------------------------------------
     const company1 = [
-        "東海ホールディングス株式会社",
+        "東海興業ホールディングス株式会社",
         "東海興業株式会社",
         "アド株式会社",
         "株式会社コベルク",
@@ -68,15 +68,15 @@ export default function Network() {
         "TOKAI JIEI ASIA CO., LTD."
     ]
     const address1 = [
-        "4-1 Nagane Cho, Obu City, Aichi Pref 474-8688 Japan",
-        "4-1 Nagane-Cho, Obu City, Aichi Pref  474-8688 Japan",
-        "Japan 〒474-0001 Ida-129, Kitasaki-machi, Obu City, Aichi Prefecture Logistics Center",
-        " 4-33 Nakayamacho, Kariya City, Aichi Prefecture, 448-0026",
-        "2-11-17, Matsue, Edogawa-Ku,Tokyo 132-0025　Japan　",
-        "6 KAZAKOSHI KAMIHASUMI-CHO NISHIO-CITY AICHI PRE-0011 JAPAN JP",
-        "Shojisaku-8-21 Izumicho, Anjo, Aichi 444-1221 Japan",
+        "4-1 Nagane Cho, Obu Shi, Aichi Pref. 474-8688 Japan",
+        "4-1 Nagane Cho, Obu Shi, Aichi Pref.  474-8688 Japan",
+        "Japan 〒474-0001 Ida-129, Kitasaki Cho, Obu Shi, Aichi Pref. Logistics Center",
+        " 4-33 Nakayama Cho, Kariya Shi, Aichi Pref. 448-0026",
+        "2-11-17, Matsue, Edogawa Ku,Tokyo 132-0025 Japan ",
+        "6 Kazakoshi Kamihasumi Cho Nishio Shi Aichi Pref. PRE-001 Japan",
+        "Shojisaku-8-21 Izumi Cho, Anjo Shi, Aichi Pref. 444-1221 Japan",
         
-        "7667-24 Ichimaru located in Kokufu-cho, Suzuka City, Mie 513-0836,Japan",
+        "7667-24 Ichimaru located in Kokufu Cho, Suzuka Shi, Mie Pref. 513-0836 Japan",
         "55 Robert Wright Dr, Brookville, OH 45309, United States",
         "700/65 Kromdit 6 Alley,Khlong Tamru Sub-district, Mueang Chonburi District,Chonburi 20000, Thailand",
         "1 RD HOA CAM IZ CAM LE DIST DANANG CITY VIETNAM DANANG DA550000 VN",

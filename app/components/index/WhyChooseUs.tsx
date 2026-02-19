@@ -32,7 +32,7 @@ export default function WhyChooseUs() {
                             <p className='t-w-y'>
                                 {lang === ('th') ? "ที่ บริษัท เจไออีไอ (ไทยแลนด์) จำกัด เรามีความเชี่ยวชาญมากกว่าทศวรรษ ด้วยระบบการผลิตตามมาตรฐานสากล ISO 9001, ISO 14001 และ IATF 16949 ซึ่งสามารถตอบสนองทั้งด้านคุณภาพ ด้านการจัดส่ง และด้านสิ่งแวดล้อม เพราะเรารู้ว่าธุรกิจของคุณให้ความสำคัญกับทุกชิ้นส่วน"
                                     : lang === ('en') ? "At JIEI (Thailand) Co., Ltd., we have more than a decade of expertise supported by production systems certified to international standards—ISO 9001, ISO 14001, and IATF 16949. These systems enable us to meet requirements in quality, delivery, and environmental responsibility, because we understand that every single component matters to your business."
-                                        : "JIEI（Thailand）Co., Ltd. は、ISO 9001、ISO 14001、IATF 16949 といった国際規格に基づく生産システムを備え、10年以上の専門性を培ってきました。品質、納期、環境面の要求に応えることができるのは、お客様のビジネスにとってすべての部品が重要であると理解しているからです。"}</p>
+                                        : "JIEI (THAILAND) CO.,LTD. は、ISO 9001、ISO 14001、IATF 16949 といった国際規格に基づく生産システムを備え、10年以上の専門性を培ってきました。品質、納期、環境面の要求に応えることができるのは、お客様のビジネスにとってすべての部品が重要であると理解しているからです。"}</p>
                         </ScrollReveal>
 
                     </div>

@@ -170,8 +170,8 @@ export default function Tach() {
 
 
     // SEO Metadata
-    const pageTitle = "Introduction of Development Technology | JIEI Thailand";
-    const pageDescription = "Learn about JIEI Thailand's development technology for automotive rubber parts, including CAD / CATIA design, 3D modeling, engineering analysis, materials development, and functional evaluation.";
+    const pageTitle = "Introduction of Development Technology | JIEI (THAILAND) CO., LTD.";
+    const pageDescription = "Learn about JIEI (THAILAND) CO., LTD.'s development technology for automotive rubber parts, including CAD / CATIA design, 3D modeling, engineering analysis, materials development, and functional evaluation.";
 
     const [lang, setLang] = useState<'th' | 'en' | 'jp'>('th');
     useEffect(() => {
@@ -236,12 +236,12 @@ export default function Tach() {
                     <div className="introduction-tech-box">
                         <ScrollReveal>
                             <h1 className="introduction-tech">
-                                {lang===('th') ? "แนะนำเทคโนโลยีการพัฒนา - JIEI Thailand" : lang===('en') ? "Introduction of Development Technology - JIEI Thailand" : "開発技術の紹介 - JIEI Thailand"}
+                                {lang===('th') ? "แนะนำเทคโนโลยีการพัฒนา - JIEI (THAILAND) CO., LTD." : lang===('en') ? "Introduction of Development Technology - JIEI (THAILAND) CO., LTD." : "開発技術の紹介 - JIEI (THAILAND) CO., LTD."}
 
                             </h1>
-                            <p className='introduction-content'>{lang===('th') ? "JIEI Thailand ใช้เทคโนโลยีการออกแบบ การวิเคราะห์ และการทดสอบที่ล้ำสมัย เพื่อให้มั่นใจในคุณภาพสูงสุดของชิ้นส่วนยางรถยนต์ กระบวนการของเราครอบคลุมการออกแบบ CAD การวิเคราะห์โครงสร้าง การจำลองวัสดุ และการประเมินสมรรถนะ เพื่อให้ได้มาตรฐานยานยนต์ระดับสากล"
-                                : lang===('en') ? "JIEI Thailand applies advanced design, analysis, and testing technologies to ensure the highest quality of automotive rubber parts. Our integrated process covers CAD design, structural analysis, material simulation, and performance evaluation to meet global automotive standards."
-                                    : "JIEI Thailandは、自動車用ゴム部品の最高品質を保証するために、先進的な設計、解析、試験技術を採用しています。当社の統合プロセスは、CAD設計、構造解析、材料シミュレーション、性能評価を網羅し、世界的な自動車産業の基準に対応しています。"}</p>
+                            <p className='introduction-content'>{lang===('th') ? "JIEI (THAILAND) CO., LTD. ใช้เทคโนโลยีการออกแบบ การวิเคราะห์ และการทดสอบที่ล้ำสมัย เพื่อให้มั่นใจในคุณภาพสูงสุดของชิ้นส่วนยางรถยนต์ กระบวนการของเราครอบคลุมการออกแบบ CAD การวิเคราะห์โครงสร้าง การจำลองวัสดุ และการประเมินสมรรถนะ เพื่อให้ได้มาตรฐานยานยนต์ระดับสากล"
+                                : lang===('en') ? "JIEI (THAILAND) CO., LTD. applies advanced design, analysis, and testing technologies to ensure the highest quality of automotive rubber parts. Our integrated process covers CAD design, structural analysis, material simulation, and performance evaluation to meet global automotive standards."
+                                    : "JIEI (THAILAND) CO., LTD. は、自動車用ゴム部品の最高品質を保証するために、先進的な設計、解析、試験技術を採用しています。当社の統合プロセスは、CAD設計、構造解析、材料シミュレーション、性能評価を網羅し、世界的な自動車産業の基準に対応しています。"}</p>
                         </ScrollReveal>
                         <div className="line" />
 

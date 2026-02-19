@@ -63,36 +63,36 @@ export default function News() {
     //New year party
     'งานเลี้ยงปีใหม่ ประจำปี 2025 วันที่ 5 ธันวาคม 2025',
     //Sports Day
-    'งานกีฬาสี บริษัท JIEI(THAILAND) CO.,LTD'
+    'งานกีฬาสี บริษัท JIEI (THAILAND) CO.,LTD.'
   ];
   const newsEN = [
     //  วันก่อตั้งบริษัท
-    'Establishment of JIEI(THAILAND) CO.,LTD.',
+    'Establishment of JIEI (THAILAND) CO.,LTD.',
     // Company trip
-    'Company Trip – JIEI(THAILAND)',
+    'Company Trip – JIEI (THAILAND) CO.,LTD.',
     // สมัครงาน
     // 'Now Hiring: Staff Position',
     // วันเกิดบริษัท
-    'November 11, 2025 – Anniversary of JIEI(THAILAND) Company’s Founding',
+    'November 11, 2025 – Anniversary of JIEI (THAILAND) CO.,LTD. Founding',
     //New year party 
     'New Year Party 2025 Date: 5 December 2025',
     //Sports Day
-    'Sports Day Event JIEI(THAILAND) CO.,LTD'
+    'Sports Day Event JIEI (THAILAND) CO.,LTD.'
   ];
   const newsJP = [
 
     //  วันก่อตั้งบริษัท
-    'JIEI(THAILAND)CO.,LTD. の設立',
+    'JIEI (THAILAND) CO.,LTD. の設立',
     // Company trip
-    'JIEI(THAILAND) CO.,LTD　社員旅行',
+    'JIEI (THAILAND) CO.,LTD.　社員旅行',
     // สมัครงาน
     // 'スタッフ職を募集しています',
     // วันเกิดบริษัท
-    '2025年11月11日 – JIEI(THAILAND) CO.,LTD 会社設立記念日',
+    '2025年11月11日 – JIEI (THAILAND) CO.,LTD. 会社設立記念日',
     //New year party
     '2025年 新年会 開催日：2025年12月5日',
     //Sports day
-    'JIEI(THAILAND)CO.,LTD. スポーツデーイベント'
+    'JIEI (THAILAND) CO.,LTD. スポーツデーイベント'
   ];
 
   const contentTH = [
@@ -106,7 +106,7 @@ export default function News() {
       </p>
       <p>
         บริษัท <strong>เจไออีไอ (ไทยแลนด์) จำกัด</strong> หรือ 
-        <em>JIEI(THAILAND) CO.,LTD</em> ได้ก่อตั้งขึ้นเมื่อวันที่ 
+        <em>JIEI (THAILAND) CO.,LTD.</em> ได้ก่อตั้งขึ้นเมื่อวันที่ 
         <strong>11 พฤศจิกายน พ.ศ. 2554 (11-11-2011)</strong> 
         เพื่อดำเนินธุรกิจด้าน <b>เทคโนโลยีอุตสาหกรรม</b> 
         และการให้บริการด้าน <b>วิศวกรรมครบวงจร</b>
@@ -121,7 +121,7 @@ export default function News() {
         “Together, We Grow with Technology and Integrity”
       </blockquote>
       <p>
-        <strong>JIEI(THAILAND)</strong> มุ่งเน้นการเติบโตอย่างยั่งยืนร่วมกับพันธมิตรทางธุรกิจ 
+        <strong>JIEI (THAILAND)</strong> มุ่งเน้นการเติบโตอย่างยั่งยืนร่วมกับพันธมิตรทางธุรกิจ 
         โดยยึดมั่นในคุณภาพ ความซื่อสัตย์ และความรับผิดชอบต่อสังคม
       </p>
       <p>
@@ -227,11 +227,11 @@ export default function News() {
     //New year party
     ` 
     <section class="company-announcement">
-      <h2>ในวันที่ 5 ธันวาคม 2025 บริษัท JIEI(THAILAND) CO.,LTD ได้จัดงานเลี้ยงปีใหม่</h2>
+      <h2>ในวันที่ 5 ธันวาคม 2025 บริษัท JIEI (THAILAND) CO.,LTD. ได้จัดงานเลี้ยงปีใหม่</h2>
      
       <div>
       <p>
-       ในวันที่ 5 ธันวาคม 2025 บริษัท JIEI(THAILAND) CO.,LTD ได้จัดงานเลี้ยงปีใหม่เพื่อขอบคุณพนักงานทุกท่านที่ทุ่มเททำงานอย่างหนักตลอดปี
+       ในวันที่ 5 ธันวาคม 2025 บริษัท JIEI (THAILAND) CO.,LTD. ได้จัดงานเลี้ยงปีใหม่เพื่อขอบคุณพนักงานทุกท่านที่ทุ่มเททำงานอย่างหนักตลอดปี
       </p>
 
        <p><b>
@@ -251,7 +251,7 @@ export default function News() {
      
       <div>
       <p>
-      งานกีฬาสี บริษัท JIEI(THAILAND) CO.,LTD จัดขึ้นในวันที่ 9, 15 และ 18 ธันวาคม 2025 โดยมีวัตถุประสงค์เพื่อสร้างความสามัคคี ส่งเสริมสุขภาพ และเพิ่มความสนุกสนานให้กับพนักงานทุกแผนก ทุกสีทีมได้เข้าร่วมแข่งขันในกิจกรรมต่าง ๆ อย่างเต็มที่ พร้อมเชียร์ลีดเดอร์สุดคึกคัก สร้างบรรยากาศที่เต็มไปด้วยพลังและเสียงหัวเราะตลอดทั้งงาน
+      งานกีฬาสี บริษัท JIEI (THAILAND) CO.,LTD. จัดขึ้นในวันที่ 9, 15 และ 18 ธันวาคม 2025 โดยมีวัตถุประสงค์เพื่อสร้างความสามัคคี ส่งเสริมสุขภาพ และเพิ่มความสนุกสนานให้กับพนักงานทุกแผนก ทุกสีทีมได้เข้าร่วมแข่งขันในกิจกรรมต่าง ๆ อย่างเต็มที่ พร้อมเชียร์ลีดเดอร์สุดคึกคัก สร้างบรรยากาศที่เต็มไปด้วยพลังและเสียงหัวเราะตลอดทั้งงาน
       </p>
       </div>
    
@@ -268,7 +268,7 @@ export default function News() {
         เมื่อวันที่ 11 พฤศจิกายน พ.ศ. 2554
         ณ นิคมอุตสาหกรรมปิ่นทอง 4 จังหวัดชลบุรี
         บริษัท เจไออีไอ (ไทยแลนด์) จำกัดหรือ 
-       JIEI(THAILAND) CO.,LTD ได้ก่อตั้งขึ้นเมื่อวันที่ 
+       JIEI (THAILAND) CO.,LTD. ได้ก่อตั้งขึ้นเมื่อวันที่ 
         11 พฤศจิกายน พ.ศ. 2554 (11-11-2011)
         เพื่อดำเนินธุรกิจด้านเทคโนโลยีอุตสาหกรรม 
         และการให้บริการด้านศวกรรมครบวงจร
@@ -292,14 +292,14 @@ export default function News() {
     //New year party
 
     `
-    ในวันที่ 5 ธันวาคม 2025 บริษัท JIEI(THAILAND) CO.,LTD ได้จัดงานเลี้ยงปีใหม่เพื่อขอบคุณพนักงานทุกท่านที่ทุ่มเททำงานอย่างหนักตลอดปี
+    ในวันที่ 5 ธันวาคม 2025 บริษัท JIEI (THAILAND) CO.,LTD. ได้จัดงานเลี้ยงปีใหม่เพื่อขอบคุณพนักงานทุกท่านที่ทุ่มเททำงานอย่างหนักตลอดปี
     พร้อมกิจกรรมจับฉลากของขวัญมากกว่า 71 รายการ สร้างรอยยิ้มและความสนุกสนานให้กับทุกคน
      `,
 
     //Sports Day
     `
-     งานกีฬาสี บริษัท JIEI(THAILAND) CO.,LTD
-    งานกีฬาสี บริษัท JIEI(THAILAND) CO.,LTD จัดขึ้นในวันที่ 9, 15 และ 18 ธันวาคม 2025 โดยมีวัตถุประสงค์เพื่อสร้างความสามัคคี ส่งเสริมสุขภาพ และเพิ่มความสนุกสนานให้กับพนักงานทุกแผนก ทุกสีทีมได้เข้าร่วมแข่งขันในกิจกรรมต่าง ๆ อย่างเต็มที่ พร้อมเชียร์ลีดเดอร์สุดคึกคัก สร้างบรรยากาศที่เต็มไปด้วยพลังและเสียงหัวเราะตลอดทั้งงาน
+     งานกีฬาสี บริษัท JIEI (THAILAND) CO.,LTD.
+    งานกีฬาสี บริษัท JIEI (THAILAND) CO.,LTD. จัดขึ้นในวันที่ 9, 15 และ 18 ธันวาคม 2025 โดยมีวัตถุประสงค์เพื่อสร้างความสามัคคี ส่งเสริมสุขภาพ และเพิ่มความสนุกสนานให้กับพนักงานทุกแผนก ทุกสีทีมได้เข้าร่วมแข่งขันในกิจกรรมต่าง ๆ อย่างเต็มที่ พร้อมเชียร์ลีดเดอร์สุดคึกคัก สร้างบรรยากาศที่เต็มไปด้วยพลังและเสียงหัวเราะตลอดทั้งงาน
      `
   ]
   const contentEN = [
@@ -312,7 +312,7 @@ export default function News() {
     at <strong>Pinthong Industrial Estate 4, Chonburi Province</strong>
   </p>
   <p>
-    <strong>JIEI(THAILAND) CO.,LTD</strong>, also known in Thai as 
+    <strong>JIEI (THAILAND) CO.,LTD.</strong>, also known in Thai as 
     <em>เจไออีไอ (ไทยแลนด์) จำกัด</em>, was established on 
     <strong>November 11, 2011 (11-11-2011)</strong> 
     to operate in the field of <b>industrial technology</b> 
@@ -328,7 +328,7 @@ export default function News() {
     “Together, We Grow with Technology and Integrity”
   </blockquote>
   <p>
-    <strong>JIEI(THAILAND)</strong> focuses on sustainable growth with business partners,
+    <strong>JIEI (THAILAND) CO.,LTD.</strong> focuses on sustainable growth with business partners,
     adhering to quality, integrity, and social responsibility.
   </p>
   <p>
@@ -419,11 +419,11 @@ export default function News() {
     // วันเกิดบริษัท
     `
     <section class="company-announcement">
-      <h2>JIEI(THAILAND) Company Anniversary – November 11, 2025</h2>
+      <h2>JIEI (THAILAND) CO.,LTD. Anniversary – November 11, 2025</h2>
      
       <div>
       <p>
-       On the occasion of JIEI(THAILAND)’s founding anniversary on November 11, 2025, <br />
+       On the occasion of JIEI (THAILAND) CO.,LTD.'s founding anniversary on November 11, 2025, <br />
        the company organized a small event to thank all employees. At noon, every employee received gifts  
       </p>
       </div>
@@ -435,7 +435,7 @@ export default function News() {
 
     `
     <section class="company-announcement">
-      <h2>    On December 5, 2025, JIEI(THAILAND) CO.,LTD held a New Year party to express appreciation to all employees for their hard work throughout the year.           </h2>
+      <h2>    On December 5, 2025, JIEI (THAILAND) CO.,LTD. held a New Year party to express appreciation to all employees for their hard work throughout the year.           </h2>
       <div>
       <p>
       The event included a lucky draw with more than 71 prizes, adding joy and excitement for everyone.
@@ -449,11 +449,11 @@ export default function News() {
     //Sport Day
     `
      <section class="company-announcement">
-      <h2>Sports Day Event – JIEI(THAILAND) CO.,LTD</h2>
+      <h2>Sports Day Event – JIEI (THAILAND) CO.,LTD.</h2>
      
       <div>
       <p>
-   The JIEI(THAILAND) CO.,LTD Sports Day will take place on December 9, 15, and 18, 2025. The event aims to promote teamwork, strengthen relationships, and encourage good health among employees across all departments. Each team participates enthusiastically in various activities, supported by lively cheerleaders, creating a vibrant and energetic atmosphere throughout the event.
+   The JIEI (THAILAND) CO.,LTD. Sports Day will take place on December 9, 15, and 18, 2025. The event aims to promote teamwork, strengthen relationships, and encourage good health among employees across all departments. Each team participates enthusiastically in various activities, supported by lively cheerleaders, creating a vibrant and energetic atmosphere throughout the event.
       </p>
       </div>
    
@@ -468,7 +468,7 @@ export default function News() {
     Official Establishment Announcement
     On November 11, 2011,
     at Pinthong Industrial Estate 4, Chonburi Province,
-    JIEI(THAILAND) CO.,LTD was officially established
+    JIEI (THAILAND) CO.,LTD. was officially established
     to operate in the field of industrial technology
     and provide comprehensive engineering services.
     `
@@ -486,20 +486,20 @@ export default function News() {
     // ,
     // วันเกิดบริษัท
     `
-     JIEI(THAILAND) Company Anniversary – November 11, 2025
-      On the occasion of JIEI(THAILAND)’s founding anniversary on November 11, 2025,
+     JIEI (THAILAND) CO.,LTD. Anniversary – November 11, 2025
+      On the occasion of JIEI (THAILAND) CO.,LTD.'s founding anniversary on November 11, 2025,
        the company organized a small event to thank all employees. At noon, every employee received gifts. 
       
        `,
     //New year party
     `
-       On December 5, 2025, JIEI(THAILAND) CO.,LTD held a New Year party to express appreciation to all employees for their hard work throughout the year.
+       On December 5, 2025, JIEI (THAILAND) CO.,LTD. held a New Year party to express appreciation to all employees for their hard work throughout the year.
        The event included a lucky draw with more than 71 prizes, adding joy and excitement for everyone.
        `,
     //Sports Day
     `
-       Sports Day Event – JIEI(THAILAND) CO.,LTD
-       The JIEI(THAILAND) CO.,LTD Sports Day will take place on December 9, 15, and 18, 2025. The event aims to promote teamwork, strengthen relationships, and encourage good health among employees across all departments. Each team participates enthusiastically in various activities, supported by lively cheerleaders, creating a vibrant and energetic atmosphere throughout the event.
+       Sports Day Event – JIEI (THAILAND) CO.,LTD.
+       The JIEI (THAILAND) CO.,LTD. Sports Day will take place on December 9, 15, and 18, 2025. The event aims to promote teamwork, strengthen relationships, and encourage good health among employees across all departments. Each team participates enthusiastically in various activities, supported by lively cheerleaders, creating a vibrant and energetic atmosphere throughout the event.
        `
   ]
   const contentJP = [
@@ -512,7 +512,7 @@ export default function News() {
     <strong>チョンブリー県 ピントン工業団地4</strong> にて
   </p>
   <p>
-    <strong>JIEI(THAILAND) CO.,LTD</strong>（タイ語名：<em>เจไออีไอ (ประเทศไทย) จำกัด</em>）は、
+    <strong>JIEI (THAILAND) CO.,LTD.</strong>（タイ語名：<em>เจไออีไอ (ประเทศไทย) จำกัด</em>）は、
     <strong>2011年11月11日 削除 </strong> に設立されました。
     当社は <b>自動車用押出成形ゴム部品の</b> 分野で事業を展開し、
     <b>総合的なエンジニアリングサービス</b> を提供することを目的としています。
@@ -526,7 +526,7 @@ export default function News() {
     「ともに、技術と誠実さで成長する」
   </blockquote>
   <p>
-    <strong>JIEI(THAILAND)</strong> は、ビジネスパートナーと共に持続的な成長を目指し、
+    <strong>JIEI (THAILAND) CO.,LTD.</strong> は、ビジネスパートナーと共に持続的な成長を目指し、
     品質、誠実さ、社会的責任を重んじます。
   </p>
   <p>
@@ -551,8 +551,8 @@ export default function News() {
     // Company trip
     `
     <section class="company-announcement">
-    <h2>JIEI (Thailand) CO.,LTD. 社員旅行：2025年10月11日～12日</h2>
-    <p>2025年、JIEI (Thailand) CO.,LTD. はチームの結束を強化し、新しい経験を提供し、社員がリフレッシュできる年間社員旅行を開催しました。</p>
+    <h2>JIEI (THAILAND) CO.,LTD. 社員旅行：2025年10月11日～12日</h2>
+    <p>2025年、JIEI (THAILAND) CO.,LTD. はチームの結束を強化し、新しい経験を提供し、社員がリフレッシュできる年間社員旅行を開催しました。</p>
     <p>今年の旅行の特徴は「自然の中でのリラックス + チームビルディング活動 + 持続可能性の融合」です。</p>
     
     <hr />
@@ -614,11 +614,11 @@ export default function News() {
     // วันเกิดบริษัท
     `
       <section class="company-announcement">
-      <h2>JIEI(THAILAND) CO.,LTD 会社設立記念日 – 2025年11月11日</h2>
+      <h2>JIEI (THAILAND) CO.,LTD. 会社設立記念日 – 2025年11月11日</h2>
      
       <div>
       <p>
-       JIEI(THAILAND) CO.,LTD の設立記念日である2025年11月11日に際し、<br />
+       JIEI (THAILAND) CO.,LTD. の設立記念日である2025年11月11日に際し、<br />
        社員全員に感謝の気持ちを込めた小さなイベントを開催しました。正午には全社員に記念品が配られました。
       </p>
       </div>
@@ -628,7 +628,7 @@ export default function News() {
     `
       <section class="company-announcement">
       <h2>
-      2025年12月5日、JIEI(THAILAND)CO.,LTD. は、1年間懸命に働いてくれた従業員への感謝を込めて、新年会を開催しました。
+      2025年12月5日、JIEI (THAILAND) CO.,LTD. は、1年間懸命に働いてくれた従業員への感謝を込めて、新年会を開催しました。
       </h2>
      
       <div>
@@ -643,12 +643,12 @@ export default function News() {
     `
       <section class="company-announcement">
       <h2>
-      JIEI(THAILAND)CO.,LTD. スポーツデー
+      JIEI (THAILAND) CO.,LTD. スポーツデー
       </h2>
      
       <div>
       <p>
-      JIEI(THAILAND)CO.,LTD. のスポーツデーは、2025年12月9日、15日、18日に開催されました。社員同士の団結力向上、健康促進、そして職場の活気づくりを目的としたイベントです。各チームが様々な競技に元気よく参加し、応援団の盛り上がりとともに、会場は終始にぎやかで楽しい雰囲気に包まれました。
+      JIEI (THAILAND) CO.,LTD. のスポーツデーは、2025年12月9日、15日、18日に開催されました。社員同士の団結力向上、健康促進、そして職場の活気づくりを目的としたイベントです。各チームが様々な競技に元気よく参加し、応援団の盛り上がりとともに、会場は終始にぎやかで楽しい雰囲気に包まれました。
       </p>
 
       </div>
@@ -661,15 +661,15 @@ export default function News() {
     `
     設立
     2011年11月11日、チョンブリー県ピントン工業団地4において
-    JIEI(THAILAND)CO.,LTD. は正式に設立されました。
+    JIEI (THAILAND) CO.,LTD. は正式に設立されました。
     当社は産業技術分野での事業展開および
     総合的なエンジニアリングサービスの提供を目的としております。
     `
     ,
     // Company trip
     `
-    JIEI社 年間社員旅行：2025年10月11日～12日
-    2025年、JIEI社はチームの結束を強化し、新しい経験を提供し、社員がリフレッシュできる年間社員旅行を開催しました。
+    JIEI (THAILAND) CO.,LTD. 年間社員旅行：2025年10月11日～12日
+    2025年、JIEI (THAILAND) CO.,LTD. はチームの結束を強化し、新しい経験を提供し、社員がリフレッシュできる年間社員旅行を開催しました。
     今年の旅行の特徴は「自然の中でのリラックス + チームビルディング活動 + 持続可能性の融合」です。
     `,
     // สมัครงาน
@@ -680,21 +680,21 @@ export default function News() {
     // วันเกิดบริษัท
     `
     company-announcement
-    JIEI(THAILAND) CO.,LTD 会社設立記念日 – 2025年11月11日
-    JIEI(THAILAND) CO.,LTD の設立記念日である2025年11月11日に際し、
+    JIEI (THAILAND) CO.,LTD. 会社設立記念日 – 2025年11月11日
+    JIEI (THAILAND) CO.,LTD. の設立記念日である2025年11月11日に際し、
     社員全員への感謝の気持ちを込めたささやかなイベントを開催しました。
     正午には、全社員に記念品が配られました。
     `,
     //NeW year party
     `
-    2025年12月5日、JIEI(THAILAND)CO.,LTD. は、1年間懸命に働いてくれた従業員への感謝を込めて、新年会を開催しました。 
+    2025年12月5日、JIEI (THAILAND) CO.,LTD. は、1年間懸命に働いてくれた従業員への感謝を込めて、新年会を開催しました。 
     当日は、景品が当たる抽選会も行われ、会場は笑顔と活気にあふれました。
     
     `,
     //Sport Day
     `
-    JIEI(THAILAND)CO.,LTD. スポーツデー
-    JIEI(THAILAND)CO.,LTD. のスポーツデーは、2025年12月9日、15日、18日に開催されました。社員同士の団結力向上、健康促進、そして職場の活気づくりを目的としたイベントです。各チームが様々な競技に元気よく参加し、応援団の盛り上がりとともに、会場は終始にぎやかで楽しい雰囲気に包まれました。
+    JIEI (THAILAND) CO.,LTD. スポーツデー
+    JIEI (THAILAND) CO.,LTD. のスポーツデーは、2025年12月9日、15日、18日に開催されました。社員同士の団結力向上、健康促進、そして職場の活気づくりを目的としたイベントです。各チームが様々な競技に元気よく参加し、応援団の盛り上がりとともに、会場は終始にぎやかで楽しい雰囲気に包まれました。
     `
   ]
 
