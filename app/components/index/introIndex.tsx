@@ -28,8 +28,8 @@ export default function IntroIndex() {
                
                     <div className="title-box-intro">
                         <h2 className="top-text-intro">{lang === "th" 
-                        ? "คือ ผู้ผลิตชิ้นส่วนซีลยาง ทั้งภายใน ภายนอกของรถยนต์ และอุปกรณ์ให้กำเนิดพลังงาน" 
-                        : lang === "en" ? "A manufacturer of rubber seal components for both the interior and exterior of automobiles, as well as for power-generation equipment." 
+                        ? "เป็นผู้ผลิตชิ้นส่วนยางขึ้นรูปแบบเอ็กซ์ทรูชันสำหรับยานยนต์" 
+                        : lang === "en" ? "A manufacturer that produces extrusion-molded rubber parts for automobiles." 
                         : "自動車用押出成形ゴム部品を製造するメーカーです。"}   </h2>
                     </div>
                     
@@ -39,7 +39,10 @@ export default function IntroIndex() {
                         <h1 className="center-text-intro">JIEI (THAILAND) CO.,LTD</h1>
                     </div>
                      <div className="title-box-intro">
-                        <h3 className="button-text-intro"> {lang === "th" ? "ตามมาตรฐานสากล ISO & IATF ด้วยเทคโนโลยีการผลิตที่ทันสมัย" : lang ==="en" ? "Compliant with international ISO & IATF standards, using advanced manufacturing technology." : "国際規格である ISO と IATF に準拠し、先進的な製造技術を採用しています。"} </h3>
+                        <h3 className="button-text-intro"> {lang === "th" 
+                        ? "ตามมาตรฐานสากล ISO & IATF ด้วยเทคโนโลยีการผลิตที่ทันสมัย" 
+                        : lang ==="en" ? "Compliant with international ISO & IATF standards, using advanced manufacturing technology." 
+                        : "国際規格である ISO と IATF に準拠し、先進的な製造技術を採用しています。"} </h3>
                     </div>
                 
                 </motion.div>

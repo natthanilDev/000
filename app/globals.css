@@ -134,7 +134,7 @@ a:hover {
   display: grid;
   grid-template-columns: 1fr 1fr;
   width: 90%;
-  margin: 0 auto;
+  margin: 200px auto;
   gap: 50px;
   overflow: hidden;
 
@@ -169,7 +169,7 @@ a:hover {
 .title-ISO {
   color: #191919;
   font-weight: 100;
-  font-size: 80px;
+  font-size: 70px;
 
 }
 
@@ -1246,6 +1246,9 @@ blockquote {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
+  .title-ISO {
+    font-size:50px;
+  }
 
 
 }
@@ -1346,6 +1349,7 @@ blockquote {
   .iso-box {
     display: grid;
     grid-template-columns: 1fr;
+    margin: 0 auto;
   }
 
   .top-text-intro {

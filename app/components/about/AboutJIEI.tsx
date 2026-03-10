@@ -11,16 +11,16 @@ export default function AboutJIEI() {
         }
     }, []);
     const aboutTH = [
-        "บริษัท เจไออีไอ (ไทยแลนด์) จำกัด ก่อตั้งขึ้นเมื่อ วันที่ 11 เดือน พฤศจิกายน พ.ศ. 2554 ในฐานะบริษัทย่อยของ กลุ่ม Kasei Kogyo Co., Ltd. ซึ่งมีประวัติยาวนานตั้งแต่ปี พ.ศ. 2509 และเป็นผู้เชี่ยวชาญด้าน การผลิตยางอัดรีดสำหรับอุตสาหกรรมยานยนต์ (Rubber Extrusion for Automobiles) ควบคู่มากับการพัฒนาของอุตสาหกรรมยานยนต์ระดับโลก",
-        "เรามุ่งเน้นการทำงานครบวงจร ตั้งแต่ การวางแผน การวิจัยและพัฒนา การผลิตด้วยเทคโนโลยีขั้นสูง เพื่อให้ได้ ชิ้นส่วนยางรถยนต์คุณภาพสูง ที่ตอบสนองความต้องการของลูกค้าหลากหลายประเภท ทั้งในญี่ปุ่น อเมริกา จีน และเอเชีย",
-        "กลุ่มบริษัท Kasei Kogyo ได้รับการยอมรับในฐานะองค์กรที่สามารถตอบสนองต่อความเปลี่ยนแปลงอย่างรวดเร็วของอุตสาหกรรมยานยนต์ ด้วยความรู้ความเชี่ยวชาญ (Know-how) และประสบการณ์ด้าน การผลิตชิ้นส่วนยางรถยนต์ (Automotive Rubber Parts Manufacturing) มากกว่า 50 ปี",
-        "ในอนาคต บริษัทเจไออีไอ (ไทยแลนด์) จำกัด จะยังคงมุ่งมั่นพัฒนานวัตกรรมอย่างไม่หยุดยั้ง เพื่อสร้างสรรค์ผลิตภัณฑ์ที่มี คุณภาพ ความแม่นยำ และมาตรฐานสากล พร้อมก้าวสู่การเป็น ผู้ผลิตชิ้นส่วนยางรถยนต์ระดับโลก (Global Automotive Rubber Parts Manufacturer) ที่สร้างคุณค่าและประโยชน์ให้กับสังคมโลก"
+        "บริษัท เจไออีไอ (ไทยแลนด์) จำกัด ก่อตั้งขึ้นเมื่อวันที่ 11 พฤศจิกายน 2011 ในฐานะบริษัทในเครือของกลุ่มบริษัท Kasei Kogyo Co., Ltd. ซึ่งมีประวัติยาวนานตั้งแต่ปี 1966 และเติบโตควบคู่ไปกับการพัฒนาอุตสาหกรรมยานยนต์ของโลก ในฐานะผู้ผลิตที่เชี่ยวชาญด้านการผลิตยางแบบเอ็กซ์ทรูชัน (Rubber Extrusion) สำหรับอุตสาหกรรมยานยนต์",
+        "บริษัทของเรามุ่งเน้นกระบวนการแบบครบวงจร ตั้งแต่การวางแผน การวิจัยและพัฒนา ไปจนถึงการผลิตด้วยเทคโนโลยีขั้นสูง เพื่อส่งมอบชิ้นส่วนยางสำหรับยานยนต์ที่มีคุณภาพสูง ซึ่งสามารถตอบสนองความต้องการที่หลากหลายของลูกค้าในประเทศญี่ปุ่น สหรัฐอเมริกา จีน และประเทศต่าง ๆ ในเอเชีย",
+        "กลุ่มบริษัท Kasei Kogyo ได้รับการยอมรับว่าเป็นองค์กรที่สามารถปรับตัวต่อการเปลี่ยนแปลงอย่างรวดเร็วของอุตสาหกรรมยานยนต์ และมีความรู้ความชำนาญรวมถึงประสบการณ์มากกว่า 50 ปี ในการผลิตชิ้นส่วนยางสำหรับยานยนต์",
+        "สำหรับอนาคต บริษัท JIEI (THAILAND) CO., LTD. จะมุ่งมั่นแสวงหานวัตกรรมอย่างต่อเนื่อง เพื่อสร้างผลิตภัณฑ์ที่มีคุณภาพ ความแม่นยำ และเป็นไปตามมาตรฐานสากล เรามุ่งหวังที่จะเป็นผู้ผลิตชิ้นส่วนยางสำหรับยานยนต์ระดับโลก ที่สามารถสร้างคุณค่าและประโยชน์ให้กับสังคมโลก"
     ]
     const aboutEN = [
-        "JIEI (THAILAND) CO.,LTD. was founded on November 11, 2011, as a subsidiary of the Kasei Kogyo Co., Ltd. group, which has a long history dating back to 1966. The group specializes in rubber extrusion for the automotive industry, growing alongside the development of the global automotive sector.",
-        "We focus on a fully integrated process, from planning and research & development to high-tech production, to deliver high-quality automotive rubber parts that meet the diverse needs of customers in Japan, the United States, China, and across Asia.",
-        "The Kasei Kogyo Group is recognized as an organization capable of responding to the rapid changes in the automotive industry, backed by over 50 years of know-how and experience in automotive rubber parts manufacturing.",
-        "In the future, JIEI(THAILAND) CO.,LTD. will continue to pursue relentless innovation to create products of exceptional quality, precision, and international standards. Our goal is to become a global automotive rubber parts manufacturer that delivers value and benefits to the global community.",
+        "JIEI (THAILAND) CO., LTD. was established on November 11, 2011, as a group subsidiary of Kasei Kogyo Co., Ltd. The Kasei Kogyo Group has a long history dating back to 1966 and has grown alongside the development of the global automotive industry as a specialized manufacturer of rubber extrusion for automobiles.",
+        "Our company focuses on an integrated process—from planning and research & development to production using advanced technologies—to provide high-quality automotive rubber parts that meet the diverse needs of customers in Japan, the United States, China, and other Asian countries.",
+        "The Kasei Kogyo Group is recognized as an organization capable of responding to the rapid changes in the automotive industry and possesses more than 50 years of know-how and experience in manufacturing automotive rubber parts.",
+        "Looking toward the future, JIEI (THAILAND) CO., LTD. will continue to pursue constant innovation in order to create products with excellent quality, precision, and compliance with international standards. We aim to become a global manufacturer of automotive rubber parts that delivers value and benefits to the world.",
     ]
     const aboutJP = [
         "JIEI (THAILAND) CO.,LTD.は、2011年11月11日に化成工業株式会社のグループ子会社として設立されました。化成工業グループは1966年からの長い歴史を持ち、自動車産業向けゴム押出（Rubber Extrusion for Automobiles）専門メーカーとして、世界の自動車産業の発展とともに成長してきました。",
@@ -49,8 +49,8 @@ export default function AboutJIEI() {
                     </h1>
                     <p className='text-center'>
                         {lang === ('th')
-                            ? "บริษัท เจไออีไอ (ไทยแลนด์) จํากัด เป็นผู้ผลิตชิ้นส่วนซีลยาง ทั้งภายใน ภายนอกของรถยนต์ และอุปกรณ์ให้กำเนิดพลังงาน ตามมาตรฐานสากล ISO & IATF ด้วยเทคโนโลยีการผลิตที่ทันสมัย"
-                            : lang === ('en') ? "JIEI (THAILAND) CO.,LTD.) is a manufacturer of rubber sealing components for both interior and exterior automotive applications, as well as energy-generating equipment. The company operates under international ISO and IATF standards with advanced production technology."
+                            ? "เป็นผู้ผลิตชิ้นส่วนยางขึ้นรูปแบบเอ็กซ์ทรูชันสำหรับยานยนต์ โดยปฏิบัติตามมาตรฐานสากล ISO และ IATF และใช้เทคโนโลยีการผลิตที่ทันสมัย"
+                            : lang === ('en') ? "A manufacturer of extrusion-molded rubber parts for automobiles. The company complies with international standards such as ISO and IATF and adopts advanced manufacturing technologies."
                                 : "自動車用押出成形ゴム部品を製造するメーカーです。国際規格である ISO と IATF に準拠し、先進的な製造技術を採用しています。"}
                     </p>
                 </motion.div>
@@ -69,7 +69,7 @@ export default function AboutJIEI() {
 
                         <h2 className='text-about-us'>{lang === ('th') ? "เกี่ยวกับเรา" : lang === ('en') ? "About Us" : "私たちについて"}    </h2>
                         <h2 className='company-profile-text1'>{lang === ('th') ? "โปรไฟล์บริษัท" : lang === ('en') ? "Company Profile" : "会社案内"}  </h2>
-                        <h4 className='company-profile-text'>{lang === ('th') ? "ขอบคุณเป็นอย่างยิ่งที่สละเวลาเยี่ยมชมเว็บไซต์ของเรา" : lang === ('en') ? "Thank you very much for taking the time to visit our website." : "私たちのウェブサイトをご覧いただき、誠にありがとうございます。"}</h4>
+                        <h4 className='company-profile-text'>{lang === ('th') ? "ขอขอบพระคุณเป็นอย่างยิ่งที่เข้าชมเว็บไซต์ของเรา" : lang === ('en') ? "Thank you very much for visiting our website." : "私たちのウェブサイトをご覧いただき、誠にありがとうございます。"}</h4>
                         {aboutTH.map((item, index) => (
                             <p key={index} className='company-profile-text'>{lang === ('th') ? item : lang === ('en') ? aboutEN[index] : aboutJP[index]}</p>
                         ))}

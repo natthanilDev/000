@@ -11,14 +11,12 @@ export default function Tach() {
         'การวิเคราะห์การกระจายความเค้น',
         'การวิเคราะห์การติดตามรัศมี (หรือการติดตามการเคลื่อนที่)',
         'การวิเคราะห์การไหลของวัสดุ',
-        // 'การวิเคราะห์แรงกดและความเค้นสัมผัส'
     ]
     const topicEN = [
         'CAD / CATIA',
         'Stress Distribution Analysis',
         'R Tracking Analysis',
         'Material Flow Analysis',
-        // 'Compressive Load Analysis & Contact Stress Analysis'
     ]
 
     const topicJP = [
@@ -26,23 +24,21 @@ export default function Tach() {
         '応力分布解析',
         'R追従性解析',
         '材料流動解析',
-        // '圧縮荷重解析・接触応力解析'
     ]
     // ----------------------------------------------------------------------------------
 
     const contentTH = [
         'เราใช้ซอฟต์แวร์ CATIA 3D CAD เวอร์ชันล่าสุดในการออกแบบ ซึ่งช่วยให้สามารถสร้างโมเดลชิ้นส่วนยางสำหรับยานยนต์ได้อย่างแม่นยำ และรับประกันคุณภาพและความเที่ยงตรงในระดับสูง',
         'การวิเคราะห์ความเค้นและพฤติกรรมของผลิตภัณฑ์ด้วยคอมพิวเตอร์ ช่วยให้สามารถประเมินสมรรถนะของผลิตภัณฑ์ได้อย่างแม่นยำก่อนการผลิตจริง',
-        'เพื่อยืนยันว่าประสิทธิภาพการซีลเพียงพอ จึงทำการวิเคราะห์แรงอัดและความเค้นที่จุดสัมผัส',
+        'เพื่อยืนยันว่าประสิทธิภาพการซีลมีความเพียงพอ เราจะทำการวิเคราะห์แรงอัดและความเค้นที่จุดสัมผัส',
         'ทำการวิเคราะห์พฤติกรรมของวัสดุภายในแม่พิมพ์ระหว่างกระบวนการฉีดขึ้นรูป โดยจำลองการไหลของวัสดุ ความดัน การหดตัว และการบิดงอในระหว่างขั้นตอนการเติมเต็ม เพื่อนำผลการเปลี่ยนแปลงเหล่านี้มาประยุกต์ใช้ในการออกแบบแม่พิมพ์ที่เหมาะสมที่สุด',
     ]
 
     const contentEN = [
         "We use the latest version of CATIA 3D CAD software for design, enabling precise modeling of automotive rubber components and ensuring high quality and high accuracy.",
         "By analyzing product stress and behavior using computer simulations, it is possible to accurately estimate product performance before actual manufacturing.",
-        "To verify that the sealing performance is sufficient, compression load and contact stress are analyzed.",
+        "To ensure sufficient sealing performance, compression load and contact stress are analyzed.",
         "Material behavior inside the mold during the injection molding process is analyzed. By simulating material flow, pressure, shrinkage, and warpage during the filling process, an optimal mold design that reflects these variations is achieved.",
-        // "We analyze compressive loads and contact stresses to confirm that seal performance is satisfactory."
     ]
     const contentJP = [
         'CATIA 3D CAD ソフトウェアの最新バージョンを使用して設計を行っています。自動車用ゴム部品の精密なモデリングが可能となり、高品質と高精度を保証します。',
@@ -69,33 +65,30 @@ export default function Tach() {
         'テストロール',
         'ムーニー粘度測定',
         '硬度および比重測定',
-        // '引張強度測定'
     ]
 
 
     const contentTH1 = [
-        'และตรวจสอบเพื่อให้มั่นใจว่าเป็นไปตามคุณสมบัติทางกายภาพที่หลากหลาย',
+        'เพื่อพัฒนายางที่มีประสิทธิภาพดียิ่งขึ้น เราทำการวิจัยสูตรผสมวัสดุใหม่ ๆ อย่างต่อเนื่องทุกวัน',
+        "เราทำการตรวจสอบว่าวัสดุที่ใช้ในการผลิตจำนวนมากและวัสดุสูตรผสมใหม่ มีคุณสมบัติทางกายภาพเป็นไปตามมาตรฐานที่กำหนดหรือไม่",
         "ตรวจสอบความแข็งและความถ่วงจำเพาะของผลิตภัณฑ์",
-        "",
     ]
 
     const contentEN1 = [
-        "And check to ensure that it satisfies a variety of physical property requirements.",
-        "Check to ensure hardness & Specific gravity of products",
-        "",
+        "To develop better rubber materials, we continuously research new material formulations every day.",
+        "We verify whether both mass-production materials and newly formulated materials meet the required physical property standards.",
+        "Check the hardness and specific gravity of the product.",
     ]
     const contentJP1 = [
         'より優れたゴムを開発する為、新しい材料配合を日々研究しています。',
         '量産材料、新配合材料ともに物性値を満足しているか確認します。',
         '製品の硬度と比重を確認します。',
-        // '',
     ]
 
     const topicTH2 = [
         'การวัดแรงกดอัด',
         'การวัดการกระจายแรงดัน',
         'การประเมินประสิทธิภาพการกันเสียง',
-        // 'การวัดแรงแบบไดนามิก',
         'เครื่องวัดความหนาของชั้นฟิล์ม (ไมโครสโคป)',
     ]
 
@@ -103,7 +96,6 @@ export default function Tach() {
         "Compressive Load Measurements",
         "Pressure Distribution Measurements",
         "Sound-Insulating Performance Evaluations",
-        // "Dynamic Load Measurements",
         "Film Thickness Measuring Instrument (Microscope) ",
     ]
 
@@ -111,7 +103,6 @@ export default function Tach() {
         '圧縮荷重測定',
         '圧力分布測定',
         '遮音性能評価',
-        // '動的荷重測定',
         '膜厚測定器(マイクロスコープ)',
     ]
 
@@ -120,26 +111,24 @@ export default function Tach() {
 
     const contentTH2 = [
         "เราพัฒนาผลิตภัณฑ์ที่สามารถตอบสนองความต้องการด้านแรงกดและแรงโหลดได้",
-        "การวัดแรงกดที่กระทำบนผลิตภัณฑ์แบบเรียลไทม์ช่วยในการวิเคราะห์ข้อบกพร่องของผลิตภัณฑ์",
-        "เนื่องจากลูกค้าต้องการห้องโดยสารที่สะดวกสบาย เราจึงมุ่งมั่นค้นคว้าวัสดุที่มีคุณสมบัติการกันเสียงที่ดียิ่งขึ้นอย่างต่อเนื่อง",
-        // "",
-        "มีการตรวจสอบความหนาของสีที่เคลือบบนผลิตภัณฑ์ว่าเป็นไปตามมาตรฐานที่กำหนดหรือไม่",
+        "การวัดแรงดันสัมผัสที่กระทำต่อผลิตภัณฑ์แบบเรียลไทม์ สามารถนำข้อมูลมาใช้ในการวิเคราะห์จุดที่เกิดความผิดปกติของผลิตภัณฑ์ได้",
+        "เพื่อตอบสนองต่อความต้องการด้านความสะดวกสบายภายในห้องโดยสาร เรามุ่งพัฒนาประสิทธิภาพการกันเสียงของผลิตภัณฑ์อย่างต่อเนื่อง",
+       
+        "ตรวจสอบว่าความหนาของสารเคลือบหรือสีที่ทาบนผลิตภัณฑ์เป็นไปตามมาตรฐานที่กำหนดหรือไม่",
     ]
 
 
     const contentEN2 = [
         "We develop products that satisfy load requirements.",
-        "The measuring of contact pressure exerted on products in real-time aids in the analysis of product defects.",
-        "As comfortable cabin spaces are highly desired by our customers, we are constantly in pursuit of materials with enhanced sound-insulating performance.",
-        // "",
-        "We verify whether the thickness of the paint applied to the product complies with the specified standards.",
+        "By measuring the contact pressure applied to the product in real time, it helps analyze areas where product defects may occur.",
+        "To meet the demand for a comfortable interior environment, we continuously pursue improvements in the sound insulation performance of our products.",
+        "We check whether the thickness of the coating or paint applied to the product meets the specified standards.",
     ]
 
     const contentJP2 = [
         '要求荷重を満足する製品を開発します。',
         '製品に加わる接触圧力をリアルタイムで測定することにより、製品不具合個所の解析に役立てます。',
         '快適な社内空間の要求に応えるべく、製品の遮音性能の向上を追求しています。',
-        // "",
         "製品に塗布した塗料の厚みが規格に適合しているか確認をします。",
     ]
     // ----------------------------------------------------------
@@ -148,25 +137,10 @@ export default function Tach() {
 
     const Analysis = ['/dean_r1_c1.png', '/dean_r1_c3.png', '/dean_r3_c1.png', '/dean_r3_c3.png', '/dean_r1_c3.png',]
 
-    // const contentAnalysisTH = ["การเขียนแบบด้วย CAD", "การวิเคราะห์โครงสร้าง", "การจำลองพฤติกรรมของวัสดุ", "การทดสอบผลิตภัณฑ์"]
-    // const contentAnalysisEN = ["CAD Drawing", "Structural Analysis", "Material Simulation", "Product Testing"]
-    // const contentAnalysisJP = ["CAD図面作成", "構造解析", "材料シミュレーション", "製品試験"]
-
     const materials = ['/03_r1_c1.png', '/03_r1_c3.png', '/tech (2).png',]
-
-    // const contentMaterialsTH = ['เครื่องทดสอบการรีด', "เครื่องวัดความหนืดแบบ Mooney", "เครื่องทดสอบแรงดึง", "การวิเคราะห์แรงกดอัดและความเค้นสัมผัส"]
-    // const contentMaterialsEN = ["Test Roll", "Money Viscosity meter", "Tensile strength testing machine", "Compressive load analysis and contact stress analysis"]
-    // const contentMaterialsJP = ["テストロール", "ムーニー粘度計", "引張強度試験機", "圧縮荷重解析および接触応力解析"]
-
-
-
-
 
     const evaluation = ['/compressive.png', '/04_r1_c3.png', '/04_r1_c8.png', '/tech (3).png',]
 
-    // const contentEvaluationTH = ["เครื่องทดสอบแรงกด", "การกระจายแรงดันบนพื้นผิว", 'การวัดการกระจายแรงดันบนพื้นผิว', "การวัดสมรรถนะการกันเสียงแบบง่าย"]
-    // const contentEvaluationEN = ["Load Testing Machine", "Surface Pressure Distribution", "Surface Pressure Distribution Measurement", "Simple Sound Insulation Performance Measurement"]
-    // const contentEvaluationJP = ["荷重試験機", "表面圧分布", "表面圧分布測定", "簡易防音性能測定"]
 
 
     // SEO Metadata
@@ -249,8 +223,8 @@ export default function Tach() {
 
                             </h1>
                             <h2 className='tech-company'>JIEI (THAILAND) CO., LTD</h2>
-                            <p className='introduction-content'>{lang === ('th') ? "JIEI (THAILAND) CO.,LTD ใช้เทคโนโลยีการออกแบบ การวิเคราะห์ และการทดสอบที่ล้ำสมัย เพื่อให้มั่นใจในคุณภาพสูงสุดของชิ้นส่วนยางรถยนต์ กระบวนการของเราครอบคลุมการออกแบบ CAD การวิเคราะห์โครงสร้าง การจำลองวัสดุ และการประเมินสมรรถนะ เพื่อให้ได้มาตรฐานยานยนต์ระดับสากล"
-                                : lang === ('en') ? "JIEI (THAILAND) CO.,LTD applies advanced design, analysis, and testing technologies to ensure the highest quality of automotive rubber parts. Our integrated process covers CAD design, structural analysis, material simulation, and performance evaluation to meet global automotive standards."
+                            <p className='introduction-content'>{lang === ('th') ? "บริษัท JIEI (THAILAND) CO., LTD. ใช้เทคโนโลยีการออกแบบ การวิเคราะห์ และการทดสอบที่ทันสมัย เพื่อรับประกันคุณภาพสูงสุดของชิ้นส่วนยางสำหรับยานยนต์ กระบวนการแบบบูรณาการของเราครอบคลุมการออกแบบด้วย CAD การวิเคราะห์โครงสร้าง การจำลองวัสดุ และการประเมินสมรรถนะ เพื่อให้สอดคล้องกับมาตรฐานของอุตสาหกรรมยานยนต์ระดับโลก"
+                                : lang === ('en') ? "JIEI (THAILAND) CO., LTD. adopts advanced design, analysis, and testing technologies to ensure the highest quality of automotive rubber parts. Our integrated process covers CAD design, structural analysis, material simulation, and performance evaluation, meeting the standards of the global automotive industry."
                                     : "JIEI (THAILAND) CO.,LTD は、自動車用ゴム部品の最高品質を保証するために、先進的な設計、解析、試験技術を採用しています。当社の統合プロセスは、CAD設計、構造解析、材料シミュレーション、性能評価を網羅し、世界的な自動車産業の基準に対応しています。"}</p>
                         </motion.div>
                         <div className="line" />
