@@ -99,7 +99,7 @@ export default function News() {
     //  วันก่อตั้งบริษัท
     `
     <section class="company-announcement">
-      <h2>ประกาศก่อตั้งอย่างเป็นทางการ</h2>
+      <h2 >ประกาศก่อตั้งอย่างเป็นทางการ</h2>
       <p>
         เมื่อวันที่ <strong>11 พฤศจิกายน พ.ศ. 2554</strong> 
         ณ <strong>นิคมอุตสาหกรรมปิ่นทอง 4 จังหวัดชลบุรี</strong>
@@ -512,7 +512,7 @@ export default function News() {
     <strong>チョンブリー県 ピントン工業団地4</strong> にて
   </p>
   <p>
-    <strong>JIEI (THAILAND) CO.,LTD.</strong>（タイ語名：<em>เจไออีไอ (ประเทศไทย) จำกัด</em>）は、
+    <strong>JIEI (THAILAND) CO.,LTD.</strong>（タイ語名：<em>เจไออีไอ (ไทยแลนด์) จำกัด</em>）は、
     <strong>2011年11月11日 削除 </strong> に設立されました。
     当社は <b>自動車用押出成形ゴム部品の</b> 分野で事業を展開し、
     <b>総合的なエンジニアリングサービス</b> を提供することを目的としています。
@@ -733,13 +733,13 @@ export default function News() {
   ];
   const datePostEN = [
     //  วันก่อตั้งบริษัท
-    'November 07, 2025',
+    '07 November 2025',
     // Company trip
     // 'October 13 , 2025',
     // สมัครงาน
-    'November 08, 2025',
+    '08 November 2025',
     // วันเกิดบริษัท
-    'November 11, 2025',
+    '11 November 2025',
     //New year party
     `05 December 2025`,
     //Sport Day
@@ -821,7 +821,7 @@ export default function News() {
             <h1 className='title-news'>
               {lang === 'th' ? "ข่าวสาร | กิจกรรม" : lang === 'en' ? "News | Activities" : "ニュース | 会社活動"}
             </h1>
-            <div className="line"></div>
+
           </ScrollReveal>
 
           <div className="news-box-card">
@@ -835,6 +835,13 @@ export default function News() {
                     window.scrollTo({ top: 0, behavior: 'smooth' });
                   }}
                 >
+                  <div className="preview-product">
+                    <div className="text-preview">
+                      <p className="preview-text">
+                        {lang === 'th' ? "อ่านเพิ่มเติม" : lang === 'en' ? "Read More" : "続きを読む"}
+                      </p>
+                    </div>
+                  </div>
                   <div className="image-product-part">
                     <Image
                       className='image-product'
@@ -867,13 +874,7 @@ export default function News() {
                     </div>
                   </div>
 
-                  <div className="preview-product">
-                    <div className="text-preview">
-                      <p className="preview-text">
-                        {lang === 'th' ? "อ่านเพิ่มเติม" : lang === 'en' ? "Read More" : "続きを読む"}
-                      </p>
-                    </div>
-                  </div>
+
 
                   <div className="posted">
                     <div className="date_post">
@@ -886,6 +887,7 @@ export default function News() {
                       </h6>
                     </div>
                   </div>
+
                 </div>
               ))}
             </div>
@@ -893,8 +895,8 @@ export default function News() {
               {/* ปุ่มย้อนกลับ */}
               {currentPage > 1 && (
                 <Link
-                  href={`/products/engine-mount?page=${currentPage - 1}`}
-                  className="numPage focusPage"
+                  href={`?page=${currentPage - 1}`}
+                  className="numPage"
                   title={`ไปหน้าที่ ${currentPage - 1}`}
                 >
                   <i className="bi bi-chevron-double-left"></i>
@@ -922,7 +924,7 @@ export default function News() {
                     {/* แสดงหน้าแรก + จุดไข่ปลา ด้านหน้า */}
                     {visiblePages[0] > 1 && (
                       <>
-                        <Link href={`/products/engine-mount?page=1`} className="numPage" title="ไปหน้าที่ 1">
+                        <Link href={`?page=1`} className="numPage  bg-gray-500 text-white" title="ไปหน้าที่ 1">
                           1
                         </Link>
                         {/* <span className="dots"><i className="bi bi-dash"></i></span> */}
@@ -933,8 +935,8 @@ export default function News() {
                     {visiblePages.map((pageNum) => (
                       <Link
                         key={pageNum}
-                        href={`/products/engine-mount?page=${pageNum}`}
-                        className={`numPage ${pageNum === currentPage ? "focusPage" : ""}`}
+                        href={`?page=${pageNum}`}
+                        className={`numPage bg-gray-500 text-white ${pageNum === currentPage ? "focusPage" : ""}`}
                         title={`ไปหน้าที่ ${pageNum}`}
                       >
                         {pageNum}
@@ -961,8 +963,8 @@ export default function News() {
               {/* ปุ่มหน้าถัดไป */}
               {currentPage < totalPages && (
                 <Link
-                  href={`/products/engine-mount?page=${currentPage + 1}`}
-                  className="numPage focusPage"
+                  href={`?page=${currentPage + 1}`}
+                  className="numPage"
                   title={`ไปหน้าที่ ${currentPage + 1}`}
                 >
                   <i className="bi bi-chevron-double-right"></i>
@@ -978,7 +980,7 @@ export default function News() {
           <h2 className='title-news-page'>
             {lang === 'th' ? revNewsTH[selectedNews] : lang === 'en' ? revNewsEN[selectedNews] : revNewsJP[selectedNews]}
           </h2>
-          <div className="line"></div>
+
 
           <div className="image-Establishment">
             <div className='Import-Image' style={{ textAlign: 'center' }}>
@@ -987,19 +989,19 @@ export default function News() {
 
 
 
-                const handleNextImage = () => {
-                  setImgIndex((prev) => (prev + 1) % revImage_Establishment[selectedNews].length);
-                };
+                // const handleNextImage = () => {
+                //   setImgIndex((prev) => (prev + 1) % revImage_Establishment[selectedNews].length);
+                // };
 
-                const handleNextImage1 = () => {
-                  setImgIndex((prev) =>
-                    prev === 0
-                      ? revImage_Establishment[selectedNews].length - 1
-                      : prev - 1
-                  );
-                };
+                // const handleNextImage1 = () => {
+                //   setImgIndex((prev) =>
+                //     prev === 0
+                //       ? revImage_Establishment[selectedNews].length - 1
+                //       : prev - 1
+                //   );
+                // };
                 return (
-                  <>
+                  <div className='image-new'>
                     <Image
                       src={currentImage}
                       alt={`ผู้ผลิตชิ้นส่วนยางรถยนต์ จังหวัดชลบุรี JIEI Thailand`}
@@ -1008,15 +1010,16 @@ export default function News() {
                       loading="lazy"
                       className="image-fade"
                     />
-                    <p onClick={handleNextImage} className="btn-change-image-right">
-                      <i className="change-Image-btn bi bi-chevron-right"></i>
-                    </p>
-                    <button onClick={handleNextImage1} className="btn-change-image-left">
+                    {/* <button onClick={handleNextImage1} className="btn-change-image-left">
                       <i className="change-Image-btn bi bi-chevron-left"></i>
                     </button>
+                    <button onClick={handleNextImage} className="btn-change-image-right">
+                      <i className="change-Image-btn bi bi-chevron-right"></i>
+                    </button> */}
 
 
-                  </>
+
+                  </div>
                 )
               })()}
 
@@ -1025,19 +1028,11 @@ export default function News() {
 
 
             </div>
-            <p className='text-center text-status-Image'>รูปที่ {imgIndex + 1} / {revImage_Establishment[selectedNews].length}</p>
+            {/* <p className='text-center text-status-Image'>รูปที่ {imgIndex + 1} / {revImage_Establishment[selectedNews].length}</p> */}
           </div>
 
 
-          <div className="date_post">
-            <h6 className='post'>
-              {lang === 'th'
-                ? revDatePostTH[selectedNews]
-                : lang === 'en'
-                  ? revDatePostEN[selectedNews]
-                  : revDatePostJP[selectedNews]}
-            </h6>
-          </div>
+
 
           {/* ✅ Render HTML ที่ sanitize แล้ว */}
           <div
@@ -1053,11 +1048,19 @@ export default function News() {
             }}
           />
 
-
+          <div className="date_post_active">
+            <h6 className='post_active'>
+              {lang === 'th'
+                ? revDatePostTH[selectedNews]
+                : lang === 'en'
+                  ? revDatePostEN[selectedNews]
+                  : revDatePostJP[selectedNews]}
+            </h6>
+          </div>
 
           <div className="btn-back-newsPage">
             <button
-              onClick={() => { setSelectedNews(null); window.scrollTo({ top: 0, behavior: 'smooth' }); setImgIndex(0) }} className="back-btn">
+              onClick={() => { setSelectedNews(null); window.scrollTo({ top: 0, behavior: 'smooth' }); setImgIndex(0) }} className="back-btn bg-blue-700 text-white">
               {lang === 'th' ? "กลับไปหน้ารวม" : lang === 'en' ? "Back to Overview" : "一覧に戻る"}
             </button>
           </div>

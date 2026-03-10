@@ -1,28 +1,39 @@
 import type { Metadata } from "next";
-import { Prompt, Noto_Sans_JP } from "next/font/google";
+import {  Noto_Sans_Thai, Noto_Sans_JP , Libre_Franklin , Kanit} from "next/font/google";
 import "./globals.css";
 import Topbar from "./components/topbar/topbar";
 import Navbar from "./components/navbar/navbar";
 import Footer from "./components/footer/footer"
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Top from "./components/top/top";
 
+const notoThai = Noto_Sans_Thai({
+  subsets: ["thai"],
+  weight: ["300","400","500","700"],
+  variable: "--font-thai"
+});
 
-
-
-
-const prompt = Prompt({
-  variable: "--font-prompt",
-  subsets: ['latin'],
-  weight: "400"
+const kanit = Kanit({
+  subsets : ["thai"],
+  weight : ["100"],
+  variable : "--font-kanit"
 })
 
-const noto_sans_JP = Noto_Sans_JP({
-  variable: "--font-Noto_Sans_JP",
+const notoJP = Noto_Sans_JP({
+  subsets: ["latin"],
+  weight: ["300","400","500","700"],
+  variable: "--font-jp"
+});
+
+
+
+const libreFranklin = Libre_Franklin({
   subsets: ['latin'],
-  weight: '400'
+  weight: ['300','400','500','600','700'],
+  display: 'swap',
+  variable : "--font-en"
 })
+
 
 export const metadata: Metadata = {
   title: "JIEI Thailand - ผู้ผลิตชิ้นส่วนยางรถยนต์คุณภาพสูงในชลบุรี",
@@ -39,14 +50,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" data-scroll-behavior="smooth">
-      <body className={`${prompt.variable, noto_sans_JP.variable} antialiased`}>
+      <body className={`${libreFranklin.className} ${notoThai.variable} ${notoJP.variable} ${kanit.variable} antialiased`}>
         <Topbar />
         <Navbar />
 
         {children}
 
         <Footer />
-        <Top />
+        {/* <Top /> */}
       </body>
     </html>
   );

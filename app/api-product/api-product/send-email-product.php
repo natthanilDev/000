@@ -1,17 +1,15 @@
 <?php
 
+
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-/* ===============================
-   Composer autoload (แก้ path)
-================================ */
-
 require __DIR__ . '/../vendor/autoload.php';
 
-/* ===============================
-   CORS (แบบปลอดภัย)
-================================ */
+$dotenv = Dotenv\Dotenv::createImmutable(dirname(__DIR__));
+$dotenv->load();
+
+
 $allowedOrigins = [
   'http://localhost:3000',
   'http://192.168.100.228:3000',
@@ -46,6 +44,8 @@ $data = json_decode($raw, true);
 if (!$data) {
   http_response_code(400);
   echo json_encode([
+     'success' => false,
+    'message' => 'Data',
   ]);
   exit;
 }
@@ -92,18 +92,19 @@ $mail = new PHPMailer(true);
 
 try {
   $mail->isSMTP();
-  $mail->Host       = 'mail.jieithai.com';
+  $mail->Host       = $_ENV['SMTP_HOST'];
   $mail->SMTPAuth   = true;
-  $mail->Username   = 'info-jiei@jiei-thai.co.th';
-  $mail->Password   = 'lesiy[iy[-hv,^]0kd4kpovdgmjkoyho180/3*++';
+  $mail->Username   = $_ENV['EMAIL_USER'];
+  $mail->Password   = $_ENV['EMAIL_PASS'];
   $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
-  $mail->Port       = 465;
+  $mail->Port       = $_ENV['SMTP_PORT'];
   $mail->SMTPDebug = 2;
   $mail->Debugoutput = 'error_log';
   $mail->CharSet = 'UTF-8';
+  
 
-  $mail->setFrom('info-jiei@jiei-thai.co.th', 'Website Contact');
-  $mail->addAddress('info-jiei@jiei-thai.co.th');
+  $mail->setFrom($_ENV['EMAIL_USER'], 'Website Contact');
+  $mail->addAddress($_ENV['EMAIL_USER']);
   $mail->addReplyTo($email, $productName);
 
   $mail->isHTML(true);

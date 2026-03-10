@@ -13,17 +13,12 @@ export default function IsoBtn() {
     <div className="iso_button flex justify-center mt-8">
       <nav aria-label="ISO Certification Navigation" className="iso-box-why-choose flex gap-4 flex-wrap justify-center">
         {buttons.map((btn, index) => (
-          <motion.div
-            key={index}
-            whileHover={{ scale: 1.08 }}
-            whileTap={{ scale: 0.97 }}
-            transition={{ type: 'spring', stiffness: 300, damping: 15 }}
-          >
-            <Link href={btn.href} className="btn-iso">
+          <Link href={btn.href} className="btn-iso bg-gray-700 text-white"  key={index}>
+            <motion.div
+              transition={{ type: 'spring', stiffness: 300, damping: 15 }}>
               {btn.label}
-            </Link>
-            
-          </motion.div>
+            </motion.div>
+          </Link>
         ))}
       </nav>
     </div>

@@ -1,8 +1,7 @@
 'use client'
 import { useEffect, useState } from "react"
-// import Link from "next/link"
-import ScrollReveal from "../ScrollReveal/ScrollReveal"
 import Head from "next/head"
+import { motion } from "framer-motion"
 
 export default function Network() {
 
@@ -55,7 +54,7 @@ export default function Network() {
         "成和工業株式会社",
         "タカラ化成工業株式会社",
         "東亜ゴム工業株式会社",
-        
+
         "株式会社富士",
         "GREEN TOKAI CO., LTD.",
         "TOACS THAILAND CO., LTD.",
@@ -64,7 +63,7 @@ export default function Network() {
         "武漢東海敏実汽車零部件有限公司",
         "TK MINTH MEXICO, S.A. de C.V.",
         "PT.TOYOTA AUTO BODY-TOKAI EXTRUSION (T-TEC)",
-        "PPAP TOKAI INDIA RUBBER PTE. LTD.",
+        "TOKAI KOGYO INDIA PRIVATE LIMITED　",
         "TOKAI JIEI ASIA CO., LTD."
     ]
     const address1 = [
@@ -75,7 +74,7 @@ export default function Network() {
         "2-11-17, Matsue, Edogawa Ku,Tokyo 132-0025 Japan ",
         "6 Kazakoshi Kamihasumi Cho Nishio Shi Aichi Pref. PRE-001 Japan",
         "Shojisaku-8-21 Izumi Cho, Anjo Shi, Aichi Pref. 444-1221 Japan",
-        
+
         "7667-24 Ichimaru located in Kokufu Cho, Suzuka Shi, Mie Pref. 513-0836 Japan",
         "55 Robert Wright Dr, Brookville, OH 45309, United States",
         "700/65 Kromdit 6 Alley,Khlong Tamru Sub-district, Mueang Chonburi District,Chonburi 20000, Thailand",
@@ -84,31 +83,10 @@ export default function Network() {
         "",
         "C. de Los Arellano 202,Gigante de Los,Arellano, Aguascalientes 20392, Mexico",
         "MM2100 Industrial Estate,Jl. Irian Block LL-3, Jatiwangi,West Cikarang District, Bekasi Regency,West Java 17530, Indonesia",
-        "CGMW+2GJ, Block F,Surajpur Site V, Greater Noida,Uttar Pradesh 201312, India",
+        "",
         "700/2 Moo 1,Amata Service Center Building, 4th Floor, Room 402,Bangna–Trad Highway, Km. 57,Khlong Tamru Sub-district, Mueang Chonburi District,Chonburi 20000, Thailand"
     ]
-    // const web1 = [
-    //     "https://tokaikogyo.co.jp/",
-    //     "https://e-ado.co.jp/",
-    //     "",
-    //     "",
-    //     "",
-    //     "https://www.takarakasei.com/",
-    //     "",
-    //     "http://www.t-seiki.co.jp/",
-    //     "http://www.fuji-nt.jp/",
-    //     "https://www.greentokai.com/",
-    //     "https://www.toacs.co.th/",
-    //     "",
-    //     "",
-    //     "",
-    //     "https://www.tokaikogyodemexico.com/home",
-    //     "",
-    //     "",
-    //     "",
 
-
-    // ]
 
     const pageTitle = "Our Network & Partner Companies | JIEI Thailand";
     const pageDescription = "Explore JIEI Thailand's partner companies and network, including locations, addresses, and Google Map links for automotive rubber parts manufacturing.";
@@ -175,61 +153,107 @@ export default function Network() {
                 <div className="container-network-box">
                     <div className="network-container">
                         <div className="network-text-box">
-                            <ScrollReveal>
+                            <motion.div
+                                className='image-company-box'
+                                initial={{ opacity: 0 }}
+                                whileInView={{ x: 0, opacity: 1 }}
+                                viewport={{ once: true, amount: 1 }}
+                                transition={{
+                                    type: "spring",
+                                    stiffness: 80,
+                                    damping: 18,
+                                    mass: 0.8
+                                }}
+                            >
                                 <h1 className="network-text">{lang === ('th') ? "บริษัทในเครือที่ตอบสนองความต้องการของคุณ" : lang === ('en') ? "Our affiliated companies that meet your needs" : "お客様のニーズに応えるグループ会社"} </h1>
-                                <div className="line"></div>
-                            </ScrollReveal>
+                            </motion.div>
                         </div>
 
-                        <ScrollReveal>
-                            <h1 className="tokai-group">{lang === ('th') ? "กลุ่มบริษัท Kasei Kogyo" : lang === ('en') ? "Kasei Kogyo Group" : "化成工業グループ"}  </h1>
+                        <div className="group-company">
+
+
 
                             <div className="scrollbar">
+                                <motion.div
+                                    className='image-company-box'
+                                    initial={{ opacity: 0 }}
+                                    whileInView={{ x: 0, opacity: 1 }}
+                                    viewport={{ once: true, amount: 1 }}
+                                    transition={{
+                                        type: "spring",
+                                        stiffness: 80,
+                                        damping: 18,
+                                        mass: 0.8
+                                    }}
+                                >
+                                    <h1 className="tokai-group">{lang === ('th') ? "กลุ่มบริษัท Kasei Kogyo" : lang === ('en') ? "Kasei Kogyo Group" : "化成工業グループ"}  </h1>
+                                </motion.div>
                                 <div className="network-box">
                                     {company.map((item, index) => (
-                                        <div className="network-component" key={index}>
-                                            {/* <div className="image-box-network">
-                                                <Image
-                                                    className="image-logo-company-partners"
-                                                    src={logo[index]}
-                                                    alt={`Logo of ${item}`}
-                                                    width={2000}
-
-                                                    height={2000}
-                                                    priority
-                                                />
-                                            </div> */}
+                                        <motion.div
+                                            className="network-component"
+                                            key={index}
+                                            initial={{ opacity: 0 }}
+                                            whileInView={{ x: 0, opacity: 1 }}
+                                            viewport={{ once: true, amount: 1 }}
+                                            transition={{
+                                                type: "spring",
+                                                stiffness: 80,
+                                                damping: 18,
+                                                mass: 0.8
+                                            }}
+                                        >
                                             <div className="content-company-partners">
                                                 <h2 className="company-name">{item}</h2>
                                                 <p className="company-content">{address[index]}</p>
                                             </div>
-                                            {/* <div className="google-map">
-                                                {web[index] == "" ? <i className="bi bi-ban google-map-icon"></i> :
-                                                    <Link target="_blank" href={web[index]} className="google-map-icon" aria-label={`Open Google Map for ${item}`}>
-                                                        <i className="bi bi-browser-edge" />
-                                                    </Link>}
 
-                                            </div> */}
-                                        </div>
+                                        </motion.div>
                                     ))}
                                 </div>
                             </div>
-                        </ScrollReveal>
 
 
 
-                        <ScrollReveal>
-                            <h1 className="tokai-group">{lang === ('th') ? "กลุ่มบริษัท Tokai Kogyo" : lang === ('en') ? "Tokai Kogyo Group" : "東海興業グループ"}</h1>
+
+
 
                             <div className="scrollbar">
+                                <motion.div
+                                    className='image-company-box'
+                                    initial={{ opacity: 0 }}
+                                    whileInView={{ x: 0, opacity: 1 }}
+                                    viewport={{ once: true, amount: 1 }}
+                                    transition={{
+                                        type: "spring",
+                                        stiffness: 80,
+                                        damping: 18,
+                                        mass: 0.8
+                                    }}
+                                >
+                                    <h1 className="tokai-group">{lang === ('th') ? "กลุ่มบริษัท Tokai Kogyo" : lang === ('en') ? "Tokai Kogyo Group" : "東海興業グループ"}</h1>
+                                </motion.div>
                                 <div className="network-box">
                                     {company1.map((item, index) => (
-                                        <div className="network-component" key={index}>
-                                            <div className="content-company-partners">
-                                                <h2 className="company-name">{item}</h2>
-                                                <p className="company-content">{address1[index]}</p>
-                                            </div>
-                                            {/* <div className="google-map">
+                                        <motion.div
+                                            className="network-component" 
+                                            key={index}
+                                            initial={{opacity: 0 }}
+                                            whileInView={{ x: 0, opacity: 1 }}
+                                            viewport={{ once: true, amount: 1 }}
+                                            transition={{
+                                                type: "spring",
+                                                stiffness: 80,
+                                                damping: 18,
+                                                mass: 0.8
+                                            }}
+                                        >
+                                            
+                                                <div className="content-company-partners">
+                                                    <h2 className="company-name">{item}</h2>
+                                                    <p className="company-content">{address1[index]}</p>
+                                                </div>
+                                                {/* <div className="google-map">
                                                 {web1[index] == "" ? <i className="bi bi-ban google-map-icon"></i> ///<i className="google-map-icon bi bi-ban"></i> 
                                                     :
                                                     <Link target="_blank" href={web1[index]} className="google-map-icon" aria-label={`Open Google Map for ${item}`}>
@@ -237,11 +261,16 @@ export default function Network() {
                                                     </Link>}
 
                                             </div> */}
-                                        </div>
+                                          
+                                        </motion.div>
                                     ))}
                                 </div>
                             </div>
-                        </ScrollReveal>
+
+
+
+
+                        </div>
                     </div>
                 </div>
             </div>

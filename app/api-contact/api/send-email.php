@@ -1,14 +1,14 @@
 <?php
 
+
+
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-/* ===============================
-   Composer autoload (แก้ path)
-================================ */
-
 require __DIR__ . '/../vendor/autoload.php';
 
+$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+$dotenv->load();
 /* ===============================
    CORS (แบบปลอดภัย)
 ================================ */
@@ -97,18 +97,19 @@ $mail = new PHPMailer(true);
 
 try {
   $mail->isSMTP();
-  $mail->Host       = 'mail.jieithai.com';
+  $mail->Host       = $_ENV['SMTP_HOST'];
   $mail->SMTPAuth   = true;
-  $mail->Username   = 'info-jiei@jiei-thai.co.th';
-  $mail->Password   = 'lesiy[iy[-hv,^]0kd4kpovdgmjkoyho180/3*++';
+  $mail->Username   = $_ENV['EMAIL_USER'];
+  $mail->Password   = $_ENV['EMAIL_PASS'];
+
   $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
-  $mail->Port       = 465;
+  $mail->Port       = $_ENV['SMTP_PORT'];
   $mail->SMTPDebug = 2;
   $mail->Debugoutput = 'error_log';
   $mail->CharSet = 'UTF-8';
 
-  $mail->setFrom('info-jiei@jiei-thai.co.th', 'Website Contact');
-  $mail->addAddress('info-jiei@jiei-thai.co.th');
+  $mail->setFrom($_ENV['EMAIL_USER'], 'Website Contact');
+  $mail->addAddress($_ENV['EMAIL_USER']);
   $mail->addReplyTo($email, $name);
 
   $mail->isHTML(true);

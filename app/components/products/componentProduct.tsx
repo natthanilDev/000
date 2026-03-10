@@ -290,6 +290,11 @@ export default function Products() {
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(dataForForm),
           });
+          // const res = await fetch('http://localhost:8000/api-product/send-email-product.php', {
+          //   method: 'POST',
+          //   headers: { 'Content-Type': 'application/json' },
+          //   body: JSON.stringify(dataForForm),
+          // });
 
           const data = await res.json();
           if (data.success) {
@@ -343,36 +348,15 @@ export default function Products() {
     }
   }, [selectedProduct])
   return (
-    <div>
+    <div className='product-bg'>
 
       {selectedProduct === null ? (
         <>
-        <ScrollReveal>
-          <h1 className="title-product-page">
-             {lang == 'en' ? "Our products" : lang == "th" ? "สินค้าของเรา" : "当社の製品"}
-          </h1>
-          <div className="line" />
+          <ScrollReveal>
+            <h1 className="title-product-page">
+              {lang == 'en' ? "Our products" : lang == "th" ? "สินค้าของเรา" : "当社の製品"}
+            </h1>
           </ScrollReveal>
-          {/* <div className="menuProductBox">
-            <div className="boxMargin">
-              {imageProductIntro.map((imageSrc, index) => (
-                <ScrollReveal key={index}>
-                  <div key={index} className="menuProductItem">
-                    <Link href={location[index]}>
-                      <Image
-                        src={imageSrc}
-                        alt={`ผู้ผลิตชิ้นส่วนยางรถยนต์ จังหวัดชลบุรี`}
-                        width={200}
-                        height={250}
-                        className={`menuProductImage${index}`}
-                        loading='lazy'
-                      />
-                    </Link>
-                  </div>
-                </ScrollReveal>
-              ))}
-            </div>
-          </div> */}
 
 
           <div className='columns-product'>
@@ -404,9 +388,6 @@ export default function Products() {
                                 </h2>
                               </div>
                               <div className="item-Hood-seal-Front">
-                                {/* <h2 className="titleProduct">
-                                  {lang === 'th' ? productTH[item.id - 1].title : lang === 'en' ? item.title : productJP[item.id - 1].title}
-                                </h2> */}
                                 <p className="text-Hood-seal-Front">{lang === 'th' ? productTH[item.id - 1].content : lang === 'en' ? item.content : productJP[item.id - 1].content}</p>
                               </div>
                             </div>
@@ -440,55 +421,59 @@ export default function Products() {
               <form onSubmit={submitData} className='form-contactUs'>
                 <h2 className='text-contactUs'>{lang === 'th' ? "สอบถามเกี่ยวกับสินค้า " : lang === 'en' ? " Product Inquiry" : " 商品に関するお問い合わせ"} {lang === 'th' ? productTH[selectedProduct - 1].title : lang === 'en' ? productsEN[selectedProduct - 1].title : productJP[selectedProduct - 1].title}</h2>
 
-                <div className="input-form-contactUs">
-                  <label className='label-input-contactUs' htmlFor="product-name">{lang == "en" ? "Product Name" : lang == "th" ? "ชื่อสินค้า" : "商品名"}</label>
-                  <div className="input-data-product">
-                    <input required defaultValue={productsEN[selectedProduct - 1].title} readOnly className='input-contactUs' type="text" name="productName" id="product-name" />
-                    <input onChange={formData} type="hidden" defaultValue={productsEN[selectedProduct - 1].title} name="productName" placeholder='product name' />
+
+                <div className="card-product-active">
+                  <div className="form-box">
+                    <div className="input-form-contactUs">
+                      <label className='label-input-contactUs' htmlFor="product-name">{lang == "en" ? "Product Name" : lang == "th" ? "ชื่อสินค้า" : "商品名"}</label>
+                      <div className="input-data-product">
+                        <input required defaultValue={productsEN[selectedProduct - 1].title} readOnly className='input-contactUs' type="text" name="productName" id="product-name" />
+                        <input onChange={formData} type="hidden" defaultValue={productsEN[selectedProduct - 1].title} name="productName" placeholder='product name' />
+                      </div>
+                    </div>
+
+                    <div className="input-form-contactUs">
+                      <label className='label-input-contactUs' htmlFor="message">{lang == "en" ? "Message" : lang == "th" ? "ข้อความ" : "メッセージ"}</label>
+                      <div className="input-data-product">
+                        <input onChange={formData} required className='input-contactUs' placeholder='message' type="text" name="message" id="message" />
+                      </div>
+                    </div>
+
+
+                    <div className="input-form-contactUs">
+                      <label className='label-input-contactUs' htmlFor="email">{lang == "en" ? "Email" : lang == "th" ? "อีเมล" : "メール"}</label>
+                      <div className="input-data-product">
+                        <input onChange={formData} required className='input-contactUs' placeholder='gmail' type="email" name="email" id="email" />
+                      </div>
+                    </div>
+
+
+                    <div className="input-form-contactUs">
+                      <label className='label-input-contactUs' htmlFor="phone">{lang == "en" ? "Phone" : lang == "th" ? "เบอร์โทรศัพท์" : "電話番号"}</label>
+                      <div className="input-data-product">
+                        <input onChange={formData} required className='input-contactUs' placeholder='phone' type="text" name="phone" id="phone" />
+                      </div>
+                    </div>
+                    <div className="btn-submit-contactUs">
+                      <button className='submit-contactUs bg-green-700 text-white hover:bg-green-900' type='submit'>{lang == "en" ? "Send" : lang == "th" ? "ส่ง" : "送信"}</button>
+                    </div>
+                  </div>
+
+                  <div className="image-active-product">
+                    <Image className='image-active' src={productsEN[selectedProduct - 1].image} alt='ผู้ผลิตชิ้นส่วนยางรถยนต์ จังหวัดชลบุรี' width={1000} height={1000} loading='lazy' />
                   </div>
                 </div>
 
-                <div className="input-form-contactUs">
-                  <label className='label-input-contactUs' htmlFor="message">{lang == "en" ? "Message" : lang == "th" ? "ข้อความ" : "メッセージ"}</label>
-                  <div className="input-data-product">
-                    <input onChange={formData} required className='input-contactUs' placeholder='message' type="text" name="message" id="message" />
-                  </div>
-                </div>
-
-
-                <div className="input-form-contactUs">
-                  <label className='label-input-contactUs' htmlFor="email">{lang == "en" ? "Email" : lang == "th" ? "อีเมล" : "メール"}</label>
-                  <div className="input-data-product">
-                    <input onChange={formData} required className='input-contactUs' placeholder='gmail' type="email" name="email" id="email" />
-                  </div>
-                </div>
-
-
-                <div className="input-form-contactUs">
-                  <label className='label-input-contactUs' htmlFor="phone">{lang == "en" ? "Phone" : lang == "th" ? "เบอร์โทรศัพท์" : "電話番号"}</label>
-                  <div className="input-data-product">
-                    <input onChange={formData} required className='input-contactUs' placeholder='phone' type="number" name="phone" id="phone" />
-                  </div>
-                </div>
-
-
-                <div className="btn-submit-contactUs">
-                  <button className='submit-contactUs' type='submit'>{lang == "en" ? "Send" : lang == "th" ? "ส่ง" : "送信"}</button>
-                </div>
               </form>
 
             </div>
 
-            <div className="card-product-active">
-              <div className="image-active-product">
-                <Image className='image-active' src={productsEN[selectedProduct - 1].image} alt='ผู้ผลิตชิ้นส่วนยางรถยนต์ จังหวัดชลบุรี' width={1000} height={1000} loading='lazy' />
-              </div>
-            </div>
+
 
           </div>
 
-          <div onClick={() => setSelectedProduct(null)} className="btn-back-product">
-            <button>{lang == "en" ? "Back" : lang == "th" ? "กลับ" : "戻る"}</button>
+          <div onClick={() => setSelectedProduct(null)} className="btn-back-product ">
+            <button className='bg-blue-700 text-white back-btn'>{lang == "en" ? "Back" : lang == "th" ? "กลับ" : "戻る"}</button>
           </div>
         </>
       )}

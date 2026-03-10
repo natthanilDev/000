@@ -1,7 +1,7 @@
 import React from 'react'
-import ScrollReveal from '../ScrollReveal/ScrollReveal'
-import { useEffect , useState } from 'react';
+import { useEffect, useState } from 'react';
 import Image from 'next/image'
+import { motion } from 'framer-motion';
 export default function AboutJIEI() {
     const [lang, setLang] = useState<'th' | 'en' | 'jp'>('th');
     useEffect(() => {
@@ -31,55 +31,70 @@ export default function AboutJIEI() {
     return (
         <div>
             <section className="company-profile">
-                <div className="why-chose-jiei">
-                    <ScrollReveal>
-                        <h1 className='AboutUS'> {lang === ('th') ? "เกี่ยวกับเรา | โปรไฟล์บริษัท" : lang === ('en') ? "ABOUT US | Company Profile" : "私たちについて | 会社案内"} </h1>
-                        <div className="line"></div>
-                    </ScrollReveal>
-                    <ScrollReveal>
-                        <h1 className='text-jiei-about-page'>{lang === ('th') ? "บริษัท เจไออีไอ (ไทยแลนด์) จำกัด – เป็นผู้ผลิตชิ้นส่วนซีลยาง" : lang === ('en') ? "JIEI (THAILAND) CO.,LTD.) - Automotive Rubber Parts Manufacturer" : "JIEI (THAILAND) CO.,LTD. – 自動車用ゴム部品メーカー"}
-                        </h1>
-                    </ScrollReveal>
-                    <ScrollReveal>
-                        <p className='text-center'>
-                            {lang === ('th') 
-                            ? "บริษัท เจไออีไอ (ไทยแลนด์) จํากัด เป็นผู้ผลิตชิ้นส่วนซีลยาง ทั้งภายใน ภายนอกของรถยนต์ และอุปกรณ์ให้กำเนิดพลังงาน ตามมาตรฐานสากล ISO & IATF ด้วยเทคโนโลยีการผลิตที่ทันสมัย" 
-                            : lang === ('en') ? "JIEI (THAILAND) CO.,LTD.) is a manufacturer of rubber sealing components for both interior and exterior automotive applications, as well as energy-generating equipment. The company operates under international ISO and IATF standards with advanced production technology." 
-                            : "自動車用押出成形ゴム部品を製造するメーカーです。国際規格である ISO と IATF に準拠し、先進的な製造技術を採用しています。"}
-                        </p>
-                    </ScrollReveal>
-                </div>
+                <motion.div
+                    className='why-chose-jiei'
+                    initial={{ opacity: 0 }}
+                    whileInView={{ x: 0, opacity: 1 }}
+                    viewport={{ once: true, amount: 0.35 }}
+                    transition={{
+                        type: "spring",
+                        stiffness: 80,
+                        damping: 18,
+                        mass: 0.8
+                    }}>
+
+
+                    <h1 className='AboutUS'> {lang === ('th') ? "เกี่ยวกับเรา | โปรไฟล์บริษัท" : lang === ('en') ? "ABOUT US | Company Profile" : "私たちについて | 会社案内"} </h1>
+                    <h1 className='text-jiei-about-page'>{lang === ('th') ? "บริษัท เจไออีไอ (ไทยแลนด์) จำกัด – เป็นผู้ผลิตชิ้นส่วนซีลยาง" : lang === ('en') ? "JIEI (THAILAND) CO.,LTD.) - Automotive Rubber Parts Manufacturer" : "JIEI (THAILAND) CO.,LTD. – 自動車用ゴム部品メーカー"}
+                    </h1>
+                    <p className='text-center'>
+                        {lang === ('th')
+                            ? "บริษัท เจไออีไอ (ไทยแลนด์) จํากัด เป็นผู้ผลิตชิ้นส่วนซีลยาง ทั้งภายใน ภายนอกของรถยนต์ และอุปกรณ์ให้กำเนิดพลังงาน ตามมาตรฐานสากล ISO & IATF ด้วยเทคโนโลยีการผลิตที่ทันสมัย"
+                            : lang === ('en') ? "JIEI (THAILAND) CO.,LTD.) is a manufacturer of rubber sealing components for both interior and exterior automotive applications, as well as energy-generating equipment. The company operates under international ISO and IATF standards with advanced production technology."
+                                : "自動車用押出成形ゴム部品を製造するメーカーです。国際規格である ISO と IATF に準拠し、先進的な製造技術を採用しています。"}
+                    </p>
+                </motion.div>
                 <div className="aboutUs-page">
-                    <div className="about-grid">
-                        <ScrollReveal>
-                            <h2 className='text-center'>{lang === ('th') ? "เกี่ยวกับเรา" : lang === ('en') ? "About Us" : "私たちについて"}    </h2>
-                        </ScrollReveal>
-                        <ScrollReveal>
-                            <h2 className='company-profile-text1'>{lang === ('th') ? "โปรไฟล์บริษัท" : lang === ('en') ? "Company Profile" : "会社案内"}  </h2>
-                            <h4 className='company-profile-text'>{lang === ('th') ? "ขอบคุณเป็นอย่างยิ่งที่สละเวลาเยี่ยมชมเว็บไซต์ของเรา" : lang === ('en') ? "Thank you very much for taking the time to visit our website." : "私たちのウェブサイトをご覧いただき、誠にありがとうございます。"}</h4>
-                            {aboutTH.map((item, index) => (
-                                <p key={index} className='company-profile-text'>{lang === ('th') ? item : lang === ('en') ? aboutEN[index] : aboutJP[index]}</p>
-                            ))}
+                    <motion.div
+                        className='about-grid'
+                        initial={{ x: -20, opacity: 0 }}
+                        whileInView={{ x: 0, opacity: 1 }}
+                        viewport={{ once: true, amount: 0.35 }}
+                        transition={{
+                            type: "spring",
+                            stiffness: 80,
+                            damping: 18,
+                            mass: 0.8
+                        }}>
 
-                        </ScrollReveal>
-                    </div>
-                    <ScrollReveal>
-                        <div className="president-image-box">
-                            <div className="president-image">
-                                <Image className='image-president-company' src={'/MD/MD.jpeg'} alt='บริษัท เจไออีไอ (ประเทศไทย) จำกัด ผู้ผลิต ชิ้นส่วนยางรถยนต์ จังหวัดชลบุรี' priority width={1000} height={1000} />
-                            </div>
-                            <div className="president-content">
-                                <ScrollReveal>
-                                    <h2 className='position-topmanager'>{lang === "th" ? "ประธานกรรมการผู้จัดการ" : lang === "en" ? "Managing Director" : "代表取締役社長"} </h2>
-                                    <p className='top-manager-name'>{lang === "th" ? "คุณโยชิคัตสึ อินาดะ" : lang === "en" ? "Mr.Yoshikatsu Inada" : "稲田 好克"}</p>
-
-                                </ScrollReveal>
-                            </div>
+                        <h2 className='text-about-us'>{lang === ('th') ? "เกี่ยวกับเรา" : lang === ('en') ? "About Us" : "私たちについて"}    </h2>
+                        <h2 className='company-profile-text1'>{lang === ('th') ? "โปรไฟล์บริษัท" : lang === ('en') ? "Company Profile" : "会社案内"}  </h2>
+                        <h4 className='company-profile-text'>{lang === ('th') ? "ขอบคุณเป็นอย่างยิ่งที่สละเวลาเยี่ยมชมเว็บไซต์ของเรา" : lang === ('en') ? "Thank you very much for taking the time to visit our website." : "私たちのウェブサイトをご覧いただき、誠にありがとうございます。"}</h4>
+                        {aboutTH.map((item, index) => (
+                            <p key={index} className='company-profile-text'>{lang === ('th') ? item : lang === ('en') ? aboutEN[index] : aboutJP[index]}</p>
+                        ))}
+                    </motion.div>
+                    <motion.div
+                        className='president-image-box'
+                        initial={{ x: 20, opacity: 0 }}
+                        whileInView={{ x: 0, opacity: 1 }}
+                        viewport={{ once: true, amount: 0.35 }}
+                        transition={{
+                            type: "spring",
+                            stiffness: 80,
+                            damping: 18,
+                            mass: 0.8
+                        }}>
+                    
+                        <div className="president-image">
+                            <Image className='image-president-company' src={'/MD/MD.png'} alt='บริษัท เจไออีไอ (ไทยแลนด์) จำกัด ผู้ผลิต ชิ้นส่วนยางรถยนต์ จังหวัดชลบุรี' priority width={1000} height={1000} />
                         </div>
-                    </ScrollReveal>
-
-
-
+                        <div className="president-content">
+                            <h2 className='position-topmanager'>{lang === "th" ? "ประธานกรรมการผู้จัดการ" : lang === "en" ? "Managing Director" : "代表取締役社長"} </h2>
+                            <p className='top-manager-name'>{lang === "th" ? "คุณโยชิคัตสึ อินาดะ" : lang === "en" ? "Mr. Yoshikatsu Inada" : "稲田 好克"}</p>
+                        </div>
+                    
+                    </motion.div>
                 </div>
 
             </section >

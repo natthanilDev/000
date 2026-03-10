@@ -185,22 +185,8 @@ export default function ContactForm() {
 
     return (
         <section className="contact-page-contact" itemScope itemType="https://schema.org/ContactPage">
-            <h1 className="text-2xl font-bold mb-4">
-                {lang === ('th') ? "ติดต่อเรา | กรุณากรอกข้อมูลของคุณ!" :
-                    lang === ('en') ? "Contact Us | Please fill in your information!" :
-                        "お問い合わせ | 情報をご入力ください！"}
-            </h1>
-
-            <p className="mb-6">
-                {lang === ('th') ? "ต้องการข้อมูลเพิ่มเติมเกี่ยวกับผลิตภัณฑ์หรือบริการของเรา? กรอกแบบฟอร์มด้านล่างแล้วทีมงาน JIEI Thailand จะติดต่อกลับโดยเร็วที่สุด" :
-                    lang === ('en') ? "Do you want more information about our products or services? Please fill out the form below, and the JIEI Thailand team will get back to you as soon as possible." :
-                        "当社の製品やサービスに関する詳細情報をご希望ですか？ 以下のフォームにご記入いただくと、JIEI Thailandのチームができるだけ早くご連絡いたします。"}
-            </p>
-
-            <form onSubmit={sendEmail} className="form" method="post">
+            <form onSubmit={sendEmail} className="form-contact" method="post">
                 <meta itemProp="description" content="ฟอร์มติดต่อ JIEI Thailand เพื่อสอบถามข้อมูลเกี่ยวกับการผลิตชิ้นส่วนยางรถยนต์คุณภาพสูง ISO9001, ISO14001 และ IATF16949" />
-
-
                 <div className="absolute left-[-9999px]" aria-hidden="true">
                     <label htmlFor="website">Website</label>
                     <input
@@ -250,7 +236,7 @@ export default function ContactForm() {
                         className="message" placeholder={lang === ('th') ? "รายละเอียดข้อความ" : lang === ('en') ? "Message Details" : "メッセージの詳細"}></textarea>
                 </div>
 
-                <input type="submit" value={lang === ('th') ? "ส่งข้อความ" : lang === ('en') ? "Send Message" : "メッセージを送信"} className="btn-send-message" />
+                <input type="submit" value={lang === ('th') ? "ส่งข้อความ" : lang === ('en') ? "Send Message" : "メッセージを送信"} className="btn-send-message bg-green-600 text-white hover:bg-green-900" />
             </form>
         </section>
     );

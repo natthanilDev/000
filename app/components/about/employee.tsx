@@ -649,7 +649,7 @@ export default function Employee() {
                         <div className="top-manager-box">
                             <div className="image-top-manager-box">
                                 <ScrollReveal>
-                                    <Image src={'/top-manager/5.png'} alt='บริษัท เจไออีไอ (ประเทศไทย) จำกัด เป็นผู้ผลิต ชิ้นส่วนยางรถยนต์คุณภาพสูงสำหรับอุตสาหกรรมยานยนต์ในประเทศไทยและต่างประเทศโรงงานตั้งอยู่ที่จังหวัดชลบุรี พร้อมมาตรฐานสากล' width={1000} height={1000} className='manager-Image' />
+                                    <Image src={'/top-manager/5.png'} alt='บริษัท เจไออีไอ (ไทยแลนด์) จำกัด เป็นผู้ผลิต ชิ้นส่วนยางรถยนต์คุณภาพสูงสำหรับอุตสาหกรรมยานยนต์ในไทยแลนด์และต่างประเทศโรงงานตั้งอยู่ที่จังหวัดชลบุรี พร้อมมาตรฐานสากล' width={1000} height={1000} className='manager-Image' />
                                 </ScrollReveal>
                             </div>
                             <div className="name-top-manager">
@@ -667,7 +667,7 @@ export default function Employee() {
                             <div className="top-manager-box1">
                                 <div className="image-top-manager-box">
                                     <ScrollReveal>
-                                        <Image src={"/top-manager/5.png"} alt='บริษัท เจไออีไอ (ประเทศไทย) จำกัด เป็นผู้ผลิต ชิ้นส่วนยางรถยนต์คุณภาพสูงสำหรับอุตสาหกรรมยานยนต์ในประเทศไทยและต่างประเทศโรงงานตั้งอยู่ที่จังหวัดชลบุรี พร้อมมาตรฐานสากล' width={1000} height={1000} className='manager-Image' />
+                                        <Image src={"/top-manager/5.png"} alt='บริษัท เจไออีไอ (ไทยแลนด์) จำกัด เป็นผู้ผลิต ชิ้นส่วนยางรถยนต์คุณภาพสูงสำหรับอุตสาหกรรมยานยนต์ในไทยแลนด์และต่างประเทศโรงงานตั้งอยู่ที่จังหวัดชลบุรี พร้อมมาตรฐานสากล' width={1000} height={1000} className='manager-Image' />
                                     </ScrollReveal>
                                 </div>
                                 <div className="name-top-manager">
@@ -682,7 +682,7 @@ export default function Employee() {
                             <div className="top-manager-box1">
                                 <div className="image-top-manager-box">
                                     <ScrollReveal>
-                                        <Image src={"/top-manager/inada-san.png"} alt='บริษัท เจไออีไอ (ประเทศไทย) จำกัด เป็นผู้ผลิต ชิ้นส่วนยางรถยนต์คุณภาพสูงสำหรับอุตสาหกรรมยานยนต์ในประเทศไทยและต่างประเทศโรงงานตั้งอยู่ที่จังหวัดชลบุรี พร้อมมาตรฐานสากล' width={1000} height={1000} className='manager-Image' />
+                                        <Image src={"/top-manager/inada-san.png"} alt='บริษัท เจไออีไอ (ไทยแลนด์) จำกัด เป็นผู้ผลิต ชิ้นส่วนยางรถยนต์คุณภาพสูงสำหรับอุตสาหกรรมยานยนต์ในไทยแลนด์และต่างประเทศโรงงานตั้งอยู่ที่จังหวัดชลบุรี พร้อมมาตรฐานสากล' width={1000} height={1000} className='manager-Image' />
                                     </ScrollReveal>
                                 </div>
                                 <div className="name-top-manager">
@@ -705,7 +705,7 @@ export default function Employee() {
                                 <div key={index} className="top-manager-box1">
                                     <ScrollReveal>
                                         <div className="image-top-manager-box">
-                                            <Image src={item} alt='บริษัท เจไออีไอ (ประเทศไทย) จำกัด เป็นผู้ผลิต ชิ้นส่วนยางรถยนต์คุณภาพสูงสำหรับอุตสาหกรรมยานยนต์ในประเทศไทยและต่างประเทศโรงงานตั้งอยู่ที่จังหวัดชลบุรี พร้อมมาตรฐานสากล' width={1000} height={1000} className='manager-Image' />
+                                            <Image src={item} alt='บริษัท เจไออีไอ (ไทยแลนด์) จำกัด เป็นผู้ผลิต ชิ้นส่วนยางรถยนต์คุณภาพสูงสำหรับอุตสาหกรรมยานยนต์ในไทยแลนด์และต่างประเทศโรงงานตั้งอยู่ที่จังหวัดชลบุรี พร้อมมาตรฐานสากล' width={1000} height={1000} className='manager-Image' />
                                         </div>
                                     </ScrollReveal>
                                     <div className="name-top-manager">
@@ -749,7 +749,7 @@ export default function Employee() {
                                 <div key={index} className="top-manager-box1">
                                     <ScrollReveal>
                                         <div className="image-top-manager-box">
-                                            <Image src={ImageQA[index]} alt='บริษัท เจไออีไอ (ประเทศไทย) จำกัด เป็นผู้ผลิต ชิ้นส่วนยางรถยนต์คุณภาพสูงสำหรับอุตสาหกรรมยานยนต์ในประเทศไทยและต่างประเทศโรงงานตั้งอยู่ที่จังหวัดชลบุรี พร้อมมาตรฐานสากล' width={1000} height={1000} className='manager-Image' />
+                                            <Image src={ImageQA[index]} alt='บริษัท เจไออีไอ (ไทยแลนด์) จำกัด เป็นผู้ผลิต ชิ้นส่วนยางรถยนต์คุณภาพสูงสำหรับอุตสาหกรรมยานยนต์ในไทยแลนด์และต่างประเทศโรงงานตั้งอยู่ที่จังหวัดชลบุรี พร้อมมาตรฐานสากล' width={1000} height={1000} className='manager-Image' />
                                         </div>
                                     </ScrollReveal>
                                     <div className="name-top-manager">
@@ -782,7 +782,7 @@ export default function Employee() {
                                 <div key={index} className="top-manager-box1">
                                     <div className="image-top-manager-box">
                                         <ScrollReveal>
-                                            <Image src={ImageQC[index]} alt='บริษัท เจไออีไอ (ประเทศไทย) จำกัด เป็นผู้ผลิต ชิ้นส่วนยางรถยนต์คุณภาพสูงสำหรับอุตสาหกรรมยานยนต์ในประเทศไทยและต่างประเทศโรงงานตั้งอยู่ที่จังหวัดชลบุรี พร้อมมาตรฐานสากล' width={1000} height={1000} className='manager-Image' />
+                                            <Image src={ImageQC[index]} alt='บริษัท เจไออีไอ (ไทยแลนด์) จำกัด เป็นผู้ผลิต ชิ้นส่วนยางรถยนต์คุณภาพสูงสำหรับอุตสาหกรรมยานยนต์ในไทยแลนด์และต่างประเทศโรงงานตั้งอยู่ที่จังหวัดชลบุรี พร้อมมาตรฐานสากล' width={1000} height={1000} className='manager-Image' />
                                         </ScrollReveal>
                                     </div>
                                     <div className="name-top-manager">
@@ -812,7 +812,7 @@ export default function Employee() {
 
                                     <div className="image-top-manager-box">
                                         <ScrollReveal>
-                                            <Image src={ImagePC[index]} alt='บริษัท เจไออีไอ (ประเทศไทย) จำกัด เป็นผู้ผลิต ชิ้นส่วนยางรถยนต์คุณภาพสูงสำหรับอุตสาหกรรมยานยนต์ในประเทศไทยและต่างประเทศโรงงานตั้งอยู่ที่จังหวัดชลบุรี พร้อมมาตรฐานสากล' width={1000} height={1000} className='manager-Image' />
+                                            <Image src={ImagePC[index]} alt='บริษัท เจไออีไอ (ไทยแลนด์) จำกัด เป็นผู้ผลิต ชิ้นส่วนยางรถยนต์คุณภาพสูงสำหรับอุตสาหกรรมยานยนต์ในไทยแลนด์และต่างประเทศโรงงานตั้งอยู่ที่จังหวัดชลบุรี พร้อมมาตรฐานสากล' width={1000} height={1000} className='manager-Image' />
                                         </ScrollReveal>
                                     </div>
 
@@ -843,7 +843,7 @@ export default function Employee() {
                                 <div key={index} className="top-manager-box1">
                                     <div className="image-top-manager-box">
                                         <ScrollReveal>
-                                            <Image src={ImagePD[index]} alt='บริษัท เจไออีไอ (ประเทศไทย) จำกัด เป็นผู้ผลิต ชิ้นส่วนยางรถยนต์คุณภาพสูงสำหรับอุตสาหกรรมยานยนต์ในประเทศไทยและต่างประเทศโรงงานตั้งอยู่ที่จังหวัดชลบุรี พร้อมมาตรฐานสากล' width={1000} height={1000} className='manager-Image' />
+                                            <Image src={ImagePD[index]} alt='บริษัท เจไออีไอ (ไทยแลนด์) จำกัด เป็นผู้ผลิต ชิ้นส่วนยางรถยนต์คุณภาพสูงสำหรับอุตสาหกรรมยานยนต์ในไทยแลนด์และต่างประเทศโรงงานตั้งอยู่ที่จังหวัดชลบุรี พร้อมมาตรฐานสากล' width={1000} height={1000} className='manager-Image' />
                                         </ScrollReveal>
                                     </div>
                                     <div className="name-top-manager">
@@ -872,7 +872,7 @@ export default function Employee() {
                                 <div key={index} className="top-manager-box1">
                                     <div className="image-top-manager-box">
                                         <ScrollReveal>
-                                            <Image src={ImageHR[index]} alt='บริษัท เจไออีไอ (ประเทศไทย) จำกัด เป็นผู้ผลิต ชิ้นส่วนยางรถยนต์คุณภาพสูงสำหรับอุตสาหกรรมยานยนต์ในประเทศไทยและต่างประเทศโรงงานตั้งอยู่ที่จังหวัดชลบุรี พร้อมมาตรฐานสากล' width={1000} height={1000} className='manager-Image' />
+                                            <Image src={ImageHR[index]} alt='บริษัท เจไออีไอ (ไทยแลนด์) จำกัด เป็นผู้ผลิต ชิ้นส่วนยางรถยนต์คุณภาพสูงสำหรับอุตสาหกรรมยานยนต์ในไทยแลนด์และต่างประเทศโรงงานตั้งอยู่ที่จังหวัดชลบุรี พร้อมมาตรฐานสากล' width={1000} height={1000} className='manager-Image' />
                                         </ScrollReveal>
                                     </div>
                                     <div className="name-top-manager">
@@ -902,7 +902,7 @@ export default function Employee() {
                                 <div key={index} className="top-manager-box1">
                                     <div className="image-top-manager-box">
                                         <ScrollReveal>
-                                            <Image src={ImageACC[index]} alt='บริษัท เจไออีไอ (ประเทศไทย) จำกัด เป็นผู้ผลิต ชิ้นส่วนยางรถยนต์คุณภาพสูงสำหรับอุตสาหกรรมยานยนต์ในประเทศไทยและต่างประเทศโรงงานตั้งอยู่ที่จังหวัดชลบุรี พร้อมมาตรฐานสากล' width={1000} height={1000} className='manager-Image' />
+                                            <Image src={ImageACC[index]} alt='บริษัท เจไออีไอ (ไทยแลนด์) จำกัด เป็นผู้ผลิต ชิ้นส่วนยางรถยนต์คุณภาพสูงสำหรับอุตสาหกรรมยานยนต์ในไทยแลนด์และต่างประเทศโรงงานตั้งอยู่ที่จังหวัดชลบุรี พร้อมมาตรฐานสากล' width={1000} height={1000} className='manager-Image' />
                                         </ScrollReveal>
 
                                     </div>
@@ -936,7 +936,7 @@ export default function Employee() {
                                 <div key={index} className="top-manager-box1">
                                     <div className="image-top-manager-box">
                                         <ScrollReveal>
-                                            <Image src={ImageSA[index]} alt='บริษัท เจไออีไอ (ประเทศไทย) จำกัด เป็นผู้ผลิต ชิ้นส่วนยางรถยนต์คุณภาพสูงสำหรับอุตสาหกรรมยานยนต์ในประเทศไทยและต่างประเทศโรงงานตั้งอยู่ที่จังหวัดชลบุรี พร้อมมาตรฐานสากล' width={1000} height={1000} className='manager-Image' />
+                                            <Image src={ImageSA[index]} alt='บริษัท เจไออีไอ (ไทยแลนด์) จำกัด เป็นผู้ผลิต ชิ้นส่วนยางรถยนต์คุณภาพสูงสำหรับอุตสาหกรรมยานยนต์ในไทยแลนด์และต่างประเทศโรงงานตั้งอยู่ที่จังหวัดชลบุรี พร้อมมาตรฐานสากล' width={1000} height={1000} className='manager-Image' />
                                         </ScrollReveal>
 
                                     </div>
@@ -968,7 +968,7 @@ export default function Employee() {
                                 <div key={index} className="top-manager-box1">
                                     <div className="image-top-manager-box">
                                         <ScrollReveal>
-                                            <Image src={ImageIT[index]} alt='บริษัท เจไออีไอ (ประเทศไทย) จำกัด เป็นผู้ผลิต ชิ้นส่วนยางรถยนต์คุณภาพสูงสำหรับอุตสาหกรรมยานยนต์ในประเทศไทยและต่างประเทศโรงงานตั้งอยู่ที่จังหวัดชลบุรี พร้อมมาตรฐานสากล' width={1000} height={1000} className='manager-Image' />
+                                            <Image src={ImageIT[index]} alt='บริษัท เจไออีไอ (ไทยแลนด์) จำกัด เป็นผู้ผลิต ชิ้นส่วนยางรถยนต์คุณภาพสูงสำหรับอุตสาหกรรมยานยนต์ในไทยแลนด์และต่างประเทศโรงงานตั้งอยู่ที่จังหวัดชลบุรี พร้อมมาตรฐานสากล' width={1000} height={1000} className='manager-Image' />
                                         </ScrollReveal>
 
                                     </div>
@@ -999,7 +999,7 @@ export default function Employee() {
 
                                     <div className="image-top-manager-box">
                                         <ScrollReveal>
-                                            <Image src={ImageSE[index]} alt='บริษัท เจไออีไอ (ประเทศไทย) จำกัด เป็นผู้ผลิต ชิ้นส่วนยางรถยนต์คุณภาพสูงสำหรับอุตสาหกรรมยานยนต์ในประเทศไทยและต่างประเทศโรงงานตั้งอยู่ที่จังหวัดชลบุรี พร้อมมาตรฐานสากล' width={1000} height={1000} className='manager-Image' />
+                                            <Image src={ImageSE[index]} alt='บริษัท เจไออีไอ (ไทยแลนด์) จำกัด เป็นผู้ผลิต ชิ้นส่วนยางรถยนต์คุณภาพสูงสำหรับอุตสาหกรรมยานยนต์ในไทยแลนด์และต่างประเทศโรงงานตั้งอยู่ที่จังหวัดชลบุรี พร้อมมาตรฐานสากล' width={1000} height={1000} className='manager-Image' />
                                         </ScrollReveal>
 
                                     </div>
@@ -1031,7 +1031,7 @@ export default function Employee() {
                                 <div key={index} className="top-manager-box1">
                                     <div className="image-top-manager-box">
                                         <ScrollReveal>
-                                            <Image src={ImageTE[index]} alt='บริษัท เจไออีไอ (ประเทศไทย) จำกัด เป็นผู้ผลิต ชิ้นส่วนยางรถยนต์คุณภาพสูงสำหรับอุตสาหกรรมยานยนต์ในประเทศไทยและต่างประเทศโรงงานตั้งอยู่ที่จังหวัดชลบุรี พร้อมมาตรฐานสากล' width={1000} height={1000} className='manager-Image' />
+                                            <Image src={ImageTE[index]} alt='บริษัท เจไออีไอ (ไทยแลนด์) จำกัด เป็นผู้ผลิต ชิ้นส่วนยางรถยนต์คุณภาพสูงสำหรับอุตสาหกรรมยานยนต์ในไทยแลนด์และต่างประเทศโรงงานตั้งอยู่ที่จังหวัดชลบุรี พร้อมมาตรฐานสากล' width={1000} height={1000} className='manager-Image' />
                                         </ScrollReveal>
 
                                     </div>
@@ -1062,7 +1062,7 @@ export default function Employee() {
                                 <div key={index} className="top-manager-box1">
                                     <div className="image-top-manager-box">
                                         <ScrollReveal>
-                                            <Image src={ImageWH[index]} alt='บริษัท เจไออีไอ (ประเทศไทย) จำกัด เป็นผู้ผลิต ชิ้นส่วนยางรถยนต์คุณภาพสูงสำหรับอุตสาหกรรมยานยนต์ในประเทศไทยและต่างประเทศโรงงานตั้งอยู่ที่จังหวัดชลบุรี พร้อมมาตรฐานสากล' width={1000} height={1000} className='manager-Image' />
+                                            <Image src={ImageWH[index]} alt='บริษัท เจไออีไอ (ไทยแลนด์) จำกัด เป็นผู้ผลิต ชิ้นส่วนยางรถยนต์คุณภาพสูงสำหรับอุตสาหกรรมยานยนต์ในไทยแลนด์และต่างประเทศโรงงานตั้งอยู่ที่จังหวัดชลบุรี พร้อมมาตรฐานสากล' width={1000} height={1000} className='manager-Image' />
                                         </ScrollReveal>
 
                                     </div>
@@ -1092,7 +1092,7 @@ export default function Employee() {
                                 <div key={index} className="top-manager-box1">
                                     <div className="image-top-manager-box">
                                         <ScrollReveal>
-                                            <Image src={ImagePUR[index]} alt='บริษัท เจไออีไอ (ประเทศไทย) จำกัด เป็นผู้ผลิต ชิ้นส่วนยางรถยนต์คุณภาพสูงสำหรับอุตสาหกรรมยานยนต์ในประเทศไทยและต่างประเทศโรงงานตั้งอยู่ที่จังหวัดชลบุรี พร้อมมาตรฐานสากล' width={1000} height={1000} className='manager-Image' />
+                                            <Image src={ImagePUR[index]} alt='บริษัท เจไออีไอ (ไทยแลนด์) จำกัด เป็นผู้ผลิต ชิ้นส่วนยางรถยนต์คุณภาพสูงสำหรับอุตสาหกรรมยานยนต์ในไทยแลนด์และต่างประเทศโรงงานตั้งอยู่ที่จังหวัดชลบุรี พร้อมมาตรฐานสากล' width={1000} height={1000} className='manager-Image' />
                                         </ScrollReveal>
 
                                     </div>

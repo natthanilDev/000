@@ -4,7 +4,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import ScrollReveal from '../ScrollReveal/ScrollReveal'
 import { useEffect, useState } from 'react'
-
+import { motion } from 'framer-motion'
 export default function Tach() {
     const topicTH = [
         'การออกแบบด้วยคอมพิวเตอร์ / CATIA',
@@ -53,7 +53,7 @@ export default function Tach() {
 
 
     const topicTH1 = [
-        
+
         "การวัดความหนืดของยาง (Mooney Viscosity)",
         "การวัดค่าความแข็งและความถ่วงจำเพาะ",
         "การวัดค่าความต้านทานแรงดึง",
@@ -112,7 +112,7 @@ export default function Tach() {
         '圧力分布測定',
         '遮音性能評価',
         // '動的荷重測定',
-        '膜厚測定器(マイクロスコープ)',    
+        '膜厚測定器(マイクロスコープ)',
     ]
 
     // ---------------------------------------------------------------------------
@@ -152,7 +152,7 @@ export default function Tach() {
     // const contentAnalysisEN = ["CAD Drawing", "Structural Analysis", "Material Simulation", "Product Testing"]
     // const contentAnalysisJP = ["CAD図面作成", "構造解析", "材料シミュレーション", "製品試験"]
 
-    const materials = ['/03_r1_c1.png','/03_r1_c3.png', '/tech (2).png', ]
+    const materials = ['/03_r1_c1.png', '/03_r1_c3.png', '/tech (2).png',]
 
     // const contentMaterialsTH = ['เครื่องทดสอบการรีด', "เครื่องวัดความหนืดแบบ Mooney", "เครื่องทดสอบแรงดึง", "การวิเคราะห์แรงกดอัดและความเค้นสัมผัส"]
     // const contentMaterialsEN = ["Test Roll", "Money Viscosity meter", "Tensile strength testing machine", "Compressive load analysis and contact stress analysis"]
@@ -162,7 +162,7 @@ export default function Tach() {
 
 
 
-    const evaluation = ['/compressive.png', '/04_r1_c3.png',  '/04_r1_c8.png', '/tech (3).png', ]  
+    const evaluation = ['/compressive.png', '/04_r1_c3.png', '/04_r1_c8.png', '/tech (3).png',]
 
     // const contentEvaluationTH = ["เครื่องทดสอบแรงกด", "การกระจายแรงดันบนพื้นผิว", 'การวัดการกระจายแรงดันบนพื้นผิว', "การวัดสมรรถนะการกันเสียงแบบง่าย"]
     // const contentEvaluationEN = ["Load Testing Machine", "Surface Pressure Distribution", "Surface Pressure Distribution Measurement", "Simple Sound Insulation Performance Measurement"]
@@ -234,15 +234,25 @@ export default function Tach() {
             <div className='bg'>
                 <div className="tec-box">
                     <div className="introduction-tech-box">
-                        <ScrollReveal>
+                        <motion.div
+                            initial={{ opacity: 0 }}
+                            whileInView={{ x: 0, opacity: 1 }}
+                            viewport={{ once: true, amount: 0.35 }}
+                            transition={{
+                                type: "spring",
+                                stiffness: 80,
+                                damping: 18,
+                                mass: 0.8
+                            }}>
                             <h1 className="introduction-tech">
-                                {lang===('th') ? "แนะนำเทคโนโลยีการพัฒนา - JIEI (THAILAND) CO., LTD." : lang===('en') ? "Introduction of Development Technology - JIEI (THAILAND) CO., LTD." : "開発技術の紹介 - JIEI (THAILAND) CO., LTD."}
+                                {lang === ('th') ? "แนะนำเทคโนโลยีการพัฒนา" : lang === ('en') ? "Introduction of Development Technology" : "開発技術の紹介"}
 
                             </h1>
-                            <p className='introduction-content'>{lang===('th') ? "JIEI (THAILAND) CO., LTD. ใช้เทคโนโลยีการออกแบบ การวิเคราะห์ และการทดสอบที่ล้ำสมัย เพื่อให้มั่นใจในคุณภาพสูงสุดของชิ้นส่วนยางรถยนต์ กระบวนการของเราครอบคลุมการออกแบบ CAD การวิเคราะห์โครงสร้าง การจำลองวัสดุ และการประเมินสมรรถนะ เพื่อให้ได้มาตรฐานยานยนต์ระดับสากล"
-                                : lang===('en') ? "JIEI (THAILAND) CO., LTD. applies advanced design, analysis, and testing technologies to ensure the highest quality of automotive rubber parts. Our integrated process covers CAD design, structural analysis, material simulation, and performance evaluation to meet global automotive standards."
-                                    : "JIEI (THAILAND) CO., LTD. は、自動車用ゴム部品の最高品質を保証するために、先進的な設計、解析、試験技術を採用しています。当社の統合プロセスは、CAD設計、構造解析、材料シミュレーション、性能評価を網羅し、世界的な自動車産業の基準に対応しています。"}</p>
-                        </ScrollReveal>
+                            <h2 className='tech-company'>JIEI (THAILAND) CO., LTD</h2>
+                            <p className='introduction-content'>{lang === ('th') ? "JIEI (THAILAND) CO.,LTD ใช้เทคโนโลยีการออกแบบ การวิเคราะห์ และการทดสอบที่ล้ำสมัย เพื่อให้มั่นใจในคุณภาพสูงสุดของชิ้นส่วนยางรถยนต์ กระบวนการของเราครอบคลุมการออกแบบ CAD การวิเคราะห์โครงสร้าง การจำลองวัสดุ และการประเมินสมรรถนะ เพื่อให้ได้มาตรฐานยานยนต์ระดับสากล"
+                                : lang === ('en') ? "JIEI (THAILAND) CO.,LTD applies advanced design, analysis, and testing technologies to ensure the highest quality of automotive rubber parts. Our integrated process covers CAD design, structural analysis, material simulation, and performance evaluation to meet global automotive standards."
+                                    : "JIEI (THAILAND) CO.,LTD は、自動車用ゴム部品の最高品質を保証するために、先進的な設計、解析、試験技術を採用しています。当社の統合プロセスは、CAD設計、構造解析、材料シミュレーション、性能評価を網羅し、世界的な自動車産業の基準に対応しています。"}</p>
+                        </motion.div>
                         <div className="line" />
 
                     </div>
@@ -251,104 +261,165 @@ export default function Tach() {
                     <div className="design-analysis-box" itemScope itemType="https://schema.org/TechArticle">
 
                         <div className="design-analysis-topic">
-                            <ScrollReveal>
-                                <h2 itemProp="headline" className='topic-technology'>{lang===('th') ? "การออกแบบและการวิเคราะห์" : lang===('en') ? "Design & Analysis" : "設計・解析"}</h2>
-                                <meta itemProp="author" content="JIEI Thailand" />
-                            </ScrollReveal>
+                            <motion.div
+                                initial={{ y: 50, opacity: 0 }}
+                                whileInView={{ y: 0, x: 0, opacity: 1 }}
+                                viewport={{ once: true, amount: 0.35 }}
+                                transition={{
+                                    type: "spring",
+                                    stiffness: 80,
+                                    damping: 18,
+                                    mass: 0.8
+                                }}>
+                                <h2 itemProp="headline" className='topic-technology'>{lang === ('th') ? "การออกแบบและการวิเคราะห์" : lang === ('en') ? "Design & Analysis" : "設計・解析"}</h2>
+                            </motion.div>
                         </div>
                         <div className="design-analysis-content-box">
                             {topicTH.map((item, index) => (
-                                <div className="design-analysis-content" key={index}>
+                                <motion.div
+                                    className='design-analysis-content'
+                                    key={index}
+                                    initial={{ y: 50, opacity: 0 }}
+                                    whileInView={{ y: 0, opacity: 1 }}
+                                    viewport={{ once: true, amount: 1 }}
+                                    transition={{
+                                        type: "spring",
+                                        stiffness: 80,
+                                        damping: 18,
+                                        mass: 0.8
+                                    }}>
+
                                     <div className="image-card-tach">
                                         <Image className='image-tach' src={Analysis[index]} alt={`ผู้ผลิตชิ้นส่วนยางรถยนต์ จังหวัดชลบุรี`} priority width={1000} height={1000} />
                                     </div>
                                     <div className="content-card-tach">
                                         <div className="design-analysis-content-topic">
-                                            <ScrollReveal>
-                                                <h3 itemProp="about" className='topic-2'>{lang===('th') ? item
-                                                    : lang===('en') ? topicEN[index]
-                                                        : topicJP[index]}</h3>
-                                            </ScrollReveal>
+
+                                            <h3 itemProp="about" className='topic-2'>{lang === ('th') ? item
+                                                : lang === ('en') ? topicEN[index]
+                                                    : topicJP[index]}</h3>
+
                                         </div>
                                         <div className="design-analysis-content-content">
-                                            <ScrollReveal>
-                                                <p itemProp="articleBody" className='content-technology'>
-                                                    {lang===('th') ? contentTH[index] : lang===('en') ? contentEN[index] : contentJP[index]}
-                                                </p>
-                                            </ScrollReveal>
+
+                                            <p itemProp="articleBody" className='content-technology'>
+                                                {lang === ('th') ? contentTH[index] : lang === ('en') ? contentEN[index] : contentJP[index]}
+                                            </p>
+
                                         </div>
                                     </div>
 
-                                </div>
+
+                                </motion.div>
                             ))}
                         </div>
 
 
 
                         <div className="design-analysis-topic">
-                            <ScrollReveal>
-                                <h2 itemProp="headline" className='topic-technology'>{lang===('th') ? "การพัฒนาวัสดุ"
-                                    : lang===('en') ? "Materials Development"
+                            <motion.div
+                                initial={{ y: 50, opacity: 0 }}
+                                whileInView={{ y: 0, opacity: 1 }}
+                                viewport={{ once: true, amount: 1 }}
+                                transition={{
+                                    type: "spring",
+                                    stiffness: 80,
+                                    damping: 18,
+                                    mass: 0.8
+                                }}>
+                                <h2 itemProp="headline" className='topic-technology'>{lang === ('th') ? "การพัฒนาวัสดุ"
+                                    : lang === ('en') ? "Materials Development"
                                         : "材料開発"}</h2>
                                 <meta itemProp="author" content="JIEI Thailand" />
-                            </ScrollReveal>
+                            </motion.div>
                         </div>
 
                         <div className="design-analysis-content-box">
                             {topicTH1.map((item, index) => (
-                                <div className="design-analysis-content" key={index}>
+                                <motion.div
+                                    className='design-analysis-content'
+                                    key={index}
+                                    initial={{ y: 50, opacity: 0 }}
+                                    whileInView={{ y: 0, opacity: 1 }}
+                                    viewport={{ once: true, amount: 1 }}
+                                    transition={{
+                                        type: "spring",
+                                        stiffness: 80,
+                                        damping: 18,
+                                        mass: 0.8
+                                    }}>
+
                                     <div className="image-card-tach">
                                         <Image className='image-tach' src={materials[index]} alt={`ผู้ผลิตชิ้นส่วนยางรถยนต์ จังหวัดชลบุรี`} priority width={1000} height={1000} />
                                     </div>
                                     <div className="content-card-tach">
                                         <div className="design-analysis-content-topic">
                                             <ScrollReveal>
-                                                <h3 itemProp="about" className='topic-2'>{lang===('th') ? item : lang===('en') ? topicEN1[index] : topicJP1[index]}</h3>
+                                                <h3 itemProp="about" className='topic-2'>{lang === ('th') ? item : lang === ('en') ? topicEN1[index] : topicJP1[index]}</h3>
 
                                             </ScrollReveal>
                                         </div>
                                         <div className="design-analysis-content-content">
                                             <ScrollReveal>
                                                 <p itemProp="articleBody" className='content-technology'>
-                                                    {lang===('th') ? contentTH1[index] : lang===('en') ? contentEN1[index] : contentJP1[index]}
+                                                    {lang === ('th') ? contentTH1[index] : lang === ('en') ? contentEN1[index] : contentJP1[index]}
                                                 </p>
                                             </ScrollReveal>
                                         </div>
                                     </div>
-
-                                </div>
+                                </motion.div>
                             ))}
+
                         </div>
 
                         <div className="design-analysis-topic">
-                            <ScrollReveal>
-                                <h2 itemProp="headline" className='topic-technology'>{lang===('th') ? "การประเมินสมรรถนะ" : lang===('en') ? "Functional Evaluation" : "機能評価"}</h2>
+                            <motion.div
+                                initial={{ y: 50, opacity: 0 }}
+                                whileInView={{ y: 0, opacity: 1 }}
+                                viewport={{ once: true, amount: 1 }}
+                                transition={{
+                                    type: "spring",
+                                    stiffness: 80,
+                                    damping: 18,
+                                    mass: 0.8
+                                }}>
+                                <h2 itemProp="headline" className='topic-technology'>{lang === ('th') ? "การประเมินสมรรถนะ" : lang === ('en') ? "Functional Evaluation" : "機能評価"}</h2>
                                 <meta itemProp="author" content="JIEI Thailand" />
-                            </ScrollReveal>
+                            </motion.div>
                         </div>
 
                         <div className="design-analysis-content-box">
                             {topicTH2.map((item, index) => (
-                                <div className="design-analysis-content" key={index}>
-                                    <div className="image-card-tach">
-                                        <Image className='image-tach' src={evaluation[index]} alt={`ผู้ผลิตชิ้นส่วนยางรถยนต์ จังหวัดชลบุรี`} priority width={1000} height={1000} />
-                                    </div>
-                                    <div className="content-card-tach">
-                                        <div className="design-analysis-content-topic">
-                                            <ScrollReveal>
-                                                <h3 itemProp="about" className='topic-2'>{lang===('th') ? item : lang===('en') ? topicEN2[index] : topicJP2[index]}</h3>
-                                            </ScrollReveal>
+                                <motion.div
+                                    className='design-analysis-content'
+                                    key={index}
+                                    initial={{ y: 50, opacity: 0 }}
+                                    whileInView={{ y: 0, opacity: 1 }}
+                                    viewport={{ once: true, amount: 1 }}
+                                    transition={{
+                                        type: "spring",
+                                        stiffness: 80,
+                                        damping: 18,
+                                        mass: 0.8
+                                    }}>
+                                        <div className="image-card-tach">
+                                            <Image className='image-tach' src={evaluation[index]} alt={`ผู้ผลิตชิ้นส่วนยางรถยนต์ จังหวัดชลบุรี`} priority width={1000} height={1000} />
                                         </div>
-                                        <div className="design-analysis-content-content">
-                                            <ScrollReveal>
-                                                <p itemProp="articleBody" className='content-technology'>
-                                                    {lang===('th') ? contentTH2[index] : lang===('en') ? contentEN2[index] : contentJP2[index]}
-                                                </p>
-                                            </ScrollReveal>
+                                        <div className="content-card-tach">
+                                            <div className="design-analysis-content-topic">
+                                                <ScrollReveal>
+                                                    <h3 itemProp="about" className='topic-2'>{lang === ('th') ? item : lang === ('en') ? topicEN2[index] : topicJP2[index]}</h3>
+                                                </ScrollReveal>
+                                            </div>
+                                            <div className="design-analysis-content-content">
+                                                <ScrollReveal>
+                                                    <p itemProp="articleBody" className='content-technology'>
+                                                        {lang === ('th') ? contentTH2[index] : lang === ('en') ? contentEN2[index] : contentJP2[index]}
+                                                    </p>
+                                                </ScrollReveal>
+                                            </div>
                                         </div>
-                                    </div>
-
-                                </div>
+                                </motion.div>
                             ))}
                         </div>
 

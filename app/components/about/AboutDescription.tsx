@@ -1,8 +1,7 @@
 'use client'
 import React from 'react'
-import ScrollReveal from '../ScrollReveal/ScrollReveal'
-import Image from 'next/image'
 import { useEffect, useState } from 'react';
+import { motion } from 'framer-motion';
 export default function AboutDescription() {
     const [lang, setLang] = useState<'th' | 'en' | 'jp'>('th');
     useEffect(() => {
@@ -13,34 +12,54 @@ export default function AboutDescription() {
     }, []);
     return (
         <div>
-            <ScrollReveal>
-                <h1 className='about-company-name'>{lang === ('th') ? "บริษัท เจไออีไอ (ไทยแลนด์) จำกัด" : "JIEI (THAILAND) CO., LTD." } </h1>
-            </ScrollReveal>
+            <motion.div
+                className='why-chose-jiei'
+                initial={{ opacity: 0 }}
+                whileInView={{ x: 0, opacity: 1 }}
+                viewport={{ once: true, amount: 0.35 }}
+                transition={{
+                    type: "spring",
+                    stiffness: 80,
+                    damping: 18,
+                    mass: 0.8
+                }}>
+                <h1 className='about-company-name'>{lang === ('th') ? "บริษัท เจไออีไอ (ไทยแลนด์) จำกัด" : "JIEI (THAILAND) CO., LTD."} </h1>
+            </motion.div>
 
-            <ScrollReveal>
+           <motion.div
+                    className='why-chose-jiei'
+                    initial={{ opacity: 0 }}
+                    whileInView={{ x: 0, opacity: 1 }}
+                    viewport={{ once: true, amount: 0.35 }}
+                    transition={{
+                        type: "spring",
+                        stiffness: 80,
+                        damping: 18,
+                        mass: 0.8
+                    }}>
                 <div className="grid-about-page-description">
-                    <div className="image-company-grid">
+                    {/* <div className="image-company-grid">
                         <Image className='image-company-f' src={'/about-page.jpg'} alt='ผู้ผลิตชิ้นส่วนยางรถยนต์ จังหวัดชลบุรี' width={1000} height={1000} loading='lazy' />
-                    </div>
+                    </div> */}
 
                     <div className="table-company-profile">
                         <div className="tr-about">
                             <div className='content-inthe-table'>
                                 <div className="content-in-aboutBox">
-                                    <span className="title-about-text"> {lang === ('th') ? "ชื่อบริษัท" : "Company Name" }</span>
+                                    <span className="title-about-text"> {lang === ('th') ? "ชื่อบริษัท" : "Company Name"}</span>
                                 </div>
                                 <div className="content-in-aboutBox">
-                                    {lang === ('th') ? "บริษัท เจไออีไอ (ไทยแลนด์) จำกัด" : "JIEI (THAILAND) CO., LTD." }
+                                    {lang === ('th') ? "บริษัท เจไออีไอ (ไทยแลนด์) จำกัด" : "JIEI (THAILAND) CO., LTD."}
                                 </div>
                             </div>
                             <div className='content-inthe-table1'>
                                 <div className="content-in-aboutBox">
 
-                                    <span className="title-about-text">   {lang === ('th') ? "ที่อยู่" : "Address" }</span>
+                                    <span className="title-about-text">   {lang === ('th') ? "ที่อยู่" : "Address"}</span>
                                 </div>
                                 <div className="content-in-aboutBox">
 
-                                    {lang === ('th') ? " นิคมอุตสาหกรรมปิ่นทอง 4 หน่วย G18 180/3 หมู่ 6 ต.บึง อ.ศรีราชา ชลบุรี 20230 ประเทศไทย โทร. 033136581-4" : "Pinthong Industrial Estate 4, Unit G18 180/3 Moo 6, Bueng Sub-district,Si Racha District, Chonburi 20230, Thailand Tel: +66 (0)33-136581-4" }
+                                    {lang === ('th') ? " นิคมอุตสาหกรรมปิ่นทอง 4 หน่วย G18 180/3 หมู่ 6 ต.บึง อ.ศรีราชา ชลบุรี 20230 ประเทศไทย โทร. 033136581-4" : "Pinthong Industrial Estate 4, Unit G18 180/3 Moo 6, Bueng Sub-district,Si Racha District, Chonburi 20230, Thailand Tel: +66 (0)33-136581-4"}
                                 </div>
                             </div>
                             <div className='content-inthe-table'>
@@ -48,25 +67,25 @@ export default function AboutDescription() {
                                     <span className="title-about-text"> {lang === ('th') ? "ก่อตั้งเมื่อ" : "Established on"} </span>
                                 </div>
                                 <div className="content-in-aboutBox">
-                                    {lang === ('th') ? "วันศุกร์ ที่ 11 พฤศจิกายน พ.ศ. 2554" : "Friday, 11ᵗʰ November 2011" }
+                                    {lang === ('th') ? "วันศุกร์ ที่ 11 พฤศจิกายน พ.ศ. 2554" : "Friday, 11ᵗʰ November 2011"}
                                 </div>
                             </div>
                             <div className='content-inthe-table1'>
                                 <div className="content-in-aboutBox">
-                                    <span className="title-about-text">{lang === ('th') ? "ทุนจดทะเบียน" : "Registered Capital" }</span>
+                                    <span className="title-about-text">{lang === ('th') ? "ทุนจดทะเบียน" : "Registered Capital"}</span>
                                 </div>
                                 <div className="content-in-aboutBox">
 
-                                    {lang === ('th') ? "150,000,000 บาท" : "150,000,000 Baht" }
+                                    {lang === ('th') ? "150,000,000 บาท" : "150,000,000 Baht"}
                                 </div>
                             </div>
 
                         </div>
 
                     </div>
-                    
+
                 </div>
-            </ScrollReveal>
+            </motion.div>
         </div>
     )
 }

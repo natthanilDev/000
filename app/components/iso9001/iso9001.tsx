@@ -1,13 +1,11 @@
 'use client';
 import { useState, useEffect } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import Head from "next/head";
 import Iso_btn from "../iso_btn/iso_btn";
-import Image from "next/image";
-import ScrollReveal from "../../components/ScrollReveal/ScrollReveal";
 
+import { Image } from "antd";
 export default function Iso9001() {
-  const [selectedImg, setSelectedImg] = useState<string | null>(null);
   const [lang, setLang] = useState<'th' | 'en' | 'jp'>('th');
 
   const images = [
@@ -106,91 +104,101 @@ export default function Iso9001() {
         />
       </Head>
 
-      <section className="p-6">
+      <section className="iso-doc">
         <header>
-          <ScrollReveal>
-            <h1 className="ISO9001 text-center text-3xl font-bold">
-              {lang===('th')
-                ? "ISO 9001"
-                : lang===('en')
-                  ? "ISO 9001"
-                  : "ISO 9001"}
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            viewport={{ once: true, amount: 0.35 }}
+            transition={{
+              type: "spring",
+              stiffness: 80,
+              damping: 18,
+              mass: 0.8
+            }}
+          >
+            <h1 className="ISO">
+              ISO 9001
             </h1>
-          </ScrollReveal>
-          <ScrollReveal>
-            <p className="text-iso text-center text-xl mt-2">
-              {lang===('th')
+
+            <p className="text-iso">
+              {lang === ('th')
                 ? "มาตรฐานระบบบริหารคุณภาพระดับสากลสำหรับอุตสาหกรรมยานยนต์"
-                : lang===('en')
+                : lang === ('en')
                   ? "International quality management standard for the automotive industry"
                   : "自動車産業向けの国際的な品質マネジメント規格"}
             </p>
-          </ScrollReveal>
+
+          </motion.div>
         </header>
 
-        <div className="line my-4 mx-auto w-20 border-b-2 border-gray-300" />
+        <motion.div
+          className="image-iso-box-iso-page"
+          initial={{ opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          viewport={{ once: true, amount: 0.35 }}
+          transition={{
+            type: "spring",
+            stiffness: 80,
+            damping: 18,
+            mass: 0.8
+          }}
 
-        <ScrollReveal>
-          <div className="image-iso-box flex justify-center items-center gap-4 mt-6">
-            {images.map((image, index) => (
-              <Image
-                key={index}
-                src={image.src}
-                alt={image.alt}
-                width={1000}
-                height={1000}
-                className="rounded-lg shadow-md cursor-pointer hover:scale-105 transition-transform duration-300 w-80"
-                onClick={() => setSelectedImg(image.src)}
-                priority={index === 0}
-                loading={index === 0 ? "eager" : "lazy"}
-              />
-            ))}
-          </div>
-        </ScrollReveal>
+        >
+          {images.map((image, index) => (
+            <Image
+              key={index}
+              src={image.src}
+              alt={image.alt}
+              className="image-iso-doc"
+              loading={index === 0 ? "eager" : "lazy"}
+            />
+          ))}
 
-        <AnimatePresence>
-          {selectedImg && (
-            <motion.div
-              className="show-image fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center z-50"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              onClick={() => setSelectedImg(null)}
-            >
-              <motion.img
-                src={selectedImg}
-                alt="ISO 9001 Certificate - JIEI Thailand"
-                className="image-iso9001 max-w-3xl rounded-lg shadow-lg"
-                initial={{ scale: 0.8, opacity: 0 }}
-                animate={{ scale: 1, opacity: 1 }}
-                exit={{ scale: 0.8, opacity: 0 }}
-              />
-            </motion.div>
-          )}
-        </AnimatePresence>
+        </motion.div>
 
-        <div className="iso-box-description mt-8 text-center">
-         
 
-          <ScrollReveal delay={1}>
-            <motion.p
-              className="description-iso max-w-3xl mx-auto text-lg text-gray-600 leading-relaxed"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1.2, ease: "easeOut" }}
-            >
-              {lang===('th')
-                ? "ISO 9001 คือมาตรฐานสากลสำหรับระบบการจัดการคุณภาพ (Quality Management System: QMS) ที่กำหนดโดยองค์การระหว่างประเทศว่าด้วยการมาตรฐาน (ISO) เพื่อช่วยให้องค์กรสร้างกระบวนการทำงานที่มีคุณภาพ มีการควบคุม และปรับปรุงอย่างต่อเนื่อง เพื่อส่งมอบสินค้าที่มีคุณภาพแก่ลูกค้าอย่างสม่ำเสมอ"
-                : lang===('en')
-                  ? "ISO 9001 is an international standard for Quality Management Systems (QMS), established by the International Organization for Standardization (ISO). It helps organizations build consistent, controlled, and continuously improving processes to deliver quality products to customers."
-                  : "ISO 9001は、国際標準化機構（ISO）が制定した品質マネジメントシステム（QMS）の国際規格です。品質の一貫性を確保し、継続的な改善を通じてお客様に高品質な製品を提供するための基盤を提供します。"}
-            </motion.p>
-          </ScrollReveal>
-        </div>
 
-        <ScrollReveal>
+
+        <motion.div
+          className="text-center"
+          initial={{ opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          viewport={{ once: true, amount: 0.35 }}
+          transition={{
+            type: "spring",
+            stiffness: 80,
+            damping: 18,
+            mass: 0.8
+          }}
+
+        >
+
+          <p className="description-iso max-w-3xl mx-auto text-lg text-gray-600 leading-relaxed">
+            {lang === ('th')
+              ? "ISO 9001 คือมาตรฐานสากลสำหรับระบบการจัดการคุณภาพ (Quality Management System: QMS) ที่กำหนดโดยองค์การระหว่างประเทศว่าด้วยการมาตรฐาน (ISO) เพื่อช่วยให้องค์กรสร้างกระบวนการทำงานที่มีคุณภาพ มีการควบคุม และปรับปรุงอย่างต่อเนื่อง เพื่อส่งมอบสินค้าที่มีคุณภาพแก่ลูกค้าอย่างสม่ำเสมอ"
+              : lang === ('en')
+                ? "ISO 9001 is an international standard for Quality Management Systems (QMS), established by the International Organization for Standardization (ISO). It helps organizations build consistent, controlled, and continuously improving processes to deliver quality products to customers."
+                : "ISO 9001は、国際標準化機構（ISO）が制定した品質マネジメントシステム（QMS）の国際規格です。品質の一貫性を確保し、継続的な改善を通じてお客様に高品質な製品を提供するための基盤を提供します。"}
+          </p>
+
+        </motion.div>
+
+       <motion.div
+          className="btn-iso-nav"
+          initial={{ opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          viewport={{ once: true, amount: 0.35 }}
+          transition={{
+            type: "spring",
+            stiffness: 80,
+            damping: 18,
+            mass: 0.8
+          }}
+
+        >
           <Iso_btn />
-        </ScrollReveal>
+        </motion.div>
       </section >
     </>
   );

@@ -2,7 +2,6 @@
 import { useState, useEffect } from 'react'
 import Head from 'next/head'
 import Form_contact from "../form_contact/form_contact"
-import Link from 'next/link';
 
 export default function Contact() {
   const [lang, setLang] = useState<'th' | 'en' | 'jp'>('th');
@@ -17,38 +16,14 @@ export default function Contact() {
   const icon = [
     "icon-contact bi bi-telephone-fill",
     "icon-contact bi bi-globe",
-    // "icon-contact bi bi-envelope-at-fill",
     "icon-contact bi bi-geo-alt-fill"
   ]
-  const link = [
-    "tel:033-136581-4",
-    "https://jiei-thai.co.th",
-    // "mailto:info@jiei-thai.co.th",
-    "https://maps.app.goo.gl/rymNPgK529UiEo2g6"
-  ]
-  const titleTH = [
-    'โทรศัพท์',
-    'เว็บไซต์',
-    // 'อีเมล',
-    'ที่อยู่',
-  ]
-  const titleEN = [
-    "Phone",
-    "Website",
-    // "E-Mail",
-    "Address"
-  ]
-  const titleJP = [
-    '電話番号',
-    'ウェブサイト',
-    // 'メール',
-    '住所',
-  ]
+
+
 
   const contact = [
     '033-136581-4',
     'https://jiei-thai.co.th',
-    // 'info@jiei-thai.co.th',
     'Pinthong 4 Industrial Estate, Unit G18, 180/3 Moo 6, T.Bueng, A.Sriracha, Chonburi 20230 Thailand'
   ]
 
@@ -70,37 +45,57 @@ export default function Contact() {
         <meta name="twitter:title" content="Contact Us | JIEI Thailand" />
         <meta name="twitter:description" content="Get in touch with JIEI Thailand. Contact us via phone, email, or visit our address in Chonburi. We’re here to help you!" />
 
-      
+
       </Head>
       <>
         <div className="contact-level">
-          <div className="contact-contactUs">
-            <div className="box-w">
-              <h1 className='contactUsTitle'> {lang===('th') ? "ติดต่อเรา" : lang===('en') ? "CONTACT US" : "お問い合わせ"}</h1>
-              <h2 className='text-title'>{lang===('th')? "บริษัท เจไออีไอ (ไทยแลนด์) จํากัด" : lang===('en')? "JIEI (Thailand) Co., Ltd." : "JIEI (THAILAND) CO., LTD."}</h2>
-              {/* <h3 className='content-contact'>{lang===('th') ? "เราเป็นผู้ผลิตยางรถยนต์มาตรฐานญี่ปุ่นในจังหวัดชลบุรี" : lang===('en') ? "We are a Japanese-standard automotive rubber parts manufacturer located in Chonburi Province." : "私たちはチョンブリー県にある日本品質の自動車用ゴム部品メーカーです。"}</h3> */}
-              <h5 className='here-you'>  {lang===('th') ? "เราพร้อมให้ความช่วยเหลือคุณ!" : lang===('en') ? "We’re here to help you!" : "私たちはあなたをサポートするためにここにいます！"}</h5>
-              <div className="line-contact"></div>
-              <div className="container-icon">
-                {icon.map((item, index) => (
-                  <Link className='a' target='_blank'  rel="noopener noreferrer"  href={link[index]} key={index}>
-                    <div className="contact-box-icon">
-                      <div className="icon">
-                        <i className={item}></i>
+          <h1 className='contactUsTitle'> {lang === ('th') ? "ติดต่อเรา" : lang === ('en') ? "CONTACT US" : "お問い合わせ"}</h1>
+          <h2 className='text-title'>{lang === ('th') ? "บริษัท เจไออีไอ (ไทยแลนด์) จํากัด" : lang === ('en') ? "JIEI (Thailand) Co., Ltd." : "JIEI (THAILAND) CO., LTD."}</h2>
+          {/* <h3 className='content-contact'>{lang===('th') ? "เราเป็นผู้ผลิตยางรถยนต์มาตรฐานญี่ปุ่นในจังหวัดชลบุรี" : lang===('en') ? "We are a Japanese-standard automotive rubber parts manufacturer located in Chonburi Province." : "私たちはチョンブリー県にある日本品質の自動車用ゴム部品メーカーです。"}</h3> */}
+
+          <div className="contact-page">
+            <div className="contact-contactUs">
+              <div className="box-w">
+                <div className="container-icon">
+                  <h1 className="text-2xl font-bold mb-4 text-contact-1">
+                    {lang === ('th') ? "ติดต่อเรา | กรุณากรอกข้อมูลของคุณ!" :
+                      lang === ('en') ? "Contact Us | Please fill in your information!" :
+                        "お問い合わせ | 情報をご入力ください！"}
+                  </h1>
+
+                  <p className="mb-6">
+                    {lang === ('th') ? "ต้องการข้อมูลเพิ่มเติมเกี่ยวกับผลิตภัณฑ์หรือบริการของเรา? กรอกแบบฟอร์มด้านล่างแล้วทีมงาน JIEI Thailand จะติดต่อกลับโดยเร็วที่สุด" :
+                      lang === ('en') ? "Do you want more information about our products or services? Please fill out the form below, and the JIEI Thailand team will get back to you as soon as possible." :
+                        "当社の製品やサービスに関する詳細情報をご希望ですか？ 以下のフォームにご記入いただくと、JIEI Thailandのチームができるだけ早くご連絡いたします。"}
+                  </p>
+                  <h5 className='here-you'>  {lang === ('th') ? "เราพร้อมให้ความช่วยเหลือคุณ!" : lang === ('en') ? "We’re here to help you!" : "私たちはあなたをサポートするためにここにいます！"}</h5>
+
+                  <div className="line-contact" />
+                  <div className="icon-contact-web">
+                    {icon.map((item, index) => (
+                      <div className="icon-contact-1 bg-gray-200" key={index}>
+                        <div className="contact-box-icon">
+                          <div className="icon">
+                            <i className={`${item} item-icon`} />
+                          </div>
+                          <div className="title-box-icon">
+                            <p className='link-icon'>{contact[index]}</p>
+                          </div>
+                        </div>
                       </div>
-                      <div className="title-box-icon">
-                        <p className="text-icon">{lang===('th') ? titleTH[index] : lang===('en') ? titleEN[index] : titleJP[index]}</p>
-                        <p className='link-icon'>{contact[index]}</p>
-                      </div>
-                    </div>
-                  </Link>
-                ))}
+
+
+                    ))}
+                  </div>
+
+                </div>
               </div>
             </div>
+            <div className="contact-form">
+              <Form_contact />
+            </div>
           </div>
-          <div className="contact-form">
-            <Form_contact />
-          </div>
+
         </div>
       </>
     </div>
