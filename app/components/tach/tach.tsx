@@ -255,7 +255,7 @@ export default function Tach() {
                                     key={index}
                                     initial={{ y: 50, opacity: 0 }}
                                     whileInView={{ y: 0, opacity: 1 }}
-                                    viewport={{ once: true, amount: 1 }}
+                                    viewport={{ once: true, amount: 0.35 }}
                                     transition={{
                                         type: "spring",
                                         stiffness: 80,
@@ -294,7 +294,7 @@ export default function Tach() {
                             <motion.div
                                 initial={{ y: 50, opacity: 0 }}
                                 whileInView={{ y: 0, opacity: 1 }}
-                                viewport={{ once: true, amount: 1 }}
+                                viewport={{ once: true, amount: 0.35 }}
                                 transition={{
                                     type: "spring",
                                     stiffness: 80,
@@ -315,7 +315,7 @@ export default function Tach() {
                                     key={index}
                                     initial={{ y: 50, opacity: 0 }}
                                     whileInView={{ y: 0, opacity: 1 }}
-                                    viewport={{ once: true, amount: 1 }}
+                                    viewport={{ once: true, amount: 0.35 }}
                                     transition={{
                                         type: "spring",
                                         stiffness: 80,
@@ -350,7 +350,7 @@ export default function Tach() {
                             <motion.div
                                 initial={{ y: 50, opacity: 0 }}
                                 whileInView={{ y: 0, opacity: 1 }}
-                                viewport={{ once: true, amount: 1 }}
+                                viewport={{ once: true, amount: 0.35 }}
                                 transition={{
                                     type: "spring",
                                     stiffness: 80,
@@ -369,7 +369,7 @@ export default function Tach() {
                                     key={index}
                                     initial={{ y: 50, opacity: 0 }}
                                     whileInView={{ y: 0, opacity: 1 }}
-                                    viewport={{ once: true, amount: 1 }}
+                                    viewport={{ once: true, amount: 0.35 }}
                                     transition={{
                                         type: "spring",
                                         stiffness: 80,
