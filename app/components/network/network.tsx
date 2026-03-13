@@ -62,7 +62,7 @@ export default function Network() {
         "広州東海敏孚汽車部件有限公司",
         "武漢東海敏実汽車零部件有限公司",
         "TK MINTH MEXICO, S.A. de C.V.",
-        "PT.TOYOTA AUTO BODY-TOKAI EXTRUSION (T-TEC)",
+        "PT TOYOTA AUTO BODY-TOKAI EXTRUSION (T-TEC)",
         "TOKAI KOGYO INDIA PRIVATE LIMITED　",
         "TOKAI JIEI ASIA CO., LTD."
     ]
