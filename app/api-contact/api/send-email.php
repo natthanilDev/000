@@ -13,8 +13,8 @@ $dotenv->load();
    CORS (แบบปลอดภัย)
 ================================ */
 $allowedOrigins = [
-  'http://localhost:3000',
-  'http://192.168.100.228:3000',
+  // 'http://localhost:3000',
+  // 'http://192.168.100.228:3000',
   'https://jiei-thai.co.th',
   'https://www.jiei-thai.co.th',
 ];

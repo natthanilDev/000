@@ -134,7 +134,7 @@ export default function ContactForm() {
                     //     body: JSON.stringify(form),
                     // });
 
-                    const res = await fetch('https://jiei-thai.co.th/api/send-email.php', {
+                    const res = await fetch('https://jiei-thai.co.th/api-contact/api/send-email.php', {
                         method: 'POST',
                         headers: { 'Content-Type': 'application/json' },
                         body: JSON.stringify(form),
