@@ -303,6 +303,10 @@ export default function Products() {
               title:
                 lang === ('th') ? "ส่งอีเมลสำเร็จ!" : lang === ('en') ? "Email sent successfully!" : "メールが正常に送信されました！",
               text: lang === ('th') ? "เราจะติดต่อกลับโดยเร็วที่สุด" : lang === ('en') ? "We will contact you as soon as possible." : "できるだけ早くご連絡いたします。"
+            }).then((res) => {
+              if (res.isConfirmed) {
+                window.location.href = "/products"
+              }
             });
             setDataForForm({
               productName: '',
@@ -311,7 +315,7 @@ export default function Products() {
               phone: '',
               honeypot: ''
             });
-            window.location.href = "/products"
+
           } else {
             Swal.fire({
               icon: 'error',

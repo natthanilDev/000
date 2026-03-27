@@ -169,7 +169,7 @@ export default function FooterClient() {
             <div className="contentFooter-box">
               <ul>
                 <li className='li-footer'>
-                  <Link href={'/activities'} className="link-footer">{lang === ('th') ? "ข่าวสาร และกิจกรรม" : lang === ('en') ? "Activities" : "活動"}</Link>
+                  <Link href={'/news'} className="link-footer">{lang === ('th') ? "ข่าวสาร และกิจกรรม" : lang === ('en') ? "Activities" : "活動"}</Link>
                 </li>
               </ul>
             </div>
